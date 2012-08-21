@@ -1,0 +1,16 @@
+1. LV-POS; LV-TAG; LV-BEST-POS; LV-BEST-TAG (pilnie tagi)
+    	if (c.word().contains("<s>")) featuresC.add("<s>token");
+    	else {
+	    	lv.semti.morphology.analyzer.Word analysis = c.get(LVMorphologyAnalysis.class);
+	    	for (Wordform wf : analysis.wordforms) {
+	    		featuresC.add(wf.getTag().substring(0, 1) +"-LV-POS");
+	    		featuresC.add(wf.getTag() +"-LV-TAG");
+	    	}
+	    	Wordform best = c.get(LVMorphologyAnalysisBest.class);
+	    	if (best==null){
+	    		featuresC.add("x-LV-BEST-POS");
+	    		featuresC.add("xx-LV-BEST-TAG");	    		
+	    	} else {
+	    		featuresC.add(best.getTag().substring(0, 1) +"-LV-BEST-POS");
+	    		featuresC.add(best.getTag() +"-LV-BEST-TAG");	    	
+	rezultāts: 97.2% POS precizitāte

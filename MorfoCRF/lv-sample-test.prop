@@ -1,0 +1,9 @@
+testFile = dev.txt
+loadClassifier = lv-morpho-model.ser.gz
+inputEncoding = utf-8
+outputEncoding = utf-8
+
+#structure of your training file; this tells the classifier
+#that the word is in column 0 and the correct answer is in
+#column 1
+map = word=0,tag=1,lemma=2,answer=3
