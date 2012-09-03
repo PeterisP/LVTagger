@@ -37,6 +37,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -92,6 +93,8 @@ import edu.stanford.nlp.util.StringUtils;
 import edu.stanford.nlp.util.Timing;
 
 import lv.semti.morphology.analyzer.*;
+import lv.semti.morphology.attributes.AttributeNames;
+import lv.semti.morphology.attributes.AttributeValues;
 
 /**
  * Features for Named Entity Recognition.  The code here creates the features
@@ -1591,26 +1594,68 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
       featuresC.add(c.get(CommonWordsAnnotation.class));
     
     
-    if (flags.useLVMorphoAnalyzer) {
-    	if (c.word().contains("<s>")) featuresC.add("<s>token");
-    	else {
-	    	lv.semti.morphology.analyzer.Word analysis = c.get(LVMorphologyAnalysis.class);
-	    	for (Wordform wf : analysis.wordforms) {
-	    		featuresC.add(wf.getTag().substring(0, 1) +"-LV-POS");
-	    		featuresC.add(wf.getTag() +"-LV-TAG");
-	    	}
-	    	Wordform best = c.get(LVMorphologyAnalysisBest.class);
-	    	if (best==null){
-	    		featuresC.add("x-LV-BEST-POS");
-	    		featuresC.add("xx-LV-BEST-TAG");	    		
-	    	} else {
-	    		featuresC.add(best.getTag().substring(0, 1) +"-LV-BEST-POS");
-	    		featuresC.add(best.getTag() +"-LV-BEST-TAG");	    			    		
-	    	}
+    if (flags.useLVMorphoAnalyzer && c != null && c.word() != null) {
+    	featuresC.addAll(addMorphoTag(c, ""));
+    	if (flags.useLVMorphoAnalyzerPrev && p != null && p.word() != null) featuresC.addAll(addMorphoTag(p, "-PREV"));
+    	//if (flags.useLVMorphoAnalyzerPrev && p2 != null && p2.word() != null) featuresC.addAll(addMorphoTag(p2, "-PREV2"));
+    	if (flags.useLVMorphoAnalyzerNext && n != null && n.word() != null) featuresC.addAll(addMorphoTag(n, "-NEXT"));
+    	//if (flags.useLVMorphoAnalyzerNext && n2 != null && n2.word() != null) featuresC.addAll(addMorphoTag(n2, "-NEXT2"));
+    	
+    	lv.semti.morphology.analyzer.Word c_all = c.get(LVMorphologyAnalysis.class);
+    	Wordform c_best = c.get(LVMorphologyAnalysisBest.class);
+    	
+    	//numurs pēc kārtas teikumā
+    	//featuresC.add(Integer.toString(loc) + "-LV-NPK");
+    	
+    	if (flags.useLVMorphoAnalyzerItemIDs && c_all != null) {
+    		for (Wordform wf : c_all.wordforms) {
+    		  String endingId = wf.getValue(AttributeNames.i_EndingID);
+    		  if (endingId != null) featuresC.add(endingId + "-LV-ENDID");
+    		  String lexemeId = wf.getValue(AttributeNames.i_LexemeID);
+    		  if (lexemeId != null) featuresC.add(endingId + "-LV-LEXID");
+    		}
+    		if (c_best != null) {
+        		String endingId = c_best.getValue(AttributeNames.i_EndingID);
+        		if (endingId != null) featuresC.add(endingId + "-LV-BEST-ENDID");
+        		String lexemeId = c_best.getValue(AttributeNames.i_LexemeID);
+        		if (lexemeId != null) featuresC.add(endingId + "-LV-BEST-LEXID");    			
+    		}
     	}
     }
     
     return featuresC;
+  }
+  
+  /**
+   * LV morphology helper functions
+   */
+  private String filterTag(String tag) {
+	  AttributeValues answerAV = MarkupConverter.fromKamolsMarkup(tag);
+	  answerAV.removeNonlexicalAttributes();
+	  return MarkupConverter.toKamolsMarkup(answerAV);	   	  
+  }
+  
+  private Collection<String> addMorphoTag(CoreLabel c, String postfix) {
+	  Collection<String> features = new LinkedList<String>();
+	  if (c.word().contains("<s>")) {
+		  features.add("<s>token"+postfix);
+		  return features;
+	  }
+	  lv.semti.morphology.analyzer.Word analysis = c.get(LVMorphologyAnalysis.class);
+	  for (Wordform wf : analysis.wordforms) {
+		  if (flags.useLVMorphoAnalyzerPOS) features.add(wf.getTag().substring(0, 1) +"-LV-POS"+postfix);
+		  if (flags.useLVMorphoAnalyzerTag) features.add(filterTag(wf.getTag()) +"-LV-TAG"+postfix);
+	  }
+	  Wordform best = c.get(LVMorphologyAnalysisBest.class);
+	  if (best==null) {
+		  if (flags.useLVMorphoAnalyzerPOS) features.add("x-LV-BEST-POS"+postfix);
+		  if (flags.useLVMorphoAnalyzerTag) features.add("xx-LV-BEST-TAG"+postfix);	    		
+	  } else {
+		  if (flags.useLVMorphoAnalyzerPOS) features.add(best.getTag().substring(0, 1) +"-LV-BEST-POS"+postfix);
+		  if (flags.useLVMorphoAnalyzerTag) features.add(filterTag(best.getTag()) +"-LV-BEST-TAG"+postfix);
+		  //features.add(filterTag(best.getValue(AttributeNames.i_Lemma)) +"-LV-BEST-LEMMA"+postfix);
+	  }		  
+	  return features;
   }
 
   /**

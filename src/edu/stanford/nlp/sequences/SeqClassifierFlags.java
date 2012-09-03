@@ -10,6 +10,8 @@ import java.io.Serializable;
 import java.lang.reflect.Field;
 import java.util.*;
 
+import lv.semti.morphology.attributes.AttributeNames;
+
 /**
  * Flags for sequence classifiers. Documentation for general flags and flags for
  * NER can be found in the Javadoc of
@@ -816,11 +818,18 @@ public class SeqClassifierFlags implements Serializable {
   public static final String DEFAULT_PLAIN_TEXT_READER = "edu.stanford.nlp.sequences.PlainTextDocumentReaderAndWriter";
   public String plainTextDocumentReaderAndWriter = DEFAULT_PLAIN_TEXT_READER;
   
-  public boolean useLVMorphoAnalyzer = false;
+  
   /**
    * Add features from the automated Latvian morphology analysis
    * @author Pēteris Paikens
    */
+  public boolean useLVMorphoAnalyzer = false;
+  public String lvMorphoAnalyzerTag = AttributeNames.i_PartOfSpeech;
+  public boolean useLVMorphoAnalyzerPOS = false;
+  public boolean useLVMorphoAnalyzerTag = false;
+  public boolean useLVMorphoAnalyzerNext = false;
+  public boolean useLVMorphoAnalyzerPrev = false;
+  public boolean useLVMorphoAnalyzerItemIDs = false;
 
   // "ADD VARIABLES ABOVE HERE"
 
@@ -2000,6 +2009,18 @@ public class SeqClassifierFlags implements Serializable {
         tokensAnnotationClassName = val;
       } else if (key.equalsIgnoreCase("useLVMorphoAnalyzer")) {
           useLVMorphoAnalyzer = Boolean.parseBoolean(val);
+      } else if (key.equalsIgnoreCase("LVMorphoAnalyzerTag")) {
+          lvMorphoAnalyzerTag = val;
+      } else if (key.equalsIgnoreCase("useLVMorphoAnalyzerPOS")) {
+          useLVMorphoAnalyzerPOS = Boolean.parseBoolean(val);
+      } else if (key.equalsIgnoreCase("useLVMorphoAnalyzerTag")) {
+          useLVMorphoAnalyzerTag = Boolean.parseBoolean(val);
+      } else if (key.equalsIgnoreCase("useLVMorphoAnalyzerPrev")) {
+          useLVMorphoAnalyzerPrev = Boolean.parseBoolean(val);
+      } else if (key.equalsIgnoreCase("useLVMorphoAnalyzerNext")) {
+          useLVMorphoAnalyzerNext = Boolean.parseBoolean(val);
+      } else if (key.equalsIgnoreCase("useLVMorphoAnalyzerItemIDs")) {
+          useLVMorphoAnalyzerItemIDs = Boolean.parseBoolean(val);
 
         // ADD VALUE ABOVE HERE
       } else if (key.length() > 0 && !key.equals("prop")) {

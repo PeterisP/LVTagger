@@ -4,6 +4,8 @@ import java.io.PrintWriter;
 import java.io.Reader;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -30,34 +32,37 @@ import lv.semti.morphology.corpus.Statistics;
 public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<CoreLabel> {
 
   private static final long serialVersionUID = 4858022869289996959L;
+  private static transient Analyzer analyzer = null;
+  private static transient Statistics statistics = null;
+  private Collection<String> answerAttributes;
 
   private String[] map; // = null;
   private IteratorFromReaderFactory<List<CoreLabel>> factory;
 
 
+  private static void initAnalyzer(){
+	  try {
+		  analyzer = new Analyzer("dist/Lexicon.xml");
+		  statistics = new Statistics("dist/Statistics.xml");
+	  } catch (Exception e) {
+		  // TODO Auto-generated catch block
+		  e.printStackTrace();
+	  }
+  }
+  
   public void init(SeqClassifierFlags flags) {
     this.map = StringUtils.mapStringToArray(flags.map);
-	try {
-		Analyzer analyzer = new Analyzer("dist/Lexicon.xml");
-		Statistics statistics = new Statistics("dist/Statistics.xml");    
-		factory = DelimitRegExIterator.getFactory("\n(?:\\s*\n)+", new LVColumnDocParser(analyzer, statistics));
-	} catch (Exception e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+    if (analyzer == null || statistics == null) initAnalyzer();
+    //answerAttributes = Arrays.asList(AttributeNames.i_PartOfSpeech, AttributeNames.i_Gender, AttributeNames.i_Number, AttributeNames.i_Case, AttributeNames.i_Izteiksme);
+    //answerAttributes = Arrays.asList(flags.lvMorphoAnalyzerTag);
+    factory = DelimitRegExIterator.getFactory("\n(?:\\s*\n)+", new LVColumnDocParser(analyzer, statistics, answerAttributes));
   }
 
 
   public void init(String map) {
     this.map = StringUtils.mapStringToArray(map);
-	try {
-		Analyzer analyzer = new Analyzer("dist/Lexicon.xml");
-		Statistics statistics = new Statistics("dist/Statistics.xml");    
-		factory = DelimitRegExIterator.getFactory("\n(?:\\s*\n)+", new LVColumnDocParser(analyzer, statistics));
-	} catch (Exception e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+    if (analyzer == null || statistics == null) initAnalyzer();
+	factory = DelimitRegExIterator.getFactory("\n(?:\\s*\n)+", new LVColumnDocParser(analyzer, statistics, answerAttributes));
   }
 
   public Iterator<List<CoreLabel>> getIterator(Reader r) {
@@ -73,12 +78,14 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
     private final Pattern whitePattern = Pattern.compile("\\t+");
     private Analyzer analyzer;
     private Statistics statistics;
+    private Collection<String> answerAttributes;
 
     int lineCount = 0;
     
-    LVColumnDocParser(Analyzer _analyzer, Statistics _statistics) {
+    LVColumnDocParser(Analyzer _analyzer, Statistics _statistics, Collection<String> _answerAttributes) {
     	analyzer = _analyzer;
     	statistics = _statistics;
+    	answerAttributes = _answerAttributes;
     }
 
     public List<CoreLabel> apply(String doc) {
@@ -89,10 +96,12 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 
       String[] lines = doc.split("\n");
 
+      int wordCount = 0;
       for (String line : lines) {
         ++lineCount;
+        //if (lineCount > 0 && lineCount % 1000 == 0) { System.err.print("["+lineCount+"]"); }
         if (line.trim().length() == 0) continue;
-        //if (line.contains("<s>") || line.contains("</s>"))
+        if (!line.contains("<s>") && !line.contains("</s>")) wordCount++;
         String[] info = whitePattern.split(line);
         // todo: We could speed things up here by having one time only having converted map into an array of CoreLabel keys (Class<? extends CoreAnnotation<?>>) and then instantiating them. Need new constructor.
         CoreLabel wi;
@@ -102,28 +111,44 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
           System.err.println("Error on line " + lineCount + ": " + line);
           throw e;
         }
-        
+                
         String token = wi.word();
-        String answer = wi.get(AnswerAnnotation.class);
-        
-        answer = answer.substring(0,1);
-        wi.set(AnswerAnnotation.class, answer);
-        
-        Word analysis = analyzer.analyze(token);
-        Wordform mainwf = null;
-		double maxticamība = -1;
-		for (Wordform wf : analysis.wordforms) {  // Paskatamies visus atrastos variantus un ņemam statistiski ticamāko
-			if (statistics.getEstimate(wf) > maxticamība) {
-				maxticamība = statistics.getEstimate(wf);
-				mainwf = wf;
+        if (!token.contains("<s>")) {
+	        String answer = wi.get(AnswerAnnotation.class);
+	        if (answerAttributes == null) {
+		        AttributeValues answerAV = MarkupConverter.fromKamolsMarkup(answer);
+		        answerAV.removeNonlexicalAttributes();
+				answer = MarkupConverter.toKamolsMarkup(answerAV);	        	
+	        } else if (answerAttributes.size() == 1) {
+		        AttributeValues answerAV = MarkupConverter.fromKamolsMarkup(answer);
+		        answerAV.filterAttributes(answerAttributes);
+		        if (answerAV.size()>0)
+		        	answer = answerAV.get(0).getValue();
+		        else answer = "O";
+	        } else {
+		        AttributeValues answerAV = MarkupConverter.fromKamolsMarkup(answer);
+		        answerAV.filterAttributes(answerAttributes);
+				answer = MarkupConverter.toKamolsMarkup(answerAV);	        	
+	        }
+	        wi.set(AnswerAnnotation.class, answer);
+	        
+	        Word analysis = analyzer.analyze(token);
+	        Wordform mainwf = null;
+			double maxticamība = -1;
+			for (Wordform wf : analysis.wordforms) {  // Paskatamies visus atrastos variantus un ņemam statistiski ticamāko
+				if (statistics.getEstimate(wf) > maxticamība) {
+					maxticamība = statistics.getEstimate(wf);
+					mainwf = wf;
+				}
 			}
-		}
-        wi.set(LVMorphologyAnalysis.class, analysis);
-        wi.set(LVMorphologyAnalysisBest.class, mainwf);
+	        wi.set(LVMorphologyAnalysis.class, analysis);
+	        wi.set(LVMorphologyAnalysisBest.class, mainwf);
+        }
         
         //System.out.println(wi.word());
         words.add(wi);        
       }
+      System.err.print("["+wordCount+"]");
       return words;
     }
 
