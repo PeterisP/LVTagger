@@ -82,7 +82,7 @@ public class MorphoCRF {
 	    ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorfoCRF/train_dev.txt", reader);	    
 	    crf.train(documents, reader); //atbilstoši props datiem
 	    
-	    //crf.serializeTextClassifier("lv-morpho-model.ser.gz");
+	    crf.serializeClassifier("MorfoCRF/lv-morpho-model.ser.gz");
 	    
 	    //crf.loadClassifierNoExceptions(crf.flags.loadClassifier, props);
 				 

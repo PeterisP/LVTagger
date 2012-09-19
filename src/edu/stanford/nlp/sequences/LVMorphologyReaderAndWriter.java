@@ -12,6 +12,7 @@ import java.util.regex.Pattern;
 
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysisBest;
+import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GoldAnswerAnnotation;
@@ -44,6 +45,9 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 	  try {
 		  analyzer = new Analyzer("dist/Lexicon.xml");
 		  statistics = new Statistics("dist/Statistics.xml");
+		  analyzer.enableVocative = true;
+		  analyzer.enableGuessing = true; 
+		  //analyzer.enableAllGuesses = true;
 	  } catch (Exception e) {
 		  // TODO Auto-generated catch block
 		  e.printStackTrace();
@@ -55,14 +59,14 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
     if (analyzer == null || statistics == null) initAnalyzer();
     //answerAttributes = Arrays.asList(AttributeNames.i_PartOfSpeech, AttributeNames.i_Gender, AttributeNames.i_Number, AttributeNames.i_Case, AttributeNames.i_Izteiksme);
     //answerAttributes = Arrays.asList(flags.lvMorphoAnalyzerTag);
-    factory = DelimitRegExIterator.getFactory("\n(?:\\s*\n)+", new LVColumnDocParser(analyzer, statistics, answerAttributes));
+    factory = DelimitRegExIterator.getFactory("\n(?:\\s*\n)+", new LVColumnDocParser(answerAttributes));
   }
 
 
   public void init(String map) {
     this.map = StringUtils.mapStringToArray(map);
     if (analyzer == null || statistics == null) initAnalyzer();
-	factory = DelimitRegExIterator.getFactory("\n(?:\\s*\n)+", new LVColumnDocParser(analyzer, statistics, answerAttributes));
+	factory = DelimitRegExIterator.getFactory("\n(?:\\s*\n)+", new LVColumnDocParser(answerAttributes));
   }
 
   public Iterator<List<CoreLabel>> getIterator(Reader r) {
@@ -74,17 +78,13 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 
   private class LVColumnDocParser implements Serializable, Function<String,List<CoreLabel>> {
 
-    private static final long serialVersionUID = -6266332614596132572L;
+    private static final long serialVersionUID = -6266312614596132573L;
     private final Pattern whitePattern = Pattern.compile("\\t+");
-    private Analyzer analyzer;
-    private Statistics statistics;
     private Collection<String> answerAttributes;
 
     int lineCount = 0;
     
-    LVColumnDocParser(Analyzer _analyzer, Statistics _statistics, Collection<String> _answerAttributes) {
-    	analyzer = _analyzer;
-    	statistics = _statistics;
+    LVColumnDocParser(Collection<String> _answerAttributes) {
     	answerAttributes = _answerAttributes;
     }
 
@@ -112,8 +112,30 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
           throw e;
         }
                 
-        String token = wi.word();
-        if (!token.contains("<s>")) {
+        applyLVmorphoanalysis(wi, answerAttributes);
+        
+        //System.out.println(wi.word());
+        words.add(wi);        
+      }
+      System.err.print("["+wordCount+"]");
+      return words;
+    }
+
+  } // end class ColumnDocParser
+
+
+  public void printAnswers(List<CoreLabel> doc, PrintWriter out) {
+    for (CoreLabel wi : doc) {
+      String answer = wi.get(AnswerAnnotation.class);
+      String goldAnswer = wi.get(GoldAnswerAnnotation.class);
+      out.println(wi.word() + "\t" + goldAnswer + "\t" + answer);
+    }
+    out.println();
+  }
+  
+	private static void applyLVmorphoanalysis(CoreLabel wi, Collection<String> answerAttributes) {
+		String token = wi.word();
+	    if (!token.contains("<s>")) {
 	        String answer = wi.get(AnswerAnnotation.class);
 	        if (answerAttributes == null) {
 		        AttributeValues answerAV = MarkupConverter.fromKamolsMarkup(answer);
@@ -143,25 +165,27 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 			}
 	        wi.set(LVMorphologyAnalysis.class, analysis);
 	        wi.set(LVMorphologyAnalysisBest.class, mainwf);
-        }
-        
-        //System.out.println(wi.word());
-        words.add(wi);        
-      }
-      System.err.print("["+wordCount+"]");
-      return words;
-    }
+	    }
+	}
 
-  } // end class ColumnDocParser
+	public static List<CoreLabel> analyzeSentence(String sentence) {
+	    if (analyzer == null || statistics == null) initAnalyzer();
 
-
-  public void printAnswers(List<CoreLabel> doc, PrintWriter out) {
-    for (CoreLabel wi : doc) {
-      String answer = wi.get(AnswerAnnotation.class);
-      String goldAnswer = wi.get(GoldAnswerAnnotation.class);
-      out.println(wi.word() + "\t" + goldAnswer + "\t" + answer);
-    }
-    out.println();
-  }
+	    List<CoreLabel> result = new ArrayList<CoreLabel>();
+		CoreLabel s = new CoreLabel();
+		s.set(TextAnnotation.class, "<s>");
+		result.add(s);
+		
+		List<Word> words = Splitting.tokenize(analyzer, sentence);
+		for (Word w : words) {
+			CoreLabel word = new CoreLabel();
+			word.set(TextAnnotation.class, w.getToken());
+			applyLVmorphoanalysis(word, null); //answerAttributes varbūt jāpatjūnē
+			result.add(word);
+		}
+		
+		result.add(s);
+		return result;
+	}
 
 }

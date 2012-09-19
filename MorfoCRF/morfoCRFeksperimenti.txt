@@ -80,4 +80,24 @@
 20. Vārda numurs pēc kārtas teikumā
 	atpakaļ 92.0, nav labi	
 
+----- peec raksta
+21. Burtu ngrammas - uz testseta (citi dati te)
+	Pareizi:	92.7%	2217
+
+22. Morfoloģijas update
+	Pareizi:	92.8%	2218
+
+23. ... ieslēgta arī vokatīva minēšana
+	Pareizi:	92.8%	2219
+
+24. ieslēgta minēšana nezināmajiem pēc galotnes
+	92.6%	2215
+
+25. enable_all_guess
+	Pareizi:	92.7%	2217
+
+
+
+
+
 TODO -dabūt novērtījumu katra varianta ticamībai vajag....

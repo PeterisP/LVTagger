@@ -1642,6 +1642,7 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
 		  return features;
 	  }
 	  lv.semti.morphology.analyzer.Word analysis = c.get(LVMorphologyAnalysis.class);
+	  if (analysis == null) return features;
 	  for (Wordform wf : analysis.wordforms) {
 		  if (flags.useLVMorphoAnalyzerPOS) features.add(wf.getTag().substring(0, 1) +"-LV-POS"+postfix);
 		  if (flags.useLVMorphoAnalyzerTag) features.add(filterTag(wf.getTag()) +"-LV-TAG"+postfix);
