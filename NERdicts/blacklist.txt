@@ -203,26 +203,198 @@ rektorāts
 Zinātne
 zinātne
 bankas padome
+banka padome
 biedrības nams
+biedrība nams
 biedrības nodaļa
+biedrība nodaļa
 biedrību savienība
+biedrība savienība
 domju Savienība
+dome savienība
 draudzes baznīca
+draudze baznīca
 draudzes skola
-dzīv. Jelgava
-dzīv. Liepājs
-dzīv. Rīga
+draudze skola
+dzīv. Jelgavā
+dzīv. jelgava
+dzīv. Liepājā
+dzīv. Rīgā
 ezers
 iela
 lelgamas
 muiža
 rajona kultūras nams
+rajons kultūra nams
 skolas nams
+skola nams
 skolas padome
+skola padome
 teātra komisija
+teātris komisija
 tālr.
 tālrunis
 valsts fonds
 visā Latvija
+viss latvija
 visā Padomju Savienība
+viss padome savienība
 īgā
+sala
+republika
+pagasts padome
+pagasts nams
+kūltūra nams
+jūra
+māja
+majors
+skola fonds
+jūnijs
+gadā Rīga
+apgabals
+fonds dome
+teātris padome
+baznīca padome
+PSKP biedrs
+ezers rajons
+partija skola
+iga
+biedrība birojs
+skola skola
+sporta biedrība
+padome skola
+dzirnavas
+dz.
+jūlijs
+augusts
+septembris
+oktobris
+novembris
+decembris
+janvāris
+februāris
+marts
+aprīlis
+maijs
+no Rīgas
+elgavā
+dziv
+sala rajons
+upe
+nams rīga
+laiks latvija
+veikals rīga
+biedrība biedrs
+pagasts
+zāle
+kas
+pats nams
+maijs latvija
+apriņķis policija
+laiks
+vieta
+dome
+nams fonds
+veikals
+as skola
+muischas
+nr.
+tāļr.
+kalns ezers
+saruna
+novads
+kalns
+ekspedīcija
+laukums
+pils baznīca
+iepājā
+bērns nams
+b-bas nams
+as televīzija
+plkv
+skola un vidusskola
+apriņķis
+māja rīga
+pats nams
+alga fonds
+rajons padome
+dzelzsceļš stacija
+balasts
+dz. 3
+dz. 1
+dz. 2
+dz. 4
+dz. 5
+dz. 6
+dz. 7
+dz. 8
+dz. 9
+dz. 10
+dz. 11
+dz. 12
+dz. 13
+dz. 14
+pulkv
+rifs
+dzīv. sloka
+dzīv. kuldīga
+ekspedicija
+kantoriste
+ondonā
+tirgotava
+birojs
+tāļr
+lela
+iela
+zeme
+tirgus
+tāļrunis
+adonā
+Plkv
+Pulkv
+kultūra nams
+valsts latvija
+rajons partija
+televīzija stacija
+baznīca draudze
+apriņķis skola
+latvija pagasts
+partija latvija
+partija novads
+padome teātris
+andr
+policija skola
+padome opera
+biedrība rīga nodaļa
+opera nams
+baltija valsts
+fronte teātris
+rīga rīga
+bibliotēka fonds
+teātris nams
+muiža zeme
+teātris kopa
+savs nams
+psrs nodibināt
+personālā lieta arhīvs
+personāls lieta arhīvs
+partija saeima
+latvija rīga
+- rīga
+jaunatne savienība
+jūlijs latvija
+dienests padome armija
+ezers latvija
+psrs - asv
+kult. fonds
+banka nodaļa
+banka nams
+aizsardzība biedrība
+rīga : latvija
+stacija rajons
+frontes teātris
+upe latvija
+teātra nams
+teātra kopa
+savā nams
+\ rīga
