@@ -27,9 +27,24 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 
 public class WordPipe {
 	public static void main(String[] args) throws Exception {
-		boolean tab_output = false;
+		String field_separator = "\t";
+		String token_separator = "\n";
+		boolean json = true;
+		boolean mini_tag = false;
 		for (int i=0; i<args.length; i++) {
-			if (args[i].equalsIgnoreCase("-tab")) tab_output = true;
+			if (args[i].equalsIgnoreCase("-tab")) {  // one response line per each query line, tab-separated
+				json = false;
+				token_separator = "\t";
+			}
+			if (args[i].equalsIgnoreCase("-vert")) { // one response line per token, tab-separated
+				json = false;
+			}
+			if (args[i].equalsIgnoreCase("-moses")) { // one response line per token, pipe-separated
+				field_separator = "|";
+				token_separator = " ";
+				json = false;
+			}
+			if (args[i].equalsIgnoreCase("-stripped")) mini_tag = true; //remove nonlexical attributes
 		}
 				
 		String serializedClassifier = "MorfoCRF/lv-morpho-model.ser.gz"; //FIXME - make it configurable
@@ -42,9 +57,9 @@ public class WordPipe {
 	    while ((s = in.readLine()) != null && s.length() != 0) {
 	    	List<CoreLabel> doc = LVMorphologyReaderAndWriter.analyzeSentence(s);
 	    	cmm.classify(doc);
-	    	if (!tab_output) 
+	    	if (json) 
 	    		out.println( analyze( doc));
-	    	else out.println( analyze_tab( doc));
+	    	else out.println( analyze_separated(doc, field_separator, token_separator, mini_tag));
 	    	out.flush();
 	    }
 	}	
@@ -70,15 +85,15 @@ public class WordPipe {
 		return s;
 	}
 	
-	private static String analyze_tab(List<CoreLabel> tokens){
-		StringBuilder s = new StringBuilder(); 
+	private static String analyze_separated(List<CoreLabel> tokens, String field_separator, String token_separator, boolean mini_tag){
+		StringBuilder s = new StringBuilder();
 		
 		for (CoreLabel word : tokens) {
 			String token = word.getString(TextAnnotation.class);
 			if (token.contains("<s>")) continue;
-			if (s.length()>0) s.append("\t");
+			if (s.length()>0) s.append(token_separator);
 			s.append(token);
-			s.append("\t");
+			s.append(field_separator);
 			/*
 			s.append(word.getString(AnswerAnnotation.class));
 			s.append("\t");
@@ -86,11 +101,12 @@ public class WordPipe {
 			Word analysis = word.get(LVMorphologyAnalysis.class);
 			Wordform mainwf = chooseWordform(analysis, word.getString(AnswerAnnotation.class)); 
 			if (mainwf != null) {
+				if (mini_tag) mainwf.removeNonlexicalAttributes();
 				s.append(mainwf.getTag());
-				s.append("\t");
+				s.append(field_separator);
 				s.append(mainwf.getValue(AttributeNames.i_Lemma));
 				//s.append("\t");
-			} else s.append("\t"); 
+			} else s.append(field_separator); 
 			/*
 			mainwf = word.get(LVMorphologyAnalysisBest.class);
 			if (mainwf != null) {
