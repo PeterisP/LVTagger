@@ -31,6 +31,7 @@ public class WordPipe {
 		String token_separator = "\n";
 		boolean json = true;
 		boolean mini_tag = false;
+		boolean vert_input = false;
 		for (int i=0; i<args.length; i++) {
 			if (args[i].equalsIgnoreCase("-tab")) {  // one response line per each query line, tab-separated
 				json = false;
@@ -45,6 +46,23 @@ public class WordPipe {
 				json = false;
 			}
 			if (args[i].equalsIgnoreCase("-stripped")) mini_tag = true; //remove nonlexical attributes
+			if (args[i].equalsIgnoreCase("-vertinput")) vert_input = true; //vertical input format as requested by Milos Jakubicek 2012.11.01
+			
+			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
+				System.out.println("LV morphological tagger");
+				System.out.println("\nInput formats");
+				System.out.println("\tDefault : plain text UTF-8, one sentence per line.");
+				System.out.println("\t-vertinput : one line per token, sentences separated by <s></s>. Any XML-style tags are echoed as-is. \n\t\tNB! sentences are retokenized, the number of tokens may be different.");
+				System.out.println("\nOutput formats");
+				System.out.println("\tDefault : JSON. Each sentence is returned as a list of dicts, each dict contains elements 'Word', 'Tag' and 'Lemma'.");
+				System.out.println("\t-tab : one response line for each query line; tab-separated lists of word, tag and lemma.");
+				System.out.println("\t-vert : one response line for each token; tab-separated lists of word, tag and lemma.");
+				System.out.println("\t-moses : one response line for each token; pipe-separated lists of word, tag and lemma.");
+				System.out.println("\nOther options:");
+				System.out.println("\t-stripped : lexical/nonessential parts of the tag are replaced with '-' to reduce sparsity.");
+				System.out.flush();
+				System.exit(0);
+			}
 		}
 				
 		String serializedClassifier = "MorfoCRF/lv-morpho-model.ser.gz"; //FIXME - make it configurable
@@ -53,15 +71,34 @@ public class WordPipe {
 		PrintStream out = new PrintStream(System.out, true, "UTF8");
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in, "UTF8"));
 		
-	    String s;	    
+	    String s;
+	    String sentence = "";
 	    while ((s = in.readLine()) != null && s.length() != 0) {
-	    	List<CoreLabel> doc = LVMorphologyReaderAndWriter.analyzeSentence(s);
-	    	cmm.classify(doc);
-	    	if (json) 
+	    	boolean finished = true; // is sentence finished and ready to analyze
+	    	if (!vert_input) sentence = s;
+	    	else {
+	    		if (s.startsWith("<") && s.length()>1) out.println(s);
+	    		else sentence = sentence + " " + s;
+	    		finished = s.startsWith("</s>");
+	    	}	    	
+	    	if (finished) {
+		    	List<CoreLabel> doc = LVMorphologyReaderAndWriter.analyzeSentence(sentence.trim());
+		    	cmm.classify(doc); // runs the actual morphotagging system
+		    	if (json)  // output format choice
+		    		out.println( analyze( doc));
+		    	else out.println( analyze_separated(doc, field_separator, token_separator, mini_tag));
+		    	out.flush();
+		    	sentence = "";
+	    	}
+	    }
+    	if (vert_input && sentence.length()>0) { //FIXME, not DRY
+	    	List<CoreLabel> doc = LVMorphologyReaderAndWriter.analyzeSentence(sentence);
+	    	cmm.classify(doc); // runs the actual morphotagging system
+	    	if (json)  // output format choice
 	    		out.println( analyze( doc));
 	    	else out.println( analyze_separated(doc, field_separator, token_separator, mini_tag));
 	    	out.flush();
-	    }
+    	}	    
 	}	
 	
 	private static String analyze(List<CoreLabel> tokens) {		
@@ -73,9 +110,9 @@ public class WordPipe {
 			Word analysis = word.get(LVMorphologyAnalysis.class);
 			Wordform maxwf = chooseWordform(analysis, word.getString(AnswerAnnotation.class)); 
 			if (maxwf != null)
-				tokenJSON.add(String.format("{\"Vārds\":\"%s\",\"Marķējums\":\"%s\",\"Pamatforma\":\"%s\"}", JSONValue.escape(token), JSONValue.escape(maxwf.getTag()), JSONValue.escape(maxwf.getValue(AttributeNames.i_Lemma))));
+				tokenJSON.add(String.format("{\"Word\":\"%s\",\"Tag\":\"%s\",\"Lemma\":\"%s\"}", JSONValue.escape(token), JSONValue.escape(maxwf.getTag()), JSONValue.escape(maxwf.getValue(AttributeNames.i_Lemma))));
 			else 
-				tokenJSON.add(String.format("{\"Vārds\":\"%s\",\"Marķējums\":\"-\",\"Pamatforma\":\"%s\"}", JSONValue.escape(token), JSONValue.escape(token)));			
+				tokenJSON.add(String.format("{\"Word\":\"%s\",\"Tag\":\"-\",\"Lemma\":\"%s\"}", JSONValue.escape(token), JSONValue.escape(token)));			
 		}
 		
 		String s = formatJSON(tokenJSON).toString();
