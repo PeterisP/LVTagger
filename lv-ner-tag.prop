@@ -1,0 +1,6 @@
+testFile = test_file.txt
+loadClassifier = lv-ner-model.ser.gz
+inputEncoding = utf-8
+outputEncoding = utf-8
+
+map = word=0,tag=1,lemma=2,answer=3

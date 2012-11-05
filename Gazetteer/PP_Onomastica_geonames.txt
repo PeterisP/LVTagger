@@ -1,0 +1,3505 @@
+LOKACIJA	Abadana
+LOKACIJA	Abakana
+LOKACIJA	Abava
+LOKACIJA	Ābeļi
+LOKACIJA	Aberdīna
+LOKACIJA	Abhāzijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Abidžana
+LOKACIJA	Ablinga
+LOKACIJA	Abudabi
+LOKACIJA	Adelaida
+LOKACIJA	Adena
+LOKACIJA	Adigejas autonomais apgabals
+LOKACIJA	Adirondaku kalni
+LOKACIJA	Adisabeba
+LOKACIJA	Admiralitātes salas
+LOKACIJA	Adrijas jūra
+LOKACIJA	Adžārijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Afganistāna
+LOKACIJA	Āfrika
+LOKACIJA	Aginskas Burjatu autonomais apvidus 
+LOKACIJA	Aglona
+LOKACIJA	Āhene
+LOKACIJA	Aidaho
+LOKACIJA	Aijova
+LOKACIJA	Ainažiabada
+LOKACIJA	Aizbaikāls
+LOKACIJA	Aizkarpati
+LOKACIJA	Aizkarpatu apgawals
+LOKACIJA	Aizkaukāzs
+LOKACIJA	Aizkraukle
+LOKACIJA	Aizpute
+LOKACIJA	Aizvolga
+LOKACIJA	Akmena
+LOKACIJA	Akmene
+LOKACIJA	Akmenes rajons
+LOKACIJA	Akmoļinska
+LOKACIJA	Aknīste
+LOKACIJA	Akra
+LOKACIJA	Aktjubinska
+LOKACIJA	Aktjubinskas apgabals
+LOKACIJA	Akonkagva
+LOKACIJA	Alabama
+LOKACIJA	Alaja kalnu grēda
+LOKACIJA	Ālandu salas
+LOKACIJA	Alatau
+LOKACIJA	Alauksts
+LOKACIJA	Alauša ezers
+LOKACIJA	Albānija
+LOKACIJA	Albānijas Tautas Republika
+LOKACIJA	Aldāna
+LOKACIJA	Aldānas plakankalne
+LOKACIJA	Aleksandrija
+LOKACIJA	Aleksota
+LOKACIJA	Aleutu salas
+LOKACIJA	Alīta
+LOKACIJA	Alītas rajons
+LOKACIJA	Alma-Ata
+LOKACIJA	Alma-Atas apgabals
+LOKACIJA	Aloja
+LOKACIJA	Alpi
+LOKACIJA	Alsa
+LOKACIJA	Alsēdži
+LOKACIJA	Alsunga
+LOKACIJA	Alsviķi
+LOKACIJA	Altaja novads
+LOKACIJA	Altajs
+LOKACIJA	Alūksne
+LOKACIJA	Alūksnes rajons
+LOKACIJA	Alunta
+LOKACIJA	Alžīra
+LOKACIJA	Alžīrija
+LOKACIJA	Alžīrijas Tautas Demokrātiskā Republika
+LOKACIJA	Aļaska
+LOKACIJA	Aļaskas līcis
+LOKACIJA	Aļaskas grēda
+LOKACIJA	Amana
+LOKACIJA	Amata
+LOKACIJA	Amata
+LOKACIJA	Amazone
+LOKACIJA	Amerika
+LOKACIJA	Amerikas Savienotās Valstis
+LOKACIJA	Amsterdama
+LOKACIJA	Amudarja
+LOKACIJA	Amūra
+LOKACIJA	Amūras apgabals
+LOKACIJA	Ammāna
+LOKACIJA	Amsterdama
+LOKACIJA	Amudarja
+LOKACIJA	Amundsena jūra
+LOKACIJA	Amūra
+LOKACIJA	Anadira
+LOKACIJA	Anča
+LOKACIJA	Andalūzija
+LOKACIJA	Andamanu salas
+LOKACIJA	Andi
+LOKACIJA	Andižāna
+LOKACIJA	Andižānas apgabals
+LOKACIJA	Andora
+LOKACIJA	Angara
+LOKACIJA	Angarska
+LOKACIJA	Anglija
+LOKACIJA	Angola
+LOKACIJA	Anīkšči
+LOKACIJA	Anīkšču rajons
+LOKACIJA	Ankara
+LOKACIJA	Antakalne
+LOKACIJA	Antaliepte
+LOKACIJA	Antanava
+LOKACIJA	Antananarivu
+LOKACIJA	Antarktīda
+LOKACIJA	Antarktika
+LOKACIJA	Antiļu salas
+LOKACIJA	Antverpene
+LOKACIJA	Apalači
+LOKACIJA	Apašča
+LOKACIJA	Ape
+LOKACIJA	Apenīni
+LOKACIJA	Apenīnu salas
+LOKACIJA	Apgulbe		       
+LOKACIJA	Apīvardu ezers
+LOKACIJA	Apšuciems
+LOKACIJA	Apvienotā Kamerūnas Republika
+LOKACIJA	Apvienotie Arābu Emirāti
+LOKACIJA	Arābija
+LOKACIJA	Arābijas tuksnesis
+LOKACIJA	Arābijas jūra
+LOKACIJA	Arābijas tuksnesis
+LOKACIJA	Arafuru jūra 
+LOKACIJA	Aragona
+LOKACIJA	Aragvaja
+LOKACIJA	Araksa
+LOKACIJA	Arāla jūra
+LOKACIJA	Ararats
+LOKACIJA	Ardēni
+LOKACIJA	Argentīna
+LOKACIJA	Argentīnas Republika
+LOKACIJA	Arhangeļska
+LOKACIJA	Arhangeļsas apgabals
+LOKACIJA	Arina ezers
+LOKACIJA	Arizona
+LOKACIJA	Arkanzasa
+LOKACIJA	Arkanzasitija
+LOKACIJA	Arktika
+LOKACIJA	Armavira
+LOKACIJA	Ārlingtona
+LOKACIJA	Arma
+LOKACIJA	Armēnija
+LOKACIJA	Armēnijas Padomju Sociālistiskā Republika
+LOKACIJA	Arogala
+LOKACIJA	Artjoma
+LOKACIJA	Artjomonska
+LOKACIJA	Asalni
+LOKACIJA	Asmara
+LOKACIJA	Astrahaņa
+LOKACIJA	astrahaņas apgabals
+LOKACIJA	Astūrija
+LOKACIJA	Asuāna
+LOKACIJA	Asunsjona
+LOKACIJA	ASV
+LOKACIJA	Ašhabada
+LOKACIJA	Atēnas
+LOKACIJA	Atabaska
+LOKACIJA	Atabaskas ezers  
+LOKACIJA	Atēnas
+LOKACIJA	Atlanta
+LOKACIJA	Atlantimjas okeāns
+LOKACIJA	Atlass
+LOKACIJA	Auce
+LOKACIJA	Audriņi
+LOKACIJA	Augsburga
+LOKACIJA	Augstkalne
+LOKACIJA	Augšezers
+LOKACIJA	Augšvolta
+LOKACIJA	Auštaitija
+LOKACIJA	Augšvolta
+LOKACIJA	Augsvoltas Republika
+LOKACIJA	Aukštadvare
+LOKACIJA	Austrālijas savienība
+LOKACIJA	Austrālijas Savienība
+LOKACIJA	Austrālijas Alpi
+LOKACIJA	Austrija
+LOKACIJA	Austrijas Republika
+LOKACIJA	Austrumkazahijas apgabals
+LOKACIJA	Austrumķīnas jūra
+LOKACIJA	Aviļa
+LOKACIJA	Avinjona
+LOKACIJA	Azerbaidžāna
+LOKACIJA	Azerbaidžānas Padomju Sociālistiskā Republika
+LOKACIJA	Āzija
+LOKACIJA	Azoru salas
+LOKACIJA	Azovas jūra
+LOKACIJA	Babelmandeba
+LOKACIJA	Babītes ezers
+LOKACIJA	Babrunga
+LOKACIJA	Babti
+LOKACIJA	Babuškina
+LOKACIJA	Bada stepe
+LOKACIJA	Badanbādene
+LOKACIJA	Bādene-Viortemberga
+LOKACIJA	Bafija Zeme
+LOKACIJA	Bagaslavišķi
+LOKACIJA	Baina zeme
+LOKACIJA	Bagdāde
+LOKACIJA	Bahamu salas
+LOKACIJA	Bahreina
+LOKACIJA	Baikāls
+LOKACIJA	Baireita
+LOKACIJA	Baisogala
+LOKACIJA	Bakingemšira
+LOKACIJA	Baku
+LOKACIJA	Bakūžu kalns
+LOKACIJA	Balašova
+LOKACIJA	Balatons
+LOKACIJA	Balbierišķi
+LOKACIJA	Baldone
+LOKACIJA	Baleāru salas
+LOKACIJA	Balhašs
+LOKACIJA	Bali
+LOKACIJA	Balkāni
+LOKACIJA	Balkānu kalni
+LOKACIJA	Balkānu pussala
+LOKACIJA	Baltās-Baltijas jūras kanāls
+LOKACIJA	Baltā jūra
+LOKACIJA	Baltezers
+LOKACIJA	Baltieji Lakaji
+LOKACIJA	Baltija
+LOKACIJA	Baltijas jūra
+LOKACIJA	Baltimora
+LOKACIJA	Baltkrievija
+LOKACIJA	Baltkrievijas Padomju Sociālistiskā  Republika
+LOKACIJA	Baltoji Anča
+LOKACIJA	Baltoji Voķe
+LOKACIJA	Balvi
+LOKACIJA	Balvu rajons
+LOKACIJA	Bamako
+LOKACIJA	Bandarseribegava
+LOKACIJA	Bandunga
+LOKACIJA	Bandžula
+LOKACIJA	Bangi
+LOKACIJA	Bangkoka
+LOKACIJA	Bangladešas Tautas Republika
+LOKACIJA	Barabas stepe
+LOKACIJA	Baronoviči
+LOKACIJA	Bangladeša
+LOKACIJA	Barbadosa
+LOKACIJA	Barenca jūra
+LOKACIJA	Barnaula
+LOKACIJA	Barselona
+LOKACIJA	Barstīči
+LOKACIJA	Bārta
+LOKACIJA	Bartuva
+LOKACIJA	Baskunčaks
+LOKACIJA	Basra
+LOKACIJA	Basutolenda
+LOKACIJA	Baškīrijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Bataķi
+LOKACIJA	Bata
+LOKACIJA	Batumi
+LOKACIJA	Bauska
+LOKACIJA	Bauskas rajons
+LOKACIJA	Bavārija
+LOKACIJA	Bāzele
+LOKACIJA	Baziloņi
+LOKACIJA	Bebrene
+LOKACIJA	Bebrusi
+LOKACIJA	Bečuanalenda
+LOKACIJA	Bedfordšīra
+LOKACIJA	Beiruta
+LOKACIJA	Belaja
+LOKACIJA	Belfasta
+LOKACIJA	Belgoroda
+LOKACIJA	Belgorodas apgabals
+LOKACIJA	Belgrada
+LOKACIJA	Beliza
+LOKACIJA	Belmanta
+LOKACIJA	Bolojes ezers
+LOKACIJA	Belomorska
+LOKACIJA	Belostoka
+LOKACIJA	Belova
+LOKACIJA	Belovežas gārša
+LOKACIJA	Belinskauzena jūra
+LOKACIJA	Beliza
+LOKACIJA	Belts
+LOKACIJA	Beludžistāna
+LOKACIJA	Beļģija
+LOKACIJA	Beļģijas Karaliste
+LOKACIJA	Benaresa
+LOKACIJA	Benderi
+LOKACIJA	Bēne
+LOKACIJA	Bengālija
+LOKACIJA	Bengālijas līcis
+LOKACIJA	Bengazi
+LOKACIJA	Benina
+LOKACIJA	Beninas Tautas Republika
+LOKACIJA	Berezina
+LOKACIJA	Berezņiki
+LOKACIJA	Bergena
+LOKACIJA	Berhtesgādena
+LOKACIJA	Beringa jūra
+LOKACIJA	Beringa šaurums
+LOKACIJA	Beringa salas                   
+LOKACIJA	Bērkšīra
+LOKACIJA	Berlīne
+LOKACIJA	Bermuda salas
+LOKACIJA	Berne
+LOKACIJA	Bērze
+LOKACIJA	Bērzils        
+LOKACIJA	Besarābija
+LOKACIJA	Betīgala
+LOKACIJA	Bijska
+LOKACIJA	Bikini
+LOKACIJA	Bikini atols
+LOKACIJA	Bilbao
+LOKACIJA	Bīriņi
+LOKACIJA	Birma
+LOKACIJA	Birmas Savienība
+LOKACIJA	Birmingema
+LOKACIJA	Birodidžāna
+LOKACIJA	Birštona
+LOKACIJA	Birvēta
+LOKACIJA	Birži
+LOKACIJA	Biržuļa ezers
+LOKACIJA	Biržu rajons
+LOKACIJA	Bisau
+LOKACIJA	Biskajas jūra
+LOKACIJA	Blagoveščenska
+LOKACIJA	Bismarka arhipelāgs                      
+LOKACIJA	Bizerta
+LOKACIJA	Blekpūla
+LOKACIJA	Bobrujska
+LOKACIJA	Bodenes ezers
+LOKACIJA	Bofora jūra
+LOKACIJA	Bogota
+LOKACIJA	Bohēmija
+LOKACIJA	Bolderāja
+LOKACIJA	Bolīvija
+LOKACIJA	Boloņa
+LOKACIJA	Bombeja
+LOKACIJA	Bonna
+LOKACIJA	Bordo
+LOKACIJA	Borneo
+LOKACIJA	Bornholma
+LOKACIJA	Bornmuta
+LOKACIJA	Bosfors
+LOKACIJA	Bosnija un Hercegovina
+LOKACIJA	Bostona
+LOKACIJA	Botnijas līcis
+LOKACIJA	Botsvāna
+LOKACIJA	Botsvanas Republika
+LOKACIJA	Braitona
+LOKACIJA	Bramaputra
+LOKACIJA	Brandenburga
+LOKACIJA	Brasla
+LOKACIJA	Bratislava
+LOKACIJA	Bratska
+LOKACIJA	Braunšveiga
+LOKACIJA	Brazavila
+LOKACIJA	Brazīlija
+LOKACIJA	Brazīlijas Federatīvā Republika
+LOKACIJA	Brazilja
+LOKACIJA	Bredforda
+LOKACIJA	Brēmene
+LOKACIJA	Brenners
+LOKACIJA	Breslava
+LOKACIJA	Bresta
+LOKACIJA	Brestas apgabals
+LOKACIJA	Bretaņa
+LOKACIJA	Bridžporta
+LOKACIJA	Bridžtauna
+LOKACIJA	Brige
+LOKACIJA	Brisbena
+LOKACIJA	Brisele
+LOKACIJA	Britānija
+LOKACIJA	Bristole
+LOKACIJA	Britu salas
+LOKACIJA	Brjanska
+LOKACIJA	Brjanskas apgabals
+LOKACIJA	Brno
+LOKACIJA	Brocēni
+LOKACIJA	Bromli
+LOKACIJA	Brronksa
+LOKACIJA	Bruklina
+LOKACIJA	Bruneja
+LOKACIJA	Budapešta
+LOKACIJA	Buenosairesa
+LOKACIJA	Bufalo
+LOKACIJA	Buga
+LOKACIJA	Buhāra
+LOKACIJA	Buhāras apgabals
+LOKACIJA	Bukareste
+LOKACIJA	Bukovīna
+LOKACIJA	Bulavaja
+LOKACIJA	Bulgārija
+LOKACIJA	Bulgārijas Tautas Republika
+LOKACIJA	Buloņa
+LOKACIJA	Burgundija
+LOKACIJA	Burjatijas Autonomā Padomju Sociālistiskā Republtka
+LOKACIJA	Burtnieki
+LOKACIJA	Burtnieku ezers
+LOKACIJA	Burundi
+LOKACIJA	Burundi Republika
+LOKACIJA	Butana
+LOKACIJA	Bužumbura
+LOKACIJA	Carnikava
+LOKACIJA	Ceilona
+LOKACIJA	Celebesa
+LOKACIJA	Celebesas jūra
+LOKACIJA	Ceļinograda
+LOKACIJA	Ceļinogradas apgabals
+LOKACIJA	Centrālā Amerika
+LOKACIJA	Centrālāfrikas Impērija
+LOKACIJA	Centrālāfrikas Republika
+LOKACIJA	Centrālamerika
+LOKACIJA	Cēsis
+LOKACIJA	Chinvali
+LOKACIJA	Ciecere
+LOKACIJA	Ciklādas
+LOKACIJA	Cincinati
+LOKACIJA	Cindao
+LOKACIJA	Cīrava
+LOKACIJA	Cīrihe
+LOKACIJA	Ciriša ezers
+LOKACIJA	Cirmas ezers
+LOKACIJA	Cusima
+LOKACIJA	Cusimas šaurums
+LOKACIJA	Čada
+LOKACIJA	Čadas Republika
+LOKACIJA	Čada ezers
+LOKACIJA	Čardžova
+LOKACIJA	Čardžovas apgabals
+LOKACIJA	Čeboksari
+LOKACIJA	Čečenijas-Ingušijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Čehija
+LOKACIJA	Čehoslovakija
+LOKACIJA	Čehoslovakijas Sociālistiskā Republika
+LOKACIJA	Čeķišķe
+LOKACIJA	Čeļābinska
+LOKACIJA	Čeļābinskas apgabals
+LOKACIJA	Čekuškina rags
+LOKACIJA	Čenstohova
+LOKACIJA	Čeremhova
+LOKACIJA	Čerkasi
+LOKACIJA	Čerkasu apgabals
+LOKACIJA	Čerkeska
+LOKACIJA	Černovci
+LOKACIJA	Černovcu apgabals
+LOKACIJA	Čerņigova
+LOKACIJA	Čerņigovas apgabals
+LOKACIJA	Čestera
+LOKACIJA	Čečīra
+LOKACIJA	Četema
+LOKACIJA	Čečira ezers
+LOKACIJA	Čikāga
+LOKACIJA	Čīle
+LOKACIJA	Šimkenta
+LOKACIJA	Šimkentas apgabals
+LOKACIJA	Čoibalsana
+LOKACIJA	Džomolungma
+LOKACIJA	Čukču jūra
+LOKACIJA	Čukču nacionālais apvidus
+LOKACIJA	Čukču pussala
+LOKACIJA	Čulima
+LOKACIJA	Čuncina
+LOKACIJA	Čusova
+LOKACIJA	Čuvašija
+LOKACIJA	Čuvušijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Dabiķene
+LOKACIJA	Dabši
+LOKACIJA	Dadli
+LOKACIJA	Dagda
+LOKACIJA	Dagdas ezers
+LOKACIJA	Dagestāna
+LOKACIJA	Dagestānas Autonomā Padomju Sociālistikā Republika
+LOKACIJA	Daivana
+LOKACIJA	Daka
+LOKACIJA	Dakāra
+LOKACIJA	Dalasa
+LOKACIJA	Dalmācija
+LOKACIJA	Daļņija
+LOKACIJA	Damaska
+LOKACIJA	Danciga
+LOKACIJA	Dandi
+LOKACIJA	Dane
+LOKACIJA	Dānija
+LOKACIJA	Dānijas Karaliste
+LOKACIJA	Daņģe
+LOKACIJA	Darba
+LOKACIJA	Darbēni
+LOKACIJA	Dārbišīra
+LOKACIJA	Dardaneļi
+LOKACIJA	Darema
+LOKACIJA	Daresalama 
+LOKACIJA	Dārlinga
+LOKACIJA	Dārsūnišķi
+LOKACIJA	Daudzese
+LOKACIJA	Dārtmuta
+LOKACIJA	Daugava
+LOKACIJA	Daugavpils
+LOKACIJA	Daugavpils rajons
+LOKACIJA	Daugi
+LOKACIJA	Daugu ezers
+LOKACIJA	Dauģīvene
+LOKACIJA	Davosa
+LOKACIJA	Debeiķi
+LOKACIJA	Debesbraukšanas sala
+LOKACIJA	Debrecene
+LOKACIJA	Deguči
+LOKACIJA	Delavēra
+LOKACIJA	Deli
+LOKACIJA	Deltuva
+LOKACIJA	Dembava
+LOKACIJA	Demoina
+LOKACIJA	Denkerka
+LOKACIJA	Denvera
+LOKACIJA	Derbišira
+LOKACIJA	Desna
+LOKACIJA	Detroita
+LOKACIJA	Devona
+LOKACIJA	Dežņova rags
+LOKACIJA	Didīsis Raists
+LOKACIJA	Didīsis Sauris
+LOKACIJA	Didvīži
+LOKACIJA	Dienvidāfrikas Republika
+LOKACIJA	Dienvidamerika
+LOKACIJA	Dienvidaustrālija
+LOKACIJA	Dienviddakota
+LOKACIJA	Dienvidkarolīna
+LOKACIJA	Dienvidkazahijas apgabals
+LOKACIJA	Dienvidķīnas jūra
+LOKACIJA	Dienvidorkneju salas
+LOKACIJA	Dienvidosetijas autonomais apgabals
+LOKACIJA	Dienvidrietumu Āfrika
+LOKACIJA	Dienvidrodēzija
+LOKACIJA	Dienvidslāvija
+LOKACIJA	Dienvidslāvijas Sociālistiskā Federatīvā Republika
+LOKACIJA	Dienvidu Buga
+LOKACIJA	Dienvidu Setlendas salas
+LOKACIJA	Dievenišķes
+LOKACIJA	Dievītis
+LOKACIJA	Dikļi
+LOKACIJA	Dimitrovgrada
+LOKACIJA	Dināra Alpi
+LOKACIJA	Dinkersa
+LOKACIJA	Dili
+LOKACIJA	Dīsburga
+LOKACIJA	Diseldorfa
+LOKACIJA	Dīsna
+LOKACIJA	Dīsnīkšča ezers
+LOKACIJA	Dīsnu ezers
+LOKACIJA	Dižona
+LOKACIJA	Djepa
+LOKACIJA	Dņepra
+LOKACIJA	Dnepras -Bugas kanāls
+LOKACIJA	Dņeprodzeržinska
+LOKACIJA	Dņepropetrovska
+LOKACIJA	Dņepropetrovskas apgabals
+LOKACIJA	Dņestra
+LOKACIJA	Dobele
+LOKACIJA	Dobeles apgabals
+LOKACIJA	Dobrudža
+LOKACIJA	Dodekanēzu salas
+LOKACIJA	Doles sala
+LOKACIJA	Dodoma
+LOKACIJA	Doha
+LOKACIJA	Dominika
+LOKACIJA	Dominikas Republika
+LOKACIJA	Dona
+LOKACIJA	Donava
+LOKACIJA	Donbass
+LOKACIJA	Doņeca
+LOKACIJA	Doneckas skrausts
+LOKACIJA	Doņecka
+LOKACIJA	Doņeckas apgabals
+LOKACIJA	Donegolas līcis
+LOKACIJA	Dorseta
+LOKACIJA	Dotmunda
+LOKACIJA	Dortmunda
+LOKACIJA	Dortmunde
+LOKACIJA	Dovine
+LOKACIJA	Drabeši
+LOKACIJA	Drakonu kalni
+LOKACIJA	Dreiliņi
+LOKACIJA	Dreika šaurums
+LOKACIJA	Drēzdene
+LOKACIJA	Dridža ezers
+LOKACIJA	Drobiča
+LOKACIJA	Drogovičas apgabals
+LOKACIJA	Drūkša
+LOKACIJA	Drūkšu ezers
+LOKACIJA	Druskininki
+LOKACIJA	Drusti
+LOKACIJA	Druviena
+LOKACIJA	Dubiņģi
+LOKACIJA	Dubiņģu ezers
+LOKACIJA	Dubīsa
+LOKACIJA	Dublina
+LOKACIJA	Dubulti
+LOKACIJA	Durbana
+LOKACIJA	Durbe
+LOKACIJA	Durbes ezers
+LOKACIJA	Dūri
+LOKACIJA	Dusa
+LOKACIJA	Dūseiķi
+LOKACIJA	Dusetas
+LOKACIJA	Dusetas ezers
+LOKACIJA	Dušanbe
+LOKACIJA	Duvra
+LOKACIJA	Dviete
+LOKACIJA	Dvina
+LOKACIJA	Dviraģa ezers
+LOKACIJA	Dzeltenā jūra
+LOKACIJA	Dzelzava
+LOKACIJA	Dzeņi
+LOKACIJA	Dzērbene
+LOKACIJA	Dzeržinska
+LOKACIJA	Dzintari
+LOKACIJA	Džaipūra
+LOKACIJA	Džakarta
+LOKACIJA	Džalalabada
+LOKACIJA	Džambura
+LOKACIJA	Džambulas apgabals
+LOKACIJA	Džeksonvila 
+LOKACIJA	Dženova
+LOKACIJA	Dženovas jūra
+LOKACIJA	Džersisitija
+LOKACIJA	Džibuti
+LOKACIJA	Džida
+LOKACIJA	Džokjakarta
+LOKACIJA	Džomolungma
+LOKACIJA	Džordžija
+LOKACIJA	Džukste
+LOKACIJA	Džungārija
+LOKACIJA	Džordžtauna
+LOKACIJA	Eberdīna
+LOKACIJA	Ebreju autonomais apgabals         
+LOKACIJA	Ebro
+LOKACIJA	Edinburga
+LOKACIJA	Ēdole
+LOKACIJA	Egejas jūra
+LOKACIJA	Eglaine
+LOKACIJA	Ēģipte
+LOKACIJA	Ēģiptes Arābu Republika
+LOKACIJA	Eibeja
+LOKACIJA	Eifrata
+LOKACIJA	Eipatorija
+LOKACIJA	Eirāzija
+LOKACIJA	Eire
+LOKACIJA	Eira ezers
+LOKACIJA	Eiropa
+LOKACIJA	Eišiškes
+LOKACIJA	Eivona
+LOKACIJA	Ekvadora
+LOKACIJA	Ekvatoriālās Gvinejas Republika
+LOKACIJA	Ekvatoriālā Gvineja
+LOKACIJA	Ēlande
+LOKACIJA	Elba
+LOKACIJA	Elbe
+LOKACIJA	Elbruss
+LOKACIJA	Elbrusa kalni
+LOKACIJA	Eleja
+LOKACIJA	Elektrēni
+LOKACIJA	Elista
+LOKACIJA	Elizabetvila
+LOKACIJA	Eltons
+LOKACIJA	Elzasa
+LOKACIJA	Emba
+LOKACIJA	Emburga
+LOKACIJA	Endriejava
+LOKACIJA	Engelsa
+LOKACIJA	Engure
+LOKACIJA	Engures ezers
+LOKACIJA	Entebe
+LOKACIJA	Epsoma
+LOKACIJA	Ēresuns
+LOKACIJA	Erevāna
+LOKACIJA	Erfurte
+LOKACIJA	Ēgrļi
+LOKACIJA	Ērģeme
+LOKACIJA	Eri ezers
+LOKACIJA	Eritreja
+LOKACIJA	Erē Rijada
+LOKACIJA	Erzvēta ezers
+LOKACIJA	Eržvilka
+LOKACIJA	Eseksa
+LOKACIJA	Esene
+LOKACIJA	Esentuki
+LOKACIJA	Eskota
+LOKACIJA	Etiopija
+LOKACIJA	Etna
+LOKACIJA	Ēvele
+LOKACIJA	Evenku autonomais apvidus
+LOKACIJA	Evenku nacionālais apvidus
+LOKACIJA	Everests
+LOKACIJA	Evija
+LOKACIJA	Ezere
+LOKACIJA	Ezernieki
+LOKACIJA	Ēžerēle
+LOKACIJA	Ežezers
+LOKACIJA	Faifa
+LOKACIJA	Fareru salas
+LOKACIJA	Feimaņi
+LOKACIJA	Feimaņu ezers
+LOKACIJA	Feliciānova
+LOKACIJA	Feodosija
+LOKACIJA	Fērbenksa
+LOKACIJA	Fergāna
+LOKACIJA	Fergānas apgabals
+LOKACIJA	Fermenta
+LOKACIJA	Fesa
+LOKACIJA	Fidži
+LOKACIJA	Fidži salas
+LOKACIJA	Filipīnas
+LOKACIJA	Filipīnu Republika
+LOKACIJA	Filipīnu salas       
+LOKACIJA	Fīna
+LOKACIJA	Flandrija
+LOKACIJA	Flensburga
+LOKACIJA	Florence
+LOKACIJA	Florida
+LOKACIJA	Floridas pussala
+LOKACIJA	Floridas šaurums
+LOKACIJA	Folklenda salas
+LOKACIJA	Folkstona
+LOKACIJA	Formoza
+LOKACIJA	Fortlami
+LOKACIJA	Folrivera
+LOKACIJA	Fordefransa
+LOKACIJA	Francijas Republika
+LOKACIJA	Francija
+LOKACIJA	Franča Jozefa Zeme
+LOKACIJA	Frankfurte pie Mainas
+LOKACIJA	Frankfurte pie Oderas
+LOKACIJA	Frītauna
+LOKACIJA	Frīzlande
+LOKACIJA	Frīzu salas
+LOKACIJA	Frunze
+LOKACIJA	Frunze
+LOKACIJA	Fudzi kalns
+LOKACIJA	Fudzijama
+LOKACIJA	Fulda
+LOKACIJA	Furka
+LOKACIJA	Gabona
+LOKACIJA	Gabonas līcis
+LOKACIJA	Gabonas Republika
+LOKACIJA	Gaborone
+LOKACIJA	Gagra
+LOKACIJA	Gaigalava
+LOKACIJA	Gajana
+LOKACIJA	Galapagu salas
+LOKACIJA	Gaiļi
+LOKACIJA	Gaiziņkalns, Gaiziņš
+LOKACIJA	Gajana
+LOKACIJA	Gajanas Republika
+LOKACIJA	Galapagu salas
+LOKACIJA	Galipole
+LOKACIJA	Galējie Ziemeļi
+LOKACIJA	Galēni
+LOKACIJA	Galgauska
+LOKACIJA	Galīcija
+LOKACIJA	Galipole
+LOKACIJA	Galonu ezers
+LOKACIJA	Galoņa ezers
+LOKACIJA	Galves ezers
+LOKACIJA	Gambija
+LOKACIJA	Gana
+LOKACIJA	Ganas Republika
+LOKACIJA	Ganga
+LOKACIJA	Garda ezers
+LOKACIJA	Gargždi
+LOKACIJA	Garkalne
+LOKACIJA	Garļava
+LOKACIJA	Garonna
+LOKACIJA	Garoza
+LOKACIJA	Gauja
+LOKACIJA	Gaujiena
+LOKACIJA	Gaure
+LOKACIJA	Gdanska
+LOKACIJA	Gdiņa
+LOKACIJA	Gēteborga
+LOKACIJA	Getisberga
+LOKACIJA	Gibraltāra šaurums
+LOKACIJA	Glazgova
+LOKACIJA	Gibraltārs
+LOKACIJA	Gilberta salas
+LOKACIJA	Glāzgova
+LOKACIJA	Glosteršīra
+LOKACIJA	Goa
+LOKACIJA	Gobi
+LOKACIJA	Golfa straume
+LOKACIJA	Gomeļa
+LOKACIJA	Gomeļas apgabals
+LOKACIJA	Gori
+LOKACIJA	Gorkija
+LOKACIJA	Gorkijas apgabals
+LOKACIJA	Gorlovska
+LOKACIJA	Gornoaltaiska
+LOKACIJA	Gostiņa
+LOKACIJA	Gothoba
+LOKACIJA	Gotlande
+LOKACIJA	Gotvaldova
+LOKACIJA	Grāca
+LOKACIJA	Gramzda
+LOKACIJA	Granāda
+LOKACIJA	Grančako
+LOKACIJA	Grašī
+LOKACIJA	Greitbērleiks
+LOKACIJA	Greitleiki
+LOKACIJA	Greitsleivleiks
+LOKACIJA	Greiveri
+LOKACIJA	Grenada
+LOKACIJA	Grenlande
+LOKACIJA	Grenlandes jūra
+LOKACIJA	Grenoble
+LOKACIJA	Grieķija
+LOKACIJA	Grieķijas Republika
+LOKACIJA	Griģišķes
+LOKACIJA	Griniča
+LOKACIJA	Griņķišķi
+LOKACIJA	Griškabūda
+LOKACIJA	Grīva
+LOKACIJA	Grobiņa
+LOKACIJA	Grodņa
+LOKACIJA	Grodņas apgabals
+LOKACIJA	Groznija
+LOKACIJA	Grūda
+LOKACIJA	Grundmaņi
+LOKACIJA	Gruzdži
+LOKACIJA	Gruzija
+LOKACIJA	Gruzijas Kara ceļš
+LOKACIJA	Grūzijas Padomju Sociālistiskā Republika
+LOKACIJA	Guama
+LOKACIJA	Gubernija
+LOKACIJA	Gudžūni
+LOKACIJA	Gulbene
+LOKACIJA	Gulbenes rajons
+LOKACIJA	Gurjeva
+LOKACIJA	Gurjevas apgabals
+LOKACIJA	Gushrustaļnija
+LOKACIJA	Gvadalahara 
+LOKACIJA	Gvadalkvivīra
+LOKACIJA	Gvadelupe
+LOKACIJA	Gvadiāna
+LOKACIJA	Gvajāna
+LOKACIJA	Gvajakila
+LOKACIJA	Gvatemala
+LOKACIJA	Gviāna
+LOKACIJA	Gvineja
+LOKACIJA	Gvineja-Bisau
+LOKACIJA	Gvinejas-Bisau Republika
+LOKACIJA	Gvinejas līcis
+LOKACIJA	Gvinejas Republika
+LOKACIJA	Ģente
+LOKACIJA	Ģeļgaudišķi
+LOKACIJA	Ģērmants
+LOKACIJA	Ģiedraiči
+LOKACIJA	Ģiluitis
+LOKACIJA	Ģirkalne
+LOKACIJA	Ģiruļi
+LOKACIJA	Habārovska
+LOKACIJA	Habārovskas novads
+LOKACIJA	Hāga
+LOKACIJA	Haidarabada
+LOKACIJA	Haidparks
+LOKACIJA	Haifa
+LOKACIJA	Haifona
+LOKACIJA	Haiti
+LOKACIJA	Hakasijas autonomais apgabals
+LOKACIJA	Haleba
+LOKACIJA	Halifaksa
+LOKACIJA	Halla
+LOKACIJA	Halle
+LOKACIJA	Hambersaida
+LOKACIJA	Hamburga
+LOKACIJA	Hamiltona
+LOKACIJA	Handžova
+LOKACIJA	Haņkova
+LOKACIJA	Hanoja
+LOKACIJA	Hannovere
+LOKACIJA	Hanovera
+LOKACIJA	Hantimansijska
+LOKACIJA	Hantu-Mansu nacionālais apvidus
+LOKACIJA	Hanoja
+LOKACIJA	Harbina
+LOKACIJA	Harcs
+LOKACIJA	Harkova
+LOKACIJA	Harkovas apgabals
+LOKACIJA	Hārlema
+LOKACIJA	Hardfordšīra
+LOKACIJA	Hartuma
+LOKACIJA	Hārvela
+LOKACIJA	Havaja
+LOKACIJA	Havajas
+LOKACIJA	Havajas salas
+LOKACIJA	Havanna
+LOKACIJA	Havra
+LOKACIJA	Hebridu salas
+LOKACIJA	Heidelberga
+LOKACIJA	Heistingsa
+LOKACIJA	Hekla
+LOKACIJA	Helgolande
+LOKACIJA	Helsinki
+LOKACIJA	Hempšīra
+LOKACIJA	Hercogovina
+LOKACIJA	Hereforda un Vustera
+LOKACIJA	Heridža
+LOKACIJA	Herova
+LOKACIJA	Hersona
+LOKACIJA	Hersonas apgabals
+LOKACIJA	Hibīni
+LOKACIJA	Hija
+LOKACIJA	Himalaji
+LOKACIJA	Hindukušs
+LOKACIJA	Hīumā
+LOKACIJA	Hirosima
+LOKACIJA	Hjūstona
+LOKACIJA	Hmeļnicka
+LOKACIJA	Hmeļnicks apgabals
+LOKACIJA	Hokaido
+LOKACIJA	Holande
+LOKACIJA	Holivuda
+LOKACIJA	Hondurasa
+LOKACIJA	Honiara
+LOKACIJA	Honkonga
+LOKACIJA	Honolulu
+LOKACIJA	Honsjū
+LOKACIJA	Hopjora
+LOKACIJA	Horezmas apgabals
+LOKACIJA	Hornas rags
+LOKACIJA	Horvātija
+LOKACIJA	Hošimira
+LOKACIJA	Hauaihe
+LOKACIJA	Huanhe
+LOKACIJA	Hudzona
+LOKACIJA	Hudzona līcis
+LOKACIJA	Hūrons
+LOKACIJA	Ibērijas pussala
+LOKACIJA	Iecava
+LOKACIJA	Ieriķi
+LOKACIJA	Igarka
+LOKACIJA	Igaunija
+LOKACIJA	Igauknijas Padomju Sociālistiskā Republika
+LOKACIJA	Igaunijas Republika
+LOKACIJA	Ignalina
+LOKACIJA	Ignalinas rajons
+LOKACIJA	Ikšķile
+LOKACIJA	Ilaķi
+LOKACIJA	Ili
+LOKACIJA	Ilima
+LOKACIJA	Ilinoisa
+LOKACIJA	Ilmenis
+LOKACIJA	Ilūkste
+LOKACIJA	Ilzas ezers
+LOKACIJA	Iļģis
+LOKACIJA	Imula
+LOKACIJA	Inčona
+LOKACIJA	Inčukalns
+LOKACIJA	Inda
+LOKACIJA	Indiāna
+LOKACIJA	Idianapolisa
+LOKACIJA	Indija
+LOKACIJA	Indijas okeāns
+LOKACIJA	Indijas Republika
+LOKACIJA	Indoķīna
+LOKACIJA	Indonēzija
+LOKACIJA	Indonēzijas Republika
+LOKACIJA	Indostāna
+LOKACIJA	Indra
+LOKACIJA	Indraji
+LOKACIJA	Indrāni
+LOKACIJA	Inesis
+LOKACIJA	Inna
+LOKACIJA	Insburga
+LOKACIJA	Insbruka
+LOKACIJA	Inturķe
+LOKACIJA	Invernesa
+LOKACIJA	Ipsviča
+LOKACIJA	Iraka
+LOKACIJA	Iraks Republika
+LOKACIJA	Irāna
+LOKACIJA	Īrija
+LOKACIJA	Īrijas Republika
+LOKACIJA	Īrijas jūra
+LOKACIJA	Irkutska
+LOKACIJA	Irlava
+LOKACIJA	Irtiša
+LOKACIJA	Isik-ķuls
+LOKACIJA	Isfahana
+LOKACIJA	Isikuls
+LOKACIJA	Islamabada
+LOKACIJA	Islande
+LOKACIJA	Īslande
+LOKACIJA	Īslīce
+LOKACIJA	Islingtona
+LOKACIJA	Īstenda
+LOKACIJA	Īstlotjana
+LOKACIJA	Īstsaseka
+LOKACIJA	Īstra
+LOKACIJA	Itālija
+LOKACIJA	Itālijas Republika
+LOKACIJA	Ītona
+LOKACIJA	Ivanofrankovska
+LOKACIJA	Ivanofrankovskas apgabals
+LOKACIJA	Ivanova
+LOKACIJA	Ivanovas apgabasl
+LOKACIJA	Izmaira
+LOKACIJA	Izmira
+LOKACIJA	Izraēla
+LOKACIJA	Izraēlas Valsts
+LOKACIJA	Izvalga
+LOKACIJA	Iževska
+LOKACIJA	Jafa
+LOKACIJA	Jakutija
+LOKACIJA	Jakutijas AutonomāPadomju Sociālistiskā Republika
+LOKACIJA	Jakutska
+LOKACIJA	Jalta
+LOKACIJA	Jamaika
+LOKACIJA	Jamala
+LOKACIJA	Jamalas Ņencu nacionālais apvidus
+LOKACIJA	Jana
+LOKACIJA	Jandzi
+LOKACIJA	JangoraJapāna
+LOKACIJA	Janopole
+LOKACIJA	Jāņamuiža
+LOKACIJA	Japāna
+LOKACIJA	Japānas salas
+LOKACIJA	Japāņu jūra
+LOKACIJA	Jara
+LOKACIJA	Jārmuta
+LOKACIJA	Jaroslavļa
+LOKACIJA	Jaroslavļas apgabals
+LOKACIJA	Jasi
+LOKACIJA	Jašūni
+LOKACIJA	Jaunāmuiža
+LOKACIJA	Jaunciems
+LOKACIJA	Jaunde
+LOKACIJA	Jaungulbene
+LOKACIJA	Jaungvineja
+LOKACIJA	Jaungvinejas jūra
+LOKACIJA	Jaunhebridu salas
+LOKACIJA	Jaunjelgava
+LOKACIJA	Jaunkaledonija
+LOKACIJA	Jaunkalsnava  
+LOKACIJA	Jaunorleāna
+LOKACIJA	Jauno zemju novads
+LOKACIJA	Jaunpagasts
+LOKACIJA	Jaunpiebalga
+LOKACIJA	Jaunpils
+LOKACIJA	Jaunzēlande
+LOKACIJA	Java
+LOKACIJA	Jeiska
+LOKACIJA	Jēkabpils
+LOKACIJA	Jēkabpils rajons
+LOKACIJA	Jelgava
+LOKACIJA	Jelgavas rajons
+LOKACIJA	Jeloustonas nacionālais parks
+LOKACIJA	Jemena
+LOKACIJA	Jemenas Arābu Republika
+LOKACIJA	Jemenas Tautas Demokrātiskā Republika
+LOKACIJA	Jeņiseiska
+LOKACIJA	Jēna
+LOKACIJA	Jeņiseja
+LOKACIJA	Jersika
+LOKACIJA	Jeruzale
+LOKACIJA	Jeruzaleme
+LOKACIJA	Jiesa
+LOKACIJA	Jiezna
+LOKACIJA	Jitlande
+LOKACIJA	Joda
+LOKACIJA	Jodieji Lakari
+LOKACIJA	Jodkrante
+LOKACIJA	Jodšiļi
+LOKACIJA	Jodupe
+LOKACIJA	Jodža ezers
+LOKACIJA	Johannesburga
+LOKACIJA	Jokohoma
+LOKACIJA	Jonava
+LOKACIJA	Jonavas rajons
+LOKACIJA	Jonijas jūra
+LOKACIJA	Jonijas salas
+LOKACIJA	Jonišķēle
+LOKACIJA	Jonišķi
+LOKACIJA	Jonišķu rajons
+LOKACIJA	Jordāna
+LOKACIJA	Jordānas Hašimītu Karaliste
+LOKACIJA	Jorkšira
+LOKACIJA	Joškarota
+LOKACIJA	Josta
+LOKACIJA	Josvaiņi
+LOKACIJA	Jotija
+LOKACIJA	Jugla 
+LOKACIJA	Juglasciems
+LOKACIJA	Juglas ezers
+LOKACIJA	Jukatāna
+LOKACIJA	Jūkona
+LOKACIJA	Jumprava
+LOKACIJA	Jura
+LOKACIJA	Jūra
+LOKACIJA	Jurbarka
+LOKACIJA	Jūre
+LOKACIJA	Jūrkalne
+LOKACIJA	Jūrmala
+LOKACIJA	Jūrmalciems
+LOKACIJA	Juta
+LOKACIJA	Jūžinti
+LOKACIJA	Južnosahalinska
+LOKACIJA	Kabardas-Balkārijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Kabile
+LOKACIJA	Kabula
+LOKACIJA	Kačerģine
+LOKACIJA	Kačori
+LOKACIJA	Kadisa
+LOKACIJA	Kahovska
+LOKACIJA	Kaibala
+LOKACIJA	Kaira
+LOKACIJA	Kaišadore
+LOKACIJA	Kaišadores rajons
+LOKACIJA	Kajenna
+LOKACIJA	Kaķenieki
+LOKACIJA	Kalabrija
+LOKACIJA	Kalahari
+LOKACIJA	Kalē
+LOKACIJA	Kalifornija
+LOKACIJA	Kalifornijas līcis
+LOKACIJA	Kalimantāna
+LOKACIJA	Kaljao
+LOKACIJA	Kalkuta
+LOKACIJA	Kalmikijas Autonomā Padomju Srciālistiskā Republika
+LOKACIJA	Kalnciems
+LOKACIJA	Kalngale
+LOKACIJA	Kalnu-Altaja autonomais apgabals
+LOKACIJA	Kalnu-Badahšaras autonomais apgabals
+LOKACIJA	Kalnu-Karabahas autonomais apgabals
+LOKACIJA	Kaltanēni
+LOKACIJA	Kaltene
+LOKACIJA	Kaltinēni
+LOKACIJA	Kaluga
+LOKACIJA	Kalugas apgabals
+LOKACIJA	Kalupe
+LOKACIJA	Kalvarija
+LOKACIJA	Kalveļi
+LOKACIJA	Kalvene
+LOKACIJA	Kalvju ezers
+LOKACIJA	Kaļiņina
+LOKACIJA	Kaļiņinas apgabals
+LOKACIJA	Kaļiņingrada
+LOKACIJA	Kaļiņingradas apgabals
+LOKACIJA	Kama
+LOKACIJA	Kamaji
+LOKACIJA	Kambodža
+LOKACIJA	Kambija
+LOKACIJA	Kamčatka
+LOKACIJA	Kamčatkas apgabals
+LOKACIJA	Kameņecpodoļska
+LOKACIJA	Kamerūna
+LOKACIJA	Kamoja
+LOKACIJA	Kampis
+LOKACIJA	Kampala
+LOKACIJA	Kampučija
+LOKACIJA	Kanāda
+LOKACIJA	Kanāriju salas
+LOKACIJA	Kanaveragas rags
+LOKACIJA	Kanbera
+LOKACIJA	Kandava
+LOKACIJA	Kangari
+LOKACIJA	Kannas
+LOKACIJA	Kantabrijas klni
+LOKACIJA	Kantona
+LOKACIJA	Kanzasa
+LOKACIJA	Kanzassitija
+LOKACIJA	Kaņiera ezers
+LOKACIJA	Kaņina pussalas
+LOKACIJA	Kapčamieste
+LOKACIJA	Kāpa
+LOKACIJA	Kapri
+LOKACIJA	Kapsuka
+LOKACIJA	Kapsukas rajons
+LOKACIJA	Kapzeme
+LOKACIJA	Karačajas-Čerkesijas Padomju Sociālistiskā Republika
+LOKACIJA	Karačaju-Čerkesu autonomais apgabals
+LOKACIJA	Karači
+LOKACIJA	Karaganda
+LOKACIJA	Karagandas apgabals
+LOKACIJA	Karakalpaki
+LOKACIJA	Karakalpakijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Karakasa
+LOKACIJA	Karakorums
+LOKACIJA	Karas jūra
+LOKACIJA	Karakums
+LOKACIJA	Kārdifa
+LOKACIJA	Karēlijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Karību jūra
+LOKACIJA	Kārklēni
+LOKACIJA	Kārķi
+LOKACIJA	Karmarksštate
+LOKACIJA	Karlaila
+LOKACIJA	Karlovi Vari
+LOKACIJA	Karlsrūe
+LOKACIJA	Karmēlava
+LOKACIJA	Karmeliti
+LOKACIJA	Kārniņi
+LOKACIJA	Karolinišķes
+LOKACIJA	Karolīnu salas
+LOKACIJA	Karpati
+LOKACIJA	Karpentārija līcis
+LOKACIJA	Kārsava
+LOKACIJA	Karši
+LOKACIJA	Kartena
+LOKACIJA	Karva
+LOKACIJA	Kasablanka
+LOKACIJA	Kaskādu kalni
+LOKACIJA	Kaspijas jūra
+LOKACIJA	Kašmira
+LOKACIJA	Katalonija
+LOKACIJA	Katanga
+LOKACIJA	Katara
+LOKACIJA	Kategats
+LOKACIJA	Katīči
+LOKACIJA	Katlakalns
+LOKACIJA	Katmandu
+LOKACIJA	Katovice
+LOKACIJA	Katra
+LOKACIJA	Katvari
+LOKACIJA	Kaugurciems
+LOKACIJA	Kaukāza kalni
+LOKACIJA	Kaunata
+LOKACIJA	Kauņa
+LOKACIJA	Kauņas jūra
+LOKACIJA	Kauņas rajons	
+LOKACIJA	Kavarska
+LOKACIJA	Kazahija  
+LOKACIJA	Kazahijas Padomju Sociālistiskā Republika
+LOKACIJA	Kazahstāna
+LOKACIJA	Kazaņa
+LOKACIJA	Kazbeks
+LOKACIJA	Kazdanga
+LOKACIJA	Kazlu Rūda
+LOKACIJA	Kefalēnija
+LOKACIJA	Keiptauna
+LOKACIJA	Keitnesa
+LOKACIJA	Kembridža
+LOKACIJA	Kembridžšīra
+LOKACIJA	Kemerova
+LOKACIJA	Kemerovas apgabals
+LOKACIJA	Kenija
+LOKACIJA	Kenijas Republika    
+LOKACIJA	Kēnigsberga
+LOKACIJA	Kensingtona
+LOKACIJA	Kenta
+LOKACIJA	Kenterberija
+LOKACIJA	Kentukija
+LOKACIJA	Kerča
+LOKACIJA	Kerčas šaurums
+LOKACIJA	iKerčas pussala
+LOKACIJA	Kesonsitija
+LOKACIJA	Kigali
+LOKACIJA	Kijeva
+LOKACIJA	Kijevas apgabals
+LOKACIJA	Kiklādas
+LOKACIJA	Kiklādu salas
+LOKACIJA	Kilimandžāro
+LOKACIJA	Kilkenija
+LOKACIJA	Kingstona
+LOKACIJA	Kinrosa
+LOKACIJA	Kinšasa
+LOKACIJA	Kioto
+LOKACIJA	Kipra
+LOKACIJA	Kipras Republika
+LOKACIJA	Kirasao
+LOKACIJA	Kirenaika
+LOKACIJA	Kirgīzija
+LOKACIJA	Kirgīzijas Padomju Sociālistiskā Republika
+LOKACIJA	Kirova
+LOKACIJA	Kirovobada
+LOKACIJA	Kirovas apgabals
+LOKACIJA	Kirovograda
+LOKACIJA	Kirovogradas apgabals
+LOKACIJA	Kirovska
+LOKACIJA	Kislovodska
+LOKACIJA	Kišiņeva
+LOKACIJA	Kito
+LOKACIJA	Kizila
+LOKACIJA	Kizilkums
+LOKACIJA	Klaida
+LOKACIJA	Klaipēdas rajons
+LOKACIJA	Klaipēda
+LOKACIJA	Klaņģi
+LOKACIJA	Klapkalnciems
+LOKACIJA	Klīkoļi
+LOKACIJA	Klinšu kalni
+LOKACIJA	Klīvlenda
+LOKACIJA	Klondaika
+LOKACIJA	Klovaiņi
+LOKACIJA	Klusais okeāns
+LOKACIJA	Kļazma
+LOKACIJA	Kļina
+LOKACIJA	Kobe
+LOKACIJA	Kolas pussala
+LOKACIJA	Kolgujeva
+LOKACIJA	Kolima
+LOKACIJA	Kolka
+LOKACIJA	Kolkas rags
+LOKACIJA	Kolmāra
+LOKACIJA	Kolombo
+LOKACIJA	Kolomda
+LOKACIJA	Kolorādo
+LOKACIJA	Kolorādospringsa
+LOKACIJA	Kolumbija
+LOKACIJA	Kolumbijas apgabals
+LOKACIJA	Komandora salas
+LOKACIJA	Kombuļi
+LOKACIJA	Komi Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Komi-Permiešu nacionālais apvidus
+LOKACIJA	Komo ezers
+LOKACIJA	Komoru salas
+LOKACIJA	Komsomoļska
+LOKACIJA	Komsomoļska pie Amūras
+LOKACIJA	Konakri
+LOKACIJA	Konektikuta
+LOKACIJA	Kongo
+LOKACIJA	Kongo Tautas Demokrātiskā Republika
+LOKACIJA	Konstanca
+LOKACIJA	Kopenhāgena
+LOKACIJA	Koraļļu jūra
+LOKACIJA	Kordiljeri
+LOKACIJA	Kordova
+LOKACIJA	Koreja 
+LOKACIJA	Korejas Tautas Demokrātiskā Republika
+LOKACIJA	Korejas šaurums
+LOKACIJA	Korfu       
+LOKACIJA	Korģene
+LOKACIJA	Korintas līcis
+LOKACIJA	Korjauku nacionālais apvidus
+LOKACIJA	Kornvola
+LOKACIJA	Korsika
+LOKACIJA	Kostarika
+LOKACIJA	Kostroma
+LOKACIJA	Kostromas apgabals
+LOKACIJA	Klošice
+LOKACIJA	Koventri                     
+LOKACIJA	Kovrova
+LOKACIJA	KPFSR
+LOKACIJA	Krakatau
+LOKACIJA	Krakova
+LOKACIJA	Kraķi
+LOKACIJA	Kramamtorska
+LOKACIJA	Krāslava
+LOKACIJA	Krāslavas rajons
+LOKACIJA	Krasnodara
+LOKACIJA	Krasnodaras novads
+LOKACIJA	Krasnodona
+LOKACIJA	Krasnojarska
+LOKACIJA	Krasnojarskas novads
+LOKACIJA	Krasnokamska
+LOKACIJA	Krasnouraļska
+LOKACIJA	Krasnovodska
+LOKACIJA	Krašti
+LOKACIJA	Krauna
+LOKACIJA	Kražante
+LOKACIJA	Kraži
+LOKACIJA	Krēfelde
+LOKACIJA	Kreķenava
+LOKACIJA	Kremenčuga
+LOKACIJA	Krēta
+LOKACIJA	Kretinga
+LOKACIJA	Kretingas rajons
+LOKACIJA	Kretogna ezers
+LOKACIJA	Krievija
+LOKACIJA	Krievijas Padomju Federatīvā Sociālistiskā Republika
+LOKACIJA	Krima
+LOKACIJA	Krimas apgabals
+LOKACIJA	Krimulda
+LOKACIJA	Krivojroga
+LOKACIJA	Krīžkalne
+LOKACIJA	Kroja
+LOKACIJA	Kroidona
+LOKACIJA	Kroku Lanka
+LOKACIJA	Krone
+LOKACIJA	Kronštate
+LOKACIJA	Krote
+LOKACIJA	Kruki
+LOKACIJA	Krūki
+LOKACIJA	Krustiņi
+LOKACIJA	Krustpils
+LOKACIJA	Kualalompūra
+LOKACIJA	Kuba
+LOKACIJA	Kubaņa
+LOKACIJA	Kubas Republika
+LOKACIJA	Kudimkara
+LOKACIJA	Kudirmas Naumieste
+LOKACIJA	Kuibiševa
+LOKACIJA	Kuibiševas apgabals
+LOKACIJA	Kuiviži
+LOKACIJA	Kuja
+LOKACIJA	kuka arhipelāgs
+LOKACIJA	Kuka šaurums
+LOKACIJA	Kuka jūra
+LOKACIJA	Kuka salas
+LOKACIJA	Kūkas
+LOKACIJA	Kunluns
+LOKACIJA	Kulautuva
+LOKACIJA	Kuldīga
+LOKACIJA	Kuldīgas rajons
+LOKACIJA	Kulpe
+LOKACIJA	Kūra
+LOKACIJA	Kuļi
+LOKACIJA	Kumbri
+LOKACIJA	Kumpote
+LOKACIJA	Kunceva
+LOKACIJA	Kundziņsala
+LOKACIJA	Kupa
+LOKACIJA	Kupišķi
+LOKACIJA	Kupišķu rajons
+LOKACIJA	Kuprava
+LOKACIJA	Kuprelišķi
+LOKACIJA	Kūra
+LOKACIJA	Kurdistāna
+LOKACIJA	kurgāna
+LOKACIJA	Kurgānas apgabals
+LOKACIJA	Kuriļu salas
+LOKACIJA	Kurkļi
+LOKACIJA	Kurska
+LOKACIJA	Kursīši
+LOKACIJA	Kurska
+LOKACIJA	Kurskas apgabals
+LOKACIJA	Kuršēni
+LOKACIJA	Kuršu joma
+LOKACIJA	Kuršu kāpas 
+LOKACIJA	Kurtuvēni
+LOKACIJA	Kurzeme
+LOKACIJA	Kurzemes augstiene
+LOKACIJA	Kusa
+LOKACIJA	kustanaja
+LOKACIJA	Kustanajas apgabals
+LOKACIJA	Kutaisi
+LOKACIJA	Kuveita
+LOKACIJA	Kuzbass
+LOKACIJA	Kuzņecka
+LOKACIJA	Kuži
+LOKACIJA	Kvebeka
+LOKACIJA	Kvēdarna
+LOKACIJA	Kvietišķi
+LOKACIJA	Kvīnslenda
+LOKACIJA	Kzilorda
+LOKACIJA	Kzilordas apgabals
+LOKACIJA	Ķauna
+LOKACIJA	Ķedaiņi
+LOKACIJA	Ķedainu rajons
+LOKACIJA	Ķegums
+LOKACIJA	Ķeipene     
+LOKACIJA	Ķekava
+LOKACIJA	Ķelme
+LOKACIJA	Ķelmes rajons
+LOKACIJA	Ķelne
+LOKACIJA	Ķemeri
+LOKACIJA	Ķengarags
+LOKACIJA	Ķernave
+LOKACIJA	Ķertoju ezers
+LOKACIJA	Ķēbarti
+LOKACIJA	Ķīle
+LOKACIJA	Ķīles kanāls
+LOKACIJA	Ķīna
+LOKACIJA	Ķīnas Tautas Republika 
+LOKACIJA	Ķinti
+LOKACIJA	Ķīpsala
+LOKACIJA	Ķirpēni 
+LOKACIJA	Ķirsna
+LOKACIJA	Ķīršina
+LOKACIJA	Ķīšezers
+LOKACIJA	Ķīve
+LOKACIJA	Laba 
+LOKACIJA	Labanova
+LOKACIJA	Labās Cerības rags
+LOKACIJA	Labradora
+LOKACIJA	Lādogas ezers
+LOKACIJA	Lagomadžore
+LOKACIJA	Lagosa
+LOKACIJA	Lahora
+LOKACIJA	Laidze
+LOKACIJA	Laižuva
+LOKACIJA	Lamanšs
+LOKACIJA	Lampēdži
+LOKACIJA	Langstiņi
+LOKACIJA	Lankašīra
+LOKACIJA	Laņķesa
+LOKACIJA	Laosa 
+LOKACIJA	Laosas Tautas Demokrātiskā Republika
+LOKACIJA	Lapasa
+LOKACIJA	Laperūza šaurums
+LOKACIJA	Laplata
+LOKACIJA	Lapmežciems
+LOKACIJA	Laptevu jūra
+LOKACIJA	Lapzeme
+LOKACIJA	Latgale
+LOKACIJA	Latīņamerika
+LOKACIJA	Latvija
+LOKACIJA	Latvijas Padomju Sociālistiskā Republika
+LOKACIJA	Latvijas Republika
+LOKACIJA	Lauciena
+LOKACIJA	Lauderi
+LOKACIJA	Laukuva
+LOKACIJA	Lauķesa
+LOKACIJA	Lauķesas ezers
+LOKACIJA	Lautere
+LOKACIJA	Lavīsa ezers
+LOKACIJA	Lavorišķes
+LOKACIJA	Lazdiji
+LOKACIJA	Lazdona
+LOKACIJA	Leckava
+LOKACIJA	Lēdmane
+LOKACIJA	Lēdurga
+LOKACIJA	Leimaņi
+LOKACIJA	Leipaliņģe
+LOKACIJA	Leipciga
+LOKACIJA	Lejasciems
+LOKACIJA	Lejasstrazdi
+LOKACIJA	Lēna ezers
+LOKACIJA	Lentvare
+LOKACIJA	Leņķimi
+LOKACIJA	Lesteršīra
+LOKACIJA	Lesba
+LOKACIJA	Lesota
+LOKACIJA	Lesteršīra
+LOKACIJA	Lēvene
+LOKACIJA	Lezbas sala
+LOKACIJA	Lhasa
+LOKACIJA	Libāna
+LOKACIJA	Libānas Republika
+LOKACIJA	Lībeka
+LOKACIJA	Libērija
+LOKACIJA	Libērijas Republika
+LOKACIJA	Lībija
+LOKACIJA	Lībijas Arābu Republika
+LOKACIJA	Lībijas tuksnesis
+LOKACIJA	Librevila
+LOKACIJA	Līči
+LOKACIJA	Līda
+LOKACIJA	Līdsa
+LOKACIJA	Līduvēni
+LOKACIJA	Liede
+LOKACIJA	Lielais Lāčezers
+LOKACIJA	Lielais Sālsezers
+LOKACIJA	Lielais Vergezers
+LOKACIJA	Lielā Jugla
+LOKACIJA	Lielauces ezers
+LOKACIJA	Lielbērze
+LOKACIJA	Ltelbritānija
+LOKACIJA	Lielbritānijas un Ziemeļīrijas Apvienotā Karaliste
+LOKACIJA	Lieldienu sala
+LOKACIJA	Lielmēmele
+LOKACIJA	Lielplatone
+LOKACIJA	Lielie ezeri
+LOKACIJA	Lielupe
+LOKACIJA	Lielvārde
+LOKACIJA	Lielvircava
+LOKACIJA	Liepāja
+LOKACIJA	Lietuva
+LOKACIJA	LietuvasPadomju Sociālistiskā Republika
+LOKACIJA	Lietuvas Republika
+LOKACIJA	Ligaju ezers
+LOKACIJA	Līgatne
+LOKACIJA	Līgumi
+LOKACIJA	Ligūrijas jūra
+LOKACIJA	Līguti
+LOKACIJA	Lihtenšteina
+LOKACIJA	Līksna
+LOKACIJA	Liķēni
+LOKACIJA	Lilistes-Dūņu ezers
+LOKACIJA	Lille
+LOKACIJA	Lima
+LOKACIJA	Limbaži
+LOKACIJA	Limbažu rajons
+LOKACIJA	Lilongve
+LOKACIJA	Linca
+LOKACIJA	Linkmeļi
+LOKACIJA	Linsmamkalne
+LOKACIJA	Linkolnšīra
+LOKACIJA	Linkuva
+LOKACIJA	Liona
+LOKACIJA	Lisabona
+LOKACIJA	Lišķava
+LOKACIJA	Litene
+LOKACIJA	Litlroka
+LOKACIJA	Līvāni
+LOKACIJA	Līvbērze
+LOKACIJA	Liverpūle
+LOKACIJA	Livorna
+LOKACIJA	Lizums
+LOKACIJA	Lježa
+LOKACIJA	Loba
+LOKACIJA	Lodza
+LOKACIJA	Lodža ezers
+LOKACIJA	Lofotu salas
+LOKACIJA	Lokarna
+LOKACIJA	Loķe
+LOKACIJA	Loķesu ezers
+LOKACIJA	Lombardija
+LOKACIJA	Lome
+LOKACIJA	Lomi
+LOKACIJA	Londona
+LOKACIJA	Londonderija
+LOKACIJA	Lone
+LOKACIJA	Longailenda
+LOKACIJA	Losandželosa
+LOKACIJA	Losu ezers
+LOKACIJA	Lotringa
+LOKACIJA	Lovate
+LOKACIJA	Lozanna
+LOKACIJA	Luanda
+LOKACIJA	Luāra
+LOKACIJA	Lubāna
+LOKACIJA	Lubānas ezers
+LOKACIJA	Lubezeri
+LOKACIJA	Lubumbaši
+LOKACIJA	Lucavsala
+LOKACIJA	Lucerna
+LOKACIJA	Lucka
+LOKACIJA	Ludza
+LOKACIJA	Ludzas ezers
+LOKACIJA	Ludzas rajons
+LOKACIJA	Luganska
+LOKACIJA	Luganskas apgabals
+LOKACIJA	Luisvila
+LOKACIJA	Luiziāna
+LOKACIJA	Luknas ezers
+LOKACIJA	Luksemburga
+LOKACIJA	Lūksta ezers
+LOKACIJA	Lukši
+LOKACIJA	Lukšta ezers
+LOKACIJA	Lukišķes
+LOKACIJA	Lusaka
+LOKACIJA	Lūše
+LOKACIJA	Lūšu ezers
+LOKACIJA	Lutriņi
+LOKACIJA	Luvra
+LOKACIJA	Lūza
+LOKACIJA	Lūzvana
+LOKACIJA	Ļaude
+LOKACIJA	Ļudona
+LOKACIJA	Ļeņinobada
+LOKACIJA	Ļeņinobadas apgabals
+LOKACIJA	Ļeņingrada
+LOKACIJA	Ļeņingradas apgabals
+LOKACIJA	Ļeņīnokana
+LOKACIJA	Ļeņinogorska
+LOKACIJA	Ļipecka
+LOKACIJA	Ļipeckas apgabals
+LOKACIJA	Ļoļi
+LOKACIJA	Ļubava
+LOKACIJA	Ļubļina
+LOKACIJA	Ļudvinova
+LOKACIJA	Ļvova
+LOKACIJA	Ļvovas apgabals
+LOKACIJA	Macesta
+LOKACIJA	Madagaskara
+LOKACIJA	Madagaskaras Demokrātiskā Republika
+LOKACIJA	Madeira
+LOKACIJA	Madeiras salas
+LOKACIJA	Madliena
+LOKACIJA	Madona
+LOKACIJA	Madonas rajons
+LOKACIJA	Madrasa
+LOKACIJA	Madride
+LOKACIJA	Mafekinga
+LOKACIJA	Magadana
+LOKACIJA	Magadanas apgabals
+LOKACIJA	Magdeburga
+LOKACIJA	Magelāna šaurums
+LOKACIJA	Magņitogorska
+LOKACIJA	Mahačkala
+LOKACIJA	Maikopa
+LOKACIJA	Maina
+LOKACIJA	Mainca
+LOKACIJA	Maišagala
+LOKACIJA	Majami
+LOKACIJA	Majori
+LOKACIJA	Majorka
+LOKACIJA	Makejevka
+LOKACIJA	Miasura
+LOKACIJA	Makasaras šaurums
+LOKACIJA	Makenzi
+LOKACIJA	Maķa ezers
+LOKACIJA	Maķedonija
+LOKACIJA	Malabo
+LOKACIJA	Malāga
+LOKACIJA	Malaizija
+LOKACIJA	Malaizijas Federācija
+LOKACIJA	Malaja
+LOKACIJA	Malajas arhipelāgs
+LOKACIJA	Malaka
+LOKACIJA	Malakas šaurums
+LOKACIJA	Malavi
+LOKACIJA	Malavi Republika
+LOKACIJA	Male
+LOKACIJA	Mali
+LOKACIJA	Mali Republika
+LOKACIJA	Maljorka
+LOKACIJA	Malme
+LOKACIJA	Malnava
+LOKACIJA	Malata
+LOKACIJA	Mālpils
+LOKACIJA	Malta
+LOKACIJA	Mālupe
+LOKACIJA	Maļinovska
+LOKACIJA	Maļorka
+LOKACIJA	Managva
+LOKACIJA	Manausa
+LOKACIJA	Manama
+LOKACIJA	Mančestera
+LOKACIJA	Mandžūrija
+LOKACIJA	Mangaļi
+LOKACIJA	Manhatana
+LOKACIJA	Manheima
+LOKACIJA	Manila
+LOKACIJA	Manitoba
+LOKACIJA	Mārciena
+LOKACIJA	Mārciklona
+LOKACIJA	Marģa ezers
+LOKACIJA	Mari
+LOKACIJA	Mariampole
+LOKACIJA	Maputu
+LOKACIJA	Marianas salas
+LOKACIJA	Mariannas
+LOKACIJA	Mari apgabals
+LOKACIJA	Mari Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Marakaiva
+LOKACIJA	Mareja
+LOKACIJA	Mārgika
+LOKACIJA	Marica
+LOKACIJA	Marienburga
+LOKACIJA	Marientāle
+LOKACIJA	Mārkalne
+LOKACIJA	Marķīza salas
+LOKACIJA	Markuči
+LOKACIJA	Marmora jūra
+LOKACIJA	Marna
+LOKACIJA	Maroka
+LOKACIJA	Marokas Karaliste
+LOKACIJA	Marseļa
+LOKACIJA	Mārsnēni
+LOKACIJA	Maršala salas
+LOKACIJA	Martinika
+LOKACIJA	Mārupe
+LOKACIJA	Marvele
+LOKACIJA	Māsa
+LOKACIJA	Masačūsetca
+LOKACIJA	Masera
+LOKACIJA	Maskarēna salas
+LOKACIJA	Maskava
+LOKACIJA	Maskavas apgabals
+LOKACIJA	Maskavas rajons
+LOKACIJA	Maskavas upe
+LOKACIJA	Mastis
+LOKACIJA	Matīši
+LOKACIJA	Maunaloa
+LOKACIJA	Maurīcija
+LOKACIJA	Mauritānija
+LOKACIJA	Mauritānijas Islama Republika
+LOKACIJA	Mazais Belts
+LOKACIJA	Mazais Vergezers
+LOKACIJA	Mazā Jugla
+LOKACIJA	Mazāzija
+LOKACIJA	Mazirbe
+LOKACIJA	Mazsalaca
+LOKACIJA	Mazūru ezers
+LOKACIJA	Mažeiķi
+LOKACIJA	Mažeiķu rajons
+LOKACIJA	Mažupe
+LOKACIJA	Mbabane
+LOKACIJA	Meca
+LOKACIJA	Medina
+LOKACIJA	Mehiko
+LOKACIJA	Meirāni
+LOKACIJA	Meisene
+LOKACIJA	Meka
+LOKACIJA	Mekleburga
+LOKACIJA	Mekonga
+LOKACIJA	Meksika
+LOKACIJA	Meksikas līcis
+LOKACIJA	Meksikas SavienotAs Valstis
+LOKACIJA	Melanēzija
+LOKACIJA	Melars
+LOKACIJA	Melburna
+LOKACIJA	Melitopole
+LOKACIJA	Melluži
+LOKACIJA	Melnā jūra
+LOKACIJA	Melnkalne
+LOKACIJA	Melnraģe
+LOKACIJA	Melnsils
+LOKACIJA	Melnupe
+LOKACIJA	Melvila salas
+LOKACIJA	Mēmele
+LOKACIJA	Memfisa
+LOKACIJA	Mena
+LOKACIJA	Menorka
+LOKACIJA	Menhetena
+LOKACIJA	Menorka
+LOKACIJA	Mensfīlda
+LOKACIJA	Mergupe
+LOKACIJA	Mērilenda
+LOKACIJA	Merķe
+LOKACIJA	Merķine
+LOKACIJA	Mērsi
+LOKACIJA	Mērsrsgs
+LOKACIJA	Mesīna
+LOKACIJA	Mesīnas šaurums
+LOKACIJA	Mesčora
+LOKACIJA	Meškuiči
+LOKACIJA	Metelis
+LOKACIJA	Mezopotāmija
+LOKACIJA	Mežaparks
+LOKACIJA	Mežāre
+LOKACIJA	Mežciems
+LOKACIJA	Mežotne
+LOKACIJA	Mežvidi
+LOKACIJA	Mickūni
+LOKACIJA	Mičigana
+LOKACIJA	Mičigans
+LOKACIJA	Mielaģēni
+LOKACIJA	Midlseksa
+LOKACIJA	Midveja salas
+LOKACIJA	Mikronēzija
+LOKACIJA	Milāna
+LOKACIJA	Milānija
+LOKACIJA	Milvoki
+LOKACIJA	Minča
+LOKACIJA	Mindanao
+LOKACIJA	Mineapolisa
+LOKACIJA	Minesota
+LOKACIJA	Minhene
+LOKACIJA	Minija
+LOKACIJA	Minska
+LOKACIJA	Minskas apgabals
+LOKACIJA	Minusinska
+LOKACIJA	Mirnija
+LOKACIJA	Miroslava
+LOKACIJA	Misa
+LOKACIJA	Misisipi
+LOKACIJA	Misisipija
+LOKACIJA	Misūri
+LOKACIJA	Misūrija
+LOKACIJA	Miškolca
+LOKACIJA	Mituva
+LOKACIJA	Mogadiša
+LOKACIJA	Mogiļeva
+LOKACIJA	Mogiļevas apgabals
+LOKACIJA	Moldāvija
+LOKACIJA	Moldāvijas Padomju Sociālistiska Republika
+LOKACIJA	Moldova
+LOKACIJA	Molēti
+LOKACIJA	Molētu rajons
+LOKACIJA	Molodečna
+LOKACIJA	Molodečnas apgabals
+LOKACIJA	Moluku salas
+LOKACIJA	Monako
+LOKACIJA	Monblans
+LOKACIJA	Mongolija
+LOKACIJA	Mongolijas Tautas Republika
+LOKACIJA	Monreāla
+LOKACIJA	Monrovija
+LOKACIJA	Montāna
+LOKACIJA	Montekarlo
+LOKACIJA	Montevideo
+LOKACIJA	Montgomerija
+LOKACIJA	Morāva
+LOKACIJA	Morāvija
+LOKACIJA	Mordvijas  Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Moricsala
+LOKACIJA	Moroni
+LOKACIJA	Mosēda
+LOKACIJA	Mosula
+LOKACIJA	Mazambika
+LOKACIJA	Mozambikas Tautas Republika
+LOKACIJA	Mozambikas šaurums
+LOKACIJA	Mozele
+LOKACIJA	Mukdena
+LOKACIJA	Murava
+LOKACIJA	Murjāņi
+LOKACIJA	Murmanska
+LOKACIJA	Murmanskas apgabals
+LOKACIJA	Murmastiene
+LOKACIJA	Mūsa
+LOKACIJA	Muse
+LOKACIJA	Musninki                  
+LOKACIJA	Nagasaki
+LOKACIJA	Nagoja
+LOKACIJA	Nahičevāna
+LOKACIJA	Nahičevānas  Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Nahodka
+LOKACIJA	Nairobi
+LOKACIJA	Naļčika
+LOKACIJA	Namangāna
+LOKACIJA	Namangānas apgabals
+LOKACIJA	Namībija
+LOKACIJA	Namiķi
+LOKACIJA	Nankina
+LOKACIJA	Nante
+LOKACIJA	Narina
+LOKACIJA	Nariņciems
+LOKACIJA	Narofominska
+LOKACIJA	Narva
+LOKACIJA	Naso
+LOKACIJA	Naujamieste
+LOKACIJA	Naujasis Dauģelišķis
+LOKACIJA	Naujieji Verķi
+LOKACIJA	Naujoji Akmene
+LOKACIJA	Naujoji Viļņa
+LOKACIJA	Naukšēni
+LOKACIJA	Nauru
+LOKACIJA	Nautrēni
+LOKACIJA	Nāves jūra
+LOKACIJA	Nāves sala
+LOKACIJA	Ndžamena
+LOKACIJA	Neapole
+LOKACIJA	Neapoles līcis
+LOKACIJA	Nebraska
+LOKACIJA	Neise
+LOKACIJA	Nekāra
+LOKACIJA	Nemakšči
+LOKACIJA	Nemenčine
+LOKACIJA	Nemuna
+LOKACIJA	Nemunaite
+LOKACIJA	Nemunēle
+LOKACIJA	Nemunēles Radvilišķi
+LOKACIJA	Nepāla
+LOKACIJA	Nevada
+LOKACIJA	Nepālas Karaliste
+LOKACIJA	Nere
+LOKACIJA	Nereta
+LOKACIJA	Neringa
+LOKACIJA	Nesaules kalns
+LOKACIJA	Nevada
+LOKACIJA	Nevarēni
+LOKACIJA	Neveja      
+LOKACIJA	Nevēža
+LOKACIJA	Nevēžas ezers
+LOKACIJA	Niagara
+LOKACIJA	Niagaras ūdenskritums
+LOKACIJA	Niameja
+LOKACIJA	Nica
+LOKACIJA	Nīca
+LOKACIJA	Nīcgalede
+LOKACIJA	Niči
+LOKACIJA	Nida
+LOKACIJA	Nidas purvs
+LOKACIJA	Nīderlande
+LOKACIJA	Nīderlandes Karaliste
+LOKACIJA	Nigēra 
+LOKACIJA	Nigēras Republika
+LOKACIJA	Nigērija
+LOKACIJA	Nigērijas Federatīvā Republika
+LOKACIJA	Nīgranda
+LOKACIJA	Nikolājeva
+LOKACIJA	Nikolājevas apgabals
+LOKACIJA	Nikolājevska pie Amūras
+LOKACIJA	Nikopole
+LOKACIJA	Nikosīna
+LOKACIJA	Nīkozija
+LOKACIJA	Nīkrāce
+LOKACIJA	Nītaure
+LOKACIJA	Nigēra
+LOKACIJA	Nigērija
+LOKACIJA	Nikaragva
+LOKACIJA	Nikobaru salas
+LOKACIJA	Nikosina
+LOKACIJA	Nīla
+LOKACIJA	Nirnberga
+LOKACIJA	Njasas ezers
+LOKACIJA	Nordkaps
+LOKACIJA	Noreiķišķes
+LOKACIJA	Norfolka 
+LOKACIJA	Noridža
+LOKACIJA	Noriļska
+LOKACIJA	Normandija
+LOKACIJA	Normandijas salas
+LOKACIJA	Normandijas pussala
+LOKACIJA	Normaņu salas
+LOKACIJA	Nortamberlenda
+LOKACIJA	Nortjorkšīra
+LOKACIJA	Norvēģija
+LOKACIJA	Norvēģijas Karaliste
+LOKACIJA	Norvēģu jūra 
+LOKACIJA	Notingema
+LOKACIJA	Notingemšīra
+LOKACIJA	Noja
+LOKACIJA	Novaja Zemļa
+LOKACIJA	Novgoroda
+LOKACIJA	Novgorodas apgabals
+LOKACIJA	Novočerkaska
+LOKACIJA	Novokuzņecka
+LOKACIJA	Novomoskovska
+LOKACIJA	Novosibirska
+LOKACIJA	Novosibirskas apgabals
+LOKACIJA	Novošahtinska
+LOKACIJA	Nuakšota
+LOKACIJA	Nūbija
+LOKACIJA	Nūbijas tuksnesis
+LOKACIJA	Nukualofa
+LOKACIJA	Nukusu
+LOKACIJA	Numeja
+LOKACIJA	Ņeņču nacionālais apvidus
+LOKACIJA	Ņeva
+LOKACIJA	Ņižņijtagila
+LOKACIJA	Ņuarka
+LOKACIJA	Ņūdžereija
+LOKACIJA	Ņūdžersija
+LOKACIJA	Ņjūfaundlenda
+LOKACIJA	Ņūhepšīra
+LOKACIJA	Ņujorka
+LOKACIJA	Ņūkāsla
+LOKACIJA	Ņūmeksika
+LOKACIJA	Ņūorleāna
+LOKACIJA	Ņūporta
+LOKACIJA	Oba
+LOKACIJA	Obele
+LOKACIJA	Obelija
+LOKACIJA	Obeļi
+LOKACIJA	Odera
+LOKACIJA	Odesa
+LOKACIJA	Odesas apgabals
+LOKACIJA	Odzes ezers
+LOKACIJA	Oglaine
+LOKACIJA	Odra
+LOKACIJA	Ogre
+LOKACIJA	Ogresgals
+LOKACIJA	Ogres rajons
+LOKACIJA	Ohaio
+LOKACIJA	Ohotskas jūra
+LOKACIJA	Oka
+LOKACIJA	Okeānija
+LOKACIJA	Okinava
+LOKACIJA	Oklahoma
+LOKACIJA	Oklakomsitija
+LOKACIJA	Oklenda
+LOKACIJA	Oksforda
+LOKACIJA	Oksfordšīra
+LOKACIJA	Okte
+LOKACIJA	Oktobra rajons
+LOKACIJA	Olaine
+LOKACIJA	Olberi
+LOKACIJA	Oldema
+LOKACIJA	Olgas purvs
+LOKACIJA	Olimps
+LOKACIJA	Olstera
+LOKACIJA	Olština
+LOKACIJA	Omāna
+LOKACIJA	Omānas līcis
+LOKACIJA	Omska
+LOKACIJA	Omskas apgabals
+LOKACIJA	Ontārio
+LOKACIJA	Oņega
+LOKACIJA	Oņegas ezers
+LOKACIJA	Onušķi
+LOKACIJA	Oranža
+LOKACIJA	Ordžonikidze
+LOKACIJA	Oregona
+LOKACIJA	Orehozujeva
+LOKACIJA	Orenburga
+LOKACIJA	Orenburgas apgabals
+LOKACIJA	Orinoko
+LOKACIJA	Orīši
+LOKACIJA	Orkneju salas
+LOKACIJA	Orla
+LOKACIJA	Orlas apgabals
+LOKACIJA	Orleāna
+LOKACIJA	Ornicāni
+LOKACIJA	Orska
+LOKACIJA	Orša
+LOKACIJA	Osaka
+LOKACIJA	Oslo
+LOKACIJA	Ostende
+LOKACIJA	Ostrava
+LOKACIJA	Ostina
+LOKACIJA	Osvejas ezers
+LOKACIJA	Osvemcina
+LOKACIJA	Oša
+LOKACIJA	Ošāni
+LOKACIJA	Ošas apgabals
+LOKACIJA	Otaņķi
+LOKACIJA	Otava
+LOKACIJA	Ozolaine
+LOKACIJA	Ozoli
+LOKACIJA	Ozoliņi
+LOKACIJA	Ozolnieki
+LOKACIJA	Pabaži
+LOKACIJA	Paberže
+LOKACIJA	Pabirže
+LOKACIJA	Pāce
+LOKACIJA	Padekalē
+LOKACIJA	Padomju Savienība
+LOKACIJA	Padomju Sociālistisko Republiku Savienība
+LOKACIJA	Paduja
+LOKACIJA	Paģēģi
+LOKACIJA	Paģiri
+LOKACIJA	Pajūre
+LOKACIJA	Pagopūāgo
+LOKACIJA	Pakasa ezers
+LOKACIJA	Pakistāna
+LOKACIJA	Pakistānas Islama Republika
+LOKACIJA	Pakroja
+LOKACIJA	Pakrojas rajons
+LOKACIJA	Pakuļi
+LOKACIJA	Palanga
+LOKACIJA	Palavana
+LOKACIJA	Palau salas
+LOKACIJA	Palemona
+LOKACIJA	Palermo
+LOKACIJA	Palestīna
+LOKACIJA	Palsmane
+LOKACIJA	Pamirs
+LOKACIJA	Pampāļi
+LOKACIJA	Pamūša
+LOKACIJA	Panama
+LOKACIJA	Panamas kanāls
+LOKACIJA	Panamas zemes šaurums
+LOKACIJA	Pandēle
+LOKACIJA	Panemune
+LOKACIJA	Panemunēle
+LOKACIJA	Paneri
+LOKACIJA	Paneveža
+LOKACIJA	Panevežas rajons
+LOKACIJA	Papes ezers
+LOKACIJA	Papile
+LOKACIJA	Papua-Jaungvineja
+LOKACIJA	Paragvaja
+LOKACIJA	Parāna
+LOKACIJA	Paramarībo
+LOKACIJA	Parana
+LOKACIJA	Pārdaugava
+LOKACIJA	Pārgauja
+LOKACIJA	Parīze
+LOKACIJA	Pārlielupe
+LOKACIJA	Parma
+LOKACIJA	Parogle
+LOKACIJA	Paršezers
+LOKACIJA	Pārventa
+LOKACIJA	Pasiena
+LOKACIJA	Pasvale
+LOKACIJA	Pasvales rajons
+LOKACIJA	Pašile
+LOKACIJA	Pašvitine
+LOKACIJA	Patagonija
+LOKACIJA	Pavenči
+LOKACIJA	Paviļņa
+LOKACIJA	Pāvilosta
+LOKACIJA	Pavlodara
+LOKACIJA	Pavlovdaras apgabals
+LOKACIJA	Pažaišle
+LOKACIJA	Pečora
+LOKACIJA	Pededze
+LOKACIJA	Peipuss
+LOKACIJA	Pekina
+LOKACIJA	Peloponesa
+LOKACIJA	Peltes
+LOKACIJA	Pemba
+LOKACIJA	Pendžaba
+LOKACIJA	Penhu
+LOKACIJA	Penīnu kalni
+LOKACIJA	Penkule
+LOKACIJA	Pennu Alpi
+LOKACIJA	Pensilvānija
+LOKACIJA	Penza
+LOKACIJA	Penzas apgabals
+LOKACIJA	Perekops
+LOKACIJA	Pērkonu ezers
+LOKACIJA	Pirlharbora
+LOKACIJA	Perloja
+LOKACIJA	Perma
+LOKACIJA	Permas apgabals
+LOKACIJA	Pērnava
+LOKACIJA	Pērse
+LOKACIJA	Persijas līcis
+LOKACIJA	Peršēķe
+LOKACIJA	Peršokšņu ezers
+LOKACIJA	Peru
+LOKACIJA	Peskadoru salas
+LOKACIJA	Pēterburga
+LOKACIJA	Pēternieki
+LOKACIJA	Pēterpils
+LOKACIJA	Petrašūni
+LOKACIJA	Petropavlovska
+LOKACIJA	Petrozavodska
+LOKACIJA	Phenjaka
+LOKACIJA	Pieamūra
+LOKACIJA	Piedruja
+LOKACIJA	Piejūra
+LOKACIJA	Piejūras novads
+LOKACIJA	Pīblesa
+LOKACIJA	Pieniņi
+LOKACIJA	Pievolga
+LOKACIJA	Piksteres ezers
+LOKACIJA	Piķeļi
+LOKACIJA	Pilda
+LOKACIJA	Pildas ezers
+LOKACIJA	Pilsblīdene
+LOKACIJA	Pilsrundāle
+LOKACIJA	Piltene
+LOKACIJA	Pilve
+LOKACIJA	Pilvišķi
+LOKACIJA	Pilzene
+LOKACIJA	Pinska
+LOKACIJA	Pirčupe
+LOKACIJA	Pireneji
+LOKACIJA	Pireneju pussala
+LOKACIJA	Pitālova
+LOKACIJA	Pīrlharboro
+LOKACIJA	Pīteļa ezers
+LOKACIJA	Pīterboro
+LOKACIJA	Pitrags
+LOKACIJA	Pitsburga
+LOKACIJA	Pīvesa
+LOKACIJA	Piza
+LOKACIJA	Pjatigorska
+LOKACIJA	Plācis
+LOKACIJA	Plateņi
+LOKACIJA	Plateļu ezers
+LOKACIJA	Platone
+LOKACIJA	Pleskava
+LOKACIJA	Pleskavas apgabals
+LOKACIJA	Plieņciems
+LOKACIJA	Plimuta
+LOKACIJA	Plinkšu ezers
+LOKACIJA	Plisūna ezers
+LOKACIJA	Ploce
+LOKACIJA	Ploēšti
+LOKACIJA	Plovdiva
+LOKACIJA	Pluņģe
+LOKACIJA	Plunģes rajons
+LOKACIJA	Plzena
+LOKACIJA	Pļaviņas
+LOKACIJA	Plzeņa
+LOKACIJA	Pļavnieki
+LOKACIJA	Pnompeņa
+LOKACIJA	Pnompeņa
+LOKACIJA	Po
+LOKACIJA	Pociems
+LOKACIJA	Podoļa
+LOKACIJA	Polija
+LOKACIJA	Polijas Tautas Republika
+LOKACIJA	Polinēzija
+LOKACIJA	Polocka
+LOKACIJA	Poltava
+LOKACIJA	Poltavas apgabals
+LOKACIJA	Pomerānija
+LOKACIJA	Ponaksteetls
+LOKACIJA	Pope
+LOKACIJA	Popokatepetls
+LOKACIJA	Portartura
+LOKACIJA	Portlenda
+LOKACIJA	Portluī
+LOKACIJA	Portmorsbi
+LOKACIJA	Portofspeina
+LOKACIJA	Portonova
+LOKACIJA	Portoprensa
+LOKACIJA	Portovana
+LOKACIJA	Portprensa
+LOKACIJA	Portsaida
+LOKACIJA	Portoriko
+LOKACIJA	Portsmuta
+LOKACIJA	Potugāle
+LOKACIJA	Potomaka
+LOKACIJA	Potsdama
+LOKACIJA	Poznaņa
+LOKACIJA	Praga
+LOKACIJA	Prāga
+LOKACIJA	Pravienišķes
+LOKACIJA	Praja
+LOKACIJA	Praviršuļas tīrelis
+LOKACIJA	Pretorija
+LOKACIJA	Preiļi
+LOKACIJA	Preiļu rajons
+LOKACIJA	Pretorija
+LOKACIJA	Priedaine
+LOKACIJA	Priekule
+LOKACIJA	Priekuļi
+LOKACIJA	Prieni
+LOKACIJA	Prienu rajons
+LOKACIJA	Pripete
+LOKACIJA	Proletāriešu rajons
+LOKACIJA	Prūsija
+LOKACIJA	Prūta ezers
+LOKACIJA	Prževaļska
+LOKACIJA	PSRS
+LOKACIJA	Pudinava
+LOKACIJA	Puertoriko
+LOKACIJA	Pruta
+LOKACIJA	Puikule
+LOKACIJA	PumpEni
+LOKACIJA	Pune
+LOKACIJA	Pūņas
+LOKACIJA	Pūre
+LOKACIJA	Purmsāti
+LOKACIJA	Pusana
+LOKACIJA	Puša
+LOKACIJA	Pušalote
+LOKACIJA	Pušas ezers
+LOKACIJA	Puškina
+LOKACIJA	Puzes ezers
+LOKACIJA	Pusana
+LOKACIJA	Rabata
+LOKACIJA	Radopole
+LOKACIJA	Radvilišķi
+LOKACIJA	Radvilišķu rajons
+LOKACIJA	Ragaciems
+LOKACIJA	Raguva
+LOKACIJA	Raiskums
+LOKACIJA	Rāmava
+LOKACIJA	Ramīgala
+LOKACIJA	Ranguna
+LOKACIJA	Ranka
+LOKACIJA	Rasas
+LOKACIJA	Raseiņi
+LOKACIJA	Raseiņu rajons
+LOKACIJA	Rasnupļi
+LOKACIJA	Rašu ezers
+LOKACIJA	Ratnīča
+LOKACIJA	Ratnieki
+LOKACIJA	Raudodvare
+LOKACIJA	Raudone
+LOKACIJA	Rauna
+LOKACIJA	Rāva
+LOKACIJA	Ravalpindi
+LOKACIJA	Ravenna
+LOKACIJA	Rāznas ezers
+LOKACIJA	Redinga
+LOKACIJA	Redrivera
+LOKACIJA	Reikjavika
+LOKACIJA	Riemsa
+LOKACIJA	Reina
+LOKACIJA	Reisķu tīrelis
+LOKACIJA	Reinjora
+LOKACIJA	Rekava
+LOKACIJA	Reķīva
+LOKACIJA	Reķīvas ezers
+LOKACIJA	Remte
+LOKACIJA	Rencēni
+LOKACIJA	Renda
+LOKACIJA	Rēzekne
+LOKACIJA	Rēzeknes rajons
+LOKACIJA	Rēznas ezers
+LOKACIJA	Resifi
+LOKACIJA	Ričmonda
+LOKACIJA	Riebiņi
+LOKACIJA	Rietava
+LOKACIJA	Rietumindija
+LOKACIJA	Rietumberlīne
+LOKACIJA	Rietumkazahijas apgabals
+LOKACIJA	Rietumsomoa
+LOKACIJA	Rietumvirdžīnija
+LOKACIJA	Rīga
+LOKACIJA	Rīgas līcis
+LOKACIJA	Rīgas rajons
+LOKACIJA	Rīgene 
+LOKACIJA	Rimieša ezers
+LOKACIJA	Rijada
+LOKACIJA	Rimini
+LOKACIJA	Ringuva
+LOKACIJA	Riodeoro
+LOKACIJA	Riodežaneiro
+LOKACIJA	Riogrande
+LOKACIJA	Rionegro
+LOKACIJA	Rītupe
+LOKACIJA	Rīva
+LOKACIJA	Rivjēra
+LOKACIJA	Rjazaņa
+LOKACIJA	Rjazaņas apgabals
+LOKACIJA	Ročestera
+LOKACIJA	Roda
+LOKACIJA	Rodailenda
+LOKACIJA	Roma 
+LOKACIJA	Rona
+LOKACIJA	Rostoka
+LOKACIJA	Roterdama
+LOKACIJA	Ruanda
+LOKACIJA	Rumānija 
+LOKACIJA	Rumānijas Sociālistiskā Republika
+LOKACIJA	Rūna
+LOKACIJA	Safolka
+LOKACIJA	Sahalīna
+LOKACIJA	Sahāra
+LOKACIJA	Saloniki
+LOKACIJA	Salvadora
+LOKACIJA	Samarkanda
+LOKACIJA	Samoa salas
+LOKACIJA	Sana 
+LOKACIJA	Sanantonio
+LOKACIJA	Sandjēgo
+LOKACIJA	Sanfrancisko
+LOKACIJA	Sanhose
+LOKACIJA	Sanhuana
+LOKACIJA	Sanmarīno
+LOKACIJA	Sanpaulu
+LOKACIJA	Sanremo 
+LOKACIJA	Sansalvadora
+LOKACIJA	Sansevastjana
+LOKACIJA	Santakrusa
+LOKACIJA	Santjago
+LOKACIJA	Santodomingo
+LOKACIJA	Santomē
+LOKACIJA	Santomē un Prinsipi
+LOKACIJA	Saporo
+LOKACIJA	Saragosa
+LOKACIJA	Saravaka
+LOKACIJA	Sardīnija
+LOKACIJA	Sarija
+LOKACIJA	Sarkanā jūra
+LOKACIJA	Saseksa
+LOKACIJA	Saskačevana
+LOKACIJA	Sauda Arābija
+LOKACIJA	Sauthemptona
+LOKACIJA	Sedāna
+LOKACIJA	Seišeļu salas 
+LOKACIJA	Sēna
+LOKACIJA	Sendenī
+LOKACIJA	Senegala
+LOKACIJA	Sentdžordžesa
+LOKACIJA	Sentetjēna
+LOKACIJA	Sentlorensa
+LOKACIJA	Sentluisa
+LOKACIJA	Serbija
+LOKACIJA	Seula
+LOKACIJA	Sevans
+LOKACIJA	Sevastopole
+LOKACIJA	Severna
+LOKACIJA	Sevilja
+LOKACIJA	Sibīrija
+LOKACIJA	Sicīlija
+LOKACIJA	Sidneja
+LOKACIJA	Sietla 
+LOKACIJA	Sigulda
+LOKACIJA	Simferopole
+LOKACIJA	Sinaja pussala
+LOKACIJA	Singapūra
+LOKACIJA	Singapūras šaurums
+LOKACIJA	Sinsitija
+LOKACIJA	Sirakūzas
+LOKACIJA	Sirdarja
+LOKACIJA	Sīrija 
+LOKACIJA	Sīrijas Arābu Republika
+LOKACIJA	Sjangana
+LOKACIJA	Sjerraleone
+LOKACIJA	Sjerranevada
+LOKACIJA	Skageraks
+LOKACIJA	Skandināvijas pussala
+LOKACIJA	Skārboro
+LOKACIJA	Skotija
+LOKACIJA	Slovakija
+LOKACIJA	Slovakijas Sociālistiskā Republika
+LOKACIJA	Slovēnija
+LOKACIJA	Soči
+LOKACIJA	Sofija
+LOKACIJA	Solsberi
+LOKACIJA	Soltleiksitija
+LOKACIJA	Somālija
+LOKACIJA	Somerseta
+LOKACIJA	Somija
+LOKACIJA	Somu līcis
+LOKACIJA	Sona
+LOKACIJA	Spānija
+LOKACIJA	Stambula
+LOKACIJA	Staraplanina
+LOKACIJA	Stefordšīra
+LOKACIJA	Stērlinga
+LOKACIJA	Stokholma
+LOKACIJA	Strasbūra
+LOKACIJA	Stretforda pie Eivonas
+LOKACIJA	Stomboli
+LOKACIJA	Sudāna
+LOKACIJA	Sudeti
+LOKACIJA	Sueca
+LOKACIJA	Suecas kanāls
+LOKACIJA	Suhumi
+LOKACIJA	Sukre
+LOKACIJA	Sulavesi
+LOKACIJA	Sulavesi jūra
+LOKACIJA	Sumatra
+LOKACIJA	Surabaja
+LOKACIJA	Surinama
+LOKACIJA	Suva
+LOKACIJA	Svazilenda
+LOKACIJA	Sverdlovska
+LOKACIJA	Svētās Helēnas sala 
+LOKACIJA	Svonsi 
+LOKACIJA	Šaba
+LOKACIJA	Šanhaja
+LOKACIJA	Šefilda
+LOKACIJA	Šelda
+LOKACIJA	Šenjana
+LOKACIJA	Šerbūra
+LOKACIJA	Šetlendas salas
+LOKACIJA	Špicbergena
+LOKACIJA	Šprē
+LOKACIJA	Šrilanka
+LOKACIJA	Šropšīra
+LOKACIJA	Šrūsberi
+LOKACIJA	Štrālzunde
+LOKACIJA	Štutgarte
+LOKACIJA	Šveice
+LOKACIJA	Tadžikija
+LOKACIJA	Tadžikijas Padomju Sociālistiskā Republika
+LOKACIJA	Taiti
+LOKACIJA	Taivana
+LOKACIJA	Taizeme
+LOKACIJA	Taklamakana tuksnesis
+LOKACIJA	Tālie Austrumi
+LOKACIJA	Tallina
+LOKACIJA	Tandžera
+LOKACIJA	Tanganjika
+LOKACIJA	Tanganjikas ezers
+LOKACIJA	Tanzānija
+LOKACIJA	Tasmāna jūra
+LOKACIJA	Tasmānija
+LOKACIJA	Taškenta
+LOKACIJA	Tatārijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Tatri
+LOKACIJA	Taurs
+LOKACIJA	Tbilisi
+LOKACIJA	Tebriza
+LOKACIJA	Tegusigalpa
+LOKACIJA	Teherāna
+LOKACIJA	Teksasa
+LOKACIJA	Telaviva
+LOKACIJA	Temza
+LOKACIJA	Tenerife
+LOKACIJA	Tenesi
+LOKACIJA	Tibeta
+LOKACIJA	Tibra
+LOKACIJA	Tigra
+LOKACIJA	Timora
+LOKACIJA	Timpu
+LOKACIJA	Tirāna
+LOKACIJA	Tirēnu jūra
+LOKACIJA	Tirole
+LOKACIJA	Tisa
+LOKACIJA	Titikakas ezers
+LOKACIJA	Tjanšaņs
+LOKACIJA	Tobago
+LOKACIJA	Tobruka
+LOKACIJA	Togo
+LOKACIJA	Tokija
+LOKACIJA	Toledo
+LOKACIJA	Toljati
+LOKACIJA	Tombuka
+LOKACIJA	Tonga
+LOKACIJA	Torkī
+LOKACIJA	Toronto
+LOKACIJA	Totnema
+LOKACIJA	Trafalgaras rags
+LOKACIJA	Transvāla
+LOKACIJA	Trenta
+LOKACIJA	Trieste
+LOKACIJA	Trinidada un Tobago 
+LOKACIJA	Tripole
+LOKACIJA	Tulona
+LOKACIJA	Tulūza
+LOKACIJA	Tunisa
+LOKACIJA	Tunisija
+LOKACIJA	Turcija
+LOKACIJA	Turīna
+LOKACIJA	Turkmēnija
+LOKACIJA	Turkmēnijass Padomju Sociālistiskā Republika
+LOKACIJA	Tuvas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Tuvie Austrumi
+LOKACIJA	Tvīda
+LOKACIJA	Tviknema
+LOKACIJA	Udmurdijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Ufa
+LOKACIJA	Uganda
+LOKACIJA	Ugunszeme
+LOKACIJA	Ukraina
+LOKACIJA	Ukrainas Padomju Sociālistiskā Republika
+LOKACIJA	Ulanbatora
+LOKACIJA	Ulanude
+LOKACIJA	Uļjanovska
+LOKACIJA	Ungārija
+LOKACIJA	Ungārijas Tautas Republika
+LOKACIJA	Urāla
+LOKACIJA	Urugvaja
+LOKACIJA	Uzbekija
+LOKACIJA	Uzbekijas Padomju Sociālistiskā Republika
+LOKACIJA	Vācija
+LOKACIJA	Vācijas Demokrātiskā Republika
+LOKACIJA	Vācijas Federatīvā Republika
+LOKACIJA	Vaduca
+LOKACIJA	Vagadugu
+LOKACIJA	Vaiominga
+LOKACIJA	Valensija
+LOKACIJA	Valleta
+LOKACIJA	Valparaiso
+LOKACIJA	Vana ezers
+LOKACIJA	Vankūvera
+LOKACIJA	Varanasi
+LOKACIJA	Varšava
+LOKACIJA	Vašingtona
+LOKACIJA	Vaterlo
+LOKACIJA	Vatikāns
+LOKACIJA	Veimāra
+LOKACIJA	Velingtona
+LOKACIJA	Velsa
+LOKACIJA	Venēcija
+LOKACIJA	Venecuēla
+LOKACIJA	Veners
+LOKACIJA	Venta
+LOKACIJA	Ventspils
+LOKACIJA	Verakrusa
+LOKACIJA	Verdena
+LOKACIJA	Vermonta
+LOKACIJA	Verona
+LOKACIJA	Versaļa
+LOKACIJA	Vestende
+LOKACIJA	Vestlotjana
+LOKACIJA	Vestsaseksa
+LOKACIJA	Vestminstera
+LOKACIJA	Veterns
+LOKACIJA	Vezuvs
+LOKACIJA	Vidējie Austrumi
+LOKACIJA	VtdusAzija
+LOKACIJA	Vidusjūra
+LOKACIJA	Vidzeme
+LOKACIJA	Viktorija
+LOKACIJA	Viktorijas ezers
+LOKACIJA	Viltšīra
+LOKACIJA	Viļņa
+LOKACIJA	Vindhuka
+LOKACIJA	Vtndzora
+LOKACIJA	Vīne
+LOKACIJA	Vinipega
+LOKACIJA	Virdžīnija
+LOKACIJA	Viskonsina
+LOKACIJA	Visla
+LOKACIJA	Višī
+LOKACIJA	Vjetnama
+LOKACIJA	Vjetnamas Sociālistiskā Republika
+LOKACIJA	Vladivostoka
+LOKACIJA	Volga
+LOKACIJA	Vorikšīra
+LOKACIJA	Zagreba
+LOKACIJA	Zaira
+LOKACIJA	Zālamana salas
+LOKACIJA	Zalcburga
+LOKACIJA	Zaļā Raga Salas
+LOKACIJA	Zambezi
+LOKACIJA	Zambija
+LOKACIJA	Zanzibāra
+LOKACIJA	Zemgale
+LOKACIJA	Ziemeļamerika
+LOKACIJA	Ziemeļdakota
+LOKACIJA	Ziemeļīrija
+LOKACIJA	Ziemeļosetijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Ziemeļu Ledus okeāns
+LOKACIJA	Ziloņkaula Krasts
+LOKACIJA	Zimbabve
+LOKACIJA	Zomba
+LOKACIJA	Zunda šaurums
+LOKACIJA	Zviedrija
+LOKACIJA	Ženēva
+LOKACIJA	Ženēvas ezers
+LOKACIJA	Robežnieki
+LOKACIJA	Ročestera
+LOKACIJA	Roda
+LOKACIJA	Rodailenda
+LOKACIJA	Rodēzija
+LOKACIJA	Rodopi
+LOKACIJA	Roja
+LOKACIJA	Roķišķi
+LOKACIJA	Roķišķu rajons
+LOKACIJA	Roma 
+LOKACIJA	Rona
+LOKACIJA	Ropaži
+LOKACIJA	Rosme
+LOKACIJA	Rostoka
+LOKACIJA	Rostova
+LOKACIJA	Rostova pie Donas
+LOKACIJA	Rostovas apgabals
+LOKACIJA	Roterdama
+LOKACIJA	Rovēja
+LOKACIJA	Rovna
+LOKACIJA	Rovgnas apgabals
+LOKACIJA	Rozalima
+LOKACIJA	Rožupe
+LOKACIJA	Ruāna
+LOKACIJA	Ruanda
+LOKACIJA	Ruandas Republika
+LOKACIJA	Ruba
+LOKACIJA	Rubeņi
+LOKACIJA	Rubiķu ezers
+LOKACIJA	Rucava
+LOKACIJA	Rudamina
+LOKACIJA	Rudbārži
+LOKACIJA	Rūdišķes
+LOKACIJA	Rudzēti
+LOKACIJA	Rugāji
+LOKACIJA	Rūjiena
+LOKACIJA	Rumānija 
+LOKACIJA	Rumānijas Sociālistiskā Republika
+LOKACIJA	Rumbula
+LOKACIJA	Rumbišķes
+LOKACIJA	Rundēni
+LOKACIJA	Rūra
+LOKACIJA	Rūras apgabals
+LOKACIJA	Rusne
+LOKACIJA	Rustavi
+LOKACIJA	Rustēga ezers
+LOKACIJA	Rūža ezers
+LOKACIJA	Rževa
+LOKACIJA	Sabile
+LOKACIJA	Safolka
+LOKACIJA	Sahalīna
+LOKACIJA	Sahaklīnas apgabals
+LOKACIJA	Sahalīnas līcis
+LOKACIJA	Sahāra
+LOKACIJA	Saigona
+LOKACIJA	Saimas ezers
+LOKACIJA	Sajāni
+LOKACIJA	Saka
+LOKACIJA	Saksija
+LOKACIJA	Sakstagals
+LOKACIJA	Sal
+LOKACIJA	Salaca
+LOKACIJA	Salacgrīva
+LOKACIJA	Salanta
+LOKACIJA	Salati
+LOKACIJA	Salaspils
+LOKACIJA	Saldeņi
+LOKACIJA	Salas 
+LOKACIJA	Saldus
+LOKACIJA	Saldus rajons
+LOKACIJA	Saldutišķi
+LOKACIJA	Saliena
+LOKACIJA	Salinieki
+LOKACIJA	Saliņu ezers
+LOKACIJA	Salvana
+LOKACIJA	Saloči
+LOKACIJA	Saloniki
+LOKACIJA	Saltonišķes
+LOKACIJA	Salvadora
+LOKACIJA	Sama
+LOKACIJA	Samara
+LOKACIJA	Samarkanda
+LOKACIJA	Samarkandas apgabals
+LOKACIJA	Samavs
+LOKACIJA	Samoa salas
+LOKACIJA	Sana 
+LOKACIJA	Sanantonio
+LOKACIJA	Sandjēgo
+LOKACIJA	Sanfrancisko
+LOKACIJA	Sanhose
+LOKACIJA	Sanhuana
+LOKACIJA	Sanmarīno
+LOKACIJA	Sanpaulu
+LOKACIJA	Sanremo 
+LOKACIJA	Sansalvadora
+LOKACIJA	Sansevastjana
+LOKACIJA	Santakrusa
+LOKACIJA	Santjago
+LOKACIJA	Santodomingo
+LOKACIJA	Santomē
+LOKACIJA	Santomē un Trinsipi
+LOKACIJA	Sapieģine
+LOKACIJA	Saporo
+LOKACIJA	Saragosa
+LOKACIJA	Sarājeva
+LOKACIJA	Saranska
+LOKACIJA	Sāras apgabals
+LOKACIJA	Sarātova
+LOKACIJA	Sarātovas apgabals
+LOKACIJA	Sārcenes ezers
+LOKACIJA	Saravaka
+LOKACIJA	Sardīnija
+LOKACIJA	Sāremā
+LOKACIJA	Sarija
+LOKACIJA	Sarģeni
+LOKACIJA	Sarkanā jūra
+LOKACIJA	Saseksa
+LOKACIJA	Saskačevana
+LOKACIJA	Sasmakas ezers
+LOKACIJA	Sasna
+LOKACIJA	Sasnava
+LOKACIJA	Sauda Arābija
+LOKACIJA	Sauka
+LOKACIJA	Saukas ezers
+LOKACIJA	Saulaine
+LOKACIJA	Sauleskalns
+LOKACIJA	Saulkalne
+LOKACIJA	Saune
+LOKACIJA	Saurieši
+LOKACIJA	Sauthemptona
+LOKACIJA	Savoja
+LOKACIJA	Seda
+LOKACIJA	Sedas tīrelis
+LOKACIJA	Sedāna
+LOKACIJA	Segeda
+LOKACIJA	Seini
+LOKACIJA	Seira
+LOKACIJA	Seirija ezers
+LOKACIJA	Seiriji
+LOKACIJA	Seligers
+LOKACIJA	Seišeļu salas 
+LOKACIJA	Sēlpils
+LOKACIJA	Sēļi
+LOKACIJA	Semelišķes
+LOKACIJA	Semipalatinska
+LOKACIJA	Semipalatinskas apgabals
+LOKACIJA	Sēna
+LOKACIJA	Sendenī
+LOKACIJA	Senegala
+LOKACIJA	Senegalas Republika
+LOKACIJA	Sentdžordžesa
+LOKACIJA	Sentetjēna
+LOKACIJA	Sentlorensa
+LOKACIJA	Sentluisa
+LOKACIJA	Serbija
+LOKACIJA	Seredža
+LOKACIJA	Serpuhova
+LOKACIJA	Sesava
+LOKACIJA	Seula
+LOKACIJA	Sevans
+LOKACIJA	Sevastopole
+LOKACIJA	Severna
+LOKACIJA	Severnaja Zemļa
+LOKACIJA	Sevilja
+LOKACIJA	Siāma
+LOKACIJA	Siāmas līcis
+LOKACIJA	Sibīrija
+LOKACIJA	Sicīlija
+LOKACIJA	Sidneja
+LOKACIJA	Sidrabene
+LOKACIJA	Siesarta ezers
+LOKACIJA	Siesarte
+LOKACIJA	Sietla 
+LOKACIJA	Siesiki
+LOKACIJA	Siktivkara
+LOKACIJA	Sigulda
+LOKACIJA	Sila ezers
+LOKACIJA	Silciems
+LOKACIJA	Silene
+LOKACIJA	Silēzija
+LOKACIJA	Silmala
+LOKACIJA	Silva
+LOKACIJA	Simferopole
+LOKACIJA	Simna
+LOKACIJA	Simna ezers
+LOKACIJA	Sinaja pussala
+LOKACIJA	Singapūra
+LOKACIJA	Singapūras Republika
+LOKACIJA	Singapūras šaurums
+LOKACIJA	Sinole
+LOKACIJA	Sinsitija
+LOKACIJA	Sintauti
+LOKACIJA	Sirakūzas
+LOKACIJA	Sirdarja
+LOKACIJA	SIrdarjas apgabals
+LOKACIJA	Sīrija 
+LOKACIJA	Sīrijas Arābu Republika
+LOKACIJA	Sīrijas tuksnesis
+LOKACIJA	Sitas ezers
+LOKACIJA	Sīvera ezers
+LOKACIJA	Sizraņa
+LOKACIJA	Sjangana
+LOKACIJA	Sjeraleone
+LOKACIJA	Sjeranevada
+LOKACIJA	Skaligišķi
+LOKACIJA	Skageraks
+LOKACIJA	Skaišķa ezers
+LOKACIJA	Skaistģire
+LOKACIJA	Skaistkalne
+LOKACIJA	Skandināvija
+LOKACIJA	Skandināvijas kalni
+LOKACIJA	Skandināvijas pussala
+LOKACIJA	Skapišķi
+LOKACIJA	Skārboro
+LOKACIJA	Skotija
+LOKACIJA	Skaudvile
+LOKACIJA	Skiemone
+LOKACIJA	Skirsnemune
+LOKACIJA	Skoda
+LOKACIJA	Skodas rajons
+LOKACIJA	Skotija
+LOKACIJA	Skrīveri
+LOKACIJA	Skrudaliena
+LOKACIJA	Skrunda
+LOKACIJA	Skulte
+LOKACIJA	Slampe
+LOKACIJA	Slate
+LOKACIJA	Slīteres rezervāts
+LOKACIJA	Slocene
+LOKACIJA	Sloka
+LOKACIJA	Slokas ezers
+LOKACIJA	Slovakija
+LOKACIJA	Slovakijas Sociālistiskā Republika
+LOKACIJA	Slovēnija
+LOKACIJA	Smalinieki
+LOKACIJA	Smalvas ezers
+LOKACIJA	Smēlīnes ezers
+LOKACIJA	Smelte
+LOKACIJA	Smiltīne
+LOKACIJA	Smiļģi
+LOKACIJA	Smoļenska
+LOKACIJA	Smoļenskas apgabals
+LOKACIJA	Snaiģina ezers
+LOKACIJA	Snēpele
+LOKACIJA	Sniķere
+LOKACIJA	Soči
+LOKACIJA	Sofija
+LOKACIJA	Solsberi
+LOKACIJA	Soltleiksitija
+LOKACIJA	Soļimanska
+LOKACIJA	Somālija
+LOKACIJA	Somālijas pussala
+LOKACIJA	Somālijas Demokrātiskā Republika
+LOKACIJA	Somerseta
+LOKACIJA	Somersetšīra
+LOKACIJA	Somija
+LOKACIJA	Somijas Republika
+LOKACIJA	Somma
+LOKACIJA	Somu līcis
+LOKACIJA	Sopota
+LOKACIJA	Sorbonna
+LOKACIJA	Sosas ezers
+LOKACIJA	Sona
+LOKACIJA	Sovetska
+LOKACIJA	Spānija
+LOKACIJA	Spāre
+LOKACIJA	Spāres ezers
+LOKACIJA	Spartaks
+LOKACIJA	Sporādas
+LOKACIJA	Spruževa
+LOKACIJA	Stambula
+LOKACIJA	Stabulnieki
+LOKACIJA	Staicele
+LOKACIJA	Staklišķes
+LOKACIJA	Stāķi
+LOKACIJA	Stalbe
+LOKACIJA	Staļģene
+LOKACIJA	Stāmeriena
+LOKACIJA	Staraplanina
+LOKACIJA	Stefordšīra
+LOKACIJA	Stērlinga
+LOKACIJA	Stokholma
+LOKACIJA	Strasbūra
+LOKACIJA	Stretforda pie Eivonas
+LOKACIJA	Stomboli
+LOKACIJA	Sudāna
+LOKACIJA	Sudeti
+LOKACIJA	Sueca
+LOKACIJA	Suecas kanāls
+LOKACIJA	Suhumi
+LOKACIJA	Sukre
+LOKACIJA	Sulavesi
+LOKACIJA	Sulavesi jūra
+LOKACIJA	Sumatra
+LOKACIJA	Surabaja
+LOKACIJA	Surinama
+LOKACIJA	Suva
+LOKACIJA	Svazilenda
+LOKACIJA	Sverdlovska
+LOKACIJA	Sverdlovskas apgabals
+LOKACIJA	Svētās Helēnas sala 
+LOKACIJA	Svētā Labrenča upe
+LOKACIJA	Svētciems
+LOKACIJA	Svēte
+LOKACIJA	Svētupe
+LOKACIJA	Svīla
+LOKACIJA	Svira
+LOKACIJA	Svirkalne
+LOKACIJA	Sviltene
+LOKACIJA	Svonsi 
+LOKACIJA	Šaba
+LOKACIJA	Šahti
+LOKACIJA	Šaķi
+LOKACIJA	Šaķu rajons
+LOKACIJA	Šanhaja
+LOKACIJA	Šefilda
+LOKACIJA	Šalča
+LOKACIJA	Šalčininki
+LOKACIJA	Šalpe
+LOKACIJA	Šaltona
+LOKACIJA	Šampaņa
+LOKACIJA	Šanči
+LOKACIJA	Šanhaja
+LOKACIJA	Šatrija
+LOKACIJA	Šaukota
+LOKACIJA	Šauķēni
+LOKACIJA	Šaulēni
+LOKACIJA	Šauļi
+LOKACIJA	Šauļu rajons        
+LOKACIJA	Šauše
+LOKACIJA	Ščecina
+LOKACIJA	Ščolkova
+LOKACIJA	Šēdere
+LOKACIJA	Šēfilde
+LOKACIJA	Šeimena
+LOKACIJA	Šeduva
+LOKACIJA	Šelda
+LOKACIJA	Šenjana
+LOKACIJA	Šepeta
+LOKACIJA	Šerbūra
+LOKACIJA	Šerksnne
+LOKACIJA	Šeškine
+LOKACIJA	Šešoļi
+LOKACIJA	Šeštoki
+LOKACIJA	Šešupe
+LOKACIJA	Šešuve
+LOKACIJA	Šēta
+LOKACIJA	Šetlendas salas
+LOKACIJA	Šilale
+LOKACIJA	Šilales rajons
+LOKACIJA	Šilute
+LOKACIJA	Šilutes rajons
+LOKACIJA	Šiluva
+LOKACIJA	Šiluvas tīrelis
+LOKACIJA	Šimone
+LOKACIJA	Širnēvas ezers
+LOKACIJA	Širvinta
+LOKACIJA	Širvintas
+LOKACIJA	Širvintu rajons
+LOKACIJA	Šīša
+LOKACIJA	Šķaune
+LOKACIJA	Šķaunes ezers
+LOKACIJA	Šķēde
+LOKACIJA	Šķibe
+LOKACIJA	Šķilbēni
+LOKACIJA	Šlavanta ezers
+LOKACIJA	Šlēsviga-Holsteina
+LOKACIJA	Šlīna
+LOKACIJA	Šlokenberga
+LOKACIJA	Šnipišķe
+LOKACIJA	Šoja
+LOKACIJA	Šona
+LOKACIJA	Špicbergena
+LOKACIJA	Špoģi
+LOKACIJA	Šprē
+LOKACIJA	Šrilanka
+LOKACIJA	Šropšīra
+LOKACIJA	Šrūsberi
+LOKACIJA	Štrālzunde
+LOKACIJA	Štutgarte
+LOKACIJA	Šumava
+LOKACIJA	Šumska
+LOKACIJA	Šunija
+LOKACIJA	Šuste
+LOKACIJA	Švābija
+LOKACIJA	Švarzvalde
+LOKACIJA	Šveice
+LOKACIJA	Šveices Konfederācija
+LOKACIJA	Švēkšna
+LOKACIJA	Šnevčone
+LOKACIJA	Švenčonēļi
+LOKACIJA	Švenčones rajons
+LOKACIJA	Šventa ezers
+LOKACIJA	Šventoja
+LOKACIJA	Šventupe
+LOKACIJA	Šverina
+LOKACIJA	Švīca
+LOKACIJA	Tadžikija
+LOKACIJA	Tadžikijas Padomju Sociālistiskā Republika
+LOKACIJA	Taganroga
+LOKACIJA	Tahiti
+LOKACIJA	Taho
+LOKACIJA	Taimira
+LOKACIJA	Taimiras nacionālais apvidus
+LOKACIJA	Taiti
+LOKACIJA	Taivana
+LOKACIJA	Taiza
+LOKACIJA	Taizeme
+LOKACIJA	Taizemes Karaliste
+LOKACIJA	Taklamakans
+LOKACIJA	Taklamakana tuksnesis
+LOKACIJA	Tālie Austrumi
+LOKACIJA	Tallina
+LOKACIJA	Talsi
+LOKACIJA	Talsu rajons
+LOKACIJA	Tamaņas pussala
+LOKACIJA	Tambova
+LOKACIJA	Tambovas apgabals
+LOKACIJA	Tammerforsa
+LOKACIJA	Tampere
+LOKACIJA	Tanganjikas ezers
+LOKACIJA	Tandžera
+LOKACIJA	Tanganjika
+LOKACIJA	Tanganjikas ezers
+LOKACIJA	Tanzānija
+LOKACIJA	Tanžera
+LOKACIJA	Tapeļu ezers
+LOKACIJA	Tara
+LOKACIJA	Tarento
+LOKACIJA	Tartu
+LOKACIJA	Tasmāna jūra
+LOKACIJA	Tasmānija
+LOKACIJA	Tašauza
+LOKACIJA	Tašauzas apgabals
+LOKACIJA	Taškenta
+LOKACIJA	Taškentas apgabals
+LOKACIJA	Tāšu ezers
+LOKACIJA	Tatārija
+LOKACIJA	Tatārijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Tatri
+LOKACIJA	Tatula
+LOKACIJA	Taujēni
+LOKACIJA	Taunusa
+LOKACIJA	Tauranga ezers
+LOKACIJA	Tauragni
+LOKACIJA	Tauraģe
+LOKACIJA	Taurages rajons
+LOKACIJA	Taurkalne    
+LOKACIJA	Taurs
+LOKACIJA	Taurupe
+LOKACIJA	Tausala ezers
+LOKACIJA	Tbilisi
+LOKACIJA	Tēbas
+LOKACIJA	Tebra
+LOKACIJA	Tebriza
+LOKACIJA	Tegusigalpa
+LOKACIJA	Teherāna
+LOKACIJA	Teksasa
+LOKACIJA	Telaviva
+LOKACIJA	Telši
+LOKACIJA	Telšu rajons
+LOKACIJA	Temza
+LOKACIJA	Tenena
+LOKACIJA	Tenerife
+LOKACIJA	Tenesi
+LOKACIJA	Tenesija
+LOKACIJA	Tereka
+LOKACIJA	Termeza
+LOKACIJA	Ternopole
+LOKACIJA	Ternopoles apgabals
+LOKACIJA	Tērvete
+LOKACIJA	Tesālija
+LOKACIJA	Tibeta
+LOKACIJA	Tibra
+LOKACIJA	Tigra
+LOKACIJA	Tilzīte
+LOKACIJA	Tilža
+LOKACIJA	Timora
+LOKACIJA	Timpu
+LOKACIJA	Tiņģere
+LOKACIJA	Tirāna
+LOKACIJA	Tiraspole
+LOKACIJA	Tīreļpurvs
+LOKACIJA	Tirēnu jūra
+LOKACIJA	Tīringa
+LOKACIJA	Tirkšļi
+LOKACIJA	Tirole
+LOKACIJA	Tīruļi
+LOKACIJA	Tirza
+LOKACIJA	Tisa
+LOKACIJA	Tiskāda ezers
+LOKACIJA	Tiskādi
+LOKACIJA	Tisa
+LOKACIJA	Titikaka
+LOKACIJA	Titikakas ezers
+LOKACIJA	Tītuvēni
+LOKACIJA	Tītuvēnu tīrelis
+LOKACIJA	Tjandzina
+LOKACIJA	Tjanšaņs
+LOKACIJA	Tjanšaņas apgabals
+LOKACIJA	Tjumeņa
+LOKACIJA	Tjumeņas apgabals
+LOKACIJA	Tobago
+LOKACIJA	Tobola
+LOKACIJA	Toboļska
+LOKACIJA	Tobruka
+LOKACIJA	Toce
+LOKACIJA	Togo
+LOKACIJA	Togo Republika
+LOKACIJA	Tokija
+LOKACIJA	Toledo
+LOKACIJA	Toljati
+LOKACIJA	Tomska
+LOKACIJA	Tomskas apgabals
+LOKACIJA	Tombuka
+LOKACIJA	Tonga
+LOKACIJA	Torkī
+LOKACIJA	Toronto
+LOKACIJA	Toskaņa
+LOKACIJA	Tosmare
+LOKACIJA	Totnema
+LOKACIJA	Tožas
+LOKACIJA	Trafalgaras rags
+LOKACIJA	Transvāla
+LOKACIJA	Traķi
+LOKACIJA	Traķu rajons
+LOKACIJA	Traķu Voķe
+LOKACIJA	Transilvānija
+LOKACIJA	Transilvānijas Alpi
+LOKACIJA	Trapene
+LOKACIJA	Trenta
+LOKACIJA	Trieste
+LOKACIJA	Trinidada un Tobago 
+LOKACIJA	Trikāta
+LOKACIJA	Tripole
+LOKACIJA	Tripolitānija
+LOKACIJA	Trīra
+LOKACIJA	Trīsciems
+LOKACIJA	Trīšķi
+LOKACIJA	Trūškūni
+LOKACIJA	Trumpe
+LOKACIJA	Tulona
+LOKACIJA	Trupi
+LOKACIJA	Tuamotu salas
+LOKACIJA	Tuapse
+LOKACIJA	Tukuma rajons
+LOKACIJA	Tukums
+LOKACIJA	Tula
+LOKACIJA	Tulas apgabals
+LOKACIJA	Tulona
+LOKACIJA	Tulūza
+LOKACIJA	Tume
+LOKACIJA	Tunisa
+LOKACIJA	Tunisija
+LOKACIJA	Tunisijas Republika
+LOKACIJA	Turaida
+LOKACIJA	Turcija
+LOKACIJA	Turcijas Republika
+LOKACIJA	Turģeļi
+LOKACIJA	Turīna
+LOKACIJA	Turkestāna
+LOKACIJA	Turkmēnija
+LOKACIJA	Turkmēnijass Padomju Sociālistiskā Republika
+LOKACIJA	Turku
+LOKACIJA	Turmanta
+LOKACIJA	Tutiņi
+LOKACIJA	Tuva
+LOKACIJA	Tuvas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Tuvie Austrumi
+LOKACIJA	Tvera
+LOKACIJA	Tvereča
+LOKACIJA	Tvīda
+LOKACIJA	Tviknema
+LOKACIJA	Udmrtija
+LOKACIJA	Udmurtijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Ūdrlande
+LOKACIJA	Ufa
+LOKACIJA	Ugāle
+LOKACIJA	Uganda
+LOKACIJA	Ugunszeme
+LOKACIJA	Ūģe
+LOKACIJA	Uhaņa
+LOKACIJA	Ukmerģe
+LOKACIJA	Ukmerģes rajons
+LOKACIJA	Ukoja ezers
+LOKACIJA	Ukraina
+LOKACIJA	Ukrainas Padomju Sociālistiskā Republika
+LOKACIJA	Ūla
+LOKACIJA	Ulanbatora
+LOKACIJA	Ulanude
+LOKACIJA	Ulbroka
+LOKACIJA	Uļjanovska
+LOKACIJA	Uļjānovskas apgabals
+LOKACIJA	Umurga
+LOKACIJA	Ungārija
+LOKACIJA	Ungārijas Tautas Republika
+LOKACIJA	Upe
+LOKACIJA	Upesciems
+LOKACIJA	Upesgrīva
+LOKACIJA	Upīna
+LOKACIJA	Upīte
+LOKACIJA	Upmaļi
+LOKACIJA	Upsala
+LOKACIJA	Urāla
+LOKACIJA	Urāli
+LOKACIJA	Uraļska
+LOKACIJA	Uraļskas apgabals
+LOKACIJA	Urga
+LOKACIJA	Urgenča
+LOKACIJA	Urugvaja
+LOKACIJA	Usmas ezers
+LOKACIJA	Usatjordinskas Burjatu nacionālais apvidus
+LOKACIJA	Ustrone
+LOKACIJA	Ūsu ezers
+LOKACIJA	Usumbura
+LOKACIJA	Usūri
+LOKACIJA	Usurijska
+LOKACIJA	Ušura ezers
+LOKACIJA	Utenas rajons
+LOKACIJA	Utrehta
+LOKACIJA	Uzbekija
+LOKACIJA	Uzbekijas Padomju Sociālistiskā Republika
+LOKACIJA	Užava
+LOKACIJA	Užgoroda
+LOKACIJA	Užpaļi
+LOKACIJA	Užuņa ezers
+LOKACIJA	Užupe
+LOKACIJA	Užvente
+LOKACIJA	Vabalninka
+LOKACIJA	Vabole
+LOKACIJA	Vācija
+LOKACIJA	Vācijas Demokrātiskā Republika
+LOKACIJA	Vācijas Federatīvā Republika
+LOKACIJA	Vadakste
+LOKACIJA	Vaduca
+LOKACIJA	Vadokļi
+LOKACIJA	Vagadugu
+LOKACIJA	Vahša
+LOKACIJA	Vaidava
+LOKACIJA	Vaigača
+LOKACIJA	Vaiguva
+LOKACIJA	Vainuta
+LOKACIJA	Vaiņode
+LOKACIJA	Vaiominga
+LOKACIJA	Vaivari
+LOKACIJA	Vajona ezers
+LOKACIJA	Valakampji
+LOKACIJA	Valdaja augstiene
+LOKACIJA	Valdeķi
+LOKACIJA	Valdemārpils
+LOKACIJA	Valdlauči
+LOKACIJA	Valensija
+LOKACIJA	Valgalciems
+LOKACIJA	Valgunde
+LOKACIJA	Valka
+LOKACIJA	Valkas rajons
+LOKACIJA	Valmiera
+LOKACIJA	Valmieras rajons
+LOKACIJA	Valleta
+LOKACIJA	Valparaiso
+LOKACIJA	Vaļķininki
+LOKACIJA	Vana ezers
+LOKACIJA	Vanagi
+LOKACIJA	Vandzene
+LOKACIJA	Vāne
+LOKACIJA	Vankūvera
+LOKACIJA	varakļāni
+LOKACIJA	Varanasi
+LOKACIJA	Vardura
+LOKACIJA	Vardura
+LOKACIJA	Varēna
+LOKACIJA	Varēnas rajons
+LOKACIJA	Variņi
+LOKACIJA	Varšava
+LOKACIJA	Varta
+LOKACIJA	Vartāja
+LOKACIJA	Vašingtona
+LOKACIJA	Vaški
+LOKACIJA	Vaterlo
+LOKACIJA	Vatikāns
+LOKACIJA	VDR
+LOKACIJA	Vecbilska
+LOKACIJA	Vecpiebalga
+LOKACIJA	Vecrikava
+LOKACIJA	vecsaule
+LOKACIJA	Vecslabada
+LOKACIJA	Vecumi
+LOKACIJA	Vecumnieki
+LOKACIJA	Veģeri
+LOKACIJA	Veimāra
+LOKACIJA	Veisieja ezers
+LOKACIJA	Veiši
+LOKACIJA	Veivirža
+LOKACIJA	Vējiņi
+LOKACIJA	Veldze
+LOKACIJA	Velingtona
+LOKACIJA	Velsa
+LOKACIJA	Veļikije Luki
+LOKACIJA	Veļona
+LOKACIJA	Venēcija
+LOKACIJA	Venecuēla
+LOKACIJA	Veners
+LOKACIJA	Venta
+LOKACIJA	Ventspils
+LOKACIJA	Verakrusa
+LOKACIJA	Verdena
+LOKACIJA	Vermonta
+LOKACIJA	Verkne
+LOKACIJA	Verona
+LOKACIJA	Versaļa
+LOKACIJA	Verseka
+LOKACIJA	Veršvi
+LOKACIJA	Veseta
+LOKACIJA	Vepri
+LOKACIJA	Vestiena
+LOKACIJA	Vestende
+LOKACIJA	Vestlotjana
+LOKACIJA	Vestsaseksa
+LOKACIJA	Vestminstera
+LOKACIJA	Veterns
+LOKACIJA	Vezuvs
+LOKACIJA	VFR
+LOKACIJA	Vībiņi
+LOKACIJA	Vīborga
+LOKACIJA	Vičuni
+LOKACIJA	Vidauja
+LOKACIJA	Vidējie Austrumi
+LOKACIJA	Vidusāzija
+LOKACIJA	Vidišķi
+LOKACIJA	Vidriži
+LOKACIJA	Vidukle
+LOKACIJA	Vidusjūra
+LOKACIJA	Vidzeme
+LOKACIJA	Viekšņi
+LOKACIJA	Viesīte
+LOKACIJA	Viesītes ezers
+LOKACIJA	Viešinta ezers
+LOKACIJA	Vietalva
+LOKACIJA	Vija
+LOKACIJA	Viktorija
+LOKACIJA	Viktorijas ezers
+LOKACIJA	Vilgale
+LOKACIJA	Vilgales ezers
+LOKACIJA	Vilijampole
+LOKACIJA	vilkaviški
+LOKACIJA	Vilkavišķu rajons
+LOKACIJA	Viltšīra
+LOKACIJA	Viļaka
+LOKACIJA	Viļakas rajons
+LOKACIJA	Viļāni
+LOKACIJA	Vilkišķi
+LOKACIJA	Viļņa
+LOKACIJA	Vindhuka
+LOKACIJA	Vtndzora
+LOKACIJA	Vīne
+LOKACIJA	Vinipega
+LOKACIJA	Viņģis
+LOKACIJA	Virdžīnija
+LOKACIJA	Viņņica
+LOKACIJA	Virčuve
+LOKACIJA	Viringa
+LOKACIJA	Virdžīnija
+LOKACIJA	Virtenberga
+LOKACIJA	Virvīte
+LOKACIJA	Visaģina ezers
+LOKACIJA	Viskonsina
+LOKACIJA	Vismāra
+LOKACIJA	Visla
+LOKACIJA	Višī
+LOKACIJA	Vjetnama
+LOKACIJA	Vjetnamas Sociālistiskā Republika
+LOKACIJA	Vladivostoka
+LOKACIJA	Vladimmira
+LOKACIJA	Vladimiras apgabals
+LOKACIJA	Volga
+LOKACIJA	Volgograda
+LOKACIJA	Volgogradas apgabals
+LOKACIJA	Volīnija
+LOKACIJA	Volīnijas apgabals
+LOKACIJA	Vorkuta
+LOKACIJA	Vrangela salas
+LOKACIJA	Vroclava
+LOKACIJA	Vusteršīra
+LOKACIJA	Vorikšīra
+LOKACIJA	Zagreba
+LOKACIJA	Zabolotjes purvs
+LOKACIJA	Zaira
+LOKACIJA	Zairas Republika
+LOKACIJA	Zagreba
+LOKACIJA	Zālamana salas
+LOKACIJA	Zalcburga
+LOKACIJA	Zaļā Raga Salas
+LOKACIJA	Zambezi
+LOKACIJA	Zambija
+LOKACIJA	Zanzibāra
+LOKACIJA	Zāra
+LOKACIJA	Zāras apgabals
+LOKACIJA	Zarasa ezers
+LOKACIJA	Zēlande
+LOKACIJA	Zelta Krasts
+LOKACIJA	Zeltiņi
+LOKACIJA	Zemgale
+LOKACIJA	Zemgales zemiene
+LOKACIJA	Zemīte
+LOKACIJA	Zemmerings
+LOKACIJA	Zentene
+LOKACIJA	Ziemeļamerika
+LOKACIJA	Ziemeļdakota
+LOKACIJA	Ziemeļīrija
+LOKACIJA	Ziemeļosetijas Autonomā Padomju Sociālistiskā Republika
+LOKACIJA	Ziemeļu Ledus okeāns
+LOKACIJA	Ziloņkaula Krasts
+LOKACIJA	Zimbabve
+LOKACIJA	Zilaiskalns
+LOKACIJA	Ziloņkaula Krasta Republika
+LOKACIJA	Ziloņkaula Krasts
+LOKACIJA	Zilupe
+LOKACIJA	Zunda šaurums
+LOKACIJA	Zlatousa
+LOKACIJA	Zosna
+LOKACIJA	Zūras
+LOKACIJA	Zvejniekciems
+LOKACIJA	Zviedrija
+LOKACIJA	Žagare
+LOKACIJA	Žaltīša ezers
+LOKACIJA	Žarēni
+LOKACIJA	Žašļi 
+LOKACIJA	Žeimele      
+LOKACIJA	Žeimena
+LOKACIJA	Žeimeņu ezers
+LOKACIJA	Žeimji   
+LOKACIJA	Žeļeznovodska
+LOKACIJA	Želva
+LOKACIJA	Žemale
+LOKACIJA	Ženēva
+LOKACIJA	Židiki
+LOKACIJA	Žiežmari
+LOKACIJA	Žiguli
+LOKACIJA	Žīguri
+LOKACIJA	Žirmūni
+LOKACIJA	Žirnaju ezers
+LOKACIJA	Žitomira
+LOKACIJA	Žitomiras apgabals
+LOKACIJA	Žižma
+LOKACIJA	Žuvinta ezers
+LOKACIJA	Žuvinta tīrelis
+LOKACIJA	Žvelsa
+LOKACIJA	Žvērīna
+LOKACIJA	Žverna ezers
