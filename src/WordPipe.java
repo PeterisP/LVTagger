@@ -65,7 +65,7 @@ public class WordPipe {
 			}
 		}
 				
-		String serializedClassifier = "MorfoCRF/lv-morpho-model.ser.gz"; //FIXME - make it configurable
+		String serializedClassifier = "MorphoCRF/lv-morpho-model.ser.gz"; //FIXME - make it configurable
 		AbstractSequenceClassifier<CoreLabel> cmm = CMMClassifier.getClassifier(serializedClassifier);
 			
 		PrintStream out = new PrintStream(System.out, true, "UTF8");
