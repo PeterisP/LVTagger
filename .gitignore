@@ -1,0 +1,9 @@
+.DS_Store
+classes/*
+bin/*
+javadoc/*
+classifiers/*
+*.jar
+/dist
+/javadoc
+/classifiers
