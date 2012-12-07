@@ -35,7 +35,7 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
   private static final long serialVersionUID = 4858022869289996959L;
   private static transient Analyzer analyzer = null;
   private static transient Statistics statistics = null;
-  private Collection<String> answerAttributes;
+  private Collection<String> answerAttributes = null;
 
   private String[] map; // = null;
   private IteratorFromReaderFactory<List<CoreLabel>> factory;
@@ -47,6 +47,7 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 		  statistics = new Statistics("dist/Statistics.xml");
 		  analyzer.enableVocative = true;
 		  analyzer.enableGuessing = true; 
+		  analyzer.enablePrefixes = true;
 		  //analyzer.enableAllGuesses = true;
 	  } catch (Exception e) {
 		  // TODO Auto-generated catch block

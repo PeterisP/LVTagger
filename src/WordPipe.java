@@ -8,17 +8,14 @@ import java.util.List;
 
 import org.json.simple.JSONValue;
 
-import lv.semti.morphology.analyzer.MarkupConverter;
 import lv.semti.morphology.analyzer.Word;
 import lv.semti.morphology.analyzer.Wordform;
 import lv.semti.morphology.attributes.AttributeNames;
-import lv.semti.morphology.attributes.AttributeValues;
 
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ie.ner.CMMClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
-import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysisBest;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;

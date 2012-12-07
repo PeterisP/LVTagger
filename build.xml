@@ -160,7 +160,7 @@
 	  	<copy file="${morphology.dir}/dist/Statistics.xml" todir="${dist}"/>
 	  	<copy file="${morphology.dir}/dist/TagSet.xml" todir="${dist}"/>
 		
-			<zip destfile="LV_CRF.zip" basedir="." includes="dist/**,lib/**,NERdicts/**,MorphoCRF/**,pipetool.sh,README.txt,LICENSE.txt" />
+			<zip destfile="LV_CRF.zip" basedir="." includes="dist/**,lib/**,NERdicts/**,MorphoCRF/**,*.sh,*.bat,README.txt,LICENSE.txt,lv-ner-model.ser.gz" />
 	  </target>
 	
 	

@@ -96,8 +96,159 @@
 25. enable_all_guess
 	Pareizi:	92.7%	2217
 
+-- 2012. decembris
 
+26. baseline (train+dev)
+	Evaluation results:
+		Correct tag:	92.6%	2214
+		Correct lemma:	92.9%	2221
+		Correct all:	88.3%	2112
+	Vārdšķira :  1.88%
+	Pieturzīmes tips :  0.21%
+	Locījums :  8.06%
+	Skaitlis :  5.27%
+	Izteiksme :  2.76%
+	Noteiktība :  1.82%
+	Dzimte :  2.63%
+	Persona :  0.90%
 
+27. jaunie treniņdati - pielikts melis, nagi un leta paraugs
+	Evaluation results:
+		Correct tag:	93.1%	2500
+		Correct lemma:	92.4%	2483
+		Correct all:	88.3%	2372
+	Vārdšķira :  1.94%
+	Locījums :  7.47%
+	Skaitlis :  4.58%
+	Izteiksme :  2.18%
+	Noteiktība :  2.05%
+	Dzimte :  2.60%
+	Persona :  1.00%
+
+28. izņemta onomastika ārā:
+	Evaluation results:
+		Correct tag:	92.7%	2489
+		Correct lemma:	93.4%	2509
+		Correct all:	88.8%	2386
+	Vārdšķira :  2.20%
+	Locījums :  7.74%
+	Skaitlis :  4.59%
+	Izteiksme :  1.94%
+	Noteiktība :  2.04%
+	Dzimte :  2.92%
+	Persona :  0.80%	
+ [+tag -lemma]
+
+29. korektāki jaunie treniņdati - pielikti visi koki un (cerams) pareizās versijas. 50795 tokeni kopā, 40962 train, 46306 dev+train, 4489 test
+	Evaluation results:
+		Correct tag:	92.5%	400
+		Correct lemma:	95.0%	267
+		Correct all:	90.4%	511
+	Vārdšķira :  2.30%
+	Skaitlis :  4.67%
+	Noteiktība :  1.16%
+	Izteiksme :  3.04%
+	Pieturzīmes tips :  0.09%
+	Dzimte :  3.66%
+	Locījums :  7.37%
+	Persona :  0.87%
+
+30. Test rakstam (trenēts uz lielā, un testēts uz testset)
+	Evaluation results:
+		Correct tag:	93.6%	286
+		Correct lemma:	95.0%	224
+		Correct all:	91.0%	403
+	Vārdšķira :  2.01%
+	Skaitlis :  4.42%
+	Noteiktība :  1.63%
+	Izteiksme :  1.77%
+	Pieturzīmes tips :  0.11%
+	Dzimte :  3.23%
+	Persona :  0.81%
+	Locījums :  7.01%
+
+31. kārtējais baseline (pēc leksikona fix)
+	Evaluation results:
+		Correct tag:	93.6%	286
+		Correct lemma:	96.0%	178
+		Correct all:	92.0%	360
+	Vārdšķira :  2.07%
+	Skaitlis :  4.49%
+	Noteiktība :  1.36%
+	Izteiksme :  1.77%
+	Pieturzīmes tips :  0.11%
+	Dzimte :  3.18%
+	Persona :  0.81%
+	Locījums :  6.91%
+
+32. eneiblojam transitivitāti
+	Evaluation results:
+		Correct tag:	92.8%	387
+		Correct lemma:	95.5%	239
+		Correct all:	91.0%	482
+	Vārdšķira :  2.26%
+	Skaitlis :  4.61%
+	Noteiktība :  1.15%
+	Izteiksme :  3.29%
+	Transitivitāte :  2.25%
+	Pieturzīmes tips :  0.09%
+	Dzimte :  3.66%
+	Locījums :  7.31%
+	Persona :  0.79%
+
+	[izskatās slikti]
+
+33. atliku atpakaļ un neko nesaprotu
+	Evaluation results:
+		Correct tag:	93.1%	369
+		Correct lemma:	95.6%	236
+		Correct all:	91.3%	463
+	Vārdšķira :  2.25%
+	Skaitlis :  4.58%
+	Noteiktība :  1.15%
+	Izteiksme :  3.04%
+	Pieturzīmes tips :  0.09%
+	Dzimte :  3.62%
+	Locījums :  7.29%
+	Persona :  0.87%
+
+34. Pēc leksikona labojumiem uz dev datiem
+Evaluation results:
+		Correct tag:	93.3%	360
+		Correct lemma:	96.0%	213
+		Correct all:	91.7%	443
+	Vārdšķira :  2.11%
+	Skaitlis :  4.51%
+	Noteiktība :  1.15%
+	Izteiksme :  3.04%
+	Pieturzīmes tips :  0.09%
+	Dzimte :  3.49%
+	Locījums :  7.20%
+	Persona :  0.87%
+	
+35. Final, ko submitoju rakstam 7.dec (uz testseta)
+	Evaluation results:
+		Correct tag:	93.6%	287
+		Correct lemma:	96.1%	173
+		Correct all:	92.0%	357
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  2.10%
+	Number :  4.49%
+	Definiteness :  1.36%
+	Mood :  1.77%
+	Punctuation group :  0.11%
+	Gender :  3.18%
+	Person :  0.81%
+	Case :  6.96%
 
 
 TODO -dabūt novērtījumu katra varianta ticamībai vajag....
+TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss
+DONE - notestēt, kā ir ar transitivitātes eneiblošanu - nav jēgas
+TODO - notestēt, kā ir ja tagerim kā signālu padod, no kuras grupas lemma/tags ir nācis
+TODO - onomastikā ielikt filtru, lai nav common noun daudzskaitlinieki iekšā; par deminutīviem jāpadomā
+TODO - nez kāpēc viņam nepatīk ar priedēkļiem atvasinātie verbi:
+	word: sakoda, tag:v__i___30__, gold_lemma: 'sakost', lemma: 'sakodīt'
+	word: apkaltušas, tag:v__pdfpn__n, gold_lemma: 'apkalst', lemma: 'apkaltt'
+
+	kautkas nav word: mežiem, tag:n_mpd_, gold_lemma: 'mežs', lemma: 'medis'

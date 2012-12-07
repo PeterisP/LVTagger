@@ -1,4 +1,1210 @@
-<s>	<s>	<s>
+<s>
+«	zq	«
+Katrā	pg0msln	katrs
+momentā	ncmsl1	moments
+eksistē	vmnipi230an	eksistēt
+īpašs	afmsnnp	īpašs
+izšķirošs	armsnnp	izšķirošs
+mirklis	ncmsn2	mirklis
+,	zc	,
+kurā	pr0msln	kurš
+visas	pg0fpnn	visas
+lietas	ncfpn4	lieta
+atrodas	vmyipi130an	atrasties
+stāvoklī	ncmsl2	stāvoklis
+,	zc	,
+kas	pr000nn	kas
+uzskatāms	vmnpdmsnppn	uzskatīt
+par	spsan	par
+tā	pd3msgn	tā
+momenta	ncmsg1	moments
+būtību	ncfsa4	būtība
+.	zs	.
+<s>
+Mani	pp10san	es
+interesē	vmnipt230an	interesēt
+malka	ncfsn4	malka
+,	zc	,
+cik	r0q	cik
+tā	pd3fsnn	tā
+sausa	affsnnp	sausa
+,	zc	,
+un	ccs	un
+vai	css	vai
+iedegsies	vmyifi13san	iedegties
+man	pp10sdn	es
+tā	pd3fsnn	tā
+fakinā	affsgyp	fakina
+plīts	ncfsn6	plīts
+vai	ccs	vai
+ne	qs	ne
+,	zc	,
+vai	css	vai
+skurstenis	ncmsn2	skurstenis
+atkal	r0t	atkal
+klepos	vmnift230an	klepot
+dūmus	ncmpa1	dūmi
+atpakaļ	r0p	atpakaļ
+kā	css	kā
+aizrijies	afmsnnp	aizrijies
+nabagmājas	ncfsg4	nabagmāja
+vecis	ncmsn2	vecis
+.	zs	.
+<s>
+Saule	ncfsn5	saule
+.	zs	.
+<s>
+Tai	pd3msln	tas
+vienā	mcsmslv	viens
+brīdī	ncmsl2	brīdis
+.	zs	.
+<s>
+Tai	pd3msln	tas
+vienīgā	armslnp	vienīgs
+brīdī	ncmsl2	brīdis
+,	zc	,
+kad	r0t	kad
+ir	vcnipii30an	būt
+laiks	ncmsn1	laiks
+apkārt	rrp	apkārt
+pavērties	vmyn0i1000n	pavērties
+,	zc	,
+kauc	vmnipi13san	kaukt
+uz	sppdy	uz
+tām	pd3fpdn	tā
+pašām	pg0fpdn	pati
+debesīm	ncfpd6	debess
+.	zs	.
+<s>
+Bet	ccs	bet
+,	zc	,
+redz	is	redz
+,	zc	,
+tas	pd3msnn	tas
+viss	pg0msnn	viss
+jau	r0t	jau
+tik un tā	qs	tik un tā
+ir	vmnipii30an	būt
+,	zc	,
+tāpat	r0m	tāpat
+vien	qs	vien
+ir	vmnipii30an	būt
+-	zd	-
+bez	spsgn	bez
+tevis	pp20sgn	tu
+un	ccs	un
+ne	qs	ne
+priekš	spsgn	priekš
+tevis	pp20sgn	tu
+.	zs	.
+<s>
+Priecāties	vmyn0i2000n	priecāties
+par	spsan	par
+šo	pd3msan	šis
+faktu	ncmsa1	fakts
+vai	ccs	vai
+bēdāties	vmyn0i2000n	bēdāties
+-	zd	-
+tā	pd3fsnn	tā
+jau	qs	jau
+ir	vcnipii30an	būt
+katra	pg0msgn	katra
+paša	pg0msgn	paša
+darīšana	ncfsn4	darīšana
+.	zs	.
+<s>
+Ko	pr000an	kas
+,	zc	,
+nav	vgnipii30ay	nebūt
+tādas	pd0fsgn	tādas
+vietas	ncfsg4	vieta
+vairs	r0t	vairs
+Latvijā	npfsl4	Latvija
+?	zs	?
+<s>
+Nokaitināja	vmnist330an	nokaitināt
+viņš	pp3msnn	viņš
+mani	pp10san	es
+ar	spsan	ar
+to	pd3fsan	tā
+dzīves	ncfsg5	dzīve
+jēgu	ncfsa4	jēga
+vakar	r0t	vakar
+!	zs	!
+<s>
+Nedēļu	ncfsa4	nedēļa
+,	zc	,
+divas	mcsfpnv	divas
+nostaigāsi	vmnift22san	nostaigāt
+,	zc	,
+ne	qs	ne
+sūda	ncmsg1	sūds
+neatradīsi	vmnift12say	neatrast
+!	zs	!
+<s>
+Kas	pr000nn	kas
+nav	vmnipii30ay	nebūt
+-	zd	-
+nav	vmnipii30ay	nebūt
+.	zs	.
+<s>
+Kaimiņiene	ncfsn5	kaimiņiene
+-	zd	-
+nu	qs	nu
+kas	pi000nn	kas
+par	spsan	par
+kaimiņieni	ncfsa5	kaimiņiene
+-	zd	-
+kilometrs	ncmsn1	kilometrs
+vēl	r0t	vēl
+aiz	spsgy	aiz
+grāvja	ncmsg2	grāvis
+-	zd	-
+katru	pg0msan	katrs
+piektdienas	ncfsg4	piektdiena
+vakaru	ncmsa1	vakars
+sakrāsojas	vmyipi230an	sakrāsoties
+kā	css	kā
+Sābas	ncfsg4	sāba
+ķēniņiene	ncfsn5	ķēniņiene
+un	ccs	un
+uz	sppdy	uz
+rajona	ncmsg1	rajons
+dančiem	ncmpd2	dancis
+prom	r0p	prom
+.	zs	.
+<s>
+Ne jau	ccd	ne jau
+Dieviņam	npmsd1	Dieviņš
+paldies	is	paldies
+-	zd	-
+pašai	pg0fsdn	pati
+,	zc	,
+ka	css	ka
+varu	vonipt31san	varēt
+vēl	r0t	vēl
+nopelnīt	vmnn0t3000n	nopelnīt
+.	zs	.
+<s>
+Nav	vgnipii30ay	nebūt
+.	zs	.
+<s>
+Cik	r0q	cik
+varu	vmnipt31san	varēt
+,	zc	,
+tik	r0q	tik
+daru	vmnipt31san	darīt
+.	zs	.
+<s>
+A	qs	a
+ko	pr000an	kas
+nevaru	vmnipt31say	nevarēt
+,	zc	,
+nu	qs	nu
+i	qs	i
+nedaru	vmnipt31say	nedarīt
+.	zs	.
+<s>
+Ūdenī	ncmsl2	ūdens
+vārīta	vmnpdfsnpsn	vārīt
+,	zc	,
+ar	spsan	ar
+liellopa	ncmsg1	liellops
+kubiku	ncmsa1	kubiks
+.	zs	.
+<s>
+Plīts	ncfsn6	plīts
+atkal	r0t	atkal
+izdzisusi	vmnpdfsnasn	izdzist
+.	zs	.
+<s>
+Veļu	ncfsa4	veļa
+izžaut	vmnn0t1000n	izžaut
+.	zs	.
+<s>
+-	zd	-
+Ko	pq000an	kas
+?	zs	?
+<s>
+Un	ccs	un
+līdz	sppdy	līdz
+pieciem	mcsmpdv	pieci
+nekā	pi0msgy	nekas
+cita	pi0msgn	cita
+nebūs	vgnifii30ay	nebūt
+,	zc	,
+es	pp10snn	es
+uz	spsay	uz
+autoveikalu	ncmsa1	autoveikals
+.	zs	.
+<s>
+-	zd	-
+Nu	qs	nu
+ja	qs	ja
+,	zc	,
+tu	pp20snn	tu
+jau	qs	jau
+tā	pd3fsnn	tā
+gudrā	affsnyp	gudra
+,	zc	,
+tu	pp20snn	tu
+labāk	rcm	labi
+zini	vmnipt32san	zināt
+.	zs	.
+<s>
+-	zd	-
+Skaidrs	afmsnnp	skaidrs
+,	zc	,
+ka	css	ka
+nav	vcnipii30ay	nebūt
+priekš	spsgn	priekš
+tevis	pp20sgn	tu
+,	zc	,
+priekšnieks	ncmsn1	priekšnieks
+atradies	vmypdmsnasn	atrasties
+.	zs	.
+<s>
+-	zd	-
+Jā	qs	jā
+,	zc	,
+ej	vmnmpii2san	iet
+par	spsan	par
+ubagu	ncmsa1	ubags
+Rīgā	npfsl4	Rīga
+pie	spsgy	pie
+baznīcas	ncfsg4	baznīca
+,	zc	,
+tur	r0p	tur
+tev	pp20sdn	tu
+iedos	vmnift130an	iedot
+.	zs	.
+<s>
+Ka	css	ka
+es	pp10snn	es
+arī	qs	arī
+.	zs	.
+<s>
+Bet	ccs	bet
+īstenībā	ncfsl4	īstenība
+es	pp10snn	es
+nopietnas	affsgnp	nopietna
+nemaz	r0q	nemaz
+negribu	vmnipt31san	negribēt
+.	zs	.
+<s>
+Laimīga	affsnnp	laimīga
+neizskatās	voyipt330ay	neizskatīties
+.	zs	.
+<s>
+Bet	ccs	bet
+totiesu	r0m	totiesu
+tagad	r0t	tagad
+zinot	vmnrpt300an	zināt
+,	zc	,
+kas	pr000nn	kas
+dzīves	ncfsg5	dzīve
+jēga	ncfsn4	jēga
+ir	vcnipii30an	būt
+.	zs	.
+<s>
+Tā	r0m	tā
+arī	qs	arī
+palikšu	vmnifi11san	palikt
+nezinot	vmnrpt300ay	nezināt
+.	zs	.
+<s>
+Kurš	pq0msnn	kurš
+draņķis	ncmsn2	draņķis
+mums	pp10pdn	mēs
+jēgu	ncfsa4	jēga
+atņēmis	vmnpdmsnasn	atņemt
+?	zs	?
+<s>
+Vai	ccs	vai
+iedalīt	vmnn0t3000n	iedalīt
+aizmirsis	vmnpdmsnasn	aizmirst
+?	zs	?
+<s>
+Jo	css	jo
+mēs	pp10pnn	mēs
+jau	qs	jau
+tik un tā	qc	tik un tā
+nesapratīsim	vmnift11pay	nesaprast
+.	zs	.
+<s>
+Labi	rpm	labi
+gan	qs	gan
+,	zc	,
+ka	css	ka
+es	pp10snn	es
+pie	sppdy	pie
+tiem	pd3mpdn	tas
+kapiņiem	ncmdd1	kapiņi
+,	zc	,
+man	pp10sdn	es
+tur	r0p	tur
+vismaz	r0q	vismaz
+neviens	pi0msny	neviens
+kempingus	ncmpa1	kempings
+nebūvēs	vmnift230ay	nebūvēt
+.	zs	.
+<s>
+Opim	npmsd2	Opis
+nemaz	r0q	nemaz
+neteicu	vmnist11say	neteikt
+-	zd	-
+lai	css	lai
+nesabīstas	vmyipi130ay	nesabīties
+.	zs	.
+<s>
+Pat	qs	pat
+sabučojāmies	vmyisi21pan	sabučoties
+drusku	r0q	drusku
+.	zs	.
+<s>
+Pārmet	vmnipt13san	pārmest
+tādu	pd0fsan	tāda
+smagu	affsanp	smaga
+roku	ncfsa4	roka
+pāri	rrp	pāri
+.	zs	.
+<s>
+Vot	is	vot
+,	zc	,
+pastāvi	vmnmpi32san	pastāvēt
+,	zc	,
+pastāvi	vmnmpi32san	pastāvēt
+šitā	r0m	šitā
+ziemeļu	ncmpg2	ziemelis
+vējā	ncmsl1	vējš
+,	zc	,
+papīpē	vmnmpt22san	papīpēt
+plikām	affpdnp	plika
+rokām	ncfpd4	roka
+.	zs	.
+<s>
+-	zd	-
+Kas	pq000nn	kas
+ta'	qs	tad
+ziņo	vmnipt230an	ziņot
+?	zs	?
+<s>
+Speķis	ncmsn2	speķis
+.	zs	.
+<s>
+Stum	vmnmpt12san	stumt
+,	zc	,
+vecā	affsnyp	veca
+,	zc	,
+stum	vmnmpt12san	stumt
+.	zs	.
+<s>
+Atpakaļ	r0p	atpakaļ
+glīti	rpm	glīti
+gar	spsay	gar
+jūru	ncfsa4	jūra
+.	zs	.
+<s>
+Asinis	ncfpn6	asins
+ieriņķo	vmnipt230an	ieriņķot
+,	zc	,
+pat	qs	pat
+rokas	ncfpn4	roka
+sāk	vpnipt130an	sākt
+silt	vmnn0i1000n	silt
+.	zs	.
+<s>
+Domāju	vmnipt21san	domāt
+par	spsan	par
+ķerru	ncfsa4	ķerra
+.	zs	.
+<s>
+Stumju	vmnipt11san	stumt
+un	ccs	un
+dzeru	vmnipt11san	dzert
+.	zs	.
+<s>
+Vējš	ncmsn1	vējš
+met	vmnipt130an	mest
+sejā	ncfsl4	seja
+sīkas	affpanp	sīka
+ledainas	arfpanp	ledaina
+ūdens	ncmsg2	ūdens
+lāses	ncfpa5	lāse
+-	zd	-
+nevar	vonipt330ay	nevarēt
+saprast	vmnn0t1000n	saprast
+-	zd	-
+tas	pd3msnn	tas
+lietus	ncmsn3	lietus
+vai	ccs	vai
+migla	ncfsn4	migla
+no	spsgy	no
+jūras	ncfsg4	jūra
+?	zs	?
+<s>
+Nu	qs	nu
+,	zc	,
+tipa	qs	tipa
+,	zc	,
+tūkstošiem	mcsmpdt	tūkstoši
+reižu	ncfpg5	reize
+palielināta	vmnpdfsnpsn	palielināt
+diegspolīte	ncfsn5	diegspolīte
+,	zc	,
+tik	r0q	tik
+liela	affsnnp	liela
+kā	css	kā
+vecais	afmsnyp	vecs
+apaļais	afmsnyp	apaļš
+ozola	ncmsg1	ozols
+galds	ncmsn1	galds
+.	zs	.
+<s>
+Un	ccs	un
+to	pd3msan	tas
+čali	ncmsa2	čalis
+.	zs	.
+<s>
+Kam	pr000dn	kas
+erotika	ncfsn4	erotika
+notiek	vmnipi130an	notikt
+galvā	ncfsl4	galva
+.	zs	.
+<s>
+Es	pp10snn	es
+jums	pp20pdn	jūs
+vispār	r0m	vispār
+varu	vonipt31san	varēt
+kā	css	kā
+no	spsgy	no
+grāmatas	ncfsg4	grāmata
+norunāt	vmnn0t2000n	norunāt
+.	zs	.
+<s>
+Es	pp10snn	es
+lietoju	vmnipt21san	lietot
+tikai	qs	tikai
+tos	pd3mpan	tas
+vārdus	ncmpa1	vārds
+,	zc	,
+kuri	pr0mpnn	kurš
+man	pp10sdn	es
+piestāv	vmnipi330an	piestāvēt
+.	zs	.
+<s>
+Tādas	pd0fpnn	tāda
+kā	ccs	kā
+balsis	ncfpn6	balss
+runājas	vmyipi230an	runāties
+.	zs	.
+<s>
+Lietus	ncmsn3	lietus
+,	zc	,
+maita	ncfsn4	maita
+,	zc	,
+pieņemas	vmyipi130an	pieņemties
+,	zc	,
+vējš	ncmsn1	vējš
+atgriežas	vmyipi130an	atgriezties
+vēl	r0t	vēl
+niknāks	afmsnnc	nikns
+,	zc	,
+tieši	rpm	tieši
+sejā	ncfsl4	seja
+.	zs	.
+<s>
+Vilkt	vmnn0t1000n	vilkt
+vieglāk	rcm	viegli
+,	zc	,
+vismaz	r0q	vismaz
+kādu	pi0msan	kāds
+brīdi	ncmsa2	brīdis
+.	zs	.
+<s>
+Opis	ncmsn2	opis
+pārgaidījies	vmypdmsnapn	pārgaidīties
+būs	vcnifii30an	būt
+,	zc	,
+nabags	ncmsn1	nabags
+.	zs	.
+<s>
+Neviens	pi0msny	neviens
+neredz	vmnipt330ay	neredzēt
+.	zs	.
+<s>
+Bridīs	vmnifi130an	brist
+pa	spsay	pa
+mežu	ncmsa1	mežs
+.	zs	.
+<s>
+Vienmēr	r0t	vienmēr
+dega	vmnisi130an	degt
+mazā	affsnyp	maza
+lampiņa	ncfsn4	lampiņa
+.	zs	.
+<s>
+-	zd	-
+Opi	ncmsv2	opis
+,	zc	,
+es	pp10snn	es
+tev	pp20sdn	tu
+stiklenes	ncfpa5	stiklene
+atnesu	vmnist11san	atnest
+!	zs	!
+<s>
+-	zd	-
+Nūja	qs	nūja
+,	zc	,
+avīzē	ncfsl5	avīze
+pat	qs	pat
+jau	r0t	jau
+rakstīja	vmnist330an	rakstīt
+.	zs	.
+<s>
+-	zd	-
+Un	ccs	un
+tad	qs	tad
+?	zs	?
+<s>
+Pie	spsgy	pie
+blakus	r0p	blakus
+galdiņa	ncmsg1	galdiņš
+<s>
+Viņa	pp3fsnn	viņa
+apsēdās	vmyist130an	apsēsties
+pie	spsgy	pie
+galdiņa	ncmsg1	galdiņš
+stūrī	ncmsl2	stūris
+,	zc	,
+līdzās	rrp	līdzās
+manam	ps0msdn	mans
+;	zc	;
+ne	ccd	ne
+apsēdās	vmyist130an	apsēsties
+-	zd	-
+drīzāk	r0t	drīzāk
+atkrita	vmnisi130an	atkrist
+krēslā	ncmsl1	krēsls
+,	zc	,
+un	ccs	un
+tūdaļ	r0t	tūdaļ
+iebāza	vmnist130an	iebāzt
+roku	ncfsa4	roka
+kabatā	ncfsl4	kabata
+,	zc	,
+parakņājās	vmyisi230an	parakņāties
+tur	r0p	tur
+nervozi	r0m	nervozi
+un	ccs	un
+sapīkusi	vmnpdfsnasn	sapīkt
+,	zc	,
+izvilka	vmnist130an	izvilkt
+roku	ncfsa4	roka
+no	spsgy	no
+kabatas	ncfsg4	kabata
+un	ccs	un
+sāka	vpnist130an	sākt
+grauzt	vmnn0t1000n	grauzt
+nagus	ncmpa1	nags
+.	zs	.
+<s>
+N/A	N/A	N/A
+Cigareti	ncfsa5	cigarete
+viņa	pp3fsnn	viņa
+uzreiz	r0t	uzreiz
+iebāza	vmnist130an	iebāzt
+mutē	ncfsl5	mute
+,	zc	,
+bez	spsgn	bez
+kādas	pi0fsgn	kādas
+grācijas	ncfsg4	grācija
+,	zc	,
+bez	spsgn	bez
+žesta	ncmsg1	žests
+,	zc	,
+sakoda	vmnist130an	sakost
+zobos	ncmpl1	zobs
+kā	css	kā
+vecis	ncmsn2	vecis
+,	zc	,
+lietišķi	rpm	lietišķi
+un	ccs	un
+kāri	rpm	kāri
+,	zc	,
+nosalušām	vmnpdfpdasn	nosalt
+rokām	ncfpd4	roka
+sameklēja	vmnist230an	sameklēt
+šķiltavas	ncfpa4	šķiltavas
+slapjā	affslnp	slapja
+kažoka	ncmsg1	kažoks
+kabatā	ncfsl4	kabata
+,	zc	,
+-	zd	-
+lai	css	lai
+to	pd3msan	tas
+izdarītu	vmnc0t300an	izdarīt
+,	zc	,
+viņai	pp3fsdn	viņa
+bija	vcnisii30an	būt
+uz	spsgy	uz
+krēsla	ncmsg1	krēsls
+jāsaliecas	vmyd0i100an	saliekties
+sānis	r0p	sānis
+,	zc	,
+un	ccs	un
+kažoks	ncmsn1	kažoks
+atsedza	vmnist130an	atsegt
+kāju	ncfsa4	kāja
+līdz	sppdy	līdz
+tumšbrūnai	arfsdnp	tumšbrūna
+zeķes	ncfsg5	zeķe
+malai	ncfsd4	mala
+,	zc	,
+-	zd	-
+man	pp10sdn	es
+izskatījās	vmyist330an	izskatīties
+,	zc	,
+ka	css	ka
+zem	spsgy	zem
+kažoka	ncmsg1	kažoks
+viņai	pp3fsdn	viņa
+nav	vgnipii30ay	nebūt
+svārku	ncmpg1	svārki
+.	zs	.
+<s>
+Es	pp10snn	es
+šajā	pd3fsln	šī
+vietā	ncfsl4	vieta
+biju	vmnisii1san	būt
+pirmo	mosfsav	pirmā
+un	ccs	un
+-	zd	-
+droši vien	qc	droši vien
+-	zd	-
+pēdējo	arfsayp	pēdēja
+reizi	ncfsa5	reize
+,	zc	,
+lai gan	csc	lai gan
+garām	rrp	garām
+tai	pd3fsdn	tā
+gāju	vmnisti1san	iet
+katru	pg0fsan	katra
+dienu	ncfsa4	diena
+.	zs	.
+<s>
+-	zd	-
+plastmasas	ncfsg4	plastmasa
+galdi	ncmpn1	galds
+,	zc	,
+ķēmīgi	afmpnnp	ķēmīgs
+svečturīši	ncmpn2	svečturītis
+,	zc	,
+tumša	afmsgnp	tumšs
+finiera	ncmsg2	finieris
+paneļi	ncmpn2	panelis
+,	zc	,
+viegla	affsnnp	viegla
+savecējušu	vmnpdfpgasn	savecēt
+cigarešu	ncfpg5	cigarete
+dūmu	ncmpg1	dūms
+un	ccs	un
+piedegušas	vmnpdfsgasn	piedegt
+eļļas	ncfsg4	eļļa
+smaka	ncfsn4	smaka
+,	zc	,
+pelēcīgi	afmpnnp	pelēcīgs
+gaļas	ncfvg4	gaļa
+salāti	ncmdn1	salāti
+vitrīnā	ncfsl4	vitrīna
+,	zc	,
+apkaltušas	vmnpdfsgasn	apkalst
+picas	ncfsg4	pica
+gabali	ncmpn1	gabals
+,	zc	,
+ko	pr000an	kas
+piedāvā	vmnipt230an	piedāvāt
+uzsildīt	vmnn0t3000n	uzsildīt
+mikroviļņu	ncmpg2	mikrovilnis
+krāsnī	ncfsl6	krāsns
+.	zs	.
+<s>
+Viena	mcsfsnv	viena
+horizontāla	arfsnnp	horizontāla
+rieva	ncfsn4	rieva
+pierē	ncfsl5	piere
+-	zd	-
+ne	ccd	ne
+rūpju	ncfdg5	rūpes
+,	zc	,
+bet	ccd	bet
+tauku	ncmdg1	tauki
+rieva	ncfsn4	rieva
+,	zc	,
+dziļi	r0c	dziļi
+iegrimušas	vmnpdfpnasn	iegrimt
+acis	ncfpn6	acs
+,	zc	,
+maza	affsnnp	maza
+Čingishana	npmsg1	Čingishans
+bārdiņa	ncfsn4	bārdiņa
+,	zc	,
+klocriņķis	ncmsn2	klocriņķis
+uz	spsgy	uz
+mazā	afmsgyp	mazs
+pirkstiņa	ncmsg1	pirkstiņš
+un	ccs	un
+auskars	ncmsn1	auskars
+ausī	ncfsl6	auss
+.	zs	.
+<s>
+Un	ccs	un
+meitene	ncfsn5	meitene
+sāka	vpnist130an	sākt
+runāt	vmnn0t2000n	runāt
+-	zd	-
+čukstus	r0m	čukstus
+,	zc	,
+ļoti	r0q	ļoti
+ātri	rpm	ātri
+,	zc	,
+satraukti	rpm	satraukti
+,	zc	,
+rokas	ncfpn4	roka
+sekoja	vmnisi230an	sekot
+vārdiem	ncmpd1	vārds
+-	zd	-
+bet	ccs	bet
+ne	qs	ne
+plašos	afmplnp	plašs
+žestos	ncmpl1	žests
+,	zc	,
+tik	r0q	tik
+vien	qs	vien
+kā	css	kā
+sīki	r0c	sīki
+ņirbot	vmnpu000000	ņirbēt
+klēpī	ncmsl2	klēpis
+-	zd	-
+itin kā	csc	itin kā
+neredzamas	vmnpdfpnppn	neredzēt
+adāmadatas	ncfpn4	adāmadata
+būtu	vmnc0ii00an	būt
+viņai	pp3fsdn	viņa
+rokās	ncfpl4	roka
+,	zc	,
+un	ccs	un
+viņa	pp3fsnn	viņa
+nu	r0t	nu
+mēģinātu	vonc0t300an	mēģināt
+izadīt	vmnn0t3000n	izadīt
+to	pd3fsan	tā
+garo	affsayp	gara
+stāstāmo	vmnpdfsappy	stāstīt
+vārdu	ncmpg1	vārds
+straumi	ncfsa5	straume
+kādā	pi0fsln	kāda
+jēdzīgā	afmslnp	jēdzīgs
+,	zc	,
+pārliecinošā	vmnpdmslapn	pārliecināt
+rakstā	ncmsl1	raksts
+.	zs	.
+<s>
+Nodžinkstēja	vmnisi330an	nodžinkstēt
+durvju	ncfdg6	durvis
+zvaniņš	ncmsn1	zvaniņš
+,	zc	,
+un	ccs	un
+prom	r0p	prom
+viņš	pp3msnn	viņš
+bija	vmnisii30an	būt
+.	zs	.
+<s>
+Viņa	pp3fsnn	viņa
+mirkli	ncmsa2	mirklis
+domāja	vmnist230an	domāt
+,	zc	,
+sabāza	vmnist130an	sabāzt
+rokas	ncfpa4	roka
+kažoka	ncmsg1	kažoks
+kabatās	ncfpl4	kabata
+,	zc	,
+piecēlās	vmyist130an	piecelties
+kājās	ncfpl4	kāja
+,	zc	,
+domāja	vmnist230an	domāt
+,	zc	,
+tā kā	qc	tā kā
+sasvērās	vmyisi130an	sasvērties
+ar	spsan	ar
+ķermeni	ncmsa2	ķermenis
+uz	spsay	uz
+durvju	ncfdg6	durvis
+pusi	ncfsa5	puse
+,	zc	,
+sastinga	vmnisi130an	sastingt
+šajā	pd3fsln	šī
+nedabīgi	r0m	nedabīgi
+slīpajā	affslyp	slīpa
+pozā	ncfsl4	poza
+,	zc	,
+brīnums	ncmsn1	brīnums
+,	zc	,
+kā	r0m	kā
+viņa	pp3fsnn	viņa
+nekrita	vmnisi130ay	nekrist
+,	zc	,
+kā	r0m	kā
+vispār	r0m	vispār
+tādā	pd0fsln	tāda
+var	vonipt330an	varēt
+nostāvēt	vmnn0i3000n	nostāvēt
+,	zc	,
+bet	ccs	bet
+tad	r0t	tad
+pagriezās	vmyisi130an	pagriezties
+un	ccs	un
+nāca	vmnisi130an	nākt
+atpakaļ	r0p	atpakaļ
+,	zc	,
+pie	spsgy	pie
+sava	ps0msgn	savs
+pirmējā	armsgyp	pirmējs
+galdiņa	ncmsg1	galdiņš
+kafejnīcas	ncfsg4	kafejnīca
+dziļumā	ncmsl1	dziļums
+.	zs	.
+<s>
+Es	pp10snn	es
+atkal	r0t	atkal
+piedāvāju	vmnist21san	piedāvāt
+cigareti	ncfsa5	cigarete
+,	zc	,
+viņa	pp3fsnn	viņa
+neatteicās	vmyisi130ay	neatteikties
+.	zs	.
+<s>
+Mute	ncfsn5	mute
+viņai	pp3fsdn	viņa
+izbrīnā	ncmsl1	izbrīns
+pavērās	vmyisi130an	pavērties
+.	zs	.
+<s>
+Es	pp10snn	es
+pamāju	vmnisi21san	pamāt
+bārmenim	ncmsd2	bārmenis
+.	zs	.
+<s>
+Tu	pp20snn	tu
+esi	vcnipii2san	būt
+tāda	pd0fsnn	tāda
+?	zs	?
+<s>
+-	zd	-
+Ko	pq000an	kas
+?	zs	?
+<s>
+-	zd	-
+Par	spsan	par
+ko	pq000an	kas
+tu	pp20snn	tu
+smaidi	vmnipt32san	smaidīt
+?	zs	?
+-	zd	-
+vaicāja	vmnist230an	vaicāt
+Sanī	np___0	Sanī
+.	zs	.
+<s>
+-	zd	-
+Tāpat	r0m	Tāpat
+.	zs	.
+<s>
+-	zd	-
+Viņi	pp3mpnn	viņš
+ir	vcnipii30an	būt
+iemīlējušies	vmypdmpnasn	iemīlēties
+.	zs	.
+<s>
+Un	ccs	un
+divas	mcsfpnv	divas
+«	zq	«
+Rimi	np___0	Rimi
+»	zq	»
+kulītes	ncfpn5	kulīte
+ar	sppdn	ar
+pirkumiem	ncmpd1	pirkums
+aiz	spsgy	aiz
+krēsla	ncmsg1	krēsls
+.	zs	.
+<s>
+-	zd	-
+Domā	vmnipt22san	domāt
+?	zs	?
+<s>
+-	zd	-
+Mhm	is	mhm
+.	zs	.
+<s>
+-	zd	-
+Nu	qs	nu
+tad	qs	tad
+pastāsti	vmnm0t32san	pastāstīt
+par	spsan	par
+sevi	px000an	sevis
+,	zc	,
+-	zd	-
+es	pp10snn	es
+teicu	vmnist11san	teikt
+.	zs	.
+<s>
+Te	ccr	te
+šis	pd3msnn	šis
+,	zc	,
+te	ccr	te
+tas	pd3msnn	tas
+.	zs	.
+<s>
+Meitenes	ncfsg5	meitene
+rokas	ncfpn4	roka
+atkal	r0t	atkal
+sāka	vpnist130an	sākt
+ņirbēt	vmnn0i3000n	ņirbēt
+,	zc	,
+un	ccs	un
+es	pp10snn	es
+pamanīju	vmnist31san	pamanīt
+,	zc	,
+ka	css	ka
+nav	vgnipii30ay	nebūt
+vairs	r0t	vairs
+šaurā	afmsgyp	šaurs
+gredzena	ncmsg1	gredzens
+uz	spsgy	uz
+pirksta	ncmsg1	pirksts
+.	zs	.
+<s>
+A	ccs	a
+viņš	pp3msnn	viņš
+jau	qs	jau
+pats	pg0msnn	pats
+man	pp10sdn	es
+to	pd3msan	tas
+dāvināja	vmnist330an	dāvināt
+,	zc	,
+kad	r0t	kad
+mēs	pp10pnn	mēs
+vēl	r0t	vēl
+bijām	vcnisii1pan	būt
+kopā	r0m	kopā
+.	zs	.
+<s>
+-	zd	-
+Zelts	ncmvn1	zelts
+,	zc	,
+-	zd	-
+tad	r0t	tad
+viņa	pp3fsnn	viņa
+piebilda	vmnist130an	piebilst
+gandrīz	r0q	gandrīz
+lepni	r0c	lepni
+.	zs	.
+<s>
+Bērna	ncmsg1	bērns
+āda	ncfsn4	āda
+.	zs	.
+<s>
+Ķēdīte	ncfsn5	ķēdīte
+kā	css	kā
+smilšu	ncfpg6	smilts
+graudi	ncmpn1	grauds
+zem	sppdy	zem
+pirkstiem	ncmpd1	pirksts
+.	zs	.
+<s>
+-	zd	-
+Smuka	affsnnp	smuka
+.	zs	.
+<s>
+-	zd	-
+Kafija	ncfsn4	kafija
+dziest	vmnipi130an	dzist
+,	zc	,
+-	zd	-
+es	pp10snn	es
+teicu	vmnist11san	teikt
+.	zs	.
+<s>
+-	zd	-
+Nu	qs	nu
+tad	qs	tad
+pastāsti	vmnm0t32san	pastāstīt
+par	spsan	par
+sevi	px000an	sevis
+.	zs	.
+<s>
+Notikumi	ncmpn1	notikums
+mani	pp10san	es
+neinteresēja	vmnist230ay	neinteresēt
+.	zs	.
+<s>
+Pēdējos	armplnp	pēdējs
+mēnešos	ncmpl2	mēnesis
+viņš	pp3msnn	viņš
+pavadījis	vmnpdmsnasn	pavadīt
+tēvu	ncmsa1	tēvs
+pastaigās	ncfpl4	pastaiga
+.	zs	.
+<s>
+Kā	r0m	kā
+kino	nc___0	kino
+.	zs	.
+<s>
+Bet	ccs	bet
+man	pp10sdn	es
+neteica	vmnist130ay	neteikt
+.	zs	.
+<s>
+-	zd	-
+Vai	qs	vai
+tu	pp20snn	tu
+sevi	px000an	sevis
+pazīsti	vmnipt12san	pazīt
+?	zs	?
+<s>
+-	zd	-
+Beidz	vmnm0t12san	beigt
+,	zc	,
+tu	pp20snn	tu
+mani	pp10san	es
+biedē	vmnipt22san	biedēt
+.	zs	.
+<s>
+Tu	pp20snn	tu
+esi	vcnipii2san	būt
+piedzērusies	vmypdfsnasn	piedzerties
+!	zs	!
+<s>
+-	zd	-
+Drīz	r0t	drīz
+mēs	pp10pnn	mēs
+slēgsim	vmnift11pan	slēgt
+,	zc	,
+-	zd	-
+bārmenis	ncmsn2	bārmenis
+teica	vmnist130an	teikt
+.	zs	.
+<s>
+-	zd	-
+jā	qs	jā
+?	zs	?
+<s>
+Mašīnā	ncfsl4	mašīna
+Sanī	np___0	Sanī
+gulēja	vmnist330an	gulēt
+,	zc	,
+nolikusi	vmnpdfsnasn	nolikt
+galvu	ncfsa4	galva
+man	pp10sdn	es
+uz	spsgy	uz
+pleca	ncmsg1	plecs
+,	zc	,
+un	ccs	un
+mutes	ncfsg5	mute
+kaktiņā	ncmsl1	kaktiņš
+viņai	pp3fsdn	viņa
+sakrājās	vmyisi130an	sakrāties
+caurspīdīga	affsnnp	caurspīdīga
+siekala	ncmsn4	siekala
+.	zs	.
+<s>
+Dārzā	ncmsl1	dārzs
+,	zc	,
+sensoru	ncmpg1	sensors
+iedarbinātas	vmnpdfpnpsn	iedarbināt
+,	zc	,
+uzreiz	r0t	uzreiz
+iedegās	vmyisi130an	iedegties
+spuldzes	ncfpn5	spuldze
+.	zs	.
+<s>
+-	zd	-
+Ojē	is	ojē
+,	zc	,
+-	zd	-
+noelšas	vmyipi130an	noelsties
+Sanī	np___0	Sanī
+.	zs	.
+<s>
+Turklāt	qs	turklāt
+Sanī	np___0	Sanī
+slikti	r0c	slikti
+turējās	vmyisi330an	turēties
+kājās	ncfpl4	kāja
+,	zc	,
+un	ccs	un
+man	pp10sdn	es
+bija	vcnisii30an	būt
+jāuzmana	vmnd0t300an	uzmanīt
+,	zc	,
+lai	css	lai
+viņa	pp3fsnn	viņa
+nepaslīd	vmnipt330ay	nepaslīdēt
+uz	sppdy	uz
+dušas	ncfsg4	duša
+kabīnes	ncfsg5	kabīne
+flīzēm	ncfpd5	flīze
+.	zs	.
+<s>
+Mēs	pp10pnn	mēs
+pamodāmies	vmyisi11pan	pamosties
+vēlu	r0t	vēlu
+,	zc	,
+slapjais	afmsnyp	slapjš
+sniegputenis	ncmsn2	sniegputenis
+bija	vcnisii30an	būt
+rimies	vmypdmsnasn	rimties
+,	zc	,
+priedes	ncfpn5	priede
+aiz	spsgy	aiz
+loga	ncmsg1	logs
+stāvēja	vmnist330an	stāvēt
+stingas	affpnnp	stinga
+un	ccs	un
+nekustīgas	arfpnnp	nekustīga
+žilbinoši	r0m	žilbinoši
+baltajā	afmslyp	balta
+klajumā	ncmsl1	klajums
+uz	spsgy	uz
+nesaudzīgi	r0q	nesaudzīgi
+tīru	affpgnp	tīra
+un	ccs	un
+skaidru	affpgnp	skaidra
+,	zc	,
+sasalušu	vmnpdfpgasn	sasalt
+debesu	ncfpg6	debess
+fona	ncmsg1	fons
+.	zs	.
+<s>
+Un	ccs	un
+man	pp10sdn	es
+bija	vmnisii30an	būt
+drusku	r0q	drusku
+kauns	ncmsn1	kauns
+par	spsan	par
+šo	pd3fsan	šī
+sajūtu	ncfsa4	sajūta
+.	zs	.
+<s>
+Viss	pg0msnn	viss
+te	r0p	te
+bija	vcnisii30an	būt
+tik	r0q	tik
+neiedomājami	r0m	neiedomājami
+harmoniski	rpm	harmoniski
+un	ccs	un
+skaisti	rpm	skaisti
+.	zs	.
+<s>
 Tomēr	ccs	tomēr
 ,	zc	,
 uzzinot	vmnpu000000	uzzināt
@@ -19,12 +1225,12 @@ vielas	ncfpa4	viela
 neaizrauties	vmyn0t1000y	neaizrauties
 ar	sppdn	ar
 pārlieku	r0q	pārlieku
-„	zq	„
+"	zq	"
 ievelkošām	vmnpdfpdapn	ievilkt
-”	zq	”
+"	zq	"
 nodarbēm	ncfpd5	nodarbe
 utt.	y	utt.
-<s>	<s>	<s>
+<s>
 Tu	pp20snn	tu
 noteikti	r0m	noteikti
 esi	vcnipii2san	būt
@@ -55,10 +1261,10 @@ draugiem	ncmpd1	draugs
 un	ccs	un
 vecākiem	ncmpd1	vecāki
 .	zs	.
-<s>	<s>	<s>
+<s>
 »	zq	»
 LSD	y	LSD
-<s>	<s>	<s>
+<s>
 Šo	pd3fsan	šī
 vielu	ncfsa4	viela
 ārsti	ncmpn1	ārsts
@@ -75,22 +1281,22 @@ kā	css	kā
 narkotisku	arfsanp	narkotiska
 vielu	ncfsa4	viela
 .	zs	.
-<s>	<s>	<s>
+<s>
 »	zq	»
 Kreks	ncmsn1	Kreks
-<s>	<s>	<s>
+<s>
 »	zq	»
 Kokaīns	ncmsn1	kokaīns
-<s>	<s>	<s>
+<s>
 »	zq	»
 Amfetamīns	ncmsn1	amfetamīns
-<s>	<s>	<s>
+<s>
 Kādēļ	r0c	kādēļ
 alkohols	ncmsn1	alkohols
 ir	vcnipii30an	būt
 kaitīgs	afmsnnp	kaitīgs
 ?	zs	?
-<s>	<s>	<s>
+<s>
 •	xx	•
 Rada	vmnipt330an	radīt
 ne tikai	ccd	ne tikai
@@ -101,11 +1307,11 @@ garīga	afmsgnp	garīgs
 rakstura	ncmsg1	raksturs
 problēmas	ncfpa4	problēma
 .	zs	.
-<s>	<s>	<s>
+<s>
 •	xx	•
 Psiholoģiskā	arfsnyp	psiholoģiska
 palīdzība	ncfsn4	palīdzība
-–	zd	–
+-	zd	-
 smēķēšanas	ncfsg4	smēķēšana
 pārtraukšanai	ncfsd4	pārtraukšana
 īpaši	rpm	īpaši
@@ -119,7 +1325,7 @@ apkārtējās	arfsgyp	apkārtēja
 vides	ncfsg5	vide
 piemērotība	ncfsn4	piemērotība
 .	zs	.
-<s>	<s>	<s>
+<s>
 •	xx	•
 pēc	sppdy	pēc
 divām	mcsfpdv	divas
@@ -131,7 +1337,7 @@ garšu	ncfsa4	garša
 un	ccs	un
 smaržu	ncfsa4	smarža
 ;	zc	;
-<s>	<s>	<s>
+<s>
 •	xx	•
 pēc	sppdy	pēc
 nedēļas	ncfsg4	nedēļa
@@ -148,7 +1354,7 @@ izelpas	ncfsg4	izelpa
 nepatīkamā	affsnyp	nepatīkama
 smaka	ncfsn4	smaka
 ;	zc	;
-<s>	<s>	<s>
+<s>
 Procesu	ncmpg1	process
 atkarība	ncfsn4	atkarība
 ir	vcnipii30an	būt
@@ -171,7 +1377,7 @@ un	ccs	un
 citām	pi0fpdn	cita
 nodarbēm	ncfpd5	nodarbe
 .	zs	.
-<s>	<s>	<s>
+<s>
 Var	vonipt330an	varēt
 gadīties	veyn0i3000n	gadīties
 ,	zc	,
@@ -191,7 +1397,7 @@ vienīgi	qs	vienīgi
 par	spsan	par
 viņu	pp3msan	viņš
 .	zs	.
-<s>	<s>	<s>
+<s>
 Tāpat	qs	tāpat
 atkarība	ncfsn4	atkarība
 attiecībās	ncfpl4	attiecība
@@ -239,7 +1445,7 @@ lūgumus	ncmpa1	lūgums
 saglabā	vmnipt230an	saglabāt
 attiecības	ncfda4	attiecības
 utt.	y	utt.
-<s>	<s>	<s>
+<s>
 Šāda	pd0fsnn	šāda
 atkarība	ncfsn4	atkarība
 attiecībās	ncfpl4	attiecība
@@ -252,7 +1458,7 @@ to	pd3fpgn	tā
 sabrukuma	ncmsg1	sabrukums
 ,	zc	,
 tikai	qs	tikai
-–	zd	–
+-	zd	-
 jo	ccr	jo
 ilgāk	rct	ilgi
 tās	pd3fpnn	tā
@@ -269,11 +1475,11 @@ pašapziņu	ncfsa4	pašapziņa
 no	sppdy	no
 tām	pd3fpdn	tā
 izies	vmnifi130an	iziet
-„	zq	„
+"	zq	"
 atkarīgais	afmsnyp	atkarīgs
-”	zq	”
+"	zq	"
 .	zs	.
-<s>	<s>	<s>
+<s>
 •	xx	•
 Pacients	ncmsn1	pacients
 apzinās	vmyipt330an	apzināties
@@ -291,7 +1497,7 @@ pār	spsay	pār
 savu	ps0fsan	sava
 uzvedību	ncfsa4	uzvedība
 .	zs	.
-<s>	<s>	<s>
+<s>
 Viņš	pp3msnn	viņš
 kontrolē	vmnipt230an	kontrolēt
 atkarīgo	afmsayp	atkarīgs
@@ -313,7 +1519,7 @@ labs	afmsnnp	labs
 un	ccs	un
 cik	r0q	cik
 slikts	afmsnnp	slikts
-–	zd	–
+-	zd	-
 atkarīgais	afmsnyp	atkarīgs
 ,	zc	,
 bet	ccs	bet
@@ -334,7 +1540,7 @@ bailes	ncfpa5	bailes
 ,	zc	,
 vientulību	ncfsa4	vientulība
 .	zs	.
-<s>	<s>	<s>
+<s>
 Līdzatkarīgam	afmsdnp	līdzatkarīgs
 cilvēkam	ncmsd1	cilvēks
 ir	vcnipii30an	būt
@@ -357,7 +1563,7 @@ sākas	vmyipi130an	sākties
 otrs	mcsmsnv	otrs
 cilvēks	ncmsn1	cilvēks
 .	zs	.
-<s>	<s>	<s>
+<s>
 Viņš	pp3msnn	viņš
 uzņemas	vmyipi130an	uzņemties
 atbildību	ncfsa4	atbildība
@@ -393,7 +1599,7 @@ viss	pg0msnn	viss
 ir	vcnipii30an	būt
 OK	y	OK
 .	zs	.
-<s>	<s>	<s>
+<s>
 Grēkāzī	ncmsl2	grēkāzis
 ir	vmnipii30an	būt
 daudz	r0q	daudz
@@ -414,7 +1620,7 @@ vairo	vmnipt230an	vairot
 viņa	pp3msgn	viņš
 dusmas	ncfpa4	dusmas
 .	zs	.
-<s>	<s>	<s>
+<s>
 *	xx	*
 Man	pp10sdn	es
 ir	vcnipii30an	būt
@@ -422,7 +1628,7 @@ grūti	rpm	grūti
 lūgt	vmnn0t1000n	lūgt
 palīdzību	ncfsa4	palīdzība
 .	zs	.
-<s>	<s>	<s>
+<s>
 *	xx	*
 Es	pp10snn	es
 cenšos	voyipt11san	censties
@@ -439,9 +1645,394 @@ jūtos	vmyipi11san	justies
 vajadzīgs	afmsnnp	vajadzīgs
 /	zx	/
 a	xx	a
-”	zq	”
+"	zq	"
 .	zs	.
-<s>	<s>	<s>
+<s>
+Nagos	ncmpl1	nags
+ir	vmnipii30an	būt
+daudz	r0q	daudz
+nervu	ncmpg1	nervs
+galu	ncmpg1	gals
+,	zc	,
+kas	pr000nn	kas
+ir	vcnipii30an	būt
+jutīgi	afmpnnp	jutīgs
+pret	sppdy	pret
+sāpēm	ncfpd5	sāpes
+,	zc	,
+arī	qs	arī
+tad	r0t	tad
+,	zc	,
+ja	css	ja
+tiem	pd3mpdn	tas
+pieskaras	vmyipi130an	pieskarties
+.	zs	.
+<s>
+Barošanai	ncfsd4	barošana
+izmanto	vmnipt230an	izmantot
+sviestu	ncmsa1	sviests
+,	zc	,
+krēmu	ncmsa1	krēms
+atkarībā	ncfsl4	atkarība
+no	spsgy	no
+nagu	ncmpg1	nags
+tipa	ncmsg1	tips
+.	zs	.
+<s>
+Vispirms	r0t	vispirms
+veic	vmnipt130an	veikt
+pīlingu	ncmsa1	pīlings
+un	ccs	un
+roku	ncfpg4	roka
+barošanu	ncfsa4	barošana
+ar	spsan	ar
+masku	ncfsa4	maska
+vai	ccs	vai
+krēmu	ncmsa1	krēms
+.	zs	.
+<s>
+Katram	pg0msdn	katrs
+cilvēkam	ncmsd1	cilvēks
+āda	ncfsn4	āda
+ir	vcnipii30an	būt
+atšķirīga	affsnnp	atšķirīga
+,	zc	,
+daļai	ncfsd4	daļa
+pietiek	vmnipi130an	pietikt
+,	zc	,
+ja	css	ja
+ādas	ncfsg4	āda
+kopšanu	ncfsa4	kopšana
+veic	vmnipt130an	veikt
+reizi	r0q	reizi
+nedēļā	ncfsl4	nedēļa
+,	zc	,
+citiem	pi0mpdn	cits
+tas	pd3msnn	tas
+nepieciešams	afmsnnp	nepieciešams
+katru	pg0fsan	katra
+otro	mosfsav	otrā
+dienu	ncfsa4	diena
+.	zs	.
+<s>
+Nagu	ncmpg1	nags
+modelēšana	ncfsn4	modelēšana
+,	zc	,
+to	pd3mpgn	tas
+mākslīgā	arfsnyp	mākslīga
+pagarināšana	ncfsn4	pagarināšana
+un	ccs	un
+cietības	ncfsg4	cietība
+paaugstināšana	ncfsn4	paaugstināšana
+ir	vcnipii30an	būt
+aizsākusies	vmypdfsnasn	aizsākties
+ASV	y	ASV
+vairāk	rcq	daudz
+kā	css	kā
+50	xn	50
+gadus	ncmpa1	gads
+atpakaļ	r0t	atpakaļ
+.	zs	.
+<s>
+Bet	ccs	bet
+ne	qs	ne
+katrai	pg0fsdn	katra
+tas	pd3msnn	tas
+ir	vcnipii30an	būt
+dots	vmnpdmsnpsn	dot
+no	spsgy	no
+dabas	ncfsg4	daba
+!	zs	!
+<s>
+"	zq	"
+Franču	ncmpg2	francis
+manikīrs	ncmsn1	manikīrs
+"	zq	"
+tika	vtnisi130an	tikt
+ieviests	vmnpdmsnpsn	ieviest
+Holivudas	npfsg4	Holivuda
+kinostudijās	ncfpl4	kinostudija
+jau	r0t	jau
+1976.	xo	1976.
+gadā	ncmsl1	gads
+.	zs	.
+<s>
+Tikai	qs	tikai
+nepietiekamas	arfpnnp	nepietiekama
+pamata	ncmsg1	pamats
+noteikumu	ncmpg1	noteikums
+zināšanas	ncfpn4	zināšana
+,	zc	,
+kā	r0m	kā
+izmantot	vmnn0t2000n	izmantot
+materiālus	ncmpa1	materiāls
+nagu	ncmpg1	nags
+modelēšanai	ncfsd4	modelēšana
+,	zc	,
+un	ccs	un
+ražotāju	ncmpg1	ražotājs
+-	zd	-
+firmu	ncfpg4	firma
+norādījumu	ncmpg1	noradījums
+neievērošana	ncfsn4	neievērošana
+,	zc	,
+kā arī	ccc	kā arī
+nepareiza	arfsnnp	nepareiza
+procedūras	ncfsg4	procedūra
+veikšanas	ncfsg4	veikšana
+kārtība	ncfsn4	kārtība
+var	vonipt330an	varēt
+novest	vmnn0t1000n	novest
+pie	sppdy	pie
+nepatīkamām	affpdnp	nepatīkama
+sekām	ncfpd4	sekas
+.	zs	.
+<s>
+Pēc	sppdy	pēc
+vēlmēm	ncfpd5	vēlme
+var	vonipt330an	varēt
+pievienot	vmnn0t2000n	pievienot
+arī	qs	arī
+augu	ncmpg1	augs
+vai	ccs	vai
+olīveļļu	ncfsa4	olīveļļa
+.	zs	.
+<s>
+Lielā	afmsgyp	liels
+pirksta	ncmsg1	pirksts
+nagu	ncmsa1	nags
+grieziet	vmnm0t12pan	griezt
+tikai	qs	tikai
+taisnā	affslnp	taisna
+līnijā	ncfsl4	līnija
+,	zc	,
+lai	css	lai
+izbēgtu	vmnc0i100an	izbēgt
+no	spsgy	no
+tā	pd3msgn	tas
+ieaugšanas	ncfsg4	ieaugšana
+pirkstā	ncmsl1	pirksts
+.	zs	.
+<s>
+Šāda	pd0fsnn	šāda
+āda	ncfsn4	āda
+sāk	vpnipt130an	sākt
+veidoties	vmyn0i2000n	veidoties
+dēļ	sppdn	dēļ
+pārlieku	r0q	pārlieku
+ciešiem	afmpdnp	ciešs
+apaviem	ncmpd1	apavi
+,	zc	,
+kā arī	ccc	kā arī
+ja	css	ja
+ir	vcnipii30an	būt
+traucēta	vmnpdfsnpsn	traucēt
+asinsrite	ncfsn5	asinsrite
+.	zs	.
+<s>
+Cīnīties	vmyn0i3000n	cīnīties
+ar	spsan	ar
+šādu	pd0msan	šāds
+ādas	ncfsg4	āda
+izveidojumu	ncmsa1	izveidojums
+ir	vcnipii30an	būt
+ļoti	r0q	ļoti
+grūti	rpm	grūti
+,	zc	,
+taču	ccs	taču
+noņemt	vmnn0t1000n	noņemt
+diskomfortu	ncmsa1	diskomforts
+gan	qs	gan
+var	vonipt330an	varēt
+palīdzēt	vmnn0t3000n	palīdzēt
+speciālas	arfpnnp	speciāla
+eļļas	ncfsg4	eļļa
+kompreses	ncfpn5	komprese
+,	zc	,
+kuras	pr0fpan	kuras
+jāliek	vmnd0t100an	likt
+uz	spsay	uz
+nakti	ncfsa6	nakts
+.	zs	.
+<s>
+No	sppdy	no
+patstāvīgām	affpdnp	patstāvīga
+nagu	ncmpg1	nags
+vīlītes	ncfsg5	vīlīte
+kustībām	ncfpd4	kustība
+te	ccr	te
+uz	spsay	uz
+vienu	mcsmsav	viens
+,	zc	,
+te	ccr	te
+uz	spsay	uz
+otru	mcsfsav	otra
+pusi	ncfsa5	puse
+naga	ncmsg1	naga
+virskārta	ncfsn4	virskārta
+sāk	vpnipt130an	sākt
+drupt	vmnn0i1000n	drupt
+,	zc	,
+un	ccs	un
+tie	pd3mpnn	tas
+kļūst	vtnipi130an	kļūt
+trausli	afmpnnp	trausls
+.	zs	.
+<s>
+"	zq	"
+Labprāt	r0m	labprāt
+.	zs	.
+"	zq	"
+<s>
+"	zq	"
+Pastāstīšu	vmnipi31san	pastāstīt
+par	spsan	par
+Vidu	npfsa4	Vida
+.	zs	.
+<s>
+Biju	vcnisii1san	būt
+cienīts	vmnpdmsnpsn	cienīt
+,	zc	,
+garā	ncmsl1	gars
+lolots	vmnpdmsnpsn	lolot
+,	zc	,
+vēderā	ncmsl1	vēders
+pildīts	vmnpdmsnpsn	pildīt
+un	ccs	un
+jokos	ncmpl1	joks
+saprasts	vmnpdmsnpsn	saprast
+.	zs	.
+<s>
+-	zd	-
+"	zq	"
+Nav	vcnip0i30ay	nebūt
+gatava	affsnnp	gatava
+!	zs	!
+"	zq	"
+<s>
+-	zd	-
+"	zq	"
+Es	pp10snn	es
+.	zs	.
+sēžu	vmnipi11san	sēdēt
+laivā	ncfsl4	laiva
+"	zq	"
+<s>
+-	zd	-
+"	zq	"
+Uz	sppdy	uz
+zemēm	ncfpd5	zeme
+,	zc	,
+un	ccs	un
+mežiem	ncmpd1	mežs
+!	zs	!
+"	zq	"
+<s>
+Patiesi	qs	patiesi
+,	zc	,
+Mežotnes	npfsg5	Mežotne
+pils	ncfsn6	pils
+bija	vcnisii30an	būt
+arī	qs	arī
+laiva	ncfsn4	laiva
+,	zc	,
+kas	pr000nn	kas
+lavierēja	vmnisi230an	lavierēt
+starp	sppdy	starp
+eglēm	ncfpd5	egle
+,	zc	,
+gar	spsay	gar
+skuju	ncfpg4	skujas
+mežu	ncmsa1	mežs
+,	zc	,
+un	ccs	un
+palika	vtnisi130an	palikt
+tik	r0q	tik
+tumši	afmpnnp	tumšs
+,	zc	,
+ka	css	ka
+nomākts	vmnpdmsnpsn	nomākt
+sēdēju	vmnisi11san	sēdēt
+pie	spsgy	pie
+stumbra	ncmsg1	stumbrs
+un	ccs	un
+atgaiņāju	vmnist21san	atgaiņāt
+suņus	ncmpa2	suns
+.	zs	.
+<s>
+Grūti	rpm	grūti
+to	pd3msan	tas
+visu	pg0msan	viss
+atcerēties	vmyn0t3000n	atcerēties
+.	zs	.
+"	zq	"
+<s>
+"	zq	"
+Tas	pd3msnn	tas
+nekas	pi0msny	nekas
+.	zs	.
+<s>
+Tev	pp20sdn	tu
+jau	qs	jau
+sejs	ncmsn1	sejs
+kā	css	kā
+sarepējušam	vmnpdmsdasn	sarepēt
+celmam	ncmsd1	celms
+,	zc	,
+vīzēm	ncfpd5	vīze
+par	spsan	par
+vīru	ncmsa1	vīrs
+un	ccs	un
+lopiņiem	ncmpd1	lops
+par	spsan	par
+iegātni	ncmsa2	iegātnis
+vari	vonipt32san	varēt
+iet	vmnn0ii000n	iet
+.	zs	.
+"	zq	"
+<s>
+Drebēja	vmnisi330an	drebēt
+Vidas	npfsg4	Vida
+rokas	ncfpn4	roka
+,	zc	,
+neēda	vmnist130ay	neēst
+meita	ncfsn4	meita
+,	zc	,
+palika	vmnisi130an	palikt
+kā	css	kā
+skals	ncmsn1	skals
+.	zs	.
+<s>
+Viņa	pp3fsnn	viņa
+saņēmās	voyisi130an	saņemties
+ļaunu	afmsanp	ļauns
+darīt	vmnn0t3000n	darīt
+sev	px000dn	sevis
+.	zs	.
+<s>
+Es	pp10snn	es
+nesekoju	vmnisi21say	nesekot
+,	zc	,
+viņa	pd3fsnn	viņa
+prom	r0p	prom
+.	zs	.
+<s>
+Vida	npfsn4	Vida
+draudzējās	vmyisi230an	draudzēties
+ar	sppdn	ar
+kamenēm	ncfpd5	kamene
+.	zs	.
+<s>
+"	zq	"
+Nē	qs	nē
+!	zs	!
+"	zq	"
+<s>
+"	zq	"
+Kāpēc	r0c	kāpēc
+?	zs	?
+"	zq	"
+<s>
 Es	pp10snn	es
 peldu	vmnipi31san	peldēt
 ar	spsan	ar
@@ -462,7 +2053,7 @@ gaisā	ncmsl1	gaiss
 un	ccs	un
 ūdeni	ncmsa2	ūdens
 .	zs	.
-<s>	<s>	<s>
+<s>
 Bet	ccs	bet
 nu	is	nu
 es	pp10snn	es
@@ -502,10 +2093,10 @@ peldētprasmes	ncfsg5	peldētprasme
 apguvi	ncfsa5	apguve
 bērnudārzos	ncmpl1	bērnudārzs
 .	zs	.
-<s>	<s>	<s>
+<s>
 Peldcūka	ncfsn4	peldcūka
 .	zs	.
-<s>	<s>	<s>
+<s>
 Skaistums	ncmsn1	skaistums
 jau	r0t	jau
 pirms	sppdy	pirms
@@ -513,7 +2104,7 @@ tam	pd3msdn	tas
 bija	vcnisii30an	būt
 miris	vmnpdmsnasn	mirt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Bet	ccs	bet
 uz	sppdy	uz
 mūžīgiem	afmpdnp	mūžīgs
@@ -527,27 +2118,27 @@ līdz	spsdy	līdz
 galam	ncmsd1	gals
 neizkliegts	vmnpdmsnpsn	neizkliegt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Ēst	vmnn0t1000n	ēst
 ?	zs	?
-<s>	<s>	<s>
+<s>
 Svēto	afmsayp	svēts
 vakarēdienu	ncmsa1	vakarēdiens
 ?	zs	?
-<s>	<s>	<s>
+<s>
 Un	ccs	un
 —	zd	—
 viens	mcsmsnv	viens
 pats	pg0msnn	pats
 .	zs	.
-<s>	<s>	<s>
-Neairē	vmnm0t22say	neairēt
+<s>
+Neairē	vmnmpt22say	neairēt
 ,	zc	,
-meties	vmym0i12san	mesties
+meties	vmympi12san	mesties
 pār	spsay	pār
 bortu	ncmsa1	borts
 .	zs	.
-<s>	<s>	<s>
+<s>
 Paguva	vmnist130an	pagūt
 drošvien	qs	drošvien
 i	qs	i
@@ -565,30 +2156,30 @@ pie	sppdy	pie
 logiem	ncmpd1	logs
 padotas	vmnpdfpnpsn	padot
 .	zs	.
-<s>	<s>	<s>
+<s>
 Tuntuļgliemezi	ncmsv2	tuntuļgliemezis
 ,	zc	,
 ei	is	ei
 !	zs	!
-<s>	<s>	<s>
+<s>
 Nu	qs	nu
 ,	zc	,
 saki	vmnipt32san	sacīt
 kaut	qs	kaut
 ko	pi000an	kas
 .	zs	.
-<s>	<s>	<s>
+<s>
 Tas	pd3msnn	tas
 tikai	qs	tikai
 sākums	ncmsn1	sākums
 .	zs	.
-<s>	<s>	<s>
+<s>
 Žanrs	ncmsn1	žanrs
 vairs	r0t	vairs
 nav	vcnipii30ay	nebūt
 svarīgs	afmsnnp	svarīgs
 .	zs	.
-<s>	<s>	<s>
+<s>
 Babulītes	ncfpn5	babulīte
 ,	zc	,
 vecmāmiņas	ncfpn4	vecmāmiņa
@@ -598,11 +2189,11 @@ uz	sppdy	uz
 slimām	affpdnp	slima
 kājām	ncfpd4	kāja
 ...	zs	...
-<s>	<s>	<s>
+<s>
 Invalīdu	ncmpg1	invalīds
 ratiņi	ncmpn1	ratiņš
 ...	zs	...
-<s>	<s>	<s>
+<s>
 Un	ccs	un
 no	sppdy	no
 dusmām	ncfpd4	dusmas
@@ -615,13 +2206,13 @@ nav	vgnipii30ay	nebūt
 nekādu	pi0fpgy	nekāda
 cerību	ncfpg4	cerība
 .	zs	.
-<s>	<s>	<s>
+<s>
 Nav	vgnipii30ay	nebūt
 augšas	ncfsg4	augša
 un	ccs	un
 apakšas	ncfsg4	apakša
 .	zs	.
-<s>	<s>	<s>
+<s>
 Vistas	ncfpn4	vista
 ,	zc	,
 dabiski	rpm	dabiski
@@ -629,30 +2220,30 @@ dabiski	rpm	dabiski
 ir	vcnipii30an	būt
 jau	r0t	jau
 ...	zs	...
-<s>	<s>	<s>
+<s>
 Ave	xf	ave
 ,	zc	,
 Marija	npfsn4	Marija
 .	zs	.
-<s>	<s>	<s>
+<s>
 —	zd	—
 Nu	qs	nu
 ?	zs	?
-<s>	<s>	<s>
+<s>
 —	zd	—
 Drīz	r0t	drīz
 jāaust	vmnd0i100an	aust
 rītam	ncmsd1	rīts
 .	zs	.
-<s>	<s>	<s>
+<s>
 Mana	ps0fsnn	mana
 rasas	ncfsg4	rasa
 lāsīte	ncfsn5	lāsīte
 .	zs	.
-<s>	<s>	<s>
+<s>
 Bet	ccs	bet
 ,	zc	,
-redzi	vmnm0t32san	redzēt
+redzi	vmnmpt32san	redzēt
 ,	zc	,
 tas	pd3msnn	tas
 spoks	ncmsn1	spoks
@@ -662,7 +2253,7 @@ nolūza	vmnisi130an	nolūzt
 ,	zc	,
 atslēdzās	vmyisi130an	atslēgties
 .	zs	.
-<s>	<s>	<s>
+<s>
 —	zd	—
 Vai	qs	vai
 tevi	pp20san	tu
@@ -674,16 +2265,16 @@ esi	vcnipii2san	būt
 tik	r0q	tik
 neganta	affsnnp	neganta
 ?	zs	?
-<s>	<s>	<s>
+<s>
 Nodevējs	ncmsv1	nodevējs
 !	zs	!
-<s>	<s>	<s>
-Sodi	vmnm0t32san	sodīt
+<s>
+Sodi	vmnmpt32san	sodīt
 mani	pp10san	es
 vēl	r0t	vēl
 bargāk	rcm	bargi
 ,	zc	,
-sūti	vmnm0i32san	sūtīt
+sūti	vmnmpi32san	sūtīt
 kaut	qs	kaut
 māgas	ncfsg4	māga
 kataru	ncmsa1	katars
@@ -691,7 +2282,7 @@ un	ccs	un
 migrēnu	ncfsa4	migrēna
 ,	zc	,
 bet	ccs	bet
-izdari	vmnm0t32san	izdarīt
+izdari	vmnmpt32san	izdarīt
 tā	r0m	tā
 ,	zc	,
 lai	css	lai
@@ -699,9 +2290,9 @@ man	pp10sdn	es
 negribētos	vonpdmpapsy	negribēt
 ēst	vmnn0t1000n	ēst
 .	zs	.
-<s>	<s>	<s>
+<s>
 Vai arī	ccs	vai arī
-atpeldini	vmnm0t32san	atpeldināt
+atpeldini	vmnmpt32san	atpeldināt
 kādu	pi0msan	kāds
 groziņu	ncmsa1	groziņš
 ar	spsan	ar
@@ -709,7 +2300,7 @@ ar	spsan	ar
 un	ccs	un
 frančmaizi	ncmsa5	frančmaize
 .	zs	.
-<s>	<s>	<s>
+<s>
 Tu	pp20snn	tu
 esi	vcnipii2san	būt
 neciešama	vmnpdfsnppn	neciest
@@ -718,14 +2309,14 @@ neciešama	vmnpdfsnppn	neciest
 ,	zc	,
 neciešama	vmnpdfsnppn	neciest
 .	zs	.
-<s>	<s>	<s>
+<s>
 —	zd	—
-Tiec	vtnm0i12san	tikt
+Tiec	vtnmpi12san	tikt
 galā	r0m	galā
 ar	spsan	ar
 savējo	armsayp	savējs
 .	zs	.
-<s>	<s>	<s>
+<s>
 —	zd	—
 Vai	qs	vai
 tu	pp20snn	tu
@@ -740,36 +2331,36 @@ to	pd3msan	tas
 operāciju	ncfsa4	operācija
 izglābt	vmnn0t1000n	izglābt
 ?	zs	?
-<s>	<s>	<s>
+<s>
 Tev	pp20sdn	tu
 vienkārši	r0m	vienkārši
 nepatīk	vmnipi130ay	nepatikt
 bagāti	afmpnnp	bagāts
 cilvēki	ncmpn1	cilvēks
 .	zs	.
-<s>	<s>	<s>
+<s>
 Man	pp10sdn	es
 ir	vcnipii30an	būt
 šausmīgi	r0q	šausmīgi
 bail	r0m	bail
 .	zs	.
-<s>	<s>	<s>
+<s>
 Kurš	pq0msnn	kurš
 kuru	pi0msan	kurš
 ?	zs	?
-<s>	<s>	<s>
+<s>
 Kur	r0p	kur
 māte	ncfsn5	māte
 ?	zs	?
-<s>	<s>	<s>
+<s>
 Un	ccs	un
 neatmodīsimies	vmyifi11pay	neatmosties
 .	zs	.
-<s>	<s>	<s>
+<s>
 Mans	ps0msnn	mans
 jūraszirgs	ncmsn1	jūraszirgs
 .	zs	.
-<s>	<s>	<s>
+<s>
 Nu	qs	nu
 ,	zc	,
 tu	pp20snn	tu
@@ -778,18 +2369,18 @@ re	is	re
 tehnoloģijas	ncfpn4	tehnoloģija
 uzvar	vmnipt330an	uzvarēt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Kur	r0p	kur
 Agnese	npfsn5	Agnese
 ?	zs	?
-<s>	<s>	<s>
+<s>
 Atsien	vmnm0t12san	atsiet
 tak	qs	tak
 laivu	ncfsa4	laiva
 ,	zc	,
 Krist	npmsv1	Krists
 !	zs	!
-<s>	<s>	<s>
+<s>
 Brīnums	ncmsn1	brīnums
 ,	zc	,
 ka	css	ka
@@ -797,12 +2388,12 @@ neesam	vcnipii1pay	nebūt
 pakārti	vmnpdmpnpsn	pakārt
 gaisā	ncmsl1	gaiss
 .	zs	.
-<s>	<s>	<s>
+<s>
 —	zd	—
 Kāda	pi0fsnn	kāda
 starpība	ncfsn4	starpība
 .	zs	.
-<s>	<s>	<s>
+<s>
 Un	ccs	un
 tad	r0t	tad
 vajadzētu	vonc0t300an	vajadzēt
@@ -811,7 +2402,7 @@ palūkot	vmnn0t2000n	palūkot
 kas	pr000nn	kas
 notiek	vmnipi130an	notikt
 .	zs	.
-<s>	<s>	<s>
+<s>
 —	zd	—
 Brālīši	ncmpn2	brālītis
 ,	zc	,
@@ -820,7 +2411,7 @@ grāmatas	ncfpn4	grāmata
 ,	zc	,
 arhīvi	ncmpn1	arhīvs
 ...	zs	...
-<s>	<s>	<s>
+<s>
 —	zd	—
 Tu	pp20snn	tu
 varēsi	vonift32san	varēt
@@ -829,26 +2420,26 @@ stāstīt	vmnn0t3000n	stāstīt
 savu	ps0fsan	sava
 versiju	ncfsa4	versija
 .	zs	.
-<s>	<s>	<s>
+<s>
 —	zd	—
 Varbūt	qs	varbūt
 jūs	pp20pnn	jūs
 esat	vcnipii2pan	būt
 eņģelis	ncmsn2	eņģelis
 ?	zs	?
-<s>	<s>	<s>
+<s>
 Paņemu	vmnipt11san	paņemt
 meitenes	ncfsg5	meitene
 plaukstu	ncfsa4	plauksta
 .	zs	.
-<s>	<s>	<s>
+<s>
 Auksta	affsnnp	auksta
 .	zs	.
-<s>	<s>	<s>
+<s>
 Zelta	ncmsg1	zelts
 zīle	ncfsn5	zīle
 ...	zs	...
-<s>	<s>	<s>
+<s>
 Jupis	ncmsn2	jupis
 ,	zc	,
 Elīzes	npfsg5	Elīze
@@ -863,7 +2454,7 @@ kur	r0p	kur
 ir	vcnipii30an	būt
 redzēti	vmnpdmpnpsn	redzēt
 .	zs	.
-<s>	<s>	<s>
+<s>
 —	zd	—
 Pavei	is	pavei
 ,	zc	,
@@ -877,16 +2468,16 @@ karājas	vmyipi230an	karāties
 kukuragā	ncmsl1	kukurags
 piemineklim	ncmsd2	piemineklis
 .	zs	.
-<s>	<s>	<s>
+<s>
 Saņemies	vmym0i12san	saņemties
 !	zs	!
-<s>	<s>	<s>
+<s>
 —	zd	—
 Lec	vmnm0i12san	lēkt
 uz	sppdy	uz
 kājām	ncfpd4	kāja
 !	zs	!
-<s>	<s>	<s>
+<s>
 Lec	vmnm0i12san	lēkt
 ,	zc	,
 citādi	r0m	citādi
@@ -897,13 +2488,13 @@ nevarēs	vonift330ay	nevarēt
 i	qs	i
 apbedīt	vmnn0t3000n	apbedīt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Un	ccs	un
 nevajag	vonipt330ay	nevajadzēt
 mani	pp10san	es
-prov-ov-ocēt	vmnn0t2000n	provocēt
+prov - ov - ocēt	vmnn0t2000n	provocēt
 !	zs	!
-<s>	<s>	<s>
+<s>
 Un	ccs	un
 runāšana	ncfsn4	runāšana
 par	spsan	par
@@ -914,12 +2505,12 @@ garantija	ncfsn4	garantija
 lai	css	lai
 es	pp10snn	es
 būtu	vcnc0ii00an	būt
-p-p-p-pārliecināts	armsnnp	pārliecināts
+p - p - p - pārliecināts	armsnnp	pārliecināts
 par	spsan	par
 Viņa	pp3msgn	viņš
 esamību	ncfsa4	esamība
 .	zs	.
-<s>	<s>	<s>
+<s>
 Trešā	mosfsnv	trešā
 diena	ncfsn4	diena
 ,	zc	,
@@ -927,12 +2518,12 @@ jau	r0t	jau
 trešā	mosfsnv	trešā
 diena	ncfsn4	diena
 !	zs	!
-<s>	<s>	<s>
+<s>
 Starp	sppdy	starp
 neinteliģentiem	armpdnp	neinteliģents
 bauriem	ncmpd1	baurs
 .	zs	.
-<s>	<s>	<s>
+<s>
 Viņa	pp3fsnn	viņa
 jūk	vmnipi130an	jukt
 prātā	ncmsl1	prāts
@@ -941,32 +2532,32 @@ ja	css	ja
 nekas	pi0msny	nekas
 nenotiek	vmnipi130ay	nenotikt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Milzīgs	afmsnnp	milzīgs
 nekas	pi0msny	nekas
 .	zs	.
-<s>	<s>	<s>
+<s>
 ei	is	ei
 !	zs	!
-<s>	<s>	<s>
+<s>
 Visi	pg0mpnn	viss
 kopā	r0m	kopā
 ,	zc	,
 kopā	r0m	kopā
 !	zs	!
-<s>	<s>	<s>
+<s>
 —	zd	—
 Mēs	pp10pnn	mēs
 noslīksim	vmnifi11pan	noslīkt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Ko	pq000an	kas
 mēs	pp10pnn	mēs
 te	qs	te
 trīs	mcsmpnv	trīs
 mori	ncmpn2	moris
 ?	zs	?
-<s>	<s>	<s>
+<s>
 Žīds	ncmsn1	žīds
 ,	zc	,
 kā	r0m	kā
@@ -977,24 +2568,24 @@ jūsu	pp20pgn	jūs
 klasiķis	ncmsn2	klasiķis
 un	ccs	un
 šodienas	ncfsg4	šodiena
-f-f-a	xx	f-f-a
+f - f - a	xx	f-f-a
 ..	zx	..
-<s>	<s>	<s>
+<s>
 Pagaidiet	vmnm0t32pan	pagaidīt
 ,	zc	,
 lūdzu	is	lūdzu
 !	zs	!
-<s>	<s>	<s>
+<s>
 Paliksi	vmnifi12san	palikt
 klibs	afmsnnp	klibs
 .	zs	.
-<s>	<s>	<s>
+<s>
 Pagaidi	vmnm0t32san	pagaidīt
 mani	pp10san	es
 ,	zc	,
 Elīze	npfsv5	Elīze
 !	zs	!
-<s>	<s>	<s>
+<s>
 Tu	pp20snn	tu
 esi	vcnipii2san	būt
 mana	ps0fsnn	mana
@@ -1003,11 +2594,11 @@ iespēja	ncfsn4	iespēja
 ,	zc	,
 meitentiņ	ncmsv1	meitentiņš
 !	zs	!
-<s>	<s>	<s>
+<s>
 Starp	spsay	starp
 citu	pi0msan	cits
 ...	zs	...
-<s>	<s>	<s>
+<s>
 Tu	pp20snn	tu
 neesi	vcnipii2say	nebūt
 tik	r0q	tik
@@ -1023,31 +2614,31 @@ māki	vmnipt32san	mācīt
 ,	zc	,
 mīļā	affsvyp	mīļa
 !	zs	!
-<s>	<s>	<s>
+<s>
 Cilvēka	ncmsg1	cilvēks
 mazulis	ncmsn2	mazulis
 .	zs	.
-<s>	<s>	<s>
+<s>
 Izķemmēti	vmnpdmpnpsn	izķemmēt
 mati	ncmpn1	mats
 .	zs	.
-<s>	<s>	<s>
+<s>
 Taisni	afmpnnp	taisns
 ,	zc	,
 līdz	spsdy	līdz
 pleciem	ncmpd1	plecs
 .	zs	.
-<s>	<s>	<s>
+<s>
 Sāp	vmnipt330an	sāpēt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Tik	r0q	tik
 nežēlīgi	r0q	nežēlīgi
 nekad	r0t	nekad
 nav	vcnipii30ay	nebūt
 sāpējis	vmnpdmsnasn	sāpēt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Es	pp10snn	es
 ar	spsan	ar
 Elīzi	npfsa5	Elīze
@@ -1065,7 +2656,262 @@ aicinām	vmnipt31pan	aicināt
 viņus	pp3mpan	viņš
 iekšā	r0p	iekšā
 .	zs	.
-<s>	<s>	<s>
+<s>
+Vides	ncfsg5	vide
+aizsardzības	ncfsg4	aizsardzība
+un	ccs	un
+reģionālās	arfsgyp	reģionāla
+attīstības	ncfsg4	attīstība
+ministrs	ncmsn1	ministrs
+Edmunds	npmsn1	Edmunds
+Sprūdžs	npmsn1	Sprūdžs
+(	zb	(
+RP	y	RP
+)	zb	)
+rīt	r0t	rīt
+tiksies	vmyifi130an	tikties
+ar	spsan	ar
+Jelgavas	npfsg4	Jelgava
+mēru	ncmsa1	mērs
+Andri	npmsa2	Andris
+Rāviņu	npmsa1	Rāviņš
+(	zb	(
+ZZS	y	ZZS
+)	zb	)
+,	zc	,
+lai	css	lai
+uzklausītu	vmnc0t300an	uzklausīt
+skaidrojumus	ncmpa1	skaidrojums
+par	sppdn	par
+Valsts	ncfsg6	valsts
+kontroles	ncfsg5	kontrole
+revīzijā	ncfsl4	revīzija
+atklātajiem	vmnpdmpdpsy	atklāt
+normatīvo	armpgyp	normatīvs
+aktu	ncmpg1	akts
+pārkāpumiem	ncmpd1	pārkāpums
+un	ccs	un
+nepilnībām	ncfpd4	nepilnība
+,	zc	,
+aģentūru	ncfsa4	aģentūra
+LETA	y	LETA
+informēja	vmnist230an	informēt
+ministrijas	ncfsg4	ministrija
+sabiedrības	ncfsg4	sabiedrība
+informēšanas	ncfsg4	informēšana
+nodaļā	ncfsl4	nodaļa
+.	zs	.
+<s>
+Jautāts	vmnpdmsnpsn	jautāt
+,	zc	,
+vai	qs	vai
+atbildīgajām	affpdyp	atbildīga
+amatpersonām	ncfpd4	amatpersona
+būtu	vcnc0ii00an	būt
+jāsaņem	vmnd0t100an	saņemt
+sods	ncmsn1	sods
+par	sppdn	par
+pieļautajiem	vmnpdmpdpsy	pieļaut
+pārkāpumiem	ncmpd1	pārkāpums
+,	zc	,
+ministrs	ncmsn1	ministrs
+aģentūrai	ncfsd4	aģentūra
+LETA	y	LETA
+norādīja	vmnist330an	norādīt
+,	zc	,
+ka	css	ka
+tas	pd3msnn	tas
+ir	vcnipii30an	būt
+jāvērtē	vmnd0t200an	vērtēt
+,	zc	,
+jo	css	jo
+situācijas	ncfpn4	situācija
+ir	vcnipii30an	būt
+dažādas	arfpnnp	dažāda
+.	zs	.
+<s>
+Saistībā	ncfsl4	saistība
+ar	sppdn	ar
+Valsts	ncfsg6	valsts
+kontroles	ncfsg5	kontrole
+(	zb	(
+VK	y	VK
+)	zb	)
+revīzijā	ncfsl4	revīzija
+par	spsan	par
+Jelgavas	npfsg4	Jelgava
+pašvaldības	ncfsg4	pašvaldība
+aģentūru	ncfpg4	aģentūra
+darbību	ncfsa4	darbība
+konstatētajiem	vmnpdmpdpsy	konstatēt
+nepamatotajiem	vmnpdmpdpsy	nepamatot
+tēriņiem	ncmpd1	tēriņš
+Jelgavas	npfsg4	Jelgava
+pilsētas	ncfsg4	pilsēta
+pašvaldība	ncfsn4	pašvaldība
+ņēmusi	vmnpdfsnasn	ņemt
+vērā	r0c	vērā
+ieteikumus	ncmpa1	ieteikums
+un	ccs	un
+apņemas	vmyipi130an	apņemties
+rūpīgāk	rct	rūpīgi
+kontrolēt	vmnn0t2000n	kontrolēt
+savas	ps0fpan	sava
+aģentūras	ncfpa4	aģentūra
+.	zs	.
+<s>
+Finanšu	ncfpg5	finanses
+līdzekļi	ncmpn2	līdzeklis
+nepamatoti	r0m	nepamatoti
+tērēti	vmnpdmpnpsn	tērēt
+pašvaldības	ncfsg4	pašvaldība
+aģentūrās	ncfpl4	aģentūra
+"	zq	"
+Pilsētsaimniecība	npfsn4	Pilsētsaimniecība
+"	zq	"
+,	zc	,
+kur	r0p	kur
+konstatēta	vmnpdfsnpsn	konstatēt
+34 000	xn	34 000
+latu	ncmpg1	lats
+nesaimnieciska	arfsnnp	nesaimnieciska
+izlietošana	ncfsn4	izlietošana
+,	zc	,
+bet	ccs	bet
+aģentūrā	ncfsl4	aģentūra
+"	zq	"
+Kultūra	ncfsn4	kultūra
+"	zq	"
+-	zd	-
+8000	xn	8000
+latu	ncmpg1	lats
+.	zs	.
+<s>
+Kā	r0m	kā
+atklājusi	vmnpdfsnasn	atklāt
+Valsts	ncfsg6	valsts
+kontrole	ncfsn5	kontrole
+,	zc	,
+aģentūra	ncfsn4	aģentūra
+"	zq	"
+Pilsētsaimniecība	npfsn4	Pilsētsaimniecība
+"	zq	"
+ir	vcnipii30an	būt
+izlietojusi	vmnpdfsnasn	izlietot
+36 000	xn	36 000
+latu	ncmpg1	lats
+atlīdzībai	ncfsd4	atlīdzība
+un	ccs	un
+valsts	ncfsg6	valsts
+sociālās	arfsgyp	sociāla
+apdrošināšanas	ncfsg4	apdrošināšana
+iemaksām	ncfpd4	iemaksa
+par	spsan	par
+laiku	ncmsa1	laiks
+,	zc	,
+kurā	pr0msln	kurš
+darbinieki	ncmpn1	darbinieks
+neveica	vmnist130ay	neveikt
+pamatdarba	ncmsg1	pamatdarbs
+pienākumus	ncmpa1	pienākums
+,	zc	,
+bet	ccs	bet
+piedalījās	vmyisi330an	piedalīties
+projekta	ncmsg1	projekts
+"	zq	"
+Pašvaldības	ncfsg4	pašvaldība
+un	ccs	un
+privātās	affsgyp	privāta
+partnerības	ncfsg4	partnerība
+veicināšana	ncfsn4	veicināšana
+Jelgavas	npfsg4	Jelgava
+pilsētas	ncfsg4	pilsēta
+ielu	ncfpg4	iela
+apsaimniekošanā	ncfsl4	apsaimniekošana
+"	zq	"
+īstenošanā	ncfsl4	īstenošana
+,	zc	,
+par	spsan	par
+ko	pi000an	kas
+saņēma	vmnist130an	saņemt
+atlīdzību	ncfsa4	atlīdzība
+no	sppdy	no
+projekta	ncmsg1	projekts
+līdzekļiem	ncmpd2	līdzeklis
+.	zs	.
+<s>
+Savukārt	r0m	savukārt
+pašvaldības	ncfsg4	pašvaldība
+aģentūrā	ncfsl4	aģentūra
+"	zq	"
+Kultūra	ncfsn4	kultūra
+"	zq	"
+ir	vcnipii30an	būt
+konstatēts	vmnpdmsnpsn	konstatēt
+,	zc	,
+ka	css	ka
+8000	xn	8000
+latu	ncmpg1	lats
+ir	vcnipii30an	būt
+izlietoti	vmnpdmpnpsn	izlietot
+atlīdzībai	ncfsd4	atlīdzība
+saskaņā	ncfsl4	saskaņa
+ar	spsan	ar
+uzņēmuma	ncmsg1	uzņēmums
+līgumu	ncmsa1	līgums
+par	spsan	par
+sabiedrisko	affpgyp	sabiedriska
+attiecību	ncfpg4	attiecība
+speciālista	ncmsg1	speciālists
+pienākumu	ncmpg1	pienākums
+veikšanu	ncfsa4	veikšana
+,	zc	,
+nenodrošinot	vmnrpt300ay	nenodrošināt
+darbu	ncmpg1	darbs
+izpildes	ncfsg5	izpilde
+apjoma	ncmsg1	apjoms
+un	ccs	un
+kvalitātes	ncfsg5	kvalitāte
+kontroli	ncfsa5	kontrole
+.	zs	.
+<s>
+Bet	ccs	bet
+,	zc	,
+nosakot	vmnrpt300an	nosacīt
+aģentūras	ncfsg4	aģentūra
+"	zq	"
+Zemgales	npfsg5	Zemgale
+INFO	y	INFO
+"	zq	"
+kompetenci	ncfsa5	kompetence
+,	zc	,
+Jelgavas	npfsg4	Jelgava
+pilsētas	ncfsg4	pilsēta
+pašvaldība	ncfsn4	pašvaldība
+nav	vcnipii30ay	nebūt
+noteikusi	vmnpdfsnasn	noteikt
+sludinājumu	ncmpg1	sludinājums
+publicēšanas	ncfsg4	publicēšana
+pakalpojuma	ncmsg1	pakalpojums
+obligātu	arfsanp	obligāta
+saistību	ncfsa4	saistība
+ar	spsan	ar
+pašvaldības	ncfsg4	pašvaldība
+darbības	ncfsg4	darbība
+būtību	ncfsa4	būtība
+un	ccs	un
+autonomo	arfpgyp	autonoma
+funkciju	ncfpg4	funkcija
+izpildi	ncfsa5	izpilde
+,	zc	,
+kas	pr000nn	kas
+rada	vmnipt330an	radīt
+aģentūras	ncfsg4	aģentūra
+iesaistīšanās	ncfsgr	iesaistīšanās
+komercdarbībā	ncfsl4	komercdarbība
+risku	ncmsa1	risks
+.	zs	.
+<s>
 8.	xo	8.
 martā	ncmsl1	marts
 Madonas	npfsg4	Madonas
@@ -1081,13 +2927,13 @@ stilā	ncmsl1	stils
 ieskaitot	vmnpu000000	ieskaitīt
 pašu	pg0msan	pats
 garāko	afmsayc	garš
-–	zd	–
-„	zq	„
+-	zd	-
+"	zq	"
 olimpisko	armsayp	olimpisks
 piecdesmitnieku	ncmsa1	piecdesmitnieks
-”	zq	”
+"	zq	"
 .	zs	.
-<s>	<s>	<s>
+<s>
 Tie	pd3mpnn	tas
 ,	zc	,
 kuri	pr0mpnn	kurš
@@ -1099,7 +2945,7 @@ slēpot	vmnn0i2000n	slēpot
 pratīs	vmnift130an	prast
 novērtēt	vmnn0t2000n	novērtēt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Tāds	pd0msnn	tāds
 gaisa	ncmsg1	gaiss
 gabals	ncmsn1	gabals
@@ -1108,11 +2954,11 @@ nekāda	pi0msgy	nekāds
 nieka	ncmsg1	nieks
 lieta	ncfsn4	lieta
 !	zs	!
-<s>	<s>	<s>
+<s>
 Medaļa	ncfsn4	medaļa
 ir	vmnipii30an	būt
 !!!	zx	!!!
-<s>	<s>	<s>
+<s>
 Tukšā	r0m	tukšā
 mājās	ncfpl4	māja
 nebraucām	vmnist11pay	nebraukt
@@ -1134,7 +2980,7 @@ piecu	mcsmpgv	pieci
 kilometru	ncmpg1	kilometrs
 distancē	ncfsl5	distance
 .	zs	.
-<s>	<s>	<s>
+<s>
 Zivis	ncfpn6	zivs
 meklē	vmnipt230an	meklēt
 ,	zc	,
@@ -1146,7 +2992,7 @@ sportisti	ncmpn1	sportists
 kur	r0p	kur
 lētāk	rcm	lēti
 .	zs	.
-<s>	<s>	<s>
+<s>
 Pēc	spsgy	pēc
 nedēļas	ncfsg4	nedēļa
 Pļaviņu	npfdg4	Pļaviņas
@@ -1164,7 +3010,7 @@ gatavoties	vmyn0i2000n	gatavoties
 nākamajai	arfsdyp	nākamā
 sezonai	ncfsd4	sezona
 .	zs	.
-<s>	<s>	<s>
+<s>
 Šī	pd3fsnn	šī
 doma	ncfsn4	doma
 ēdolniekiem	ncmpd1	ēdolnieks
@@ -1198,7 +3044,7 @@ ideja	ncfsn4	ideja
 palika	vtnisi130an	palikt
 nerealizēta	vmnpdfsnpsn	nerealizēt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Veikalos	ncmpl1	veikals
 pārdod	vmnipt130an	pārdot
 vien	qs	vien
@@ -1209,7 +3055,7 @@ galvenokārt	r0q	galvenokārt
 no	spsgy	no
 Polijas	npfsg4	Polija
 .	zs	.
-<s>	<s>	<s>
+<s>
 Mums	pp10pdn	mēs
 ir	vmnipii30an	būt
 gandrīz	r0q	gandrīz
@@ -1233,7 +3079,7 @@ Rubīns	ncmsn1	rubīns
 Orlovskij	np___0	Orlovskij
 ’	zq	’
 u.c.	y	u.c.
-<s>	<s>	<s>
+<s>
 Dēls	ncmsn1	dēls
 Oļegs	npmsn1	Oļegs
 ir	vcnipii30an	būt
@@ -1252,7 +3098,7 @@ palīgi	ncmpn1	palīgs
 galvenokārt	r0q	galvenokārt
 vasarā	ncfsl4	vasara
 .	zs	.
-<s>	<s>	<s>
+<s>
 Kad	r0t	kad
 runājām	vmnist21pan	runāt
 par	spsan	par
@@ -1274,7 +3120,7 @@ jomās	ncfpl4	joma
 ir	vcnipii30an	būt
 studēts	vmnpdmsnpsn	studēt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Laikā	ncmsl1	laiks
 ,	zc	,
 kamēr	css	kamēr
@@ -1286,7 +3132,7 @@ rēķināties	vmyn0i3000n	rēķināties
 ar	spsan	ar
 peļņu	ncfsa4	peļņa
 .	zs	.
-<s>	<s>	<s>
+<s>
 Reti	rpq	reti
 kurš	pq0msnn	kurš
 šajā	pd3fsln	šī
@@ -1307,13 +3153,13 @@ ir	vmnipii30an	būt
 nākotnes	ncfsg5	nākotne
 mērķi	ncmpn2	mērķis
 .	zs	.
-<s>	<s>	<s>
+<s>
 Pašlaik	r0t	pašlaik
 uzlabojam	vmnipt21pan	uzlabot
 sprostu	ncmpg1	sprosts
 konstrukciju	ncfsa4	konstrukcija
 .	zs	.
-<s>	<s>	<s>
+<s>
 Jaunais	afmsnyp	jauns
 risinājums	ncmsn1	risinājums
 samazinās	vmnift330an	samazināt
@@ -1322,7 +3168,7 @@ patēriņu	ncmsa1	patēriņš
 dzīvnieku	ncmpg1	dzīvnieks
 aprūpē	ncfsl5	aprūpe
 .	zs	.
-<s>	<s>	<s>
+<s>
 Pirmais	mosmsnv	pirmais
 no	sppdy	no
 tiem	pd3mpdn	tas
@@ -1359,7 +3205,7 @@ no	spsgy	no
 līdz	sp_0y	līdz
 2,2	xn	2,2
 .	zs	.
-<s>	<s>	<s>
+<s>
 Saskaņā	ncfsl4	saskaņa
 ar	spsan	ar
 ES	y	ES
@@ -1389,7 +3235,7 @@ bioproduktus	ncmpa1	bioprodukts
 biodegvielu	ncfsa4	biodegviela
 )	zb	)
 .	zs	.
-<s>	<s>	<s>
+<s>
 Jau	r0t	jau
 ziņots	vmnpdmsnpsn	ziņot
 ,	zc	,
@@ -1411,7 +3257,7 @@ izpildot	vmnpu000000	izpildīt
 kvalifikācijas	ncfsg4	kvalifikācija
 normu	ncfsa4	norma
 .	zs	.
-<s>	<s>	<s>
+<s>
 «	zq	«
 Valdības	ncfsg4	valdība
 lēmums	ncmsn1	lēmums
@@ -1433,7 +3279,7 @@ soli	ncmsa2	solis
 var	vonipt330an	varēt
 saprast	vmnn0t1000n	saprast
 .	zs	.
-<s>	<s>	<s>
+<s>
 Septembra	ncmsg2	septembris
 sākumā	ncmsl1	sākums
 Rīgā	npfsl4	Rīga
@@ -1460,7 +3306,7 @@ gadā	ncmsl1	gads
 dzimušu	vmnpdmsaasn	dzimt
 vīrieti	ncmsa2	vīrietis
 .	zs	.
-<s>	<s>	<s>
+<s>
 Adamkus	npmsn3	Adamkus
 norādījis	vmnpdmsnasn	norādīt
 uz	sppdy	uz
@@ -1482,7 +3328,7 @@ konfliktiem	ncmpd1	konflikts
 mierīgu	afmsanp	mierīgs
 risinājumu	ncmsa1	risinājums
 .	zs	.
-<s>	<s>	<s>
+<s>
 Draudošā	vmnpdmslapn	draudēt
 stāvoklī	ncmsl2	stāvoklis
 atrodas	vmyipi130an	atrasties
@@ -1500,7 +3346,7 @@ Biology	xf	biology
 publicētajā	vmnpdmslpsy	publicēt
 ziņojumā	ncmsl1	ziņojums
 .	zs	.
-<s>	<s>	<s>
+<s>
 Nodegušajā	vmnpdmslasy	nodegt
 paviljonā	ncmsl1	paviljons
 ,	zc	,
@@ -1528,7 +3374,7 @@ un	ccs	un
 apģērbu	ncmpg1	apģērbs
 veikali	ncmpn1	veikals
 .	zs	.
-<s>	<s>	<s>
+<s>
 Kopumā	r0m	kopumā
 Latvijas	npfsg4	Latvija
 iedzīvotāju	ncmpg1	iedzīvotājs
@@ -1538,7 +3384,7 @@ aizvien	r0t	aizvien
 turpina	vpnipt330an	turpināt
 samazināties	vmyn0i3000n	samazināties
 .	zs	.
-<s>	<s>	<s>
+<s>
 Savukārt	r0c	savukārt
 viszemākā	affsnys	zema
 dzimstība	ncfsn4	dzimstība
@@ -1554,7 +3400,7 @@ uz	sppdy	uz
 1000	xn	1000
 iedzīvotājiem	ncmpd1	iedzīvotājs
 .	zs	.
-<s>	<s>	<s>
+<s>
 Dzimušo	vmnpdmpgasy	dzimt
 skaits	ncmsn1	skaits
 šā	pd3msgn	šis
@@ -1577,10 +3423,10 @@ pret	sppdy	pret
 5,7	xn	5,7
 tūkstošiem	mcsmpdt	tūkstotis
 .	zs	.
-<s>	<s>	<s>
+<s>
 Varētu	vonc0t300an	varēt
 teikt	vmnn0t1000n	teikt
-–	zd	–
+-	zd	-
 apsveicama	vmnpdfsnppn	apsveikt
 rīcība	ncfsn4	rīcība
 :	zo	:
@@ -1598,7 +3444,7 @@ tās	pd3fpan	tā
 maksā	vmnipt230an	maksāt
 dārgāk	rcm	dārgi
 .	zs	.
-<s>	<s>	<s>
+<s>
 Transportējot	vmnpu000000	transportēt
 zāles	ncfpa5	zāle
 jāievēro	vmnd0t200an	ievērot
@@ -1617,7 +3463,7 @@ saglabā	vmnipt230an	saglabāt
 savu	ps0fsan	sava
 kvalitāti	ncfsa5	kvalitāte
 .	zs	.
-<s>	<s>	<s>
+<s>
 Paralēlā	arfsnyp	paralēla
 tirdzniecība	ncfsn4	tirdzniecība
 ,	zc	,
@@ -1650,7 +3496,7 @@ zāļu	ncfpg5	zāle
 viltotāju	ncmpg1	viltotājs
 mērķis	ncmsn2	mērķis
 .	zs	.
-<s>	<s>	<s>
+<s>
 Nekvalitatīva	arfsnnp	nekvalitatīva
 zāļu	ncfpg5	zāle
 paralēlā	arfsnyp	paralēla
@@ -1669,7 +3515,7 @@ būs	vcnifii30an	būt
 būtiski	rpq	būtiski
 apdraudēta	vmnpdfsnpsn	apdraudēt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Tādos	pd0mpln	tāds
 brīžos	ncmpl2	brīdis
 viņa	pp3fsnn	viņa
@@ -1688,20 +3534,20 @@ viņai	pp3fsdn	viņa
 nav	vgnipii30ay	nebūt
 vietas	ncfsg4	vieta
 .	zs	.
-<s>	<s>	<s>
+<s>
 Tu	pp20snn	tu
 nevienam	pi0msdy	neviens
 šeit	r0p	šeit
 neesi	vcnipii2say	nebūt
 vajadzīga	affsnnp	vajadzīga
 !	zs	!
-<s>	<s>	<s>
+<s>
 Nē	qs	nē
 ,	zc	,
 šodien	r0t	šodien
 ne	qs	ne
 .	zs	.
-<s>	<s>	<s>
+<s>
 Vientulība	ncfsn4	vientulība
 reizēm	r0q	reizēm
 iezogas	vmyipi130an	iezogties
@@ -1709,14 +3555,14 @@ katrā	pg0msln	katrs
 no	spsdy	no
 mums	pp10pdn	mums
 .	zs	.
-<s>	<s>	<s>
+<s>
 Reizēm	r0q	reizēm
 tā	pd3fsnn	tā
 ir	vcnipii30an	būt
 īpaši	rpq	īpaši
 izteikta	vmnpdfsnpsn	izteikt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Nevis	ccs	nevis
 tā	r0m	tā
 pa	spsdy	pa
@@ -1736,7 +3582,7 @@ bet	ccs	bet
 patiešām	qs	patiešām
 nopietni	rpm	nopietni
 .	zs	.
-<s>	<s>	<s>
+<s>
 Bet	ccs	bet
 tas	pd3msnn	tas
 ,	zc	,
@@ -1746,7 +3592,7 @@ uzzināju	vmnist31san	uzzināt
 mani	pp10san	es
 šokēja	vmnist230an	šokēt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Katru	pg0fsan	katra
 reizi	ncfsa5	reize
 ,	zc	,
@@ -1766,7 +3612,7 @@ atceroties	vmypu000000	atcerēties
 tā	pd3msgn	tas
 laika	ncmsg1	laiks
 emocijas	ncfpa4	emocija
-–	zd	–
+-	zd	-
 tik	r0q	tik
 spēcīgs	afmsnnp	spēcīgs
 ir	vcnipii30an	būt
@@ -1775,9 +3621,9 @@ piedzīvojuma	ncmsg1	piedzīvojums
 nospiedums	ncmsn1	nospiedums
 sirdī	ncfsl6	sirds
 .	zs	.
-<s>	<s>	<s>
+<s>
 PS	y	PS
-<s>	<s>	<s>
+<s>
 Latvijas	npfsg4	Latvija
 futbola	ncmsg1	futbols
 izlasei	ncfsd5	izlase
@@ -1792,7 +3638,7 @@ skaists	afmsnnp	skaists
 bet	ccs	bet
 spēle	ncfsn5	spēle
 ...	zs	...
-<s>	<s>	<s>
+<s>
 Un	ccs	un
 pirmais	mosmsnv	pirmais
 vienmēr	r0t	vienmēr
@@ -1800,7 +3646,7 @@ ir	vcnipii30an	būt
 tikai	qs	tikai
 viens	mcsmsnv	viens
 .	zs	.
-<s>	<s>	<s>
+<s>
 Nav	vmnipii30ay	nebūt
 nekāds	pi0msny	nekāds
 noslēpums	ncmsn1	noslēpums
@@ -1828,7 +3674,7 @@ viens	mcsmsnv	viens
 liels	afmsnnp	liels
 pārpratums	ncmsn1	pārpratums
 .	zs	.
-<s>	<s>	<s>
+<s>
 «	zq	«
 Ļoti	r0q	ļoti
 daudzas	pi0fpnn	daudzas
@@ -1855,7 +3701,7 @@ jūtas	vmyipt130an	justies
 tādas	pd0fpnn	tāda
 kā	css	kā
 ...	zs	...
-<s>	<s>	<s>
+<s>
 Viņas	pp3fpnn	viņa
 vispār	r0m	vispār
 vairs	r0t	vairs
@@ -1867,7 +3713,7 @@ būt	vmnn0ii000n	būt
 stabilas	affpnnp	stabila
 attiecības	ncfdn4	attiecība
 .	zs	.
-<s>	<s>	<s>
+<s>
 Netic	vmnipt330ay	neticēt
 ,	zc	,
 ka	css	ka
@@ -1876,7 +3722,7 @@ var	vonipt330an	varēt
 valdīt	vmnn0t3000n	valdīt
 cieņa	ncfsn4	cieņa
 .	zs	.
-<s>	<s>	<s>
+<s>
 Bet	ccs	bet
 īstenībā	ncfsl4	īstenība
 jau	r0t	jau
@@ -1885,11 +3731,11 @@ netic	vmnipt330ay	neticēt
 pašas	pg0fpnn	pati
 sev	px000dn	sevis
 .	zs	.
-<s>	<s>	<s>
+<s>
 Dubls	ncmsn1	dubls
 numur	ncmsn1	numur
 divi	mcsmpnv	divi
-<s>	<s>	<s>
+<s>
 To	pd3fsan	tā
 joprojām	r0t	joprojām
 plosa	vmnipt330an	plosīt
@@ -1902,7 +3748,7 @@ mīlestība	ncfsn4	mīlestība
 vai	ccs	vai
 naids	ncmsn1	naids
 .	zs	.
-<s>	<s>	<s>
+<s>
 Sākas	vmyipi130an	sākties
 nostalģiskas	arfpnnp	nostalģiska
 ilgas	ncfpn4	ilgas
@@ -1910,7 +3756,7 @@ pēc	sppdy	pēc
 iepriekšējām	arfpdnp	iepriekšēja
 attiecībām	ncfpd4	attiecība
 .	zs	.
-<s>	<s>	<s>
+<s>
 Taču	ccs	taču
 vai	qs	vai
 to	pd3fsan	tā
@@ -1920,7 +3766,7 @@ vairs	r0t	vairs
 varēs	vonift330an	varēt
 salīmēt	vmnn0t2000n	salīmēt
 ?	zs	?
-<s>	<s>	<s>
+<s>
 Viņas	pp3fpnn	viņa
 domā	vmnipt230an	domāt
 ,	zc	,
@@ -1953,7 +3799,7 @@ ir	vcnipii30an	būt
 izjaucis	vmnpdmsnasn	izjaukt
 laulību	ncfsa4	laulība
 .	zs	.
-<s>	<s>	<s>
+<s>
 Kaut	qs	kaut
 cēloņi	ncmpn2	cēlonis
 katrā	pg0msln	katrs
@@ -1970,10 +3816,10 @@ ir	vcnipii30an	būt
 vesela	affsnnp	vesela
 buķete	ncfsn5	buķete
 .	zs	.
-<s>	<s>	<s>
+<s>
 Vienmēr	r0t	vienmēr
 .	zs	.
-<s>	<s>	<s>
+<s>
 Un	ccs	un
 tas	pd3msnn	tas
 var	vonipt330an	varēt
@@ -1982,7 +3828,7 @@ diezgan	r0q	diezgan
 liels	afmsnnp	liels
 pārbaudījums	ncmsn1	pārbaudījums
 .	zs	.
-<s>	<s>	<s>
+<s>
 Es	pp10snn	es
 gribētu	vonc0t300an	gribēt
 domāt	vmnn0t2000n	domāt
@@ -1997,7 +3843,7 @@ citu	pi0msan	cits
 motīvu	ncmsa1	motīvs
 vadīta	vmnpdfsnpsn	vadīt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Ja	css	ja
 pirmās	mosfpnv	pirmā
 attiecības	ncfdn4	attiecības
@@ -2026,7 +3872,7 @@ vīrieti	ncmsa2	vīrietis
 vairāk	rcq	daudz
 izvērtē	vmnipt230an	izvērtēt
 .	zs	.
-<s>	<s>	<s>
+<s>
 Iespējams	armsnnp	iespējams
 ,	zc	,
 iemesls	ncmsn1	iemesls
@@ -2046,7 +3892,7 @@ tikai	qs	tikai
 no	spsgy	no
 vienas	mcsfsgv	viena
 .	zs	.
-<s>	<s>	<s>
+<s>
 Kas	pi000nn	kas
 šādās	pd0fpln	šāda
 «	zq	«
@@ -2055,14 +3901,14 @@ saliktās	vmnpdfsgpsy	salikt
 ģimenēs	ncfpl5	ģimene
 ir	vcnipii30an	būt
 vissvarīgākais	afmsnys	svarīgs
-–	zd	–
+-	zd	-
 tā	pd3fsnn	tā
 atkal	r0t	atkal
 ir	vcnipii30an	būt
 tā	pd3fsnn	tā
 izrunāšanās	ncfsnr	izrunāšanās
 .	zs	.
-<s>	<s>	<s>
+<s>
 Grūti	rpm	grūti
 ir	vcnipii30an	būt
 arī	qs	arī
@@ -2075,7 +3921,7 @@ līdz	sppdy	līdz
 septiņiem	mcsmpdv	septiņi
 gadiem	ncmpd1	gads
 .	zs	.
-<s>	<s>	<s>
+<s>
 Tā	r0m	tā
 var	vonipt330an	varēt
 izbēgt	vmnn0i1000n	izbēgt
@@ -2083,7 +3929,7 @@ arī	qs	arī
 no	sppdy	no
 ārlaulības	ncfss4	ārlaulības
 soļiem	ncmpd2	solis
-–	zd	–
+-	zd	-
 ja	css	ja
 izstāsies	vmyifi130an	izstāties
 no	spsgy	no
@@ -2098,7 +3944,7 @@ jāpiedzīvo	vmnd0t200an	piedzīvot
 nepatīkamā	affsnyp	nepatīkama
 pieredze	ncfsn5	pieredze
 .	zs	.
-<s>	<s>	<s>
+<s>
 Bet	ccs	bet
 katras	pg0fsgn	katra
 attiecības	ncfpn4	attiecība
@@ -2106,11 +3952,11 @@ ir	vcnipii30an	būt
 ciklisks	armsnnp	ciklisks
 process	ncmsn1	process
 .	zs	.
-<s>	<s>	<s>
+<s>
 Kā	css	kā
 pasakā	ncfsl4	pasaka
 .	zs	.
-<s>	<s>	<s>
+<s>
 Un	ccs	un
 reizēm	r0q	reizēm
 tās	pd3fpnn	tā
@@ -2119,7 +3965,7 @@ tikai	qs	tikai
 ar	sppdn	ar
 gadiem	ncmpd1	gads
 .	zs	.
-<s>	<s>	<s>
+<s>
 Kaut	qs	kaut
 netrūkst	vgnipi130ay	netrūkt
 arī	qs	arī
@@ -2133,7 +3979,7 @@ kaislīgāka	affsnnc	kaislīga
 par	spsan	par
 pirmo	mosmsav	pirmais
 .	zs	.
-<s>	<s>	<s>
+<s>
 Tās	pd3fpan	tā
 praktiskās	affpayp	praktiska
 lietas	ncfpa4	lieta
@@ -2151,14 +3997,14 @@ jautājumu	ncmsa1	jautājums
 Kas	pq000nn	kas
 tālāk	rcp	tālu
 ?	zs	?
-<s>	<s>	<s>
+<s>
 1.	xo	1.
 Viņa	pp3msgn	viņš
 attiecības	ncfpn4	attiecība
 ar	spsan	ar
 bērnu	ncmsa1	bērns
 .	zs	.
-<s>	<s>	<s>
+<s>
 Ierindas	ncfsg4	ierinda
 skatē	ncfsl5	skate
 vislabāko	afmsays	labs
@@ -2169,7 +4015,7 @@ a	xx	a
 klases	ncfsg5	klase
 audzēkņi	ncmpn2	audzēknis
 .	zs	.
-<s>	<s>	<s>
+<s>
 Valsts	ncfsg6	valsts
 prezidents	ncmsn1	prezidents
 šodien	r0t	šodien
@@ -2185,7 +4031,7 @@ kultūras	ncfsg4	kultūra
 nama	ncmsg1	nams
 zālē	ncfsl5	zāle
 .	zs	.
-<s>	<s>	<s>
+<s>
 Kad	r0t	kad
 ceļinieki	ncmpn1	ceļinieks
 tika	vmnisi130an	tikt
@@ -2196,7 +4042,970 @@ tad	r0t	tad
 arī	qs	arī
 tika	vmnisi130an	tikt
 .	zs	.
-<s>	<s>	<s>
+<s>
+Sofija	npfsn4	Sofija
+Amundsena	npfsn4	Amundsena
+bija	vcnisii30an	būt
+ceļā	ncmsl1	ceļš
+no	spsgy	no
+skolas	ncfsg4	skola
+mājup	r0p	mājup
+.	zs	.
+<s>
+Verot	vmnpu000000	vērt
+sava	ps0msgn	savs
+dārza	ncmsg1	dārzs
+vārtiņus	ncmpa1	vārtiņš
+,	zc	,
+Sofija	npfsn4	Sofija
+iemeta	vmnist130an	iemest
+acis	ncfpa6	acs
+vēstuļu	ncfpg5	vēstule
+kastītē	ncfsl5	kastīte
+.	zs	.
+<s>
+Bet	ccs	bet
+,	zc	,
+kad	r0t	kad
+tētis	ncmsn2	tētis
+bija	vmnisii30an	būt
+prom	r0p	prom
+jūrā	ncfsl4	jūra
+,	zc	,
+tad	r0t	tad
+viņš	pp3msnn	viņš
+reizēm	r0q	reizēm
+kļuva	vtnisi130an	kļūt
+pavisam	r0m	pavisam
+tāls	afmsnnp	tāls
+.	zs	.
+<s>
+Vienīgais	armsnyp	vienīgs
+,	zc	,
+ko	pr000an	kas
+viņa	pp3fsnn	viņa
+tajā	pd3fsln	tā
+atrada	vmnist130an	atrast
+,	zc	,
+bija	vcnisii30an	būt
+maza	affsnnp	maza
+zīmīte	ncfsn5	zīmīte
+,	zc	,
+ne	qs	ne
+lielāka	affsnnc	liela
+par	spsan	par
+aploksni	ncfsa5	aploksne
+,	zc	,
+kurā	pr0fsln	kura
+tā	pd3fsnn	tā
+atradās	vmyisi130an	atrasties
+.	zs	.
+<s>
+Zīmītē	ncfsl5	zīmīte
+stāvēja	vtnist330an	stāvēt
+rakstīts	vmnpdmsnpsn	rakstīt
+:	zo	:
+<s>
+Nebija	vgnisii30ay	nebūt
+ne	ccr	ne
+uzrunas	ncfsg4	uzruna
+,	zc	,
+ne	ccr	ne
+sveiciena	ncmsg1	sveiciens
+,	zc	,
+ne	ccr	ne
+paraksta	ncmsg1	paraksts
+,	zc	,
+tikai	qs	tikai
+šie	pd3mpnn	šis
+trīs	mcsfpnv	trīs
+ar	spsan	ar
+roku	ncfsa4	roka
+rakstītie	vmnpdmpnpsy	rakstīt
+vārdi	ncmpn1	vārds
+un	ccs	un
+galā	ncmsl1	gals
+liela	affsnnp	liela
+jautājuma	ncmsg1	jautājums
+zīme	ncfsn5	zīme
+.	zs	.
+<s>
+Jā gan	qc	jā gan
+—	zd	—
+vēstule	ncfsn5	vēstule
+bija	vcnisii30an	būt
+adresēta	vmnpdfsnpsn	adresēt
+viņai	pp3fsdn	viņa
+.	zs	.
+<s>
+Meitene	ncfsn5	meitene
+spogulī	ncmsl2	spogulis
+neatbildēja	vmnist330ay	neatbildēt
+neko	pi0msay	nekas
+,	zc	,
+pat	qs	pat
+ne	qs	ne
+ar	spsan	ar
+mazāko	afmsayc	mazs
+vaibstu	ncmsa1	vaibsts
+.	zs	.
+<s>
+Māte	ncfsn5	māte
+kaut	qs	kaut
+ko	pi000an	kas
+bija	vcnisii30an	būt
+minējusi	vmnpdfsnasn	minēt
+par	sppdn	par
+īpaši	r0q	īpaši
+smagām	affpdnp	smaga
+dzemdībām	ncfpd4	dzemdības
+.	zs	.
+<s>
+"	zq	"
+Minci	ncmsv2	mincis
+,	zc	,
+minci	ncmsv2	mincis
+,	zc	,
+minci	ncmsv2	mincis
+!	zs	!
+"	zq	"
+<s>
+Arī	qs	arī
+viņš	pp3msnn	viņš
+ir	vmnipii30an	būt
+dārzā	ncmsl1	dārzs
+,	zc	,
+bet	ccs	bet
+diez vai	qs	diez vai
+viņš	pp3msnn	viņš
+to	pd3msan	tas
+tik	r0q	tik
+skaidri	r0c	skaidri
+apzinās	vmyipt330an	apzināties
+kā	css	kā
+Sofija	npfsn4	Sofija
+.	zs	.
+<s>
+Pēc	spsgy	pēc
+brītiņa	ncmsg1	brītiņš
+,	zc	,
+kad	r0t	kad
+Sofija	npfsn4	Sofija
+bija	vcnisii30an	būt
+pārdomājusi	vmnpdfsnasn	pārdomāt
+savu	ps0fsan	sava
+esmi	ncfsa5	esme
+,	zc	,
+viņai	pp3fsdn	viņa
+ienāca	vmnisi130an	ienākt
+prātā	ncmsl1	prāts
+,	zc	,
+ka	css	ka
+šai	pd3fsdn	šī
+pasaulē	ncfsl5	pasaule
+viņa	pp3fsnn	viņa
+nebūs	vmnifii30ay	nebūt
+mūžīgi	r0m	mūžīgi
+.	zs	.
+<s>
+Bet	ccs	bet
+bija	vcnisii30an	būt
+gandrīz	r0q	gandrīz
+neiespējami	r0m	neiespējami
+to	pd3msan	tas
+izdarīt	vmnn0t3000n	izdarīt
+.	zs	.
+<s>
+"	zq	"
+Tagad	r0t	tagad
+pirmoreiz	r0t	pirmoreiz
+es	pp10snn	es
+īsti	rpm	īsti
+saprotu	vmnipt11san	saprast
+,	zc	,
+kāda	pr0fsnn	kāda
+bagātība	ncfsn4	bagātība
+ir	vcnipii30an	būt
+dzīvība	ncfsn4	dzīvība
+,	zc	,
+"	zq	"
+viņa	pp3fsnn	viņa
+toreiz	r0t	toreiz
+teica	vmnist130an	teikt
+.	zs	.
+<s>
+Viņa	pp3fsnn	viņa
+sarāvās	vmyist130an	sarauties
+,	zc	,
+ieraugot	vmnpu000000	ieraugot
+tajā	pd3fsln	tā
+pamatīgu	affsanp	pamatīga
+aploksni	ncfsa5	aploksne
+.	zs	.
+<s>
+Vai	qs	vai
+viņa	pp3fsnn	viņa
+patiešām	r0q	patiešām
+nebija	vcnisii30ay	nebūt
+pilnīgi	r0q	pilnīgi
+pārliecinājusies	vmypdfsnasn	pārliecināties
+par	spsan	par
+to	pd3msan	tas
+,	zc	,
+ka	css	ka
+vēstuļu	ncfpg5	vēstule
+kastīte	ncfsn5	kastīte
+palika	vanisi130an	palikt
+gluži	r0q	gluži
+tukša	affsnnp	tukša
+,	zc	,
+kad	r0t	kad
+viņa	pp3fsnn	viņa
+no	spsgy	no
+tās	pd3fsgn	tās
+izņēma	vmnist130an	izņemt
+pirmo	mosfsav	pirmā
+aploksni	ncfsa5	aploksne
+?	zs	?
+<s>
+"	zq	"
+No	spsgy	no
+kurienes	ncfsg5	kuriene
+cēlusies	vmypdfsnasn	celties
+pasaule	ncfsn5	pasaule
+?	zs	?
+"	zq	"
+<s>
+Vai	qs	vai
+viņš	pp3msnn	viņš
+bija	vcnisii30an	būt
+radījis	vmnpdmsnasn	radīt
+pats	pg0msnn	pats
+sevi	px000an	sevis
+ne	qs	ne
+no	spsgy	no
+kā	pi000gn	kas
+?	zs	?
+<s>
+Sofija	npfsn4	Sofija
+devās	vmyist130an	doties
+pie	spsgy	pie
+vēstuļu	ncfpg5	vēstule
+kastītes	ncfsg5	kastīte
+vēl	r0t	vēl
+trešo	mosfsav	trešā
+reizi	ncfsa5	reize
+.	zs	.
+<s>
+Sirsnīgs	afmsnnp	sirsnīgs
+sveiciens	ncmsn1	sveiciens
+.	zs	.
+<s>
+Viņa	pp3fsnn	viņa
+juta	vmnist130an	just
+,	zc	,
+ka	css	ka
+viņai	pp3fsdn	viņa
+kaut	qs	kaut
+kā	r0m	kā
+jātiek	vtnd0i100an	tikt
+galā	r0p	galā
+ar	spsan	ar
+vētru	ncfsa4	vētra
+,	zc	,
+kas	pr000nn	kas
+viņā	pp3fsln	viņa
+plosījās	vmyisi330an	plosīties
+.	zs	.
+<s>
+"	zq	"
+Ne	qs	ne
+-	zd	-
+e	xx	e
+?	zs	?
+<s>
+"	zq	"
+Tu	pp20snn	tu
+varbūt	qs	varbūt
+varētu	vonpdmsapsn	varēt
+man	pp10sdn	es
+pastāstīt	vmnn0t3000n	pastāstīt
+,	zc	,
+kas	pr000nn	kas
+pēkšņi	r0m	pēkšņi
+mainījies	vmyisi32san	mainīties
+?	zs	?
+"	zq	"
+<s>
+"	zq	"
+Tas	pd3msnn	tas
+...	zs	...
+<s>
+Filosofijas	ncfsg4	filosofija
+kurss	ncmsn1	kurss
+.	zs	.
+<s>
+Aploksnē	ncfsl5	aploksne
+atradās	vmyisi130an	atrasties
+trīs	mcsfpnv	trīs
+lielas	affpnnp	liela
+mašīnrakstā	ncmsl1	mašīnraksts
+aprakstītas	vmnpdfpnpsn	aprakstīt
+loksnes	ncfpn5	loksne
+,	zc	,
+sastiprinātas	vmnpdfpnpsn	sastiprināt
+kopā	r0m	kopā
+ar	spsan	ar
+saspraudi	ncfsa5	saspraude
+.	zs	.
+<s>
+Protams	vmnpdmsnppn	prast
+,	zc	,
+visiem	pg0mpdn	viss
+cilvēkiem	ncmpd1	cilvēks
+nepieciešams	afmsnnp	nepieciešams
+ēdiens	ncmsn1	ēdiens
+,	zc	,
+pārtika	ncfsn4	pārtika
+.	zs	.
+<s>
+Tāpat	qs	tāpat
+visiem	pg0mpdn	viss
+ir	vcnipii30an	būt
+nepieciešama	affsnnp	nepieciešama
+arī	qs	arī
+mīlestība	ncfsn4	mīlestība
+un	ccs	un
+gādība	ncfsn4	gādība
+.	zs	.
+<s>
+Šādi	pd0mpnn	šāds
+jautājumi	ncmpn1	jautājums
+nodarbinājuši	vmnpdmpnasn	nodarbināt
+cilvēkus	ncmpa1	cilvēks
+visos	pg0mpln	visos
+laikos	ncmpl1	laiks
+.	zs	.
+<s>
+Protams	vmnpdmsnppn	prast
+,	zc	,
+var	vonipt330an	varēt
+arī	qs	arī
+iedomāties	vmyn0t2000n	iedomāties
+gadījumu	ncmsa1	gadījums
+,	zc	,
+kad	r0t	kad
+nozieguma	ncmsg1	noziegums
+noslēpumu	ncmsa1	noslēpums
+neizdodas	veyipt130ay	neizdoties
+atšķetināt	vmnn0t3000n	atšķetināt
+nekad	r0t	nekad
+.	zs	.
+<s>
+Taču	qs	taču
+jebkurā	armslnp	jebkurš
+gadījumā	ncmsl1	gadījums
+noslēpumam	ncmsd1	noslēpums
+ir	vcnipii30an	būt
+sava	ps0fsnn	sava
+atbilde	ncfsn5	atbilde
+.	zs	.
+<s>
+Zinātne	ncfsn5	zinātne
+jau	r0t	jau
+daudzas	pi0fpan	daudzas
+senas	affpanp	sena
+mīklas	ncfpa4	mīkla
+ir	vcnipii30an	būt
+atrisinājusi	vmnpdfsnasn	atrisināt
+.	zs	.
+<s>
+Mēs	pp10pnn	mēs
+nevaram	vonipt31pay	nevarēt
+izprast	vmnn0t1000n	izprast
+,	zc	,
+kādā	pi0msln	kāds
+veidā	ncmsl1	veids
+tas	pd3msnn	tas
+,	zc	,
+ko	pr000an	kas
+redzam	vmnipt31pan	redzēt
+viņu	pp3msan	viņš
+darām	vmnpu000000	darīt
+,	zc	,
+ir	vcnipii30an	būt
+iespējams	armsnnp	iespējams
+.	zs	.
+<s>
+Runājot	vmnpu000000	runāt
+par	spsan	par
+balto	afmsayp	balts
+trusīti	ncmsa2	trusītis
+,	zc	,
+varbūt	qs	varbūt
+pareizāk	rcm	pareizi
+būtu	vcnc0ii00an	būt
+to	pd3msan	tas
+salīdzināt	vmnn0t3000n	salīdzināt
+ar	spsan	ar
+Visumu	ncmsa1	visums
+.	zs	.
+<s>
+Nebija	vcnisii30ay	nebūt
+iespējams	armsnnp	iespējams
+,	zc	,
+ka	css	ka
+to	pd3msan	tas
+būtu	vcnc0ii00an	būt
+darījis	vmnpdmsnasn	darīt
+tas	pd3msnn	tas
+pats	pg0msnn	pats
+cilvēks	ncmsn1	cilvēks
+,	zc	,
+kas	pr000nn	kas
+sūtīja	vmnist330an	sūtīt
+dzimšanas	ncfsg4	dzimšana
+dienas	ncfsg4	diena
+apsveikumu	ncmsa1	apsveikums
+Hildai	npfsd4	Hilda
+,	zc	,
+jo	css	jo
+apsveikuma	ncmsg1	apsveikums
+kartei	ncfsd5	karte
+bija	vmnisii30an	būt
+gan	ccr	gan
+pastmarkas	ncfpn4	pastmarka
+,	zc	,
+gan	ccr	gan
+zīmogs	ncmsn1	zīmogs
+.	zs	.
+<s>
+Pēkšņi	r0m	pēkšņi
+viņai	pp3fsdn	viņa
+šķita	vmnisi130an	šķist
+,	zc	,
+ka	css	ka
+tālāk	rcq	tālu
+meža	ncmsg1	mežs
+dziļumā	ncmsl1	dziļums
+kaut	qs	kaut
+kas	pi000nn	kas
+noknikšķēja	vmnisi330an	noknikšķēt
+.	zs	.
+<s>
+Pirms	spsgy	pirms
+iziešanas	ncfsg4	iziešana
+viņa	pp3fsnn	viņa
+nolika	vmnist130an	nolikt
+Šerekānam	npmsd1	Šerekāns
+ēdienu	ncmsa1	ēdiens
+.	zs	.
+<s>
+Kā	r0m	kā
+Tu	pp20snn	tu
+jau	r0t	jau
+zini	vmnipt32san	zināt
+,	zc	,
+šis	pd3msnn	šis
+īsais	afmsnyp	īss
+filosofijas	ncfsg4	filosofija
+kurss	ncmsn1	kurss
+nāks	vmnifi130an	nākt
+pa	sppdy	pa
+nelielām	arfpdnp	neliela
+daļām	ncfpd4	daļa
+.	zs	.
+<s>
+Tā	pd3fsnn	tā
+pat	qs	pat
+varētu	vonc0t300an	varēt
+būt	vcnn0ii000n	būt
+mazāka	afmsgnc	mazs
+.	zs	.
+<s>
+"	zq	"
+Jā	qs	jā
+,	zc	,
+jā	qs	jā
+,	zc	,
+tas	pd3msnn	tas
+ir	vcnipii30an	būt
+vauva	ncmsn4	vauva
+,	zc	,
+"	zq	"
+saka	vmnipt330an	sacīt
+pie	spsgy	pie
+pasaules	ncfsg5	pasaule
+jau	r0t	jau
+radušais	vmnpdmsnasy	rast
+,	zc	,
+"	zc	"
+bet	ccs	bet
+tagad	r0t	tagad
+nu gan	qc	nu gan
+tev	pp20sdn	tu
+ir	vcnipii30an	būt
+jāsēž	vmnd0i100an	sēdēt
+mierīgi	r0c	mierīgi
+ratiņos	ncmpl1	ratiņš
+.	zs	.
+"	zq	"
+<s>
+Mēs	pp10pnn	mēs
+nepavisam	r0q	nepavisam
+neesam	vcnipii1pay	būt
+tikpat	r0q	tikpat
+sajūsmināti	vmnpdmpnpsn	sajūsmināt
+.	zs	.
+<s>
+Žēl	r0m	žēl
+,	zc	,
+pēc	sppdy	pēc
+manām	ps0fpdn	mana
+domām	ncfpd4	doma
+!	zs	!
+<s>
+Drošības	ncfsg4	drošība
+labad	stsgy	labad
+izdarīsim	vmnift31pan	izdarīt
+pāris	pi00pnn	pāris
+domāšanas	ncfsg4	domāšana
+eksperimentus	ncmpa1	eksperiments
+,	zc	,
+pirms	r0t	pirms
+uzsākam	vmnipt11pan	uzsākt
+pašu	pg0msan	pats
+filosofijas	ncfsg4	filosofija
+kursu	ncmsa1	kurss
+.	zs	.
+<s>
+Pēkšņi	r0m	pēkšņi
+Tu	pp20snn	tu
+ievēro	vmnipt22san	ievērot
+vienu	mcsmsav	viens
+nelielu	armsanp	neliels
+kosmisko	armsayp	kosmisks
+kuģi	ncmsa2	kuģis
+meža	ncmsg1	mežs
+pļaviņā	ncfsl4	pļava
+savā	ps0fsln	sava
+priekšā	ncfsl4	priekša
+.	zs	.
+<s>
+Nu jā	qc	nu jā
+,	zc	,
+būtībā	ncfsl4	būtība
+jau	r0t	jau
+tas	pd3msnn	tas
+nav	vcnipii30ay	nebūt
+svarīgi	rpm	svarīgi
+.	zs	.
+<s>
+Protams	vmnpdmsnppn	prast
+,	zc	,
+nav	vcnipii30ay	nebūt
+sevišķi	r0c	sevišķi
+ticams	vmnpdmsnppn	ticēt
+,	zc	,
+ka	css	ka
+Tu	pp20snn	tu
+kādu	pi0fsan	kāda
+reizi	ncfsa5	reize
+tiešām	qs	tiešām
+nejauši	r0m	nejauši
+uzdursies	vmyifi12san	uzdurties
+kādam	pi0msdn	kāds
+radījumam	ncmsd1	radījums
+no	spsgy	no
+citas	pi0fsgn	citas
+planētas	ncfsg4	planēta
+.	zs	.
+<s>
+Bet	ccs	bet
+var	vonipt330an	varēt
+iedomāties	vmyn0t2000n	iedomāties
+,	zc	,
+ka	css	ka
+Tu	pp20snn	tu
+,	zc	,
+piemēram	ncmsd1	piemērs
+,	zc	,
+uzdūries	vmyisi12san	uzdurties
+pati	pg0fsnn	pati
+sev	px000dn	sevis
+.	zs	.
+<s>
+Var	vonipt330an	varēt
+gadīties	veyn0i3000n	gadīties
+,	zc	,
+ka	css	ka
+kādu	pi0fsan	kāda
+dienu	ncfsa4	diena
+Tu	pp20snn	tu
+pēkšņi	r0m	pēkšņi
+apstājies	vmyipi12san	apstāties
+un	ccs	un
+gūsti	vmnipt12san	gūt
+par	spsan	par
+sevi	px000an	sevis
+pavisam	r0q	pavisam
+jauna	afmsgnp	jauns
+veida	ncmsg1	veids
+pieredzi	ncfsa5	pieredze
+.	zs	.
+<s>
+Vai	qs	vai
+Tu	pp20snn	tu
+vēl	r0t	vēl
+lasi	vmnipt32san	lasīt
+?	zs	?
+<s>
+Māmiņa	ncfsn4	māmiņa
+drīz	r0t	drīz
+pieceļas	vmyipt130an	piecelties
+no	spsgy	no
+galda	ncmsg1	galds
+un	ccs	un
+aizgriežas	vmyipi130an	aizgriezties
+...	zs	...
+<s>
+(	zb	(
+Ievēro	vmnm0t22san	ievērot
+to	pd3msan	tas
+labi	rpm	labi
+!	zs	!
+)	zb	)
+<s>
+Skumji	r0m	skumji
+,	zc	,
+ka	css	ka
+augšanas	ncfsg4	augšana
+gaitā	ncfsl4	gaita
+mēs	pp10pnn	mēs
+sevi	px000an	sevis
+pieradinām	vmnipt11pan	pieradināt
+ne tikai	ccd	ne tikai
+pie	spsgy	pie
+Zemes	npfsg5	Zeme
+pievilkšanas	ncfsg4	pievilkšana
+spēka	ncmsg1	spēks
+,	zc	,
+mēs	pp10pnn	mēs
+pierodam	vmnipt11pan	pierast
+tai	pd3msln	tas
+pašā	pg0msln	pats
+laikā	ncmsl1	laiks
+arī	qs	arī
+pie	spsgy	pie
+pasaules	ncfsg5	pasaule
+kā	css	kā
+tādas	pd0fsgn	tāda
+.	zs	.
+<s>
+Tieši	qs	tieši
+to	pd3msan	tas
+mēs	pp10pnn	mēs
+izjutām	vmnist11pan	izjust
+,	zc	,
+ilgi	rpt	ilgi
+pirms	r0t	pirms
+bijām	vcnisii1pan	būt
+iemācījušies	vmypdmpnasn	iemācīties
+to	pd3msan	tas
+izprast	vmnn0t1000n	izprast
+.	zs	.
+<s>
+(	zb	(
+Šis	pd3msnn	šis
+radījums	ncmsn1	radījums
+ierokas	vmyipi130an	ierakties
+dziļi	rpq	dziļi
+atpakaļ	r0p	atpakaļ
+truša	ncmsg2	trusis
+kažokā	ncmsl1	kažoks
+,	zc	,
+nogulstas	vmyipi130an	nogulties
+uz	sppdy	uz
+labajiem	afmpdyp	labs
+sāniem	ncmpd1	sāns
+un	ccs	un
+tā	r0m	tā
+pavada	vmnipt330an	pavadīt
+visu	pg0msan	viss
+savu	ps0msan	savs
+mūžu	ncmsa1	mūžs
+.	zs	.
+)	zb	)
+<s>
+Es	pp10snn	es
+negribētu	vmnc0t300ay	negribēt
+,	zc	,
+ka	css	ka
+tieši	qs	tieši
+Tu	pp20snn	tu
+būtu	vmnc0ii00an	būt
+starp	sppdy	starp
+trulajiem	afmpdyp	truls
+un	ccs	un
+vienaldzīgajiem	afmpdyp	vienaldzīgs
+.	zs	.
+<s>
+Šo	pd3msan	šis
+kursu	ncmsa1	kurss
+Tu	pp20snn	tu
+saņem	vmnipt130an	saņemt
+pilnīgi	r0q	pilnīgi
+par	spsan	par
+brīvu	afmsanp	brīvs
+.	zs	.
+<s>
+Bet	ccs	bet
+neviens	pi0msny	neviens
+no	sppdy	no
+kažoka	ncmsg1	kažoks
+dziļumā	ncmsl1	dziļums
+mītošajiem	vmnpdmpdapy	mist
+pat	qs	pat
+nepakustas	vmyipi330ay	nepakustēties
+un	ccs	un
+nepievērš	vmnipt130ay	nepievērst
+uzmanību	ncfsa4	uzmanība
+filosofa	ncmsg1	filosofs
+saucienam	ncmsd1	sauciens
+.	zs	.
+<s>
+Kad	r0t	kad
+vēlāk	rct	vēlu
+Sofijas	npfsg4	Sofija
+māte	ncfsn5	māte
+pārradās	vmyisi130an	pārrasties
+no	spsgy	no
+darba	ncmsg1	darbs
+mājās	ncfpl4	māja
+,	zc	,
+Sofija	npfsn4	Sofija
+vēl	r0t	vēl
+arvien	r0t	arvien
+bija	vmnisii30an	būt
+šokā	ncmsl1	šoks
+.	zs	.
+<s>
+Tas	pd3msnn	tas
+arī	qs	arī
+viss	pg0msnn	viss
+.	zs	.
+<s>
+Īstenībā	ncfsl4	īstenība
+viņš	pp3msnn	viņš
+bija	vcnisii30an	būt
+baigi	r0q	baigi
+liels	afmsnnp	liels
+.	zs	.
+<s>
+Ka	qs	ka
+tik	qs	tik
+neaizbrauc	vmnipt130ay	neaizbraukt
+pavisam	r0q	pavisam
+.	zs	.
+<s>
+Viņš	pp3msnn	viņš
+eksistē	vmnipi230an	eksistēt
+tikai	qs	tikai
+teorētiski	r0m	teorētiski
+.	zs	.
+<s>
+Bet	ccs	bet
+viņam	pp3msdn	viņš
+ir	vmnipii30an	būt
+.	zs	.
+<s>
+Ļoti	r0q	ļoti
+skaists	armsnnp	skaists
+saulriets	ncmsn1	saulriets
+.	zs	.
+<s>
+Gribējās	vmyist330an	gribēties
+tā	r0m	tā
+kopīgi	r0m	kopīgi
+pasēdēt	vmnn0i1000n	pasēdēt
+.	zs	.
+<s>
+Viņa	pp3fsnn	viņa
+arī	qs	arī
+dirš	vmnipi130an	dirst
+gultā	ncfsl4	gulta
+.	zs	.
+<s>
+Tam	pd3msdn	tas
+nav	vgnipii30ay	nebūt
+nozīmes	ncfsg5	nozīme
+.	zs	.
+<s>
+Viņš	pp3msnn	viņš
+to	pd3msan	tas
+ieslēdz	vmnipt130an	ieslēgt
+un	ccs	un
+dodas	vmyipi130an	doties
+uz	sppdy	uz
+durvīm	ncfpd6	durvis
+.	zs	.
+<s>
+Man	pp10sdn	es
+ir	vmnipii30an	būt
+kauns	ncmsn1	kauns
+pašai	pg0fsdn	pati
+par	spsan	par
+sevi	px000an	sevis
+.	zs	.
+<s>
+Tev	pp20sdn	tu
+vēl	r0t	vēl
+joprojām	r0t	joprojām
+nav	vgnipii30ay	nebūt
+nekāda	pi0msgy	nekāds
+mērķa	ncmsg2	mērķis
+dzīvē	ncfsl5	dzīve
+.	zs	.
+<s>
+Oto	npmsn0	Oto
+bija	vcnisii30an	būt
+nonācis	vmnpdmsnasn	nonākt
+pie	spsgy	pie
+sava	ps0msgn	savs
+dzīvokļa	ncmsg2	dzīvoklis
+.	zs	.
+<s>
+Viņa	pp3msgn	viņš
+acis	ncfpn6	acs
+neviļus	r0m	neviļus
+apstājās	vmyisi130an	apstāties
+pie	spsgy	pie
+virtuves	ncfsg5	virtuve
+durvju	ncfpg6	durvis
+spraugas	ncfsg4	sprauga
+.	zs	.
+<s>
+Virpināju	vmnist31san	virpināt
+pirkstos	ncmpl1	pirksts
+ļuļķi	ncmsa2	ļuļķis
+un	ccs	un
+vilku	vmnist11san	vilkt
+pa	spsdy	pa
+mazam	afmsdnp	mazs
+malciņam	ncmsd1	malks
+silto	afmsayp	silts
+dūmu	ncmsa1	dūms
+plaušās	ncfpl4	plaušas
+.	zs	.
+<s>
+Man	pp10sdn	es
+nav	vgnipii30ay	nebūt
+jēgas	ncfsg4	jēga
+nepīpēt	vmnn0t2000y	nepīpēt
+.	zs	.
+<s>
+Ir	vcnipii30an	būt
+jāmāk	vond0t300an	mācēt
+ciesties	vmyn0i1000n	ciesties
+un	ccs	un
+atteikties	vmyn0i1000n	atteikties
+.	zs	.
+<s>
+Ella	npfsn4	Ella
+vēl	r0t	vēl
+nemaz	r0q	nemaz
+nav	vcnipii30ay	nebūt
+tikusi	vtnpdfsnasn	tikt
+pie	spsgy	pie
+brokastu	ncmpg2	brokastis
+trauku	ncmpg1	trauks
+mazgāšanas	ncfsg4	mazgāšana
+.	zs	.
+<s>
+Pavisam	r0q	pavisam
+drīz	r0t	drīz
+pēc	spsgy	pēc
+Tristāna	npmsg1	Tristāns
+nāves	ncfsg5	nāve
+šī	pd3fsnn	šī
+līdzība	ncfsn4	līdzība
+vēl	r0m	vēl
+neparastākā	afmslnc	neparasts
+veidā	ncmsl1	veids
+atgriezās	vmyisi130an	atgriezties
+pie	spsgy	pie
+Izoldes	npfsg5	Izolde
+.	zs	.
+<s>
+Andžs	npmsn1	Andžs
+greizsirdīgā	affslnp	greizsirdīga
+alkatībā	ncfsl4	alkatība
+iegaumēja	vmnist230an	iegaumēt
+kaislību	ncfsa4	kaislība
+Tīnas	npfsg4	Tīna
+sejā	ncfsl4	seja
+.	zs	.
+<s>
+Aiz	sppdy	aiz
+maniem	ps0mpdn	mans
+drebošajiem	vmnpdmpdapy	drebēt
+plakstiņiem	ncmpd1	plakstiņš
+sāka	vpnist130an	sākt
+rosīties	vmyn0i3000n	rosīties
+tēli	ncmpn1	tēls
+.	zs	.
+<s>
+Pagasta	ncmsg1	pagasts
+mājas	ncfsg4	māja
+pagalmā	ncmsl1	pagalms
+valda	vmnipt330an	valdīt
+priekšdarbi	ncmpn1	priekšdarbi
+un	ccs	un
+jukas	ncfpn4	jukas
+.	zs	.
+<s>
+Un	ccs	un
+tepat	r0p	tepat
+viņas	pp3fsgn	viņas
+acu	ncfpg6	acs
+priekšā	ncfsl4	priekša
+apaļajā	affslyp	apaļa
+gultā	ncfsl4	gulta
+kā	css	kā
+lietus	ncmsg3	lietus
+pile	ncfsn5	pile
+gulēja	vmnist330an	gulēt
+Augustīns	npmsn1	Augustīns
+.	zs	.
+<s>
+Tagad	r0t	tagad
+Terēze	npfsn5	Terēze
+varēja	vonist330an	varēt
+pieskarties	vmyn0i1000n	pieskarties
+Augustīnam	npmsd1	Augustīns
+un	ccs	un
+sakārtot	vmnn0t2000n	sakārtot
+savas	ps0fpan	savas
+domas	ncfpa4	doma
+stāstīšanai	ncfsd4	stāstīšana
+.	zs	.
+<s>
+Tad	r0t	tad
+viņa	pp3fsnn	viņa
+sniedza	vmnist130an	sniegt
+pilno	affsayp	pilna
+pudelīti	ncfsa5	pudelīte
+mātei	ncfsd5	māte
+.	zs	.
+<s>
+It kā	qc	it kā
+sāpīgi	r0m	sāpīgi
+viļņi	ncmpn2	vilnis
+sistos	vmyc0i100an	sisties
+pret	spsay	pret
+krastu	ncmsa1	krasts
+.	zs	.
+<s>
 Šiem	pd3mpdn	šis
 procesiem	ncmpd1	process
 savu	ps0mpgn	savs
@@ -2208,7 +5017,7 @@ lopkopības	ncfsg4	lopkopība
 nozares	ncfsg5	nozare
 zinātnieki	ncmpn1	zinātnieks
 .	zs	.
-<s>	<s>	<s>
+<s>
 Pētījumos	ncmpl1	pētījums
 par	sppdn	par
 iespējām	ncfpd4	iespēja
@@ -2256,7 +5065,7 @@ A.	y	A.
 Trūpa	npfsn4	Trūpa
 )	zb	)
 .	zs	.
-<s>	<s>	<s>
+<s>
 Tā	r0m	tā
 prioritāro	armpgyp	prioritārs
 pētījumu	ncmpg1	pētījums
@@ -2357,7 +5166,7 @@ U.	y	U.
 Osītis	npmsn2	Osis
 )	zb	)
 .	zs	.
-<s>	<s>	<s>
+<s>
 Šis	pd3msnn	šis
 periods	ncmsn1	periods
 bija	vcnisii30an	būt
@@ -2378,7 +5187,7 @@ zinātniskās	arfsgyp	zinātniska
 pētniecības	ncfsg4	pētniecība
 iestādēm	ncfpd5	iestāde
 .	zs	.
-<s>	<s>	<s>
+<s>
 Vispirms	r0t	vispirms
 jāatzīmē	vmnd0t200an	atzīmēt
 starptautiskā	arfsnyp	starptautiska
@@ -2427,7 +5236,7 @@ Universitāti	ncfsa5	universitāte
 Ķīles	npfsg5	Ķīle
 Universitāti	ncfsa5	universitāte
 .	zs	.
-<s>	<s>	<s>
+<s>
 Nākamajā	vmnpdmslppy	nākt
 posmā	ncmsl1	posms
 zinātniskās	arfsgyp	zinātniska
@@ -2484,7 +5293,7 @@ izmantošanas	ncfsg4	izmantošana
 problēmu	ncfpg4	problēma
 risinājumi	ncmpn1	risinājums
 .	zs	.
-<s>	<s>	<s>
+<s>
 Izmantojot	vmnpu000000	izmantot
 ģenētiskās	arfpayp	ģenētiska
 metodes	ncfpa5	metode
@@ -2495,7 +5304,7 @@ liellopu	ncmpg1	liellopi
 reproduktīvās	arfpnyp	reproduktīva
 spējas	ncfpn4	spēja
 .	zs	.
-<s>	<s>	<s>
+<s>
 Zinot	vmnpu000000	zināt
 riska	ncmsg1	risks
 faktoru	ncmpg1	faktors
@@ -2512,7 +5321,7 @@ ieguvē	ncfsl5	ieguve
 un	ccs	un
 uzlabošanā	ncfsl4	uzlabošana
 .	zs	.
-<s>	<s>	<s>
+<s>
 Atskaites	ncfsg5	atskaite
 periodā	ncmsl1	periods
 veikti	vmnpdmpnpsn	veikt
@@ -2526,7 +5335,7 @@ kura	pq0msgn	kura
 sastāvā	ncmsl1	sastāvs
 ir	vmnipii30an	būt
 ?	zs	?
-<s>	<s>	<s>
+<s>
 Pirmajā	mosfslv	pirmā
 daļā	ncfsl4	daļa
 doti	vmnpdmpnpsn	dot
@@ -2541,7 +5350,7 @@ un	ccs	un
 to	pd3fpgn	tā
 analīze	ncfsn5	analīze
 .	zs	.
-<s>	<s>	<s>
+<s>
 Gatavas	affpnnp	gatava
 datoru	ncmpg1	dators
 programmas	ncfpn4	programma
@@ -2561,7 +5370,7 @@ tīklu	ncmpg1	tīkls
 plānošanas	ncfsg4	plānošana
 uzdevumiem	ncmpd1	uzdevums
 .	zs	.
-<s>	<s>	<s>
+<s>
 Kā	css	kā
 izejas	ncfsg4	izeja
 dati	ncmpn1	dati
@@ -2582,7 +5391,7 @@ un	ccs	un
 alternatīviem	armpdnp	alternatīvs
 pasākumiem	ncmpd1	pasākums
 .	zs	.
-<s>	<s>	<s>
+<s>
 Atlikušajā	vmnpdmslasy	atlikt
 ekonomiskās	affsgyp	ekonomiska
 dzīves	ncfsg5	dzīve
@@ -2597,9 +5406,9 @@ jaunajiem	afmpdyp	jauns
 attīstības	ncfsg4	attīstība
 nosacījumiem	ncmpd1	nosacījums
 .	zs	.
-<s>	<s>	<s>
+<s>
 Swednet	np___0	Swednet
-<s>	<s>	<s>
+<s>
 Izejas	ncfsg4	izeja
 dati	ncmpn1	dati
 satur	vmnipt330an	saturēt
@@ -2621,7 +5430,7 @@ slodzes	ncfpa5	slodze
 patērētājus	ncmpa1	patērētājs
 )	zb	)
 .	zs	.
-<s>	<s>	<s>
+<s>
 Optimizācijas	ncfsg4	optimizācija
 process	ncmsn1	process
 tiek	vtnipi130an	tikt
@@ -2638,7 +5447,7 @@ plānošanas	ncfsg4	plānošana
 perioda	ncmsg1	periods
 beigām	ncfpd4	beigas
 .	zs	.
-<s>	<s>	<s>
+<s>
 Šādu	pd0mpgn	šāds
 problēmu	ncfpg4	problēma
 atrisināšana	ncfsn4	atrisināšana
@@ -2654,7 +5463,7 @@ un	ccs	un
 tehniskām	arfpdnp	tehniska
 grūtībām	ncfpd4	grūtības
 .	zs	.
-<s>	<s>	<s>
+<s>
 Dzimstības	ncfsg4	dzimstība
 līmeņa	ncmsg2	līmenis
 pieaugumam	ncmsd1	pieaugums
@@ -2673,11 +5482,11 @@ gados	ncmpl1	gads
 stabilizējoties	vmypu000000	stabilizēties
 ar	spsan	ar
 nedaudz	r0q	nedaudz
-izteiktu	vmnpdfsapsn	izteikt
+izteiktu	arfsanp	izteikta
 pieauguma	ncmsg1	pieaugums
 tendenci	ncfsa5	tendence
 20	xn	20
-–	zd	–
+-	zd	-
 22	xn	22
 tūkstošu	mcsmpgt	tūkstotis
 līmenī	ncmsl2	līmenis
@@ -2692,126 +5501,142 @@ pārvalde	ncfsn5	pārvalde
 2007	xn	2007
 )	zb	)
 .	zs	.
-<s>	<s>	<s>
-Balstoties	vmypu000000	balstīties
+<s>
+Aplūkojot	vmnpu000000	aplūkot
+pasaules	ncfsg5	pasaule
+izglītībā	ncfsl4	izglītība
+notiekošos	vmnpdmpaapy	notikt
+procesus	ncmpa1	process
+ilgtermiņā	ncmsl1	ilgtermiņš
+,	zc	,
+redzams	vmnpdmsnppn	redzēt
+,	zc	,
+ka	css	ka
+attiecībai	ncfsd4	attiecība
+starp	sppgy	starp
+skolēnu	ncmpg1	skolēns
+skaitu	ncmsa1	skaits
+un	ccs	un
+skolotāju	ncmpg1	skolotājs
+skaitu	ncmsa1	skaits
+ir	vcnipii30an	būt
+tendence	ncfsn5	tendence
+samazināties	vmyn0i3000n	samazināties
+.	zs	.
+<s>
+Visizteiktākais	afmsnys	izteikts
+tas	pd3msnn	tas
+ir	vcnipii30an	būt
+bijis	vmnpdmsnasn	būt
+Čehijas	npfsg4	Čehija
+Republikā	ncfsl4	republika
+,	zc	,
+kur	r0p	kur
+minētā	vmnpdfsnpsy	minēt
+attiecība	ncfsn4	attiecība
+ir	vcnipii30an	būt
+samazinājusies	vmypdfsnasn	samazināties
+no	sppdy	no
+23,4	xn	23,4
 uz	sppdy	uz
-UNESCO	y	UNESCO
-datiem	ncmpd1	dati
-,	zc	,
-uz	spsay	uz
-to	pd3msan	tas
-norāda	vmnipt330an	norādīt
-D.	y	D.
-Hopf	xf	Hopf
+17,5	xn	17,5
+.	zs	.
+<s>
+Tā	pd3fsnn	tā
+novedīs	vmnift130an	novest
+pie	spsgy	pie
+5	xn	5
+%	xx	%
+skolotāju	ncfpg4	skolotāja
+skaita	ncmsg1	skaits
+pieauguma	ncmsg1	pieaugums
+pirmajos	mosmplv	pirmais
+piecos	mcsmplv	pieci
+gados	ncmpl1	gads
+un	ccs	un
+19	xn	19
+%	xx	%
+pieauguma	ncmsg1	pieaugums
+nākamajos	vmnpdmplppy	nākt
+piecos	mcsmplv	pieci
+gados	ncmpl1	gads
 (	zb	(
-Baumert	xf	Baumert
+Florida	npfsn4	Florida
+Department	xf	Department
+of	xf	of
+Education	xf	Education
 ,	zc	,
-1994	xn	1994
+2007	xn	2007
 )	zb	)
 .	zs	.
-<s>	<s>	<s>
-Tomēr	ccs	tomēr
-skolēnu	ncmpg1	skolēns
-un	ccs	un
-skolotāju	ncmpg4	skolotājs
+<s>
+Noteiktu	vmnpdfsapsn	noteikt
+lomu	ncfsa4	loma
+skolotāju	ncmpg1	skolotājs
 skaita	ncmsg1	skaits
-attiecība	ncfsn4	attiecība
-pati	pg0fsnn	pati
-par	spsan	par
-sevi	px000an	sevis
-ir	vcnipii30an	būt
-atkarīga	affsnnp	atkarīga
-no	sppdy	no
-dažādiem	armpdnp	dažāds
-faktoriem	ncmpd1	faktors
-.	zs	.
-<s>	<s>	<s>
-Ietekme	ncfsn5	ietekme
-šeit	r0p	šeit
-varētu	vonc0t300an	varēt
-būt	vcnn0ii000n	būt
-abpusēja	arfsnnp	abpusēja
-:	zo	:
-labāka	affsnnc	laba
+izmaiņās	ncfpl4	izmaiņa
+spēlē	vmnipt230an	spēlēt
+arī	qs	arī
 ekonomiskā	affsnyp	ekonomiska
 situācija	ncfsn4	situācija
-dod	vmnipti30an	dot
-iespējas	ncfpa4	iespēja
-algot	vmnn0t2000n	algot
-lielāku	afmsanc	liels
-skaitu	ncmsa1	skaits
-skolotāju	ncfpg4	skolotāja
-un	ccs	un
-tādējādi	r0m	tādējādi
-samazināt	vmnn0t3000n	samazināt
-skolēnu	ncmpg1	skolēns
-skaita	ncmsg1	skaits
-un	ccs	un
-skolotāju	ncmpg1	skolotājs
-skaita	ncmsg1	skaits
-attiecību	ncfsa4	attiecība
-,	zc	,
-un	ccs	un
-,	zc	,
-no	spsgy	no
-otras	mcsfsgv	otra
-puses	ncfsg5	puse
-,	zc	,
-samazinot	vmnpu000000	samazināt
-šo	pd3fsan	šī
-attiecību	ncfsa4	attiecība
-,	zc	,
-pieaug	vmnipi130an	pieaugt
-izmaksas	ncfpn4	izmaksa
-vienam	mcsmsdv	viens
-skolēnam	ncmsd1	skolēns
 .	zs	.
-<s>	<s>	<s>
-Saistība	ncfsn4	saistība
-ar	spsan	ar
-ekonomisko	affpgyp	ekonomiska
+<s>
+Vēl	r0t	vēl
+tiešāku	affsanc	tieša
+saistību	ncfsa4	saistība
+starp	spsay	starp
+ekonomisko	afmsayp	ekonomisks
 situāciju	ncfsa4	situācija
-ir	vcnipii30an	būt
-nenoliedzama	vmnpdfsnppn	nenoliegt
-,	zc	,
 un	ccs	un
-tas	pd3msnn	tas
-varētu	vonc0t300an	varēt
-būt	vcnn0ii000n	būt
-bijis	vcnpdmsnasn	būt
-par	spsan	par
-pamatu	ncmsa1	pamats
-Horn	xf	Horn
-P.	y	P.
-J.	y	J.
-idejai	ncfsd4	ideja
-prognozēt	vmnn0t2000n	prognozēt
 skolotāju	ncmpg1	skolotājs
 skaitu	ncmsa1	skaits
+saskata	vmnipt330an	saskatīt
+Dolton	xf	Dolton
+P.	y	p.
 ,	zc	,
-izmantojot	vmnpu000000	izmantot
-ekonometrisko	armsayp	ekonometrisks
+Tremayne	xf	Tremayne
+A.	y	a.
+un	ccs	un
+Chung	xf	Chung
+T.	y	t.
+P.	y	p.
+,	zc	,
+kas	pr000nn	kas
+,	zc	,
+saistot	vmnpu000000	saistīt
+izglītības	ncfsg4	izglītība
+sistēmas	ncfsg4	sistēma
+nodrošinājumu	ncmsa1	nodrošinājums
+ar	sppdn	ar
+skolotājiem	ncmpd1	skolotājs
+ar	spsan	ar
+ekonomiskās	affsgyp	ekonomiska
+attīstības	ncfsg4	attīstība
+cikliskumu	ncmsa1	cikliskums
+,	zc	,
+veido	vmnipt230an	veidot
+skolotāju	ncmpg1	skolotājs
+darba	ncmsg1	darbs
+tirgus	ncmsg3	tirgus
 modeli	ncmsa2	modelis
 un	ccs	un
-aplūkot	vmnn0t2000n	aplūkot
-to	pd3msan	tas
-kā	css	kā
-funkciju	ncfsa4	funkcija
-no	spsgy	no
-iekšzemes	ncfsg5	iekšzeme
-kopprodukta	ncmsg1	kopprodukts
-vienam	mcsmsdv	viens
-iedzīvotājam	ncmsd1	iedzīvotājs
-un	ccs	un
-skolēnu	ncmpg1	skolēns
-skaita	ncmsg1	skaits
-(	zb	(
-Horn	xf	Horn
+analizē	vmnipt230an	analizēt
+faktorus	ncmpa1	faktors
 ,	zc	,
-1988	xn	1988
+kas	pr000nn	kas
+nosaka	vmnipt330an	nosacīt
+pieprasījuma	ncmsg1	pieprasījums
+un	ccs	un
+piedāvājuma	ncmsg1	piedāvājums
+samēru	ncmsa1	samērs
+tajā	pd3fsln	tā
+(	zb	(
+Dolton	xf	Dolton
+,	zc	,
+2003	xn	2003
 )	zb	)
 .	zs	.
-<s>	<s>	<s>
+<s>
 Skolotāja	ncmsg1	skolotājs
 prestižs	ncmsn1	prestižs
 sabiedrībā	ncfsl4	sabiedrība
@@ -2822,119 +5647,122 @@ tipiskākajiem	armpdyc	tipisks
 šai	pd3fsln	šī
 ziņā	ncfsl4	ziņa
 .	zs	.
-<s>	<s>	<s>
-Tā	pd3msgn	tas
-rezultātā	ncmsl1	rezultāts
-ierobežota	vmnpdmsgpsn	ierobežot
-finansējuma	ncmsg1	finansējums
-apstākļos	ncmpl2	apstāklis
-ir	vcnipii30an	būt
-iespējams	armsnnp	iespējams
-atalgot	vmnn0t2000n	atalgot
-mazāku	affsanc	maza
-skaitu	ncmsa1	skaits
-pedagoģiskos	armpayp	pedagoģisks
-darbiniekus	ncmpa1	darbinieks
-,	zc	,
-un	ccs	un
-skolēnu	ncmpg1	skolēns
+<s>
+Skolēnu	ncmpg1	skolēns
+skaita	ncmsg1	skaits
+izmaiņas	ncfpn4	izmaiņa
+uzreiz	r0t	uzreiz
+nenoved	vmnipt130ay	nenovest
+pie	sppdy	pie
+atbilstošām	vmnpdfpdapn	atbilst
 skolotāju	ncmpg1	skolotājs
 skaita	ncmsg1	skaits
-attiecības	ncfsg4	attiecība
-samazināšanās	ncfsnr	samazināšanās
-tiek	vtnipi130an	tikt
-nobremzēta	vmnpdfsnpsn	nobremzēt
+izmaiņām	ncfpd4	izmaiņa
 .	zs	.
-<s>	<s>	<s>
-Ir	vcnipii30an	būt
-pamats	ncmsn1	pamats
-domāt	vmnn0t2000n	domāt
-,	zc	,
-ka	css	ka
-šī	pd3fsnn	šī
-tendence	ncfsn5	tendence
+<s>
+Tā	pd3fsnn	tā
 ir	vcnipii30an	būt
-saglabājusies	vmypdfsnasn	saglabāties
-arī	qs	arī
-2007.	xo	2007.
-/	zx	/
-08.	xo	08.
-mācību	ncfpg4	mācība
-gadā	ncmsl1	gads
-,	zc	,
-jo	css	jo
-skolēnu	ncmpg1	skolēns
-skaits	ncmsn1	skaits
-ir	vcnipii30an	būt
-samazinājies	vmypdmsnasn	samazināties
-vēl	r0t	vēl
-par	sppdn	par
-5,7	xn	5,7
-%	xx	%
-un	ccs	un
-šajā	pd3msln	šajā
-gadā	ncmsl1	gads
-ir	vcnipii30an	būt
-25 0941	xn	25 0941
-(	zb	(
-Izglītojamo	vmnpdmpgppy	izglītot
-skaits	ncmsn1	skaits
-LR	y	LR
-vispārizglītojošajās	vmnpdfplapy	vispārizglītot
-dienas	ncfsg4	diena
-skolās	ncfpl4	skola
-2007.	xo	2007.
-/	zx	/
-2008.	xo	2008.
-m.g.	y	m.g.
-)	zb	)
-.	zs	.
-<s>	<s>	<s>
-Jo	csc	jo
-augstāks	afmsnnc	augsts
-būs	vcnifii30an	būt
-profesionālās	affsgyp	profesionāla
 izglītības	ncfsg4	izglītība
-prestižs	ncmsn1	prestižs
+politikas	ncfsg4	politika
+izšķiršanās	ncfplr	izšķiršanās
 ,	zc	,
-jo	csc	jo
-lielāks	afmsnnc	liels
-skaits	ncmsn1	skaits
-no	sppdy	no
-pamatskolas	ncfsg4	pamatskola
-beidzējiem	ncmpd1	beidzējs
-turpinās	vmnift330an	turpināt
-izglītību	ncfsa4	izglītība
-tieši	qs	tieši
-šajā	pd3msln	šis
-izglītības	ncfsg4	izglītība
-virzienā	ncmsl1	virziens
+kā	r0m	kā
+rīkoties	vmyn0i2000n	rīkoties
+:	zo	:
+uzturēt	vmnn0t3000n	uzturēt
+lielāku	afmsanc	liels
+skaitu	ncmsa1	skaits
+zemākas	affsgnc	zema
+kvalifikācijas	ncfsg4	kvalifikācija
+skolotāju	ncmpg1	skolotājs
+vai	ccs	vai
+mazāku	afmsanc	mazs
+skaitu	ncmsa1	skaits
+augstākas	affsgnc	augsta
+kvalifikācijas	ncfsg4	kvalifikācija
+skolotāju	ncmpg1	skolotājs
 ,	zc	,
-tādejādi	r0m	tādejādi
-samazinot	vmnpu000000	samazināt
+kas	pr000nn	kas
+savukārt	r0c	savukārt
+ir	vcnipii30an	būt
+spējīgi	afmpnnc	spējīgs
+strādāt	vmnn0t2000n	strādāt
+ar	spsan	ar
+lielāku	afmsanc	liels
 skolēnu	ncmpg1	skolēns
 skaitu	ncmsa1	skaits
-vispārizglītojošajās	vmnpdfplapy	vispārizglītot
-vidusskolās	ncfpl4	vidusskola
+katrs	pg0msnn	katrs
 .	zs	.
-<s>	<s>	<s>
-3.	xo	3.
-Pašreizējais	armsnyp	pašreizējs
-no	spsgy	no
-valsts	ncfsg6	valsts
-budžeta	ncmsg1	budžets
-finansētais	vmnpdmsnpsy	finansēt
-studiju	ncfpg4	studija
-vietu	ncfpg4	vieta
-skaits	ncmsn1	skaits
-ilgtermiņa	ncmsg1	ilgtermiņš
-nenodrošina	vmnipt330ay	nenodrošināt
+<s>
+1.	xo	1.
+Vispārējās	arfsgyp	vispārēja
+izglītības	ncfsg4	izglītība
+sistēmā	ncfsl4	sistēma
+nepieciešamo	afmsayp	nepieciešams
 pedagoģisko	armpgyp	pedagoģisks
 darbinieku	ncmpg1	darbinieks
-sastāva	ncmsg1	sastāvs
-atjaunināšanu	ncfsa4	atjaunināšana
+skaitu	ncmsa1	skaits
+ietekmē	vmnipt230an	ietekmēt
+ne tikai	ccd	ne tikai
+skolēnu	ncmpg1	skolēns
+skaits	ncmsn1	skaits
+,	zc	,
+bet arī	ccd	bet arī
+virkne	ncfsn5	virkne
+sociālu	armpgnp	sociāls
+un	ccs	un
+ekonomisku	afmpgnp	ekonomisks
+faktoru	ncmpg1	faktors
+,	zc	,
+lai	css	lai
+mazinātu	vmnc0t300an	mazināt
+nenoteiktību	ncfsa4	nenoteiktība
+,	zc	,
+tāpēc	r0c	tāpēc
+ir	vcnipii30an	būt
+nepieciešams	afmsnnp	nepieciešams
+apstiprināt	vmnn0t3000n	apstiprināt
+pamatprincipus	ncmpa1	pamatprincips
+skolu	ncfpg4	skola
+tīkla	ncmsg1	tīkls
+veidošanai	ncfsd4	veidošana
+,	zc	,
+kā arī	ccd	kā arī
 vispārējās	arfsgyp	vispārēja
 izglītības	ncfsg4	izglītība
-sistēmai	ncfsd4	sistēma
+finansēšanai	ncfsd4	finansēšana
+tuvākajās	affplyc	tuva
+desmitgadēs	ncfpl5	desmitgade
 .	zs	.
-<s>	<s>	<s>
+<s>
+Ņemot	vmnpu000000	ņemt
+vērā	r0p	vērā
+lielos	afmpayp	liels
+finansu	ncfpg5	finanses
+resursus	ncmda1	resursi
+,	zc	,
+kas	pr000nn	kas
+ir	vcnipii30an	būt
+jāiesaista	vmnd0t300an	iesaistīt
+pedagoģisko	armpgyp	pedagoģisks
+darbinieku	ncmpg1	darbinieks
+izglītošanā	ncfsl4	izglītošana
+,	zc	,
+pētījumam	ncmsd1	pētījums
+nepieciešamais	afmsnyp	nepieciešams
+finansējums	ncmsn1	finansējums
+,	zc	,
+novēršot	vmnpu000000	novērst
+iespējamās	arfpayp	iespējama
+kļūdas	ncfsg4	kļūda
+pedagoģisko	armpgyp	pedagoģisks
+darbinieku	ncmpg1	darbinieks
+sagatavošanas	ncfsg4	sagatavošana
+plānošanā	ncfsl4	plānošana
+,	zc	,
+var	vonipt330an	varēt
+dot	vmnn0ti000n	dot
+ievērojamu	armsanp	ievērojams
+ekonomisko	afmsayp	ekonomisks
+efektu	ncmsa1	efekts
+.	zs	.
