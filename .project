@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>PaikensNER</name>
+	<name>LVTagger</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -18,12 +18,12 @@
 		<link>
 			<name>classes</name>
 			<type>2</type>
-			<location>/Users/pet/Documents/java/PaikensNER/classes</location>
+			<locationURI>PROJECT_LOC/classes</locationURI>
 		</link>
 		<link>
 			<name>src</name>
 			<type>2</type>
-			<location>/Users/pet/Documents/java/LVTagger/src</location>
+			<locationURI>PROJECT_LOC/src</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

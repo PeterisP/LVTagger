@@ -108,7 +108,7 @@ public class WordPipe {
 			String token = word.getString(TextAnnotation.class);
 			if (token.contains("<s>")) continue;
 			Word analysis = word.get(LVMorphologyAnalysis.class);
-			Wordform maxwf = chooseWordform(analysis, word.getString(AnswerAnnotation.class)); 
+			Wordform maxwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false); 
 			if (maxwf != null)
 				tokenJSON.add(String.format("{\"Word\":\"%s\",\"Tag\":\"%s\",\"Lemma\":\"%s\"}", JSONValue.escape(token), JSONValue.escape(maxwf.getTag()), JSONValue.escape(maxwf.getValue(AttributeNames.i_Lemma))));
 			else 
@@ -131,32 +131,27 @@ public class WordPipe {
 			if (s.length()>0) s.append(token_separator);
 			s.append(token);
 			s.append(field_separator);
-			/*
-			s.append(word.getString(AnswerAnnotation.class));
-			s.append("\t");
-			*/
 			Word analysis = word.get(LVMorphologyAnalysis.class);
-			Wordform mainwf = chooseWordform(analysis, word.getString(AnswerAnnotation.class)); 
+			Wordform mainwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false); 
 			if (mainwf != null) {
 				if (mini_tag) mainwf.removeNonlexicalAttributes();
 				s.append(mainwf.getTag());
 				s.append(field_separator);
 				s.append(mainwf.getValue(AttributeNames.i_Lemma));
-				//s.append("\t");
 			} else s.append(field_separator); 
 			/*
 			mainwf = word.get(LVMorphologyAnalysisBest.class);
 			if (mainwf != null) {
-				s.append("Statistics:\t");
+				s.append("Single-token suggestion:\t");
 				s.append(mainwf.getTag());
 				s.append("\t");
 				s.append(mainwf.getValue(AttributeNames.i_Lemma));
 				s.append("\t");
 			}
-			s.append("\n");*/
-			//if (all_options)
-		//		s.append(word.toTabSep(statistics, probabilities));
-			//else s.append(word.toTabSepsingle(statistics));
+			s.append("\n");
+			if (all_options)
+					s.append(word.toTabSep(statistics, probabilities));
+			else s.append(word.toTabSepsingle(statistics)); */
 		}
 		
 		tokens = null;
@@ -172,28 +167,5 @@ public class WordPipe {
 		}
 		out.append("]");
 		return out;
-	}
-	
-	
-	private static Wordform chooseWordform(Word analysis, String answerTag) {
-		Wordform result = null;
-		AttributeValues av = MarkupConverter.fromKamolsMarkup(answerTag);
-		for (Wordform wf : analysis.wordforms) {
-			if (wf.isMatchingWeak(av)) {
-				if (result != null) 
-					System.err.printf("Multiple valid options for word %s tag %s: %s and %s\n", analysis.getToken(), answerTag, wf.getTag(), result.getTag());
-				result = wf;
-			}
-		}
-		
-		if (result == null) {
-			result = new Wordform(analysis.getToken());
-			result.addAttributes(av);
-			result.addAttribute(AttributeNames.i_Source, "CMM tagger guess");
-			result.addAttribute(AttributeNames.i_Lemma, analysis.getToken());
-			System.err.printf("None of analysis options valid for word %s tag %s\n", analysis.getToken(), answerTag);
-		}
-		
-		return result;
 	}
 }	

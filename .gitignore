@@ -3,7 +3,6 @@ classes/*
 bin/*
 javadoc/*
 classifiers/*
-*.jar
 /dist
 /javadoc
 /classifiers

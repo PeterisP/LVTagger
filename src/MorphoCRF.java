@@ -20,6 +20,7 @@ import edu.stanford.nlp.ie.ner.CMMClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations.GoldAnswerAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.objectbank.ObjectBank;
@@ -79,14 +80,14 @@ public class MorphoCRF {
 	    AbstractSequenceClassifier<CoreLabel> crf = new CMMClassifier<CoreLabel>(props);
 	    DocumentReaderAndWriter reader = crf.makeReaderAndWriter();
 	    
-	    ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorfoCRF/train_dev.txt", reader);	    
+	    ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/train.txt", reader);	    
 	    crf.train(documents, reader); //atbilstoši props datiem
 	    
-	    crf.serializeClassifier("MorfoCRF/lv-morpho-model.ser.gz");
+	    crf.serializeClassifier("MorphoCRF/lv-morpho-model.ser.gz");
 	    
 	    //crf.loadClassifierNoExceptions(crf.flags.loadClassifier, props);
 				 
-		testData(crf, "MorfoCRF/test.txt", reader);
+		testData(crf, "MorphoCRF/test.txt", reader);
 	}
 
 	private static void testData(AbstractSequenceClassifier<CoreLabel> crf, String filename, DocumentReaderAndWriter<CoreLabel> reader) {			
@@ -95,7 +96,9 @@ public class MorphoCRF {
 		    
 			ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile(filename, reader);
 	
-			int correct = 0;
+			int correct_tag = 0;
+			int correct_lemma = 0;
+			int correct_all = 0;
 			int total = 0;
 			Collection<AttributeValues> errors = new LinkedList<AttributeValues>();
 			
@@ -108,8 +111,12 @@ public class MorphoCRF {
 				  if (token.contains("<s>")) continue;
 
 				  String answer = word.get(AnswerAnnotation.class);
-				  String lemma = word.get(LemmaAnnotation.class);
+				  Word analysis = word.get(LVMorphologyAnalysis.class);
+				  Wordform maxwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false); 
+				  String lemma = maxwf.getValue(AttributeNames.i_Lemma); 
+				  
 				  String gold_tag = word.get(GoldAnswerAnnotation.class);
+				  String gold_lemma = word.get(LemmaAnnotation.class); // The lemma that's written in the test data
 				  
 				  AttributeValues pareizie = MarkupConverter.fromKamolsMarkup(gold_tag);
 				  AttributeValues atrastie = MarkupConverter.fromKamolsMarkup(answer);
@@ -117,9 +124,12 @@ public class MorphoCRF {
 				  //String output = crf.classifyToString(sentences)
 				
 				  total++;
+				  
+				  if (gold_lemma.equalsIgnoreCase(lemma)) correct_lemma++;
 				
 				  if (gold_tag != null && answer.equalsIgnoreCase(gold_tag)) {
-					  correct++;
+					  correct_tag++;
+					  if (gold_lemma.equalsIgnoreCase(lemma)) correct_all++;
 				  } else {
 					  //System.out.println("vārds: " + token+ ", pareizais: " + gold_tag + ", automātiskais: " + answer);
 					  //compareAVs(pareizie, atrastie).describe(new PrintWriter(System.out));
@@ -127,8 +137,10 @@ public class MorphoCRF {
 		      }	    
 			}			
 		    
-		    izeja.printf("\nAnalīzes rezultāti:\n");
-			izeja.printf("\tPareizi:\t%4.1f%%\t%d\n", correct*100.0/total, correct);
+		    izeja.printf("\nEvaluation results:\n");
+			izeja.printf("\tCorrect tag:\t%4.1f%%\t%d\n", correct_tag*100.0/total, correct_tag);
+			izeja.printf("\tCorrect lemma:\t%4.1f%%\t%d\n", correct_lemma*100.0/total, correct_lemma);
+			izeja.printf("\tCorrect all:\t%4.1f%%\t%d\n", correct_all*100.0/total, correct_all);
 			summarizeErrors(errors, izeja);
 		    izeja.flush();
 		} catch (IOException e) {
