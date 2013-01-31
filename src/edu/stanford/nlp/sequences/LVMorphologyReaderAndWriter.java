@@ -181,8 +181,17 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 			result.add(word);
 		}
 		
+		s = new CoreLabel();
+		s.set(TextAnnotation.class, "<s>");
 		result.add(s);
 		return result;
+	}
+	
+	public static List<CoreLabel> analyzeLabels(List<CoreLabel> sentence) {
+		for (CoreLabel word : sentence) 
+			applyLVmorphoanalysis(word, null); //answerAttributes varbūt jāpatjūnē
+
+		return sentence;
 	}
 
 	public static List<CoreLabel> analyzeSentence(String sentence) {
@@ -201,6 +210,8 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 			result.add(word);
 		}
 		
+		s = new CoreLabel();
+		s.set(TextAnnotation.class, "<s>");
 		result.add(s);
 		return result;
 	}

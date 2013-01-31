@@ -1493,4 +1493,11 @@ public class CoreAnnotations {
 	    }
 	  }
 
+  /* placeholder to store conll-format syntax data if reading in training data */ 
+  public static class ConllSyntaxAnnotation implements CoreAnnotation<String> {
+	    public Class<String> getType() {
+	      return String.class;
+	    }
+	  }
+
 }

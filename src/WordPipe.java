@@ -20,9 +20,11 @@ import lv.semti.morphology.attributes.AttributeNames;
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ie.ner.CMMClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.ConllSyntaxAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.ling.Datum;
 import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 
 // Copied/pasted/mangled from transliteration webservices java project
@@ -36,6 +38,7 @@ public class WordPipe {
 		String token_separator = "\n";
 		
 		boolean mini_tag = false;		
+		boolean features = false;		
 		inputTypes inputType = inputTypes.SENTENCE;
 		outputTypes outputType = outputTypes.JSON;
 		
@@ -53,6 +56,7 @@ public class WordPipe {
 				outputType = outputTypes.MOSES;
 			}
 			if (args[i].equalsIgnoreCase("-stripped")) mini_tag = true; //remove nonlexical attributes
+			if (args[i].equalsIgnoreCase("-features")) features = true; //output training features
 			if (args[i].equalsIgnoreCase("-vertinput")) inputType = inputTypes.VERT; //vertical input format as requested by Milos Jakubicek 2012.11.01
 			if (args[i].equalsIgnoreCase("-conll-in")) inputType = inputTypes.CONLL; 
 			if (args[i].equalsIgnoreCase("-conll-x")) outputType = outputTypes.CONLL_X;
@@ -71,13 +75,14 @@ public class WordPipe {
 				System.out.println("\t-conll-x : CONLL-X shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
 				System.out.println("\nOther options:");
 				System.out.println("\t-stripped : lexical/nonessential parts of the tag are replaced with '-' to reduce sparsity.");
+				System.out.println("\t-features : in conll output, include the features used for training/tagging.");
 				System.out.flush();
 				System.exit(0);
 			}
 		}
 				
 		String serializedClassifier = "MorphoCRF/lv-morpho-model.ser.gz"; //FIXME - make it configurable
-		AbstractSequenceClassifier<CoreLabel> cmm = CMMClassifier.getClassifier(serializedClassifier);
+		CMMClassifier<CoreLabel> cmm = CMMClassifier.getClassifier(serializedClassifier);
 			
 		PrintStream out = new PrintStream(System.out, true, "UTF8");
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in, "UTF8"));
@@ -117,7 +122,7 @@ public class WordPipe {
 	    		out.println( output_JSON(sentence, mini_tag));
 	    		break;
 	    	case CONLL_X:
-	    		out.println( output_CONLL(sentence, mini_tag));
+	    		out.println( output_CONLL(sentence, cmm, mini_tag, features));
 	    		break;
 	    	default: 
 	    		out.println( output_separated(sentence, field_separator, token_separator, mini_tag));	    
@@ -148,7 +153,7 @@ public class WordPipe {
 		return s;
 	}
 
-	private static String output_CONLL(List<CoreLabel> tokens, boolean mini_tag){
+	private static String output_CONLL(List<CoreLabel> tokens, CMMClassifier<CoreLabel> cmm, boolean mini_tag, boolean features){
 		StringBuilder s = new StringBuilder();
 
 		int counter = 1;
@@ -170,10 +175,17 @@ public class WordPipe {
 				s.append(mainwf.getTag());
 				s.append('\t');
 				for (Entry<String, String> entry : mainwf.entrySet()) { // visi attributevalue paariishi
-					 s.append(entry.getKey());
+					 s.append(entry.getKey().replace(' ', '+'));
 					 s.append('=');
-					 s.append(entry.getValue());
+					 s.append(entry.getValue().replace(' ', '+'));
 					 s.append('|');
+				}
+				if (features) { // visas fīčas, ko lietoja trenējot
+					Datum<String, String> d = cmm.makeDatum(tokens, counter, cmm.featureFactory);
+					for (String feature : d.asFeatures()) {
+						s.append(feature.substring(0, feature.length()-2).replace(' ', '+')); // noņeam trailing |C kas tām fīčām tur ir
+						s.append('|');
+					}
 				}
 				s.deleteCharAt(s.length()-1); // noņemam peedeejo | separatoru, kas ir lieks
 				s.append('\t');
@@ -182,7 +194,13 @@ public class WordPipe {
 				s.append(token); 
 				s.append("\t_\t_\t_\t");
 			}
-			s.append("_\t_\t_\t_\n");
+			String syntax = word.getString(ConllSyntaxAnnotation.class);
+			if (syntax != null) {
+				s.append(syntax);
+				s.append('\n');
+			}
+			else s.append("_\t_\t_\t_\n");
+			counter++;
 		}
 		s.append('\n');
 		
@@ -240,19 +258,42 @@ public class WordPipe {
 	
 	public static List<List<CoreLabel>> readCONLL(BufferedReader in) throws IOException {
 		String s;
-	    List<String> sentence = new LinkedList<String>();
+	    List<CoreLabel> sentence = new LinkedList<CoreLabel>();
 	    List<List<CoreLabel>> result = new LinkedList<List<CoreLabel>>();
+	    
+	    CoreLabel stag = new CoreLabel();
+		stag.set(TextAnnotation.class, "<s>");
+		sentence.add(stag);
+	    
 	    while ((s = in.readLine()) != null) {
 	    	if (s.trim().length() > 0) {
 	    		String[] fields = s.split("\t");
 	    		String token = fields[1];
-	    		sentence.add(token);
+	    		String syntax = fields[6] + "\t" + fields[7] + "\t" + fields[8] + "\t" + fields[9];
+
+	    		CoreLabel word = new CoreLabel();
+				word.set(TextAnnotation.class, token);
+				word.set(ConllSyntaxAnnotation.class, syntax);
+	    		sentence.add(word);
 	    	} else {
-	    		result.add(LVMorphologyReaderAndWriter.analyzeSentence(sentence));
-	    		sentence.clear();
+	    		stag = new CoreLabel();
+	    		stag.set(TextAnnotation.class, "<s>");
+	    		sentence.add(stag);
+	    		
+	    		result.add(LVMorphologyReaderAndWriter.analyzeLabels(sentence));
+	    		
+	    		sentence = new LinkedList<CoreLabel>();
+	    		stag = new CoreLabel();
+	    		stag.set(TextAnnotation.class, "<s>");
+	    		sentence.add(stag);
 	    	}
 	    }
-	    if (sentence.size() > 0) result.add(LVMorphologyReaderAndWriter.analyzeSentence(sentence));
+	    if (sentence.size() > 0) {
+	    	stag = new CoreLabel();
+			stag.set(TextAnnotation.class, "<s>");
+			sentence.add(stag);
+	    	result.add(LVMorphologyReaderAndWriter.analyzeLabels(sentence));
+	    }
 	    		
 		return result;
 	}
