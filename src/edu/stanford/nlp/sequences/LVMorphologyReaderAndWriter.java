@@ -168,6 +168,23 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 	        wi.set(LVMorphologyAnalysisBest.class, mainwf);
 	    }
 	}
+	
+	public static List<CoreLabel> analyzeSentence(List<String> sentence) {
+		List<CoreLabel> result = new ArrayList<CoreLabel>();
+		CoreLabel s = new CoreLabel();
+		s.set(TextAnnotation.class, "<s>");
+		result.add(s);
+		
+		for (String w : sentence) {
+			CoreLabel word = new CoreLabel();
+			word.set(TextAnnotation.class, w);
+			applyLVmorphoanalysis(word, null); //answerAttributes varbūt jāpatjūnē
+			result.add(word);
+		}
+		
+		result.add(s);
+		return result;
+	}
 
 	public static List<CoreLabel> analyzeSentence(String sentence) {
 	    if (analyzer == null || statistics == null) initAnalyzer();
