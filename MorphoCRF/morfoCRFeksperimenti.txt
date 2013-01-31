@@ -241,6 +241,114 @@ Evaluation results:
 	Person :  0.81%
 	Case :  6.96%
 
+----- Nodalida pieteikumam
+36. Retest pilnais
+	Evaluation results:
+		Correct tag:	93.6%	287
+		Correct lemma:	96.1%	173
+		Correct all:	92.0%	357
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  2.10%
+	Number :  4.49%
+	Definiteness :  1.36%
+	Mood :  1.77%
+	Punctuation group :  0.11%
+	Gender :  3.18%
+	Person :  0.81%
+	Case :  6.96%
+
+37. retest bez onomastikas .. pat labāk
+	Evaluation results:
+		Correct tag:	93.7%	282
+		Correct lemma:	96.3%	166
+		Correct all:	92.2%	351
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  2.03%
+	Number :  4.38%
+	Definiteness :  1.08%
+	Mood :  1.76%
+	Punctuation group :  0.11%
+	Gender :  3.09%
+	Person :  0.92%
+	Case :  6.72%
+
+38. core+ 5k valērijs
+	Evaluation results:
+		Correct tag:	90.8%	415
+		Correct lemma:	82.0%	810
+		Correct all:	78.2%	979
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  3.88%
+	Number :  6.00%
+	Definiteness :  0.91%
+	Mood :  2.94%
+	Punctuation group :  0.11%
+	Gender :  5.97%
+	Person :  1.13%
+	Case :  8.83%	
+
+39. core + 15k Valērijs
+	Evaluation results:
+		Correct tag:	91.3%	392
+		Correct lemma:	85.0%	672
+		Correct all:	81.4%	834
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  3.57%
+	Number :  5.61%
+	Definiteness :  0.90%
+	Mood :  3.07%
+	Punctuation group :  0.11%
+	Gender :  5.51%
+	Person :  0.93%
+	Case :  8.41%
+
+40. tikai core
+	Evaluation results:
+		Correct tag:	90.6%	422
+		Correct lemma:	80.0%	897
+		Correct all:	76.2%	1068
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  3.90%
+	Number :  5.76%
+	Definiteness :  0.92%
+	Mood :  2.94%
+	Punctuation group :  0.11%
+	Gender :  6.33%
+	Person :  1.03%
+	Case :  8.53%
+
+41. core + 25k Valērijs
+	Evaluation results:
+		Correct tag:	91.9%	364
+		Correct lemma:	88.6%	511
+		Correct all:	85.0%	675
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  3.12%
+	Number :  5.38%
+	Definiteness :  1.17%
+	Mood :  2.52%
+	Punctuation group :  0.11%
+	Gender :  5.25%
+	Person :  0.82%
+	Case :  8.15%
+
+42. core + 35k Valērija
+	... pazaudēju, bet kautkur pa vidu.
+
+43. morfoanalizatoram samazināti false-positive nepareizo vārdu analīzē.  ~nulle efekts, laikam par 3 vārdiem sliktāk..
+	Evaluation results:
+		Correct tag:	93.7%	285
+		Correct lemma:	96.2%	169
+		Correct all:	92.1%	356
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  2.05%
+	Number :  4.42%
+	Definiteness :  1.08%
+	Mood :  1.76%
+	Punctuation group :  0.11%
+	Gender :  3.09%
+	Person :  0.92%
+	Case :  6.82%
 
 TODO -dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss

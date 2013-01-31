@@ -43,7 +43,7 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 
   private static void initAnalyzer(){
 	  try {
-		  analyzer = new Analyzer("dist/Lexicon.xml");
+		  analyzer = new Analyzer("dist/Lexicon.xml", false);
 		  statistics = new Statistics("dist/Statistics.xml");
 		  analyzer.enableVocative = true;
 		  analyzer.enableGuessing = true; 
