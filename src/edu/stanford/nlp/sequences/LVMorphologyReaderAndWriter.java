@@ -22,7 +22,6 @@ import edu.stanford.nlp.util.Function;
 import edu.stanford.nlp.util.StringUtils;
 
 import lv.semti.morphology.analyzer.*;
-import lv.semti.morphology.attributes.AttributeNames;
 import lv.semti.morphology.attributes.AttributeValues;
 import lv.semti.morphology.corpus.Statistics;
 /**
@@ -43,7 +42,7 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 
   private static void initAnalyzer(){
 	  try {
-		  analyzer = new Analyzer("dist/Lexicon.xml", false);
+		  analyzer = new Analyzer("dist/Lexicon.xml");
 		  statistics = new Statistics("dist/Statistics.xml");
 		  analyzer.enableVocative = true;
 		  analyzer.enableGuessing = true; 
@@ -167,6 +166,23 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 	        wi.set(LVMorphologyAnalysis.class, analysis);
 	        wi.set(LVMorphologyAnalysisBest.class, mainwf);
 	    }
+	}
+	
+	public static List<CoreLabel> analyzeSentence(List<String> sentence) {
+		List<CoreLabel> result = new ArrayList<CoreLabel>();
+		CoreLabel s = new CoreLabel();
+		s.set(TextAnnotation.class, "<s>");
+		result.add(s);
+		
+		for (String w : sentence) {
+			CoreLabel word = new CoreLabel();
+			word.set(TextAnnotation.class, w);
+			applyLVmorphoanalysis(word, null); //answerAttributes varbūt jāpatjūnē
+			result.add(word);
+		}
+		
+		result.add(s);
+		return result;
 	}
 
 	public static List<CoreLabel> analyzeSentence(String sentence) {
