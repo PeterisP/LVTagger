@@ -31,7 +31,6 @@ For named entity tagging with a pre-trained model, run the included nertagger.sh
 
 SYSTEM REQUIREMENTS
 
-The included LV_CRF.zip should contain everything neccessary to execute the applications, minus the source.
 JRE 1.6+ should be installed and available on path. 
 The analyzer is rather memory-hungry; ~2gb memory should be available.
 
@@ -44,6 +43,10 @@ COMPILING FROM SOURCE
 
 Eclipse project files and Ant build scripts are included.
 The build scripts assume that the morphological word analysis module (https://github.com/PeterisP/morphology) will be located next to this project (../Morphology)
+
+DOWNLOADS
+
+The binary downloads and pretrained models are excluded from github due to their size. They can be built from source or obtained by e-mailing at the contacts listed above.
 
 REFERENCES
 

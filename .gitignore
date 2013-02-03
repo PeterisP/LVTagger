@@ -6,3 +6,5 @@ classifiers/*
 dist/*
 javadoc
 classifiers
+LV_CRF.zip
+*model.ser.gz
