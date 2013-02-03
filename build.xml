@@ -1,4 +1,4 @@
-<!-- build.xml file for ant for JavaNLP -->
+<!-- build.xml file for ant for LVTagger -->
 
 <!-- A "project" describes a set of targets that may be requested
      when Ant is executed.  The "default" attribute defines the
@@ -8,7 +8,7 @@
      set to the current working directory.
 -->
 
-<project name="JavaNLP" default="dist" basedir=".">
+<project name="LVTagger" default="dist" basedir=".">
 
   <property name="build.home"    value="${basedir}/classes"/>
   <property name="build.tests"    value="${basedir}/classes"/>
