@@ -54,6 +54,20 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 	  }
   }
   
+  /**
+   * Instead of loading lexicon.xml in this class (as would happen automatically), provide a pre-loaded analyzer object to put in that singleton. 
+   * @param preloaded
+   */
+  public static void preloadedAnalyzer(Analyzer preloaded){
+	  analyzer = preloaded;
+	  try {
+		  statistics = new Statistics(Statistics.DEFAULT_STATISTICS_FILE);
+	  } catch (Exception e) {
+		  // TODO Auto-generated catch block
+		  e.printStackTrace();
+	  }
+  }
+  
   public void init(SeqClassifierFlags flags) {
     this.map = StringUtils.mapStringToArray(flags.map);
     if (analyzer == null || statistics == null) initAnalyzer();

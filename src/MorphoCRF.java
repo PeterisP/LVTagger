@@ -40,7 +40,8 @@ public class MorphoCRF {
 			}
 		}
 		
-		String classifierFile = "MorphoCRF/lv-morpho-model.ser.gz";
+		String pretrainedModel = "models/lv-morpho-model.ser.gz";
+		String classifierOutput = "MorphoCRF/lv-morpho-model.ser.gz";
 		
 	    //Properties props = StringUtils.propFileToProperties("/Users/pet/Documents/java/PaikensNER/MorfoCRF/lv-PP.prop");
 		Properties props = new Properties();
@@ -83,9 +84,9 @@ public class MorphoCRF {
 		    ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/train_dev.txt", reader);
 		    crf.train(documents, reader); //atbilstoši props datiem
 		    
-		    crf.serializeClassifier(classifierFile);
+		    crf.serializeClassifier(classifierOutput);
 		} else {
-			crf = CMMClassifier.getClassifier(classifierFile);
+			crf = CMMClassifier.getClassifier(pretrainedModel);
 		}
 				 
 		//testData(crf, "MorphoCRF/dev.txt", reader);

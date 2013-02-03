@@ -32,15 +32,16 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 public class WordPipe {
 	private enum inputTypes {SENTENCE, VERT, CONLL};
 	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X};
+
+	private static String field_separator = "\t";
+	private static String token_separator = "\n";
+	
+	private static boolean mini_tag = false;		
+	private static boolean features = false;		
+	private static inputTypes inputType = inputTypes.SENTENCE;
+	private static outputTypes outputType = outputTypes.JSON;
 	
 	public static void main(String[] args) throws Exception {
-		String field_separator = "\t";
-		String token_separator = "\n";
-		
-		boolean mini_tag = false;		
-		boolean features = false;		
-		inputTypes inputType = inputTypes.SENTENCE;
-		outputTypes outputType = outputTypes.JSON;
 		
 		for (int i=0; i<args.length; i++) {
 			if (args[i].equalsIgnoreCase("-tab")) {  // one response line per each query line, tab-separated
@@ -81,22 +82,21 @@ public class WordPipe {
 			}
 		}
 				
-		String serializedClassifier = "MorphoCRF/lv-morpho-model.ser.gz"; //FIXME - make it configurable
+		String serializedClassifier = "models/lv-morpho-model.ser.gz"; //FIXME - make it configurable
 		CMMClassifier<CoreLabel> cmm = CMMClassifier.getClassifier(serializedClassifier);
 			
 		PrintStream out = new PrintStream(System.out, true, "UTF8");
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in, "UTF8"));
 		
-		List<List<CoreLabel>> sentences;
-		
 		switch(inputType) {
 		case CONLL:
-			sentences = readCONLL(in);
+			for (List<CoreLabel> sentence : readCONLL(in)) {
+		    	outputSentence(cmm, out, sentence);
+			}
 			break;
 		default:
 		    String s;
 		    String sentence = "";
-		    sentences = new LinkedList<List<CoreLabel>>();
 		    while ((s = in.readLine()) != null && s.length() != 0) {
 		    	boolean finished = true; // is sentence finished and ready to analyze
 		    	if (inputType != inputTypes.VERT) sentence = s;
@@ -106,32 +106,39 @@ public class WordPipe {
 		    		finished = s.startsWith("</s>");
 		    	}	    	
 		    	if (finished) {
-			    	sentences.add( LVMorphologyReaderAndWriter.analyzeSentence(sentence.trim()) );
+		    		outputSentence(cmm, out, LVMorphologyReaderAndWriter.analyzeSentence(sentence.trim()) );
 			    	sentence = "";
 		    	}
 		    }
 	    	if (inputType != inputTypes.VERT && sentence.length()>0) { //FIXME, not DRY
-		    	sentences.add( LVMorphologyReaderAndWriter.analyzeSentence(sentence.trim()) );
+	    		outputSentence(cmm, out, LVMorphologyReaderAndWriter.analyzeSentence(sentence.trim()) );
 	    	}	    			
 		}
-		
-		for (List<CoreLabel> sentence : sentences) {
-	    	cmm.classify(sentence); // runs the actual morphotagging system
-	    	switch (outputType) {
-	    	case JSON:
-	    		out.println( output_JSON(sentence, mini_tag));
-	    		break;
-	    	case CONLL_X:
-	    		out.println( output_CONLL(sentence, cmm, mini_tag, features));
-	    		break;
-	    	default: 
-	    		out.println( output_separated(sentence, field_separator, token_separator, mini_tag));	    
-	    	}
-	    	out.flush();
+	}
+
+	/**
+	 * Outputs the tagged sentence according to the outputType set in this class
+	 * @param cmm - the tagger, needed to retrieve tagger features if they are requested
+	 * @param out - a stream to output the data
+	 * @param sentence - actual tokens to be output
+	 */
+	private static void outputSentence(CMMClassifier<CoreLabel> cmm,
+			PrintStream out, List<CoreLabel> sentence) {
+		sentence = cmm.classify(sentence); // runs the actual morphotagging system
+		switch (outputType) {
+		case JSON:
+			out.println( output_JSON(sentence));
+			break;
+		case CONLL_X:
+			out.println( output_CONLL(sentence, cmm));
+			break;
+		default: 
+			out.println( output_separated(sentence));	    
 		}
+		out.flush();
 	}	
 	
-	private static String output_JSON(List<CoreLabel> tokens, boolean mini_tag) {		
+	private static String output_JSON(List<CoreLabel> tokens) {		
 		LinkedList<String> tokenJSON = new LinkedList<String>();
 		
 		for (CoreLabel word : tokens) {
@@ -153,7 +160,7 @@ public class WordPipe {
 		return s;
 	}
 
-	private static String output_CONLL(List<CoreLabel> tokens, CMMClassifier<CoreLabel> cmm, boolean mini_tag, boolean features){
+	private static String output_CONLL(List<CoreLabel> tokens, CMMClassifier<CoreLabel> cmm){
 		StringBuilder s = new StringBuilder();
 
 		int counter = 1;
@@ -170,7 +177,7 @@ public class WordPipe {
 				if (mini_tag) mainwf.removeNonlexicalAttributes();
 				s.append(mainwf.getValue(AttributeNames.i_Lemma));
 				s.append('\t');
-				s.append(mainwf.getTag().substring(0,1));
+				s.append(word.getString(AnswerAnnotation.class));
 				s.append('\t');
 				s.append(mainwf.getTag());
 				s.append('\t');
@@ -208,7 +215,7 @@ public class WordPipe {
 	}
 	
 	
-	private static String output_separated(List<CoreLabel> tokens, String field_separator, String token_separator, boolean mini_tag){
+	private static String output_separated(List<CoreLabel> tokens){
 		StringBuilder s = new StringBuilder();
 		
 		for (CoreLabel word : tokens) {
