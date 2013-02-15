@@ -33,7 +33,6 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 
   private static final long serialVersionUID = 4858022869289996959L;
   private static transient Analyzer analyzer = null;
-  private static transient Statistics statistics = null;
   private Collection<String> answerAttributes = null;
 
   private String[] map; // = null;
@@ -43,7 +42,6 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
   private static void initAnalyzer(){
 	  try {
 		  analyzer = new Analyzer("dist/Lexicon.xml");
-		  statistics = new Statistics("dist/Statistics.xml");
 		  analyzer.enableVocative = true;
 		  analyzer.enableGuessing = true; 
 		  analyzer.enablePrefixes = true;
@@ -60,17 +58,11 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
    */
   public static void preloadedAnalyzer(Analyzer preloaded){
 	  analyzer = preloaded;
-	  try {
-		  statistics = new Statistics(Statistics.DEFAULT_STATISTICS_FILE);
-	  } catch (Exception e) {
-		  // TODO Auto-generated catch block
-		  e.printStackTrace();
-	  }
   }
   
   public void init(SeqClassifierFlags flags) {
     this.map = StringUtils.mapStringToArray(flags.map);
-    if (analyzer == null || statistics == null) initAnalyzer();
+    if (analyzer == null ) initAnalyzer();
     //answerAttributes = Arrays.asList(AttributeNames.i_PartOfSpeech, AttributeNames.i_Gender, AttributeNames.i_Number, AttributeNames.i_Case, AttributeNames.i_Izteiksme);
     //answerAttributes = Arrays.asList(flags.lvMorphoAnalyzerTag);
     factory = DelimitRegExIterator.getFactory("\n(?:\\s*\n)+", new LVColumnDocParser(answerAttributes));
@@ -79,7 +71,7 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 
   public void init(String map) {
     this.map = StringUtils.mapStringToArray(map);
-    if (analyzer == null || statistics == null) initAnalyzer();
+    if (analyzer == null ) initAnalyzer();
 	factory = DelimitRegExIterator.getFactory("\n(?:\\s*\n)+", new LVColumnDocParser(answerAttributes));
   }
 
@@ -172,8 +164,9 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 	        Wordform mainwf = null;
 			double maxticamība = -1;
 			for (Wordform wf : analysis.wordforms) {  // Paskatamies visus atrastos variantus un ņemam statistiski ticamāko
-				if (statistics.getEstimate(wf) > maxticamība) {
-					maxticamība = statistics.getEstimate(wf);
+				double estimate = Statistics.getStatistics().getEstimate(wf);
+				if (estimate > maxticamība) {
+					maxticamība = estimate;
 					mainwf = wf;
 				}
 			}
@@ -209,7 +202,7 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 	}
 
 	public static List<CoreLabel> analyzeSentence(String sentence) {
-	    if (analyzer == null || statistics == null) initAnalyzer();
+	    if (analyzer == null ) initAnalyzer();
 
 	    List<CoreLabel> result = new ArrayList<CoreLabel>();
 		CoreLabel s = new CoreLabel();

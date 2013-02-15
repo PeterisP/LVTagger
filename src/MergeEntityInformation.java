@@ -108,7 +108,6 @@ public class MergeEntityInformation {
 		System.out.printf("\t%d no tiem vismaz %d reizes.\n\n", counter.size(), filter_floor);
 		
 		Analyzer analyzer = new Analyzer("dist/Lexicon.xml");
-		Statistics statistics = new Statistics("dist/Statistics.xml");
 		
 		for (Entry<String, Double> entry: counter.entrySet()) {
 			String key = entry.getKey();
@@ -117,7 +116,7 @@ public class MergeEntityInformation {
 			String[] info = key.split(Pattern.quote("|"));
 			String category = info[0];
 			
-			best_form = normalizeForm(best_form, category, analyzer, statistics);			
+			best_form = normalizeForm(best_form, category, analyzer);			
 			best_forms.put(key, best_form);
 			//System.out.printf("%s sastopams %d reizes.\n", best_form, entry.getValue().intValue());
 		}
@@ -269,12 +268,12 @@ public class MergeEntityInformation {
 		counterbydoc.incrementCount(key+"|"+doc, mention_count);
 	}
 
-    static String normalizeForm(String form, String category, Analyzer analyzer, Statistics statistics) {
+    static String normalizeForm(String form, String category, Analyzer analyzer) {
     	String result = form;
     	
     	List<Word> words = Splitting.tokenize(analyzer, result);
     	Word lastword = words.get(words.size()-1);
-    	Wordform bestform = lastword.getBestWordform(statistics); 
+    	Wordform bestform = lastword.getBestWordform(); 
     	if (bestform != null && (bestform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Genitive) || bestform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Locative))) {
     		//System.out.printf("'%s' -> '%s'\t%s\n", lastword.getToken(), bestform.getValue(AttributeNames.i_Lemma), result);
     		boolean propername = Character.isUpperCase(lastword.getToken().charAt(0));
