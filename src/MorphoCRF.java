@@ -81,7 +81,8 @@ public class MorphoCRF {
 	    DocumentReaderAndWriter reader = crf.makeReaderAndWriter();
 		if (train) {		    
 		    //ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/train.txt", reader);
-		    ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/train_dev.txt", reader);
+		    //ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/train_dev.txt", reader);
+			ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/all.txt", reader);
 		    crf.train(documents, reader); //atbilstoši props datiem
 		    
 		    crf.serializeClassifier(classifierOutput);
