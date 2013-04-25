@@ -132,4 +132,15 @@ public class TaggerTest {
 		List<CoreLabel> word = tag("neizpaušana");
 		assertLemma(word, 1, "neizpaušana");  // bija gļuks ar 'neizpausšana'
 	}
+	
+	@Test
+	public void noliegumi() {
+		List<CoreLabel> word = tag("Es šodien neiešu nepastaigāties un nedomāt.");
+		assertLemma(word, 3, "neiet");
+		assertLemma(word, 4, "nepastaigāties");
+		assertLemma(word, 6, "nedomāt");
+		assertValue(word, 3, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
+		assertValue(word, 4, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
+		assertValue(word, 6, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
+	}
 }

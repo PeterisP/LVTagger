@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -31,7 +32,7 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 
 public class WordPipe {
 	private enum inputTypes {SENTENCE, VERT, CONLL};
-	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X};
+	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X, XML};
 
 	private static String field_separator = "\t";
 	private static String token_separator = "\n";
@@ -61,6 +62,7 @@ public class WordPipe {
 			if (args[i].equalsIgnoreCase("-vertinput")) inputType = inputTypes.VERT; //vertical input format as requested by Milos Jakubicek 2012.11.01
 			if (args[i].equalsIgnoreCase("-conll-in")) inputType = inputTypes.CONLL; 
 			if (args[i].equalsIgnoreCase("-conll-x")) outputType = outputTypes.CONLL_X;
+			if (args[i].equalsIgnoreCase("-xml")) outputType = outputTypes.XML;
 			
 			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
 				System.out.println("LV morphological tagger");
@@ -74,6 +76,7 @@ public class WordPipe {
 				System.out.println("\t-vert : one response line for each token; tab-separated lists of word, tag and lemma.");
 				System.out.println("\t-moses : one response line for each token; pipe-separated lists of word, tag and lemma.");
 				System.out.println("\t-conll-x : CONLL-X shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
+				System.out.println("\t-xml : one xml word per line");
 				System.out.println("\nOther options:");
 				System.out.println("\t-stripped : lexical/nonessential parts of the tag are replaced with '-' to reduce sparsity.");
 				System.out.println("\t-features : in conll output, include the features used for training/tagging.");
@@ -132,6 +135,14 @@ public class WordPipe {
 		case CONLL_X:
 			out.println( output_CONLL(sentence, cmm));
 			break;
+		case XML:
+			try {
+				output_XML(sentence, out);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			break;
 		default: 
 			out.println( output_separated(sentence));	    
 		}
@@ -158,6 +169,24 @@ public class WordPipe {
 		tokenJSON = null;
 		
 		return s;
+	}
+	
+	private static void output_XML(List<CoreLabel> tokens, PrintStream straume) throws IOException {
+		PrintWriter w = new PrintWriter(straume);
+		for (CoreLabel word : tokens) {
+			String token = word.getString(TextAnnotation.class);
+			if (token.contains("<s>")) continue;
+			Word analysis = word.get(LVMorphologyAnalysis.class);
+			Wordform maxwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false);
+			if (mini_tag) maxwf.removeNonlexicalAttributes();
+			maxwf.addAttribute("Tag", maxwf.getTag());
+			maxwf.toXML(w);
+//			if (maxwf != null)
+//				tokenJSON.add(String.format("{\"Word\":\"%s\",\"Tag\":\"%s\",\"Lemma\":\"%s\"}", JSONValue.escape(token), JSONValue.escape(maxwf.getTag()), JSONValue.escape(maxwf.getValue(AttributeNames.i_Lemma))));
+//			else 
+//				tokenJSON.add(String.format("{\"Word\":\"%s\",\"Tag\":\"-\",\"Lemma\":\"%s\"}", JSONValue.escape(token), JSONValue.escape(token)));			
+		}		
+		w.flush();
 	}
 
 	private static String output_CONLL(List<CoreLabel> tokens, CMMClassifier<CoreLabel> cmm){
