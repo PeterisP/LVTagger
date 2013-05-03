@@ -34,8 +34,9 @@ public class WordPipe {
 	private enum inputTypes {SENTENCE, VERT, CONLL};
 	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X, XML};
 
+	private static String eol = System.getProperty("line.separator");
 	private static String field_separator = "\t";
-	private static String token_separator = "\n";
+	private static String token_separator = eol;
 	
 	private static boolean mini_tag = false;		
 	private static boolean features = false;		
@@ -235,10 +236,10 @@ public class WordPipe {
 				s.append(syntax);
 				s.append('\n');
 			}
-			else s.append("_\t_\t_\t_\n");
+			else s.append("_\t_\t_\t_" + eol);
 			counter++;
 		}
-		s.append('\n');
+		s.append(eol);
 		
 		return s.toString();
 	}
