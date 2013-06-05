@@ -139,7 +139,19 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
     out.println();
   }
   
-	private static void applyLVmorphoanalysis(CoreLabel wi, Collection<String> answerAttributes) {
+  /**
+   * Performs LV morphology analysis of the token wi, adds the possible readins and marks the most likely one.
+   * If an AnswerAnnotation exists, then it is considered to be a morphosyntactic tag, and the attributes are filtered for the training. 
+   * 
+   * @param wi
+   * @param answerAttributes
+   */
+  private static void applyLVmorphoanalysis(CoreLabel wi, Collection<String> answerAttributes) {
+	  Word analysis = analyzer.analyze(wi.word());
+	  applyLVmorphoanalysis(wi, analysis, answerAttributes);
+  }
+  
+	private static void applyLVmorphoanalysis(CoreLabel wi, Word analysis, Collection<String> answerAttributes) {
 		String token = wi.word();
 	    if (!token.contains("<s>")) {
 	        String answer = wi.get(AnswerAnnotation.class);
@@ -159,8 +171,7 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 				answer = MarkupConverter.toKamolsMarkup(answerAV);	        	
 	        }
 	        wi.set(AnswerAnnotation.class, answer);
-	        
-	        Word analysis = analyzer.analyze(token);
+	        	        
 	        Wordform mainwf = null;
 			double maxticamība = -1;
 			for (Wordform wf : analysis.wordforms) {  // Paskatamies visus atrastos variantus un ņemam statistiski ticamāko
@@ -209,11 +220,11 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 		s.set(TextAnnotation.class, "<s>");
 		result.add(s);
 		
-		List<Word> words = Splitting.tokenize(analyzer, sentence);
+		List<Word> words = Splitting.tokenize(analyzer, sentence); 
 		for (Word w : words) {
 			CoreLabel word = new CoreLabel();
 			word.set(TextAnnotation.class, w.getToken());
-			applyLVmorphoanalysis(word, null); //answerAttributes varbūt jāpatjūnē
+			applyLVmorphoanalysis(word, w, null); //answerAttributes varbūt jāpatjūnē
 			result.add(word);
 		}
 		
@@ -223,4 +234,23 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 		return result;
 	}
 
+	public static List<CoreLabel> analyzeSentence2(List<Word> sentence) {
+	    List<CoreLabel> result = new ArrayList<CoreLabel>();
+		CoreLabel s = new CoreLabel();
+		s.set(TextAnnotation.class, "<s>");
+		result.add(s);
+		
+		for (Word w : sentence) {
+			CoreLabel word = new CoreLabel();
+			word.set(TextAnnotation.class, w.getToken());
+			applyLVmorphoanalysis(word, w, null); //answerAttributes varbūt jāpatjūnē
+			result.add(word);
+		}
+		
+		s = new CoreLabel();
+		s.set(TextAnnotation.class, "<s>");
+		result.add(s);
+		return result;
+	}	
+	
 }
