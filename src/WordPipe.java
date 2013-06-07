@@ -43,6 +43,8 @@ public class WordPipe {
 	private static inputTypes inputType = inputTypes.SENTENCE;
 	private static outputTypes outputType = outputTypes.JSON;
 	
+	private static String morphoClassifierLocation = "models/lv-morpho-model.ser.gz"; //FIXME - make it configurable
+	
 	public static void main(String[] args) throws Exception {
 		
 		for (int i=0; i<args.length; i++) {
@@ -85,9 +87,8 @@ public class WordPipe {
 				System.exit(0);
 			}
 		}
-				
-		String serializedClassifier = "models/lv-morpho-model.ser.gz"; //FIXME - make it configurable
-		CMMClassifier<CoreLabel> cmm = CMMClassifier.getClassifier(serializedClassifier);
+						
+		CMMClassifier<CoreLabel> morphoClassifier = CMMClassifier.getClassifier(morphoClassifierLocation);
 			
 		PrintStream out = new PrintStream(System.out, true, "UTF8");
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in, "UTF8"));
@@ -95,7 +96,7 @@ public class WordPipe {
 		switch(inputType) {
 		case CONLL:
 			for (List<CoreLabel> sentence : readCONLL(in)) {
-		    	outputSentence(cmm, out, sentence);
+		    	outputSentence(morphoClassifier, out, sentence);
 			}
 			break;
 		default:
@@ -110,12 +111,12 @@ public class WordPipe {
 		    		finished = s.startsWith("</s>");
 		    	}	    	
 		    	if (finished) {
-		    		outputSentence(cmm, out, LVMorphologyReaderAndWriter.analyzeSentence(sentence.trim()) );
+		    		outputSentence(morphoClassifier, out, LVMorphologyReaderAndWriter.analyzeSentence(sentence.trim()) );
 			    	sentence = "";
 		    	}
 		    }
 	    	if (inputType != inputTypes.VERT && sentence.length()>0) { //FIXME, not DRY
-	    		outputSentence(cmm, out, LVMorphologyReaderAndWriter.analyzeSentence(sentence.trim()) );
+	    		outputSentence(morphoClassifier, out, LVMorphologyReaderAndWriter.analyzeSentence(sentence.trim()) );
 	    	}	    			
 		}
 	}
@@ -197,6 +198,8 @@ public class WordPipe {
 		for (CoreLabel word : tokens) {
 			String token = word.getString(TextAnnotation.class);
 			if (token.contains("<s>")) continue;
+			token = token.replace(' ', '_');
+			
 			s.append(Integer.toString(counter));
 			s.append('\t');
 			s.append(token);
@@ -205,22 +208,24 @@ public class WordPipe {
 			Wordform mainwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false); 
 			if (mainwf != null) {
 				if (mini_tag) mainwf.removeNonlexicalAttributes();
-				s.append(mainwf.getValue(AttributeNames.i_Lemma));
+				String lemma = mainwf.getValue(AttributeNames.i_Lemma);
+				lemma = lemma.replace(' ', '_');
+				s.append(lemma);
 				s.append('\t');
 				s.append(word.getString(AnswerAnnotation.class));
 				s.append('\t');
 				s.append(mainwf.getTag());
 				s.append('\t');
 				for (Entry<String, String> entry : mainwf.entrySet()) { // visi attributevalue paariishi
-					 s.append(entry.getKey().replace(' ', '+'));
+					 s.append(entry.getKey().replace(' ', '_'));
 					 s.append('=');
-					 s.append(entry.getValue().replace(' ', '+'));
+					 s.append(entry.getValue().replace(' ', '_'));
 					 s.append('|');
 				}
 				if (features) { // visas fīčas, ko lietoja trenējot
 					Datum<String, String> d = cmm.makeDatum(tokens, counter, cmm.featureFactory);
 					for (String feature : d.asFeatures()) {
-						s.append(feature.substring(0, feature.length()-2).replace(' ', '+')); // noņeam trailing |C kas tām fīčām tur ir
+						s.append(feature.substring(0, feature.length()-2).replace(' ', '_')); // noņeam trailing |C kas tām fīčām tur ir
 						s.append('|');
 					}
 				}
@@ -234,12 +239,11 @@ public class WordPipe {
 			String syntax = word.getString(ConllSyntaxAnnotation.class);
 			if (syntax != null) {
 				s.append(syntax);
-				s.append('\n');
+				s.append(eol);
 			}
 			else s.append("_\t_\t_\t_" + eol);
 			counter++;
 		}
-		s.append(eol);
 		
 		return s.toString();
 	}
@@ -306,6 +310,7 @@ public class WordPipe {
 	    	if (s.trim().length() > 0) {
 	    		String[] fields = s.split("\t");
 	    		String token = fields[1];
+	    		if (!token.equalsIgnoreCase("_")) token = token.replace('_', ' ');
 	    		String syntax = fields[6] + "\t" + fields[7] + "\t" + fields[8] + "\t" + fields[9];
 
 	    		CoreLabel word = new CoreLabel();

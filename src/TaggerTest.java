@@ -87,7 +87,7 @@ public class TaggerTest {
 	@Test
 	public void gunta19dec_2() {
 		// Guntas sūdzības pa skype 2012.12.19 - uz 2013.02.15 nestrādāja
-		List<CoreLabel> word = tag("ambiciozs");
+		List<CoreLabel> word = tag("ambiciozs vīrietis");
 		assertPOS(word, 1, AttributeNames.v_Adjective);
 
 		word = tag("padzīs");
