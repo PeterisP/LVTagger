@@ -45,7 +45,7 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 		  analyzer.enableVocative = true;
 		  analyzer.enableGuessing = true; 
 		  analyzer.enablePrefixes = true;
-		  //analyzer.enableAllGuesses = true;
+		  analyzer.enableAllGuesses = true; //TODO - check the effect on morphotagging accuracy
 	  } catch (Exception e) {
 		  // TODO Auto-generated catch block
 		  e.printStackTrace();

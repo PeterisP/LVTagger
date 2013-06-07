@@ -18,6 +18,7 @@ import lv.semti.morphology.analyzer.Splitting;
 import lv.semti.morphology.analyzer.Word;
 import lv.semti.morphology.analyzer.Wordform;
 import lv.semti.morphology.attributes.AttributeNames;
+import lv.semti.morphology.attributes.AttributeValues;
 
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ie.ner.CMMClassifier;
@@ -33,7 +34,7 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 
 public class MorphoPipe {
 	private enum inputTypes {SENTENCE, VERT, CONLL};
-	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X, XML};
+	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X, XML, VISL_CG};
 
 	private static String eol = System.getProperty("line.separator");
 	private static String field_separator = "\t";
@@ -67,6 +68,7 @@ public class MorphoPipe {
 			if (args[i].equalsIgnoreCase("-conll-in")) inputType = inputTypes.CONLL; 
 			if (args[i].equalsIgnoreCase("-conll-x")) outputType = outputTypes.CONLL_X;
 			if (args[i].equalsIgnoreCase("-xml")) outputType = outputTypes.XML;
+			if (args[i].equalsIgnoreCase("-visl-cg")) outputType = outputTypes.VISL_CG;
 			
 			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
 				System.out.println("LV morphological tagger");
@@ -81,6 +83,7 @@ public class MorphoPipe {
 				System.out.println("\t-moses : one response line for each token; pipe-separated lists of word, tag and lemma.");
 				System.out.println("\t-conll-x : CONLL-X shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
 				System.out.println("\t-xml : one xml word per line");
+				System.out.println("\t-visl-cg : output format for VISL constraint grammar tool");
 				System.out.println("\nOther options:");
 				System.out.println("\t-stripped : lexical/nonessential parts of the tag are replaced with '-' to reduce sparsity.");
 				System.out.println("\t-features : in conll output, include the features used for training/tagging.");
@@ -145,6 +148,9 @@ public class MorphoPipe {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			break;
+		case VISL_CG:
+			out.println( output_VISL(sentence));
 			break;
 		default: 
 			out.println( output_separated(sentence));	    
@@ -249,6 +255,84 @@ public class MorphoPipe {
 		return s.toString();
 	}
 	
+	// VISL CG format, as described in http://beta.visl.sdu.dk/cg3/chunked/streamformats.html#stream-vislcg
+	private static String output_VISL(List<CoreLabel> tokens) {		
+		StringBuilder s = new StringBuilder();
+		
+		for (CoreLabel word : tokens) {
+			String token = word.getString(TextAnnotation.class);
+			if (token.contains("<s>")) continue;
+			
+			token.replaceAll("\"", "\\\""); // VISL (seems to) require to escape quotes in their format. Possibly other escaping needs, not sure from their docs.
+			
+			s.append(String.format("\"<%s>\"\n", token)); // <"They"> from the example
+			
+			Word analysis = word.get(LVMorphologyAnalysis.class);
+			Wordform maxwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false);
+			for (Wordform wf : analysis.wordforms) { // output the "cohort" in VISL-CG terms
+				String lemma = wf.getValue(AttributeNames.i_Lemma);
+				//Ad-hoc ... removing 'bookkeeping' attributes that seem useless for CG
+				wf.removeAttribute(AttributeNames.i_LexemeID);
+				wf.removeAttribute(AttributeNames.i_EndingID);
+				wf.removeAttribute(AttributeNames.i_ParadigmID);
+				wf.removeAttribute(AttributeNames.i_Lemma);
+				wf.removeAttribute(AttributeNames.i_SourceLemma);
+				wf.removeAttribute(AttributeNames.i_Source);
+				wf.removeAttribute(AttributeNames.i_Word);
+				wf.removeAttribute(AttributeNames.i_Mija);
+				wf.removeAttribute(AttributeNames.i_Guess);
+				wf.removeAttribute(AttributeNames.i_Generate);
+				wf.removeAttribute(AttributeNames.i_Konjugaacija);
+				wf.removeAttribute(AttributeNames.i_Declension);
+				
+				lemma.replaceAll("\"", "\\\"");
+				s.append(String.format("\t\"%s\" ", lemma)); // <"They"> from the example
+				s.append(wf.getTag());
+				s.append(" ");
+				AttributeValues minimum = new AttributeValues(wf);
+				minimum.removeNonlexicalAttributes();
+				s.append(minimum.getTag());
+				s.append(" ");
+				for (Entry<String, String> entry : wf.entrySet()) { // visi attributevalue paariishi
+					String key = entry.getKey();
+					String value = entry.getValue();
+					// For attributes with distinctive value names (like parts of speech) skip the attribute name for readability in CG
+					if ((!key.equalsIgnoreCase(AttributeNames.i_PartOfSpeech) && 
+						!key.equalsIgnoreCase(AttributeNames.i_Case) && 
+						!key.equalsIgnoreCase(AttributeNames.i_Number) &&
+						!key.equalsIgnoreCase(AttributeNames.i_Gender) &&
+						!key.equalsIgnoreCase(AttributeNames.i_NounType) &&
+						!key.equalsIgnoreCase(AttributeNames.i_Izteiksme) &&
+						!key.equalsIgnoreCase(AttributeNames.i_VerbType) &&
+						!key.equalsIgnoreCase(AttributeNames.i_Laiks) &&
+						!key.equalsIgnoreCase(AttributeNames.i_Transitivity) &&
+						!key.equalsIgnoreCase(AttributeNames.i_Declension) &&						
+						!key.equalsIgnoreCase(AttributeNames.i_Definiteness) &&
+						!key.equalsIgnoreCase(AttributeNames.i_Lokaamiiba) &&
+						!key.equalsIgnoreCase(AttributeNames.i_AdjectiveType) &&
+						!key.equalsIgnoreCase(AttributeNames.i_SaikljaTips) &&
+						!key.equalsIgnoreCase(AttributeNames.i_Uzbuuve) &&
+						!key.equalsIgnoreCase(AttributeNames.i_PieturziimesTips) &&
+						!key.equalsIgnoreCase(AttributeNames.i_Voice) &&
+						!key.equalsIgnoreCase(AttributeNames.i_VvTips)
+						) || (value.equalsIgnoreCase(AttributeNames.v_NA) &&
+								!key.equalsIgnoreCase(AttributeNames.i_Anafora) &&
+								!key.equalsIgnoreCase(AttributeNames.i_Laiks)
+						)) {
+						 s.append(key.replace(' ', '_')); 
+						 s.append('=');
+					}
+					 s.append(value.replace(' ', '_'));
+					 s.append(' ');
+				}
+				s.append(eol);
+			}
+		}
+		
+		s.append("\"<<s>>\"");
+		
+		return s.toString();
+	}
 	
 	private static String output_separated(List<CoreLabel> tokens){
 		StringBuilder s = new StringBuilder();
