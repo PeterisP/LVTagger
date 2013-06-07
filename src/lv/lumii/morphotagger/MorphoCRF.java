@@ -1,3 +1,4 @@
+package lv.lumii.morphotagger;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;

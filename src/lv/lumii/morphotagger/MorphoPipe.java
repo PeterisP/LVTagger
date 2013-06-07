@@ -1,3 +1,4 @@
+package lv.lumii.morphotagger;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -30,7 +31,7 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 
 // Copied/pasted/mangled from transliteration webservices java project
 
-public class WordPipe {
+public class MorphoPipe {
 	private enum inputTypes {SENTENCE, VERT, CONLL};
 	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X, XML};
 

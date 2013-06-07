@@ -1,3 +1,4 @@
+package lv.lumii.morphotagger;
 import static org.junit.Assert.*;
 
 import java.util.List;
