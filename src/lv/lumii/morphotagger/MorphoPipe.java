@@ -123,6 +123,8 @@ public class MorphoPipe {
 	    		outputSentence(morphoClassifier, out, LVMorphologyReaderAndWriter.analyzeSentence(sentence.trim()) );
 	    	}	    			
 		}
+		in.close();
+		out.close();
 	}
 
 	/**
