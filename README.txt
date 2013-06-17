@@ -50,4 +50,5 @@ The binary downloads and pretrained models are excluded from github due to their
 
 REFERENCES
 
+Properties of Latvian morphological tagger are published in http://www.ep.liu.se/ecp_article/index.en.aspx?issue=085;article=024
 The named entity recognition system was initially described at http://www.booksonline.iospress.nl/Content/View.aspx?piid=32333 
