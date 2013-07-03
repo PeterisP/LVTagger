@@ -117,6 +117,7 @@
 
     <!-- Compile Java classes as necessary -->
     <mkdir    dir="${build.home}"/>
+
     <javac srcdir="${src.home}"
           destdir="${build.home}"
             debug="${compile.debug}"
@@ -212,6 +213,8 @@
 
     <!-- Create build directories as needed -->
     <mkdir  dir="${build.home}"/>
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist}"/>
 
   </target>
 	

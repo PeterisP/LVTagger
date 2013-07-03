@@ -8,3 +8,6 @@ javadoc
 classifiers
 LV_CRF.zip
 /balanseetais.txt
+.settings*
+*sublime-project
+*sublime-workspace

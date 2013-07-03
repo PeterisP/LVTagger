@@ -1,5 +1,5 @@
 #location of the training file
-trainFileList = train_all.txt
+trainFileList = ner_train.tab
 #location where you would like to save (serialize to) your
 #classifier; adding .gz at the end automatically gzips the file,
 #making it faster and smaller
