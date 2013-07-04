@@ -56,9 +56,15 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
    * Instead of loading lexicon.xml in this class (as would happen automatically), provide a pre-loaded analyzer object to put in that singleton. 
    * @param preloaded
    */
-  public static void preloadedAnalyzer(Analyzer preloaded){
+  public static void setPreloadedAnalyzer(Analyzer preloaded){
 	  analyzer = preloaded;
   }
+  
+  /**
+   * Getter for the currently used analyzer
+   * @return
+   */
+  public static Analyzer getAnalyzer() { return analyzer;}
   
   public void init(SeqClassifierFlags flags) {
     this.map = StringUtils.mapStringToArray(flags.map);

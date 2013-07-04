@@ -33,7 +33,7 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 // Copied/pasted/mangled from transliteration webservices java project
 
 public class MorphoPipe {
-	private enum inputTypes {SENTENCE, VERT, CONLL};
+	private enum inputTypes {SENTENCE, PARAGRAPH, VERT, CONLL};
 	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X, XML, VISL_CG};
 
 	private static String eol = System.getProperty("line.separator");
@@ -65,6 +65,7 @@ public class MorphoPipe {
 			if (args[i].equalsIgnoreCase("-stripped")) mini_tag = true; //remove nonlexical attributes
 			if (args[i].equalsIgnoreCase("-features")) features = true; //output training features
 			if (args[i].equalsIgnoreCase("-vertinput")) inputType = inputTypes.VERT; //vertical input format as requested by Milos Jakubicek 2012.11.01
+			if (args[i].equalsIgnoreCase("-paragraphs")) inputType = inputTypes.PARAGRAPH;
 			if (args[i].equalsIgnoreCase("-conll-in")) inputType = inputTypes.CONLL; 
 			if (args[i].equalsIgnoreCase("-conll-x")) outputType = outputTypes.CONLL_X;
 			if (args[i].equalsIgnoreCase("-xml")) outputType = outputTypes.XML;
@@ -73,7 +74,8 @@ public class MorphoPipe {
 			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
 				System.out.println("LV morphological tagger");
 				System.out.println("\nInput formats");
-				System.out.println("\tDefault : plain text UTF-8, one sentence per line.");
+				System.out.println("\tDefault : plain text UTF-8, one sentence per line, terminated by a blank line.");
+				System.out.println("\t-paragraphs : plain text UTF-8, each line will be split in sentences.");
 				System.out.println("\t-vertinput : one line per token, sentences separated by <s></s>. Any XML-style tags are echoed as-is. \n\t\tNB! sentences are retokenized, the number of tokens may be different.");
 				System.out.println("\t-conll-in : CONLL shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
 				System.out.println("\nOutput formats");
@@ -115,14 +117,30 @@ public class MorphoPipe {
 		    		finished = s.startsWith("</s>");
 		    	}	    	
 		    	if (finished) {
-		    		outputSentence(morphoClassifier, out, LVMorphologyReaderAndWriter.analyzeSentence(sentence.trim()) );
+		    		processSentences(morphoClassifier, out, sentence.trim());
 			    	sentence = "";
 		    	}
 		    }
 	    	if (inputType != inputTypes.VERT && sentence.length()>0) { //FIXME, not DRY
-	    		outputSentence(morphoClassifier, out, LVMorphologyReaderAndWriter.analyzeSentence(sentence.trim()) );
+	    		processSentences(morphoClassifier, out, sentence.trim());
 	    	}	    			
 		}
+	}
+
+	/**
+	 * Splits the text in sentences if needed, and forwards to outputSentance
+	 * @param cmm - the tagger, needed to retrieve tagger features if they are requested
+	 * @param out - a stream to output the data
+	 * @param sentence - actual tokens to be output
+	 */
+	private static void processSentences(
+			CMMClassifier<CoreLabel> cmm, PrintStream out, String text) {
+		
+		if (inputType == inputTypes.PARAGRAPH) { // split in multiple sentences
+			LinkedList<LinkedList<Word>> sentences = Splitting.tokenizeSentences(LVMorphologyReaderAndWriter.getAnalyzer(), text);
+			for (LinkedList<Word> sentence : sentences) 
+				outputSentence(cmm, out, LVMorphologyReaderAndWriter.analyzeSentence2(sentence) );
+		} else outputSentence(cmm, out, LVMorphologyReaderAndWriter.analyzeSentence(text) ); // just a single sentence for other types
 	}
 
 	/**
