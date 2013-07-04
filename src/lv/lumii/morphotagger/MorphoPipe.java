@@ -125,6 +125,8 @@ public class MorphoPipe {
 	    		processSentences(morphoClassifier, out, sentence.trim());
 	    	}	    			
 		}
+		in.close();
+		out.close();
 	}
 
 	/**
