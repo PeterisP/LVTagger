@@ -11,3 +11,4 @@ LV_CRF.zip
 .settings*
 *sublime-project
 *sublime-workspace
+ner_train_comparison.txt
