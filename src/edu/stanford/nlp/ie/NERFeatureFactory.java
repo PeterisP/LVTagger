@@ -33,6 +33,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
@@ -747,7 +748,7 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
               entries = new HashSet<String>();
               wordToGazetteEntries.put(word, entries);
             }
-            String feature = intern(type + "-GAZ" + words.length);
+            String feature = intern(type + "-GAZS" + words.length);
             entries.add(feature);
           }
           if (flags.cleanGazette) {
@@ -759,7 +760,7 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
             GazetteInfo info = new GazetteInfo();
             info.loc = i;
             info.words = words;
-            info.feature = intern(type + "-GAZ" + words.length);
+            info.feature = intern(type + "-GAZC" + words.length);
             infos.add(info);
           }
         }
@@ -1266,7 +1267,7 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
         if (flags.sloppyGazette) {
           Collection<String> entries; 
           /*
-           * PP - expect lemmas to be in gazette entries
+           * PP - expect gazette entries to contain lemmas only
            */
           if (flags.useLemmas) {
         	  String lem = c.getString(LemmaAnnotation.class);
@@ -1277,16 +1278,27 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
             featuresC.addAll(entries);
           }
         }
-        if (flags.cleanGazette) {
+        if (flags.cleanGazette) {           
           Collection<GazetteInfo> infos = wordToGazetteInfos.get(cWord);
+          if (flags.useLemmas) // Search for gazeteer entries matching the lemma, not the wordform 
+        	  infos = wordToGazetteInfos.get(c.getString(LemmaAnnotation.class).toLowerCase()); //TODO - case sensitivity nosaukumiem tomēr var noderēt... bet nevar īsti paļauties uz to, kādā case būs atgrieztā lemma
+          
           if (infos != null) {
+//        	System.err.println("Meklējam gazetē vārdu" + getWord(cInfo.get(loc)));
             for (GazetteInfo gInfo : infos) {
               boolean ok = true;
               for (int gLoc = 0; gLoc < gInfo.words.length; gLoc++) {
-                ok &= gInfo.words[gLoc].equals(getWord(cInfo.get(loc + gLoc - gInfo.loc)));
+            	  //TODO - entītiju nosaukumu locīšana varētu būt labāk
+            	  if (flags.useLemmas) {
+            		  String gazeteerLemma = cInfo.get(loc + gLoc - gInfo.loc).getString(LemmaAnnotation.class);
+            		  ok &= gInfo.words[gLoc].equalsIgnoreCase(gazeteerLemma);
+            	  } else
+            		  ok &= gInfo.words[gLoc].equals(getWord(cInfo.get(loc + gLoc - gInfo.loc)));
+                
               }
               if (ok) {
-                featuresC.add(gInfo.feature);
+            	  //System.err.println("Atradām gazetē vārdu" + getWord(cInfo.get(loc)) + " gazetes ieraksts " + Arrays.toString(gInfo.words));            	  
+                  featuresC.add(gInfo.feature);
               }
             }
           }

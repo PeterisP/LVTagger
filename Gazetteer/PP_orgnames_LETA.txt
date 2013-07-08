@@ -1,0 +1,83 @@
+ORGANIZACIJA	nacionāls teātris
+ORGANIZACIJA	latvija nacionāls teātris
+ORGANIZACIJA	jauns rīga teātris
+ORGANIZACIJA	rīga dome
+ORGANIZACIJA	saeima
+ORGANIZACIJA	ekonomika ministrija
+ORGANIZACIJA	kultūra ministrija
+ORGANIZACIJA	privatizācija aģentūra
+ORGANIZACIJA	daugavpils teātris
+ORGANIZACIJA	sanktpēterburga aleksandrs teātris
+ORGANIZACIJA	krievija valdība
+ORGANIZACIJA	" nozare . lv "
+ORGANIZACIJA	nozare . lv
+ORGANIZACIJA	lux express
+ORGANIZACIJA	estonian air
+ORGANIZACIJA	lux express group
+ORGANIZACIJA	lux express latvija
+ORGANIZACIJA	lux express estonia
+ORGANIZACIJA	citadele banka
+ORGANIZACIJA	reverta
+ORGANIZACIJA	latvija mobils telefons
+ORGANIZACIJA	lattelecom
+ORGANIZACIJA	latvija nafta
+ORGANIZACIJA	nagļi
+ORGANIZACIJA	latgale enerģētika
+ORGANIZACIJA	pa
+ORGANIZACIJA	sorainen
+ORGANIZACIJA	parex banka
+ORGANIZACIJA	parex
+ORGANIZACIJA	ministrs kabinets
+ORGANIZACIJA	centralizēt pārvaldība institūcija
+ORGANIZACIJA	lmt
+ORGANIZACIJA	Teliasonera
+ORGANIZACIJA	valsts sociāla apdrošināšana aģentūra
+ORGANIZACIJA	vsaa
+ORGANIZACIJA	starptautiska lidosta " rīga "
+ORGANIZACIJA	latvija dzelzsceļš
+ORGANIZACIJA	latvija gaiss satiksme
+ORGANIZACIJA	latvija valsts mežs
+ORGANIZACIJA	citadele
+ORGANIZACIJA	centrāla pārvaldība iestāde
+ORGANIZACIJA	ķemeri sanatorija
+ORGANIZACIJA	ominasis latvia
+ORGANIZACIJA	vide aizsardzība un reģionāla attīstība ministrija
+ORGANIZACIJA	varam
+ORGANIZACIJA	latvija finieris
+ORGANIZACIJA	grindeks
+ORGANIZACIJA	latvija krājbanka
+ORGANIZACIJA	tts
+ORGANIZACIJA	sc
+ORGANIZACIJA	aips
+ORGANIZACIJA	rīga satiksme
+ORGANIZACIJA	gods kalpot rīga
+ORGANIZACIJA	sabiedrisks autobuss
+ORGANIZACIJA	iepirkums uzraudzība birojs
+ORGANIZACIJA	iub
+ORGANIZACIJA	finanses kapitāls un tirgus komisija
+ORGANIZACIJA	finanses un kapitāls tirgus komisija
+ORGANIZACIJA	fktk
+ORGANIZACIJA	nordeka
+ORGANIZACIJA	psrs
+ORGANIZACIJA	vidlatauto
+ORGANIZACIJA	saldus autobuss parks
+ORGANIZACIJA	liepāja autobuss parks
+ORGANIZACIJA	liepāja autoosta
+ORGANIZACIJA	cata
+ORGANIZACIJA	vtu valmiera
+ORGANIZACIJA	rp
+ORGANIZACIJA	knab
+ORGANIZACIJA	rīga mikroautobuss satiksme
+ORGANIZACIJA	korupcija novēršana un apkarošana birojs
+ORGANIZACIJA	plants
+ORGANIZACIJA	centība-n
+ORGANIZACIJA	dmk
+ORGANIZACIJA	autotransports direkcija
+ORGANIZACIJA	atd
+ORGANIZACIJA	vaide
+ORGANIZACIJA	ogre trikotāža
+ORGANIZACIJA	latvija veļa ražotājs asociācija
+ORGANIZACIJA	firmas . lv
+ORGANIZACIJA	graanul invest
+ORGANIZACIJA	launkalne ražotne
+ORGANIZACIJA	leta
