@@ -33,7 +33,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
@@ -45,11 +44,12 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import lv.semti.morphology.analyzer.MarkupConverter;
+import lv.semti.morphology.analyzer.Wordform;
+import lv.semti.morphology.attributes.AttributeNames;
+import lv.semti.morphology.attributes.AttributeValues;
 import edu.stanford.nlp.ling.CoreAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations;
-import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
-import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysisBest;
-import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.CoreAnnotations.AbbrAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.AbgeneAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.AbstrAnnotation;
@@ -66,7 +66,10 @@ import edu.stanford.nlp.ling.CoreAnnotations.GeniaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GovernorAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.IsDateRangeAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.IsURLAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
+import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysisBest;
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.MorphologyFeatureStringAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ParaPositionAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PhraseWordsAnnotation;
@@ -81,6 +84,7 @@ import edu.stanford.nlp.ling.CoreAnnotations.UnknownAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.WebAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.WordPositionAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.WordnetSynAnnotation;
+import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.CoreLabel.GenericAnnotation;
 import edu.stanford.nlp.objectbank.ObjectBank;
 import edu.stanford.nlp.process.WordShapeClassifier;
@@ -92,10 +96,6 @@ import edu.stanford.nlp.trees.TreeCoreAnnotations;
 import edu.stanford.nlp.util.PaddedList;
 import edu.stanford.nlp.util.StringUtils;
 import edu.stanford.nlp.util.Timing;
-
-import lv.semti.morphology.analyzer.*;
-import lv.semti.morphology.attributes.AttributeNames;
-import lv.semti.morphology.attributes.AttributeValues;
 
 /**
  * Features for Named Entity Recognition.  The code here creates the features
@@ -1303,6 +1303,21 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
             }
           }
         }
+      }
+      
+      /**
+       * AZ
+       */
+      if (flags.useMorphologyFeatures) {
+    	  String s = c.get(MorphologyFeatureStringAnnotation.class);
+    	  if (s != null) {
+	    	  String[] morphoFeatures =  s.split("\\|");
+	    	  for (String f : morphoFeatures) {
+	    		  if (f.startsWith("Locījums") /*|| f.startsWith("Skaitlis") || f.startsWith("Dzimte") || f.startsWith("Pamatforma") */) {
+	    			  featuresC.add("MORPHO-" + f);
+	    		  }
+	    	  }
+    	  }
       }
 
       if ((flags.wordShape > WordShapeClassifier.NOWORDSHAPE) || (flags.useShapeStrings)) {

@@ -1,0 +1,3977 @@
+PROF_FULL	administrators
+PROF_FULL	adītājs
+PROF_FULL	aerodinamiķis
+PROF_FULL	aerologs
+PROF_FULL	agronoms
+PROF_FULL	aitkopis
+PROF_FULL	aizzīmētājs
+PROF_FULL	akmeņkalis
+PROF_FULL	akmeņkalis amatnieks
+PROF_FULL	akrobāts
+PROF_FULL	aktieris
+PROF_FULL	aktuāra asistents
+PROF_FULL	aktuārs
+PROF_FULL	akumulatorists
+PROF_FULL	aldaris
+PROF_FULL	alergologs
+PROF_FULL	algologs
+PROF_FULL	alpīnists
+PROF_FULL	alvotājs
+PROF_FULL	amatnieks
+PROF_FULL	analītiķis
+PROF_FULL	anatoms
+PROF_FULL	andrologs
+PROF_FULL	anesteziologs
+PROF_FULL	reanimatologs
+PROF_FULL	anodētājs
+PROF_FULL	antropologs
+PROF_FULL	apgaitnieks
+PROF_FULL	apgleznotājs
+PROF_FULL	apkopējs
+PROF_FULL	apmetējs
+PROF_FULL	aprūpētājs
+PROF_FULL	apsargs
+PROF_FULL	arheologs
+PROF_FULL	arhibīskaps
+PROF_FULL	arhitekta palīgs
+PROF_FULL	arhitekts
+PROF_FULL	arhivārs
+PROF_FULL	arhīvists
+PROF_FULL	asfaltētājs
+PROF_FULL	asistents
+PROF_FULL	asistents personām ar dzirdes traucējumiem
+PROF_FULL	asistents personām ar invaliditāti
+PROF_FULL	astrologs
+PROF_FULL	astronoms
+PROF_FULL	atašejs
+PROF_FULL	atašejs –vēstnieka sekretārs
+PROF_FULL	atlēts
+PROF_FULL	atslēdznieks
+PROF_FULL	atsperotājs
+PROF_FULL	atsveķotājs
+PROF_FULL	audiologs
+PROF_FULL	auditors
+PROF_FULL	audējs
+PROF_FULL	augstspiedējs
+PROF_FULL	augļotājs
+PROF_FULL	auklis
+PROF_FULL	autors
+PROF_FULL	abonentu daļas operators
+PROF_FULL	abonentu daļas konsultants
+PROF_FULL	acu protēzists
+PROF_FULL	administratīvais direktors
+PROF_FULL	administratīvā direktora vietnieks
+PROF_FULL	administratīvās inspekcijas inspektors
+PROF_FULL	administratīvās lietvedības inspektors
+PROF_FULL	administratīvās prakses inspektors
+PROF_FULL	administratīvās struktūrvienības direktors
+PROF_FULL	administratīvās struktūrvienības vadītājs
+PROF_FULL	adīšanas operators
+PROF_FULL	adīšanas tehnologs
+PROF_FULL	aerometeorologs
+PROF_FULL	aerofotogrāfijas inženieris
+PROF_FULL	aerofotoģeodēzists
+PROF_FULL	aerokosmisko elektronikas tehniķis
+PROF_FULL	aerokosmisko iekārtu elektronikas tehniķis
+PROF_FULL	aerokosmisko telekomunikāciju tehniķis
+PROF_FULL	aeronautikas mehāniķis
+PROF_FULL	aeronautikas rasētājs
+PROF_FULL	aeronautikas mehānikas inženieris
+PROF_FULL	aeronavigācijas vadītājs
+PROF_FULL	aeronavigācijas apkalpošanas inženieris
+PROF_FULL	aeronavigācijas datu apstrādes sistēmu inženieris
+PROF_FULL	agrometeorologs
+PROF_FULL	agronomijas tehniķis
+PROF_FULL	agrārā sektora komercdarbinieks
+PROF_FULL	ainavu arhitekts
+PROF_FULL	ainavu tehniķis
+PROF_FULL	aitu cirpējs
+PROF_FULL	aitu audzēšanas lauksaimnieks
+PROF_FULL	aizdevumu administrators
+PROF_FULL	aizdevumu revidents
+PROF_FULL	aizsardzības padomnieks
+PROF_FULL	aizsardzības padomnieks starptautiskajās organizācijās
+PROF_FULL	aizvākošanas iekārtas operators
+PROF_FULL	ajūrvēdas medicīnas speciālists
+PROF_FULL	akciju starpnieks
+PROF_FULL	akmens griezējs
+PROF_FULL	akmens apstrādes iekārtas operators
+PROF_FULL	akmens būvju restaurators
+PROF_FULL	akmeņu mūrnieks
+PROF_FULL	akordeonu tehniķis
+PROF_FULL	akreditīvu eksperts
+PROF_FULL	aku urbšanas operators
+PROF_FULL	akupresūras speciālists
+PROF_FULL	akupunktūras ārsts
+PROF_FULL	akustikas fiziķis
+PROF_FULL	akustikas izolētājs
+PROF_FULL	akvakultūras strādnieks
+PROF_FULL	akvakultūras zivkopis
+PROF_FULL	algu grāmatvedis
+PROF_FULL	algu inspektors
+PROF_FULL	alus, vīna un citu dzērienu ražošanas iekārtu operators
+PROF_FULL	amatierteātra kolektīva vadītājs
+PROF_FULL	ambulatorais ķirurgs
+PROF_FULL	ambulatorās aprūpes māsa
+PROF_FULL	ambulatorās aprūpes ārsta palīgs
+PROF_FULL	ambulatorās medicīnas māsa
+PROF_FULL	analītiskās struktūrvienības direktora vietnieks
+PROF_FULL	analītiskās struktūrvienības direktors
+PROF_FULL	analītiskās struktūrvienības vadītāja vietnieks
+PROF_FULL	analītiskās struktūrvienības vadītājs
+PROF_FULL	analītiskās ķīmijas tehniķis
+PROF_FULL	anatomijas tehniķis
+PROF_FULL	anestēzijas, intensīvās un neatliekamās aprūpes māsa
+PROF_FULL	ansambļa vadītājs
+PROF_FULL	apavu krāsotājs
+PROF_FULL	apavu labotāja palīgs
+PROF_FULL	apavu labotājs
+PROF_FULL	apavu līmētājs
+PROF_FULL	apavu piegriezējs
+PROF_FULL	apavu tīrītājs
+PROF_FULL	apavu ražošanas iekārtas operators
+PROF_FULL	apaļkoku šķirotājs
+PROF_FULL	apbedīšanas pakalpojumu speciālists
+PROF_FULL	apbūves aizsardzības zonu speciālists
+PROF_FULL	apdares darbu strādnieks
+PROF_FULL	apdares darbu tehniķis
+PROF_FULL	apdedzināšanas krāsns operators
+PROF_FULL	apdrošināšanas aģents
+PROF_FULL	apdrošināšanas darbinieks
+PROF_FULL	apdrošināšanas inspektors
+PROF_FULL	apdrošināšanas konsultants
+PROF_FULL	apdrošināšanas speciālists
+PROF_FULL	apdrošināšanas starpnieks
+PROF_FULL	apgaismes elektriķis
+PROF_FULL	apgādes direktors
+PROF_FULL	apiņu audzēšanas lauksaimnieks
+PROF_FULL	apiņu audzēšanas laukstrādnieks
+PROF_FULL	apkures iekārtas operators
+PROF_FULL	apkures krāšņu kurinātājs
+PROF_FULL	apkures, ventilācijas un saldēšanas iekārtu mehāniķis
+PROF_FULL	apmeklētāju centra speciālists
+PROF_FULL	apmeklētāju centra vadītājs
+PROF_FULL	aprīkojuma inženieris
+PROF_FULL	apsardzes darbinieks
+PROF_FULL	apsardzes dežurants
+PROF_FULL	apsardzes dispečers
+PROF_FULL	apsardzes inspektors
+PROF_FULL	apsardzes organizators
+PROF_FULL	apsardzes dienesta kontrolieris
+PROF_FULL	apsardzes dienesta vadītāja vietnieks
+PROF_FULL	apsardzes dienesta vadītājs
+PROF_FULL	apsardzes galvenais inspektors
+PROF_FULL	apsardzes pults dežurants
+PROF_FULL	apsardzes sistēmu tehniķis
+PROF_FULL	apsardzes tehnisko sistēmu inženieris
+PROF_FULL	apsildes un ventilācijas sistēmu rasētājs
+PROF_FULL	apsildes, ventilācijas un saldēšanas mehānikas inženieris
+PROF_FULL	apstrādes rūpniecības uzraugs
+PROF_FULL	apstādījumu kopējs
+PROF_FULL	apvīšanas iekārtas operators
+PROF_FULL	apģērba etiķetes konsultants
+PROF_FULL	apģērbu amatnieks
+PROF_FULL	apģērbu konstruktors
+PROF_FULL	apģērbu modelētājs
+PROF_FULL	apģērbu pārbaudītājs
+PROF_FULL	apģērbu dizaina speciālists
+PROF_FULL	apģērbu modelēšanas un konstruēšanas speciālists
+PROF_FULL	apģērbu un tekstila ražošanas inženieris
+PROF_FULL	apģērbu šuvējs
+PROF_FULL	apūdeņošanas inženieris
+PROF_FULL	apūdeņošanas būvinženieris
+PROF_FULL	apūdeņošanas būvtehniķis
+PROF_FULL	arheoloģiskā materiāla restaurators
+PROF_FULL	arhitektūras rasētājs
+PROF_FULL	arhitektūras tehniķis
+PROF_FULL	arhīva eksperts
+PROF_FULL	arhīva pārzinis
+PROF_FULL	arodmācības skolotājs
+PROF_FULL	amatmācības skolotājs
+PROF_FULL	arodbiedrību darba koordinētājs
+PROF_FULL	arodslimību ārsts
+PROF_FULL	arodveselības un arodslimību ārsts
+PROF_FULL	arodveselības ārsts
+PROF_FULL	asfalta ieklājēja operators
+PROF_FULL	asfalta veltņa vadītājs
+PROF_FULL	asfaltbetona gatavošanas iekārtas operators
+PROF_FULL	asfaltēšanas ieklājēja vadītājs
+PROF_FULL	asins pārliešanas tehniķis
+PROF_FULL	asinsvadu ķirurgs
+PROF_FULL	asociētais profesors
+PROF_FULL	asociētais veselības aprūpes kapelāns
+PROF_FULL	astrofiziķis
+PROF_FULL	astronomijas tehniķis
+PROF_FULL	atbildīgais sekretārs
+PROF_FULL	atbilstības vērtētājs
+PROF_FULL	atkarību profilakses speciālists
+PROF_FULL	atkritumu savācējs
+PROF_FULL	atkritumu sadedzināšanas krāsns operators
+PROF_FULL	atkritumu šķirotājs
+PROF_FULL	atkritumvedēja vadītājs
+PROF_FULL	atomfiziķis
+PROF_FULL	atomenerģijas tehniķis
+PROF_FULL	atomenerģijas mehānismu mehāniķis
+PROF_FULL	atomenerģijas reaktora operators
+PROF_FULL	atpūtas bāzes pārzinis
+PROF_FULL	atsperu tīšanas operators
+PROF_FULL	attaukošanas operators
+PROF_FULL	attīrīšanas iekārtas operators
+PROF_FULL	attīstības plānošanas inženieris
+PROF_FULL	audio iekārtu operators
+PROF_FULL	audiologopēds
+PROF_FULL	audiovideoiekārtu montieris
+PROF_FULL	audu tehniķis
+PROF_FULL	auduma iespiedējs
+PROF_FULL	audumu izklājējs
+PROF_FULL	audumu komplektētājs
+PROF_FULL	audumu pārbaudītājs
+PROF_FULL	audumu tehnologs
+PROF_FULL	audumu apdrukāšanas iekārtas operators
+PROF_FULL	audumu dizaina speciālists
+PROF_FULL	augsnes bakteriologs
+PROF_FULL	augsnes botāniķis
+PROF_FULL	augsnes tehniķis
+PROF_FULL	augstsprieguma tehniķis
+PROF_FULL	augstsprieguma elektroinženieris
+PROF_FULL	augstsprieguma līniju elektromontieris
+PROF_FULL	augstākais bocmanis
+PROF_FULL	augstākais virsseržants augstākais bocmanis
+PROF_FULL	augstākās tiesas priekšsēdētājs
+PROF_FULL	augu citologs
+PROF_FULL	augu ekologs
+PROF_FULL	augu fiziologs
+PROF_FULL	augu histologs
+PROF_FULL	augu patologs
+PROF_FULL	augu sistemātiķis
+PROF_FULL	augu aizsardzības speciālists
+PROF_FULL	augu valsts dizaina speciālists
+PROF_FULL	augu ģenētiķis
+PROF_FULL	augļu konservētājs
+PROF_FULL	augļu audzēšanas lauksaimnieks
+PROF_FULL	augļu audzēšanas laukstrādnieks
+PROF_FULL	augļu koku apgriezējs
+PROF_FULL	augļu koku potētājs
+PROF_FULL	aukstuma iekārtu mehāniķis
+PROF_FULL	aukstumtehnikas speciālists
+PROF_FULL	autoatslēdznieks
+PROF_FULL	autoelektriķis
+PROF_FULL	automehāniķa palīgs
+PROF_FULL	automehāniķis
+PROF_FULL	autoapkopes speciālists
+PROF_FULL	autobusa konduktors
+PROF_FULL	autobusa vadītājs
+PROF_FULL	autobusa, trolejbusa un tramvaja vadītājs
+PROF_FULL	autoceltņa automobiļa vadītājs
+PROF_FULL	autogreidera vadītājs
+PROF_FULL	autokrāvēja vadītājs
+PROF_FULL	automatizētas kurināmā padeves operators
+PROF_FULL	automatizēto meža transportlīdzekļu operators
+PROF_FULL	automatizētās montāžas līnijas operators
+PROF_FULL	automašīnu logu mazgātājs
+PROF_FULL	automobiļa vadītājs
+PROF_FULL	automobiļu mazgātājs
+PROF_FULL	automobiļu mehāniķis
+PROF_FULL	automobiļu skārdnieks
+PROF_FULL	automobiļu dizaina inženieris
+PROF_FULL	automobiļu transporta inženieris
+PROF_FULL	automātu inženieris
+PROF_FULL	autoremonta darbnīcas vadītājs
+PROF_FULL	autoskolas praktiskās braukšanas instruktors
+PROF_FULL	autoskolas teorētisko priekšmetu pasniedzējs
+PROF_FULL	autotorņa vadītājs
+PROF_FULL	autovadīšanas instruktors
+PROF_FULL	aušanas operators
+PROF_FULL	aviolīniju transporta gaisa kuģa pilots
+PROF_FULL	aviolīniju transporta helikoptera pilots
+PROF_FULL	aviācijas instruktors
+PROF_FULL	aviācijas fiksēto sakaru inženieris
+PROF_FULL	aviācijas fiksēto sakaru operators
+PROF_FULL	aviācijas fiksēto sakaru tehniķis
+PROF_FULL	aviācijas mobilo sakaru inženieris
+PROF_FULL	aviācijas mobilo sakaru tehniķis
+PROF_FULL	aviācijas nelaimes gadījumu un incidentu izmeklētājs
+PROF_FULL	aviācijas nelaimes gadījumu un incidentu vecākais izmeklētājs
+PROF_FULL	aviācijas radioiekārtas operators
+PROF_FULL	avāriju izmeklēšanas inspektors
+PROF_FULL	bakteriologs
+PROF_FULL	baletmeistars
+PROF_FULL	ballistiķis
+PROF_FULL	balneologs
+PROF_FULL	balsinātājs
+PROF_FULL	balzamētājs
+PROF_FULL	betonētājs
+PROF_FULL	bibliogrāfs
+PROF_FULL	bibliotekārs
+PROF_FULL	bioenerģētiķis
+PROF_FULL	biofiziķis
+PROF_FULL	biogrāfs
+PROF_FULL	biologs
+PROF_FULL	biometrists
+PROF_FULL	bioniķis protēzists
+PROF_FULL	bioķīmiķis
+PROF_FULL	biškopis
+PROF_FULL	bocmanis
+PROF_FULL	bonza
+PROF_FULL	botāniķis
+PROF_FULL	brigadieris
+PROF_FULL	brokeris
+PROF_FULL	brošētājs
+PROF_FULL	bruģētājs
+PROF_FULL	bukmeikers
+PROF_FULL	burtlicis
+PROF_FULL	bagarēšanas būvinženieris
+PROF_FULL	bagarēšanas būvtehniķis
+PROF_FULL	bagarēšanas mašīnu operators
+PROF_FULL	bagāžas kasieris
+PROF_FULL	bakterioloģijas tehniķis
+PROF_FULL	baleta mākslinieks
+PROF_FULL	baleta repetitors
+PROF_FULL	baleta režisors
+PROF_FULL	baleta solists
+PROF_FULL	baleta trupas vadītājs
+PROF_FULL	bankas inkasents
+PROF_FULL	bankas kasieris
+PROF_FULL	bankomātu tīkla administrators
+PROF_FULL	banku speciālists
+PROF_FULL	baznīcas mūziķis
+PROF_FULL	baznīcas mūzikas dzīves organizators
+PROF_FULL	benzīna kontrolierīču operators
+PROF_FULL	benzīna pārsūknēšanas operators
+PROF_FULL	betona ieklājēja operators
+PROF_FULL	betona ieklājēja vadītājs
+PROF_FULL	betona maisītāja sūkņa vadītājs
+PROF_FULL	betona ražošanas operators
+PROF_FULL	bibliotēku lietvedis
+PROF_FULL	bibliotēku informācijas speciālists
+PROF_FULL	nodibinājuma izpilddirektors
+PROF_FULL	nodibinājuma prezidents
+PROF_FULL	nodibinājuma priekšsēdētājs
+PROF_FULL	nodibinājuma vadītājs
+PROF_FULL	nodibinājuma viceprezidents
+PROF_FULL	nodibinājuma valdes loceklis
+PROF_FULL	nodibinājuma valdes priekšsēdētājs
+PROF_FULL	nodibinājuma ģenerāldirektors
+PROF_FULL	nodibinājuma ģenerālsekretārs
+PROF_FULL	biedrības izpilddirektors
+PROF_FULL	biedrības prezidents
+PROF_FULL	biedrības priekšsēdētājs
+PROF_FULL	biedrības vadītājs
+PROF_FULL	biedrības viceprezidents
+PROF_FULL	biedrības valdes loceklis
+PROF_FULL	biedrības valdes priekšsēdētājs
+PROF_FULL	biedrības ģenerāldirektors
+PROF_FULL	biedrības ģenerālsekretārs
+PROF_FULL	bingo kartīšu pārdevējs
+PROF_FULL	biotehnologa palīgs
+PROF_FULL	biotehnologs
+PROF_FULL	biofizikas tehniķis
+PROF_FULL	biomedicīnas laborants
+PROF_FULL	biometrijas statistiķis
+PROF_FULL	bionikas un protezēšanas inženieris
+PROF_FULL	bioķīmijas tehniķis
+PROF_FULL	biroja administrators
+PROF_FULL	biržas mākleris
+PROF_FULL	bistro pakalpojumu darbinieks
+PROF_FULL	bitumena gatavošanas iekārtas operators
+PROF_FULL	biļešu kontrolieris
+PROF_FULL	biļešu pārdevējs
+PROF_FULL	biļešu kases kasieris
+PROF_FULL	botānikas tehniķis
+PROF_FULL	brigādes ģenerālis flotiles admirālis
+PROF_FULL	bruģēšanas mašīnas vadītājs
+PROF_FULL	bruņojuma inspektors
+PROF_FULL	bruņojuma un sakaru galvenais speciālists
+PROF_FULL	brīvmākslinieks
+PROF_FULL	budžeta ekonomists
+PROF_FULL	budžeta struktūrvienības direktora vietnieks
+PROF_FULL	budžeta struktūrvienības direktors
+PROF_FULL	budžeta struktūrvienības vadītāja vietnieks
+PROF_FULL	budžeta struktūrvienības vadītājs
+PROF_FULL	bufetes kalpotājs
+PROF_FULL	bufetes pārdevējs
+PROF_FULL	buldozera vadītājs
+PROF_FULL	burvju mākslinieks
+PROF_FULL	bārmenis
+PROF_FULL	bākas uzraugs
+PROF_FULL	bāriņtiesas loceklis
+PROF_FULL	bāriņtiesas locekļa palīgs
+PROF_FULL	bāriņtiesas priekšsēdētāja palīgs
+PROF_FULL	bāriņtiesas priekšsēdētāja vietnieks
+PROF_FULL	bāriņtiesas priekšsēdētājs
+PROF_FULL	bāriņtiesas struktūrvienības vadītāja palīgs
+PROF_FULL	bāriņtiesas sēžu sekretārs
+PROF_FULL	bērnu alergologs
+PROF_FULL	bērnu aprūpētājs
+PROF_FULL	bērnu audiologs
+PROF_FULL	bērnu endokrinologs
+PROF_FULL	bērnu gastroenterologs
+PROF_FULL	bērnu ginekologs
+PROF_FULL	bērnu hematoonkologs
+PROF_FULL	bērnu infektologs
+PROF_FULL	bērnu kardiologs
+PROF_FULL	bērnu masieris
+PROF_FULL	bērnu māsa
+PROF_FULL	bērnu nefrologs
+PROF_FULL	bērnu neirologs
+PROF_FULL	bērnu pneimonologs
+PROF_FULL	bērnu psihiatrs
+PROF_FULL	bērnu reimatologs
+PROF_FULL	bērnu zobārsts
+PROF_FULL	bērnu aprūpes māsa
+PROF_FULL	bērnu aprūpes un audzināšanas iestādes audzinātājs
+PROF_FULL	bērnu diennakts
+PROF_FULL	bērnu ķirurgs
+PROF_FULL	bīskaps
+PROF_FULL	bīstamo kravu pārvadājumu drošības konsultants
+PROF_FULL	bīstamo kravu pārvadājumu drošības padomnieks
+PROF_FULL	bīstamu kravu pārvadāšanas transportlīdzekļu vadītājs
+PROF_FULL	būvnieks
+PROF_FULL	būvelektriķis
+PROF_FULL	būvgaldnieks
+PROF_FULL	būvinspektora palīgs
+PROF_FULL	būvinspektors
+PROF_FULL	būvinženieris
+PROF_FULL	būvmeistars
+PROF_FULL	būvstrādnieks
+PROF_FULL	būvtehniķis
+PROF_FULL	būvuzraugs
+PROF_FULL	būvdarbu vadītāja palīgs
+PROF_FULL	būvdarbu vadītājs
+PROF_FULL	būvdarbu ūdenslīdējs
+PROF_FULL	būvizstrādājumu galdnieks
+PROF_FULL	būvju tīrītājs
+PROF_FULL	būvju kadastrālās uzmērīšanas speciālists
+PROF_FULL	būvkonstrukciju montētājs
+PROF_FULL	būvmateriālu inženieris
+PROF_FULL	būvmateriālu tehnologs
+PROF_FULL	būvniecības kalkulētājs
+PROF_FULL	būvniecības tehnologs
+PROF_FULL	būvniecības tāmju inženieris
+PROF_FULL	būvtehnikas rasētājs
+PROF_FULL	cepurnieks
+PROF_FULL	cepējs
+PROF_FULL	cinkotājs
+PROF_FULL	citologs
+PROF_FULL	caurlaižu inspektors
+PROF_FULL	cauruļlicēja vadītājs
+PROF_FULL	cauruļu izolēšanas iekārtas operators
+PROF_FULL	cauruļu liekšanas iekārtas operators
+PROF_FULL	cauruļvadu montētājs
+PROF_FULL	ceha priekšnieka vietnieks
+PROF_FULL	ceha priekšnieks
+PROF_FULL	ceha strādnieks
+PROF_FULL	ceha iekārtu mehāniķis
+PROF_FULL	celofāna, polietilēna iesaiņojuma ražošanas operators
+PROF_FULL	celtniecības un ceļu būves mašīnu mehāniķis
+PROF_FULL	celtniecības un ceļu būves mašīnu remontatslēdznieks
+PROF_FULL	celtņa operators
+PROF_FULL	cementa tehnologs
+PROF_FULL	cementa dzirnavu operatora palīgs
+PROF_FULL	cementa dzirnavu operators
+PROF_FULL	centralizētā apsardzes punkta dežurants
+PROF_FULL	cenu ekonomists
+PROF_FULL	cenu inspektors
+PROF_FULL	cenu veidošanas inženieris
+PROF_FULL	ceļa būves palīgstrādnieks
+PROF_FULL	ceļa frēzes operators
+PROF_FULL	ceļa frēzes vadītājs
+PROF_FULL	ceļa marķējumu krāsotājs
+PROF_FULL	ceļa veltņa operators
+PROF_FULL	ceļojošais pārdevējs
+PROF_FULL	ceļojumu aģents
+PROF_FULL	ceļojumu konsultants
+PROF_FULL	ceļojumu organizators
+PROF_FULL	ceļu meistara palīgs
+PROF_FULL	ceļu meistars
+PROF_FULL	ceļu būvinženieris
+PROF_FULL	ceļu būvtehniķis
+PROF_FULL	ceļu būvuzraugs
+PROF_FULL	ceļu distances priekšnieka vietnieks
+PROF_FULL	ceļu distances priekšnieks
+PROF_FULL	ceļu marķēšanas mašīnas vadītājs
+PROF_FULL	ceļu policijas inspektors
+PROF_FULL	cietvielu fiziķis
+PROF_FULL	ciltslietu zootehniķis
+PROF_FULL	ciparu programmas vadības darbgaldu iestatītājs
+PROF_FULL	ciparu vadības frēzēšanas operators
+PROF_FULL	ciparu vadības virpošanas operators
+PROF_FULL	cirka mākslinieks
+PROF_FULL	citas speciālās pašgājējtehnikas vadītājs
+PROF_FULL	citoloģijas tehniķis
+PROF_FULL	civilaizsardzības organizators
+PROF_FULL	civilās aizsardzības inženieris
+PROF_FULL	civilās aizsardzības tehniķis
+PROF_FULL	civilās aviācijas drošības uzraudzības inspektors
+PROF_FULL	civilās aviācijas drošības uzraudzības speciālists
+PROF_FULL	cukurbiešu audzēšanas lauksaimnieks
+PROF_FULL	cukurbiešu audzēšanas laukstrādnieks
+PROF_FULL	cūkkopis
+PROF_FULL	cūku audzēšanas lauksaimnieks
+PROF_FULL	datorgrafiķis
+PROF_FULL	defektoskopists
+PROF_FULL	degustētājs
+PROF_FULL	dejotājs
+PROF_FULL	deklarants
+PROF_FULL	deklarētājs
+PROF_FULL	dekorētājs
+PROF_FULL	dekāns
+PROF_FULL	demogrāfs
+PROF_FULL	dermatologs, venerologs
+PROF_FULL	detektīvs
+PROF_FULL	dezinfektors
+PROF_FULL	dežuranta palīgs
+PROF_FULL	dežurants
+PROF_FULL	direktora
+PROF_FULL	direktora palīgs
+PROF_FULL	direktora vietnieks
+PROF_FULL	direktors
+PROF_FULL	direktors
+PROF_FULL	diriģents
+PROF_FULL	diskžokejs
+PROF_FULL	dispečers
+PROF_FULL	dižkareivis
+PROF_FULL	dižmatrozis
+PROF_FULL	docents
+PROF_FULL	dokers
+PROF_FULL	dokeru brigadieris
+PROF_FULL	dokumentālists
+PROF_FULL	dozimetrists
+PROF_FULL	dozētājs
+PROF_FULL	dramaturgs
+PROF_FULL	dravnieks
+PROF_FULL	dresētājs
+PROF_FULL	drēbnieks
+PROF_FULL	dzejnieks
+PROF_FULL	dziednieks
+PROF_FULL	dziedātājs
+PROF_FULL	dabas aizsardzības vecākais speciālists
+PROF_FULL	dabasgāzes ieguves un sadales ķīmijas inženieris
+PROF_FULL	dabasgāzes pārvades tehniķis
+PROF_FULL	dabaszinātņu laborants
+PROF_FULL	daiļdārznieks
+PROF_FULL	daiļkrāsotājs
+PROF_FULL	dalīšanas mašīnas operators
+PROF_FULL	darba ekonomists
+PROF_FULL	darba inspektors
+PROF_FULL	darba normētājs
+PROF_FULL	darba terapeits
+PROF_FULL	darba aizsardzības inženieris
+PROF_FULL	darba aizsardzības koordinators
+PROF_FULL	darba aizsardzības speciālists
+PROF_FULL	darba aizsardzības struktūrvienības vadītāja vietnieks
+PROF_FULL	darba aizsardzības struktūrvienības vadītājs
+PROF_FULL	darba aizsardzības vecākais speciālists
+PROF_FULL	darba algas ekonomists
+PROF_FULL	darba algas struktūrvienības vadītājs
+PROF_FULL	darba izpētes tehniķis
+PROF_FULL	darba normēšanas inženieris
+PROF_FULL	darba organizācijas inženieris
+PROF_FULL	darba organizācijas struktūrvienības vadītājs
+PROF_FULL	darba satura analītiķis
+PROF_FULL	darba vides pārzinis
+PROF_FULL	darbgaldu iestatītājs
+PROF_FULL	darbu rīkotājs
+PROF_FULL	darbu vadītājs
+PROF_FULL	darbības nepārtrauktības vadītājs
+PROF_FULL	darbības risku vadītājs
+PROF_FULL	darījumu operāciju analītiķis
+PROF_FULL	datordizainers
+PROF_FULL	datortehniķis
+PROF_FULL	datora operators
+PROF_FULL	datorizētās ciparu cnc metālapstrādes darbgaldu operators
+PROF_FULL	datorizētās ciparu vadības metālapstrādes darbgaldu operators
+PROF_FULL	datorsistēmu tehniķis
+PROF_FULL	datorsistēmu testētājs
+PROF_FULL	datorsistēmu un datortīklu administrators
+PROF_FULL	datortehnikas inženieris
+PROF_FULL	datortehnikas mehāniķis
+PROF_FULL	datortīkla administrators
+PROF_FULL	datorvadības tehnoloģiju inženieris
+PROF_FULL	datu bāzes programmētājs
+PROF_FULL	datu bāzu administrators
+PROF_FULL	datu bāzu inženieris
+PROF_FULL	datu bāzu tehniķis
+PROF_FULL	datu ievades operators
+PROF_FULL	dažādu sugu dzīvnieku lopkopis
+PROF_FULL	dažādu sugu dzīvnieku audzēšanas lauksaimnieks
+PROF_FULL	degvielas tehnologs
+PROF_FULL	degvielas uzskaitvedis
+PROF_FULL	degvielas uzpildes stacijas pārdevējs
+PROF_FULL	deju partneris
+PROF_FULL	deju ansambļa vadītājs
+PROF_FULL	deju kolektīva vadītājs
+PROF_FULL	deju kolektīvu, kopu un naktsklubu dejotājs
+PROF_FULL	deju kopu vadītājs
+PROF_FULL	dekoratīvo būvelementu veidotājs
+PROF_FULL	dekoratīvo objektu tēlnieks
+PROF_FULL	dekoratīvo tekstiltehniku izstrādātājs
+PROF_FULL	dekoratīvās caurduršanas meistars
+PROF_FULL	deltaplāna lidotājs
+PROF_FULL	demogrāfijas statistiķis
+PROF_FULL	dermatoveneroloģijas māsa
+PROF_FULL	desu izgatavotājs
+PROF_FULL	dežurējošais maksājumu karšu administrators
+PROF_FULL	dežūrinspektors
+PROF_FULL	dežūrinspektors - vada komandieris
+PROF_FULL	diabetoloģijas un endokrinoloģijas māsa
+PROF_FULL	diabēta aprūpes māsa
+PROF_FULL	diegu vērējs
+PROF_FULL	diegu tekstiliekārtās
+PROF_FULL	diegu un dzijas vērpšanas iekārtas operators
+PROF_FULL	dienesta vagona pavadonis
+PROF_FULL	dienesta viesnīcas vadītājs
+PROF_FULL	digitālās iespiešanas operators
+PROF_FULL	diplomātiskais kurjers
+PROF_FULL	dizaina speciālists
+PROF_FULL	diētas māsa
+PROF_FULL	doku un ostu būvinženieris
+PROF_FULL	dokumentu zīmogotājs
+PROF_FULL	dokumentu pārvaldības struktūrvienības direktora vietnieks
+PROF_FULL	dokumentu pārvaldības struktūrvienības direktors
+PROF_FULL	dokumentu pārvaldības struktūrvienības vadītāja vietnieks
+PROF_FULL	dokumentu pārvaldības struktūrvienības vadītājs
+PROF_FULL	dokumentu sistēmu vadītājs
+PROF_FULL	dokumentu šķirotājs
+PROF_FULL	dokumentāro operāciju speciālists
+PROF_FULL	dramatisko kopu vadītājs
+PROF_FULL	drenu licējs
+PROF_FULL	drošības inspektors
+PROF_FULL	drošības konsultants
+PROF_FULL	drošības speciālists
+PROF_FULL	drošības dienesta speciālists
+PROF_FULL	drošības dienesta vadītāja vietnieks
+PROF_FULL	drošības dienesta vadītājs
+PROF_FULL	drošības galvenais inspektors
+PROF_FULL	drošības padomnieks
+PROF_FULL	drupināšanas operators
+PROF_FULL	dublēšanas iekārtas operators
+PROF_FULL	dzelzceļa dežuranta palīgs
+PROF_FULL	dzelzceļa dežurants
+PROF_FULL	dzelzceļa dispečera palīgs
+PROF_FULL	dzelzceļa dispečers
+PROF_FULL	dzelzceļa inspektors
+PROF_FULL	dzelzceļa instruktors
+PROF_FULL	dzelzceļa inženieris
+PROF_FULL	dzelzceļa meistars
+PROF_FULL	dzelzceļa metinātājs
+PROF_FULL	dzelzceļa operatora palīgs
+PROF_FULL	dzelzceļa operators
+PROF_FULL	dzelzceļa pārmijnieks
+PROF_FULL	dzelzceļa signalizētājs
+PROF_FULL	dzelzceļa strādnieks
+PROF_FULL	dzelzceļa apbruņots sargs
+PROF_FULL	dzelzceļa apsardzes grupas instruktors
+PROF_FULL	dzelzceļa apsardzes grupas vadītāja vietnieks
+PROF_FULL	dzelzceļa apsardzes grupas vadītājs
+PROF_FULL	dzelzceļa automātisko sistēmu tehniķis
+PROF_FULL	dzelzceļa avāriju izmeklētājs
+PROF_FULL	dzelzceļa avāriju vecākais izmeklētājs
+PROF_FULL	dzelzceļa būvinženieris
+PROF_FULL	dzelzceļa celtņa vadītāja palīgs
+PROF_FULL	dzelzceļa celtņa vadītājs
+PROF_FULL	dzelzceļa depo dežurants
+PROF_FULL	dzelzceļa ekspluatācijas inženieris
+PROF_FULL	dzelzceļa elektromontieris
+PROF_FULL	dzelzceļa elektrosistēmu inženieris
+PROF_FULL	dzelzceļa lokomotīvju remonta inženieris
+PROF_FULL	dzelzceļa nepašgājējas mašīnas un to sastāvu operators
+PROF_FULL	dzelzceļa pārbrauktuves dežurants
+PROF_FULL	dzelzceļa pārvadājumu un kustības organizators
+PROF_FULL	dzelzceļa sardzes priekšnieks
+PROF_FULL	dzelzceļa stacijas priekšnieka vietnieks
+PROF_FULL	dzelzceļa stacijas priekšnieks
+PROF_FULL	dzelzceļa transporta inženieris
+PROF_FULL	dzelzceļa transporta automātikas, telemehānikas un komunikāciju tehniķis
+PROF_FULL	dzelzceļa transporta pārvadājumu organizācijas un kustības drošības tehniķis
+PROF_FULL	dzelzceļa šķirošanas dežurants
+PROF_FULL	dzesēšanas iekārtas operators
+PROF_FULL	dzijas vērpējs
+PROF_FULL	dzimtsarakstu inspektors
+PROF_FULL	dzimtsarakstu speciālists
+PROF_FULL	dzintara apstrādes mākslinieks
+PROF_FULL	dzinēju mehānismu mehāniķis
+PROF_FULL	dzīvnieku citologs
+PROF_FULL	dzīvnieku ekologs
+PROF_FULL	dzīvnieku fiziologs
+PROF_FULL	dzīvnieku histologs
+PROF_FULL	dzīvnieku kāvējs
+PROF_FULL	dzīvnieku patologs
+PROF_FULL	dzīvnieku pārraugs
+PROF_FULL	dzīvnieku sistemātiķis
+PROF_FULL	dzīvnieku rezervāta uzraugs
+PROF_FULL	dzīvnieku vērtēšanas eksperts
+PROF_FULL	dzīvnieku ģenētiķis
+PROF_FULL	dzīvnieku ķērājs
+PROF_FULL	dzīvojamo māju apsaimniekošanas speciālists
+PROF_FULL	dzīvojamo īpašumu apsaimniekošanas speciālists
+PROF_FULL	dzīvokļu aģents
+PROF_FULL	dārzkopis
+PROF_FULL	dārznieks
+PROF_FULL	dāmu frizieris
+PROF_FULL	dāmu apģērbu drēbnieks
+PROF_FULL	dārgmetālu kalējs
+PROF_FULL	dārzeņu konservētājs
+PROF_FULL	dārzeņu audzēšanas lauksaimnieks
+PROF_FULL	dārzeņu audzēšanas laukstrādnieks
+PROF_FULL	dārzkopības komercdarbinieks
+PROF_FULL	dārzkopības speciālists
+PROF_FULL	dārzkopības tehniķis
+PROF_FULL	dārzniecības laukkopis
+PROF_FULL	dārzniecības strādnieks
+PROF_FULL	dāvanu noformētājs
+PROF_FULL	dīleris
+PROF_FULL	dīzeļdzinēju mehāniķis
+PROF_FULL	dīzeļlokomotīves vadītāja palīgs
+PROF_FULL	dīzeļlokomotīves vadītājs
+PROF_FULL	dīzeļlokomotīves vadītājs instruktors
+PROF_FULL	dīzeļu inženieris
+PROF_FULL	dīzeļu mehānikas inženieris
+PROF_FULL	dīzeļvilciena mašīnista palīgs
+PROF_FULL	dīzeļvilciena mašīnists instruktors
+PROF_FULL	dīzeļvilciena vadītājs
+PROF_FULL	dīzeļvilciena vadītāja palīgs
+PROF_FULL	dīzeļvilciena vadītājs instruktors
+PROF_FULL	dīzeļģeneratora operators
+PROF_FULL	ekologs
+PROF_FULL	ekonometrists
+PROF_FULL	ekonomists
+PROF_FULL	ekonoms
+PROF_FULL	ekspeditors
+PROF_FULL	eksperta palīgs
+PROF_FULL	eksperts
+PROF_FULL	ekstrasenss
+PROF_FULL	elektriķis
+PROF_FULL	elektroerozists
+PROF_FULL	emaljētājs
+PROF_FULL	embriologs
+PROF_FULL	endodontists
+PROF_FULL	enerģētiķis
+PROF_FULL	entomologa palīgs
+PROF_FULL	entomologs
+PROF_FULL	epidemiologs
+PROF_FULL	ergoterapeita asistents
+PROF_FULL	ergoterapeits
+PROF_FULL	esejists
+PROF_FULL	estētists
+PROF_FULL	etimologs
+PROF_FULL	etnologs
+PROF_FULL	evaņģēlists
+PROF_FULL	ekoloģijas botāniķis
+PROF_FULL	ekoloģijas tehniķis
+PROF_FULL	ekonometrijas ekonomists
+PROF_FULL	ekonomikas direktors
+PROF_FULL	ekonomikas statistiķis
+PROF_FULL	ekonomikas vēsturnieks
+PROF_FULL	ekonomģeogrāfs
+PROF_FULL	ekotūrisma pārvaldnieks
+PROF_FULL	ekotūrisma speciālists
+PROF_FULL	ekskavatora vadītājs
+PROF_FULL	ekskursiju gids
+PROF_FULL	ekskursiju organizators
+PROF_FULL	ekspedīcijas aģents
+PROF_FULL	ekspedīcijas pārzinis
+PROF_FULL	eksperimentālo procesu psihologs
+PROF_FULL	eksponātu uzraugs
+PROF_FULL	eksporta speciālists
+PROF_FULL	eksporta vadītājs
+PROF_FULL	ekspozīciju un izstāžu kurators
+PROF_FULL	elektrisko iekārtu speciālists
+PROF_FULL	elektrisko sistēmu inženieris
+PROF_FULL	elektriskās vilces tehniķis
+PROF_FULL	elektroatslēdznieks
+PROF_FULL	elektroinženieris
+PROF_FULL	elektromontieris
+PROF_FULL	elektropārklājējs
+PROF_FULL	elektrotehniķis
+PROF_FULL	elektroterapeits
+PROF_FULL	elektroapgaismes inženieris
+PROF_FULL	elektroapgaismes tehniķis
+PROF_FULL	elektroencefalogrāfijas operators
+PROF_FULL	elektroenerģijas pārvades elektroinženieris
+PROF_FULL	elektroenerģijas sadales elektroinženieris
+PROF_FULL	elektroiekārtas vecākais tehniķis
+PROF_FULL	elektroiekārtu montieris
+PROF_FULL	elektroiekārtu izolācijas sagatavotājs
+PROF_FULL	elektroietaišu ekspluatācijas inženieris
+PROF_FULL	elektrokardiogrāfijas operators
+PROF_FULL	elektrokrāvēja operators
+PROF_FULL	elektrokāra vadītājs
+PROF_FULL	elektrolīniju mehāniķis
+PROF_FULL	elektromagnetofiziķis
+PROF_FULL	elektromehānisko iekārtu mehāniķis
+PROF_FULL	elektromehānisko iekārtu elektroinženieris
+PROF_FULL	elektronavigācijas inženieris
+PROF_FULL	elektronikas fiziķis
+PROF_FULL	elektronikas inženieris
+PROF_FULL	elektronikas kalkulētājs
+PROF_FULL	elektronikas mehāniķis
+PROF_FULL	elektronikas montētājs
+PROF_FULL	elektronikas rasētājs
+PROF_FULL	elektronikas regulētājs
+PROF_FULL	elektronikas speciālists
+PROF_FULL	elektronikas tehniķis
+PROF_FULL	elektronikas tehnologs
+PROF_FULL	elektronikas kontrolmēraparātu tehniķis
+PROF_FULL	elektronisko iekārtu montieris
+PROF_FULL	elektronisko komunikāciju speciālists
+PROF_FULL	elektronisko sakaru struktūrvienības direktora vietnieks
+PROF_FULL	elektronisko sakaru struktūrvienības direktors
+PROF_FULL	elektronisko sakaru struktūrvienības vadītāja vietnieks
+PROF_FULL	elektronisko sakaru struktūrvienības vadītājs
+PROF_FULL	elektroniskā pasta operators
+PROF_FULL	elektroniskās komercijas speciālists
+PROF_FULL	elektroniskās komunikāciju vides izstrādātājs
+PROF_FULL	elektrosistēmas tehniķis
+PROF_FULL	elektrosistēmu rasētājs
+PROF_FULL	elektrosprieguma pārvades tehniķis
+PROF_FULL	elektrosprieguma sadales tehniķis
+PROF_FULL	elektrospēkstacijas operators
+PROF_FULL	elektrospēkstacijas komutatora operators
+PROF_FULL	elektrotehnisko iekārtu inženieris
+PROF_FULL	elektrotehnisko iekārtu elektroinženieris
+PROF_FULL	elektrotīklu dispečers
+PROF_FULL	elektrotīklu elektriķis
+PROF_FULL	elektrovilciena mašīnista palīgs
+PROF_FULL	elektrovilciena mašīnists instruktors
+PROF_FULL	elektrovilciena vadītājs
+PROF_FULL	elektrovilciena vadītāja palīgs
+PROF_FULL	elektrovilciena vadītājs instruktors
+PROF_FULL	elektrovilkmes elektroinženieris
+PROF_FULL	elektroģeneratora turbīnas operators
+PROF_FULL	elektrības kalkulētājs
+PROF_FULL	elevatora operators
+PROF_FULL	endokrinoloģijas fiziologs
+PROF_FULL	endoskopijas māsa
+PROF_FULL	endovazālais ķirurgs
+PROF_FULL	energodispečers
+PROF_FULL	energoauditors inženieris
+PROF_FULL	energosistēmas vadības pults operators
+PROF_FULL	energosistēmu inženieris
+PROF_FULL	energosistēmu tehniķis
+PROF_FULL	energotīklu dispečers
+PROF_FULL	energouzraudzības inspektors
+PROF_FULL	epidemioloģijas fiziologs
+PROF_FULL	erozijas mašīnas iekārtu operators
+PROF_FULL	eskalatora operators
+PROF_FULL	etiķešu līmēšanas operators
+PROF_FULL	eļļotājs
+PROF_FULL	eļļas spiedējs
+PROF_FULL	eļļošanas inženieris
+PROF_FULL	eļļošanas mehānismu mehāniķis
+PROF_FULL	farmaceita asistents
+PROF_FULL	farmaceita palīgs
+PROF_FULL	farmaceits
+PROF_FULL	farmakologs
+PROF_FULL	feļetonists
+PROF_FULL	filologs
+PROF_FULL	filozofs
+PROF_FULL	finansists
+PROF_FULL	fitoterapeits
+PROF_FULL	fiziologs
+PROF_FULL	fizioterapeita asistents
+PROF_FULL	fizioterapeits
+PROF_FULL	fiziķis
+PROF_FULL	flebologs
+PROF_FULL	florists
+PROF_FULL	flīzētājs
+PROF_FULL	foniatrs
+PROF_FULL	fonologs
+PROF_FULL	formētājs
+PROF_FULL	fotogrammetrists
+PROF_FULL	fotogrāfs
+PROF_FULL	frizieris
+PROF_FULL	frēzētājs
+PROF_FULL	ftiziopneimonologs
+PROF_FULL	faktūrkreditēšanas speciālists
+PROF_FULL	farmaceitiskās produkcijas ražošanas operators
+PROF_FULL	farmakoloģijas tehniķis
+PROF_FULL	farmācijas bakteriologs
+PROF_FULL	farmācijas tehnologs
+PROF_FULL	filiāles direktora vietnieks
+PROF_FULL	filiāles direktors
+PROF_FULL	filtrēšanas operators
+PROF_FULL	finanšu analītiķis
+PROF_FULL	finanšu darbinieks
+PROF_FULL	finanšu direktors
+PROF_FULL	finanšu ekonomists
+PROF_FULL	finanšu speciālists
+PROF_FULL	finanšu statistiķis
+PROF_FULL	finanšu ieguldījumu portfeļa vadītājs
+PROF_FULL	finanšu produktu attīstības projektu vadītājs
+PROF_FULL	finanšu risku vadītājs
+PROF_FULL	finanšu tirgus analītiķis
+PROF_FULL	finanšu un attīstības struktūrvienības direktors
+PROF_FULL	finanšu un attīstības struktūrvienības vadītājs
+PROF_FULL	finieru frēzēšanas operators
+PROF_FULL	finieru labošanas līnijas operators
+PROF_FULL	finieru lobīšanas operators
+PROF_FULL	finieru paku savākšanas līnijas operators
+PROF_FULL	finieru piegriešanas operators
+PROF_FULL	finieru saaudzēšanas operators
+PROF_FULL	fizikas tehniķis
+PROF_FULL	fizikālais terapeits
+PROF_FULL	fizikālo procesu metalurgs
+PROF_FULL	fizikālās medicīnas ārsts
+PROF_FULL	fizikālās terapijas māsa
+PROF_FULL	fizikālās un rehabilitācijas medicīnas māsa
+PROF_FULL	fizikālās un rehabilitācijas medicīnas ārsts
+PROF_FULL	fizioloģijas tehniķis
+PROF_FULL	fizioģeogrāfs
+PROF_FULL	fleksoiespiedējs
+PROF_FULL	floristikas speciālists
+PROF_FULL	flotiles admirālis
+PROF_FULL	folkloras kopas vadītājs
+PROF_FULL	fondu glabātājs
+PROF_FULL	fondu bibliotēkās
+PROF_FULL	foto dizaina speciālists
+PROF_FULL	foto un kino materiālu restaurators
+PROF_FULL	fotogrammetrijas inženieris
+PROF_FULL	fotogrāfiju iespiedmašīnas operators
+PROF_FULL	frizūru modelētājs
+PROF_FULL	ftiziopulmoloģijas māsa
+PROF_FULL	funkcionālās diagnostikas māsa
+PROF_FULL	furgona vadītājs
+PROF_FULL	galdnieka palīgs
+PROF_FULL	galdnieks
+PROF_FULL	gans
+PROF_FULL	garderobists
+PROF_FULL	garīdznieks
+PROF_FULL	gastroenterologs
+PROF_FULL	geriatrs
+PROF_FULL	ginekologs, dzemdību speciālists
+PROF_FULL	glaciologs
+PROF_FULL	gleznotājs
+PROF_FULL	glābējs
+PROF_FULL	glābējs motorists
+PROF_FULL	glābējs ūdenslīdējs
+PROF_FULL	gmdss i klases radioelektroniķis
+PROF_FULL	gmdss ii klases radioelektroniķis
+PROF_FULL	grafiķis
+PROF_FULL	grafologs
+PROF_FULL	gravieris
+PROF_FULL	grimētājs
+PROF_FULL	grāmatsējējs
+PROF_FULL	grāmatvedis
+PROF_FULL	grāmatveža palīgs
+PROF_FULL	guvernants
+PROF_FULL	gadījuma darbu strādnieks
+PROF_FULL	gaisa balona pilots
+PROF_FULL	gaisa balona instruktors
+PROF_FULL	gaisa kabeļu licējs
+PROF_FULL	gaisa kondicionēšanas inženieris
+PROF_FULL	gaisa kondicionēšanas iekārtu mehāniķis
+PROF_FULL	gaisa kondicionēšanas mehānikas inženieris
+PROF_FULL	gaisa kondicionēšanas mehānismu mehāniķis
+PROF_FULL	gaisa kuģa kapteinis
+PROF_FULL	gaisa kuģa mehāniķis
+PROF_FULL	gaisa kuģa pilots
+PROF_FULL	gaisa kuģa stjuarts
+PROF_FULL	gaisa kuģa stūrmanis
+PROF_FULL	gaisa kuģa instruktors
+PROF_FULL	gaisa kuģa komercpilots
+PROF_FULL	gaisa kuģu projektēšanas inženieris
+PROF_FULL	gaisa kuģu tehniskās apkopes mehāniķis
+PROF_FULL	gaisa kuģu tehniskās apkopes speciālists
+PROF_FULL	gaisa kuģu tehniskās apkopes avionikas inženieris
+PROF_FULL	gaisa kuģu tehniskās apkopes mehānikas inženieris
+PROF_FULL	gaisa kuģu tehniskās ekspluatācijas avionikas tehniķis
+PROF_FULL	gaisa kuģu tehniskās ekspluatācijas mehānikas tehniķis
+PROF_FULL	gaisa satiksmes dispečers
+PROF_FULL	gaisa satiksmes drošības tehniķis
+PROF_FULL	gaisa satiksmes kontroliekārtu operators
+PROF_FULL	gaisa satiksmes vadības dispečers
+PROF_FULL	gaismas fiziķis
+PROF_FULL	gaisvadu līniju elektromontieris
+PROF_FULL	galvenais arhīvists
+PROF_FULL	galvenais bocmanis
+PROF_FULL	galvenais diriģents
+PROF_FULL	galvenais ekonomists
+PROF_FULL	galvenais enerģētiķis
+PROF_FULL	galvenais grāmatvedis
+PROF_FULL	galvenais inspektors
+PROF_FULL	galvenais inspektors – sapieris
+PROF_FULL	galvenais inženieris
+PROF_FULL	galvenais kasieris
+PROF_FULL	galvenais kormeistars
+PROF_FULL	galvenais mākslinieks
+PROF_FULL	galvenais redaktors
+PROF_FULL	galvenais speciālists metodiķis
+PROF_FULL	galvenais speciālists starptautiskās sadarbības jautājumos
+PROF_FULL	galvenais virsseržants galvenais bocmanis
+PROF_FULL	galvenais dežūrinspektors
+PROF_FULL	galvenais krājuma glabātājs
+PROF_FULL	galvenais nodokļu inspektors
+PROF_FULL	galvenais saimniecības pārzinis
+PROF_FULL	galvenais transporta inspektors
+PROF_FULL	galvenais valsts inspektors
+PROF_FULL	galvenais valsts notārs
+PROF_FULL	galvenā grāmatveža vietnieks
+PROF_FULL	galvenā vecmāte
+PROF_FULL	galvenā medicīnas māsa
+PROF_FULL	galvenā valsts notāra vietnieks
+PROF_FULL	galvenās kases vadītājs
+PROF_FULL	garantijas pakalpojumu konsultants
+PROF_FULL	garīgās aprūpes dienesta vadītājs
+PROF_FULL	garīgās veselības aprūpes māsa
+PROF_FULL	gatavās produkcijas piegriešanas operators
+PROF_FULL	gatera mašīnists
+PROF_FULL	gazificēto krāšņu operators
+PROF_FULL	gaļas izcirtējs
+PROF_FULL	gaļas kulinārs
+PROF_FULL	gaļas kūpinātājs
+PROF_FULL	gaļas apstrādes iekārtu operators
+PROF_FULL	gaļas un ādu apstrādātājs
+PROF_FULL	ginekoloģijas māsa
+PROF_FULL	gliemežu audzētājs
+PROF_FULL	gludināšanas operators
+PROF_FULL	glābšanas darbu instruktors
+PROF_FULL	glābšanas darbu koordinācijas inspektors
+PROF_FULL	glābšanas dienesta ūdenslīdējs
+PROF_FULL	grafikas restaurators
+PROF_FULL	granulu ražošanas operators
+PROF_FULL	graudaugu audzēšanas lauksaimnieks
+PROF_FULL	graudaugu audzēšanas laukstrādnieks
+PROF_FULL	graudu apstrādes operators
+PROF_FULL	graudu kaltēšanas iekārtu operators
+PROF_FULL	greideru un skrēperu vadītājs
+PROF_FULL	griešanas operators
+PROF_FULL	grodošanas iekārtas operators
+PROF_FULL	grāmatu labotājs
+PROF_FULL	grāmatu tirdzniecības aģents
+PROF_FULL	grāmatvedības eksperts
+PROF_FULL	grāmatvedības uzskaitvedis
+PROF_FULL	grāmatvedības struktūrvienības direktors
+PROF_FULL	grāmatvedības struktūrvienības vadītājs
+PROF_FULL	grātēšanas iekārtas operators
+PROF_FULL	grīdas klājējs
+PROF_FULL	gudronatora vadītājs
+PROF_FULL	gumijas tehnologs
+PROF_FULL	gumijas apstrādes operators
+PROF_FULL	gumijas izstrādājumu komplektētājs
+PROF_FULL	gumijas izstrādājumu vulkanizācijas operators
+PROF_FULL	gumijas karstās presēšanas operators
+PROF_FULL	gumijas ražošanas operators
+PROF_FULL	gumijas veidošanas operators
+PROF_FULL	guļbūves ēku celtnieks
+PROF_FULL	gāzmetinātājs
+PROF_FULL	gāzes operators
+PROF_FULL	gāzes iekārtu remontatslēdznieks
+PROF_FULL	gāzes iekārtu tehniķis
+PROF_FULL	gāzes kontrolierīču operators
+PROF_FULL	gāzes plazmas griezējs
+PROF_FULL	gāzes pārsūknēšanas operators
+PROF_FULL	gāzes turbīnu inženieris
+PROF_FULL	gāzes turbīnu mehāniķis
+PROF_FULL	gāzes turbīnu mehānikas inženieris
+PROF_FULL	hematologs
+PROF_FULL	hepatologs
+PROF_FULL	hidrodinamiķis
+PROF_FULL	hidrogrāfs
+PROF_FULL	hidrologs
+PROF_FULL	higiēnists
+PROF_FULL	hipnotizētājs
+PROF_FULL	hipologs
+PROF_FULL	hiromants
+PROF_FULL	histologs
+PROF_FULL	homeopāts
+PROF_FULL	horeogrāfs
+PROF_FULL	helikoptera pilots
+PROF_FULL	helikoptera instruktors
+PROF_FULL	helikoptera jaunākais pilots
+PROF_FULL	helikoptera komercpilots
+PROF_FULL	hematoloģijas tehniķis
+PROF_FULL	hemodialīzes un nieru transplantācijas māsa
+PROF_FULL	hidraulikas inženieris
+PROF_FULL	hidro un siltumizolētājs
+PROF_FULL	hidroakustiķis
+PROF_FULL	hidrobiologs
+PROF_FULL	hidrometeorologs
+PROF_FULL	hidroelektrospēkstacijas operators
+PROF_FULL	hidrogrāfijas inženieris
+PROF_FULL	hidrogrāfijas tehniķis
+PROF_FULL	hidrokrāvēja mašīnists
+PROF_FULL	hidroloģijas inženieris
+PROF_FULL	hidroloģijas tehniķis
+PROF_FULL	hidroloģijas būvinženieris
+PROF_FULL	hidroloģijas būvtehniķis
+PROF_FULL	hidroplāna pilots
+PROF_FULL	hidrotehnikas būvtehniķis
+PROF_FULL	hidrotehnisko būvju būvinženieris
+PROF_FULL	hidroģeologs
+PROF_FULL	higiēnas dezinfektors
+PROF_FULL	higiēnas ārsta palīgs
+PROF_FULL	higiēnas ārsts
+PROF_FULL	hipnoterapeits
+PROF_FULL	histopatologs
+PROF_FULL	histoloģijas botāniķis
+PROF_FULL	histoloģijas tehniķis
+PROF_FULL	hospitālās infekcijas kontroles ārsts
+PROF_FULL	iesaiņotājs
+PROF_FULL	iespiedējs
+PROF_FULL	iestatītājs
+PROF_FULL	iezārkotājs
+PROF_FULL	ihtiologs
+PROF_FULL	ilustrators
+PROF_FULL	iluzionists
+PROF_FULL	imams
+PROF_FULL	imitētājs
+PROF_FULL	impresārijs
+PROF_FULL	imunologs
+PROF_FULL	infektologs
+PROF_FULL	informātiķis
+PROF_FULL	informētājs
+PROF_FULL	inkasents
+PROF_FULL	inspektora palīgs
+PROF_FULL	inspektors
+PROF_FULL	inspektors – kriminālists
+PROF_FULL	inspektors – sapieris
+PROF_FULL	inspektors – snaiperis
+PROF_FULL	inspektors – dežurants
+PROF_FULL	inspektors – kinologs
+PROF_FULL	instalators
+PROF_FULL	instruktors
+PROF_FULL	interjerists
+PROF_FULL	internists
+PROF_FULL	intervētājs
+PROF_FULL	inventarizators
+PROF_FULL	inženierinspektors
+PROF_FULL	inženierkontrolieris
+PROF_FULL	istabenis
+PROF_FULL	izmeklētājs
+PROF_FULL	izmēģinātājs
+PROF_FULL	izolētājs
+PROF_FULL	izpilddirektora vietnieks
+PROF_FULL	izpilddirektors
+PROF_FULL	izsolītājs
+PROF_FULL	izvirpotājs
+PROF_FULL	izšuvējs
+PROF_FULL	iecirkņa inspektors
+PROF_FULL	iecirkņa māsa
+PROF_FULL	iecirkņa priekšnieka vietnieks
+PROF_FULL	iecirkņa priekšnieks
+PROF_FULL	iedzīvotāju reģistrēšanas speciālists
+PROF_FULL	ieguves metalurgs
+PROF_FULL	ieguves tehnologs
+PROF_FULL	ieguves rūpniecības uzraugs
+PROF_FULL	iekraušanas iekārtas apkalpotājs
+PROF_FULL	iekārtu ekspluatācijas inženieris
+PROF_FULL	iekšdedzes dzinēju inženieris
+PROF_FULL	iekšdedzes dzinēju mehāniķis
+PROF_FULL	iekšējais auditors
+PROF_FULL	iekšējo iekārtu būvtehniķis
+PROF_FULL	iekšējo ūdeņu kuģa matrozis
+PROF_FULL	iekšējo ūdeņu kuģa stūrmanis
+PROF_FULL	iekšējo ūdeņu un piekrastes zvejnieks
+PROF_FULL	iekšējo ūdeņu un piekrastes zvejniecības strādnieks
+PROF_FULL	iekšējā audita struktūrvienības direktors
+PROF_FULL	iekšējā audita struktūrvienības vadītājs
+PROF_FULL	iekšējās kontroles galvenais inspektors
+PROF_FULL	iekšējās kontroles galvenais speciālists
+PROF_FULL	ielidošanas servisa aģents
+PROF_FULL	ielu slaucītājs
+PROF_FULL	ielu kaisīšanas automobiļa vadītājs
+PROF_FULL	ielu laistīšanas automobiļa vadītājs
+PROF_FULL	iepirkumu aģents
+PROF_FULL	iepirkumu speciālists
+PROF_FULL	iepirkumu struktūrvienības direktora vietnieks
+PROF_FULL	iepirkumu struktūrvienības direktors
+PROF_FULL	iepirkumu struktūrvienības vadītāja vietnieks
+PROF_FULL	iepirkumu struktūrvienības vadītājs
+PROF_FULL	ierakstīšanas iekārtas operators
+PROF_FULL	ieroču atslēdznieks
+PROF_FULL	ieroču tehniķis
+PROF_FULL	ierīču un instrumentu rasētājs
+PROF_FULL	iesaiņojuma dizaina speciālists
+PROF_FULL	iesaiņošanas tehnologs
+PROF_FULL	iesiešanas iekārtas operators
+PROF_FULL	ieskaņošanas iekārtas operators
+PROF_FULL	ieslodzījuma vietas apsargs
+PROF_FULL	ieslodzījuma vietas inspektors
+PROF_FULL	ieslodzījuma vietas inženieris
+PROF_FULL	ieslodzījuma vietas priekšnieka dežurējošais palīgs
+PROF_FULL	ieslodzījuma vietas uzraugs
+PROF_FULL	ieslodzījuma vietas jaunākais inspektors
+PROF_FULL	ieslodzījuma vietas vecākais apsargs
+PROF_FULL	ieslodzījuma vietas vecākais inspektors
+PROF_FULL	ieslodzījuma vietas vecākais uzraugs
+PROF_FULL	ieslodzījuma vietu pārvaldes centrālā aparāta jaunākais inspektors
+PROF_FULL	iespieddarbu maketētājs
+PROF_FULL	iespieddarbu salicējs
+PROF_FULL	iespieddarbu digitālā noformējuma speciālists
+PROF_FULL	iespieddarbu pēcapstrādes strādnieks
+PROF_FULL	iespiedformu izgatavotājs
+PROF_FULL	iespiedmašīnas operators
+PROF_FULL	iespiedprodukcijas pēcapstrādātājs
+PROF_FULL	iespiešanas tehnologs
+PROF_FULL	iestādes direktors
+PROF_FULL	iestādes priekšnieks
+PROF_FULL	iestādes priekšsēdētājs
+PROF_FULL	iestādes vadītāja palīgs
+PROF_FULL	iestādes vadītājs
+PROF_FULL	iestādes ģenerāldirektors
+PROF_FULL	iežguves inženieris
+PROF_FULL	iežguves ģeodēzists
+PROF_FULL	imigrācijas inspektors
+PROF_FULL	impregnēšanas iekārtas operators
+PROF_FULL	industriālais alpīnists
+PROF_FULL	industriālās apbūves speciālists
+PROF_FULL	infektoloģijas māsa
+PROF_FULL	informatīvo sistēmu projektētājs
+PROF_FULL	informācijas it pakalpojumu vadītājs
+PROF_FULL	informācijas it pakalpojumu pārvaldības procesu konsultants
+PROF_FULL	informācijas it pakalpojumu pārvaldības procesu vadītājs
+PROF_FULL	informācijas kodētājs
+PROF_FULL	informācijas korektors
+PROF_FULL	informācijas drošības vadītājs
+PROF_FULL	informācijas elektronikas inženieris
+PROF_FULL	informācijas ievadīšanas operators
+PROF_FULL	informācijas sistēminženieris
+PROF_FULL	informācijas sistēmas drošības speciālists
+PROF_FULL	informācijas sistēmu administrators
+PROF_FULL	informācijas sistēmu auditors
+PROF_FULL	informācijas sistēmu testētājs
+PROF_FULL	informācijas sistēmu uzturētājs
+PROF_FULL	informācijas sistēmu drošības administrators
+PROF_FULL	informācijas sistēmu drošības kontrolieris
+PROF_FULL	informācijas sistēmu kvalitātes kontrolieris
+PROF_FULL	informācijas tehnoloģijas projektu vadītājs
+PROF_FULL	informācijas tehnoloģiju administrators
+PROF_FULL	informācijas tehnoloģiju pakalpojumu vadītājs
+PROF_FULL	informācijas tehnoloģiju pakalpojumu pārvaldības procesu konsultants
+PROF_FULL	informācijas tehnoloģiju pakalpojumu pārvaldības procesu vadītājs
+PROF_FULL	informācijas tehnoloģiju struktūrvienības direktora vietnieks
+PROF_FULL	informācijas tehnoloģiju struktūrvienības direktors
+PROF_FULL	informācijas tehnoloģiju struktūrvienības vadītāja vietnieks
+PROF_FULL	informācijas tehnoloģiju struktūrvienības vadītājs
+PROF_FULL	informācijas tīkla pārzinis
+PROF_FULL	informācijas vadības speciālists
+PROF_FULL	informātikas elektronikas tehniķis
+PROF_FULL	inkasācijas dispečers
+PROF_FULL	inkasācijas dienesta vadītāja vietnieks
+PROF_FULL	inkasācijas dienesta vadītājs
+PROF_FULL	inkubatora operators
+PROF_FULL	instrumentu asinātājs
+PROF_FULL	instrumentu atslēdznieks
+PROF_FULL	instrumentu mehāniķis
+PROF_FULL	instrumentu meistars
+PROF_FULL	instrumentu mūziķis
+PROF_FULL	instrumentu mehānikas inženieris
+PROF_FULL	intensīvās terapijas un anestēzijas māsa
+PROF_FULL	intensīvās terapijas ārsts
+PROF_FULL	interešu izglītības skolotājs
+PROF_FULL	interešu pulciņa audzinātājs
+PROF_FULL	interešu pulciņa vadītājs
+PROF_FULL	interjera dizainers
+PROF_FULL	interjera noformētājs
+PROF_FULL	interjera dizaina speciālists
+PROF_FULL	interjera un reklāmas dizaina speciālists
+PROF_FULL	interneta bankas administrators
+PROF_FULL	interneta portāla redaktors
+PROF_FULL	internās aprūpes māsa
+PROF_FULL	internāta, dienesta viesnīcas skolotājs
+PROF_FULL	investīciju starpnieks
+PROF_FULL	inženierkomunikāciju piesaistes inženieris
+PROF_FULL	inženierkomunikāciju piesaistes galvenais speciālists
+PROF_FULL	inženiertehnisko būvju brigadieris
+PROF_FULL	inženiertehnisko būvju remonta strādnieks
+PROF_FULL	inženierķīmijas tehniķis
+PROF_FULL	izejvielu sagatavotājs
+PROF_FULL	izglītojošā darba un darba ar apmeklētājiem vadītājs
+PROF_FULL	izglītības metodiķis
+PROF_FULL	izglītības psihologs
+PROF_FULL	izglītības sociologs
+PROF_FULL	izglītības statistiķis
+PROF_FULL	izglītības darba speciālists
+PROF_FULL	izglītības iestādes bibliotekārs
+PROF_FULL	izglītības iestādes muzeju pedagogs
+PROF_FULL	izglītības valsts inspektors
+PROF_FULL	izgāztuves dežurants
+PROF_FULL	izmaksu tehniķis
+PROF_FULL	izpārdošanas pārstāvis
+PROF_FULL	izrādes direktors
+PROF_FULL	izrādes režisors
+PROF_FULL	izstrādājumu marķētājs
+PROF_FULL	izstrādājumu projektētājs
+PROF_FULL	izstādes dekorētājs
+PROF_FULL	izziņu sniedzējs
+PROF_FULL	izšūšanas operators
+PROF_FULL	izšūšanas iekārtu operators
+PROF_FULL	jumiķis
+PROF_FULL	juriskonsults
+PROF_FULL	jurista palīgs
+PROF_FULL	jurists
+PROF_FULL	jurists lingvists
+PROF_FULL	juvelieris
+PROF_FULL	jaunatnes lietu speciālists
+PROF_FULL	jaunlopu kopējs
+PROF_FULL	jaunākais eksperts
+PROF_FULL	jaunākais inspektors
+PROF_FULL	jaunākais inspektors – kinologs
+PROF_FULL	jaunākais inspektors – sapieris
+PROF_FULL	jaunākais izmeklētājs
+PROF_FULL	jaunākais kontrolieris
+PROF_FULL	jaunākais kārtībnieks
+PROF_FULL	jaunākais referents
+PROF_FULL	jaunākais muitas eksperts
+PROF_FULL	jaunākais muitas uzraugs
+PROF_FULL	jaunākais pašvaldībās
+PROF_FULL	jogas meistars
+PROF_FULL	jogas speciālists
+PROF_FULL	jogas terapeits
+PROF_FULL	jumtu skārdnieks
+PROF_FULL	juridiskā dienesta direktors
+PROF_FULL	juridiskā dienesta vadītājs
+PROF_FULL	juridiskās struktūrvienības direktora vietnieks
+PROF_FULL	juridiskās struktūrvienības direktors
+PROF_FULL	juridiskās struktūrvienības vadītāja vietnieks
+PROF_FULL	juridiskās struktūrvienības vadītājs
+PROF_FULL	juveliermākslinieks
+PROF_FULL	juvelierizstrādājumu gravieris
+PROF_FULL	juvelierizstrādājumu dizaina speciālists
+PROF_FULL	jēlādas apstrādes operators
+PROF_FULL	jūras biologs
+PROF_FULL	jūras kapteinis
+PROF_FULL	jūras mehānismu mehāniķis
+PROF_FULL	jūras negadījumu izmeklētājs
+PROF_FULL	jūras negadījumu vecākais izmeklētājs
+PROF_FULL	jūras radioiekārtas operators
+PROF_FULL	jūras ģeodēzijas inženieris
+PROF_FULL	jūras, tāljūras zvejnieks
+PROF_FULL	jūrnieku kompetences atbilstības pārraugs
+PROF_FULL	jūrnieku kompetences atbilstības vērtētājs
+PROF_FULL	jūrnieku kvalifikācijas vērtētājs
+PROF_FULL	jūrnieku praktiskās apmācības pasniedzējs
+PROF_FULL	jūrnieku praktiskās apmācības instruktors
+PROF_FULL	jūrnieku profesionālās apmācības pedagogs
+PROF_FULL	jūrnieku profesionālās apmācības instruktors
+PROF_FULL	kalējs
+PROF_FULL	kapelāns
+PROF_FULL	kapracis
+PROF_FULL	kaprālis
+PROF_FULL	kapteinis
+PROF_FULL	kapteinis uz iekšējo ūdeņu kuģiem, mazākiem par 3000 bt
+PROF_FULL	kapteinis uz iekšējo ūdeņu kuģiem, mazākiem par 500 bt
+PROF_FULL	kapteinis uz kuģiem ar 3000 bt un lielākiem
+PROF_FULL	kapteinis uz kuģiem, mazākiem par 200 bt
+PROF_FULL	kapteinis uz kuģiem, mazākiem par 3000 bt
+PROF_FULL	kapteinis uz kuģiem, mazākiem par 500 bt
+PROF_FULL	kapteinis uz zvejas kuģiem, īsākiem par 45 m, ierobežotā zvejas rajonā
+PROF_FULL	kapteinis uz zvejas kuģiem, īsākiem par 45 m, neierobežotā zvejas rajonā
+PROF_FULL	kapteiņleitnants
+PROF_FULL	kardināls
+PROF_FULL	kardiologs
+PROF_FULL	kareivis
+PROF_FULL	karikatūrists
+PROF_FULL	kartogrāfs
+PROF_FULL	kasieris
+PROF_FULL	kasieris operators
+PROF_FULL	keramiķis
+PROF_FULL	kinezoterapeits
+PROF_FULL	kinologs
+PROF_FULL	klauns
+PROF_FULL	klimatologs
+PROF_FULL	kniedētājs
+PROF_FULL	knipelētājs
+PROF_FULL	kokkopis
+PROF_FULL	kolorists
+PROF_FULL	kolportieris
+PROF_FULL	komandiera palīgs
+PROF_FULL	komandkapteinis
+PROF_FULL	komandleitnants
+PROF_FULL	kombustiologs
+PROF_FULL	komentētājs
+PROF_FULL	komercdirektors
+PROF_FULL	komivojažieris
+PROF_FULL	komiķis
+PROF_FULL	komplektētājs
+PROF_FULL	komponists
+PROF_FULL	koncertmeistars
+PROF_FULL	konditora palīgs
+PROF_FULL	konditors
+PROF_FULL	konferansjē
+PROF_FULL	konstruktors
+PROF_FULL	konsuls
+PROF_FULL	konsultants
+PROF_FULL	konsultants iepirkumu speciālists
+PROF_FULL	kontradmirālis
+PROF_FULL	kontrolieris
+PROF_FULL	kopētājs
+PROF_FULL	korektors
+PROF_FULL	korespondents
+PROF_FULL	kormeistars
+PROF_FULL	kosmetologs
+PROF_FULL	kosmētiķis
+PROF_FULL	kriminologs
+PROF_FULL	kristalogrāfs
+PROF_FULL	kritiķis
+PROF_FULL	krupjē
+PROF_FULL	krāsotājs
+PROF_FULL	krāvējs
+PROF_FULL	kurjers
+PROF_FULL	kurpnieka palīgs
+PROF_FULL	kurpnieks
+PROF_FULL	kučieris
+PROF_FULL	kabeļu līniju elektromontieris
+PROF_FULL	kabeļu ražošanas operators
+PROF_FULL	kabeļu trašu uzraugs
+PROF_FULL	kadastra inženieris
+PROF_FULL	kafejnīcas direktora vietnieks
+PROF_FULL	kafejnīcas direktors
+PROF_FULL	kafejnīcas pārvaldnieks
+PROF_FULL	kafejnīcas vadītāja vietnieks
+PROF_FULL	kafejnīcas vadītājs
+PROF_FULL	kalkulatoru operators
+PROF_FULL	kamīnu licējs
+PROF_FULL	kancelejas direktora vietnieks
+PROF_FULL	kancelejas direktors
+PROF_FULL	kancelejas pārvaldnieka vietnieks
+PROF_FULL	kancelejas pārvaldnieks
+PROF_FULL	kancelejas vadītāja vietnieks
+PROF_FULL	kancelejas vadītājs
+PROF_FULL	kancelejas pārzinis
+PROF_FULL	kapitāldaļu turētāja pārstāvis
+PROF_FULL	kapsētas pārzinis
+PROF_FULL	kapsētas pārziņa palīgs
+PROF_FULL	kapu akmens plākšņu izgatavotājs
+PROF_FULL	kara medicīnas ārsts
+PROF_FULL	karitatīvais sociālais darbinieks
+PROF_FULL	karjera strādnieks
+PROF_FULL	karjera uzraugs
+PROF_FULL	karjera ražošanas līnijas operators
+PROF_FULL	karjeras konsultants
+PROF_FULL	karstā metāla novācējs
+PROF_FULL	karstās apstrādes krāsns operators
+PROF_FULL	karsēšanas iekārtas operators
+PROF_FULL	kartogrāfijas inženieris
+PROF_FULL	kartogrāfijas rasētājs
+PROF_FULL	kartona izstrādājumu komplektētājs
+PROF_FULL	kartona izstrādājumu ražošanas operators
+PROF_FULL	kartupeļu audzēšanas lauksaimnieks
+PROF_FULL	kartupeļu audzēšanas laukstrādnieks
+PROF_FULL	kases vadītājs
+PROF_FULL	kases kontu operators
+PROF_FULL	katastrofu medicīnas ārsts
+PROF_FULL	katedras vadītājs
+PROF_FULL	katlu mašīnists
+PROF_FULL	katlu uzraudzības inspektors
+PROF_FULL	katoļu priesteris
+PROF_FULL	kausu oderētājs
+PROF_FULL	kausēšanas operators
+PROF_FULL	kaļķakmens smalcinātāja operators
+PROF_FULL	kažokādu drēbnieks
+PROF_FULL	kažokādu izstrādātājs
+PROF_FULL	kažokādu krāsotājs
+PROF_FULL	kažokādu mājdzīvnieku audzēšanas lauksaimnieks
+PROF_FULL	keramikas glazētājs
+PROF_FULL	keramikas tehnologs
+PROF_FULL	keramikas dizaina speciālists
+PROF_FULL	keramikas izstrādājumu dizaina speciālists
+PROF_FULL	keramikas, stikla izstrādājumu restaurators
+PROF_FULL	kinomehāniķis
+PROF_FULL	kinooperatora asistents
+PROF_FULL	kinooperators
+PROF_FULL	kinoprojicētājs
+PROF_FULL	kinofilmas direktors
+PROF_FULL	kinofilmas režisors
+PROF_FULL	kinofilmu mākslinieks
+PROF_FULL	kinofilmu skaņu redaktors
+PROF_FULL	kioska pārdevējs
+PROF_FULL	klasiskās matemātikas matemātiķis
+PROF_FULL	klavieru būvētājs
+PROF_FULL	klavieru restaurētājs
+PROF_FULL	klientu konsultants
+PROF_FULL	klientu vadītājs
+PROF_FULL	klientu apkalpošanas operators
+PROF_FULL	klientu apkalpošanas pārzinis
+PROF_FULL	klientu apkalpošanas speciālists
+PROF_FULL	klientu apkalpošanas vadītājs
+PROF_FULL	klientu apkalpošanas struktūrvienības vadītāja vietnieks
+PROF_FULL	klientu apkalpošanas struktūrvienības vadītājs
+PROF_FULL	klientu privātbaņķieris
+PROF_FULL	klientu pārdošanas konsultants
+PROF_FULL	klientu un pacientu reģistrators
+PROF_FULL	kluba saimnieks
+PROF_FULL	klīniskais farmaceits
+PROF_FULL	klīniskais fiziologs
+PROF_FULL	klīniskais psihologs
+PROF_FULL	klīnisko pētījumu speciālists
+PROF_FULL	klīnisko pētījumu vadītājs
+PROF_FULL	kniedēšanas operators
+PROF_FULL	kodināšanas operators
+PROF_FULL	kodolfiziķis
+PROF_FULL	kodolenerģētikas mehānikas inženieris
+PROF_FULL	kokgriezējs
+PROF_FULL	koktēlnieks
+PROF_FULL	koka inkrustators
+PROF_FULL	koka slīpētājs
+PROF_FULL	koka urbējs
+PROF_FULL	koka virpotājs
+PROF_FULL	koka zāģētājs
+PROF_FULL	koka apavu kurpnieks
+PROF_FULL	koka būvju restaurators
+PROF_FULL	koka dabisko formu izstrādājumu izgatavotājs
+PROF_FULL	koka izstrādājumu komplektētājs
+PROF_FULL	koka izstrādājumu krāsotājs lakotājs
+PROF_FULL	koka izstrādājumu pulētājs
+PROF_FULL	koka izstrādājumu dizaina speciālists
+PROF_FULL	koka izstrādājumu ražošanas tehniķis
+PROF_FULL	koka kuģu būvētājs
+PROF_FULL	koka modeļu izgatavotājs
+PROF_FULL	koka māksliniecisko izstrādājumu izgatavotājs
+PROF_FULL	koka mēbeļu komplektētājs
+PROF_FULL	koka pūšamo instrumentu tehniķis
+PROF_FULL	koka rotaļlietu izgatavotājs
+PROF_FULL	koka ēku celtnieks
+PROF_FULL	kokapstrādes inženieris
+PROF_FULL	kokapstrādes operators
+PROF_FULL	kokapstrādes tehnologs
+PROF_FULL	kokapstrādes darbgaldu iestatītājs
+PROF_FULL	kokapstrādes iekārtu mehāniķis
+PROF_FULL	kokapstrādes pusautomātisko iekārtu operators
+PROF_FULL	kokaudzētavas saimnieks
+PROF_FULL	kokaudzēšanas tehniķis
+PROF_FULL	kokmateriālu marķētājs
+PROF_FULL	koksnes impregnētājs
+PROF_FULL	koksnes apdares iekārtas operators
+PROF_FULL	koksnes apstrādes virpas operators
+PROF_FULL	koksnes drupināšanas iekārtas operators
+PROF_FULL	koksnes kodināšanas iekārtas operators
+PROF_FULL	koksnes liekšanas iekārtas operators
+PROF_FULL	koksnes materiālu dizaina speciālists
+PROF_FULL	koksnes slīpēšanas līnijas operators
+PROF_FULL	koksnes zāģēšanas mašīnu operators
+PROF_FULL	koksnes šķirotājs
+PROF_FULL	koksnes žāvēšanas iekārtas operators
+PROF_FULL	koku aizzīmētājs
+PROF_FULL	koku atzarotājs
+PROF_FULL	koku krāvējs
+PROF_FULL	koku pludinātājs
+PROF_FULL	koku vedējs
+PROF_FULL	kokvedēja automobiļa vadītājs
+PROF_FULL	kokzāģētavas operators
+PROF_FULL	koledžas direktora palīgs
+PROF_FULL	koledžas direktora vietnieks
+PROF_FULL	koledžas direktors
+PROF_FULL	koledžas kadets
+PROF_FULL	koledžas katedras vadītājs
+PROF_FULL	kolēģijas loceklis
+PROF_FULL	kombaina vadītājs
+PROF_FULL	komercdarbības konsultants
+PROF_FULL	komercdarbības speciālists
+PROF_FULL	komercdarījumu darbinieks
+PROF_FULL	komercpakalpojumu darbinieks
+PROF_FULL	komisijas loceklis
+PROF_FULL	komisijas priekšsēdētāja vietnieks
+PROF_FULL	komisijas priekšsēdētājs
+PROF_FULL	komisijas sekretārs
+PROF_FULL	komisijas vadītājs
+PROF_FULL	komitejas sekretārs
+PROF_FULL	komitejas izpildsekretārs
+PROF_FULL	komplektēšanas kontrolieris
+PROF_FULL	kompozīto ražojumu montieris
+PROF_FULL	kompresora operators
+PROF_FULL	komunikāciju programmētājs
+PROF_FULL	komunikāciju izņemot skaitļotāju analītiķis
+PROF_FULL	komunālinženieris
+PROF_FULL	konfekšu ražotājs
+PROF_FULL	konferenču un pasākumu organizators
+PROF_FULL	konstrukciju tīrītājs
+PROF_FULL	konstrukciju būvinženieris
+PROF_FULL	konstrukciju būvtehniķis
+PROF_FULL	konsultāciju struktūrvienības direktora vietnieks
+PROF_FULL	konsultāciju struktūrvienības direktors
+PROF_FULL	konsultāciju struktūrvienības vadītāja vietnieks
+PROF_FULL	konsultāciju struktūrvienības vadītājs
+PROF_FULL	kontaktmetinātājs
+PROF_FULL	kontakttīklu elektromontieris
+PROF_FULL	konteineru pildīšanas iekārtas operators
+PROF_FULL	kontrolkasieris
+PROF_FULL	kontroles aparātu un mēriekārtu mehāniķis
+PROF_FULL	kontroles mēraparātu un automātikas elektroatslēdznieks
+PROF_FULL	kontu administrators
+PROF_FULL	kontu operators
+PROF_FULL	kopienas sociālais darbinieks
+PROF_FULL	kopēšanas mašīnu operators
+PROF_FULL	kopēšanas tehnikas mehāniķis
+PROF_FULL	kora diriģents
+PROF_FULL	kora mākslinieks
+PROF_FULL	korespondentattiecību administrators
+PROF_FULL	korespondentattiecību struktūrvienības vadītāja vietnieks
+PROF_FULL	korespondentattiecību struktūrvienības vadītājs
+PROF_FULL	kosmosa komunikāciju inženieris
+PROF_FULL	kosmētisko līdzekļu ķīmiķis
+PROF_FULL	kostīmu meistars
+PROF_FULL	kraušanas darbu vadītājs
+PROF_FULL	kraušanas darbu stividors
+PROF_FULL	kravas inspektors
+PROF_FULL	kravas noformētājs
+PROF_FULL	kravas pieņēmējs nosūtītājs
+PROF_FULL	kravas automobiļa vadītājs
+PROF_FULL	kravas pārkraušanas darbu organizators ostā
+PROF_FULL	kravas vilcienu konduktors
+PROF_FULL	kreditēšanas struktūrvienības vadītājs direktors
+PROF_FULL	kredītiestāžu uzraudzības analītiķis
+PROF_FULL	kredītiestāžu uzraudzības eksperts
+PROF_FULL	kredītportfeļa administrators
+PROF_FULL	kredītprojektu vadītājs
+PROF_FULL	kredītu analītiķis
+PROF_FULL	kredītu inspektors
+PROF_FULL	kredītu piedziņas speciālists
+PROF_FULL	kredītu reģistra eksperts
+PROF_FULL	kriminosociologs
+PROF_FULL	krimināllietu tehniķis
+PROF_FULL	kristalogrāfijas ķīmiķis
+PROF_FULL	krājuma glabātājs
+PROF_FULL	krāsošanas operators
+PROF_FULL	krāsošanas ķīmiķis
+PROF_FULL	krāsu tehnologs
+PROF_FULL	krāsvielu ķīmiķis
+PROF_FULL	krāšņu podnieks
+PROF_FULL	krūmu kultūru audzēšanas lauksaimnieks
+PROF_FULL	krūmu kultūru audzēšanas laukstrādnieks
+PROF_FULL	kultūras metodiķis
+PROF_FULL	kultūras vadītājs
+PROF_FULL	kultūras pasākumu organizators
+PROF_FULL	kultūras pasākumu vadītājs
+PROF_FULL	kultūras pasākumu tehniskais režisors
+PROF_FULL	kultūras tūrisma gids
+PROF_FULL	kultūras tūrisma organizators
+PROF_FULL	kungu frizieris
+PROF_FULL	kungu apģērbu drēbnieks
+PROF_FULL	kurināmā sagādes un sadales dispečers
+PROF_FULL	kustību režisors
+PROF_FULL	kutera kapteinis
+PROF_FULL	kutera elektromehāniķis
+PROF_FULL	kuģa atslēdznieks
+PROF_FULL	kuģa bocmanis
+PROF_FULL	kuģa elektriķis
+PROF_FULL	kuģa kapteinis
+PROF_FULL	kuģa matrozis
+PROF_FULL	kuģa motorists
+PROF_FULL	kuģa pavārs
+PROF_FULL	kuģa radists
+PROF_FULL	kuģa signalizētājs
+PROF_FULL	kuģa stjuarts
+PROF_FULL	kuģa stūresvīrs
+PROF_FULL	kuģa stūrmanis
+PROF_FULL	kuģa tehniķis
+PROF_FULL	kuģa vadītājs uz kuģiem līdz 500 bt piekrastes kuģošanā
+PROF_FULL	kuģa armatūras remontatslēdznieks
+PROF_FULL	kuģa celtņa operators
+PROF_FULL	kuģa elektromehāniķis
+PROF_FULL	kuģa galvenais elektromehāniķis
+PROF_FULL	kuģa klāja virsnieks
+PROF_FULL	kuģa radiooperators
+PROF_FULL	kuģa saldēšanas iekārtu mehāniķis
+PROF_FULL	kuģa sūkņu mašīnists
+PROF_FULL	kuģa vecākais stjuarts
+PROF_FULL	kuģa ārsts
+PROF_FULL	kuģošanas drošības inspektors
+PROF_FULL	kuģu aģents
+PROF_FULL	kuģu instruktors
+PROF_FULL	kuģu pārvaldnieks
+PROF_FULL	kuģu takelētājs
+PROF_FULL	kuģu tauvotājs
+PROF_FULL	kuģu būves inženieris
+PROF_FULL	kuģu būves mehāniķis
+PROF_FULL	kuģu cauruļu atslēdznieks
+PROF_FULL	kuģu dizaina inženieris
+PROF_FULL	kuģu elektroautomātikas inženieris
+PROF_FULL	kuģu katlu un krāšņu mūrnieks
+PROF_FULL	kuģu mehānikas inženieris
+PROF_FULL	kuģu motoru mehāniķis
+PROF_FULL	kuģu remontatslēdznieks
+PROF_FULL	kuģu satiksmes operators
+PROF_FULL	kuģu tehnikas rasētājs
+PROF_FULL	kuģu vadīšanas inženieris
+PROF_FULL	kuģubūves atslēdznieks
+PROF_FULL	kvalitātes inženieris
+PROF_FULL	kvalitātes konsultants
+PROF_FULL	kvalitātes vadītājs
+PROF_FULL	kvalitātes tehniķis
+PROF_FULL	kvalitātes un risku vadības struktūrvienības direktora vietnieks
+PROF_FULL	kvalitātes un risku vadības struktūrvienības direktors
+PROF_FULL	kvalitātes un risku vadības struktūrvienības vadītāja vietnieks
+PROF_FULL	kvalitātes un risku vadības struktūrvienības vadītājs
+PROF_FULL	kvalitātes vadības sistēmu konsultants
+PROF_FULL	kvalitātes vadības sistēmu speciālists
+PROF_FULL	kvantitatīvās analīzes tehniķis
+PROF_FULL	kārtībnieks
+PROF_FULL	kārtībnieks glābējs
+PROF_FULL	kāršanas iekārtas operators
+PROF_FULL	kāzu plānotājs
+PROF_FULL	kūdras ieguves mašīnas mašīnists
+PROF_FULL	kūdras ieguves palīgstrādnieks
+PROF_FULL	laborants
+PROF_FULL	lakotājs
+PROF_FULL	leitnants
+PROF_FULL	leksikogrāfs
+PROF_FULL	lektors
+PROF_FULL	lekālists
+PROF_FULL	lidotājs
+PROF_FULL	lietvedis
+PROF_FULL	likvidators
+PROF_FULL	lingvists
+PROF_FULL	liriķis
+PROF_FULL	locis
+PROF_FULL	lodētājs
+PROF_FULL	logopēds
+PROF_FULL	lopkopis
+PROF_FULL	lopkopējs
+PROF_FULL	labiekārtošanas strādnieks
+PROF_FULL	laboratorijas speciālists
+PROF_FULL	laboratorijas vadītājs
+PROF_FULL	laboratorijas dzīvnieku audzētājs
+PROF_FULL	laboratorijas ārsts
+PROF_FULL	laika un kustības pētījumu inženieris
+PROF_FULL	laikrakstu pārdevējs
+PROF_FULL	laivu izgatavotājs
+PROF_FULL	laminēšanas operators
+PROF_FULL	latviešu nedzirdīgo zīmju valodas tulks
+PROF_FULL	lauksaimnieks
+PROF_FULL	laukstrādnieks
+PROF_FULL	lauksaimniecības bakteriologs
+PROF_FULL	lauksaimniecības ekonomists
+PROF_FULL	lauksaimniecības konsultants
+PROF_FULL	lauksaimniecības organizators
+PROF_FULL	lauksaimniecības padomnieks
+PROF_FULL	lauksaimniecības statistiķis
+PROF_FULL	lauksaimniecības enerģētikas inženieris
+PROF_FULL	lauksaimniecības fermas strādnieks
+PROF_FULL	lauksaimniecības mašīnu mehāniķis
+PROF_FULL	lauksaimniecības mašīnu operators
+PROF_FULL	lauksaimniecības mehānikas inženieris
+PROF_FULL	lauksaimniecības palīgstrādnieks
+PROF_FULL	lauksaimniecības tehnikas mehāniķis
+PROF_FULL	lauksaimniecības tehnikas remontatslēdznieks
+PROF_FULL	lauksaimniecības uzņēmuma vadītājs
+PROF_FULL	lauku strādnieks
+PROF_FULL	lauku attīstības speciālists
+PROF_FULL	lauku elektromontieris
+PROF_FULL	lauku tūrisma speciālists
+PROF_FULL	lauku īpašuma apsaimniekotājs
+PROF_FULL	ledus atjaunošanas mašīnas vadītājs
+PROF_FULL	ledus ražošanas iekārtas operators
+PROF_FULL	lekālu izklājējs
+PROF_FULL	lentzāģa operators
+PROF_FULL	leļļu meistars
+PROF_FULL	leļļu teātra aktieris
+PROF_FULL	licencēšanas eksperts
+PROF_FULL	licencēšanas speciālists
+PROF_FULL	licenču inspektors
+PROF_FULL	lidlauka rajona lidojumu informācijas afis operators
+PROF_FULL	lidlauka rajona lidojumu informācijas dienesta operators
+PROF_FULL	lidojumu inženieris
+PROF_FULL	lidojumu vadītājs
+PROF_FULL	lidojumu nodrošināšanas inženieris
+PROF_FULL	lidostas krāvējs
+PROF_FULL	lidostas aviodrošības dienesta darbinieks
+PROF_FULL	lidostas pasažieru apkalpošanas aģents
+PROF_FULL	lidostu būvinženieris
+PROF_FULL	liellopu lopkopis
+PROF_FULL	liellopu audzēšanas lauksaimnieks
+PROF_FULL	lietišķās matemātikas matemātiķis
+PROF_FULL	lietišķās mākslas izstrādājumu modelētājs
+PROF_FULL	lietišķās statistikas statistiķis
+PROF_FULL	lietojumprogrammu izstrādātājs
+PROF_FULL	lietuves metalurgs
+PROF_FULL	lietvedības inspektors
+PROF_FULL	lietvedības inspektors kasieris
+PROF_FULL	lietvedības pārzinis
+PROF_FULL	lietvedības sekretārs
+PROF_FULL	lietvedības galvenais inspektors
+PROF_FULL	lietvedības struktūrvienības direktora vietnieks
+PROF_FULL	lietvedības struktūrvienības direktors
+PROF_FULL	lietvedības struktūrvienības vadītāja vietnieks
+PROF_FULL	lietvedības struktūrvienības vadītājs
+PROF_FULL	liešanas iekārtas operators
+PROF_FULL	lifta platformas operators
+PROF_FULL	liftu elektromehāniķis
+PROF_FULL	linu audzēšanas lauksaimnieks
+PROF_FULL	linu audzēšanas laukstrādnieks
+PROF_FULL	literārais redaktors
+PROF_FULL	litogrāfijas rasētājs
+PROF_FULL	locīšanas iekārtas operators
+PROF_FULL	lodēšanas iekārtu operators
+PROF_FULL	logu izgatavošanas operators
+PROF_FULL	logu vitrīnu stiklu mazgātājs
+PROF_FULL	lokmetinātājs metināšanā ar automātiskām iekārtām
+PROF_FULL	lokmetinātājs metināšanā ar mehanizēto iekārtu aktīvās gāzes mag
+PROF_FULL	lokmetinātājs metināšanā ar mehanizēto iekārtu aktīvās gāzes vidē
+PROF_FULL	lokmetinātājs metināšanā ar mehanizēto iekārtu inertās gāzes mig
+PROF_FULL	lokmetinātājs metināšanā ar mehanizēto iekārtu inertās gāzes vidē
+PROF_FULL	lokmetinātājs metināšanā ar volframa elektrodu inertās gāzes tig
+PROF_FULL	lokmetinātājs metināšanā ar volframa elektrodu inertās gāzes vidē
+PROF_FULL	lokomotīves dzinēju inženieris
+PROF_FULL	lokomotīvju norīkotājs
+PROF_FULL	lokomotīvju saimniecības tehniķis
+PROF_FULL	lokomotīvju vagonu depo priekšnieka vietnieks
+PROF_FULL	lokomotīvju vagonu depo priekšnieks
+PROF_FULL	lopkopības pārraugs
+PROF_FULL	lopu kāvējs
+PROF_FULL	loģistikas darbinieks
+PROF_FULL	loģistikas direktors
+PROF_FULL	loģistikas speciālists
+PROF_FULL	loģistikas struktūrvienības vadītāja vietnieks
+PROF_FULL	loģistikas struktūrvienības vadītājs
+PROF_FULL	loģistikas vecākais speciālists
+PROF_FULL	lāzermetinātājs
+PROF_FULL	lāzergravēšanas operators
+PROF_FULL	līmes sagatavošanas un formēšanas līnijas operators
+PROF_FULL	līmēšanas iekārtas operators
+PROF_FULL	līnijstrādnieks
+PROF_FULL	līnijas dzelzceļa stacijas dežurants
+PROF_FULL	līnijas dzelzceļa stacijas priekšnieks
+PROF_FULL	līzinga speciālists
+PROF_FULL	līzinga struktūrvienības direktors
+PROF_FULL	līzinga struktūrvienības vadītājs
+PROF_FULL	maiznieks
+PROF_FULL	majors
+PROF_FULL	malējs
+PROF_FULL	manikīrs
+PROF_FULL	mantzinis
+PROF_FULL	masieris
+PROF_FULL	matemātiķis
+PROF_FULL	matrozis
+PROF_FULL	matrozis motorists
+PROF_FULL	mazgātājs
+PROF_FULL	mašīnrakstītājs
+PROF_FULL	mednieks
+PROF_FULL	mehatroniķis
+PROF_FULL	mehāniķis
+PROF_FULL	mehāniķis uz kuģiem ar galveno dzinēja jaudu, mazāku par 750 kw
+PROF_FULL	mehāniķis uz zvejas kuģiem ar galveno dzinēju jaudu, mazāku par 750 kw
+PROF_FULL	meistara palīgs
+PROF_FULL	meistars
+PROF_FULL	metalurgs
+PROF_FULL	meteorologs
+PROF_FULL	metodiķis
+PROF_FULL	metrologs
+PROF_FULL	metāllējējs
+PROF_FULL	mezglotājs
+PROF_FULL	mežcirtējs
+PROF_FULL	mežsargs
+PROF_FULL	mežstrādnieks
+PROF_FULL	mežzinis
+PROF_FULL	miesassargs
+PROF_FULL	miesnieks
+PROF_FULL	mikologs
+PROF_FULL	mineralogs
+PROF_FULL	ministra padomnieks
+PROF_FULL	ministra palīgs
+PROF_FULL	ministra preses sekretārs
+PROF_FULL	ministrs
+PROF_FULL	misionārs
+PROF_FULL	modelētājs
+PROF_FULL	modists
+PROF_FULL	montētājs
+PROF_FULL	morfologs
+PROF_FULL	mucinieks
+PROF_FULL	multiplikators
+PROF_FULL	muzejpedagogs
+PROF_FULL	muzikologs
+PROF_FULL	maizes cepšanas iekārtu operators
+PROF_FULL	maizes un miltu konditorijas izstrādājumu speciālists
+PROF_FULL	maiznīcas produkcijas ražošanas iekārtu operators
+PROF_FULL	makroekonomikas analītiķis
+PROF_FULL	maksājumu karšu administrators
+PROF_FULL	maksājumu karšu speciālists
+PROF_FULL	maksājumu karšu izgatavošanas speciālists
+PROF_FULL	maksājumu karšu projektu vadītājs
+PROF_FULL	maksājumu sistēmu eksperts
+PROF_FULL	maksātnespējas procesa administrators
+PROF_FULL	malkas sagādātājs
+PROF_FULL	malkas skaldītājs
+PROF_FULL	manuālais terapeits
+PROF_FULL	marķēšanas iekārtas operators
+PROF_FULL	maršruta pārraugs
+PROF_FULL	maršrutu tīkla plānotājs
+PROF_FULL	materiālu plānotājs
+PROF_FULL	materiālu dizaina speciālists
+PROF_FULL	materiālu normēšanas tehnologs
+PROF_FULL	materiālu uzskaites grāmatvedis
+PROF_FULL	matraču šuvējs
+PROF_FULL	mazgāšanas operators
+PROF_FULL	mazgāšanas līdzekļu ražošanas operators
+PROF_FULL	mazgāšanas līdzekļu ķīmiķis
+PROF_FULL	mazietilpīga kravas automobiļa vadītājs
+PROF_FULL	mazumtirdzniecības aģents
+PROF_FULL	mazumtirdzniecības komercdarbinieks
+PROF_FULL	mazumtirdzniecības sagādnieks
+PROF_FULL	mazumtirdzniecības preču iepircējs
+PROF_FULL	mazumtirdzniecības veikala pārdevējs
+PROF_FULL	mazumtirdzniecības veikala vadītāja vietnieks
+PROF_FULL	mazumtirdzniecības veikala vadītājs
+PROF_FULL	mašīnizšuvējs
+PROF_FULL	mašīnbūves speciālists
+PROF_FULL	mašīnbūves tehniķis
+PROF_FULL	mašīnu un aparātu būves inženieris
+PROF_FULL	mašīnu un aparātu būves tehnologs
+PROF_FULL	medicīnas bakteriologs
+PROF_FULL	medicīnas fiziķis
+PROF_FULL	medicīnas konsultants
+PROF_FULL	medicīnas laborants
+PROF_FULL	medicīnas māsa
+PROF_FULL	medicīnas patologs
+PROF_FULL	medicīnas statistiķis
+PROF_FULL	medicīnas fizikālo tehnoloģiju inženieris
+PROF_FULL	medicīnas iekārtu inženieris
+PROF_FULL	medicīnas vēsturnieks
+PROF_FULL	medicīniskais pārstāvis
+PROF_FULL	medicīniskās uzskaites un veselības aprūpes korektors
+PROF_FULL	medicīniskās uzskaites un veselības aprūpes informācijas kodētājs
+PROF_FULL	medību dzinējs
+PROF_FULL	mehanizētās apstrādes projektēšanas inženieris
+PROF_FULL	mehanizētās slaukšanas operators
+PROF_FULL	mehatronikas inženieris
+PROF_FULL	mehatronisku sistēmu tehniķis
+PROF_FULL	mehānikas fiziķis
+PROF_FULL	mehānikas inženieris
+PROF_FULL	mehānikas konstruktors
+PROF_FULL	mehānikas rasētājs
+PROF_FULL	mehānikas tehnologs
+PROF_FULL	mehānikas darbu kalkulētājs
+PROF_FULL	mehāniskā transportlīdzekļa vadītājs
+PROF_FULL	mehānismu mehāniķis
+PROF_FULL	meliorācijas inženieris
+PROF_FULL	meliorācijas būvtehniķis
+PROF_FULL	metadatu redaktors
+PROF_FULL	metadatu veidotājs
+PROF_FULL	metalurģijas inženieris
+PROF_FULL	metalurģijas tehniķis
+PROF_FULL	metalurģijas ķīmiķis
+PROF_FULL	metalurģiskās iekārtas celtņa operators
+PROF_FULL	meteoroloģijas radiometrists
+PROF_FULL	meteoroloģijas tehniķis
+PROF_FULL	metināšanas tehnologs
+PROF_FULL	metodikas eksperts
+PROF_FULL	metodiskās struktūrvienības vadītājs
+PROF_FULL	metožu tehniķis
+PROF_FULL	metroloģijas inženieris
+PROF_FULL	metroloģijas tehniķis
+PROF_FULL	metālapstrādātājs
+PROF_FULL	metālmākslinieks
+PROF_FULL	metāla griezējs
+PROF_FULL	metāla kausētājs
+PROF_FULL	metāla lējējs
+PROF_FULL	metāla presētājs
+PROF_FULL	metāla rūdītājs
+PROF_FULL	metāla apstrādes iekārtas operators
+PROF_FULL	metāla gravēšanas operators
+PROF_FULL	metāla griešanas operators
+PROF_FULL	metāla izstrādājumu montētājs
+PROF_FULL	metāla izstrādājumu restaurators
+PROF_FULL	metāla izstrādājumu dizaina speciālists
+PROF_FULL	metāla konstrukciju atslēdznieks
+PROF_FULL	metāla krāsošanas operators
+PROF_FULL	metāla liekšanas iekārtas operators
+PROF_FULL	metāla mēbeļu montieris
+PROF_FULL	metāla pulverizēšanas operators
+PROF_FULL	metāla pūšamo instrumentu tehniķis
+PROF_FULL	metāla smilšstrūklas iekārtas operators
+PROF_FULL	metāla stiepšanas iekārtas operators
+PROF_FULL	metāla zāģēšanas operators
+PROF_FULL	metāla štancētājs
+PROF_FULL	metāla žāvēšanas iekārtas operators
+PROF_FULL	metālapstrādes darbgaldu operators
+PROF_FULL	metālapstrādes iekārtu mehāniķis
+PROF_FULL	metālapstrādes iekārtu remontatslēdznieks
+PROF_FULL	metālapstrādes tehnoloģisko līniju operators
+PROF_FULL	metāllējumu apcirtējs
+PROF_FULL	metāllējumu izsitējs
+PROF_FULL	metāllējumu veidotājs
+PROF_FULL	metālmateriālu metinātājs
+PROF_FULL	metālmateriālu dizaina speciālists
+PROF_FULL	metālraudzes tehniķis
+PROF_FULL	meža stādītājs
+PROF_FULL	meža tehniķis
+PROF_FULL	meža tehnologs
+PROF_FULL	meža ugunsdzēsējs
+PROF_FULL	meža mašīnu mehāniķis
+PROF_FULL	meža mašīnu operators
+PROF_FULL	meža ugunsdzēsības stacijas vadītājs
+PROF_FULL	meža ugunsnovērošanas torņa dežurants
+PROF_FULL	meža un pļavas veltes vācējs
+PROF_FULL	mežizstrādes meistars
+PROF_FULL	mežkopības tehniķis
+PROF_FULL	mežsaimniecības inženieris
+PROF_FULL	mežsaimniecības konsultants
+PROF_FULL	mežsaimniecības laborants
+PROF_FULL	mežsaimniecības padomnieks
+PROF_FULL	mežsaimniecības strādnieks
+PROF_FULL	mežsaimniecības tehniķis
+PROF_FULL	mežsaimniecības tehnologs
+PROF_FULL	mežģīņu darinātājs
+PROF_FULL	mijieskaita norēķinu operators
+PROF_FULL	mikoloģijas botāniķis
+PROF_FULL	mikrobiologa palīgs
+PROF_FULL	mikrobiologs
+PROF_FULL	mikrofotogrāfs
+PROF_FULL	mikropaleontologs
+PROF_FULL	mikroautobusa vadītājs
+PROF_FULL	mikrobioloģijas ārsts
+PROF_FULL	mikroelektronikas iekārtu montieris
+PROF_FULL	mikrofona operators
+PROF_FULL	mikropigmentācijas speciālists
+PROF_FULL	militārais paramediķis
+PROF_FULL	minibāru pārzinis
+PROF_FULL	ministra biroja vadītājs
+PROF_FULL	ministru prezidenta biedra padomnieks
+PROF_FULL	ministru prezidenta biedra palīgs
+PROF_FULL	ministru prezidenta biedra preses sekretārs
+PROF_FULL	ministru prezidenta biedra sekretariāta vadītājs
+PROF_FULL	ministru prezidenta biedrs
+PROF_FULL	ministru prezidenta padomnieks
+PROF_FULL	ministru prezidenta palīgs
+PROF_FULL	ministru prezidenta sekretārs
+PROF_FULL	ministru prezidenta biroja vadītājs
+PROF_FULL	ministru prezidenta preses sekretāra palīgs
+PROF_FULL	ministru prezidenta preses sekretārs
+PROF_FULL	ministru prezidents
+PROF_FULL	ministru kabineta pārstāvis starptautiskajās cilvēktiesību institūcijās
+PROF_FULL	ministru kabineta preses sekretārs
+PROF_FULL	mizošanas iekārtas operators
+PROF_FULL	modes dizainers
+PROF_FULL	modeļu izgatavotājs
+PROF_FULL	modeļu apavu izgatavotājs
+PROF_FULL	molekulārfiziķis
+PROF_FULL	molekulārās bioloģijas biologs
+PROF_FULL	montāžas darbu atslēdznieks
+PROF_FULL	montāžu uzraugs
+PROF_FULL	monumentāli dekoratīvās tēlniecības objektu restaurators
+PROF_FULL	monumentālo gleznu restaurators
+PROF_FULL	monētu tirdzniecības aģents
+PROF_FULL	morzes alfabēta operators
+PROF_FULL	motocikla vadītājs
+PROF_FULL	motociklu mehāniķis
+PROF_FULL	motoru inženieris
+PROF_FULL	motoru mehāniķis
+PROF_FULL	motorzāģa vadītājs
+PROF_FULL	mozaīkas klājējs
+PROF_FULL	muitas brokeris
+PROF_FULL	muitas eksperts
+PROF_FULL	muitas uzraugs
+PROF_FULL	muitas iestādes struktūrvienības vadītājs
+PROF_FULL	muitas maiņas vadītājs
+PROF_FULL	muitošanas speciālists
+PROF_FULL	multimediju dizaina speciālists
+PROF_FULL	mutes, sejas un žokļu ķirurgs
+PROF_FULL	muzeja izstāžu un ekspozīciju zāļu uzraugs
+PROF_FULL	muzikālo priekšnesumu aģents
+PROF_FULL	mācītājs
+PROF_FULL	mājkalpotājs
+PROF_FULL	mājsaimniece
+PROF_FULL	mākslinieks
+PROF_FULL	mākslinieks inscenētājs
+PROF_FULL	māsas palīgs
+PROF_FULL	mācību centra inspektors
+PROF_FULL	mācību centra pasniedzējs
+PROF_FULL	mācību centra priekšnieka vietnieks
+PROF_FULL	mācību centra priekšnieks priekšnieks
+PROF_FULL	mācību centra vadītāja vietnieks
+PROF_FULL	mācību centra vadītājs
+PROF_FULL	mācību centra daļas priekšnieks
+PROF_FULL	mācību centra vecākais pasniedzējs
+PROF_FULL	mācību kursu vadītājs
+PROF_FULL	mācību projekta vadītājs
+PROF_FULL	mājas pārvaldnieks
+PROF_FULL	mājas lapas administrators
+PROF_FULL	mājdzīvnieku audzēšanas lauksaimnieks
+PROF_FULL	mājputnu audzēšanas lauksaimnieks
+PROF_FULL	mājputnu audzēšanas laukstrādnieks
+PROF_FULL	mākslas eksperts
+PROF_FULL	mākslas fotogrāfs
+PROF_FULL	mākslas keramiķis
+PROF_FULL	mākslas komercdarbinieks
+PROF_FULL	mākslas modelis
+PROF_FULL	mākslas terapeits
+PROF_FULL	mākslas vēsturnieks
+PROF_FULL	mākslas pasākumu organizators
+PROF_FULL	mākslas terapijas speciālists
+PROF_FULL	mākslinieciskais vadītājs
+PROF_FULL	mākslīgo būvju meistars
+PROF_FULL	mākslīgo būvju strādnieks
+PROF_FULL	mākslīgo būvju būvstrādnieks
+PROF_FULL	mākslīgo būvju palīgstrādnieks
+PROF_FULL	mākslīgās apsēklošanas tehniķis
+PROF_FULL	māla presētājs
+PROF_FULL	māla ražošanas operators
+PROF_FULL	mērnieks
+PROF_FULL	mēbeļu dizainers
+PROF_FULL	mēbeļu galdnieks
+PROF_FULL	mēbeļu tapsētājs
+PROF_FULL	mēbeļu dizaina speciālists
+PROF_FULL	mēbeļu izgatavošanas operators
+PROF_FULL	mēbeļu, kokgriezumu restaurators
+PROF_FULL	mēriekārtu tehniķis
+PROF_FULL	mērinstrumentu elektronikas inženieris
+PROF_FULL	mērniecības būvtehniķis
+PROF_FULL	mīcītājs
+PROF_FULL	mīklas gatavotājs
+PROF_FULL	mīksto rotaļlietu izgatavotājs
+PROF_FULL	mūks
+PROF_FULL	mūrnieks
+PROF_FULL	mūziķis
+PROF_FULL	mūķene
+PROF_FULL	mūzikas skolotājs
+PROF_FULL	mūzikas terapeits
+PROF_FULL	mūzikas instrumentu izgatavotājs
+PROF_FULL	mūzikas instrumentu labotājs
+PROF_FULL	mūzikas instrumentu skaņotājs
+PROF_FULL	namdaris
+PROF_FULL	narkologs
+PROF_FULL	nefrologs
+PROF_FULL	neirologs
+PROF_FULL	neiropāts
+PROF_FULL	neiroķirurgs
+PROF_FULL	nematologs
+PROF_FULL	neonatologs
+PROF_FULL	novērtētājs
+PROF_FULL	naftas inženieris
+PROF_FULL	naftas tehniķis
+PROF_FULL	naftas avāriju tehnologs
+PROF_FULL	naftas produktu lējējs
+PROF_FULL	naftas produktu pieņēmējs
+PROF_FULL	naftas produktu pārsūknēšanas operators
+PROF_FULL	naftas un dabasgāzes ķīmijas inženieris
+PROF_FULL	naftas un gāzes atradņu urbšanas operators
+PROF_FULL	naftas un gāzes urbumu cementētājs
+PROF_FULL	naftas un gāzes urbumu urbējs
+PROF_FULL	naftas ķīmiķis
+PROF_FULL	nagu kopšanas speciālists
+PROF_FULL	namu apsaimniekotājs
+PROF_FULL	namu pārvaldnieks
+PROF_FULL	namu pārzinis
+PROF_FULL	narkoloģijas māsa
+PROF_FULL	naudas apstrādātājs
+PROF_FULL	naudas mainītājs
+PROF_FULL	naudas sadalītājs
+PROF_FULL	naudas apgrozības analītiķis
+PROF_FULL	naudas automātu kontrolkasieris
+PROF_FULL	naudas izmaksas kasieris
+PROF_FULL	naudas plūsmas analītiķis
+PROF_FULL	naudas pārvedumu struktūrvienības vadītājs
+PROF_FULL	neatliekamās medicīnas ārsts
+PROF_FULL	neatliekamās palīdzības māsa
+PROF_FULL	neatliekamās palīdzības sanitārs
+PROF_FULL	neatliekamās palīdzības ārsta palīgs
+PROF_FULL	neatliekamās palīdzības ārsts
+PROF_FULL	nedatorizēto sistēmu tehniķis
+PROF_FULL	neiropatologs
+PROF_FULL	neiroloģijas fiziologs
+PROF_FULL	neiroloģijas māsa
+PROF_FULL	neiroķirurģijas māsa
+PROF_FULL	nekustamā īpašuma aģents
+PROF_FULL	nekustamā īpašuma ekonomists
+PROF_FULL	nekustamā īpašuma pārdevējs
+PROF_FULL	nekustamā īpašuma pārvaldnieks
+PROF_FULL	nekustamā īpašuma speciālists
+PROF_FULL	nekustamā īpašuma vērtētāja asistents
+PROF_FULL	nekustamā īpašuma vērtētājs
+PROF_FULL	nekustamā īpašuma darījumu starpnieks
+PROF_FULL	nekustamā īpašuma tiesiskās reģistrācijas speciālists
+PROF_FULL	neorganisko vielu ķīmiķis
+PROF_FULL	nepārtrauktas darbības iekārtas operators
+PROF_FULL	neredzīgo terapeits
+PROF_FULL	nodarbinātības analītiķis
+PROF_FULL	nodarbinātības aģents
+PROF_FULL	nodarbinātības organizators
+PROF_FULL	nodokļu administrators
+PROF_FULL	nodokļu ekonomists
+PROF_FULL	nodokļu inspektors
+PROF_FULL	nodokļu konsultants
+PROF_FULL	noformēšanas mākslinieks
+PROF_FULL	noliktavas darbinieks
+PROF_FULL	noliktavas pārzinis
+PROF_FULL	noliktavas strādnieks
+PROF_FULL	noliktavu ekspeditors
+PROF_FULL	nomas punkta darbinieks
+PROF_FULL	nometnes direktora vietnieks
+PROF_FULL	nometnes direktors
+PROF_FULL	nometnes priekšnieks
+PROF_FULL	nometnes pārvaldnieks
+PROF_FULL	nometnes vadītāja vietnieks
+PROF_FULL	nometnes vadītājs
+PROF_FULL	nomnieku koordinators
+PROF_FULL	norēķinu administrators
+PROF_FULL	norēķinu karšu pārzinis
+PROF_FULL	norēķinu karšu izpārdošanas pārzinis
+PROF_FULL	notekūdeņu rūpnieciskās pārstrādes operators
+PROF_FULL	novada pašvaldības domes deputāts
+PROF_FULL	novada pašvaldības domes priekšsēdētāja vietnieks
+PROF_FULL	novada pašvaldības domes priekšsēdētājs
+PROF_FULL	nozares padomnieks
+PROF_FULL	nozares politikas un politikas plānošanas struktūrvienības direktora vietnieks
+PROF_FULL	nozares politikas un politikas plānošanas struktūrvienības direktors
+PROF_FULL	nozares politikas un politikas plānošanas struktūrvienības vadītāja vietnieks
+PROF_FULL	nozares politikas un politikas plānošanas struktūrvienības vadītājs
+PROF_FULL	oaw
+PROF_FULL	oftalmologs
+PROF_FULL	ogļdeģis
+PROF_FULL	okeanogrāfs
+PROF_FULL	okeanologs
+PROF_FULL	okultists
+PROF_FULL	onkologs
+PROF_FULL	onkologs ķīmijterapeits
+PROF_FULL	optiķis
+PROF_FULL	optometrists
+PROF_FULL	ornitologs
+PROF_FULL	ortodonts
+PROF_FULL	ortofonists
+PROF_FULL	ortooptiķis
+PROF_FULL	ortoēpists
+PROF_FULL	osteorefleksoterapeits
+PROF_FULL	otolaringologs
+PROF_FULL	obligāciju starpnieks
+PROF_FULL	ofseta iespiedēja palīgs
+PROF_FULL	ofseta iespiedējs
+PROF_FULL	oftalmoloģijas māsa
+PROF_FULL	okeanogrāfijas tehniķis
+PROF_FULL	oksidēšanas operators
+PROF_FULL	olu ražošanas lauksaimnieks
+PROF_FULL	olu šķirošanas, iesaiņošanas, marķēšanas un iepakošanas iekārtu operators
+PROF_FULL	onkoloģijas ginekologs
+PROF_FULL	onkoloģijas māsa
+PROF_FULL	onkoloģijas ķirurgs
+PROF_FULL	onkoloģiskās aprūpes māsa
+PROF_FULL	operas vokālists
+PROF_FULL	operas trupas vadītājs
+PROF_FULL	operatīvais dežurants
+PROF_FULL	operatīvā dežuranta palīgs
+PROF_FULL	operatīvā dežuranta vietnieks
+PROF_FULL	operāciju māsa
+PROF_FULL	operāciju sistēmu inženieris
+PROF_FULL	operāciju sistēmu tehniķis
+PROF_FULL	optikas fiziķis
+PROF_FULL	optikas ierīču meistars
+PROF_FULL	organisko vielu ķīmiķis
+PROF_FULL	organizācijas psihologs
+PROF_FULL	ortopēdijas tehniķis
+PROF_FULL	ortopēdijas instrumentu meistars
+PROF_FULL	ortopēdisko apavu izgatavotājs
+PROF_FULL	orķestra diriģents
+PROF_FULL	orķestra koncertmeistars
+PROF_FULL	orķestra vadītājs
+PROF_FULL	ostas kapteinis
+PROF_FULL	ostas uzraugs
+PROF_FULL	ostas mehānismu mehāniķis
+PROF_FULL	ostas mehānismu mehānikas inženieris
+PROF_FULL	otrais mehāniķis uz kuģiem ar galveno dzinēju jaudu 3000 kw un lielāku
+PROF_FULL	otrais mehāniķis uz kuģiem ar galveno dzinēju jaudu, mazāku par 3000 kw
+PROF_FULL	otrais mehāniķis uz zvejas kuģiem ar galveno dzinēju jaudu 3000 kw un lielāku
+PROF_FULL	otrais mehāniķis uz zvejas kuģiem ar galveno dzinēju jaudu, mazāku par 3000 kw
+PROF_FULL	otrais sekretārs
+PROF_FULL	otrreizējo izejvielu šķirotājs
+PROF_FULL	padomnieks
+PROF_FULL	paleontologs
+PROF_FULL	paradontologs
+PROF_FULL	parazitologa palīgs
+PROF_FULL	parazitologs
+PROF_FULL	parfimērs
+PROF_FULL	pasniedzējs
+PROF_FULL	pastnieks
+PROF_FULL	paszinis
+PROF_FULL	patentvedis
+PROF_FULL	patologs
+PROF_FULL	patruļnieks
+PROF_FULL	pavadonis
+PROF_FULL	pavāra palīgs
+PROF_FULL	pavārs
+PROF_FULL	pedagoga palīgs
+PROF_FULL	pedagogs
+PROF_FULL	pedagogs karjeras konsultants
+PROF_FULL	pedaudiologs
+PROF_FULL	pediatrs
+PROF_FULL	pedikīrs
+PROF_FULL	penologs
+PROF_FULL	piegriezējs
+PROF_FULL	pilots
+PROF_FULL	pinējs
+PROF_FULL	pirtnieks
+PROF_FULL	plakātists
+PROF_FULL	plostnieks
+PROF_FULL	plānotājs
+PROF_FULL	pneimonologs
+PROF_FULL	podnieks
+PROF_FULL	podologs
+PROF_FULL	politologs
+PROF_FULL	pomologs
+PROF_FULL	prezidenta vietnieks
+PROF_FULL	prezidents
+PROF_FULL	prečzinis
+PROF_FULL	priekšnieka palīgs
+PROF_FULL	priekšnieka vietnieks
+PROF_FULL	priekšnieka dežurējošais palīgs
+PROF_FULL	priekšsēdētāja biedra palīgs
+PROF_FULL	priekšsēdētāja vietnieks
+PROF_FULL	priekšsēdētājs
+PROF_FULL	priekš­nieks
+PROF_FULL	priesteris
+PROF_FULL	producents
+PROF_FULL	profesors
+PROF_FULL	programmētājs
+PROF_FULL	prokurora palīgs
+PROF_FULL	prokurors
+PROF_FULL	prokūrists
+PROF_FULL	prorektors
+PROF_FULL	prāvests
+PROF_FULL	psihiatrs
+PROF_FULL	psihologa asistents
+PROF_FULL	psihologs
+PROF_FULL	psihologs konsultants
+PROF_FULL	psihoterapeits
+PROF_FULL	pulkvedis jūras kapteinis
+PROF_FULL	pulkvežleitnants
+PROF_FULL	pulētājs
+PROF_FULL	putnkopis
+PROF_FULL	pvc un alumīnija logu un durvju izgatavošanas operators
+PROF_FULL	pabalstu inspektors
+PROF_FULL	pacēlāja mašīnists
+PROF_FULL	padomes loceklis
+PROF_FULL	padomes priekšsēdētājs
+PROF_FULL	padomes sekretārs
+PROF_FULL	padomes vadītājs
+PROF_FULL	pagaidu pilnvarotais lietvedis
+PROF_FULL	pagarinātās dienas grupas skolotājs
+PROF_FULL	pakalpojumu struktūrvienības direktors
+PROF_FULL	pakalpojumu struktūrvienības vadītājs
+PROF_FULL	paklāju audējs
+PROF_FULL	palīgstrādnieks
+PROF_FULL	palīgšuvējs
+PROF_FULL	pamatdarbības struktūrvienības direktora vietnieks
+PROF_FULL	pamatdarbības struktūrvienības direktora noliktavās
+PROF_FULL	pamatdarbības struktūrvienības direktors
+PROF_FULL	pamatdarbības struktūrvienības komandiera vietnieks
+PROF_FULL	pamatdarbības struktūrvienības komandieris
+PROF_FULL	pamatdarbības struktūrvienības priekšnieka vietnieks
+PROF_FULL	pamatdarbības struktūrvienības priekšnieks
+PROF_FULL	pamatdarbības struktūrvienības pārvaldnieka vietnieks
+PROF_FULL	pamatdarbības struktūrvienības pārvaldnieks
+PROF_FULL	pamatdarbības struktūrvienības vadītāja vietnieks
+PROF_FULL	pamatdarbības struktūrvienības vadītāja noliktavās
+PROF_FULL	pamatdarbības struktūrvienības vadītāja viesnīcās
+PROF_FULL	pamatdarbības struktūrvienības vadītājs
+PROF_FULL	pamatdarbības struktūrvienības noliktavās
+PROF_FULL	pamatdarbības struktūrvienības vadītāja vietnieks
+PROF_FULL	pamatdarbības struktūrvienības vadītājs
+PROF_FULL	pamatdarbības struktūrvienības viesnīcās
+PROF_FULL	pamatu veltņa vadītājs
+PROF_FULL	pansijas direktora vietnieks
+PROF_FULL	pansijas direktors
+PROF_FULL	pansijas pārvaldnieks
+PROF_FULL	pansijas vadītāja vietnieks
+PROF_FULL	pansijas vadītājs
+PROF_FULL	papīra tehnologs
+PROF_FULL	papīra izstrādājumu ražošanas operators
+PROF_FULL	papīra masas pārstrādāšanas operators
+PROF_FULL	papīra masas rafinēšanas operators
+PROF_FULL	papīra masas ražošanas iekārtas operators
+PROF_FULL	papīra masas sijāšanas operators
+PROF_FULL	papīra masas vārīšanas operators
+PROF_FULL	papīra un kartona piegriešanas operators
+PROF_FULL	papīra žāvēšanas iekārtas operators
+PROF_FULL	paraugu noņēmējs
+PROF_FULL	parka dārznieks
+PROF_FULL	parketa izgatavotājs
+PROF_FULL	parketa klājējs
+PROF_FULL	parlamentārais sekretārs
+PROF_FULL	parāda piedzinējs
+PROF_FULL	parādzīmju pārdevējs
+PROF_FULL	parūku meistars
+PROF_FULL	pasažieru vilciena konduktors
+PROF_FULL	pasažieru vilciena kontrolieris
+PROF_FULL	pasažieru vilciena elektromehāniķis
+PROF_FULL	pasažieru vilciena kontrolieris
+PROF_FULL	pasažieru vilciena revidents
+PROF_FULL	pasta darbinieks
+PROF_FULL	pasta kurjers
+PROF_FULL	pasta nosūtītājs
+PROF_FULL	pasta operators
+PROF_FULL	pasta speciālists
+PROF_FULL	pasta darba organizācijas instruktors
+PROF_FULL	pasta ekspluatācijas metodiķis
+PROF_FULL	pasta ekspluatācijas struktūrvienības vadītājs
+PROF_FULL	pasta nodaļas priekšnieka vietnieks
+PROF_FULL	pasta nodaļas priekšnieks
+PROF_FULL	pasta tehniskās struktūrvienības vadītājs
+PROF_FULL	pasta vērtszīmju un filatēlijas struktūrvienības vadītāja vietnieks
+PROF_FULL	pasta vērtszīmju un filatēlijas struktūrvienības vadītājs
+PROF_FULL	pasta šķirotājs
+PROF_FULL	pastmarku pārdevējs
+PROF_FULL	pastmarku bāzes vadītāja vietnieks
+PROF_FULL	pastmarku bāzes vadītājs
+PROF_FULL	pastorālais konsultants
+PROF_FULL	pasūtījumu pieņemšanas operators
+PROF_FULL	patentu aģents
+PROF_FULL	patentu un izgudrojumu inženieris
+PROF_FULL	patoloģijas tehniķis
+PROF_FULL	pazemes darbu būvtehniķis
+PROF_FULL	pazemes darbu mehānismu un iekārtu mehāniķis
+PROF_FULL	pazemes kabeļu licējs
+PROF_FULL	pašgājēja iekrāvēja vadītājs
+PROF_FULL	pašgājēja transporta līdzekļu vadītājs
+PROF_FULL	pašgājējmehānismu mehānikas inženieris
+PROF_FULL	pašizmaksas rēķinātājs
+PROF_FULL	paškrāvēja automobiļa vadītājs
+PROF_FULL	pašvaldības izpilddirektora vietnieks
+PROF_FULL	pašvaldības izpilddirektors
+PROF_FULL	pašvaldības sekretārs
+PROF_FULL	pašvaldības administrācijas izpildsekretārs
+PROF_FULL	pašvaldības finanšu stabilizācijas procesa uzraugs
+PROF_FULL	pašvaldības iestādes priekšnieka vietnieks
+PROF_FULL	pašvaldības iestādes priekšnieks
+PROF_FULL	pašvaldības iestādes vadītāja vietnieks
+PROF_FULL	pašvaldības iestādes vadītājs
+PROF_FULL	pašvaldības pamatdarbības struktūrvienības direktora vietnieks
+PROF_FULL	pašvaldības pamatdarbības struktūrvienības priekšnieka vietnieks
+PROF_FULL	pašvaldības pamatdarbības struktūrvienības vadītāja vietnieks
+PROF_FULL	pašvaldības policijas inspektors
+PROF_FULL	pašvaldības policijas kārtībnieks
+PROF_FULL	pašvaldības policijas civilās aizsardzības speciālists
+PROF_FULL	pašvaldības policijas civilās aizsardzības vecākais speciālists
+PROF_FULL	pašvaldības policijas jaunākais inspektors
+PROF_FULL	pašvaldības policijas jaunākais kārtībnieks
+PROF_FULL	pašvaldības policijas pamatdarbības struktūrvienības priekšnieka vietnieks
+PROF_FULL	pašvaldības policijas pamatdarbības struktūrvienības priekšnieks
+PROF_FULL	pašvaldības policijas pamatdarbības struktūrvienības vadītāja vietnieks
+PROF_FULL	pašvaldības policijas pamatdarbības struktūrvienības vadītājs
+PROF_FULL	pašvaldības policijas vecākais inspektors
+PROF_FULL	pašvaldības policijas vecākais kārtībnieks
+PROF_FULL	peldošo līdzekļu dienesta galvenais elektromehāniķis
+PROF_FULL	peldošā celtņa meistars
+PROF_FULL	penitenciārā un probācijas darba speciālists
+PROF_FULL	penosociologs
+PROF_FULL	pensiju inspektors
+PROF_FULL	pensiju un pabalstu inspektors
+PROF_FULL	perifērijas iekārtu operators
+PROF_FULL	peritoneālās dialīzes māsa
+PROF_FULL	personāla direktors
+PROF_FULL	personāla inspektors
+PROF_FULL	personāla speciālists
+PROF_FULL	personāla vadītājs
+PROF_FULL	personāla apmācības speciālists
+PROF_FULL	personāla atlases speciālists
+PROF_FULL	personāla lietu pārzinis
+PROF_FULL	personāla mācību koordinētājs
+PROF_FULL	personāla mācību vadītājs
+PROF_FULL	personāla sagatavošanas inženieris
+PROF_FULL	personāla struktūrvienības direktors
+PROF_FULL	personāla struktūrvienības vadītājs
+PROF_FULL	personāla uzskaites darbinieks
+PROF_FULL	personālvadības struktūrvienības direktors
+PROF_FULL	personālvadības struktūrvienības vadītājs
+PROF_FULL	pestīšanas armijas darbinieks
+PROF_FULL	piegriešanas izklātņu veidotājs
+PROF_FULL	pieminekļu aizsardzības inspektors
+PROF_FULL	piena produktu pārstrādātājs
+PROF_FULL	piena produktu ražošanas meistars
+PROF_FULL	piena produktu ražošanas iekārtu operators
+PROF_FULL	piena un piena produktu tehnologa palīgs
+PROF_FULL	piensaimniecības bakteriologs
+PROF_FULL	pilnvarotais lietvedis
+PROF_FULL	pirmais sekretārs
+PROF_FULL	pirmsskolas iestāžu un skolu māsa
+PROF_FULL	pirmsskolas izglītības metodiķis
+PROF_FULL	pirmsskolas izglītības skolotājs
+PROF_FULL	pirmsskolas izglītības mūzikas skolotājs
+PROF_FULL	pirmsskolas izglītības sporta skolotājs
+PROF_FULL	pirts meistara palīgs
+PROF_FULL	pirts meistars
+PROF_FULL	plakātu līmētājs
+PROF_FULL	plakātu dizaina speciālists
+PROF_FULL	planiera pilots
+PROF_FULL	planiera instruktors
+PROF_FULL	plastikāta pudeļu izpūšanas operators
+PROF_FULL	plastikāta un alumīnija logu un durvju izgatavošanas operators
+PROF_FULL	plastiskais ķirurgs
+PROF_FULL	plastmasas inženieris
+PROF_FULL	plastmasas metinātājs
+PROF_FULL	plastmasas tehnologs
+PROF_FULL	plastmasas izstrādājumu komplektētājs
+PROF_FULL	plastmasas karstās presēšanas operators
+PROF_FULL	plostu sējējs
+PROF_FULL	plānošanas inženieris
+PROF_FULL	plānošanas tehniķis
+PROF_FULL	plēvju līmējamās iekārtas iespiedmašīnas operators
+PROF_FULL	podiatrijas māsa
+PROF_FULL	policijas inspektors
+PROF_FULL	poligrāfijas ražošanas tehniķis
+PROF_FULL	poligrāfijas struktūrvienības vadītāja vietnieks
+PROF_FULL	poligrāfijas struktūrvienības vadītājs
+PROF_FULL	poligrāfisko iekārtu mehāniķis
+PROF_FULL	polihroma koka, zeltījumu restaurators
+PROF_FULL	polimēru tehnologs
+PROF_FULL	politikas filozofs
+PROF_FULL	politikas vēsturnieks
+PROF_FULL	politoģeogrāfs
+PROF_FULL	pomoloģijas tehniķis
+PROF_FULL	porcelāna apgleznotājs
+PROF_FULL	posma inženieris
+PROF_FULL	praktiskais psihologs
+PROF_FULL	prasību inspektors
+PROF_FULL	prasību konsultants
+PROF_FULL	preses operators
+PROF_FULL	preses sekretārs
+PROF_FULL	presēšanas iekārtas operators
+PROF_FULL	preču demonstrētājs
+PROF_FULL	preču iepircējs
+PROF_FULL	preču iznēsātājs
+PROF_FULL	preču izvietotājs
+PROF_FULL	preču kasieris
+PROF_FULL	preču piegādātājs
+PROF_FULL	preču ielas pārdevējs
+PROF_FULL	priekšvērpšanas iekārtas operators
+PROF_FULL	prodekāns
+PROF_FULL	procesu kvalitātes vadības inženieris
+PROF_FULL	produkcijas kontrolieris
+PROF_FULL	produkcijas noņēmējs
+PROF_FULL	produkcijas pieņēmējs
+PROF_FULL	produkcijas drošuma inspektors
+PROF_FULL	produkcijas kvalitātes inspektors
+PROF_FULL	produkcijas no mašīnas
+PROF_FULL	produkta dizaina speciālists
+PROF_FULL	produktu dizainers
+PROF_FULL	produktu speciālists
+PROF_FULL	profesiju psihologs
+PROF_FULL	profesiju izvēles konsultants
+PROF_FULL	profesionālais veselības aprūpes kapelāns
+PROF_FULL	profesionāls sportists
+PROF_FULL	profesionālās augstākās izglītības kursa vadītājs
+PROF_FULL	profesionālās augstākās izglītības programmas vadītājs
+PROF_FULL	profesionālās ievirzes izglītības skolotājs
+PROF_FULL	profesionālās izglītības skolotājs
+PROF_FULL	profesionālās vidusskolas vadītājs
+PROF_FULL	programmu direktors
+PROF_FULL	programmu vadītājs
+PROF_FULL	programmvadības kokapstrādes darbgaldu operators
+PROF_FULL	programmēšanas inženieris
+PROF_FULL	programmēšanas tehniķis
+PROF_FULL	projekta koordinators
+PROF_FULL	projekta vadītāja asistents
+PROF_FULL	projekta vadītājs
+PROF_FULL	projektu asistents
+PROF_FULL	projektēšanas inženieris
+PROF_FULL	protokola speciālists
+PROF_FULL	protēžortopēds
+PROF_FULL	protēžu meistars
+PROF_FULL	protēžu pielāgotājs
+PROF_FULL	proves noteicējs
+PROF_FULL	psihiatrijas māsa
+PROF_FULL	psihofiziologs
+PROF_FULL	pudeļu uzpildes operators
+PROF_FULL	pulka komandiera vietnieks
+PROF_FULL	pulka komandieris
+PROF_FULL	pulksteņmeistars
+PROF_FULL	pusvadītāju aparātu būves iestatītājs
+PROF_FULL	pusvadītāju aparātu būves operators
+PROF_FULL	pusvadītāju elektronikas inženieris
+PROF_FULL	pusvadītāju elektronikas tehniķis
+PROF_FULL	puķkopības tehniķis
+PROF_FULL	puķu audzētājs
+PROF_FULL	pārdevēja palīgs
+PROF_FULL	pārdevējs konsultants
+PROF_FULL	pārstāvis starptautiskajā organizācijā
+PROF_FULL	pārvaldnieka vietnieks
+PROF_FULL	pārvaldnieks
+PROF_FULL	pārzinis
+PROF_FULL	pārceltuves konduktors
+PROF_FULL	pārdošanas speciālists
+PROF_FULL	pārdošanas vadītājs
+PROF_FULL	pārkodēšanas operators
+PROF_FULL	pārraides iekārtas operators
+PROF_FULL	pārsegu/ telšu izgatavotājs
+PROF_FULL	pārskatu statistiķis
+PROF_FULL	pārtikas kvalitātes speciālists
+PROF_FULL	pārtikas preču starpnieks
+PROF_FULL	pārtikas produktu kvalitātes inspektora palīgs
+PROF_FULL	pārtikas produktu pārstrādes speciālists
+PROF_FULL	pārtikas produktu ražošanas operators
+PROF_FULL	pārtikas produktu ražošanas tehniķis
+PROF_FULL	pārtikas rūpniecības bakteriologs
+PROF_FULL	pārtikas un dzērienu tehnologa palīgs
+PROF_FULL	pārtikas un dzērienu tehnologs
+PROF_FULL	pārtikas ķīmiķis
+PROF_FULL	pārvaldes direktora vietnieks
+PROF_FULL	pārvaldes direktors
+PROF_FULL	pārvaldes priekšnieka vietnieks
+PROF_FULL	pārvaldes priekšnieks
+PROF_FULL	pārvaldes sekretārs
+PROF_FULL	pārvaldes vadītāja vietnieks
+PROF_FULL	pārvaldes vadītājs
+PROF_FULL	pāļdziņa vadītājs
+PROF_FULL	pētnieks
+PROF_FULL	pērlīšu izstrādājumu izgatavotājs
+PROF_FULL	pētniecības struktūrvienības direktors
+PROF_FULL	pētniecības struktūrvienības vadītājs
+PROF_FULL	pūšaminstrumentu mūziķis
+PROF_FULL	rabīns
+PROF_FULL	radiogrāfers
+PROF_FULL	radiologa asistents
+PROF_FULL	radiologs
+PROF_FULL	radiometeorologs
+PROF_FULL	radiometrists
+PROF_FULL	rakstnieks
+PROF_FULL	rakstvedis
+PROF_FULL	rasētājs
+PROF_FULL	ratiņstūmējs
+PROF_FULL	ratnieks
+PROF_FULL	redaktors
+PROF_FULL	referents
+PROF_FULL	rehabilitologs
+PROF_FULL	reimatologs
+PROF_FULL	reitterapeita asistents
+PROF_FULL	reitterapeits
+PROF_FULL	rektors
+PROF_FULL	rekvizitors
+PROF_FULL	remontatslēdznieks
+PROF_FULL	reportieris
+PROF_FULL	restauratora asistents
+PROF_FULL	restaurators
+PROF_FULL	restaurētājs
+PROF_FULL	revidents
+PROF_FULL	rezidents
+PROF_FULL	reģistrators
+PROF_FULL	reģistrētājs
+PROF_FULL	režisora asistents
+PROF_FULL	rotkalis
+PROF_FULL	radara elektronikas tehniķis
+PROF_FULL	radara komunikāciju inženieris
+PROF_FULL	radara telekomunikāciju tehniķis
+PROF_FULL	radio diktors
+PROF_FULL	radio mehāniķis
+PROF_FULL	radio tehniķis
+PROF_FULL	radio un televīzijas intervētājs
+PROF_FULL	radio un televīzijas komentētājs
+PROF_FULL	radio un televīzijas iekārtu mehāniķis
+PROF_FULL	radioastronoms
+PROF_FULL	radioelektroniķis
+PROF_FULL	radioaktīvo atkritumu pārstrādes operators
+PROF_FULL	radioaktīvo minerālu metalurgs
+PROF_FULL	radioaktīvo vielu ķīmiķis
+PROF_FULL	radioaparatūras montieris
+PROF_FULL	radioelektronikas inženieris
+PROF_FULL	radioiekārtas vecākais tehniķis
+PROF_FULL	radiokontroles punkta operators
+PROF_FULL	radiolokācijas inženieris
+PROF_FULL	radiolokācijas operators
+PROF_FULL	radiolokācijas tehniķis
+PROF_FULL	radiolokācijas un radionavigācijas inženieris
+PROF_FULL	radiolokācijas un radionavigācijas tehniķis
+PROF_FULL	radiolokācijas un radionavigācijas iekārtu mehāniķis
+PROF_FULL	radioloģijas fiziķis
+PROF_FULL	radioloģijas ķīmiķis
+PROF_FULL	radionavigācijas inženieris
+PROF_FULL	radionavigācijas operators
+PROF_FULL	radionavigācijas tehniķis
+PROF_FULL	radiosakaru inženieris
+PROF_FULL	radiouzveduma direktors
+PROF_FULL	raudzes noteicējs
+PROF_FULL	raudzēšanas tehnologs
+PROF_FULL	ražošanas brigadieris
+PROF_FULL	ražošanas direktors
+PROF_FULL	ražošanas dispečers
+PROF_FULL	ražošanas farmaceits
+PROF_FULL	ražošanas inženieris
+PROF_FULL	ražošanas kontrolieris
+PROF_FULL	ražošanas plānotājs
+PROF_FULL	ražošanas psihologs
+PROF_FULL	ražošanas tehniķis
+PROF_FULL	ražošanas vadītājs
+PROF_FULL	ražošanas iekārtas operators
+PROF_FULL	ražošanas maiņas vadītājs
+PROF_FULL	ražošanas sagatavošanas inženieris
+PROF_FULL	ražošanas vadības organizācijas inženieris
+PROF_FULL	reaktora operators
+PROF_FULL	reaktīvo dzinēju inženieris
+PROF_FULL	reaktīvo dzinēju mehāniķis
+PROF_FULL	realizācijas aģents
+PROF_FULL	refrižeratorsekciju mehāniķis
+PROF_FULL	reklamāciju struktūrvienības vadītāja vietnieks
+PROF_FULL	reklamāciju struktūrvienības vadītājs
+PROF_FULL	reklāmas aģents
+PROF_FULL	reklāmas konsultants
+PROF_FULL	reklāmas modelis
+PROF_FULL	reklāmas speciālists
+PROF_FULL	reklāmas vadītājs
+PROF_FULL	reklāmas komercdarbības pakalpojumu speciālists
+PROF_FULL	reklāmas komercpakalpojumu pārdevējs
+PROF_FULL	reklāmas pakalpojumu komercdarbinieks
+PROF_FULL	reklāmas struktūrvienības direktora vietnieks
+PROF_FULL	reklāmas struktūrvienības direktors
+PROF_FULL	reklāmas struktūrvienības vadītāja vietnieks
+PROF_FULL	reklāmas struktūrvienības vadītājs
+PROF_FULL	reklāmas un tirgvedības projektu plānotājs
+PROF_FULL	rekreācijas speciālists
+PROF_FULL	releju aizsardzības un automātikas inženieris
+PROF_FULL	remontstrādnieks
+PROF_FULL	remontdarbu dispečers
+PROF_FULL	rentgenoloģijas un radioloģijas māsa
+PROF_FULL	rentgenstaru iekārtas operators
+PROF_FULL	reproiekārtas operators
+PROF_FULL	republikas pilsētas pašvaldības domes deputāts
+PROF_FULL	republikas pilsētas pašvaldības domes priekšsēdētāja vietnieks
+PROF_FULL	republikas pilsētas pašvaldības domes priekšsēdētājs
+PROF_FULL	restorāna direktora vietnieks
+PROF_FULL	restorāna direktors
+PROF_FULL	restorāna pārvaldnieks
+PROF_FULL	restorāna vadītāja vietnieks
+PROF_FULL	restorāna vadītājs
+PROF_FULL	restorāna pakalpojumu komercdarbinieks
+PROF_FULL	restorānu pakalpojumu speciālists
+PROF_FULL	rezervuāra operators
+PROF_FULL	rezervāta uzraugs
+PROF_FULL	reģiona vadītājs
+PROF_FULL	reģiona attīstības padomes loceklis
+PROF_FULL	reģiona attīstības padomes priekšsēdētājs
+PROF_FULL	reģiona iestādes vecākais
+PROF_FULL	režīma uzraugs
+PROF_FULL	riepu tehnologs
+PROF_FULL	riepu apstrādes operators
+PROF_FULL	riepu restaurācijas operators
+PROF_FULL	riska analītiķis
+PROF_FULL	risku vadības speciālists
+PROF_FULL	ritošā sastāva atslēdznieks
+PROF_FULL	ritošā sastāva ekipētājs
+PROF_FULL	ritošā sastāva pieņēmējs
+PROF_FULL	robota operators
+PROF_FULL	robotu inženieris
+PROF_FULL	robotu tehniķis
+PROF_FULL	robotu uzraugs
+PROF_FULL	rokas mma
+PROF_FULL	rokas lokmetinātājs
+PROF_FULL	rokas ķirurgs
+PROF_FULL	rokdarbu modelētājs
+PROF_FULL	rokrakstu, dokumentu, grāmatu restaurators
+PROF_FULL	rotējošās krāsns operatora palīgs
+PROF_FULL	rotējošās krāsns operators
+PROF_FULL	runas terapeits
+PROF_FULL	rēķinvedis
+PROF_FULL	rīkotājdirektors
+PROF_FULL	rūdas un metāla kausēšanas krāsns operators
+PROF_FULL	rūpniecisko iekārtu montieris
+PROF_FULL	rūpniecisko iekārtu un rīku inženieris
+PROF_FULL	rūpniecisko iekārtu un rīku mehāniķis
+PROF_FULL	rūpniecisko mašīnu un darbarīku mehānikas inženieris
+PROF_FULL	rūpniecības bakteriologs
+PROF_FULL	rūpniecības komercdarbinieks
+PROF_FULL	rūpniecības sociologs
+PROF_FULL	rūpniecības projektēšanas inženieris
+PROF_FULL	rūpnīcas katlu kurinātājs
+PROF_FULL	sagādnieks
+PROF_FULL	sanitārs
+PROF_FULL	santehniķis
+PROF_FULL	scenogrāfs
+PROF_FULL	scenārists
+PROF_FULL	seglinieks
+PROF_FULL	seismologs
+PROF_FULL	sekretāra biedra palīgs
+PROF_FULL	sekretāra palīgs
+PROF_FULL	sekretārs
+PROF_FULL	sekretārs – konsultants
+PROF_FULL	seksologs, seksopatologs
+PROF_FULL	semantiķis
+PROF_FULL	senatora palīgs
+PROF_FULL	senators
+PROF_FULL	seržants
+PROF_FULL	signalizētājs
+PROF_FULL	sinoptiķis
+PROF_FULL	sistemātiķis
+PROF_FULL	skolotāja palīgs
+PROF_FULL	skolotājs logopēds
+PROF_FULL	skolotājs mentors
+PROF_FULL	skursteņslauķis
+PROF_FULL	skārdnieks
+PROF_FULL	slaucējs
+PROF_FULL	sludinātājs
+PROF_FULL	slīpētājs
+PROF_FULL	smirģelētājs
+PROF_FULL	sociologs
+PROF_FULL	sociālpatologs
+PROF_FULL	solists
+PROF_FULL	spa administrators
+PROF_FULL	spa meistars
+PROF_FULL	spa vadītājs
+PROF_FULL	speciālists bērnu tiesību aizsardzības jautājumos
+PROF_FULL	speciālists mājokļu jautājumos
+PROF_FULL	speciālists zemes nomas jautājumos
+PROF_FULL	spolētājs
+PROF_FULL	spridzinātājs
+PROF_FULL	starpnieks
+PROF_FULL	statistiķa palīgs
+PROF_FULL	statistiķis
+PROF_FULL	stenogrāfs
+PROF_FULL	stereotipists
+PROF_FULL	stiegrotājs
+PROF_FULL	stiklinieks
+PROF_FULL	stilists
+PROF_FULL	stratogrāfs
+PROF_FULL	stropētājs
+PROF_FULL	stūrmanis
+PROF_FULL	sudrabkalis
+PROF_FULL	suflieris
+PROF_FULL	svērājs
+PROF_FULL	sabiedrisko attiecību speciālists
+PROF_FULL	sabiedrisko attiecību vadītājs
+PROF_FULL	sabiedrisko attiecību struktūrvienības direktora vietnieks
+PROF_FULL	sabiedrisko attiecību struktūrvienības direktors
+PROF_FULL	sabiedrisko attiecību struktūrvienības vadītāja vietnieks
+PROF_FULL	sabiedrisko attiecību struktūrvienības vadītājs
+PROF_FULL	sabiedrisko tualešu apkopējs
+PROF_FULL	sabiedriskā transporta organizators
+PROF_FULL	sabiedriskās kārtības sargs
+PROF_FULL	sabiedrības sekretārs
+PROF_FULL	sabiedrības vēsturnieks
+PROF_FULL	sabiedrības pārvaldes speciālists
+PROF_FULL	sabiedrības veselības analītiķis
+PROF_FULL	sabiedrības veselības metodiķis
+PROF_FULL	sabiedrības veselības māsa
+PROF_FULL	sabiedrības veselības organizators
+PROF_FULL	sabiedrības veselības speciālists
+PROF_FULL	sabiedrības veselības ārsts
+PROF_FULL	sacīkšu braucējs
+PROF_FULL	sadales struktūrvienības direktora vietnieks
+PROF_FULL	sadales struktūrvienības direktors
+PROF_FULL	sadales struktūrvienības vadītāja vietnieks
+PROF_FULL	sadales struktūrvienības vadītājs
+PROF_FULL	saeimas deputāta palīgs
+PROF_FULL	saeimas deputāts
+PROF_FULL	saeimas priekšsēdētāja biedra palīgs
+PROF_FULL	saeimas priekšsēdētāja biedrs
+PROF_FULL	saeimas priekšsēdētāja palīgs
+PROF_FULL	saeimas priekšsēdētājs
+PROF_FULL	saeimas sekretāra biedra palīgs
+PROF_FULL	saeimas sekretāra biedrs
+PROF_FULL	saeimas sekretāra palīgs
+PROF_FULL	saeimas sekretārs
+PROF_FULL	saeimas frakcijas priekšsēdētājs
+PROF_FULL	saeimas komisijas priekšsēdētāja biedrs
+PROF_FULL	saeimas komisijas priekšsēdētājs
+PROF_FULL	saeimas komisijas sekretārs
+PROF_FULL	sagādes aģents
+PROF_FULL	sagādes struktūrvienības direktora vietnieks
+PROF_FULL	sagādes struktūrvienības direktors
+PROF_FULL	sagādes struktūrvienības vadītāja vietnieks
+PROF_FULL	sagādes struktūrvienības vadītājs
+PROF_FULL	saimniecības direktors
+PROF_FULL	saimniecības izpilddirektors
+PROF_FULL	saimniecības strādnieks
+PROF_FULL	saimniecības vadītāja vietnieks
+PROF_FULL	saimniecības vadītājs
+PROF_FULL	saimniecības pārzinis
+PROF_FULL	saimniecības struktūrvienības direktora vietnieks
+PROF_FULL	saimniecības struktūrvienības direktors
+PROF_FULL	saimniecības struktūrvienības priekšnieka vietnieks
+PROF_FULL	saimniecības struktūrvienības priekšnieks
+PROF_FULL	saimniecības struktūrvienības vadītāja vietnieks
+PROF_FULL	saimniecības struktūrvienības vadītājs
+PROF_FULL	saiņošanas operators
+PROF_FULL	sakaru motociklists
+PROF_FULL	sakaru virsnieks
+PROF_FULL	sakaru elektromehāniķis
+PROF_FULL	sakņkopības tehniķis
+PROF_FULL	saldumu un šokolādes izstrādājumu ražošanas tehniķis
+PROF_FULL	saldējamo iekārtu mehāniķis
+PROF_FULL	saldēšanas iekārtas operators
+PROF_FULL	saldēšanas iekārtu mehānikas inženieris
+PROF_FULL	saldūdens biologs
+PROF_FULL	saldūdens un piekrastes zivju apstrādātājs
+PROF_FULL	sanitārais inspektors
+PROF_FULL	sanitārautomobiļa vadītājs
+PROF_FULL	sanitārijas inženieris
+PROF_FULL	sanitārtehnikas būvinženieris
+PROF_FULL	sanitārtehnisko iekārtu montētājs
+PROF_FULL	sardzes mehāniķis
+PROF_FULL	sardzes stūrmanis
+PROF_FULL	sastatņu montētājs
+PROF_FULL	satiksmes plānotājs
+PROF_FULL	satiksmes organizācijas inženieris
+PROF_FULL	satversmes tiesas priekšsēdētājs
+PROF_FULL	sauszemes motoru un mašīnu mehānikas inženieris
+PROF_FULL	sauszemes radioiekārtas operators
+PROF_FULL	sauszemes transportlīdzekļu tehniskais eksperts
+PROF_FULL	sauszemes transportlīdzekļu tehniskais vērtētājs
+PROF_FULL	sausā doka priekšnieks
+PROF_FULL	sausās būves celtnieks
+PROF_FULL	sausās būves montieris
+PROF_FULL	savvaļas kažokādu dzīvnieku kopējs
+PROF_FULL	savvaļas kažokādu dzīvnieku audzēšanas lauksaimnieks
+PROF_FULL	savvaļas putnu audzētājs
+PROF_FULL	saziņas līdzekļu koordinētājs
+PROF_FULL	segu šuvējs
+PROF_FULL	sekretariāta vadītājs
+PROF_FULL	senāta priekšsēdētāja palīgs
+PROF_FULL	serdeņu izgatavotājs
+PROF_FULL	seroloģijas tehniķis
+PROF_FULL	sertificēts eksperts
+PROF_FULL	sertifikācijas inženieris
+PROF_FULL	sevišķi svarīgu lietu inspektors
+PROF_FULL	sevišķi svarīgu uzdevumu inspektors
+PROF_FULL	sezonas lauksaimniecības strādnieks
+PROF_FULL	siatsu speciālists
+PROF_FULL	siera izgatavotājs
+PROF_FULL	sietspiedējs
+PROF_FULL	signalizācijas pults operators
+PROF_FULL	signalizācijas un sakaru distances priekšnieka vietnieks
+PROF_FULL	signalizācijas un sakaru distances priekšnieks
+PROF_FULL	signāliekārtu montētājs
+PROF_FULL	signālsistēmas inženieris
+PROF_FULL	signālsistēmu elektronikas tehniķis
+PROF_FULL	signālsistēmu telekomunikāciju tehniķis
+PROF_FULL	siltumfiziķis
+PROF_FULL	siltuma, gāzes un ūdens tehnoloģijas inženieris
+PROF_FULL	siltumapgādes, ventilācijas un saldēšanas tehniķis
+PROF_FULL	siltumenerģijas pārvades un sadales inženieris
+PROF_FULL	siltumenerģijas un siltumtehnikas inženieris
+PROF_FULL	siltumenerģētikas inženieris
+PROF_FULL	siltumenerģētikas speciālists
+PROF_FULL	siltumenerģētikas tehniķis
+PROF_FULL	siltumiekārtu remontatslēdznieks
+PROF_FULL	siltumiekārtu apkalpošanas atslēdznieks
+PROF_FULL	siltumiekārtu ekspluatācijas inženieris
+PROF_FULL	siltumnīcas dārznieks
+PROF_FULL	siltumnīcas strādnieks
+PROF_FULL	siltumsistēmu ekspluatācijas inženieris
+PROF_FULL	siltumtehnikas inženieris
+PROF_FULL	siltumtehnisko iekārtu inženieris
+PROF_FULL	siltumtīklu operators
+PROF_FULL	sintētisko šķiedru apstrādes operators
+PROF_FULL	sirds ķirurgs
+PROF_FULL	sistēmanalītiķis
+PROF_FULL	sistēmbibliotekārs
+PROF_FULL	sistēmu izņemot skaitļotāju analītiķis
+PROF_FULL	sistēmu izņemot skaitļotāju inženieris
+PROF_FULL	sistēmu izņemot skaitļotāju dizaina inženieris
+PROF_FULL	sistēmu vadības inženieris
+PROF_FULL	sitaminstrumentu mūziķis
+PROF_FULL	skaistumkopšanas speciālists
+PROF_FULL	skaitļotāja operators
+PROF_FULL	skaitļotāju datu bāzes analītiķis
+PROF_FULL	skaitļotāju datu bāzes vadītājs
+PROF_FULL	skaitļotāju elektronikas inženieris
+PROF_FULL	skaitļotāju komunikāciju analītiķis
+PROF_FULL	skaitļotāju lietošanas inženieris
+PROF_FULL	skaitļotāju sistēmu analītiķis
+PROF_FULL	skaitļotāju sistēmu inženieris
+PROF_FULL	skaitļotāju sistēmu konstruktors
+PROF_FULL	skaitļošanas sistēmu analītiķis
+PROF_FULL	skaitļošanas sistēmu projektētājs
+PROF_FULL	skatlogu dekorētājs
+PROF_FULL	skatlogu noformētājs
+PROF_FULL	skatuves meistars
+PROF_FULL	skatuves montētājs
+PROF_FULL	skatuves strādnieks
+PROF_FULL	skaņas fiziķis
+PROF_FULL	skaņu operators
+PROF_FULL	skaņu režisors
+PROF_FULL	skolas direktora vietnieks
+PROF_FULL	skolas direktors
+PROF_FULL	skolas priekšnieka vietnieks
+PROF_FULL	skolas priekšnieks
+PROF_FULL	skolas pārzinis
+PROF_FULL	skolas katedras vadītājs
+PROF_FULL	skolēnu pavadonis
+PROF_FULL	skursteņu būvinženieris
+PROF_FULL	skābekļa balonu pildītājs
+PROF_FULL	skābekļa ražošanas iekārtas operators
+PROF_FULL	skārda liecējs
+PROF_FULL	skārda valcētājs
+PROF_FULL	sliežu defektoskopists
+PROF_FULL	sliežu ceļa mašīnu iestatītājs
+PROF_FULL	sliežu ceļu brigadieris
+PROF_FULL	sliežu ceļu montieris
+PROF_FULL	sliežu ceļu mašīnu un mehānismu regulētājs
+PROF_FULL	sliežu ceļu saimniecības tehniķis
+PROF_FULL	sliežu defektoskopijas brigadieris
+PROF_FULL	sliežu motortransporta mašīnista palīgs
+PROF_FULL	sliežu motortransporta vadītājs
+PROF_FULL	sliežu motortransporta vadītājs instruktors
+PROF_FULL	sliežu motortransporta vadītāja palīgs
+PROF_FULL	slimu bērnu auklis
+PROF_FULL	sludinājumu ievietošanas komercdarbības pakalpojumu pārstāvis
+PROF_FULL	slāpekļa ražošanas iekārtas operators
+PROF_FULL	slēdzeņu atslēdznieks
+PROF_FULL	slēpošanas un snovborda inventāra apkopes strādnieks
+PROF_FULL	smaržu destilēšanas iekārtas operators
+PROF_FULL	sniega ģeneratoru operators
+PROF_FULL	sociopsihologs
+PROF_FULL	sociālais audzinātājs
+PROF_FULL	sociālais darbinieks
+PROF_FULL	sociālais pedagogs
+PROF_FULL	sociālais rehabilitētājs
+PROF_FULL	sociālā dienesta vadītāja vietnieks
+PROF_FULL	sociālā dienesta vadītājs
+PROF_FULL	sociālās apdrošināšanas ārsts
+PROF_FULL	sociālās aprūpes karitatīvais darbinieks, diakons
+PROF_FULL	sociālās palīdzības organizators
+PROF_FULL	solārija darbinieks
+PROF_FULL	spalvu šķirotājs
+PROF_FULL	specializētā automobiļa vadītājs
+PROF_FULL	speciālais pedagogs
+PROF_FULL	speciālo uzdevumu vēstnieks
+PROF_FULL	speciālu ziņojumu sniegšanas lidotājiem sistēmu inženieris
+PROF_FULL	speciālu ziņojumu sniegšanas lidotājiem sistēmu tehniķis
+PROF_FULL	speciālās izglītības skolotājs
+PROF_FULL	spiedieniekārtu operators
+PROF_FULL	spiedliešanas operators
+PROF_FULL	spiedliešanas iekārtas operators
+PROF_FULL	spiedveidnes rasētājs
+PROF_FULL	spolēšanas iekārtas operators
+PROF_FULL	sporta aģents
+PROF_FULL	sporta instruktors
+PROF_FULL	sporta metodiķis
+PROF_FULL	sporta organizators
+PROF_FULL	sporta speciālists
+PROF_FULL	sporta tiesnesis
+PROF_FULL	sporta treneris
+PROF_FULL	sporta pasākumu organizators
+PROF_FULL	sporta spēļu vadītājs
+PROF_FULL	sporta zirgu treneris
+PROF_FULL	sporta zāles pārzinis
+PROF_FULL	sporta ārsts
+PROF_FULL	spoļu attinējs
+PROF_FULL	spoļu licējs
+PROF_FULL	spoļu tīrītājs
+PROF_FULL	spēkstacijas turbīnas operators
+PROF_FULL	spēļu iekārtu pārraugs
+PROF_FULL	stacijas dežurants
+PROF_FULL	standartizācijas inženieris
+PROF_FULL	starptautisko ekonomisko attiecību speciālists
+PROF_FULL	starptautisko pasta sūtījumu struktūrvienības vadītājs
+PROF_FULL	starptautiskā norēķinu centra vadītājs
+PROF_FULL	starpvalstu institūcijas vadītājs
+PROF_FULL	starpvalstu institūcijas struktūrvienības vadītājs
+PROF_FULL	statistikas matemātiķis
+PROF_FULL	statistikas un finanšu uzskaitvedis
+PROF_FULL	sterilizācijas tehniskais darbinieks
+PROF_FULL	stiegrojuma ražošanas operators
+PROF_FULL	stikla gravieris
+PROF_FULL	stikla matētājs
+PROF_FULL	stikla pūtējs
+PROF_FULL	stikla slīpētājs
+PROF_FULL	stikla tehnologs
+PROF_FULL	stikla apstrādes mākslinieks
+PROF_FULL	stikla apstrādes līnijas operators
+PROF_FULL	stikla dizaina speciālists
+PROF_FULL	stikla izstrādājumu dizaina speciālists
+PROF_FULL	stikla un keramikas maisīšanas iekārtas ražošanas operators
+PROF_FULL	stikla un keramikas malšanas iekārtas ražošanas operators
+PROF_FULL	stikla ķīmiķis
+PROF_FULL	stikla šķiedras ražošanas operators
+PROF_FULL	stila mēbeļu modelētājs
+PROF_FULL	stratēģiskās plānošanas un attīstības struktūrvienības direktors
+PROF_FULL	stratēģiskās plānošanas un attīstības struktūrvienības vadītājs
+PROF_FULL	stratēģiskās vadības procesa vadītājs
+PROF_FULL	striptīza mākslinieks
+PROF_FULL	struktūrvienības vadītāja palīgs
+PROF_FULL	struktūrvienības vadītājs
+PROF_FULL	studijas tehniskās iekārtas operators
+PROF_FULL	stādaudzēšanas tehniķis
+PROF_FULL	stājgleznu restaurators
+PROF_FULL	stīginstrumentu mūziķis
+PROF_FULL	stīgu izgatavotājs
+PROF_FULL	stīgu instrumentu būvētājs
+PROF_FULL	sulas spiedējs
+PROF_FULL	summatoru operators
+PROF_FULL	surdotulks
+PROF_FULL	suņu audzētājs
+PROF_FULL	suņu frizieris
+PROF_FULL	suņu pavadonis
+PROF_FULL	suņu audzētavas uzraugs
+PROF_FULL	suņu un kaķu kopējs
+PROF_FULL	suņu un kaķu barības ražošanas tehnologs
+PROF_FULL	suņu un kaķu barības ražošanas iekārtu operators
+PROF_FULL	svaru un mēru inspektors
+PROF_FULL	sviesta meistars
+PROF_FULL	svētku režisors
+PROF_FULL	sākumizglītības skolotājs
+PROF_FULL	sētnieks
+PROF_FULL	sēklkopības agronoms
+PROF_FULL	sēklkopības tehniķis
+PROF_FULL	sēklu audzēšanas dārznieks
+PROF_FULL	sēru ceremoniju mākslinieks
+PROF_FULL	sēru ceremoniju vadītājs
+PROF_FULL	sēņu audzētājs
+PROF_FULL	sēžu protokolu vadītājs
+PROF_FULL	sūknēšanas iekārtas apkalpotājs
+PROF_FULL	sūknēšanas iekārtas operators
+PROF_FULL	tabeļvedis
+PROF_FULL	takelētājs
+PROF_FULL	taksidermists
+PROF_FULL	taksētājs
+PROF_FULL	tamborētājs
+PROF_FULL	tapsētājs
+PROF_FULL	tehniķis
+PROF_FULL	tehniķis – kriminālists
+PROF_FULL	tehnologa palīgs
+PROF_FULL	tehnologs
+PROF_FULL	telefonists
+PROF_FULL	telegrāfists
+PROF_FULL	teologs
+PROF_FULL	terminologs
+PROF_FULL	termists
+PROF_FULL	termodinamiķis
+PROF_FULL	tetovētājs
+PROF_FULL	tiesnesis
+PROF_FULL	tiesneša palīgs
+PROF_FULL	tiesībsargs
+PROF_FULL	tinējs
+PROF_FULL	tirgotājs
+PROF_FULL	tirgzinis
+PROF_FULL	toksikologs
+PROF_FULL	tonētājs
+PROF_FULL	transfuziologs
+PROF_FULL	transplantologs
+PROF_FULL	traumatologs, ortopēds
+PROF_FULL	traļmeistars
+PROF_FULL	trihologs
+PROF_FULL	tulkotājs
+PROF_FULL	tulks
+PROF_FULL	tulks referents
+PROF_FULL	tabakas strādnieks
+PROF_FULL	taksometra vadītājs
+PROF_FULL	tapešu līmētājs
+PROF_FULL	taustiņinstrumentu mūziķis
+PROF_FULL	tautas tērpu darinātājs
+PROF_FULL	tehnikas ilustrētājs
+PROF_FULL	tehnikas rasētājs
+PROF_FULL	tehnikas statistiķis
+PROF_FULL	tehniskais direktors
+PROF_FULL	tehniskais inspektors
+PROF_FULL	tehniskais ortopēds
+PROF_FULL	tehniskais redaktors
+PROF_FULL	tehniskais sekretārs
+PROF_FULL	tehniskais speciālists
+PROF_FULL	tehniskais strādnieks
+PROF_FULL	tehnisko sistēmu apsardzes programmēšanas inženieris
+PROF_FULL	tehniskās drošības inspektors
+PROF_FULL	tehniskās informācijas tehniķis
+PROF_FULL	tehniskās struktūrvienības vadītāja vietnieks
+PROF_FULL	tehniskās struktūrvienības vadītājs
+PROF_FULL	tehniskās uzraudzības inspektors
+PROF_FULL	teksta maketētājs
+PROF_FULL	teksta redaktora operators
+PROF_FULL	tekstilmākslinieks
+PROF_FULL	tekstila izstrādājumu ražošanas tehniķis
+PROF_FULL	tekstiliju restaurators
+PROF_FULL	tekstilizstrādājumu modelētājs
+PROF_FULL	tekstilizstrādājumu dizaina speciālists
+PROF_FULL	tekstilmateriālu apdares tehnologs
+PROF_FULL	tekstilmateriālu dizaina speciālists
+PROF_FULL	tekstilprodukcijas balināšanas operators
+PROF_FULL	tekstilražošanas iekārtas mehāniķis
+PROF_FULL	tekstilšķiedru apstrādes operators
+PROF_FULL	teksturēšanas operators
+PROF_FULL	telefaksa operators
+PROF_FULL	telefona inženieris
+PROF_FULL	telefona elektronikas tehniķis
+PROF_FULL	telefona informācijas dienesta konsultants
+PROF_FULL	telefona komunikāciju tehniķis
+PROF_FULL	telefona komutatora operators
+PROF_FULL	telefona sakaru mehāniķis
+PROF_FULL	telefonbankas konsultants
+PROF_FULL	telefonbankas operators
+PROF_FULL	telefonu mehāniķis
+PROF_FULL	telegrāfa inženieris
+PROF_FULL	telegrāfa mehāniķis
+PROF_FULL	telegrāfa operators
+PROF_FULL	telegrāfa elektronikas tehniķis
+PROF_FULL	telegrāfa komunikāciju tehniķis
+PROF_FULL	telegrāfa sakaru mehāniķis
+PROF_FULL	telekomunikāciju inženieris
+PROF_FULL	telekomunikāciju konstruktors
+PROF_FULL	telekomunikāciju speciālists
+PROF_FULL	telekomunikāciju tehniķis
+PROF_FULL	telekomunikāciju tehnologs
+PROF_FULL	telekomunikāciju iekārtu montieris
+PROF_FULL	teleksa operators
+PROF_FULL	teletaipa operators
+PROF_FULL	televizoru mehāniķis
+PROF_FULL	televīzijas diktors
+PROF_FULL	televīzijas inženieris
+PROF_FULL	televīzijas operators
+PROF_FULL	televīzijas režisors
+PROF_FULL	televīzijas elektronikas tehniķis
+PROF_FULL	televīzijas komunikāciju tehniķis
+PROF_FULL	televīzijas un kino producents
+PROF_FULL	televīzijas uzveduma direktors
+PROF_FULL	telpiskās attīstības plānotājs
+PROF_FULL	teorētiskās fizikas fiziķis
+PROF_FULL	terapijas māsa
+PROF_FULL	teritorijas plānotājs
+PROF_FULL	termiskās apstrādes iekārtu operators
+PROF_FULL	termogriezējs
+PROF_FULL	termoķīmiskās apstrādes iekārtas operators
+PROF_FULL	testa atslēgu administrators
+PROF_FULL	testa atslēgu pārzinis
+PROF_FULL	teātra aģents
+PROF_FULL	teātra dekorētājs
+PROF_FULL	teātra apavu modelētājs
+PROF_FULL	teātra galvenais administrators
+PROF_FULL	teātra kostīmu modelētājs
+PROF_FULL	teātra kostīmu mākslinieks
+PROF_FULL	teātra programmu pārdevējs
+PROF_FULL	tiesas administrators
+PROF_FULL	tiesas konsultants
+PROF_FULL	tiesas priekšsēdētāja palīgs
+PROF_FULL	tiesas priekšsēdētāja vietnieks
+PROF_FULL	tiesas sekretārs
+PROF_FULL	tiesas tulks
+PROF_FULL	tiesas ziņnesis
+PROF_FULL	tiesas priekšsēdētājs
+PROF_FULL	tiesas sēžu sekretārs
+PROF_FULL	tieslietu konsultants
+PROF_FULL	tiesu eksperta palīgs
+PROF_FULL	tiesu eksperts
+PROF_FULL	tiesu kolēģijas priekšsēdētāja palīgs
+PROF_FULL	tiesu kolēģijas priekšsēdētājs
+PROF_FULL	tiesu medicīnas eksperts
+PROF_FULL	tiesu palātas priekšsēdētājs
+PROF_FULL	tiesu psihiatrijas eksperts
+PROF_FULL	tiltu būvinženieris
+PROF_FULL	tiltu būvuzraugs
+PROF_FULL	tirdzniecības aģents
+PROF_FULL	tirdzniecības brokeris
+PROF_FULL	tirdzniecības direktors
+PROF_FULL	tirdzniecības pārdevējs
+PROF_FULL	tirdzniecības pārstāvis
+PROF_FULL	tirdzniecības starpnieks
+PROF_FULL	tirdzniecības vadītājs
+PROF_FULL	tirdzniecības finansēšanas speciālists
+PROF_FULL	tirdzniecības struktūrvienības direktors
+PROF_FULL	tirdzniecības struktūrvienības vadītājs
+PROF_FULL	tirdzniecības zāles darbinieks
+PROF_FULL	tirgus pārdevējs
+PROF_FULL	tirgus operāciju un maksājumu speciālists
+PROF_FULL	tirgus pētījumu analītiķis
+PROF_FULL	tirgvedības direktors
+PROF_FULL	tirgvedības vadītāja asistents
+PROF_FULL	tirgvedības vadītājs
+PROF_FULL	tirgvedības struktūrvienības direktors
+PROF_FULL	tirgvedības struktūrvienības vadītājs
+PROF_FULL	tirgvedības un tirdzniecības speciālists
+PROF_FULL	toksikofarmakologs
+PROF_FULL	topogrāfijas rasētājs
+PROF_FULL	torakālais ķirurgs
+PROF_FULL	torņu būvinženieris
+PROF_FULL	totalizatora bukmeikers
+PROF_FULL	traktora vadītājs
+PROF_FULL	traktortehnikas vadītājs
+PROF_FULL	tramvaja konduktors
+PROF_FULL	tramvaja vadītājs
+PROF_FULL	transfuzioloģijas māsa
+PROF_FULL	transporta dispečers
+PROF_FULL	transporta galdnieks
+PROF_FULL	transporta inspektors
+PROF_FULL	transporta kontrolieris
+PROF_FULL	transporta mehāniķis
+PROF_FULL	transporta pārraugs
+PROF_FULL	transporta starpnieks
+PROF_FULL	transporta strādnieks
+PROF_FULL	transporta biroja pārvaldnieks
+PROF_FULL	transporta grafika analītiķis
+PROF_FULL	transporta lokomotīvju tehniķis
+PROF_FULL	transporta lokomotīvju dzinēju mehāniķis
+PROF_FULL	transporta pārvadājumu komercdarbinieks
+PROF_FULL	transporta struktūrvienības direktors
+PROF_FULL	transporta struktūrvienības priekšnieks
+PROF_FULL	transporta struktūrvienības vadītājs
+PROF_FULL	transporta tīklu inženieris
+PROF_FULL	transporta vagonu tehniķis
+PROF_FULL	transportbūvju būvinženieris
+PROF_FULL	transportiera apkalpotājs
+PROF_FULL	transportlīdzekļu krāsotājs
+PROF_FULL	transportlīdzekļu pieņēmējs
+PROF_FULL	transportlīdzekļu reģistrētājs
+PROF_FULL	transportlīdzekļu skārdnieks
+PROF_FULL	transportlīdzekļu tapsētājs
+PROF_FULL	transportlīdzekļu tīrītājs
+PROF_FULL	transportlīdzekļu dzinēju regulētājs
+PROF_FULL	transportlīdzekļu manevru pārraugs
+PROF_FULL	transportlīdzekļu motoru mehāniķis
+PROF_FULL	transportlīdzekļu tehniskās kontroles inspektors
+PROF_FULL	transportsistēmu inženieris
+PROF_FULL	trauku mazgātājs
+PROF_FULL	traumatoloģijas un ortopēdijas māsa
+PROF_FULL	treilēšanas un iekraušanas iekārtu mašīnists
+PROF_FULL	trenažieru zāles instruktors
+PROF_FULL	trešais sekretārs
+PROF_FULL	trikotāžas izstrādājumu formētājs
+PROF_FULL	trikotāžas izstrādājumu ražošanas tehniķis
+PROF_FULL	triku meistars
+PROF_FULL	trolejbusa vadītājs
+PROF_FULL	trošu vijējs
+PROF_FULL	trošu vagona konduktors
+PROF_FULL	tualetes piederumu ražošanas operators
+PROF_FULL	tuneļu būvinženieris
+PROF_FULL	turbīnu iekārtu operators
+PROF_FULL	tvaika lokomotīves vadītāja palīgs
+PROF_FULL	tvaika lokomotīves vadītājs
+PROF_FULL	tvaika lokomotīves vadītājs instruktors
+PROF_FULL	tvaika mašīnas operators
+PROF_FULL	tvaika spēkstacijas operators
+PROF_FULL	tvaikošanas operators
+PROF_FULL	tālmanis
+PROF_FULL	tāmētājs
+PROF_FULL	tāljūras locis
+PROF_FULL	tālsakaru operators
+PROF_FULL	tāmju inženieris
+PROF_FULL	tēlnieks
+PROF_FULL	tēsējs
+PROF_FULL	tēlniecības objektu dizaina speciālists
+PROF_FULL	tērpu demonstrētājs
+PROF_FULL	tērpu stila speciālists
+PROF_FULL	tīrītājs
+PROF_FULL	tūrisma gids
+PROF_FULL	tūrisma organizators
+PROF_FULL	tūrisma informācijas konsultants
+PROF_FULL	tūrisma mītnes istabenis
+PROF_FULL	tūrisma pakalpojumu komercdarbinieks
+PROF_FULL	tūrisma un atpūtas organizācijas vadītājs
+PROF_FULL	tūristu gids
+PROF_FULL	tūristu grupas vadītājs
+PROF_FULL	ugunsdzēsējs
+PROF_FULL	ugunsdzēsējs glābējs
+PROF_FULL	urbējs
+PROF_FULL	urologs
+PROF_FULL	uzskaitvedis
+PROF_FULL	ugunsdrošības inspektors
+PROF_FULL	ugunsdrošības inženieris
+PROF_FULL	ugunsdrošības tehniķis
+PROF_FULL	ugunsdrošības un civilās aizsardzības inženieris
+PROF_FULL	ugunsdrošības un civilās aizsardzības tehniķis
+PROF_FULL	ugunsdzēsības un glābšanas dienesta ugunsdzēsējs glābējs
+PROF_FULL	ugunsdzēsības un glābšanas dienesta ugunsdzēsējs autovadītājs
+PROF_FULL	urbumu skābjotājs
+PROF_FULL	uroloģijas māsa
+PROF_FULL	uzkopšanas darba vadītājs
+PROF_FULL	uzkopšanas darbu meistars
+PROF_FULL	uzraudzības auditors
+PROF_FULL	uzraudzības būvtehniķis
+PROF_FULL	uzskaites operators
+PROF_FULL	uzskaites rādījumu reģistrētājs
+PROF_FULL	uzskaites struktūrvienības direktors
+PROF_FULL	uzskaites struktūrvienības vadītājs
+PROF_FULL	uztura speciālists
+PROF_FULL	uzturzinātnes speciālists
+PROF_FULL	uztīšanas iekārtas montieris
+PROF_FULL	uzziņu operators
+PROF_FULL	vadītāja
+PROF_FULL	vadītāja padomnieks
+PROF_FULL	vadītāja vietnieks
+PROF_FULL	vadītāja noliktavās
+PROF_FULL	vadītājs
+PROF_FULL	varkalis
+PROF_FULL	vecmāte
+PROF_FULL	veikalvedis
+PROF_FULL	velmētājs
+PROF_FULL	viceadmirālis
+PROF_FULL	vicekonsuls
+PROF_FULL	viceprezidenta vietnieks
+PROF_FULL	viceprezidents
+PROF_FULL	viesmīlis
+PROF_FULL	viesnīcnieks
+PROF_FULL	vikārs
+PROF_FULL	virpotājs
+PROF_FULL	virskapelāns
+PROF_FULL	virsleitnants
+PROF_FULL	virsseržants
+PROF_FULL	virsuzrauga vietnieks
+PROF_FULL	virsuzraugs
+PROF_FULL	virusologa palīgs
+PROF_FULL	virusologs
+PROF_FULL	vitrāžists
+PROF_FULL	vizāžists
+PROF_FULL	vokālists
+PROF_FULL	vulkanizētājs
+PROF_FULL	vadošais pētnieks
+PROF_FULL	vadošais biroja sekretārs
+PROF_FULL	vadu vilcējs
+PROF_FULL	vagonu apskatītājs
+PROF_FULL	vagonu pavadonis
+PROF_FULL	vagonu kustības ātruma regulētājs
+PROF_FULL	vagonu mazgāšanas mašīnas operators
+PROF_FULL	vagonu parka dežurants
+PROF_FULL	vagonu remonta inženieris
+PROF_FULL	vagonu remontētājs
+PROF_FULL	vairumtirdzniecības aģents
+PROF_FULL	vairumtirdzniecības sagādnieks
+PROF_FULL	vairumtirdzniecības preču iepircējs
+PROF_FULL	vairumtirdzniecības veikala pārdevējs
+PROF_FULL	valdes loceklis
+PROF_FULL	valdes priekšsēdētāja palīgs
+PROF_FULL	valdes priekšsēdētāja vietnieks
+PROF_FULL	valdes priekšsēdētājs
+PROF_FULL	valdes sekretārs
+PROF_FULL	valdes vadītāja vietnieks
+PROF_FULL	valdes vadītājs
+PROF_FULL	valdības administrācijas sekretārs
+PROF_FULL	valdības administrācijas izpildsekretārs
+PROF_FULL	valsts inspektors
+PROF_FULL	valsts kontroliera palīgs
+PROF_FULL	valsts kontroliera preses sekretārs
+PROF_FULL	valsts kontrolieris
+PROF_FULL	valsts notārs
+PROF_FULL	valsts prezidenta padomnieks
+PROF_FULL	valsts prezidenta palīgs
+PROF_FULL	valsts prezidents
+PROF_FULL	valsts revidenta palīgs
+PROF_FULL	valsts revidents
+PROF_FULL	valsts sekretāra palīgs
+PROF_FULL	valsts sekretāra vietnieka palīgs
+PROF_FULL	valsts sekretāra vietnieks
+PROF_FULL	valsts sekretārs
+PROF_FULL	valsts bērnu tiesību aizsardzības inspektors
+PROF_FULL	valsts darba inspektors
+PROF_FULL	valsts kancelejas direktora palīgs
+PROF_FULL	valsts protokola vadītāja vietnieks
+PROF_FULL	valsts protokola vadītājs
+PROF_FULL	valsts pārvaldes izpildsekretārs
+PROF_FULL	valsts robežas pilnvarotais
+PROF_FULL	valsts robežsardzes inspektors
+PROF_FULL	valsts robežsardzes jaunākais virsnieks
+PROF_FULL	valsts robežsardzes vecākais virsnieks
+PROF_FULL	valsts tehniskās uzraudzības inspektors
+PROF_FULL	valūtas kasieris
+PROF_FULL	valūtas darījumu grāmatvedis
+PROF_FULL	valūtas maiņas starpnieks
+PROF_FULL	valūtas operāciju grāmatvedis
+PROF_FULL	valūtu konvertācijas struktūrvienības vadītāja vietnieks
+PROF_FULL	valūtu konvertācijas struktūrvienības vadītājs
+PROF_FULL	vecākais bibliotekārs
+PROF_FULL	vecākais bārmenis
+PROF_FULL	vecākais eksperts
+PROF_FULL	vecākais grāmatvedis
+PROF_FULL	vecākais inspektors
+PROF_FULL	vecākais inspektors - posteņa komandieris
+PROF_FULL	vecākais instruktors
+PROF_FULL	vecākais izmeklētājs
+PROF_FULL	vecākais kontrolieris
+PROF_FULL	vecākais konsultants
+PROF_FULL	vecākais lidotājs
+PROF_FULL	vecākais lietvedis
+PROF_FULL	vecākais mehāniķis
+PROF_FULL	vecākais meistars
+PROF_FULL	vecākais mežzinis
+PROF_FULL	vecākais parfimērs
+PROF_FULL	vecākais pasniedzējs
+PROF_FULL	vecākais pavārs
+PROF_FULL	vecākais pārdevējs
+PROF_FULL	vecākais referents
+PROF_FULL	vecākais speciālists dārzeņkopis
+PROF_FULL	vecākais speciālists dārzkopis
+PROF_FULL	vecākais speciālists mežkopis
+PROF_FULL	vecākais speciālists puķkopis
+PROF_FULL	vecākais speciālists zivkopis
+PROF_FULL	vecākais statistiķis
+PROF_FULL	vecākais stūrmanis
+PROF_FULL	vecākais traļmeistars
+PROF_FULL	vecākais zemessargs
+PROF_FULL	vecākais datortīkla administrators
+PROF_FULL	vecākais iecirkņa inspektors
+PROF_FULL	vecākais komercdarbības speciālists
+PROF_FULL	vecākais muitas eksperts
+PROF_FULL	vecākais muitas uzraugs
+PROF_FULL	vecākais mākslas pasākumu organizators
+PROF_FULL	vecākais mūzikas pasākumu organizators
+PROF_FULL	vecākais nodokļu inspektors
+PROF_FULL	vecākais pašvaldībās
+PROF_FULL	vecākais personāla inspektors
+PROF_FULL	vecākais reklāmas aģents
+PROF_FULL	vecākais saimniecības pārzinis
+PROF_FULL	vecākais sporta treneris
+PROF_FULL	vecākais tiesu eksperts
+PROF_FULL	vecākais tirgus pētījumu analītiķis
+PROF_FULL	vecākais valsts revidents
+PROF_FULL	vecākā vecmāte
+PROF_FULL	vecākā medicīnas māsa
+PROF_FULL	veidošanas operators
+PROF_FULL	veidņu izgatavotājs
+PROF_FULL	veikala kasieris
+PROF_FULL	velmju kalibrētājs
+PROF_FULL	velmēšanas stāva operators
+PROF_FULL	velorikša
+PROF_FULL	velosipēdu mehāniķis
+PROF_FULL	ventilācijas iekārtas operators
+PROF_FULL	ventilācijas, kondicionēšanas un saldēšanas iekārtu mehāniķis
+PROF_FULL	veselības aprūpes statistiķis
+PROF_FULL	veselības aprūpes vadītājs
+PROF_FULL	veselības aprūpes vadības ārsts
+PROF_FULL	veselības aprūpes ārsts
+PROF_FULL	veselības veicināšanas konsultants
+PROF_FULL	veselības veicināšanas koordinētājs
+PROF_FULL	veterinārfeldšeris
+PROF_FULL	veterinārmedicīnas bakteriologs
+PROF_FULL	veterinārmedicīnas patologs
+PROF_FULL	veterinārārsta asistents
+PROF_FULL	veterinārārsts
+PROF_FULL	veterinārārsts epidemiologs
+PROF_FULL	veterinārārsts ķirurgs
+PROF_FULL	veļas gludinātājs
+PROF_FULL	veļas mazgātājs
+PROF_FULL	veļas pārzinis
+PROF_FULL	veļas mazgājamās mašīnas operators
+PROF_FULL	veļas mazgātavas vadītājs
+PROF_FULL	veļas un korsešu šūšanas operators
+PROF_FULL	videoinženieris
+PROF_FULL	videomākslinieks
+PROF_FULL	videooperators
+PROF_FULL	videonovērošanas operators
+PROF_FULL	videonovērošanas iekārtu operators
+PROF_FULL	vides dizainers
+PROF_FULL	vides inženieris
+PROF_FULL	vides mākslinieks
+PROF_FULL	vides pārvaldnieks
+PROF_FULL	vides tehniķis
+PROF_FULL	vides tehnologs
+PROF_FULL	vides aizsardzības inspektors
+PROF_FULL	vides aizsardzības vecākais speciālists
+PROF_FULL	vides iekārtu tehniķis
+PROF_FULL	vides pārvaldības konsultants
+PROF_FULL	vides pārvaldības speciālists
+PROF_FULL	vides veselības analītiķis
+PROF_FULL	vienkāršotās renovācijas un rekonstrukcijas objektu inženieris
+PROF_FULL	viesmīlības pakalpojumu speciālists
+PROF_FULL	viesnīcas administrators
+PROF_FULL	viesnīcas direktora vietnieks
+PROF_FULL	viesnīcas direktors
+PROF_FULL	viesnīcas istabenis
+PROF_FULL	viesnīcas pārvaldnieks
+PROF_FULL	viesnīcas vadītāja vietnieks
+PROF_FULL	viesnīcas vadītājs
+PROF_FULL	viesnīcas klientu reģistrators
+PROF_FULL	viesnīcas stāva pārzinis
+PROF_FULL	viesnīcu pakalpojumu komercdarbinieks
+PROF_FULL	viesnīcu pakalpojumu organizators
+PROF_FULL	viesnīcu pakalpojumu speciālists
+PROF_FULL	viesu uzņemšanas organizators
+PROF_FULL	viesu uzņemšanas dienesta speciālists
+PROF_FULL	vijoļu būvētājs
+PROF_FULL	vilces līdzekļa vadītāja palīgs
+PROF_FULL	vilces līdzekļa vadītājs
+PROF_FULL	vilces līdzekļa vadītājs instruktors
+PROF_FULL	vilciena pavadonis
+PROF_FULL	vilciena priekšnieks
+PROF_FULL	vilcienu konduktors
+PROF_FULL	vilcienu pieņēmējs
+PROF_FULL	vilcienu sargs
+PROF_FULL	vilcienu sastādītāja palīgs
+PROF_FULL	vilcienu sastādītājs
+PROF_FULL	vilcējautomobiļa vadītājs
+PROF_FULL	vingrošanas nodarbību instruktors
+PROF_FULL	vinčas operators
+PROF_FULL	vinčas vadītājs
+PROF_FULL	virsmežzinis
+PROF_FULL	virsmežziņa vietnieks
+PROF_FULL	virsmāsa
+PROF_FULL	virsprokurora vietnieks
+PROF_FULL	virsprokurors
+PROF_FULL	virsmas apdares iekārtas operators
+PROF_FULL	virsmežniecības inženieris
+PROF_FULL	virtuves darbinieks
+PROF_FULL	virtuves vadītājs
+PROF_FULL	vispārējās pamatizglītības skolotājs
+PROF_FULL	vispārējās vidējās izglītības skolotājs
+PROF_FULL	vivārija dzīvnieku kopējs
+PROF_FULL	vizuālā tēla stilists
+PROF_FULL	vizuālās reklāmas noformētājs
+PROF_FULL	vizuālās reklāmas dizaina speciālists
+PROF_FULL	vokālais pedagogs
+PROF_FULL	vārītājs
+PROF_FULL	vājstrāvu sistēmu montieris
+PROF_FULL	vēstnieka palīgs
+PROF_FULL	vēstnieks
+PROF_FULL	vēsturnieks
+PROF_FULL	vēderrunātājs
+PROF_FULL	vēja elektrostacijas operators
+PROF_FULL	vērpšanas tehnologs
+PROF_FULL	vērtspapīru eksperts
+PROF_FULL	vērtspapīru grāmatvedis
+PROF_FULL	vērtspapīru inspektors
+PROF_FULL	vērtspapīru tirgotājs
+PROF_FULL	vērtspapīru darījumu struktūrvienības vadītāja vietnieks
+PROF_FULL	vērtspapīru darījumu struktūrvienības vadītājs
+PROF_FULL	vērtspapīru un akciju starpnieks
+PROF_FULL	vēstniecības sekretārs
+PROF_FULL	vīndaris
+PROF_FULL	vītņu griešanas operators
+PROF_FULL	zeltkalis
+PROF_FULL	zeltītājs
+PROF_FULL	zemessargs
+PROF_FULL	zemnieks
+PROF_FULL	zirgkopis
+PROF_FULL	zirgkopējs
+PROF_FULL	zobārsts
+PROF_FULL	zoologs
+PROF_FULL	zootehniķis
+PROF_FULL	zemes būvju mehānikas būvinženieris
+PROF_FULL	zemes ierīcības inženieris
+PROF_FULL	zemes klātnes uzturēšanas brigadieris
+PROF_FULL	zemes lietu speciālists
+PROF_FULL	zemes pārvietošanas iekārtu operators
+PROF_FULL	zemes rakšanas inženieris
+PROF_FULL	zemes urbšanas mašīnu operators
+PROF_FULL	zemessmēlēja vadītājs
+PROF_FULL	zemkopības konsultants
+PROF_FULL	zemkopības laborants
+PROF_FULL	zemkopības padomnieks
+PROF_FULL	zemnieku konsultants
+PROF_FULL	zemūdens tīrīšanas doka priekšnieks
+PROF_FULL	ziedojumu vācējs
+PROF_FULL	zinātniskais konsultants
+PROF_FULL	zinātniskais sekretārs
+PROF_FULL	zinātniski tehniskās informācijas inženieris
+PROF_FULL	zirgaudzētavas lauksaimnieks
+PROF_FULL	zirgu treneris
+PROF_FULL	zivju apstrādātājs
+PROF_FULL	zivju kulinārs
+PROF_FULL	zivju kūpinātājs
+PROF_FULL	zivju retinātājs
+PROF_FULL	zivju vērējs
+PROF_FULL	zivju apstrādes operators
+PROF_FULL	zivju apstrādes iekārtu operators
+PROF_FULL	zivju apstrādes iekārtu strādnieks
+PROF_FULL	zivju inkubatora strādnieks
+PROF_FULL	zivju roku darbs
+PROF_FULL	zivsaimniecības bakteriologs
+PROF_FULL	zivsaimniecības saimnieks
+PROF_FULL	zivsaimniecības strādnieks
+PROF_FULL	zivsaimniecības zivkopis
+PROF_FULL	zobu feldšeris
+PROF_FULL	zobu higiēnists
+PROF_FULL	zobu protēzists
+PROF_FULL	zobu tehniķis
+PROF_FULL	zobu protēžu meistars
+PROF_FULL	zobārsta asistents
+PROF_FULL	zobārstniecības māsa
+PROF_FULL	zooloģijas tehniķis
+PROF_FULL	zooloģiskā dārza strādnieks
+PROF_FULL	zooloģiskā dārza uzraugs
+PROF_FULL	zvejas rīku izgatavotājs
+PROF_FULL	zvērināta advokāta palīgs
+PROF_FULL	zvērināta notāra palīgs
+PROF_FULL	zvērināta tiesu izpildītāja palīgs
+PROF_FULL	zvērināts advokāts
+PROF_FULL	zvērināts mērnieks
+PROF_FULL	zvērināts notārs
+PROF_FULL	zvērināts revidents
+PROF_FULL	zvērināts tiesu izpildītājs
+PROF_FULL	zāģētājs
+PROF_FULL	zāles administrators
+PROF_FULL	zārku izgatavotājs
+PROF_FULL	zāģmateriālu ražošanas operators
+PROF_FULL	zāģmateriālu ražošanas tehniķis
+PROF_FULL	zāģmateriālu žāvētājs
+PROF_FULL	zāģripu labotājs
+PROF_FULL	zāģu sagatavotājs
+PROF_FULL	zāģēšanas operators
+PROF_FULL	zāļu reģistrācijas speciālists
+PROF_FULL	zāļu reģistrācijas vadītājs
+PROF_FULL	zīlnieks
+PROF_FULL	zīmju valodas tulks
+PROF_FULL	zīmējumu un rasējumu kopētājs
+PROF_FULL	akmens plākšņu izgatavotājs
+PROF_FULL	amatu psihologs
+PROF_FULL	analītiķis
+PROF_FULL	apdedzināšanas krāsns operators
+PROF_FULL	apdrukāšanas iekārtas operators
+PROF_FULL	aprūpes speciālists
+PROF_FULL	apstrādes operators
+PROF_FULL	apstrādes iekārtas operators
+PROF_FULL	arborists
+PROF_FULL	autoklāva operators
+PROF_FULL	automobiļa vadītājs
+PROF_FULL	bortmehāniķis operators
+PROF_FULL	celtņa operators
+PROF_FULL	centrbēdzes separatora operators
+PROF_FULL	darba inspektors
+PROF_FULL	darba koordinētājs
+PROF_FULL	darba normēšanas tehniķis
+PROF_FULL	datu bāzes analītiķis
+PROF_FULL	datu bāzes vadītājs
+PROF_FULL	destilēšanas iekārtas operators
+PROF_FULL	ekstraktu pagatavošanas operators
+PROF_FULL	elektronikas inženieris
+PROF_FULL	elektronikas tehniķis
+PROF_FULL	elektrostacijas operators
+PROF_FULL	fermas strādnieks
+PROF_FULL	filtrpreses operators
+PROF_FULL	finanšu stabilizācijas procesa uzraugs
+PROF_FULL	frakcijas priekšsēdētājs
+PROF_FULL	galvanizētājs
+PROF_FULL	galvenais administrators
+PROF_FULL	iekārtu mehāniķis
+PROF_FULL	iekārtu elektronikas tehniķis
+PROF_FULL	iekārtu speciālists
+PROF_FULL	ielas pārdevējs
+PROF_FULL	iesaiņojuma ražošanas operators
+PROF_FULL	iespiedmašīnas operators
+PROF_FULL	inkubatora strādnieks
+PROF_FULL	institūcijas vadītājs
+PROF_FULL	institūcijas struktūrvienības vadītājs
+PROF_FULL	inženieris
+PROF_FULL	izpildsekretārs
+PROF_FULL	izstrādājumu ražošanas operators
+PROF_FULL	izņemot skaitļotāju analītiķis
+PROF_FULL	izņemot skaitļotāju inženieris
+PROF_FULL	izņemot skaitļotāju dizaina inženieris
+PROF_FULL	karstās apstrādes operators
+PROF_FULL	karstās presēšanas operators
+PROF_FULL	katlu kurinātājs
+PROF_FULL	kažokādu dzīvnieku kopējs
+PROF_FULL	kažokādu dzīvnieku audzēšanas lauksaimnieks
+PROF_FULL	klīniskais farmakologs
+PROF_FULL	klīniskais fiziologs
+PROF_FULL	klīniskais mikrobiologs
+PROF_FULL	komercdarbības pakalpojumu pārstāvis
+PROF_FULL	komercpakalpojumu pārdevējs
+PROF_FULL	komisijas priekšsēdētāja biedrs
+PROF_FULL	komisijas priekšsēdētājs
+PROF_FULL	komisijas sekretārs
+PROF_FULL	komunikāciju analītiķis
+PROF_FULL	komunikāciju inženieris
+PROF_FULL	komutatora operators
+PROF_FULL	konsultants
+PROF_FULL	kontrolierīču operators
+PROF_FULL	kontrolmēraparātu tehniķis
+PROF_FULL	korporatīvo klientu vadītājs
+PROF_FULL	korporatīvo klientu privātbaņķieris
+PROF_FULL	kraušanas iekārtu operators
+PROF_FULL	kravas operators
+PROF_FULL	krāsns operators
+PROF_FULL	krāšņu kurinātājs
+PROF_FULL	līnijas operators
+PROF_FULL	malšanas iekārtas operators
+PROF_FULL	mašīnu un mehānismu regulētājs
+PROF_FULL	mehānikas inženieris
+PROF_FULL	mehānikas būvinženieris
+PROF_FULL	mehānismu mehāniķis
+PROF_FULL	montāžas līnijas operators
+PROF_FULL	mēbeļu komplektētājs
+PROF_FULL	mēbeļu montieris
+PROF_FULL	nodevu administrators
+PROF_FULL	noliktavās
+PROF_FULL	operators
+PROF_FULL	ostās
+PROF_FULL	pašvaldībās
+PROF_FULL	pildīšanas iekārtas operators
+PROF_FULL	platformas operators
+PROF_FULL	preces pieņēmējs
+PROF_FULL	protēžu meistars
+PROF_FULL	proves noteicējs
+PROF_FULL	pulverizēšanas iekārtas operators
+PROF_FULL	putnu audzētājs
+PROF_FULL	pārdošanas konsultants
+PROF_FULL	pārstrādes operators
+PROF_FULL	pārstrādāšanas operators
+PROF_FULL	pārsūknēšanas operators
+PROF_FULL	pārvades un sadales inženieris
+PROF_FULL	radioiekārtas operators
+PROF_FULL	radiotelefona operators
+PROF_FULL	rafinēšanas operators
+PROF_FULL	raudzes noteicējs
+PROF_FULL	ražošanas operators
+PROF_FULL	ražošanas iekārtas operators
+PROF_FULL	reaktora operators
+PROF_FULL	remonta inženieris
+PROF_FULL	restaurācijas operators
+PROF_FULL	sapieris
+PROF_FULL	s.w.i.f.t. administrators
+PROF_FULL	s.w.i.f.t. operators
+PROF_FULL	separatora operators
+PROF_FULL	sijāšanas operators
+PROF_FULL	sistēmu analītiķis
+PROF_FULL	sistēmu inženieris
+PROF_FULL	sistēmu konstruktors
+PROF_FULL	sistēmu tehniķis
+PROF_FULL	skaņu redaktors
+PROF_FULL	smilšstrūklas iekārtas operators
+PROF_FULL	spēkstacijas operators
+PROF_FULL	stādu audzētājs
+PROF_FULL	sūkņa vadītājs
+PROF_FULL	tehnikas rasētājs
+PROF_FULL	tehniskās uzraudzības inspektors
+PROF_FULL	turbīnas operators
+PROF_FULL	tīklu inženieris
+PROF_FULL	urbumu cementētājs
+PROF_FULL	urbumu urbējs
+PROF_FULL	urbšanas operators
+PROF_FULL	vagonu depo priekšnieka vietnieks
+PROF_FULL	vagonu depo priekšnieks
+PROF_FULL	veidošanas operators
+PROF_FULL	vispārējās prakses ārsts
+PROF_FULL	vitrīnu stiklu mazgātājs
+PROF_FULL	vulkanizācijas operators
+PROF_FULL	vārīšanas operators
+PROF_FULL	vērpšanas iekārtas operators
+PROF_FULL	ādminis
+PROF_FULL	ārsta palīgs
+PROF_FULL	ārsts
+PROF_FULL	ārsts gastrointestinālajā endoskopijā
+PROF_FULL	ādas amatnieks
+PROF_FULL	ādas tehnologs
+PROF_FULL	ādas apdares mākslinieks
+PROF_FULL	ādas apģērbu šuvējs
+PROF_FULL	ādas izstrādājumu modelētājs
+PROF_FULL	ādas izstrādājumu dizaina speciālists
+PROF_FULL	ādas izstrādājumu ražošanas operators
+PROF_FULL	ādas materiālu dizaina speciālists
+PROF_FULL	ādas priekšmetu izgatavotājs
+PROF_FULL	ādas, pergamenta izstrādājumu restaurators
+PROF_FULL	ādu atgaļotājs
+PROF_FULL	ādu krāsotājs
+PROF_FULL	ādu miecētājs
+PROF_FULL	ādu apstrādes ķīmiķis
+PROF_FULL	ādu šķirotājs
+PROF_FULL	ārkārtējais un pilnvarotais vēstnieks
+PROF_FULL	ārstniecības iestādes sekretārs
+PROF_FULL	ārstniecības iestādes klientu un pacientu reģistrators
+PROF_FULL	ārstniecības pakalpojumu informēšanas operators
+PROF_FULL	ārējo sakaru koordinētājs
+PROF_FULL	ārējo sakaru organizators
+PROF_FULL	ārējo sakaru struktūrvienības vadītāja vietnieks
+PROF_FULL	ārējo sakaru struktūrvienības vadītājs
+PROF_FULL	ārējā parāda analītiķis
+PROF_FULL	ārējās tirdzniecības ekonomists
+PROF_FULL	ātrgaitas šoseju un ielu būvinženieris
+PROF_FULL	ātrummērīšanas lenšu nolasītājs
+PROF_FULL	ātrās ēdināšanas strādnieks
+PROF_FULL	ēvelētājs
+PROF_FULL	ēdināšanas pakalpojumu organizators
+PROF_FULL	ēdināšanas pakalpojumu speciālists
+PROF_FULL	ēdināšanas uzņēmuma kasieris-pārdevējs
+PROF_FULL	ēdnīcas direktora vietnieks
+PROF_FULL	ēdnīcas direktors
+PROF_FULL	ēdnīcas pārvaldnieks
+PROF_FULL	ēdnīcas vadītāja vietnieks
+PROF_FULL	ēdnīcas vadītājs
+PROF_FULL	ēkas dežurants
+PROF_FULL	ēkas uzraugs
+PROF_FULL	ēkas un teritorijas uzraugs
+PROF_FULL	ēku celtnieks
+PROF_FULL	ēku siltinātājs
+PROF_FULL	ēku būvinženieris
+PROF_FULL	ēku ekspluatācijas un aprīkojuma nodrošinājuma inženieris
+PROF_FULL	ēku iekšējo komunikāciju montāžas un apkalpošanas speciālists
+PROF_FULL	ēku inženiertīklu tehniķis
+PROF_FULL	ēku konstrukciju būvinženieris
+PROF_FULL	ēku sistēmu inženieris
+PROF_FULL	ēku un apsaimniekojamās teritorijas pārzinis
+PROF_FULL	ērģeļu būvētājs
+PROF_FULL	ģenealogs
+PROF_FULL	ģenerāldirektora palīgs
+PROF_FULL	ģenerāldirektora vietnieks
+PROF_FULL	ģenerāldirektors
+PROF_FULL	ģenerālinspektors
+PROF_FULL	ģenerālkonsuls
+PROF_FULL	ģenerālleitnants
+PROF_FULL	ģenerālmajors
+PROF_FULL	ģenerālprokurora padomnieks
+PROF_FULL	ģenerālprokurors
+PROF_FULL	ģenerālsekretārs
+PROF_FULL	ģenētiķis
+PROF_FULL	ģeodēzists
+PROF_FULL	ģeogrāfs
+PROF_FULL	ģeologs
+PROF_FULL	ģeneratoru elektroinženieris
+PROF_FULL	ģenētikas inženieris
+PROF_FULL	ģenētikas tehniķis
+PROF_FULL	ģeofiziķis
+PROF_FULL	ģeomagnētiķis
+PROF_FULL	ģeomorfologs
+PROF_FULL	ģeotehniķis
+PROF_FULL	ģeodēzijas inženieris
+PROF_FULL	ģeofizikas tehniķis
+PROF_FULL	ģeogrāfiskās informācijas sistēmas speciālists
+PROF_FULL	ģeoinformātikas inženieris
+PROF_FULL	ģeoloģijas rasētājs
+PROF_FULL	ģeoloģijas tehniķis
+PROF_FULL	ģimenes ārsts
+PROF_FULL	ģērbējs
+PROF_FULL	īpašu uzdevumu ministra sekretariāta vadītāja vietnieks
+PROF_FULL	īpašu uzdevumu ministra sekretariāta vadītājs
+PROF_FULL	īpašu uzdevumu ministrs
+PROF_FULL	īpašu uzdevumu ministra sekretariāta vadītāja palīgs
+PROF_FULL	īpašuma aģents
+PROF_FULL	īpašuma pārdevējs
+PROF_FULL	ķesteris
+PROF_FULL	ķirurgs
+PROF_FULL	ķemmēšanas iekārtas operators
+PROF_FULL	ķieģeļu un dakstiņu apdedzināšanas krāsns operators
+PROF_FULL	ķirurģijas māsa
+PROF_FULL	ķirurģijas patologs
+PROF_FULL	ķirurģiskās aprūpes māsa
+PROF_FULL	ķīmiķis
+PROF_FULL	ķīmiķis analītiķis
+PROF_FULL	ķīmijas inženieris
+PROF_FULL	ķīmijas kalkulētājs
+PROF_FULL	ķīmijas laborants
+PROF_FULL	ķīmijas tehniķis
+PROF_FULL	ķīmijas tehnologa palīgs
+PROF_FULL	ķīmijas tehnologs
+PROF_FULL	ķīmijas destilēšanas iekārtas operators
+PROF_FULL	ķīmijas un fizikas laborants
+PROF_FULL	ķīmisko iekārtu mehāniķis
+PROF_FULL	ķīmisko procesu inženieris
+PROF_FULL	ķīmisko procesu tehniķis
+PROF_FULL	ķīmisko procesu tehnologs
+PROF_FULL	ķīmisko procesu autoklāva operators
+PROF_FULL	ķīmisko procesu inženieris
+PROF_FULL	ķīmisko reaģentu sagatavotājs
+PROF_FULL	ķīmisko vielu centrbēdzes separatora operators
+PROF_FULL	ķīmisko vielu ekstraktu pagatavošanas operators
+PROF_FULL	ķīmisko vielu filtrpreses operators
+PROF_FULL	ķīmisko vielu karstās apstrādes operators
+PROF_FULL	ķīmisko vielu kraušanas iekārtu operators
+PROF_FULL	ķīmisko vielu malšanas iekārtas operators
+PROF_FULL	ķīmisko vielu pulverizēšanas iekārtas operators
+PROF_FULL	ķīmisko vielu separatora operators
+PROF_FULL	ķīmisko šķidrumu un krāsu sagatavotājs
+PROF_FULL	ķīmisko šķīdumu sagatavošanas operators
+PROF_FULL	ķīmiskās apstrādes operators
+PROF_FULL	ķīmiskās tīrīšanas operators
+PROF_FULL	ķīmiskās un bioķīmiskās rūpniecības iekārtu mehāniķis
+PROF_FULL	ķīmijas inženieris
+PROF_FULL	šefpavārs
+PROF_FULL	šuvējs
+PROF_FULL	šveicars
+PROF_FULL	šokolādes ražošanas iekārtu operators
+PROF_FULL	šprotu pakotājs
+PROF_FULL	šprotu roku darbs
+PROF_FULL	štancēšanas operators
+PROF_FULL	štāba bocmanis
+PROF_FULL	štāba virsseržants štāba bocmanis
+PROF_FULL	šķeterētājs
+PROF_FULL	šķiperis
+PROF_FULL	šķirotājs
+PROF_FULL	šķeldas smalcināšanas operators
+PROF_FULL	šķidrumu iekārtas operators
+PROF_FULL	šķiedras mākslas izstrādājumu izgatavotājs
+PROF_FULL	šķiedru cirtējs
+PROF_FULL	šķiedru kārsējs
+PROF_FULL	šķiedru smalcinātājs
+PROF_FULL	šķiedru tehnologs
+PROF_FULL	šķiedru gatavošanas operators
+PROF_FULL	šķiedru griezējs
+PROF_FULL	šķirošanas operators
+PROF_FULL	šķirošanas līnijas operators
+PROF_FULL	šķērēšanas iekārtas operators
+PROF_FULL	šūto izstrādājumu izgatavotājs
+PROF_FULL	šūto izstrādājumu ražošanas tehniķis
+PROF_FULL	šūšanas tehnologs
+PROF_FULL	šūšanas iekārtu operators
+PROF_FULL	šūšanas kvalitātes konsultants
+PROF_FULL	šūšanas ražošanas konsultants
+PROF_FULL	šķīdumu sagatavošanas operators
+PROF_FULL	ūdenslīdējs
+PROF_FULL	ūdens sagādātājs
+PROF_FULL	ūdens aizsprosta operators
+PROF_FULL	ūdens pārstrādes operators
+PROF_FULL	ūdens un atkritumsaimniecības speciālists
+PROF_FULL	ūdens ķīmiskās apstrādes operators
+PROF_FULL	ūdensnecaurlaidīgu audumu ražošanas operators
+PROF_FULL	žokejs
+PROF_FULL	žonglieris
+PROF_FULL	žurnālists
+PROF_FULL	žalūziju izgatavotājs
+PROF_FULL	žāvēšanas operators

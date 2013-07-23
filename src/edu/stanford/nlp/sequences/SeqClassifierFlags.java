@@ -132,7 +132,12 @@ public class SeqClassifierFlags implements Serializable {
   public static final String DEFAULT_BACKGROUND_SYMBOL = "O";
 
   private String stringRep = "";
-
+  
+  /**
+   * AZ
+   */
+  public boolean useMorphologyFeatures = false;
+  
   public boolean useNGrams = false;
   public boolean conjoinShapeNGrams = false;
   public boolean lowercaseNGrams = false;
@@ -2021,6 +2026,8 @@ public class SeqClassifierFlags implements Serializable {
           useLVMorphoAnalyzerNext = Boolean.parseBoolean(val);
       } else if (key.equalsIgnoreCase("useLVMorphoAnalyzerItemIDs")) {
           useLVMorphoAnalyzerItemIDs = Boolean.parseBoolean(val);
+      } else if (key.equalsIgnoreCase("useMorphologyFeatures")) {
+    	  useMorphologyFeatures = Boolean.parseBoolean(val);
 
         // ADD VALUE ABOVE HERE
       } else if (key.length() > 0 && !key.equals("prop")) {

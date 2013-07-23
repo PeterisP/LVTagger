@@ -14,6 +14,7 @@ import edu.stanford.nlp.ling.CoreAnnotations.ChineseCharAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ChineseOrigSegAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ChineseSegAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ChunkAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.MorphologyFeatureStringAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.OriginalTextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.DocIDAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetEndAnnotation;
@@ -104,6 +105,7 @@ public class AnnotationLookup {
     MORPHO_GEN_KEY(MorphoGenAnnotation.class,"gen"),
     MORPHO_CASE_KEY(MorphoCaseAnnotation.class,"case"),
     WORDNET_SYN_KEY(WordnetSynAnnotation.class,"wordnetsyn"),
+    MORPHO_FEATURE_KEY(MorphologyFeatureStringAnnotation.class,"morphologyFeatureString"), //AZ
     PROTO_SYN_KEY(ProtoAnnotation.class,"proto");
 
     public final Class<? extends CoreAnnotation<?>> coreKey;

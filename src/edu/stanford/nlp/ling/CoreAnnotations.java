@@ -3,6 +3,7 @@ package edu.stanford.nlp.ling;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.SortedSet;
 
 import edu.stanford.nlp.util.CoreMap;
@@ -10,8 +11,6 @@ import edu.stanford.nlp.util.ErasureUtils;
 import edu.stanford.nlp.util.IntPair;
 import edu.stanford.nlp.util.Pair;
 import edu.stanford.nlp.util.Triple;
-
-import lv.semti.morphology.analyzer.Word;
 
 /**
  * <p>
@@ -1499,5 +1498,24 @@ public class CoreAnnotations {
 	      return String.class;
 	    }
 	  }
-
+  
+  /**
+   * @author Artūrs
+   *
+   */
+  public static class LVMorphologyAnalysisFeatures implements CoreAnnotation<Map<String, String>> {
+	    public Class<Map<String,String>> getType() {
+	    	return ErasureUtils.uncheckedCast(Map.class);
+	    }
+	  }
+  public static class FullTagAnnotation implements CoreAnnotation<String> {
+	    public Class<String> getType() {
+	      return String.class;
+	    }
+	  }
+  public static class MorphologyFeatureStringAnnotation implements CoreAnnotation<String> {
+	    public Class<String> getType() {
+	      return String.class;
+	    }
+	  }
 }
