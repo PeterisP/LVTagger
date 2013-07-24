@@ -1,43 +1,82 @@
 package lv.lumii.ner.analysis;
 
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
+
+import sun.reflect.generics.tree.BottomSignature;
 
 import edu.stanford.nlp.util.Pair;
 
 
 public class ErrorAnalysis {
+	
+	public static ConfusionMatrix cm;
+	public static boolean verbose = true;
+	public static String[] categories;
+	public static String[] defaultCategories = {"person", "organization", "location", "profession", "time", "product", "media", "sum", "event", "O"};
+	
+	public static Tally tp;
+	public static Tally fp;
+	public static Tally fn;
+	
+	public static ErrorSet borderErrors = new ErrorSet();	
+	
 	public static void main(String[] args) throws Exception {
 		String nerFile = "";
 	
 		for (int i = 0; i < args.length; i++) {			
 			if (args[i].equalsIgnoreCase("-nerFile")) nerFile = args[i+1];
-			
+			if (args[i].equalsIgnoreCase("-nonverbose")) verbose = false;
+			if (args[i].equalsIgnoreCase("-categories")) categories = args[i+1].split(",");
 			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
+				
 				System.out.println("--- Error analysis ---");
 				System.out.println("\n\t-nerFile : NER comparison file");
+				System.out.println("\n\t-categories : custom categories used");
+				System.out.println("\n\t-nonverbose : Print only summary");
 				System.out.flush();
 				System.exit(0);
 			}
 		}
-		
+		System.out.println("======== LV NER Error Analysis ========");
 		java.util.Date date = new java.util.Date();
 		SimpleDateFormat timeFormat = new SimpleDateFormat("MM/dd/yyyy h:mm:ss a");
 		System.out.println(timeFormat.format(date));
-		System.out.println("--- Error analysis ---");
+		System.out.println();		
 		
 		Document d = new Document();
 		d.readDocument(nerFile);
 		
 		Tally tp = new Tally();
 		Tally fp = new Tally();
-		Tally fn = new Tally();
-		countResults(d, tp, fp, fn);
-		printResults(tp, fp, fn);
-		printErrors(tp, fp, fn);
+		Tally fn = new Tally();	
 		
+		
+		if (categories == null || categories.length == 0) categories = defaultCategories;
+				
+		cm = new ConfusionMatrix(Arrays.asList(categories), "O");
+		
+		countResults(d, tp, fp, fn);
+		
+		printResults(tp, fp, fn);
+		
+		System.out.println(cm.summarize());
+		
+		System.out.println("Border Errors");
+		System.out.println(borderErrors.summarize());
+		
+		if (verbose) {
+			//printErrors(tp, fp, fn);
+			System.out.println(cm.errors());
+			
+			System.out.println("Border Errors:");
+			System.out.println(borderErrors);
+		}
     }
 
 	public static boolean countResults(Document doc, 
@@ -47,14 +86,9 @@ public class ErrorAnalysis {
 	int index = 0;
 	int goldIndex = 0, guessIndex = 0;
 	String lastGold = "O", lastGuess = "O";
-	
-	// As we go through the document, there are two events we might be
-	// interested in.  One is when a gold entity ends, and the other
-	// is when a guessed entity ends.  If the gold and guessed
-	// entities end at the same time, started at the same time, and
-	// match entity type, we have a true positive.  Otherwise we
-	// either have a false positive or a false negative.
+	boolean cm_set;
 	for (Token line : doc.document) {
+	  cm_set = false;
 	  String gold = line.gold;
 	  String guess = line.guess;
 	
@@ -65,27 +99,39 @@ public class ErrorAnalysis {
 	    if (lastGuess.equals(lastGold) && !lastGuess.equals(guess) &&
 	        goldIndex == guessIndex) {
 	      entityTP.incrementCount(lastGold, 1.0);
+	      cm.addInstance(lastGold, lastGuess);
 	    } else {
-	      entityFN.incrementCount(lastGold, 1.0);
-	            
+	      entityFN.incrementCount(lastGold, 1.0); 
 	      int start = Math.min(doc.getGoldMarkableStart(index-1), doc.getGuessMarkableStart(index-1));
 	      int end = Math.max(doc.getGoldMarkableEnd(index-1), doc.getGuessMarkableEnd(index-1));
-	      if (!lastGuess.equals("O")) entityFN.addError(lastGold, doc.makeGuessMarkable(start, end), doc.makeGoldMarkable(start, end), false);
-		  else entityFN.addError(lastGold, doc.makeGuessMarkable(start, end), doc.makeGoldMarkable(start, end), false);
+	      Markable guessMarkable = doc.makeGuessMarkable(start, end);
+	      Markable goldMarkable = doc.makeGoldMarkable(start, end);
+	      entityFN.addError(lastGold, guessMarkable, goldMarkable, false);
+	      if (!lastGuess.equals(lastGold)) {
+	    	  cm.addInstance(lastGold, lastGuess); 
+	    	  cm.addError(lastGuess, lastGold, guessMarkable, goldMarkable);
+	    	  cm_set = true;
+	      } else {
+	    	  //already same category and not "O"
+	    	  borderErrors.addError(lastGold, goldMarkable, guessMarkable);
+	      }
 	    }
 	  }
 	
 	  if (!lastGuess.equals(guess) && !lastGuess.equals("O")) {
 	    if (lastGuess.equals(lastGold) && !lastGuess.equals(guess) &&
 	        goldIndex == guessIndex && !lastGold.equals(gold)) {
-	      // correct guesses already tallied
-	      // only need to tally false positives
 	    } else {
 	      entityFP.incrementCount(lastGuess, 1.0);
 	      int start = Math.min(doc.getGoldMarkableStart(index-1), doc.getGuessMarkableStart(index-1));
 	      int end = Math.max(doc.getGoldMarkableEnd(index-1), doc.getGuessMarkableEnd(index-1));
-	      if (!lastGold.equals("O")) entityFP.addError(lastGuess, doc.makeGuessMarkable(start, end), doc.makeGoldMarkable(start, end), true);
-		  else entityFP.addError(lastGuess, doc.makeGuessMarkable(start, end), doc.makeGoldMarkable(start, end), true);
+	      Markable guessMarkable = doc.makeGuessMarkable(start, end);
+	      Markable goldMarkable = doc.makeGoldMarkable(start, end);
+	      entityFP.addError(lastGuess, guessMarkable, goldMarkable, true);
+	      if (!lastGuess.equals(lastGold) && !cm_set) {
+	    	  cm.addInstance(lastGold, lastGuess); 
+	    	  cm.addError(lastGuess, lastGold, guessMarkable, goldMarkable);
+	      }
 	    }
 	  }
 	
@@ -101,35 +147,51 @@ public class ErrorAnalysis {
 	  ++index;
 	}
 	
-	
 	index--;
+	cm_set = false;
 	if (!lastGold.equals("O")) {
 	  if (lastGold.equals(lastGuess) && goldIndex == guessIndex) {
 	    entityTP.incrementCount(lastGold, 1.0);
+	    cm.addInstance(lastGold, lastGuess);
 	  } else {
+		if (!lastGuess.equals(lastGold)) cm.addInstance(lastGold, lastGuess); 
 	    entityFN.incrementCount(lastGold, 1.0);
 	    int start = Math.min(doc.getGoldMarkableStart(index-1), doc.getGuessMarkableStart(index-1));
-	      int end = Math.max(doc.getGoldMarkableEnd(index), doc.getGuessMarkableEnd(index-1));
-	    if (!lastGuess.equals("O")) entityFN.addError(lastGold, doc.makeGuessMarkable(start, end), doc.makeGoldMarkable(start, end), false);
-		else entityFN.addError(lastGold, doc.makeGuessMarkable(start, end), doc.makeGoldMarkable(start, end), false);
+	    int end = Math.max(doc.getGoldMarkableEnd(index), doc.getGuessMarkableEnd(index-1));
+	    Markable guessMarkable = doc.makeGuessMarkable(start, end);
+	    Markable goldMarkable = doc.makeGoldMarkable(start, end);
+	    entityFN.addError(lastGold, guessMarkable, goldMarkable, false);
+		if (!lastGuess.equals(lastGold)) {
+		  cm.addInstance(lastGold, lastGuess); 
+		  cm.addError(lastGuess, lastGold, guessMarkable, goldMarkable);
+		  cm_set = true;
+		} else {
+	    	  borderErrors.addError(lastGold, goldMarkable, guessMarkable);
+	      }
 	  }
 	}
 	if (!lastGuess.equals("O")) {
 	  if (lastGold.equals(lastGuess) && goldIndex == guessIndex) {
 	    // correct guesses already tallied
 	  } else {
+		if (!lastGuess.equals(lastGold)) cm.addInstance(lastGold, lastGuess); 
 	    entityFP.incrementCount(lastGuess, 1.0);
 	    int start = Math.min(doc.getGoldMarkableStart(index-1), doc.getGuessMarkableStart(index-1));
 	    int end = Math.max(doc.getGoldMarkableEnd(index-1), doc.getGuessMarkableEnd(index-1));
-	    entityFP.addError(lastGuess, doc.makeGuessMarkable(start, end), doc.makeGoldMarkable(start, end), true);
-//	    if (!lastGold.equals("O")) entityFP.addError(lastGuess, doc.makeGuessMarkable(guessIndex, index), doc.makeGoldMarkable(goldIndex, index), true);
-//	    else entityFP.addError(lastGuess, doc.makeGuessMarkable(guessIndex, index), doc.makeGoldMarkable(guessIndex, index), true);
+	    Markable guessMarkable = doc.makeGuessMarkable(start, end);
+		Markable goldMarkable = doc.makeGoldMarkable(start, end);
+		entityFP.addError(lastGuess, guessMarkable, goldMarkable, true);
+		if (!lastGuess.equals(lastGold) && !cm_set) {
+		  cm.addInstance(lastGold, lastGuess);
+		  cm.addError(lastGuess, lastGold, guessMarkable, goldMarkable);
+		}
 	  }
 	}
 	return true;
 	}
 
 	  public static void printResults(Tally entityTP,Tally entityFP, Tally entityFN) {
+		System.out.println("NER Evaluation\n-----------------");
 	    Set<String> entities = new TreeSet<String>();
 	    entities.addAll(entityTP.keySet());
 	    entities.addAll(entityFP.keySet());
@@ -145,6 +207,7 @@ public class ErrorAnalysis {
 	    double fp = entityFP.totalCount();
 	    double fn = entityFN.totalCount();
 	    printedHeader = printPRLine("Totals", tp, fp, fn, printedHeader);
+	    System.out.println();
 	  }
 
 	  private static boolean printPRLine(String entity, double tp, double fp, double fn,
@@ -156,47 +219,35 @@ public class ErrorAnalysis {
 	    double f1 = ((precision == 0.0 || recall == 0.0) ?
 	                 0.0 : 2.0 / (1.0 / precision + 1.0 / recall));
 	    if (!printedHeader) {
-	      System.err.println("         Entity\tP\tR\tF1\tTP\tFP\tFN");
+	      System.out.println("         Entity\tP\tR\tF1\tTP\tFP\tFN");
 	      printedHeader = true;
 	    }
-	    System.err.format("%15s\t%.4f\t%.4f\t%.4f\t%.0f\t%.0f\t%.0f\n",
+	    System.out.format("%15s\t%.4f\t%.4f\t%.4f\t%.0f\t%.0f\t%.0f\n",
 	                      entity, precision, recall, f1,
 	                      tp, fp, fn);
 	    return printedHeader;
 	  }
 
 	  public static void printErrors(Tally entityTP, Tally entityFP, Tally entityFN) {
-		  
+
 		  double tp = entityTP.totalCount();
 		  
-			System.err.println("\n===============\nFalse positives\n===============\n");
-			System.err.format("%20s\t%s\n","GUESS", "GOLD");
+			System.out.println("\n===============\nFalse positives\n===============\n");
+			System.out.format("%20s\t%s\n","GUESS", "GOLD");
 			for (String cat : entityFP.errByCategory.keySet()) {
-				System.err.format("\n===== %s %.4f (%.0f/%.0f)================ \n", cat, entityFP.getImpact(cat), entityFP.getCount(cat),entityFP.totalCount());
+				System.out.format("\n===== %s %.4f (%.0f/%.0f)================ \n", cat, entityFP.getImpact(cat), entityFP.getCount(cat),entityFP.totalCount());
 				for (Pair<Markable, Markable> p : entityFP.errByCategory.get(cat)) {
-					System.err.format("%20s\t%s\n",p.first.full(), p.second.full());
+					System.out.format("%20s\t%s\n",p.first.full(), p.second.full());
 				}
 			}
-			
-			Collections.sort(entityFP.allErrors);
-			for (String s : entityFP.allErrors) {
-				System.err.println(s);
-			}
-			
-			System.err.println("\n===============\nFalse negatives\n===============\n");
-			System.err.format("%20s\t%s\n","GOLD", "GUESS");
+
+			System.out.println("\n===============\nFalse negatives\n===============\n");
+			System.out.format("%20s\t%s\n","GOLD", "GUESS");
 			for (String cat : entityFN.errByCategory.keySet()) {
-				System.err.format("\n===== %s %.4f (%.0f/%.0f)================ \n", cat, entityFN.getImpact(cat), entityFN.getCount(cat), entityFN.totalCount());
+				System.out.format("\n===== %s %.4f (%.0f/%.0f)================ \n", cat, entityFN.getImpact(cat), entityFN.getCount(cat), entityFN.totalCount());
 				for (Pair<Markable, Markable> p : entityFN.errByCategory.get(cat)) {
-					System.err.format("%20s\t%s\n",p.second.full(), p.first.full());
+					System.out.format("%20s\t%s\n",p.second.full(), p.first.full());
 				}
 			}
-			
-			Collections.sort(entityFN.allErrors);
-			for (String s : entityFN.allErrors) {
-				System.err.println(s);
-			}
-	  }
-	  
-	  
+	  } 
 }
