@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
@@ -17,7 +18,10 @@ import edu.stanford.nlp.ling.CoreAnnotations.MorphologyFeatureStringAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ShapeAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.objectbank.ObjectBank;
 import edu.stanford.nlp.process.WordShapeClassifier;
+import edu.stanford.nlp.sequences.LVCoNLLDocumentReaderAndWriter;
+import edu.stanford.nlp.sequences.LVCoNLLDocumentReaderAndWriter;
 import edu.stanford.nlp.sequences.ObjectBankWrapper;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.StringUtils;
@@ -70,14 +74,26 @@ public class NerPipe {
 		PrintStream out = new PrintStream(System.out, true, "UTF-8");
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in, "UTF-8"));
 		
+		
+		LVCoNLLDocumentReaderAndWriter conllReader = new LVCoNLLDocumentReaderAndWriter();
+		conllReader.init(nerClassifier.flags);
+		
 		switch(inputType) {
 		default:
-			while(true) {
-				List<List<CoreLabel>> sentences = readCONLL(in, nerClassifier);
-				if (sentences == null) break;
-				for (List<CoreLabel> sentence : sentences) {
-			    	outputSentence(nerClassifier, out, sentence);
-				}
+//			nerClassifier.classifyAndWriteAnswers("tmp.in", conllReader);
+//			ObjectBank<List<CoreLabel>> b = nerClassifier.makeObjectBankFromFile("tmp.in", conllReader);
+//			nerClassifier.printProbsDocuments(b);
+//			try {
+//				nerClassifier.printLabelInformation("tmp.in", conllReader);
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			}
+			while(nerClassifier.classifySentenceStdin(conllReader)) {
+//				List<List<CoreLabel>> sentences = readCONLL(in, nerClassifier);
+//				if (sentences == null) break;
+//				for (List<CoreLabel> sentence : sentences) {
+//			    	outputSentence(nerClassifier, out, sentence);
+//				}
 			}
 		}
 		in.close();
@@ -154,11 +170,10 @@ public class NerPipe {
 				word.setTag(fullTag.substring(0,1));
 				word.set(FullTagAnnotation.class, fullTag);
 				word.set(MorphologyFeatureStringAnnotation.class, morphoFeatures);
-				ObjectBankWrapper<CoreMap> q;
 				
 				word.set(ShapeAnnotation.class, WordShapeClassifier.wordShape(token, nerClassifier.flags.wordShape)); //nepieliek zināmos LC vārdus
 	
-	    		if (token.length() > 8) {
+	    		if (fields.length > 8) {
 	    			String syntax = fields[6] + "\t" + fields[7] + "\t" + fields[8] + "\t" + fields[9];
 	    			word.set(ConllSyntaxAnnotation.class, syntax);
 	    		}	    		

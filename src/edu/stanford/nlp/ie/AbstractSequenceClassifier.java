@@ -923,6 +923,35 @@ public abstract class AbstractSequenceClassifier<IN extends CoreMap> implements 
       classifyAndWriteAnswers(documents, readerWriter);
     }
   }
+  
+  /**
+   * Classify stdin by senteces seperated by blank line
+   * @param readerWriter
+   * @return 
+   * @throws IOException
+   */
+  public boolean classifySentenceStdin(DocumentReaderAndWriter<IN> readerWriter)
+    throws IOException
+  {
+    BufferedReader is = new BufferedReader(new InputStreamReader(System.in, flags.inputEncoding));
+    String line;
+    String text = "";
+    String eol = "\n";
+    String sentence = "<s>";
+    while ((line = is.readLine()) != null) {
+    	
+      if (line.trim().equals("")) {
+    	  text += sentence + eol;
+    	  ObjectBank<List<IN>> documents = makeObjectBankFromString(text, readerWriter);
+          classifyAndWriteAnswers(documents, readerWriter);
+          text = "";
+      } else {
+    	  text += line + eol;
+      }
+    }
+    if (text.trim().equals("")) return false;
+    return true;
+  }
 
   public abstract void printProbsDocument(List<IN> document);
 

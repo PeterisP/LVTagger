@@ -405,6 +405,9 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
 
   private static final long serialVersionUID = -2329726064739185544L;
 
+  private static Set<String> knowLC = new HashSet<String>();
+  private static Set<String> knowUC = new HashSet<String>();
+  
   public NERFeatureFactory() {
     super();
   }
@@ -1309,12 +1312,34 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
        * AZ
        */
       if (flags.useMorphologyFeatures) {
+    	  
+    	  //TODO create annotation map, although this helps minimally
     	  String s = c.get(MorphologyFeatureStringAnnotation.class);
     	  if (s != null) {
 	    	  String[] morphoFeatures =  s.split("\\|");
 	    	  for (String f : morphoFeatures) {
 	    		  if (f.startsWith("Locījums") /*|| f.startsWith("Skaitlis") || f.startsWith("Dzimte") || f.startsWith("Pamatforma") */) {
 	    			  featuresC.add("MORPHO-" + f);
+	    		  }
+	    	  }
+    	  }
+    	  
+    	  s = p.get(MorphologyFeatureStringAnnotation.class);
+    	  if (s != null) {
+	    	  String[] morphoFeatures =  s.split("\\|");
+	    	  for (String f : morphoFeatures) {
+	    		  if (f.startsWith("Locījums") /*|| f.startsWith("Skaitlis") || f.startsWith("Dzimte") || f.startsWith("Pamatforma") */) {
+	    			  featuresC.add("MORPHO-P-" + f);
+	    		  }
+	    	  }
+    	  }
+    	  
+    	  s = n.get(MorphologyFeatureStringAnnotation.class);
+    	  if (s != null) {
+	    	  String[] morphoFeatures =  s.split("\\|");
+	    	  for (String f : morphoFeatures) {
+	    		  if (f.startsWith("Locījums") /*|| f.startsWith("Skaitlis") || f.startsWith("Dzimte") || f.startsWith("Pamatforma") */) {
+	    			  featuresC.add("MORPHO-N-" + f);
 	    		  }
 	    	  }
     	  }
@@ -1649,6 +1674,20 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
     		}
     	}
     }
+
+//    if (true) {
+//    	//TODO Doesnt really help, make more robust    
+//    	if (knowLC.contains(c.lemma().toLowerCase())) {
+//    		featuresC.add("DocKnownLC");  
+//    	} else if (c.index() > 1 && !isNameCase(c.word())) {
+//    		knowLC.add(c.lemma().toLowerCase());
+//    	}
+//    	if (knowUC.contains(c.lemma().toLowerCase())) {
+//    		featuresC.add("DocKnownUC");  
+//    	} else if (c.index() > 1 && isNameCase(c.word())) {
+//    		knowUC.add(c.lemma().toLowerCase());
+//    	}
+//    }
     
     return featuresC;
   }
