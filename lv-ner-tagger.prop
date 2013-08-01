@@ -1,0 +1,5 @@
+loadClassifier = lv-ner-model.ser.gz
+inputEncoding = utf-8
+outputEncoding = utf-8
+
+map = word=1,tag=9,lemma=2,answer=6,morphologyFeatureString=5,idx=0
