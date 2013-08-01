@@ -1,5 +1,3 @@
-testFile = ner_test.tab
-testFileList = data/interview_43_ner.conll,data/interview_46_ner.conll
 loadClassifier = lv-ner-model.ser.gz
 inputEncoding = utf-8
 outputEncoding = utf-8

@@ -1,7 +1,7 @@
 #location of the training file
-trainFileList = ner_train.tab
-#trainFileList = data/interview_38_ner.conll,data/interview_27_ner.conll,data/interview_23_ner.conll,data/interview_16_ner.conll,data/interview_43_ner.conll,data/interview_46_ner.conll
+trainFileList = data/interview_38_ner.conll,data/interview_27_ner.conll,data/interview_23_ner.conll,data/interview_16_ner.conll,data/interview_43_ner.conll,data/interview_46_ner.conll
 #data/1935_Muzikas_Apskats_ner.conll,data/1942_Austrumu_apgabala_raiditaju_grupa_ner.conll,data/1988_Padomju_Jaunatne_ner.conll,data/2007_Dadzis_ner.conll
+
 #location where you would like to save (serialize to) your
 #classifier; adding .gz at the end automatically gzips the file,
 #making it faster and smaller
@@ -43,9 +43,8 @@ saveFeatureIndexToDisk = true
 useTags=true
 useLemmas=true
 gazette = ./Gazetteer/LV_LOC_GAZETTEER.txt,./Gazetteer/LV_PERS_GAZETTEER.txt,./Gazetteer/PP_Onomastica_surnames.txt,./Gazetteer/PP_Onomastica_geonames.txt,./Gazetteer/PP_valstis.txt,./Gazetteer/PP_orgnames.txt,./Gazetteer/PP_org_elements.txt,./Gazetteer/AZ_profesijas.txt,./Gazetteer/AZ_profesijas_full_lem.txt,./Gazetteer/PP_orgnames_LETA.txt,./Gazetteer/AZ_roles.txt,./Gazetteer/AZ_ORG_common.txt
-
+#,./Gazetteer/AZ_ORG_common.txt,./Gazetteer/AZ_roles.txt,
 sloppyGazette=true
 cleanGazette=true
 
-#exportFeatures=ner_train_features.txt
 useMorphologyFeatures=true
