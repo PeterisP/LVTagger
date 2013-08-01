@@ -362,6 +362,7 @@ public class MorphoPipe {
 			String token = word.getString(TextAnnotation.class);
 			if (token.contains("<s>")) continue;
 			if (s.length()>0) s.append(token_separator);
+			if (outputType == outputTypes.MOSES) token = token.replace(' ', '_');
 			s.append(token);
 			s.append(field_separator);
 			Word analysis = word.get(LVMorphologyAnalysis.class);
@@ -370,7 +371,9 @@ public class MorphoPipe {
 				if (mini_tag) mainwf.removeNonlexicalAttributes();
 				s.append(mainwf.getTag());
 				s.append(field_separator);
-				s.append(mainwf.getValue(AttributeNames.i_Lemma));
+				String lemma = mainwf.getValue(AttributeNames.i_Lemma);
+				if (outputType == outputTypes.MOSES) lemma = lemma.replace(' ', '_');
+				s.append(lemma);
 			} else s.append(field_separator); 
 			/*
 			mainwf = word.get(LVMorphologyAnalysisBest.class);
