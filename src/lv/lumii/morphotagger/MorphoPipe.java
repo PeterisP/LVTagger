@@ -75,7 +75,7 @@ public class MorphoPipe {
 				System.out.println("LV morphological tagger");
 				System.out.println("\nInput formats");
 				System.out.println("\tDefault : plain text UTF-8, one sentence per line, terminated by a blank line.");
-				System.out.println("\t-paragraphs : plain text UTF-8, each line will be split in sentences.");
+				System.out.println("\t-paragraphs : plain text UTF-8, each line will be split in sentences. In output, paragraph borders are noted by an extra blank line.");
 				System.out.println("\t-vertinput : one line per token, sentences separated by <s></s>. Any XML-style tags are echoed as-is. \n\t\tNB! sentences are retokenized, the number of tokens may be different.");
 				System.out.println("\t-conll-in : CONLL shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
 				System.out.println("\nOutput formats");
@@ -142,6 +142,7 @@ public class MorphoPipe {
 			LinkedList<LinkedList<Word>> sentences = Splitting.tokenizeSentences(LVMorphologyReaderAndWriter.getAnalyzer(), text);
 			for (LinkedList<Word> sentence : sentences) 
 				outputSentence(cmm, out, LVMorphologyReaderAndWriter.analyzeSentence2(sentence) );
+			out.println();
 		} else outputSentence(cmm, out, LVMorphologyReaderAndWriter.analyzeSentence(text) ); // just a single sentence for other types
 	}
 
