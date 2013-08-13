@@ -9,6 +9,9 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 import edu.stanford.nlp.io.RuntimeIOException;
+import edu.stanford.nlp.ling.CoreAnnotations.ConllSyntaxAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.ParentAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.FullTagAnnotation;
@@ -31,6 +34,9 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
   public static final String OTHER = "O";
   private SeqClassifierFlags flags;
 
+  public enum outputTypes {SIMPLE, CONLL};  
+  public static outputTypes outputType = outputTypes.CONLL;
+  
   private static final String eol = System.getProperty("line.separator");
 
   
@@ -108,6 +114,7 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	    if (bits.length <= 1) {
 	    	wi.setWord(BOUNDARY);
 	        wi.set(AnswerAnnotation.class, OTHER);
+	        wi.setLemma("_");
 	    } else if (bits.length >= 6) {
 	    	//conll-x format produced by morphotagger
 	    	wi.setIndex(Integer.parseInt(bits[0]));
@@ -116,11 +123,19 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	    	wi.set(FullTagAnnotation.class, bits[4]);
 	    	wi.setTag(bits[4].substring(0,1));
 	    	wi.set(MorphologyFeatureStringAnnotation.class, bits[5]);
+	    	if (bits.length >= 7) {
+	    		//syntax
+	    		wi.set(ConllSyntaxAnnotation.class, bits[6]);
+	    	}
+//	    	if (bits.length >= 10) {
+//	    		//ner_conll
+//	    		wi.set(OriginalAnswerAnnotation.class, bits[6]);
+//	    		//System.out.println(wi.get(GoldAnswerAnnotation.class));
+//	    	}
+	    	
 	    } else {
 	    	throw new RuntimeIOException("Unexpected input (many fields): " + line);
 	    }
-
-	    wi.set(OriginalAnswerAnnotation.class, wi.get(AnswerAnnotation.class));
 	    return wi;
 	  }
 
@@ -145,29 +160,23 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	      if (word == BOUNDARY) {
 	        out.println();
 	      } else {
-	        String gold = fl.get(OriginalAnswerAnnotation.class);
-	        if(gold == null) gold = "";
-	        String guess = fl.get(AnswerAnnotation.class);
-	        
+	        String goldAnswer = fl.get(OriginalAnswerAnnotation.class); //fl.get(GoldAnswerAnnotation.class);
+	        String answer = fl.get(NamedEntityTagAnnotation.class);
+	        //System.out.println(fl);
 	        String tag = fl.tag();
 	        String lemma = fl.lemma();
 	        String fullTag = fl.getString(FullTagAnnotation.class);
 	        String morphoFeats = fl.getString(MorphologyFeatureStringAnnotation.class);
-	        
-	        out.println(fl.index() + "\t" + word + '\t' + lemma + '\t' + tag + '\t' + 
-	        		fullTag + '\t' + morphoFeats + '\t' + guess);
+	        if (outputType == outputTypes.CONLL) {
+	        	out.print(fl.index() + "\t" + word + '\t' + lemma + '\t' + tag + '\t' + 
+		        		fullTag + '\t' + morphoFeats);
+	        	if (fl.getString(ConllSyntaxAnnotation.class) != null) out.print('\t' + fl.getString(ConllSyntaxAnnotation.class));
+	        	out.println('\t' + answer);
+	        } else if (outputType == outputTypes.SIMPLE){
+	        	out.println(word + "\t" + goldAnswer + "\t" + answer);
+	        }	        
 	      }
 	    }
 	  }
-	  
-
-//  public void printAnswers(List<CoreLabel> doc, PrintWriter out) {
-//	    for (CoreLabel wi : doc) {
-//	      String answer = wi.get(AnswerAnnotation.class);
-//	      String goldAnswer = wi.get(GoldAnswerAnnotation.class);
-//	      out.println(wi.word() + "\t" + goldAnswer + "\t" + answer);
-//	    }
-//	    out.println();
-//  }
 
 }
