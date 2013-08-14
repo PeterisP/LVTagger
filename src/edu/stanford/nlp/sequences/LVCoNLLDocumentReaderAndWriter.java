@@ -109,8 +109,9 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	   */
 	  private CoreLabel makeCoreLabel(String line) {
 	    CoreLabel wi = new CoreLabel();
-	    // wi.line = line;
-	    String[] bits = line.split("\\s+");
+	    line = line.trim();				//TODO empty simple morpho tag fix
+	    String[] bits = line.split("\t");//String[] bits = line.split("\\s+"); 
+	    System.out.println("|"+line+"|@" + bits.length);
 	    if (bits.length <= 1) {
 	    	wi.setWord(BOUNDARY);
 	        wi.set(AnswerAnnotation.class, OTHER);
@@ -170,7 +171,7 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	        if (outputType == outputTypes.CONLL) {
 	        	out.print(fl.index() + "\t" + word + '\t' + lemma + '\t' + tag + '\t' + 
 		        		fullTag + '\t' + morphoFeats);
-	        	if (fl.getString(ConllSyntaxAnnotation.class) != null) out.print('\t' + fl.getString(ConllSyntaxAnnotation.class));
+	        	if (fl.get(ConllSyntaxAnnotation.class) != null) out.print('\t' + fl.getString(ConllSyntaxAnnotation.class));
 	        	out.println('\t' + answer);
 	        } else if (outputType == outputTypes.SIMPLE){
 	        	out.println(word + "\t" + goldAnswer + "\t" + answer);
