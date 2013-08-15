@@ -162,6 +162,9 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	      } else {
 	        String goldAnswer = fl.get(OriginalAnswerAnnotation.class); //fl.get(GoldAnswerAnnotation.class);
 	        String answer = fl.get(NamedEntityTagAnnotation.class);
+	        if (answer == null) {
+	        	answer = fl.get(AnswerAnnotation.class);
+	        }
 	        //System.out.println(fl);
 	        String tag = fl.tag();
 	        String lemma = fl.lemma();
