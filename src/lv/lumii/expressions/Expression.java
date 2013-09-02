@@ -208,7 +208,11 @@ public class Expression
 			}
 			else
 			{
-				inflectedPhrase+=w.word.getToken()+' ';
+				inflectedPhrase+=w.word.getToken();
+				if(w.word.getToken()!="\"")
+				{
+					inflectedPhrase+=' ';
+				}
 			}
 		}
 		
