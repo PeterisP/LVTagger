@@ -16,7 +16,7 @@
   <property name="src.home"      value="${basedir}/src"/>
   <property name="javadoc.home"  value="${basedir}/javadoc"/>
 	<property name="dist"  					value="${basedir}/dist"/>
-	<property name="morphology.dir" location="../Morphology"/>
+	<property name="morphology.dir" location="../morphology"/>
 
 
 <!--  ==================== Compilation Control Options ==================== -->
