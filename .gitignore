@@ -12,3 +12,5 @@ LV_CRF.zip
 *sublime-project
 *sublime-workspace
 ner_train_comparison.txt
+lib/junit*.jar
+lib/morphology.jar
