@@ -1052,10 +1052,10 @@ public abstract class AbstractSequenceClassifier<IN extends CoreMap> implements 
     long millis = timer.stop();
     double wordspersec = numWords / (((double) millis) / 1000);
     NumberFormat nf = new DecimalFormat("0.00"); // easier way!
-    System.err.println(StringUtils.getShortClassName(this) +
-                       " tagged " + numWords + " words in " + numDocs +
-                       " documents at " + nf.format(wordspersec) +
-                       " words per second.");
+//    System.err.println(StringUtils.getShortClassName(this) +
+//                       " tagged " + numWords + " words in " + numDocs +
+//                       " documents at " + nf.format(wordspersec) +
+//                       " words per second.");
     if (resultsCounted) {
       printResults(entityTP, entityFP, entityFN);
     }

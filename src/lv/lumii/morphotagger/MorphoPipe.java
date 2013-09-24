@@ -41,7 +41,8 @@ public class MorphoPipe {
 	private static String token_separator = eol;
 	
 	private static boolean mini_tag = false;		
-	private static boolean features = false;		
+	private static boolean features = false;	
+	private static boolean LETAfeatures = false;	
 	private static inputTypes inputType = inputTypes.SENTENCE;
 	private static outputTypes outputType = outputTypes.JSON;
 	
@@ -64,6 +65,7 @@ public class MorphoPipe {
 			}
 			if (args[i].equalsIgnoreCase("-stripped")) mini_tag = true; //remove nonlexical attributes
 			if (args[i].equalsIgnoreCase("-features")) features = true; //output training features
+			if (args[i].equalsIgnoreCase("-leta")) LETAfeatures = true; //output specific features for LETA semantic frame analysis
 			if (args[i].equalsIgnoreCase("-vertinput")) inputType = inputTypes.VERT; //vertical input format as requested by Milos Jakubicek 2012.11.01
 			if (args[i].equalsIgnoreCase("-paragraphs")) inputType = inputTypes.PARAGRAPH;
 			if (args[i].equalsIgnoreCase("-conll-in")) inputType = inputTypes.CONLL; 
@@ -88,7 +90,8 @@ public class MorphoPipe {
 				System.out.println("\t-visl-cg : output format for VISL constraint grammar tool");
 				System.out.println("\nOther options:");
 				System.out.println("\t-stripped : lexical/nonessential parts of the tag are replaced with '-' to reduce sparsity.");
-				System.out.println("\t-features : in conll output, include the features used for training/tagging.");
+				System.out.println("\t-features : in conll output, include the features that were used for training/tagging.");
+				System.out.println("\t-leta : in conll output, include extra features used for semantic frame analysis.");
 				System.out.flush();
 				System.exit(0);
 			}
@@ -235,7 +238,6 @@ public class MorphoPipe {
 			Word analysis = word.get(LVMorphologyAnalysis.class);
 			Wordform mainwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false); 
 			if (mainwf != null) {
-				if (mini_tag) mainwf.removeNonlexicalAttributes();
 				String lemma = mainwf.getValue(AttributeNames.i_Lemma);
 				lemma = lemma.replace(' ', '_');
 				s.append(lemma);
@@ -244,6 +246,25 @@ public class MorphoPipe {
 				s.append('\t');
 				s.append(mainwf.getTag());
 				s.append('\t');
+
+				// Feature atribūtu filtri
+				if (mini_tag) mainwf.removeNonlexicalAttributes();
+				if (LETAfeatures) {
+					addLETAfeatures(mainwf);
+					// Notestēt ko no morfotagošanas fīčām (word shape??) varbūt pielikt
+					mainwf.removeAttribute(AttributeNames.i_LexemeID);
+					mainwf.removeAttribute(AttributeNames.i_EndingID);
+					mainwf.removeAttribute(AttributeNames.i_ParadigmID);
+					// mainwf.removeAttribute(AttributeNames.i_SourceLemma); FIXME - atvasinātiem vārdiem šis var būt svarīgs, atpriedekļotas lemmas..
+					mainwf.removeAttribute(AttributeNames.i_Source);
+					mainwf.removeAttribute(AttributeNames.i_Word);
+					mainwf.removeAttribute(AttributeNames.i_Mija);
+					mainwf.removeAttribute(AttributeNames.i_Guess);
+					mainwf.removeAttribute(AttributeNames.i_Generate);
+					mainwf.removeAttribute(AttributeNames.i_Konjugaacija);
+					mainwf.removeAttribute(AttributeNames.i_Declension);
+				}
+				
 				for (Entry<String, String> entry : mainwf.entrySet()) { // visi attributevalue paariishi
 					 s.append(entry.getKey().replace(' ', '_'));
 					 s.append('=');
@@ -276,6 +297,14 @@ public class MorphoPipe {
 		return s.toString();
 	}
 	
+	private static void addLETAfeatures(Wordform wf) {
+		String lemma = wf.getValue(AttributeNames.i_Lemma);
+		lemma.replaceAll("\\d", "0"); // uzskatam ka nav atšķirības starp skaitļiem ja ciparu skaits vienāds
+		if (Dictionary.dict("common_lemmas").contains(lemma)) 
+			wf.addAttribute("LETA_lemma", lemma);
+		else wf.addAttribute("LETA_lemma", "_rets_");		
+	}
+
 	// VISL CG format, as described in http://beta.visl.sdu.dk/cg3/chunked/streamformats.html#stream-vislcg
 	private static String output_VISL(List<CoreLabel> tokens) {		
 		StringBuilder s = new StringBuilder();

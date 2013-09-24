@@ -179,11 +179,11 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 	        wi.set(AnswerAnnotation.class, answer);
 	        	        
 	        Wordform mainwf = null;
-			double maxticamība = -1;
+			double max_likelihood = -1;
 			for (Wordform wf : analysis.wordforms) {  // Paskatamies visus atrastos variantus un ņemam statistiski ticamāko
 				double estimate = Statistics.getStatistics().getEstimate(wf);
-				if (estimate > maxticamība) {
-					maxticamība = estimate;
+				if (estimate > max_likelihood) {
+					max_likelihood = estimate;
 					mainwf = wf;
 				}
 			}
