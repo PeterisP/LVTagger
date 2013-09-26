@@ -79,7 +79,7 @@ import java.util.zip.GZIPInputStream;
 public abstract class AbstractSequenceClassifier<IN extends CoreMap> implements Function<String, String> {
 
   public SeqClassifierFlags flags;
-  public Index<String> classIndex; // = null;
+  public Index<String> classIndex = null;
   public FeatureFactory<IN> featureFactory;
   protected IN pad;
   private CoreTokenFactory<IN> tokenFactory;
