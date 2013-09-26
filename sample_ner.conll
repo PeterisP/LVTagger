@@ -1,0 +1,13 @@
+1	Mārtiņš	mārtiņš	n	n_msn1	Galotnes_nr=14|Vārdšķira=Lietvārds|Vārds=Mārtiņš|Skaitlis=Vienskaitlis|Minēšana=Minēšana_pēc_galotnes|Deklinācija=1|Mija=0|Lielo_burtu_lietojums=Sākas_ar_lielo_burtu|Dzimte=Vīriešu|Locījums=Nominatīvs|Pamatforma=mārtiņš|Avots=minējums_pēc_galotnes	person
+2	Bondars	bondars	n	n_msn1	Galotnes_nr=1|Vārdšķira=Lietvārds|Vārds=Bondars|Skaitlis=Vienskaitlis|Minēšana=Minēšana_pēc_galotnes|Deklinācija=1|Mija=0|Lielo_burtu_lietojums=Sākas_ar_lielo_burtu|Dzimte=Vīriešu|Locījums=Nominatīvs|Pamatforma=bondars|Avots=minējums_pēc_galotnes	person
+3	ir	būt	v	vcnipii30an	Galotnes_nr=1158|Vārdšķira=Darbības_vārds|Konjugācija=Nekārtns|Avota_pamatforma=būt|Vārds=ir|Minēšana=Nav|Mija=0|Laiks=Tagadne|Pamatforma=būt|Leksēmas_nr=28668|Skaitlis=Nepiemīt|Atgriezeniskums=Nē|Izteiksme=Īstenības|Transitivitāte=Nepārejošs|Darbības_vārda_tips=Palīgverbs_'būt'|Persona=3|Noliegums=Nē|Kārta=Darāmā	O
+4	dzimis	dzimt	v	vmnpdmsnasn	Galotnes_nr=897|Konjugācija=1|Vārdšķira=Darbības_vārds|Avota_pamatforma=dzimt|Vārds=dzimis|Minēšana=Nav|Mija=14|Locījums=Nominatīvs|Pamatforma=dzimt|Laiks=Pagātne|Leksēmas_nr=26489|Skaitlis=Vienskaitlis|Atgriezeniskums=Nē|Noteiktība=Nenoteiktā|Izteiksme=Divdabis|Transitivitāte=Nepārejošs|Darbības_vārda_tips=Patstāvīgs_darbības_vārds|Dzimte=Vīriešu|Noliegums=Nē|Lokāmība=Lokāms|Kārta=Darāmā	O
+5	1971.	1971.	x	xo	Vārdšķira=Reziduālis|Vārds=1971.|Reziduāļa_tips=Kārtas_skaitlis_cipariem|Pamatforma=1971.	time
+6	gada	gads	n	ncmsg1	Vārdšķira=Lietvārds|Galotnes_nr=2|Vārds=gada|Avota_pamatforma=gads|Minēšana=Nav|Deklinācija=1|Mija=0|Locījums=Ģenitīvs|Pamatforma=gads|Leksēmas_nr=1391|Skaitlis=Vienskaitlis|Lietvārda_tips=Sugas_vārds|Dzimte=Vīriešu|Avots=Valērija_leksikons	time
+7	31.	31.	x	xo	Vārdšķira=Reziduālis|Vārds=31.|Reziduāļa_tips=Kārtas_skaitlis_cipariem|Pamatforma=31.	time
+8	decembrī	decembris	n	ncmsl2	Vārdšķira=Lietvārds|Galotnes_nr=31|Vārds=decembrī|Avota_pamatforma=decembris|Minēšana=Nav|Deklinācija=2|Mija=0|Locījums=Lokatīvs|Pamatforma=decembris|Leksēmas_nr=8141|Skaitlis=Vienskaitlis|Lietvārda_tips=Sugas_vārds|Dzimte=Vīriešu|Avots=Valērija_leksikons	time
+9	,	,	z	zc	Vārdšķira=Pieturzīme|Galotnes_nr=1158|Avota_pamatforma=,|Vārds=,|Leksēmas_nr=27198|Minēšana=Nav|Mija=0|Pieturzīmes_tips=Komats|Pamatforma=,	O
+10	Rīgā	Rīga	n	npfsl4	Vārdšķira=Lietvārds|Galotnes_nr=79|Vārds=Rīgā|Avota_pamatforma=rīga|Minēšana=Nav|Deklinācija=4|Mija=0|Locījums=Lokatīvs|Pamatforma=Rīga|Leksēmas_nr=8855|Skaitlis=Vienskaitlis|Lietvārda_tips=Īpašvārds|Lielo_burtu_lietojums=Sākas_ar_lielo_burtu|Dzimte=Sieviešu|Avots=Valērija_leksikons	location
+11	.	.	z	zs	Vārdšķira=Pieturzīme|Galotnes_nr=1158|Avota_pamatforma=.|Vārds=.|Leksēmas_nr=27194|Minēšana=Nav|Mija=0|Pieturzīmes_tips=Punkts|Pamatforma=.	O
+
+
