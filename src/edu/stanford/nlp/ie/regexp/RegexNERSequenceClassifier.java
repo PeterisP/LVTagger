@@ -255,16 +255,17 @@ public class RegexNERSequenceClassifier extends AbstractSequenceClassifier<CoreL
         if (! pattern.matcher(token.lemma()).matches() ||
             //currentType != null ||
             ! (entry.overwritableTypes.contains(NERType) ||
-               myLabels.contains(NERType) ||
-               NERType.equals("O"))) {
+               myLabels.contains(NERType) 
+               //|| NERType.equals("O")
+               )) {
           failed = true;
           break;
         }
       }
       if(! failed) {
-        System.err.print("MATCHED REGEX:");
-        for(int i = start; i < start + regex.size(); i ++) System.err.print(" " + document.get(i).word());
-        System.err.println();
+//        System.err.print("MATCHED REGEX:");
+//        for(int i = start; i < start + regex.size(); i ++) System.err.print(" " + document.get(i).word());
+//        System.err.println();
         return start;
       }
     }

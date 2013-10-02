@@ -9,7 +9,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
 
+import edu.stanford.nlp.ie.NERClassifierCombiner;
 import edu.stanford.nlp.ie.crf.CRFClassifier;
+import edu.stanford.nlp.ie.regexp.RegexNERSequenceClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ConllSyntaxAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.FullTagAnnotation;
@@ -34,7 +36,7 @@ public class NerPipe {
 	
 	
 	private enum inputTypes {SENTENCE, CONLL};
-	private enum outputTypes {CONLL_X};
+	private enum outputTypes {CONLL_X, SIMPLE};
 
 	private static String eol = System.getProperty("line.separator");
 	private static String field_separator = "\t";
@@ -59,24 +61,35 @@ public class NerPipe {
 			System.out.println("\nOutput formats");
 			System.out.println("\tDefault : conll-x");
 			System.out.println("\t-conll-x : CONLL-X shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");;
+			System.out.println("\t-simple : Simple compare format used for ner analysis");
 			System.out.println("\nOther options:");
 			System.out.flush();
 			System.exit(0);
 		}
 		if (props.getProperty("conll-in") != null) inputType = inputTypes.CONLL;
 		if (props.getProperty("conll-x") != null) outputType = outputTypes.CONLL_X;
+		if (props.getProperty("simple") != null) outputType = outputTypes.SIMPLE;
 		if (props.getProperty("loadClassifier") != null) loadClassifier = props.getProperty("loadClassifier");
 
 		edu.stanford.nlp.util.PropertiesUtils.printProperties("LV Named Entity Recogniser", props, System.err);	
 		
-		CRFClassifier<CoreLabel> nerClassifier = CRFClassifier.getClassifier(loadClassifier, props);
+		CRFClassifier<CoreLabel> crfNer = CRFClassifier.getClassifier(loadClassifier, props);
 		
 		PrintStream out = new PrintStream(System.out, true, "UTF-8");
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in, "UTF-8"));
 		
-		
 		LVCoNLLDocumentReaderAndWriter conllReader = new LVCoNLLDocumentReaderAndWriter();
-		conllReader.init(nerClassifier.flags);
+		conllReader.init(crfNer.flags);
+		
+		RegexNERSequenceClassifier regexNer = new RegexNERSequenceClassifier("NERdicts/regex.txt", true, true);
+		NERClassifierCombiner nerClassifier = new NERClassifierCombiner(crfNer, regexNer);
+		
+		switch(outputType) {
+			case SIMPLE:
+				conllReader.outputType = LVCoNLLDocumentReaderAndWriter.outputTypes.SIMPLE;				
+				break;
+			default:				
+		}
 		
 		switch(inputType) {
 		default:

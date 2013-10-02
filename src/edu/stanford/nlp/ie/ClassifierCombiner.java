@@ -176,7 +176,8 @@ public class ClassifierCombiner<IN extends CoreMap & HasWord> extends AbstractSe
     for (AbstractSequenceClassifier<? extends CoreMap> baseClassifier : baseClassifiers) {
       Set<String> labs = baseClassifier.labels();
       labs.removeAll(seenLabels);
-      seenLabels.addAll(labs);
+      //seenLabels.addAll(labs); // AZ allow next classifiers to add same label markups
+      // TODO make this configurable
       baseLabels.add(labs);
     }
     String background = baseClassifiers.get(0).flags.backgroundSymbol;
