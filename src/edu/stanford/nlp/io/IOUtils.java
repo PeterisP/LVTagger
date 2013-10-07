@@ -230,6 +230,7 @@ public class IOUtils {
 			writer = new BufferedOutputStream(new FileOutputStream(tmp));
 		}
 		writer.write(contents.getBytes(encoding));
+		writer.close();
 		return tmp;
 	}
 
@@ -352,6 +353,7 @@ public class IOUtils {
     while (r.readLine() != null) {
       numLines++;
     }
+    r.close();
     return numLines;
   }
 

@@ -1,9 +1,6 @@
 package edu.stanford.nlp.parser.lexparser;
 
 import java.io.Serializable;
-import java.util.Collection;
-
-import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.stats.Counter;
 
 

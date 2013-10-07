@@ -15,7 +15,6 @@ import lv.semti.morphology.analyzer.Splitting;
 import lv.semti.morphology.analyzer.Word;
 import lv.semti.morphology.analyzer.Wordform;
 import lv.semti.morphology.attributes.AttributeNames;
-import lv.semti.morphology.corpus.Statistics;
 
 import edu.stanford.nlp.stats.Counter;
 import edu.stanford.nlp.stats.Counters;

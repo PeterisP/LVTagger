@@ -6,7 +6,6 @@ import edu.stanford.nlp.util.Function;
 import edu.stanford.nlp.util.Pair;
 import edu.stanford.nlp.trees.HeadFinder;
 
-import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

@@ -2,7 +2,6 @@
 package edu.stanford.nlp.parser.lexparser;
 
 import edu.stanford.nlp.ling.TaggedWord;
-import edu.stanford.nlp.ling.LabeledWord;
 import edu.stanford.nlp.io.NumberRangesFileFilter;
 import edu.stanford.nlp.io.EncodingPrintWriter;
 import edu.stanford.nlp.trees.Tree;
@@ -27,8 +26,6 @@ import java.text.NumberFormat;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 
 
 /**

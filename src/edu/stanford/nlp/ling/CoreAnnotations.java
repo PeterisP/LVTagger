@@ -3,7 +3,6 @@ package edu.stanford.nlp.ling;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.SortedSet;
 
 import edu.stanford.nlp.util.CoreMap;

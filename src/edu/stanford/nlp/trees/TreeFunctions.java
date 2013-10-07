@@ -1,6 +1,5 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.CategoryWordTag;
 import edu.stanford.nlp.ling.CategoryWordTagFactory;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.StringLabel;

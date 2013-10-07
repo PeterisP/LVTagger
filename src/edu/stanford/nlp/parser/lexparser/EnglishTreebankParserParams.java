@@ -4,7 +4,6 @@ import edu.stanford.nlp.io.RuntimeIOException;
 import edu.stanford.nlp.ling.*;
 import edu.stanford.nlp.trees.*;
 import edu.stanford.nlp.util.Filter;
-import edu.stanford.nlp.util.Function;
 import edu.stanford.nlp.util.Index;
 
 import java.io.IOException;

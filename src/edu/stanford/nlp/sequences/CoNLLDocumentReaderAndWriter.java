@@ -334,7 +334,6 @@ public class CoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<Cor
    *  @param doc The document: A List of CoreLabel
    *  @param out Where to send the answers to
    */
-  @SuppressWarnings({"StringEquality"})
   public void printAnswers(List<CoreLabel> doc, PrintWriter out) {
     // boolean tagsMerged = flags.mergeTags;
     // boolean useHead = flags.splitOnHead;

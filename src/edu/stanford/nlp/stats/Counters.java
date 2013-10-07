@@ -122,7 +122,6 @@ public class Counters {
    * @param c
    *          The Counter to log normalize in place
    */
-  @SuppressWarnings( { "UnnecessaryUnboxing" })
   public static <E> void logNormalizeInPlace(Counter<E> c) {
     double logsum = logSum(c);
     // for (E key : c.keySet()) {
@@ -2226,7 +2225,6 @@ public class Counters {
                     return e.getKey();
                   }
 
-                  @SuppressWarnings( { "UnnecessaryBoxing", "UnnecessaryUnboxing" })
                   public Double getValue() {
                     return Double.valueOf(e.getValue().doubleValue());
                   }

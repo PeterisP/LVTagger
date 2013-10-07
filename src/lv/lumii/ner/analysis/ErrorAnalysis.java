@@ -2,13 +2,8 @@ package lv.lumii.ner.analysis;
 
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
-
-import sun.reflect.generics.tree.BottomSignature;
 
 import edu.stanford.nlp.util.Pair;
 

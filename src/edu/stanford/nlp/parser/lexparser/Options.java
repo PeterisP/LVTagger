@@ -3,7 +3,6 @@ package edu.stanford.nlp.parser.lexparser;
 import edu.stanford.nlp.trees.CompositeTreeTransformer;
 import edu.stanford.nlp.trees.TreebankLanguagePack;
 import edu.stanford.nlp.trees.TreeTransformer;
-import edu.stanford.nlp.util.ErasureUtils;
 import edu.stanford.nlp.util.Function;
 import edu.stanford.nlp.util.ReflectionLoading;
 import edu.stanford.nlp.util.StringUtils;

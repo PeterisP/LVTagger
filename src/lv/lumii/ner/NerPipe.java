@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
-import java.io.PrintWriter;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
@@ -20,12 +19,8 @@ import edu.stanford.nlp.ling.CoreAnnotations.MorphologyFeatureStringAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ShapeAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.objectbank.ObjectBank;
 import edu.stanford.nlp.process.WordShapeClassifier;
 import edu.stanford.nlp.sequences.LVCoNLLDocumentReaderAndWriter;
-import edu.stanford.nlp.sequences.LVCoNLLDocumentReaderAndWriter;
-import edu.stanford.nlp.sequences.ObjectBankWrapper;
-import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.StringUtils;
 
 /**

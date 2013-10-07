@@ -312,7 +312,6 @@ public class ClassifierCombiner<IN extends CoreMap & HasWord> extends AbstractSe
   }
 
 
-  @SuppressWarnings("unchecked")
   @Override
   public void train(Collection<List<IN>> docs,
                     DocumentReaderAndWriter<IN> readerAndWriter) {

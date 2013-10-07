@@ -13,9 +13,11 @@ import java.util.*;
 *
 * @author Angel Chang
 */
+@SuppressWarnings("rawtypes")
 public abstract class CoreMapAttributeAggregator
 {
-  public static Map<Class, CoreMapAttributeAggregator> getDefaultAggregators()
+  
+public static Map<Class, CoreMapAttributeAggregator> getDefaultAggregators()
   {
     return DEFAULT_AGGREGATORS;
   }

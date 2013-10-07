@@ -91,7 +91,6 @@ public abstract class Treebank extends AbstractCollection<Tree> {
    * @param trf             the factory class to be called to create a new
    *                        <code>TreeReader</code>
    */
-  @SuppressWarnings({"UnusedDeclaration"})
   public Treebank(int initialCapacity, TreeReaderFactory trf) {
     this.trf = trf;
   }

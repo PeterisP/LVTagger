@@ -9,6 +9,8 @@ import java.util.*;
  * @author Dan Klein (klein@cs.stanford.edu)
  * @author Kayur Patel (kdpatel@cs)
  */
+
+@SuppressWarnings("rawtypes")
 public abstract class MapFactory<K,V> implements Serializable {
 
   // allow people to write subclasses
@@ -17,22 +19,16 @@ public abstract class MapFactory<K,V> implements Serializable {
 
   private static final long serialVersionUID = 4529666940763477360L;
 
-  @SuppressWarnings("unchecked")
   public static final MapFactory HASH_MAP_FACTORY = new HashMapFactory();
 
-  @SuppressWarnings("unchecked")
   public static final MapFactory IDENTITY_HASH_MAP_FACTORY = new IdentityHashMapFactory();
 
-  @SuppressWarnings("unchecked")
   private static final MapFactory WEAK_HASH_MAP_FACTORY = new WeakHashMapFactory();
 
-  @SuppressWarnings("unchecked")
   private static final MapFactory TREE_MAP_FACTORY = new TreeMapFactory();
 
-  @SuppressWarnings("unchecked")
   private static final MapFactory LINKED_HASH_MAP_FACTORY = new LinkedHashMapFactory();
 
-  @SuppressWarnings("unchecked")
   private static final MapFactory ARRAY_MAP_FACTORY = new ArrayMapFactory();
 
 

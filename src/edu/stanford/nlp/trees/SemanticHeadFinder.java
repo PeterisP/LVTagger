@@ -1,6 +1,5 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.HasCategory;
 import edu.stanford.nlp.ling.HasTag;
 import edu.stanford.nlp.ling.HasWord;

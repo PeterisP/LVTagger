@@ -1,7 +1,5 @@
 package edu.stanford.nlp.stats;
 
-import edu.stanford.nlp.util.Pair;
-
 import java.text.NumberFormat;
 import java.util.*;
 

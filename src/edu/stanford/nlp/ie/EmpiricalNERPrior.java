@@ -2,7 +2,6 @@ package edu.stanford.nlp.ie;
 
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.Index;
-import edu.stanford.nlp.ling.CoreLabel;
 
 import java.util.List;
 

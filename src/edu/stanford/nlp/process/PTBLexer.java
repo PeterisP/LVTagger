@@ -32,7 +32,6 @@ package edu.stanford.nlp.process;
 import java.io.Reader;
 import java.util.logging.Logger;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.Set;
 

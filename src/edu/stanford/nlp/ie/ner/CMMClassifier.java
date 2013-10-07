@@ -127,6 +127,7 @@ import edu.stanford.nlp.util.StringUtils;
  * @author Sarah Spikes (sdspikes@cs.stanford.edu) - cleanup and filling in types
  */
 
+@SuppressWarnings("rawtypes")
 public class CMMClassifier<IN extends CoreLabel> extends AbstractSequenceClassifier<IN> implements DocumentProcessor, ListProcessor<Object, WordTag> {
 
   private ProbabilisticClassifier<String, String> classifier;
@@ -1271,7 +1272,7 @@ public class CMMClassifier<IN extends CoreLabel> extends AbstractSequenceClassif
   }
 
   public void trainSemiSup() {
-    DocumentReaderAndWriter readerAndWriter = makeReaderAndWriter();
+    DocumentReaderAndWriter<IN> readerAndWriter = makeReaderAndWriter();
 
     String filename = flags.trainFile;
     String biasedFilename = flags.biasedTrainFile;

@@ -225,7 +225,6 @@ public class HashIndex<E> extends AbstractCollection<E> implements Index<E>, Ran
    * @param o the object to be queried.
    * @return true iff there is an index for the queried object.
    */
-  @SuppressWarnings({"SuspiciousMethodCalls"})
   @Override
   public boolean contains(Object o) {
     return indexes.containsKey(o);

@@ -436,7 +436,6 @@ public class GrammaticalRelation implements Comparable<GrammaticalRelation>, Ser
    *  @param o Object to be compared
    *  @return Whether equal
    */
-  @SuppressWarnings({"StringEquality", "ThrowableInstanceNeverThrown"})
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;

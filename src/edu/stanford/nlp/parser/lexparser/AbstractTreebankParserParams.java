@@ -11,7 +11,6 @@ import edu.stanford.nlp.stats.EquivalenceClasser;
 import edu.stanford.nlp.trees.*;
 import edu.stanford.nlp.trees.tregex.TregexMatcher;
 import edu.stanford.nlp.util.Filter;
-import edu.stanford.nlp.util.Function;
 import edu.stanford.nlp.util.Index;
 
 import java.io.OutputStream;

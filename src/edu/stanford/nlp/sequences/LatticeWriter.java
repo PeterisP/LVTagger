@@ -1,6 +1,5 @@
 package edu.stanford.nlp.sequences;
 
-import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.fsm.DFSA;
 

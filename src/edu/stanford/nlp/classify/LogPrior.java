@@ -1,7 +1,6 @@
 package edu.stanford.nlp.classify;
 
 import edu.stanford.nlp.math.ArrayMath;
-import edu.stanford.nlp.util.ArrayUtils;
 
 import java.io.Serializable;
 

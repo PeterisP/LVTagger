@@ -11,17 +11,14 @@ import java.util.regex.Pattern;
 import edu.stanford.nlp.io.RuntimeIOException;
 import edu.stanford.nlp.ling.CoreAnnotations.ConllSyntaxAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.ParentAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.FullTagAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.GoldAnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.MorphologyFeatureStringAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.OriginalAnswerAnnotation;
 import edu.stanford.nlp.objectbank.DelimitRegExIterator;
 import edu.stanford.nlp.objectbank.IteratorFromReaderFactory;
 import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.util.StringUtils;
 
 
 public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<CoreLabel> {
