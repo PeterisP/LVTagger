@@ -5,17 +5,13 @@ import lv.semti.morphology.attributes.AttributeNames;
 import lv.semti.morphology.attributes.AttributeValues;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.*;
 
-import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ie.ner.CMMClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.ConllSyntaxAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.ling.Datum;
 import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 
 /**
@@ -187,24 +183,30 @@ public class Expression
 				forma=w.bestWordform;
 								
 				filtrs = new AttributeValues(forma);
-				filtrs.addAttribute(AttributeNames.i_Case,inflect); 
-				filtrs.removeAttribute("Galotnes nr");
+				filtrs.addAttribute(AttributeNames.i_Case,inflect);
+				filtrs.removeAttribute(AttributeNames.i_EndingID);
+				filtrs.removeAttribute(AttributeNames.i_LexemeID);
+				filtrs.removeAttribute(AttributeNames.i_Guess);
+				filtrs.removeAttribute(AttributeNames.i_Mija);
+				filtrs.removeAttribute(AttributeNames.i_CapitalLetters);
+				filtrs.removeAttribute(AttributeNames.i_Source);
 				filtrs.removeAttribute("Vārds");
 				//FIXME varbūt vajag izmest vēl kādu īpašību
 
 				/*
 				inflectedPhrase+=locītājs.generateInflections(forma.getValue("Pamatforma"),false,filtrs).toString()+' ';
 				*/
-				inflWordforms=locītājs.generateInflections(forma.lexeme); //FIXME lexem is private
-				for(Wordform wf : inflWordforms)
-				{
+				if (forma.lexeme == null)
+					inflWordforms=locītājs.generateInflections(forma.getValue("Pamatforma"),false,filtrs);
+				else 
+					inflWordforms=locītājs.generateInflections(forma.lexeme);
+				for(Wordform wf : inflWordforms) {
 					//System.out.println(wf.getToken());
-					if(wf.isMatchingWeak(filtrs))
-					{
+					if (wf.isMatchingWeak(filtrs)) {
 						inflectedPhrase+=wf.getToken()+' ';
+						break; // FIXME - ieliku break lai nekad nav dubultā, bet te arī nečeko vai nav tā ka pazūd kāds vārds...
 					}
 				}
-				
 			}
 			else
 			{
@@ -229,8 +231,10 @@ public class Expression
 		{
 		case "org":
 			return Category.org;
+		case "hum":
+			return Category.hum;
 		default:
-				return null;
+				return null; //FIXME - nav labi šitā, tad jau var vispār stringus neparsēt bet prasīt ieejā enum
 		}
 	}
 

@@ -1,6 +1,7 @@
 package lv.lumii.expressions;
 
 import static org.junit.Assert.*;
+import lv.semti.morphology.attributes.AttributeNames;
 
 import org.junit.Test;
 
@@ -63,6 +64,23 @@ public class AnalyzerTest
 	}
 	
 //Cilvēku vārdu un uzvārdu testi
+	@Test
+	public void cilvēki() throws Exception
+	{
+		assertEquals("Hanss Kristians Andersens", 
+				new Expression("Hansa Kristiana Andersena").inflect(AttributeNames.v_Nominative, "hum"));
+		assertEquals("Hansa Kristiana Andersena", 
+				new Expression("Hanss Kristians Andersens").inflect(AttributeNames.v_Genitive, "hum"));
+	}
+	
+	@Test
+	public void organizācijas() throws Exception
+	{
+		assertEquals("Latvijas Kultūras fonds", 
+				new Expression("Latvijas Kultūras fondā").normalize());
+		assertEquals("Latvijas Kultūras fondā", 
+				new Expression("Latvijas Kultūras fonds").inflect(AttributeNames.v_Locative, "org"));
+	}
 	
 //Ģeogrāfisko vietu nosaukumu testi
 	
