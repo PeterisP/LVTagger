@@ -1,21 +1,22 @@
 
 package lv.lumii.expressions;
-import lv.semti.morphology.analyzer.*;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+
+import lv.semti.morphology.analyzer.Analyzer;
+import lv.semti.morphology.analyzer.Splitting;
+import lv.semti.morphology.analyzer.Word;
+import lv.semti.morphology.analyzer.Wordform;
 import lv.semti.morphology.attributes.AttributeNames;
 import lv.semti.morphology.attributes.AttributeValues;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.*;
-
-import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ie.ner.CMMClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.ConllSyntaxAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.ling.Datum;
 import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 
 /**
@@ -170,6 +171,7 @@ public class Expression
 		return inflect("Nominatīvs",null);
 	}
 	
+	
 	public String inflect(String inflect, String cat) throws Exception
 	{
 		addPattern(cat);
@@ -180,8 +182,9 @@ public class Expression
 		HashMap<String,String> attribute_map;
 		Wordform forma, inflected_form;
 		ArrayList<Wordform> inflWordforms;
+		boolean matching = false;
 		for(ExpressionWord w : expWords)
-		{
+		{			
 			if(w.isStatic==false)
 			{
 				forma=w.bestWordform;
@@ -202,7 +205,12 @@ public class Expression
 					if(wf.isMatchingWeak(filtrs))
 					{
 						inflectedPhrase+=wf.getToken()+' ';
+						matching = true;
 					}
+				}
+				if (!matching) {
+					//FIXME ko likt, ja nav ģenerēti locījumi lokāmajam vārdam (vv no locītāja, neatpazīti svešvārdi)
+					break;
 				}
 				
 			}
@@ -215,7 +223,7 @@ public class Expression
 				}
 			}
 		}
-		
+		if (!matching) return null; // nevarēja izveidot korektu locījumu
 		return inflectedPhrase.trim();
 	}
 	
