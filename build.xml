@@ -94,6 +94,10 @@
       	          <include name="*.jar"/>
       	          <exclude name="javanlp*"/>
       	</fileset>
+        <fileset dir="${morphology.dir}/dist">
+                  <include name="*.jar"/>
+                  <exclude name="javanlp*"/>
+        </fileset>
       </path>
   </target>
 
@@ -122,9 +126,10 @@
           destdir="${build.home}"
             debug="${compile.debug}"
          encoding="utf-8" 
+includeantruntime="false" 
       deprecation="${compile.deprecation}"
          optimize="${compile.optimize}"
-	   source="${compile.source}"
+	         source="${compile.source}"
            target="${compile.target}">
         <classpath refid="compile.classpath"/>
       <compilerarg value="-Xmaxerrs"/>
