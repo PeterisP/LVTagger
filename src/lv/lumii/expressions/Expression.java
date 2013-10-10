@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 import lv.semti.morphology.analyzer.Analyzer;
 import lv.semti.morphology.analyzer.Splitting;
@@ -182,6 +183,21 @@ public class Expression
 		return inflect("Nominatīvs",null);
 	}
 	
+	public Map<String,String> getInflections(String cat) {
+		Map <String,String> result = new HashMap<String, String>();
+		String inflection;
+		String[] cases = {"Nominatīvs", "Ģenitīvs", "Datīvs", "Akuzatīvs", "Lokatīvs"};
+		
+		for (String i_case : cases) {
+			try {
+				inflection = inflect(i_case, cat);
+				if (inflection != null) result.put(i_case, inflection);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return result;
+	}
 	
 	public String inflect(String inflect, String cat) throws Exception
 	{
