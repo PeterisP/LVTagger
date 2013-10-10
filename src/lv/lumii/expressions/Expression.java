@@ -38,7 +38,7 @@ public class Expression
 	}
 	
 	private static void initClassifier() throws Exception {
-		initClassifier("models/lv-morpho-model.ser.gz");
+		initClassifier("../LVTagger/models/lv-morpho-model.ser.gz"); // FIXME - nepamatoti paļaujamies ka tur tāds modelis būs
 	}
 	
 	public Expression(String phrase) throws Exception
