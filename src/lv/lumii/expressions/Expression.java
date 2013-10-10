@@ -1,12 +1,17 @@
 
 package lv.lumii.expressions;
-import lv.semti.morphology.analyzer.*;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+
+import lv.semti.morphology.analyzer.Analyzer;
+import lv.semti.morphology.analyzer.Splitting;
+import lv.semti.morphology.analyzer.Word;
+import lv.semti.morphology.analyzer.Wordform;
 import lv.semti.morphology.attributes.AttributeNames;
 import lv.semti.morphology.attributes.AttributeValues;
-
-import java.io.File;
-import java.util.*;
-
 import edu.stanford.nlp.ie.ner.CMMClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
@@ -177,6 +182,7 @@ public class Expression
 		return inflect("Nominatīvs",null);
 	}
 	
+	
 	public String inflect(String inflect, String cat) throws Exception
 	{
 		addPattern(cat);
@@ -187,8 +193,9 @@ public class Expression
 		HashMap<String,String> attribute_map;
 		Wordform forma, inflected_form;
 		ArrayList<Wordform> inflWordforms;
+		boolean matching = false;
 		for(ExpressionWord w : expWords)
-		{
+		{			
 			if(w.isStatic==false)
 			{
 				forma=w.bestWordform;
@@ -215,8 +222,14 @@ public class Expression
 					//System.out.println(wf.getToken());
 					if (wf.isMatchingWeak(filtrs)) {
 						inflectedPhrase+=wf.getToken()+' ';
-						break; // FIXME - ieliku break lai nekad nav dubultā, bet te arī nečeko vai nav tā ka pazūd kāds vārds...
+						matching = true;
+						break; 
 					}
+				}
+				if (!matching) {
+					//FIXME ko likt, ja nav ģenerēti locījumi lokāmajam vārdam (vv no locītāja, neatpazīti svešvārdi)
+					System.err.printf("Expression nemācēja izlocīt vārdu %s uz %s\n",forma.getToken(),cat);
+					break;
 				}
 			}
 			else
@@ -228,7 +241,7 @@ public class Expression
 				}
 			}
 		}
-		
+		if (!matching) return null; // nevarēja izveidot korektu locījumu
 		return inflectedPhrase.trim();
 	}
 	
