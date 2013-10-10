@@ -53,6 +53,17 @@ public class Expression
 		}
 	}
 	
+	/** 
+	 * Izveido frāzi no jau notagotiem tokeniem - jābūt uzsetotai 'correct wordform' katrā objektā
+	 * @param tokens - saraksts ar vārdiem
+	 */
+	public Expression(List<Word> tokens) {
+		expWords=new LinkedList<ExpressionWord>();
+		for (Word w: tokens) {
+			expWords.add(new ExpressionWord(w, w.getCorrectWordform()));
+		}
+	}
+	
 	public void loadUsingBestWordform(String phrase) throws Exception
 	{
 		LinkedList <Word> words = Splitting.tokenize(locītājs, phrase);
