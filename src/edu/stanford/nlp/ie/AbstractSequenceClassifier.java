@@ -925,6 +925,43 @@ public abstract class AbstractSequenceClassifier<IN extends CoreMap> implements 
   }
   
   /**
+   * Classify stdin by documents seperated by 3 blank line
+   * @param readerWriter
+   * @return boolean reached end of IO
+   * @throws IOException
+   */
+  public boolean classifyDocumentStdin(DocumentReaderAndWriter<IN> readerWriter)
+    throws IOException
+  {
+    BufferedReader is = new BufferedReader(new InputStreamReader(System.in, flags.inputEncoding));
+    String line;
+    String text = "";
+    String eol = "\n";
+    String sentence = "<s>";
+    int blankLines = 0;
+    while ((line = is.readLine()) != null) {
+      if (line.trim().equals("")) {
+    	  if (++blankLines > 2) {
+			  ObjectBank<List<IN>> documents = makeObjectBankFromString(text, readerWriter);
+	    	  classifyAndWriteAnswers(documents, readerWriter);
+    		  text = "";
+    	  } else {
+    		  text += sentence + eol;
+    	  }
+      } else {
+    	  text += line + eol;
+    	  blankLines = 0;
+      }
+    }
+    // Classify last document before input stream end
+    if (text.trim() != "") {
+      ObjectBank<List<IN>> documents = makeObjectBankFromString(text, readerWriter);
+  	  classifyAndWriteAnswers(documents, readerWriter);
+    }
+    return (line == null); // reached eol
+  }
+  
+  /**
    * Classify stdin by senteces seperated by blank line
    * @param readerWriter
    * @return 
@@ -949,7 +986,9 @@ public abstract class AbstractSequenceClassifier<IN extends CoreMap> implements 
     	  text += line + eol;
       }
     }
-    if (text.trim().equals("")) return false;
+    if (text.trim().equals("")) {
+    	return false;
+    }
     return true;
   }
 
@@ -1052,10 +1091,10 @@ public abstract class AbstractSequenceClassifier<IN extends CoreMap> implements 
     long millis = timer.stop();
     double wordspersec = numWords / (((double) millis) / 1000);
     NumberFormat nf = new DecimalFormat("0.00"); // easier way!
-//    System.err.println(StringUtils.getShortClassName(this) +
-//                       " tagged " + numWords + " words in " + numDocs +
-//                       " documents at " + nf.format(wordspersec) +
-//                       " words per second.");
+    System.err.println(StringUtils.getShortClassName(this) +
+                       " tagged " + numWords + " words in " + numDocs +
+                       " documents at " + nf.format(wordspersec) +
+                       " words per second.");
     if (resultsCounted) {
       printResults(entityTP, entityFP, entityFN);
     }

@@ -88,7 +88,6 @@ public class NerPipe {
 		
 		switch(inputType) {
 		default:
-//			nerClassifier.classifyAndWriteAnswers("tmp.in", conllReader);
 //			ObjectBank<List<CoreLabel>> b = nerClassifier.makeObjectBankFromFile("tmp.in", conllReader);
 //			nerClassifier.printProbsDocuments(b);
 //			try {
@@ -96,13 +95,7 @@ public class NerPipe {
 //			} catch (Exception e) {
 //				e.printStackTrace();
 //			}
-			while(nerClassifier.classifySentenceStdin(conllReader)) {
-//				List<List<CoreLabel>> sentences = readCONLL(in, nerClassifier);
-//				if (sentences == null) break;
-//				for (List<CoreLabel> sentence : sentences) {
-//			    	outputSentence(nerClassifier, out, sentence);
-//				}
-			}
+			nerClassifier.classifyDocumentStdin(conllReader);
 		}
 		in.close();
 		out.close();
