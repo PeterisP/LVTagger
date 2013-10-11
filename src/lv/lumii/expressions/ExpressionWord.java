@@ -12,17 +12,17 @@ public class ExpressionWord
 {
 	public boolean isStatic;
 	public Word word;
-	public Wordform bestWordform;
+	public Wordform correctWordform;
 	
 	ExpressionWord(Word w)
 	{
 		this(w,w.getBestWordform());
 	}
 	
-	ExpressionWord(Word w, Wordform bestWF)
+	ExpressionWord(Word w, Wordform correctWF)
 	{
 		this.word=w;
-		this.bestWordform=bestWF;
+		this.correctWordform=correctWF;
 		isStatic=false;
 	}
 	

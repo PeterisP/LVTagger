@@ -1,6 +1,7 @@
 
 package lv.lumii.expressions;
 import java.io.File;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -123,58 +124,47 @@ public class Expression
 		
 		switch(cat)
 		{
-			case org :
+			case hum : break; // Cilvēku vārdiem lokam visus tokenus
+			case org : 
+			case other: // Nesaprastas kategorijas lokam kā organizācijas
 			{
 				for (ExpressionWord w : expWords)
 				{
-					if(w.word.isRecognized()==false || w.bestWordform.lexeme==null) //FIXME nav īstā vieta, kur pārbaudīt, vai lexeme is null
+					if(w.word.isRecognized()==false || w.correctWordform.lexeme==null) //FIXME nav īstā vieta, kur pārbaudīt, vai lexeme is null
 					{
 						w.isStatic=true;
 						continue;
 					}
 					
-					switch(w.bestWordform.getValue("Vārdšķira"))
-					{
-						case "Lietvārds":
-						{
-							if(staticWhile || expWords.lastIndexOf(w)!=expWords.size()-1) 
-							{
+					switch(w.correctWordform.getValue(AttributeNames.i_PartOfSpeech)) {
+						case AttributeNames.v_Noun: {
+							if(staticWhile || expWords.lastIndexOf(w)!=expWords.size()-1) {
 								w.isStatic=true;
 								break;
 							}
 							w.isStatic=false;
 							break;
 						}
-						case "Īpašības vārds":
-						{
-							if(staticWhile) 
-							{
+						case AttributeNames.v_Adjective: {
+							if(staticWhile) {
 								w.isStatic=true;
 								break;
 							}
 							w.isStatic=false;
 							break;
 						}
-						case "Pieturzīme":
-						{
+						case AttributeNames.v_Punctuation: 
+						case AttributeNames.v_Numeral: {
 							w.isStatic=true;
-							staticWhile=!staticWhile;
+							//staticWhile=!staticWhile;  // PP: nesaprotu kāpēc Ginta to ielika; testiem nevajag un salauž 'Triju zvaigžņu ordenis'
 							break;
 						}
 					}
 				}
 				break;
 			}
-			
-			case hum :
-			{
-				break;
-			}
-			
-			default :
-			{
-				break;
-			}
+
+			default : break;
 		}
 	}
 	
@@ -209,12 +199,12 @@ public class Expression
 		HashMap<String,String> attribute_map;
 		Wordform forma, inflected_form;
 		ArrayList<Wordform> inflWordforms;
-		boolean matching = false;
+		boolean matching = true;
 		for(ExpressionWord w : expWords)
 		{			
 			if(w.isStatic==false)
 			{
-				forma=w.bestWordform;
+				forma=w.correctWordform; 
 								
 				filtrs = new AttributeValues(forma);
 				filtrs.addAttribute(AttributeNames.i_Case,inflect);
@@ -224,27 +214,40 @@ public class Expression
 				filtrs.removeAttribute(AttributeNames.i_Mija);
 				filtrs.removeAttribute(AttributeNames.i_CapitalLetters);
 				filtrs.removeAttribute(AttributeNames.i_Source);
-				filtrs.removeAttribute("Vārds");
-				//FIXME varbūt vajag izmest vēl kādu īpašību
+				filtrs.removeAttribute(AttributeNames.i_SourceLemma);
+				filtrs.removeAttribute(AttributeNames.i_Word);
 
 				/*
 				inflectedPhrase+=locītājs.generateInflections(forma.getValue("Pamatforma"),false,filtrs).toString()+' ';
 				*/
 				if (forma.lexeme == null)
-					inflWordforms=locītājs.generateInflections(forma.getValue("Pamatforma"),false,filtrs);
+					inflWordforms=locītājs.generateInflections(forma.getValue(AttributeNames.i_Lemma),false,filtrs);
 				else 
 					inflWordforms=locītājs.generateInflections(forma.lexeme);
 				for(Wordform wf : inflWordforms) {
 					//System.out.println(wf.getToken());
 					if (wf.isMatchingWeak(filtrs)) {
-						inflectedPhrase+=wf.getToken()+' ';
+						String token = wf.getToken();
+						if (forma.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_FirstUpper))
+							token = token.substring(0, 1).toUpperCase() + token.substring(1);
+						if (forma.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_AllUpper))
+							token = token.toUpperCase();
+						inflectedPhrase += token+' ';
 						matching = true;
-						break; 
+						break; //TODO - teorētiski  
 					}
 				}
 				if (!matching) {
 					//FIXME ko likt, ja nav ģenerēti locījumi lokāmajam vārdam (vv no locītāja, neatpazīti svešvārdi)
 					System.err.printf("Expression nemācēja izlocīt vārdu %s uz %s\n",forma.getToken(),cat);
+					inflectedPhrase += forma.getToken() + ' ';
+//					System.err.println("Filtrs:");
+//					filtrs.describe(new PrintWriter(System.err));
+//					System.err.println("Vārds:");
+//					forma.describe(new PrintWriter(System.err));
+//					System.err.println("Varianti:");
+//					for (Wordform wf : inflWordforms)
+//						wf.describe(new PrintWriter(System.err));
 					break;
 				}
 			}
@@ -257,7 +260,6 @@ public class Expression
 				}
 			}
 		}
-		if (!matching) return null; // nevarēja izveidot korektu locījumu
 		return inflectedPhrase.trim();
 	}
 	
@@ -265,7 +267,7 @@ public class Expression
 	{
 		if (s==null)
 		{
-			return Category.org;
+			return Category.other;
 		}
 		switch(s)
 		{
@@ -274,7 +276,7 @@ public class Expression
 		case "hum":
 			return Category.hum;
 		default:
-				return null; //FIXME - nav labi šitā, tad jau var vispār stringus neparsēt bet prasīt ieejā enum
+				return Category.other; //FIXME - nav labi šitā, tad jau var vispār stringus neparsēt bet prasīt ieejā enum
 		}
 	}
 

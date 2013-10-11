@@ -82,6 +82,15 @@ public class AnalyzerTest
 				new Expression("Latvijas Kultūras fonds").inflect(AttributeNames.v_Locative, "org"));
 	}
 	
+	@Test
+	public void awards() throws Exception
+	{
+		assertEquals("Triju zvaigžņu ordenis", 
+				new Expression("Triju zvaigžņu ordeni").normalize());
+		assertEquals("Triju zvaigžņu ordeni", 
+				new Expression("Triju zvaigžņu ordenis").inflect(AttributeNames.v_Accusative, "award"));
+	}
+	
 //Ģeogrāfisko vietu nosaukumu testi
 	
 //Apbalvojumu nosaukumu testi

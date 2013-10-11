@@ -8,5 +8,6 @@ public enum Category
 {
 	org,
 	hum,
-	loc
+	loc,
+	other
 }
