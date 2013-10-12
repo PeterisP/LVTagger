@@ -154,7 +154,8 @@ public class Expression
 							break;
 						}
 						case AttributeNames.v_Punctuation: 
-						case AttributeNames.v_Numeral: {
+						case AttributeNames.v_Numeral:
+						case AttributeNames.v_Pronoun: { // TODO - vietniekvārdus teorētiski var locīt, taču netriviāli jo tie ir hardcoded 
 							w.isStatic=true;
 							//staticWhile=!staticWhile;  // PP: nesaprotu kāpēc Ginta to ielika; testiem nevajag un salauž 'Triju zvaigžņu ordenis'
 							break;
@@ -220,19 +221,21 @@ public class Expression
 				/*
 				inflectedPhrase+=locītājs.generateInflections(forma.getValue("Pamatforma"),false,filtrs).toString()+' ';
 				*/
-				if (forma.lexeme == null)
+				if (forma.lexeme == null || forma.getValue(AttributeNames.i_Guess) != null) // Deminutīviem kā Bērziņš cita lemma
 					inflWordforms=locītājs.generateInflections(forma.getValue(AttributeNames.i_Lemma),false,filtrs);
 				else 
 					inflWordforms=locītājs.generateInflections(forma.lexeme);
-				for(Wordform wf : inflWordforms) {
-					//System.out.println(wf.getToken());
+				
+				matching = false;
+				for(Wordform wf : inflWordforms) {					
 					if (wf.isMatchingWeak(filtrs)) {
 						String token = wf.getToken();
 						if (forma.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_FirstUpper))
 							token = token.substring(0, 1).toUpperCase() + token.substring(1);
 						if (forma.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_AllUpper))
 							token = token.toUpperCase();
-						inflectedPhrase += token+' ';
+
+						inflectedPhrase += token+' ';						
 						matching = true;
 						break; //TODO - teorētiski  
 					}
@@ -259,6 +262,12 @@ public class Expression
 					inflectedPhrase+=' ';
 				}
 			}
+		}
+		if (inflectedPhrase.trim().isEmpty()) {
+			System.err.print("Expression sanāca tukšs rezultāts no frāzes [");
+		    for (ExpressionWord w : expWords)
+		    	System.err.print(w.word.getToken()+" ");
+		    System.err.println("]");
 		}
 		return inflectedPhrase.trim();
 	}

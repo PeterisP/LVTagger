@@ -71,6 +71,16 @@ public class AnalyzerTest
 				new Expression("Hansa Kristiana Andersena").inflect(AttributeNames.v_Nominative, "hum"));
 		assertEquals("Hansa Kristiana Andersena", 
 				new Expression("Hanss Kristians Andersens").inflect(AttributeNames.v_Genitive, "hum"));
+		
+		assertEquals("Valda Dombrovska", 
+				new Expression("Valdis Dombrovskis").inflect(AttributeNames.v_Genitive, "hum"));
+		assertEquals("V. Dombrovska", 
+				new Expression("V. Dombrovskis").inflect(AttributeNames.v_Genitive, "hum"));
+		
+		assertEquals("Bērziņš", 
+				new Expression("Bērziņš").normalize());
+		assertEquals("Bērziņam", 
+				new Expression("Bērziņš").inflect(AttributeNames.v_Dative, "hum"));
 	}
 	
 	@Test
