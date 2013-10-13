@@ -28,10 +28,15 @@ public class EntityInflection {
 		PrintWriter izeja = new PrintWriter(new OutputStreamWriter(new FileOutputStream(output_filename), "UTF-8"));
 		
 		String entity_row;
+		int count = 0;
 		while ((entity_row = ieeja.readLine()) != null) {
+			count++;
+			if (count % 1000 == 0) System.out.print('.');
+			if (count % 10000 == 0) System.out.println();
 			String[] fields = entity_row.split("\t");
 			String entity_id = fields[0];
 			String entity_name = fields[1];
+			if (entity_name.trim().isEmpty()) continue; // TODO - šādi ir jāmet ārā no DB...
 			String category = null;
 			if (fields.length > 2)
 				category = fields[2];
@@ -40,7 +45,7 @@ public class EntityInflection {
         	Expression e = new Expression(entity_name);
         	Map<String,String> inflections= e.getInflections(category);
         	for (String i_case : inflections.keySet()) {
-        		oInflections.put(i_case, inflections.get(i_case));
+        		oInflections.put(i_case, inflections.get(i_case).replaceAll("'", "''"));
         	}
         	            
 			izeja.printf("update entities set nameinflections='%s' where entityid = %s;\n",oInflections.toJSONString(), entity_id);
