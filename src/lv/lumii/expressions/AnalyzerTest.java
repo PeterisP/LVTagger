@@ -101,6 +101,13 @@ public class AnalyzerTest
 				new Expression("Triju zvaigžņu ordenis").inflect(AttributeNames.v_Accusative, "award"));
 	}
 	
+	@Test
+	public void vietas() throws Exception
+	{
+		assertEquals("Ragaciemā", 
+				new Expression("Ragaciems").inflect(AttributeNames.v_Locative, "loc"));
+	}
+	
 //Ģeogrāfisko vietu nosaukumu testi
 	
 //Apbalvojumu nosaukumu testi

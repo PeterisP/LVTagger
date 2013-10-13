@@ -32,7 +32,9 @@ public class EntityInflection {
 			String[] fields = entity_row.split("\t");
 			String entity_id = fields[0];
 			String entity_name = fields[1];
-			String category = fields[2];
+			String category = null;
+			if (fields.length > 2)
+				category = fields[2];
 			
 			JSONObject oInflections = new JSONObject();
         	Expression e = new Expression(entity_name);
