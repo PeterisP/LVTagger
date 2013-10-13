@@ -280,12 +280,12 @@ public class Expression
 		}
 		switch(s)
 		{
-		case "org":
+		case "org": case "organization":
 			return Category.org;
-		case "hum":
+		case "hum": case "person":
 			return Category.hum;
 		default:
-				return Category.other; //FIXME - nav labi šitā, tad jau var vispār stringus neparsēt bet prasīt ieejā enum
+			return Category.other; //FIXME - nav labi šitā, tad jau var vispār stringus neparsēt bet prasīt ieejā enum
 		}
 	}
 
