@@ -130,7 +130,7 @@ public class Expression
 			{
 				for (ExpressionWord w : expWords)
 				{
-					if(w.word.isRecognized()==false || w.correctWordform.lexeme==null) //FIXME nav īstā vieta, kur pārbaudīt, vai lexeme is null
+					if(w.word.isRecognized()==false) 
 					{
 						w.isStatic=true;
 						continue;
