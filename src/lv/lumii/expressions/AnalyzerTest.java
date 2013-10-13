@@ -178,6 +178,19 @@ public class AnalyzerTest
 				new Expression("ANO").normalize());
 	}
 
+	@Test
+	public void laiki() throws Exception
+	{
+		assertEquals("5. marts", 
+				new Expression("5. martā").inflect(AttributeNames.v_Nominative, "time"));
+		
+		assertEquals("6. jūlijs", 
+				new Expression("6. jūlijā").inflect(AttributeNames.v_Nominative, "time"));
+		
+		assertEquals("7. augusts", 
+				new Expression("7. augustā").inflect(AttributeNames.v_Nominative, "time"));
+	}
+	
 //Ģeogrāfisko vietu nosaukumu testi
 	
 //Apbalvojumu nosaukumu testi
