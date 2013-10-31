@@ -36,7 +36,8 @@ public class NERClassifierCombiner extends ClassifierCombiner<CoreLabel> {
     super(loadPaths);
   }
 
-  public NERClassifierCombiner(AbstractSequenceClassifier<CoreLabel>... classifiers) throws FileNotFoundException {
+  @SafeVarargs
+public NERClassifierCombiner(AbstractSequenceClassifier<CoreLabel>... classifiers) throws FileNotFoundException {
     super(classifiers);
   }
 

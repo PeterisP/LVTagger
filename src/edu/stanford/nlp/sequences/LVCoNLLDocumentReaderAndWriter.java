@@ -10,7 +10,9 @@ import java.util.regex.Pattern;
 
 import edu.stanford.nlp.io.RuntimeIOException;
 import edu.stanford.nlp.ling.CoreAnnotations.ConllSyntaxAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.GoldAnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagGoldAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.FullTagAnnotation;
@@ -120,10 +122,14 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	    	wi.set(FullTagAnnotation.class, bits[4]);
 	    	wi.setTag(bits[4].substring(0,1));
 	    	wi.set(MorphologyFeatureStringAnnotation.class, bits[5]);
+//	    	if (bits.length >= 7) {
+//	    		//syntax
+//	    		wi.set(ConllSyntaxAnnotation.class, bits[6]);
+//	    	}
 	    	if (bits.length >= 7) {
-	    		//syntax
-	    		wi.set(ConllSyntaxAnnotation.class, bits[6]);
-	    	}
+	    		wi.set(NamedEntityTagGoldAnnotation.class, bits[6]);
+	    		
+	    	}	    	
 //	    	if (bits.length >= 10) {
 //	    		//ner_conll
 //	    		wi.set(OriginalAnswerAnnotation.class, bits[6]);

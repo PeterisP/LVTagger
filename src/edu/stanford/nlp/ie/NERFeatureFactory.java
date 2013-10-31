@@ -64,6 +64,7 @@ import edu.stanford.nlp.ling.CoreAnnotations.FreqAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GazAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GeniaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GovernorAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.IsDateRangeAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.IsURLAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
@@ -71,11 +72,13 @@ import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysisBest;
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.MorphologyFeatureStringAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ParaPositionAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.ParentAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PhraseWordsAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PhraseWordsTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PositionAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ProtoAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.RoleAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SectionAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ShapeAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.StackedNamedEntityTagAnnotation;
@@ -1688,6 +1691,32 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
 //    		knowUC.add(c.lemma().toLowerCase());
 //    	}
 //    }
+
+//	Syntax experiments
+//	System.out.println("ROLE" + c.getString(RoleAnnotation.class));
+//    featuresC.add("CRole-" + c.getString(RoleAnnotation.class));
+//    //featuresC.add("NRole-" + n.getString(RoleAnnotation.class));
+//    //featuresC.add("PRole-" + p.getString(RoleAnnotation.class));
+//    
+//    if (c.getString(ParentAnnotation.class) !=null && !c.getString(ParentAnnotation.class).equalsIgnoreCase("")) {
+//    	int parent = Integer.parseInt(c.getString(ParentAnnotation.class));
+//    int idx = c.get(IndexAnnotation.class);
+//    if (parent > 0) {
+//    	CoreLabel par = cInfo.get(parent-idx);
+//    	if (par != null) {
+//	    	String par_tag = par.tag();
+//	    	if (par_tag != null) {
+//	    		featuresC.add("ParentTag-" + par_tag.substring(0, 1));
+//	    		featuresC.add("ParentLemma-" + par.lemma());
+//	    		featuresC.add("ParentWord-" + par.word());
+//	    		featuresC.add("ParentRole-" + par.getString(RoleAnnotation.class));
+//		    	//System.out.println("ParentTag-" + par_tag.substring(0, 1));
+//	    	}
+//    	}
+//    }
+//    }
+//	System.out.println("PARENT "+ c.getString(ParentAnnotation.class));
+    
     
     return featuresC;
   }

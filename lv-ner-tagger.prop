@@ -1,5 +1,9 @@
 loadClassifier = lv-ner-model.ser.gz
+#loadClassifier = ner_models/lv-ner-model_02_70.ser.gz
 inputEncoding = utf-8
 outputEncoding = utf-8
-
-map = word=1,tag=9,lemma=2,answer=6,morphologyFeatureString=5,idx=0
+exportFeatures=ner_exportFeatures.txt
+printFeatures=ner_printFeatures.txt
+printClassifier=WeightHistogram
+retainEntitySubclassification=true
+justify=true

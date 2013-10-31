@@ -1517,4 +1517,10 @@ public class CoreAnnotations {
 	      return String.class;
 	    }
 	  }
+  
+  public static class NamedEntityTagGoldAnnotation implements CoreAnnotation<String> {
+    public Class<String> getType() {
+      return String.class;
+    }
+  }
 }
