@@ -166,20 +166,7 @@ includeantruntime="false"
 	  	<copy file="${morphology.dir}/dist/Statistics.xml" todir="${dist}"/>
 	  	<copy file="${morphology.dir}/dist/TagSet.xml" todir="${dist}"/>
 		
-		<!--<zip destfile="LV_CRF.zip" basedir="." includes="dist/**,lib/**,Gazetteer/**,NERdicts/**,LETAdicts/**,MorphoCRF/**,models/**,*.sh,*.bat,README.txt,LICENSE.txt,lv-ner-model.ser.gz" />-->
-		
-		<delete dir="${basedir}/NER_TRAIN"/>
-		<mkdir dir="${basedir}/NER_TRAIN"/>
-		<copydir src="${basedir}"
-		           dest="${basedir}/NER_TRAIN"
-		           includes="dist/**,lib/**,Gazetteer/**,*.sh,*.bat,*.prop"
-		           excludes="dist/*.xml,dist/*.txt"
-		  />
-		<!--<copydir src="${basedir}"
-		           dest="${basedir}/NER_TRAIN"
-		           includes="NerTrainingData/*,dist/**,lib/**,Gazetteer/**,*.sh,*.bat"
-		           excludes="**/Test.java"
-		  />-->
+		<zip destfile="LV_CRF.zip" basedir="." includes="dist/**,lib/**,NERdicts/**,LETAdicts/**,MorphoCRF/**,models/**,*.sh,*.bat,README.txt,LICENSE.txt,lv-ner-model.ser.gz" />
 	  </target>
 	
 	
