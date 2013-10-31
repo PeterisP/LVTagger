@@ -31,6 +31,7 @@ package edu.stanford.nlp.ie;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -1739,6 +1740,10 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
 	  lv.semti.morphology.analyzer.Word analysis = c.get(LVMorphologyAnalysis.class);
 	  if (analysis == null) return features;
 	  for (Wordform wf : analysis.wordforms) {
+		  if (wf.getTag().length() < 1) {
+			  System.err.println("Hmm tukšs tags ??");
+			  wf.describe(new PrintWriter(System.err));			  
+		  }
 		  if (flags.useLVMorphoAnalyzerPOS) features.add(wf.getTag().substring(0, 1) +"-LV-POS"+postfix);
 		  if (flags.useLVMorphoAnalyzerTag) features.add(filterTag(wf.getTag()) +"-LV-TAG"+postfix);
 	  }
