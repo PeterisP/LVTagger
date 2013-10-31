@@ -10,6 +10,7 @@ import java.util.regex.Pattern;
 
 import edu.stanford.nlp.io.RuntimeIOException;
 import edu.stanford.nlp.ling.CoreAnnotations.ConllSyntaxAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.ExtraColumnAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GoldAnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagGoldAnnotation;
@@ -33,8 +34,18 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
   public static final String OTHER = "O";
   private SeqClassifierFlags flags;
 
-  public enum outputTypes {SIMPLE, CONLL};  
+  /**
+   * CONLL : 		IDX | WORD | LEMMA | FULLTAG | POS | MORPHOFEATURES | NER
+   * SIMPLE : 		WORD | GOLD | ANSWER
+   * INFEATURES : 	IDX | WORD | LEMMA | FULLTAG | POS | MORPHOFEATURES+ner=X
+   */
+  public enum outputTypes {SIMPLE, CONLL, INFEATURES};
+  public enum inputTypes {CONLL};
+  
+  //TODO make theese more clean and configureable
   public static outputTypes outputType = outputTypes.CONLL;
+  public static inputTypes inputType = inputTypes.CONLL;
+  public static boolean saveExtraColumns = false;
   
   private static final String eol = System.getProperty("line.separator");
 
@@ -129,12 +140,14 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	    	if (bits.length >= 7) {
 	    		wi.set(NamedEntityTagGoldAnnotation.class, bits[6]);
 	    		
-	    	}	    	
-//	    	if (bits.length >= 10) {
-//	    		//ner_conll
-//	    		wi.set(OriginalAnswerAnnotation.class, bits[6]);
-//	    		//System.out.println(wi.get(GoldAnswerAnnotation.class));
-//	    	}
+	    	}
+	    	if (saveExtraColumns && bits.length >=7) {
+	    		StringBuilder extraColumns = new StringBuilder();
+	    		for (int i=6; i < bits.length; i++) {
+	    			extraColumns.append(bits[i]).append("\t");
+	    		}
+	    		wi.set(ExtraColumnAnnotation.class, extraColumns.toString());
+	    	}
 	    	
 	    } else {
 	    	throw new RuntimeIOException("Unexpected input (many fields): " + line);
@@ -177,10 +190,19 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	        	out.print(fl.index() + "\t" + word + '\t' + lemma + '\t' + tag + '\t' + 
 		        		fullTag + '\t' + morphoFeats);
 	        	if (fl.get(ConllSyntaxAnnotation.class) != null) out.print('\t' + fl.getString(ConllSyntaxAnnotation.class));
-	        	out.println('\t' + answer);
+	        	out.print('\t' + answer);
+	        	if (saveExtraColumns) out.print("\t" + fl.getString(ExtraColumnAnnotation.class));
+	        	out.println();
 	        } else if (outputType == outputTypes.SIMPLE){
-	        	out.println(word + "\t" + goldAnswer + "\t" + answer);
-	        }	        
+	        	out.print(word + "\t" + goldAnswer + "\t" + answer);
+	        	if (saveExtraColumns) out.print("\t" + fl.getString(ExtraColumnAnnotation.class));
+	        	out.println();
+	        } else if (outputType == outputTypes.INFEATURES) {
+	        	out.print(fl.index() + "\t" + word + '\t' + lemma + '\t' + tag + '\t' + 
+		        		fullTag + '\t' + morphoFeats + "|ner=" + answer);
+	        	if (saveExtraColumns) out.print("\t" + fl.getString(ExtraColumnAnnotation.class));
+	        	out.println();
+	        }
 	      }
 	    }
 	  }

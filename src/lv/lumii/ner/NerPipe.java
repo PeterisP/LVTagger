@@ -23,7 +23,7 @@ import edu.stanford.nlp.util.StringUtils;
  */
 public class NerPipe {
 	private static enum inputTypes {SENTENCE, CONLL};
-	private static enum outputTypes {CONLL_X, SIMPLE};
+	private static enum outputTypes {CONLL_X, SIMPLE, INFEATURES};
 	
 	public Properties props;
 	public NERClassifierCombiner classifier;
@@ -60,10 +60,22 @@ public class NerPipe {
 	}
 
 	void initializeFromProperties() {	
-		if (props.getProperty("conll-in") != null) inputType = inputTypes.CONLL;
-		if (props.getProperty("conll-x") != null) outputType = outputTypes.CONLL_X;
-		if (props.getProperty("simple") != null) outputType = outputTypes.SIMPLE;
+		if (props.getProperty("conll-in") != null) LVCoNLLDocumentReaderAndWriter.inputType = LVCoNLLDocumentReaderAndWriter.inputTypes.CONLL;
+		if (props.getProperty("conll-x") != null) LVCoNLLDocumentReaderAndWriter.outputType = LVCoNLLDocumentReaderAndWriter.outputTypes.CONLL;
+		if (props.getProperty("simple") != null) LVCoNLLDocumentReaderAndWriter.outputType = LVCoNLLDocumentReaderAndWriter.outputTypes.SIMPLE;
+		if (props.getProperty("toFeatures") != null) LVCoNLLDocumentReaderAndWriter.outputType = LVCoNLLDocumentReaderAndWriter.outputTypes.INFEATURES;
+		if (props.getProperty("saveExtraColumns") != null) LVCoNLLDocumentReaderAndWriter.saveExtraColumns = true;
 		if (props.getProperty("loadClassifier") != null) defaultCrfClassifier = props.getProperty("loadClassifier");
+		
+		switch(outputType) {
+		case SIMPLE:
+			LVCoNLLDocumentReaderAndWriter.outputType = LVCoNLLDocumentReaderAndWriter.outputTypes.SIMPLE;
+			break;
+		case INFEATURES:
+			LVCoNLLDocumentReaderAndWriter.outputType = LVCoNLLDocumentReaderAndWriter.outputTypes.INFEATURES;
+		default:				
+	}
+	
 	}
 	
 	void setReaderWriter(DocumentReaderAndWriter<CoreLabel> readerWriter) {
@@ -135,21 +147,14 @@ public class NerPipe {
 			System.out.println("\tDefault : conll-x");
 			System.out.println("\t-conll-x : CONLL-X shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");;
 			System.out.println("\t-simple : Simple compare format used for ner analysis");
+			System.out.println("\t-toFeatures : add ner key and value to morphoFeature string");
 			System.out.println("\nOther options:");
+			System.out.println("\t-saveExtraColumns : save extra columns after typical conll input (6 columns)");
 			System.out.flush();
 			System.exit(0);
 		}
 		NerPipe ner = new NerPipe(props);
 		
-		switch(outputType) {
-			case SIMPLE:
-				LVCoNLLDocumentReaderAndWriter.outputType = LVCoNLLDocumentReaderAndWriter.outputTypes.SIMPLE;
-				break;
-			default:				
-		}
-		
-		switch(inputType) {
-		default:
 //			ObjectBank<List<CoreLabel>> b = nerClassifier.makeObjectBankFromFile("tmp.in", conllReader);
 //			nerClassifier.printProbsDocuments(b);
 //			try {
@@ -158,7 +163,6 @@ public class NerPipe {
 //				e.printStackTrace();
 //			}
 			ner.classifyDocumentStdin();
-		}
 	}
 
 	

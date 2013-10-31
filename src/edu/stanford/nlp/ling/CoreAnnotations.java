@@ -1523,4 +1523,13 @@ public class CoreAnnotations {
       return String.class;
     }
   }
+  
+  /**
+   * Saved column data (after 6th CONLL column)
+   */
+  public static class ExtraColumnAnnotation implements CoreAnnotation<String> {
+    public Class<String> getType() {
+      return String.class;
+    }
+  }
 }
