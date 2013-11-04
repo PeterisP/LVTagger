@@ -1,4 +1,3 @@
-
 package lv.lumii.expressions;
 import java.io.File;
 import java.io.PrintWriter;
@@ -30,6 +29,7 @@ public class Expression
 	public LinkedList <ExpressionWord> expWords;
 	Category cat;
 	private static transient Analyzer analyzer = null;
+	private static transient Analyzer analyzer2 = null;//G.Romane
 	private static transient CMMClassifier<CoreLabel> morphoClassifier = null;
 	private static transient Analyzer locītājs = null;
 	
@@ -58,6 +58,29 @@ public class Expression
 		{
 			loadUsingBestWordform(phrase);
 		}
+	}
+	
+	//G.Romane
+	public Expression()
+	{
+		if(analyzer2 == null)
+			if(analyzer2 == null)
+				try 
+				{
+					analyzer2 = new Analyzer("dist/Lexicon.xml");
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+	}
+	
+	public String getWordPartOfSpeech(String word)
+	{
+		Word result = analyzer2.analyze(word);
+		for (Wordform wf : result.wordforms) 
+		{
+			return  wf.getValue("Vārdšķira");
+		}
+		return null;
 	}
 	
 	/** 
