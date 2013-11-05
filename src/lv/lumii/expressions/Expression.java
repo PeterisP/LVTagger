@@ -29,7 +29,6 @@ public class Expression
 	public LinkedList <ExpressionWord> expWords;
 	Category cat;
 	private static transient Analyzer analyzer = null;
-	private static transient Analyzer analyzer2 = null;//G.Romane
 	private static transient CMMClassifier<CoreLabel> morphoClassifier = null;
 	private static transient Analyzer locītājs = null;
 	
@@ -59,30 +58,7 @@ public class Expression
 			loadUsingBestWordform(phrase);
 		}
 	}
-	
-	//G.Romane
-	public Expression()
-	{
-		if(analyzer2 == null)
-			if(analyzer2 == null)
-				try 
-				{
-					analyzer2 = new Analyzer("dist/Lexicon.xml");
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-	}
-	
-	public String getWordPartOfSpeech(String word)
-	{
-		Word result = analyzer2.analyze(word);
-		for (Wordform wf : result.wordforms) 
-		{
-			return  wf.getValue("Vārdšķira");
-		}
-		return null;
-	}
-	
+		
 	/** 
 	 * Izveido frāzi no jau notagotiem tokeniem - jābūt uzsetotai 'correct wordform' katrā objektā
 	 * @param tokens - saraksts ar vārdiem
@@ -94,9 +70,8 @@ public class Expression
 		}
 	}
 	
-	public Expression() {
-		// TODO Auto-generated constructor stub
-		// FIXME - jāskatās, kas te Guntai bija
+	public Expression() throws Exception {
+		if (morphoClassifier == null) initClassifier();
 	}
 
 	public void loadUsingBestWordform(String phrase) throws Exception
