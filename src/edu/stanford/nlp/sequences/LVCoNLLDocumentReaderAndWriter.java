@@ -188,7 +188,7 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	        String morphoFeats = fl.getString(MorphologyFeatureStringAnnotation.class);
 	        if (outputType == outputTypes.CONLL) {
 	        	out.print(fl.index() + "\t" + word + '\t' + lemma + '\t' + tag + '\t' + 
-		        		fullTag + '\t' + morphoFeats);
+		        		fullTag + '\t' + morphoFeats + "\t_");
 	        	if (fl.get(ConllSyntaxAnnotation.class) != null) out.print('\t' + fl.getString(ConllSyntaxAnnotation.class));
 	        	out.print('\t' + answer);
 	        	if (saveExtraColumns) out.print("\t" + fl.getString(ExtraColumnAnnotation.class));
