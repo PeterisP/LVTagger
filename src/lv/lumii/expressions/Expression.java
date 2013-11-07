@@ -1,4 +1,3 @@
-
 package lv.lumii.expressions;
 import java.io.File;
 import java.io.PrintWriter;
@@ -59,7 +58,7 @@ public class Expression
 			loadUsingBestWordform(phrase);
 		}
 	}
-	
+		
 	/** 
 	 * Izveido frāzi no jau notagotiem tokeniem - jābūt uzsetotai 'correct wordform' katrā objektā
 	 * @param tokens - saraksts ar vārdiem
@@ -71,6 +70,10 @@ public class Expression
 		}
 	}
 	
+	public Expression() throws Exception {
+		if (morphoClassifier == null) initClassifier();
+	}
+
 	public void loadUsingBestWordform(String phrase) throws Exception
 	{
 		LinkedList <Word> words = Splitting.tokenize(locītājs, phrase);
@@ -119,6 +122,7 @@ public class Expression
 	
 	public void addPattern(String c) //Method adds isStatic attribute to the Expression word, which indicates, whether to inflect the Word
 	{
+		if (expWords.size() == 0) return;
 		boolean staticWhile=false;
 		cat=get(c);
 		
@@ -369,6 +373,7 @@ public class Expression
 		    	System.err.print(w.word.getToken()+" ");
 		    System.err.println("]");
 		}
+		if (inflectedPhrase.endsWith(" .")) inflectedPhrase = inflectedPhrase.substring(0, inflectedPhrase.length()-2) + ".";
 		return inflectedPhrase.trim();
 	}
 	
@@ -387,6 +392,12 @@ public class Expression
 		default:
 			return Category.other; //FIXME - nav labi šitā, tad jau var vispār stringus neparsēt bet prasīt ieejā enum
 		}
+	}
+
+	public String getWordPartOfSpeech(String string) {
+		Word vārds = locītājs.analyze(string); //FIXME - jāskatās, kas te bija Guntai un varbūt vajag AnalyzeLemma saukt
+		if (vārds.getBestWordform() == null) return AttributeNames.v_Noun;
+		return vārds.getBestWordform().getValue(AttributeNames.i_PartOfSpeech);
 	}
 
 
