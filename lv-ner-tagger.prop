@@ -1,3 +1,5 @@
 loadClassifier = lv-ner-model.ser.gz
 inputEncoding = utf-8
 outputEncoding = utf-8
+whiteList = Gazetteer/DB_persons.txt,Gazetteer/DB_organizations.txt,Gazetteer/DB_locations.txt,Gazetteer/DB_professions.txt
+regexList = Gazetteer/REGEX.txt

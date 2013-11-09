@@ -1,0 +1,3977 @@
+profession	administrators
+profession	adītājs
+profession	aerodinamiķis
+profession	aerologs
+profession	agronoms
+profession	aitkopis
+profession	aizzīmētājs
+profession	akmeņkalis
+profession	akmeņkalis amatnieks
+profession	akrobāts
+profession	aktieris
+profession	aktuāra asistents
+profession	aktuārs
+profession	akumulatorists
+profession	aldaris
+profession	alergologs
+profession	algologs
+profession	alpīnists
+profession	alvotājs
+profession	amatnieks
+profession	analītiķis
+profession	anatoms
+profession	andrologs
+profession	anesteziologs
+profession	reanimatologs
+profession	anodētājs
+profession	antropologs
+profession	apgaitnieks
+profession	apgleznotājs
+profession	apkopējs
+profession	apmetējs
+profession	aprūpētājs
+profession	apsargs
+profession	arheologs
+profession	arhibīskaps
+profession	arhitekta palīgs
+profession	arhitekts
+profession	arhivārs
+profession	arhīvists
+profession	asfaltētājs
+profession	asistents
+profession	asistents personām ar dzirdes traucējumiem
+profession	asistents personām ar invaliditāti
+profession	astrologs
+profession	astronoms
+profession	atašejs
+profession	atašejs –vēstnieka sekretārs
+profession	atlēts
+profession	atslēdznieks
+profession	atsperotājs
+profession	atsveķotājs
+profession	audiologs
+profession	auditors
+profession	audējs
+profession	augstspiedējs
+profession	augļotājs
+profession	auklis
+profession	autors
+profession	abonentu daļas operators
+profession	abonentu daļas konsultants
+profession	acu protēzists
+profession	administratīvais direktors
+profession	administratīvā direktora vietnieks
+profession	administratīvās inspekcijas inspektors
+profession	administratīvās lietvedības inspektors
+profession	administratīvās prakses inspektors
+profession	administratīvās struktūrvienības direktors
+profession	administratīvās struktūrvienības vadītājs
+profession	adīšanas operators
+profession	adīšanas tehnologs
+profession	aerometeorologs
+profession	aerofotogrāfijas inženieris
+profession	aerofotoģeodēzists
+profession	aerokosmisko elektronikas tehniķis
+profession	aerokosmisko iekārtu elektronikas tehniķis
+profession	aerokosmisko telekomunikāciju tehniķis
+profession	aeronautikas mehāniķis
+profession	aeronautikas rasētājs
+profession	aeronautikas mehānikas inženieris
+profession	aeronavigācijas vadītājs
+profession	aeronavigācijas apkalpošanas inženieris
+profession	aeronavigācijas datu apstrādes sistēmu inženieris
+profession	agrometeorologs
+profession	agronomijas tehniķis
+profession	agrārā sektora komercdarbinieks
+profession	ainavu arhitekts
+profession	ainavu tehniķis
+profession	aitu cirpējs
+profession	aitu audzēšanas lauksaimnieks
+profession	aizdevumu administrators
+profession	aizdevumu revidents
+profession	aizsardzības padomnieks
+profession	aizsardzības padomnieks starptautiskajās organizācijās
+profession	aizvākošanas iekārtas operators
+profession	ajūrvēdas medicīnas speciālists
+profession	akciju starpnieks
+profession	akmens griezējs
+profession	akmens apstrādes iekārtas operators
+profession	akmens būvju restaurators
+profession	akmeņu mūrnieks
+profession	akordeonu tehniķis
+profession	akreditīvu eksperts
+profession	aku urbšanas operators
+profession	akupresūras speciālists
+profession	akupunktūras ārsts
+profession	akustikas fiziķis
+profession	akustikas izolētājs
+profession	akvakultūras strādnieks
+profession	akvakultūras zivkopis
+profession	algu grāmatvedis
+profession	algu inspektors
+profession	alus, vīna un citu dzērienu ražošanas iekārtu operators
+profession	amatierteātra kolektīva vadītājs
+profession	ambulatorais ķirurgs
+profession	ambulatorās aprūpes māsa
+profession	ambulatorās aprūpes ārsta palīgs
+profession	ambulatorās medicīnas māsa
+profession	analītiskās struktūrvienības direktora vietnieks
+profession	analītiskās struktūrvienības direktors
+profession	analītiskās struktūrvienības vadītāja vietnieks
+profession	analītiskās struktūrvienības vadītājs
+profession	analītiskās ķīmijas tehniķis
+profession	anatomijas tehniķis
+profession	anestēzijas, intensīvās un neatliekamās aprūpes māsa
+profession	ansambļa vadītājs
+profession	apavu krāsotājs
+profession	apavu labotāja palīgs
+profession	apavu labotājs
+profession	apavu līmētājs
+profession	apavu piegriezējs
+profession	apavu tīrītājs
+profession	apavu ražošanas iekārtas operators
+profession	apaļkoku šķirotājs
+profession	apbedīšanas pakalpojumu speciālists
+profession	apbūves aizsardzības zonu speciālists
+profession	apdares darbu strādnieks
+profession	apdares darbu tehniķis
+profession	apdedzināšanas krāsns operators
+profession	apdrošināšanas aģents
+profession	apdrošināšanas darbinieks
+profession	apdrošināšanas inspektors
+profession	apdrošināšanas konsultants
+profession	apdrošināšanas speciālists
+profession	apdrošināšanas starpnieks
+profession	apgaismes elektriķis
+profession	apgādes direktors
+profession	apiņu audzēšanas lauksaimnieks
+profession	apiņu audzēšanas laukstrādnieks
+profession	apkures iekārtas operators
+profession	apkures krāšņu kurinātājs
+profession	apkures, ventilācijas un saldēšanas iekārtu mehāniķis
+profession	apmeklētāju centra speciālists
+profession	apmeklētāju centra vadītājs
+profession	aprīkojuma inženieris
+profession	apsardzes darbinieks
+profession	apsardzes dežurants
+profession	apsardzes dispečers
+profession	apsardzes inspektors
+profession	apsardzes organizators
+profession	apsardzes dienesta kontrolieris
+profession	apsardzes dienesta vadītāja vietnieks
+profession	apsardzes dienesta vadītājs
+profession	apsardzes galvenais inspektors
+profession	apsardzes pults dežurants
+profession	apsardzes sistēmu tehniķis
+profession	apsardzes tehnisko sistēmu inženieris
+profession	apsildes un ventilācijas sistēmu rasētājs
+profession	apsildes, ventilācijas un saldēšanas mehānikas inženieris
+profession	apstrādes rūpniecības uzraugs
+profession	apstādījumu kopējs
+profession	apvīšanas iekārtas operators
+profession	apģērba etiķetes konsultants
+profession	apģērbu amatnieks
+profession	apģērbu konstruktors
+profession	apģērbu modelētājs
+profession	apģērbu pārbaudītājs
+profession	apģērbu dizaina speciālists
+profession	apģērbu modelēšanas un konstruēšanas speciālists
+profession	apģērbu un tekstila ražošanas inženieris
+profession	apģērbu šuvējs
+profession	apūdeņošanas inženieris
+profession	apūdeņošanas būvinženieris
+profession	apūdeņošanas būvtehniķis
+profession	arheoloģiskā materiāla restaurators
+profession	arhitektūras rasētājs
+profession	arhitektūras tehniķis
+profession	arhīva eksperts
+profession	arhīva pārzinis
+profession	arodmācības skolotājs
+profession	amatmācības skolotājs
+profession	arodbiedrību darba koordinētājs
+profession	arodslimību ārsts
+profession	arodveselības un arodslimību ārsts
+profession	arodveselības ārsts
+profession	asfalta ieklājēja operators
+profession	asfalta veltņa vadītājs
+profession	asfaltbetona gatavošanas iekārtas operators
+profession	asfaltēšanas ieklājēja vadītājs
+profession	asins pārliešanas tehniķis
+profession	asinsvadu ķirurgs
+profession	asociētais profesors
+profession	asociētais veselības aprūpes kapelāns
+profession	astrofiziķis
+profession	astronomijas tehniķis
+profession	atbildīgais sekretārs
+profession	atbilstības vērtētājs
+profession	atkarību profilakses speciālists
+profession	atkritumu savācējs
+profession	atkritumu sadedzināšanas krāsns operators
+profession	atkritumu šķirotājs
+profession	atkritumvedēja vadītājs
+profession	atomfiziķis
+profession	atomenerģijas tehniķis
+profession	atomenerģijas mehānismu mehāniķis
+profession	atomenerģijas reaktora operators
+profession	atpūtas bāzes pārzinis
+profession	atsperu tīšanas operators
+profession	attaukošanas operators
+profession	attīrīšanas iekārtas operators
+profession	attīstības plānošanas inženieris
+profession	audio iekārtu operators
+profession	audiologopēds
+profession	audiovideoiekārtu montieris
+profession	audu tehniķis
+profession	auduma iespiedējs
+profession	audumu izklājējs
+profession	audumu komplektētājs
+profession	audumu pārbaudītājs
+profession	audumu tehnologs
+profession	audumu apdrukāšanas iekārtas operators
+profession	audumu dizaina speciālists
+profession	augsnes bakteriologs
+profession	augsnes botāniķis
+profession	augsnes tehniķis
+profession	augstsprieguma tehniķis
+profession	augstsprieguma elektroinženieris
+profession	augstsprieguma līniju elektromontieris
+profession	augstākais bocmanis
+profession	augstākais virsseržants augstākais bocmanis
+profession	augstākās tiesas priekšsēdētājs
+profession	augu citologs
+profession	augu ekologs
+profession	augu fiziologs
+profession	augu histologs
+profession	augu patologs
+profession	augu sistemātiķis
+profession	augu aizsardzības speciālists
+profession	augu valsts dizaina speciālists
+profession	augu ģenētiķis
+profession	augļu konservētājs
+profession	augļu audzēšanas lauksaimnieks
+profession	augļu audzēšanas laukstrādnieks
+profession	augļu koku apgriezējs
+profession	augļu koku potētājs
+profession	aukstuma iekārtu mehāniķis
+profession	aukstumtehnikas speciālists
+profession	autoatslēdznieks
+profession	autoelektriķis
+profession	automehāniķa palīgs
+profession	automehāniķis
+profession	autoapkopes speciālists
+profession	autobusa konduktors
+profession	autobusa vadītājs
+profession	autobusa, trolejbusa un tramvaja vadītājs
+profession	autoceltņa automobiļa vadītājs
+profession	autogreidera vadītājs
+profession	autokrāvēja vadītājs
+profession	automatizētas kurināmā padeves operators
+profession	automatizēto meža transportlīdzekļu operators
+profession	automatizētās montāžas līnijas operators
+profession	automašīnu logu mazgātājs
+profession	automobiļa vadītājs
+profession	automobiļu mazgātājs
+profession	automobiļu mehāniķis
+profession	automobiļu skārdnieks
+profession	automobiļu dizaina inženieris
+profession	automobiļu transporta inženieris
+profession	automātu inženieris
+profession	autoremonta darbnīcas vadītājs
+profession	autoskolas praktiskās braukšanas instruktors
+profession	autoskolas teorētisko priekšmetu pasniedzējs
+profession	autotorņa vadītājs
+profession	autovadīšanas instruktors
+profession	aušanas operators
+profession	aviolīniju transporta gaisa kuģa pilots
+profession	aviolīniju transporta helikoptera pilots
+profession	aviācijas instruktors
+profession	aviācijas fiksēto sakaru inženieris
+profession	aviācijas fiksēto sakaru operators
+profession	aviācijas fiksēto sakaru tehniķis
+profession	aviācijas mobilo sakaru inženieris
+profession	aviācijas mobilo sakaru tehniķis
+profession	aviācijas nelaimes gadījumu un incidentu izmeklētājs
+profession	aviācijas nelaimes gadījumu un incidentu vecākais izmeklētājs
+profession	aviācijas radioiekārtas operators
+profession	avāriju izmeklēšanas inspektors
+profession	bakteriologs
+profession	baletmeistars
+profession	ballistiķis
+profession	balneologs
+profession	balsinātājs
+profession	balzamētājs
+profession	betonētājs
+profession	bibliogrāfs
+profession	bibliotekārs
+profession	bioenerģētiķis
+profession	biofiziķis
+profession	biogrāfs
+profession	biologs
+profession	biometrists
+profession	bioniķis protēzists
+profession	bioķīmiķis
+profession	biškopis
+profession	bocmanis
+profession	bonza
+profession	botāniķis
+profession	brigadieris
+profession	brokeris
+profession	brošētājs
+profession	bruģētājs
+profession	bukmeikers
+profession	burtlicis
+profession	bagarēšanas būvinženieris
+profession	bagarēšanas būvtehniķis
+profession	bagarēšanas mašīnu operators
+profession	bagāžas kasieris
+profession	bakterioloģijas tehniķis
+profession	baleta mākslinieks
+profession	baleta repetitors
+profession	baleta režisors
+profession	baleta solists
+profession	baleta trupas vadītājs
+profession	bankas inkasents
+profession	bankas kasieris
+profession	bankomātu tīkla administrators
+profession	banku speciālists
+profession	baznīcas mūziķis
+profession	baznīcas mūzikas dzīves organizators
+profession	benzīna kontrolierīču operators
+profession	benzīna pārsūknēšanas operators
+profession	betona ieklājēja operators
+profession	betona ieklājēja vadītājs
+profession	betona maisītāja sūkņa vadītājs
+profession	betona ražošanas operators
+profession	bibliotēku lietvedis
+profession	bibliotēku informācijas speciālists
+profession	nodibinājuma izpilddirektors
+profession	nodibinājuma prezidents
+profession	nodibinājuma priekšsēdētājs
+profession	nodibinājuma vadītājs
+profession	nodibinājuma viceprezidents
+profession	nodibinājuma valdes loceklis
+profession	nodibinājuma valdes priekšsēdētājs
+profession	nodibinājuma ģenerāldirektors
+profession	nodibinājuma ģenerālsekretārs
+profession	biedrības izpilddirektors
+profession	biedrības prezidents
+profession	biedrības priekšsēdētājs
+profession	biedrības vadītājs
+profession	biedrības viceprezidents
+profession	biedrības valdes loceklis
+profession	biedrības valdes priekšsēdētājs
+profession	biedrības ģenerāldirektors
+profession	biedrības ģenerālsekretārs
+profession	bingo kartīšu pārdevējs
+profession	biotehnologa palīgs
+profession	biotehnologs
+profession	biofizikas tehniķis
+profession	biomedicīnas laborants
+profession	biometrijas statistiķis
+profession	bionikas un protezēšanas inženieris
+profession	bioķīmijas tehniķis
+profession	biroja administrators
+profession	biržas mākleris
+profession	bistro pakalpojumu darbinieks
+profession	bitumena gatavošanas iekārtas operators
+profession	biļešu kontrolieris
+profession	biļešu pārdevējs
+profession	biļešu kases kasieris
+profession	botānikas tehniķis
+profession	brigādes ģenerālis flotiles admirālis
+profession	bruģēšanas mašīnas vadītājs
+profession	bruņojuma inspektors
+profession	bruņojuma un sakaru galvenais speciālists
+profession	brīvmākslinieks
+profession	budžeta ekonomists
+profession	budžeta struktūrvienības direktora vietnieks
+profession	budžeta struktūrvienības direktors
+profession	budžeta struktūrvienības vadītāja vietnieks
+profession	budžeta struktūrvienības vadītājs
+profession	bufetes kalpotājs
+profession	bufetes pārdevējs
+profession	buldozera vadītājs
+profession	burvju mākslinieks
+profession	bārmenis
+profession	bākas uzraugs
+profession	bāriņtiesas loceklis
+profession	bāriņtiesas locekļa palīgs
+profession	bāriņtiesas priekšsēdētāja palīgs
+profession	bāriņtiesas priekšsēdētāja vietnieks
+profession	bāriņtiesas priekšsēdētājs
+profession	bāriņtiesas struktūrvienības vadītāja palīgs
+profession	bāriņtiesas sēžu sekretārs
+profession	bērnu alergologs
+profession	bērnu aprūpētājs
+profession	bērnu audiologs
+profession	bērnu endokrinologs
+profession	bērnu gastroenterologs
+profession	bērnu ginekologs
+profession	bērnu hematoonkologs
+profession	bērnu infektologs
+profession	bērnu kardiologs
+profession	bērnu masieris
+profession	bērnu māsa
+profession	bērnu nefrologs
+profession	bērnu neirologs
+profession	bērnu pneimonologs
+profession	bērnu psihiatrs
+profession	bērnu reimatologs
+profession	bērnu zobārsts
+profession	bērnu aprūpes māsa
+profession	bērnu aprūpes un audzināšanas iestādes audzinātājs
+profession	bērnu diennakts
+profession	bērnu ķirurgs
+profession	bīskaps
+profession	bīstamo kravu pārvadājumu drošības konsultants
+profession	bīstamo kravu pārvadājumu drošības padomnieks
+profession	bīstamu kravu pārvadāšanas transportlīdzekļu vadītājs
+profession	būvnieks
+profession	būvelektriķis
+profession	būvgaldnieks
+profession	būvinspektora palīgs
+profession	būvinspektors
+profession	būvinženieris
+profession	būvmeistars
+profession	būvstrādnieks
+profession	būvtehniķis
+profession	būvuzraugs
+profession	būvdarbu vadītāja palīgs
+profession	būvdarbu vadītājs
+profession	būvdarbu ūdenslīdējs
+profession	būvizstrādājumu galdnieks
+profession	būvju tīrītājs
+profession	būvju kadastrālās uzmērīšanas speciālists
+profession	būvkonstrukciju montētājs
+profession	būvmateriālu inženieris
+profession	būvmateriālu tehnologs
+profession	būvniecības kalkulētājs
+profession	būvniecības tehnologs
+profession	būvniecības tāmju inženieris
+profession	būvtehnikas rasētājs
+profession	cepurnieks
+profession	cepējs
+profession	cinkotājs
+profession	citologs
+profession	caurlaižu inspektors
+profession	cauruļlicēja vadītājs
+profession	cauruļu izolēšanas iekārtas operators
+profession	cauruļu liekšanas iekārtas operators
+profession	cauruļvadu montētājs
+profession	ceha priekšnieka vietnieks
+profession	ceha priekšnieks
+profession	ceha strādnieks
+profession	ceha iekārtu mehāniķis
+profession	celofāna, polietilēna iesaiņojuma ražošanas operators
+profession	celtniecības un ceļu būves mašīnu mehāniķis
+profession	celtniecības un ceļu būves mašīnu remontatslēdznieks
+profession	celtņa operators
+profession	cementa tehnologs
+profession	cementa dzirnavu operatora palīgs
+profession	cementa dzirnavu operators
+profession	centralizētā apsardzes punkta dežurants
+profession	cenu ekonomists
+profession	cenu inspektors
+profession	cenu veidošanas inženieris
+profession	ceļa būves palīgstrādnieks
+profession	ceļa frēzes operators
+profession	ceļa frēzes vadītājs
+profession	ceļa marķējumu krāsotājs
+profession	ceļa veltņa operators
+profession	ceļojošais pārdevējs
+profession	ceļojumu aģents
+profession	ceļojumu konsultants
+profession	ceļojumu organizators
+profession	ceļu meistara palīgs
+profession	ceļu meistars
+profession	ceļu būvinženieris
+profession	ceļu būvtehniķis
+profession	ceļu būvuzraugs
+profession	ceļu distances priekšnieka vietnieks
+profession	ceļu distances priekšnieks
+profession	ceļu marķēšanas mašīnas vadītājs
+profession	ceļu policijas inspektors
+profession	cietvielu fiziķis
+profession	ciltslietu zootehniķis
+profession	ciparu programmas vadības darbgaldu iestatītājs
+profession	ciparu vadības frēzēšanas operators
+profession	ciparu vadības virpošanas operators
+profession	cirka mākslinieks
+profession	citas speciālās pašgājējtehnikas vadītājs
+profession	citoloģijas tehniķis
+profession	civilaizsardzības organizators
+profession	civilās aizsardzības inženieris
+profession	civilās aizsardzības tehniķis
+profession	civilās aviācijas drošības uzraudzības inspektors
+profession	civilās aviācijas drošības uzraudzības speciālists
+profession	cukurbiešu audzēšanas lauksaimnieks
+profession	cukurbiešu audzēšanas laukstrādnieks
+profession	cūkkopis
+profession	cūku audzēšanas lauksaimnieks
+profession	datorgrafiķis
+profession	defektoskopists
+profession	degustētājs
+profession	dejotājs
+profession	deklarants
+profession	deklarētājs
+profession	dekorētājs
+profession	dekāns
+profession	demogrāfs
+profession	dermatologs, venerologs
+profession	detektīvs
+profession	dezinfektors
+profession	dežuranta palīgs
+profession	dežurants
+profession	direktora
+profession	direktora palīgs
+profession	direktora vietnieks
+profession	direktors
+profession	direktors
+profession	diriģents
+profession	diskžokejs
+profession	dispečers
+profession	dižkareivis
+profession	dižmatrozis
+profession	docents
+profession	dokers
+profession	dokeru brigadieris
+profession	dokumentālists
+profession	dozimetrists
+profession	dozētājs
+profession	dramaturgs
+profession	dravnieks
+profession	dresētājs
+profession	drēbnieks
+profession	dzejnieks
+profession	dziednieks
+profession	dziedātājs
+profession	dabas aizsardzības vecākais speciālists
+profession	dabasgāzes ieguves un sadales ķīmijas inženieris
+profession	dabasgāzes pārvades tehniķis
+profession	dabaszinātņu laborants
+profession	daiļdārznieks
+profession	daiļkrāsotājs
+profession	dalīšanas mašīnas operators
+profession	darba ekonomists
+profession	darba inspektors
+profession	darba normētājs
+profession	darba terapeits
+profession	darba aizsardzības inženieris
+profession	darba aizsardzības koordinators
+profession	darba aizsardzības speciālists
+profession	darba aizsardzības struktūrvienības vadītāja vietnieks
+profession	darba aizsardzības struktūrvienības vadītājs
+profession	darba aizsardzības vecākais speciālists
+profession	darba algas ekonomists
+profession	darba algas struktūrvienības vadītājs
+profession	darba izpētes tehniķis
+profession	darba normēšanas inženieris
+profession	darba organizācijas inženieris
+profession	darba organizācijas struktūrvienības vadītājs
+profession	darba satura analītiķis
+profession	darba vides pārzinis
+profession	darbgaldu iestatītājs
+profession	darbu rīkotājs
+profession	darbu vadītājs
+profession	darbības nepārtrauktības vadītājs
+profession	darbības risku vadītājs
+profession	darījumu operāciju analītiķis
+profession	datordizainers
+profession	datortehniķis
+profession	datora operators
+profession	datorizētās ciparu cnc metālapstrādes darbgaldu operators
+profession	datorizētās ciparu vadības metālapstrādes darbgaldu operators
+profession	datorsistēmu tehniķis
+profession	datorsistēmu testētājs
+profession	datorsistēmu un datortīklu administrators
+profession	datortehnikas inženieris
+profession	datortehnikas mehāniķis
+profession	datortīkla administrators
+profession	datorvadības tehnoloģiju inženieris
+profession	datu bāzes programmētājs
+profession	datu bāzu administrators
+profession	datu bāzu inženieris
+profession	datu bāzu tehniķis
+profession	datu ievades operators
+profession	dažādu sugu dzīvnieku lopkopis
+profession	dažādu sugu dzīvnieku audzēšanas lauksaimnieks
+profession	degvielas tehnologs
+profession	degvielas uzskaitvedis
+profession	degvielas uzpildes stacijas pārdevējs
+profession	deju partneris
+profession	deju ansambļa vadītājs
+profession	deju kolektīva vadītājs
+profession	deju kolektīvu, kopu un naktsklubu dejotājs
+profession	deju kopu vadītājs
+profession	dekoratīvo būvelementu veidotājs
+profession	dekoratīvo objektu tēlnieks
+profession	dekoratīvo tekstiltehniku izstrādātājs
+profession	dekoratīvās caurduršanas meistars
+profession	deltaplāna lidotājs
+profession	demogrāfijas statistiķis
+profession	dermatoveneroloģijas māsa
+profession	desu izgatavotājs
+profession	dežurējošais maksājumu karšu administrators
+profession	dežūrinspektors
+profession	dežūrinspektors - vada komandieris
+profession	diabetoloģijas un endokrinoloģijas māsa
+profession	diabēta aprūpes māsa
+profession	diegu vērējs
+profession	diegu tekstiliekārtās
+profession	diegu un dzijas vērpšanas iekārtas operators
+profession	dienesta vagona pavadonis
+profession	dienesta viesnīcas vadītājs
+profession	digitālās iespiešanas operators
+profession	diplomātiskais kurjers
+profession	dizaina speciālists
+profession	diētas māsa
+profession	doku un ostu būvinženieris
+profession	dokumentu zīmogotājs
+profession	dokumentu pārvaldības struktūrvienības direktora vietnieks
+profession	dokumentu pārvaldības struktūrvienības direktors
+profession	dokumentu pārvaldības struktūrvienības vadītāja vietnieks
+profession	dokumentu pārvaldības struktūrvienības vadītājs
+profession	dokumentu sistēmu vadītājs
+profession	dokumentu šķirotājs
+profession	dokumentāro operāciju speciālists
+profession	dramatisko kopu vadītājs
+profession	drenu licējs
+profession	drošības inspektors
+profession	drošības konsultants
+profession	drošības speciālists
+profession	drošības dienesta speciālists
+profession	drošības dienesta vadītāja vietnieks
+profession	drošības dienesta vadītājs
+profession	drošības galvenais inspektors
+profession	drošības padomnieks
+profession	drupināšanas operators
+profession	dublēšanas iekārtas operators
+profession	dzelzceļa dežuranta palīgs
+profession	dzelzceļa dežurants
+profession	dzelzceļa dispečera palīgs
+profession	dzelzceļa dispečers
+profession	dzelzceļa inspektors
+profession	dzelzceļa instruktors
+profession	dzelzceļa inženieris
+profession	dzelzceļa meistars
+profession	dzelzceļa metinātājs
+profession	dzelzceļa operatora palīgs
+profession	dzelzceļa operators
+profession	dzelzceļa pārmijnieks
+profession	dzelzceļa signalizētājs
+profession	dzelzceļa strādnieks
+profession	dzelzceļa apbruņots sargs
+profession	dzelzceļa apsardzes grupas instruktors
+profession	dzelzceļa apsardzes grupas vadītāja vietnieks
+profession	dzelzceļa apsardzes grupas vadītājs
+profession	dzelzceļa automātisko sistēmu tehniķis
+profession	dzelzceļa avāriju izmeklētājs
+profession	dzelzceļa avāriju vecākais izmeklētājs
+profession	dzelzceļa būvinženieris
+profession	dzelzceļa celtņa vadītāja palīgs
+profession	dzelzceļa celtņa vadītājs
+profession	dzelzceļa depo dežurants
+profession	dzelzceļa ekspluatācijas inženieris
+profession	dzelzceļa elektromontieris
+profession	dzelzceļa elektrosistēmu inženieris
+profession	dzelzceļa lokomotīvju remonta inženieris
+profession	dzelzceļa nepašgājējas mašīnas un to sastāvu operators
+profession	dzelzceļa pārbrauktuves dežurants
+profession	dzelzceļa pārvadājumu un kustības organizators
+profession	dzelzceļa sardzes priekšnieks
+profession	dzelzceļa stacijas priekšnieka vietnieks
+profession	dzelzceļa stacijas priekšnieks
+profession	dzelzceļa transporta inženieris
+profession	dzelzceļa transporta automātikas, telemehānikas un komunikāciju tehniķis
+profession	dzelzceļa transporta pārvadājumu organizācijas un kustības drošības tehniķis
+profession	dzelzceļa šķirošanas dežurants
+profession	dzesēšanas iekārtas operators
+profession	dzijas vērpējs
+profession	dzimtsarakstu inspektors
+profession	dzimtsarakstu speciālists
+profession	dzintara apstrādes mākslinieks
+profession	dzinēju mehānismu mehāniķis
+profession	dzīvnieku citologs
+profession	dzīvnieku ekologs
+profession	dzīvnieku fiziologs
+profession	dzīvnieku histologs
+profession	dzīvnieku kāvējs
+profession	dzīvnieku patologs
+profession	dzīvnieku pārraugs
+profession	dzīvnieku sistemātiķis
+profession	dzīvnieku rezervāta uzraugs
+profession	dzīvnieku vērtēšanas eksperts
+profession	dzīvnieku ģenētiķis
+profession	dzīvnieku ķērājs
+profession	dzīvojamo māju apsaimniekošanas speciālists
+profession	dzīvojamo īpašumu apsaimniekošanas speciālists
+profession	dzīvokļu aģents
+profession	dārzkopis
+profession	dārznieks
+profession	dāmu frizieris
+profession	dāmu apģērbu drēbnieks
+profession	dārgmetālu kalējs
+profession	dārzeņu konservētājs
+profession	dārzeņu audzēšanas lauksaimnieks
+profession	dārzeņu audzēšanas laukstrādnieks
+profession	dārzkopības komercdarbinieks
+profession	dārzkopības speciālists
+profession	dārzkopības tehniķis
+profession	dārzniecības laukkopis
+profession	dārzniecības strādnieks
+profession	dāvanu noformētājs
+profession	dīleris
+profession	dīzeļdzinēju mehāniķis
+profession	dīzeļlokomotīves vadītāja palīgs
+profession	dīzeļlokomotīves vadītājs
+profession	dīzeļlokomotīves vadītājs instruktors
+profession	dīzeļu inženieris
+profession	dīzeļu mehānikas inženieris
+profession	dīzeļvilciena mašīnista palīgs
+profession	dīzeļvilciena mašīnists instruktors
+profession	dīzeļvilciena vadītājs
+profession	dīzeļvilciena vadītāja palīgs
+profession	dīzeļvilciena vadītājs instruktors
+profession	dīzeļģeneratora operators
+profession	ekologs
+profession	ekonometrists
+profession	ekonomists
+profession	ekonoms
+profession	ekspeditors
+profession	eksperta palīgs
+profession	eksperts
+profession	ekstrasenss
+profession	elektriķis
+profession	elektroerozists
+profession	emaljētājs
+profession	embriologs
+profession	endodontists
+profession	enerģētiķis
+profession	entomologa palīgs
+profession	entomologs
+profession	epidemiologs
+profession	ergoterapeita asistents
+profession	ergoterapeits
+profession	esejists
+profession	estētists
+profession	etimologs
+profession	etnologs
+profession	evaņģēlists
+profession	ekoloģijas botāniķis
+profession	ekoloģijas tehniķis
+profession	ekonometrijas ekonomists
+profession	ekonomikas direktors
+profession	ekonomikas statistiķis
+profession	ekonomikas vēsturnieks
+profession	ekonomģeogrāfs
+profession	ekotūrisma pārvaldnieks
+profession	ekotūrisma speciālists
+profession	ekskavatora vadītājs
+profession	ekskursiju gids
+profession	ekskursiju organizators
+profession	ekspedīcijas aģents
+profession	ekspedīcijas pārzinis
+profession	eksperimentālo procesu psihologs
+profession	eksponātu uzraugs
+profession	eksporta speciālists
+profession	eksporta vadītājs
+profession	ekspozīciju un izstāžu kurators
+profession	elektrisko iekārtu speciālists
+profession	elektrisko sistēmu inženieris
+profession	elektriskās vilces tehniķis
+profession	elektroatslēdznieks
+profession	elektroinženieris
+profession	elektromontieris
+profession	elektropārklājējs
+profession	elektrotehniķis
+profession	elektroterapeits
+profession	elektroapgaismes inženieris
+profession	elektroapgaismes tehniķis
+profession	elektroencefalogrāfijas operators
+profession	elektroenerģijas pārvades elektroinženieris
+profession	elektroenerģijas sadales elektroinženieris
+profession	elektroiekārtas vecākais tehniķis
+profession	elektroiekārtu montieris
+profession	elektroiekārtu izolācijas sagatavotājs
+profession	elektroietaišu ekspluatācijas inženieris
+profession	elektrokardiogrāfijas operators
+profession	elektrokrāvēja operators
+profession	elektrokāra vadītājs
+profession	elektrolīniju mehāniķis
+profession	elektromagnetofiziķis
+profession	elektromehānisko iekārtu mehāniķis
+profession	elektromehānisko iekārtu elektroinženieris
+profession	elektronavigācijas inženieris
+profession	elektronikas fiziķis
+profession	elektronikas inženieris
+profession	elektronikas kalkulētājs
+profession	elektronikas mehāniķis
+profession	elektronikas montētājs
+profession	elektronikas rasētājs
+profession	elektronikas regulētājs
+profession	elektronikas speciālists
+profession	elektronikas tehniķis
+profession	elektronikas tehnologs
+profession	elektronikas kontrolmēraparātu tehniķis
+profession	elektronisko iekārtu montieris
+profession	elektronisko komunikāciju speciālists
+profession	elektronisko sakaru struktūrvienības direktora vietnieks
+profession	elektronisko sakaru struktūrvienības direktors
+profession	elektronisko sakaru struktūrvienības vadītāja vietnieks
+profession	elektronisko sakaru struktūrvienības vadītājs
+profession	elektroniskā pasta operators
+profession	elektroniskās komercijas speciālists
+profession	elektroniskās komunikāciju vides izstrādātājs
+profession	elektrosistēmas tehniķis
+profession	elektrosistēmu rasētājs
+profession	elektrosprieguma pārvades tehniķis
+profession	elektrosprieguma sadales tehniķis
+profession	elektrospēkstacijas operators
+profession	elektrospēkstacijas komutatora operators
+profession	elektrotehnisko iekārtu inženieris
+profession	elektrotehnisko iekārtu elektroinženieris
+profession	elektrotīklu dispečers
+profession	elektrotīklu elektriķis
+profession	elektrovilciena mašīnista palīgs
+profession	elektrovilciena mašīnists instruktors
+profession	elektrovilciena vadītājs
+profession	elektrovilciena vadītāja palīgs
+profession	elektrovilciena vadītājs instruktors
+profession	elektrovilkmes elektroinženieris
+profession	elektroģeneratora turbīnas operators
+profession	elektrības kalkulētājs
+profession	elevatora operators
+profession	endokrinoloģijas fiziologs
+profession	endoskopijas māsa
+profession	endovazālais ķirurgs
+profession	energodispečers
+profession	energoauditors inženieris
+profession	energosistēmas vadības pults operators
+profession	energosistēmu inženieris
+profession	energosistēmu tehniķis
+profession	energotīklu dispečers
+profession	energouzraudzības inspektors
+profession	epidemioloģijas fiziologs
+profession	erozijas mašīnas iekārtu operators
+profession	eskalatora operators
+profession	etiķešu līmēšanas operators
+profession	eļļotājs
+profession	eļļas spiedējs
+profession	eļļošanas inženieris
+profession	eļļošanas mehānismu mehāniķis
+profession	farmaceita asistents
+profession	farmaceita palīgs
+profession	farmaceits
+profession	farmakologs
+profession	feļetonists
+profession	filologs
+profession	filozofs
+profession	finansists
+profession	fitoterapeits
+profession	fiziologs
+profession	fizioterapeita asistents
+profession	fizioterapeits
+profession	fiziķis
+profession	flebologs
+profession	florists
+profession	flīzētājs
+profession	foniatrs
+profession	fonologs
+profession	formētājs
+profession	fotogrammetrists
+profession	fotogrāfs
+profession	frizieris
+profession	frēzētājs
+profession	ftiziopneimonologs
+profession	faktūrkreditēšanas speciālists
+profession	farmaceitiskās produkcijas ražošanas operators
+profession	farmakoloģijas tehniķis
+profession	farmācijas bakteriologs
+profession	farmācijas tehnologs
+profession	filiāles direktora vietnieks
+profession	filiāles direktors
+profession	filtrēšanas operators
+profession	finanšu analītiķis
+profession	finanšu darbinieks
+profession	finanšu direktors
+profession	finanšu ekonomists
+profession	finanšu speciālists
+profession	finanšu statistiķis
+profession	finanšu ieguldījumu portfeļa vadītājs
+profession	finanšu produktu attīstības projektu vadītājs
+profession	finanšu risku vadītājs
+profession	finanšu tirgus analītiķis
+profession	finanšu un attīstības struktūrvienības direktors
+profession	finanšu un attīstības struktūrvienības vadītājs
+profession	finieru frēzēšanas operators
+profession	finieru labošanas līnijas operators
+profession	finieru lobīšanas operators
+profession	finieru paku savākšanas līnijas operators
+profession	finieru piegriešanas operators
+profession	finieru saaudzēšanas operators
+profession	fizikas tehniķis
+profession	fizikālais terapeits
+profession	fizikālo procesu metalurgs
+profession	fizikālās medicīnas ārsts
+profession	fizikālās terapijas māsa
+profession	fizikālās un rehabilitācijas medicīnas māsa
+profession	fizikālās un rehabilitācijas medicīnas ārsts
+profession	fizioloģijas tehniķis
+profession	fizioģeogrāfs
+profession	fleksoiespiedējs
+profession	floristikas speciālists
+profession	flotiles admirālis
+profession	folkloras kopas vadītājs
+profession	fondu glabātājs
+profession	fondu bibliotēkās
+profession	foto dizaina speciālists
+profession	foto un kino materiālu restaurators
+profession	fotogrammetrijas inženieris
+profession	fotogrāfiju iespiedmašīnas operators
+profession	frizūru modelētājs
+profession	ftiziopulmoloģijas māsa
+profession	funkcionālās diagnostikas māsa
+profession	furgona vadītājs
+profession	galdnieka palīgs
+profession	galdnieks
+profession	gans
+profession	garderobists
+profession	garīdznieks
+profession	gastroenterologs
+profession	geriatrs
+profession	ginekologs, dzemdību speciālists
+profession	glaciologs
+profession	gleznotājs
+profession	glābējs
+profession	glābējs motorists
+profession	glābējs ūdenslīdējs
+profession	gmdss i klases radioelektroniķis
+profession	gmdss ii klases radioelektroniķis
+profession	grafiķis
+profession	grafologs
+profession	gravieris
+profession	grimētājs
+profession	grāmatsējējs
+profession	grāmatvedis
+profession	grāmatveža palīgs
+profession	guvernants
+profession	gadījuma darbu strādnieks
+profession	gaisa balona pilots
+profession	gaisa balona instruktors
+profession	gaisa kabeļu licējs
+profession	gaisa kondicionēšanas inženieris
+profession	gaisa kondicionēšanas iekārtu mehāniķis
+profession	gaisa kondicionēšanas mehānikas inženieris
+profession	gaisa kondicionēšanas mehānismu mehāniķis
+profession	gaisa kuģa kapteinis
+profession	gaisa kuģa mehāniķis
+profession	gaisa kuģa pilots
+profession	gaisa kuģa stjuarts
+profession	gaisa kuģa stūrmanis
+profession	gaisa kuģa instruktors
+profession	gaisa kuģa komercpilots
+profession	gaisa kuģu projektēšanas inženieris
+profession	gaisa kuģu tehniskās apkopes mehāniķis
+profession	gaisa kuģu tehniskās apkopes speciālists
+profession	gaisa kuģu tehniskās apkopes avionikas inženieris
+profession	gaisa kuģu tehniskās apkopes mehānikas inženieris
+profession	gaisa kuģu tehniskās ekspluatācijas avionikas tehniķis
+profession	gaisa kuģu tehniskās ekspluatācijas mehānikas tehniķis
+profession	gaisa satiksmes dispečers
+profession	gaisa satiksmes drošības tehniķis
+profession	gaisa satiksmes kontroliekārtu operators
+profession	gaisa satiksmes vadības dispečers
+profession	gaismas fiziķis
+profession	gaisvadu līniju elektromontieris
+profession	galvenais arhīvists
+profession	galvenais bocmanis
+profession	galvenais diriģents
+profession	galvenais ekonomists
+profession	galvenais enerģētiķis
+profession	galvenais grāmatvedis
+profession	galvenais inspektors
+profession	galvenais inspektors – sapieris
+profession	galvenais inženieris
+profession	galvenais kasieris
+profession	galvenais kormeistars
+profession	galvenais mākslinieks
+profession	galvenais redaktors
+profession	galvenais speciālists metodiķis
+profession	galvenais speciālists starptautiskās sadarbības jautājumos
+profession	galvenais virsseržants galvenais bocmanis
+profession	galvenais dežūrinspektors
+profession	galvenais krājuma glabātājs
+profession	galvenais nodokļu inspektors
+profession	galvenais saimniecības pārzinis
+profession	galvenais transporta inspektors
+profession	galvenais valsts inspektors
+profession	galvenais valsts notārs
+profession	galvenā grāmatveža vietnieks
+profession	galvenā vecmāte
+profession	galvenā medicīnas māsa
+profession	galvenā valsts notāra vietnieks
+profession	galvenās kases vadītājs
+profession	garantijas pakalpojumu konsultants
+profession	garīgās aprūpes dienesta vadītājs
+profession	garīgās veselības aprūpes māsa
+profession	gatavās produkcijas piegriešanas operators
+profession	gatera mašīnists
+profession	gazificēto krāšņu operators
+profession	gaļas izcirtējs
+profession	gaļas kulinārs
+profession	gaļas kūpinātājs
+profession	gaļas apstrādes iekārtu operators
+profession	gaļas un ādu apstrādātājs
+profession	ginekoloģijas māsa
+profession	gliemežu audzētājs
+profession	gludināšanas operators
+profession	glābšanas darbu instruktors
+profession	glābšanas darbu koordinācijas inspektors
+profession	glābšanas dienesta ūdenslīdējs
+profession	grafikas restaurators
+profession	granulu ražošanas operators
+profession	graudaugu audzēšanas lauksaimnieks
+profession	graudaugu audzēšanas laukstrādnieks
+profession	graudu apstrādes operators
+profession	graudu kaltēšanas iekārtu operators
+profession	greideru un skrēperu vadītājs
+profession	griešanas operators
+profession	grodošanas iekārtas operators
+profession	grāmatu labotājs
+profession	grāmatu tirdzniecības aģents
+profession	grāmatvedības eksperts
+profession	grāmatvedības uzskaitvedis
+profession	grāmatvedības struktūrvienības direktors
+profession	grāmatvedības struktūrvienības vadītājs
+profession	grātēšanas iekārtas operators
+profession	grīdas klājējs
+profession	gudronatora vadītājs
+profession	gumijas tehnologs
+profession	gumijas apstrādes operators
+profession	gumijas izstrādājumu komplektētājs
+profession	gumijas izstrādājumu vulkanizācijas operators
+profession	gumijas karstās presēšanas operators
+profession	gumijas ražošanas operators
+profession	gumijas veidošanas operators
+profession	guļbūves ēku celtnieks
+profession	gāzmetinātājs
+profession	gāzes operators
+profession	gāzes iekārtu remontatslēdznieks
+profession	gāzes iekārtu tehniķis
+profession	gāzes kontrolierīču operators
+profession	gāzes plazmas griezējs
+profession	gāzes pārsūknēšanas operators
+profession	gāzes turbīnu inženieris
+profession	gāzes turbīnu mehāniķis
+profession	gāzes turbīnu mehānikas inženieris
+profession	hematologs
+profession	hepatologs
+profession	hidrodinamiķis
+profession	hidrogrāfs
+profession	hidrologs
+profession	higiēnists
+profession	hipnotizētājs
+profession	hipologs
+profession	hiromants
+profession	histologs
+profession	homeopāts
+profession	horeogrāfs
+profession	helikoptera pilots
+profession	helikoptera instruktors
+profession	helikoptera jaunākais pilots
+profession	helikoptera komercpilots
+profession	hematoloģijas tehniķis
+profession	hemodialīzes un nieru transplantācijas māsa
+profession	hidraulikas inženieris
+profession	hidro un siltumizolētājs
+profession	hidroakustiķis
+profession	hidrobiologs
+profession	hidrometeorologs
+profession	hidroelektrospēkstacijas operators
+profession	hidrogrāfijas inženieris
+profession	hidrogrāfijas tehniķis
+profession	hidrokrāvēja mašīnists
+profession	hidroloģijas inženieris
+profession	hidroloģijas tehniķis
+profession	hidroloģijas būvinženieris
+profession	hidroloģijas būvtehniķis
+profession	hidroplāna pilots
+profession	hidrotehnikas būvtehniķis
+profession	hidrotehnisko būvju būvinženieris
+profession	hidroģeologs
+profession	higiēnas dezinfektors
+profession	higiēnas ārsta palīgs
+profession	higiēnas ārsts
+profession	hipnoterapeits
+profession	histopatologs
+profession	histoloģijas botāniķis
+profession	histoloģijas tehniķis
+profession	hospitālās infekcijas kontroles ārsts
+profession	iesaiņotājs
+profession	iespiedējs
+profession	iestatītājs
+profession	iezārkotājs
+profession	ihtiologs
+profession	ilustrators
+profession	iluzionists
+profession	imams
+profession	imitētājs
+profession	impresārijs
+profession	imunologs
+profession	infektologs
+profession	informātiķis
+profession	informētājs
+profession	inkasents
+profession	inspektora palīgs
+profession	inspektors
+profession	inspektors – kriminālists
+profession	inspektors – sapieris
+profession	inspektors – snaiperis
+profession	inspektors – dežurants
+profession	inspektors – kinologs
+profession	instalators
+profession	instruktors
+profession	interjerists
+profession	internists
+profession	intervētājs
+profession	inventarizators
+profession	inženierinspektors
+profession	inženierkontrolieris
+profession	istabenis
+profession	izmeklētājs
+profession	izmēģinātājs
+profession	izolētājs
+profession	izpilddirektora vietnieks
+profession	izpilddirektors
+profession	izsolītājs
+profession	izvirpotājs
+profession	izšuvējs
+profession	iecirkņa inspektors
+profession	iecirkņa māsa
+profession	iecirkņa priekšnieka vietnieks
+profession	iecirkņa priekšnieks
+profession	iedzīvotāju reģistrēšanas speciālists
+profession	ieguves metalurgs
+profession	ieguves tehnologs
+profession	ieguves rūpniecības uzraugs
+profession	iekraušanas iekārtas apkalpotājs
+profession	iekārtu ekspluatācijas inženieris
+profession	iekšdedzes dzinēju inženieris
+profession	iekšdedzes dzinēju mehāniķis
+profession	iekšējais auditors
+profession	iekšējo iekārtu būvtehniķis
+profession	iekšējo ūdeņu kuģa matrozis
+profession	iekšējo ūdeņu kuģa stūrmanis
+profession	iekšējo ūdeņu un piekrastes zvejnieks
+profession	iekšējo ūdeņu un piekrastes zvejniecības strādnieks
+profession	iekšējā audita struktūrvienības direktors
+profession	iekšējā audita struktūrvienības vadītājs
+profession	iekšējās kontroles galvenais inspektors
+profession	iekšējās kontroles galvenais speciālists
+profession	ielidošanas servisa aģents
+profession	ielu slaucītājs
+profession	ielu kaisīšanas automobiļa vadītājs
+profession	ielu laistīšanas automobiļa vadītājs
+profession	iepirkumu aģents
+profession	iepirkumu speciālists
+profession	iepirkumu struktūrvienības direktora vietnieks
+profession	iepirkumu struktūrvienības direktors
+profession	iepirkumu struktūrvienības vadītāja vietnieks
+profession	iepirkumu struktūrvienības vadītājs
+profession	ierakstīšanas iekārtas operators
+profession	ieroču atslēdznieks
+profession	ieroču tehniķis
+profession	ierīču un instrumentu rasētājs
+profession	iesaiņojuma dizaina speciālists
+profession	iesaiņošanas tehnologs
+profession	iesiešanas iekārtas operators
+profession	ieskaņošanas iekārtas operators
+profession	ieslodzījuma vietas apsargs
+profession	ieslodzījuma vietas inspektors
+profession	ieslodzījuma vietas inženieris
+profession	ieslodzījuma vietas priekšnieka dežurējošais palīgs
+profession	ieslodzījuma vietas uzraugs
+profession	ieslodzījuma vietas jaunākais inspektors
+profession	ieslodzījuma vietas vecākais apsargs
+profession	ieslodzījuma vietas vecākais inspektors
+profession	ieslodzījuma vietas vecākais uzraugs
+profession	ieslodzījuma vietu pārvaldes centrālā aparāta jaunākais inspektors
+profession	iespieddarbu maketētājs
+profession	iespieddarbu salicējs
+profession	iespieddarbu digitālā noformējuma speciālists
+profession	iespieddarbu pēcapstrādes strādnieks
+profession	iespiedformu izgatavotājs
+profession	iespiedmašīnas operators
+profession	iespiedprodukcijas pēcapstrādātājs
+profession	iespiešanas tehnologs
+profession	iestādes direktors
+profession	iestādes priekšnieks
+profession	iestādes priekšsēdētājs
+profession	iestādes vadītāja palīgs
+profession	iestādes vadītājs
+profession	iestādes ģenerāldirektors
+profession	iežguves inženieris
+profession	iežguves ģeodēzists
+profession	imigrācijas inspektors
+profession	impregnēšanas iekārtas operators
+profession	industriālais alpīnists
+profession	industriālās apbūves speciālists
+profession	infektoloģijas māsa
+profession	informatīvo sistēmu projektētājs
+profession	informācijas it pakalpojumu vadītājs
+profession	informācijas it pakalpojumu pārvaldības procesu konsultants
+profession	informācijas it pakalpojumu pārvaldības procesu vadītājs
+profession	informācijas kodētājs
+profession	informācijas korektors
+profession	informācijas drošības vadītājs
+profession	informācijas elektronikas inženieris
+profession	informācijas ievadīšanas operators
+profession	informācijas sistēminženieris
+profession	informācijas sistēmas drošības speciālists
+profession	informācijas sistēmu administrators
+profession	informācijas sistēmu auditors
+profession	informācijas sistēmu testētājs
+profession	informācijas sistēmu uzturētājs
+profession	informācijas sistēmu drošības administrators
+profession	informācijas sistēmu drošības kontrolieris
+profession	informācijas sistēmu kvalitātes kontrolieris
+profession	informācijas tehnoloģijas projektu vadītājs
+profession	informācijas tehnoloģiju administrators
+profession	informācijas tehnoloģiju pakalpojumu vadītājs
+profession	informācijas tehnoloģiju pakalpojumu pārvaldības procesu konsultants
+profession	informācijas tehnoloģiju pakalpojumu pārvaldības procesu vadītājs
+profession	informācijas tehnoloģiju struktūrvienības direktora vietnieks
+profession	informācijas tehnoloģiju struktūrvienības direktors
+profession	informācijas tehnoloģiju struktūrvienības vadītāja vietnieks
+profession	informācijas tehnoloģiju struktūrvienības vadītājs
+profession	informācijas tīkla pārzinis
+profession	informācijas vadības speciālists
+profession	informātikas elektronikas tehniķis
+profession	inkasācijas dispečers
+profession	inkasācijas dienesta vadītāja vietnieks
+profession	inkasācijas dienesta vadītājs
+profession	inkubatora operators
+profession	instrumentu asinātājs
+profession	instrumentu atslēdznieks
+profession	instrumentu mehāniķis
+profession	instrumentu meistars
+profession	instrumentu mūziķis
+profession	instrumentu mehānikas inženieris
+profession	intensīvās terapijas un anestēzijas māsa
+profession	intensīvās terapijas ārsts
+profession	interešu izglītības skolotājs
+profession	interešu pulciņa audzinātājs
+profession	interešu pulciņa vadītājs
+profession	interjera dizainers
+profession	interjera noformētājs
+profession	interjera dizaina speciālists
+profession	interjera un reklāmas dizaina speciālists
+profession	interneta bankas administrators
+profession	interneta portāla redaktors
+profession	internās aprūpes māsa
+profession	internāta, dienesta viesnīcas skolotājs
+profession	investīciju starpnieks
+profession	inženierkomunikāciju piesaistes inženieris
+profession	inženierkomunikāciju piesaistes galvenais speciālists
+profession	inženiertehnisko būvju brigadieris
+profession	inženiertehnisko būvju remonta strādnieks
+profession	inženierķīmijas tehniķis
+profession	izejvielu sagatavotājs
+profession	izglītojošā darba un darba ar apmeklētājiem vadītājs
+profession	izglītības metodiķis
+profession	izglītības psihologs
+profession	izglītības sociologs
+profession	izglītības statistiķis
+profession	izglītības darba speciālists
+profession	izglītības iestādes bibliotekārs
+profession	izglītības iestādes muzeju pedagogs
+profession	izglītības valsts inspektors
+profession	izgāztuves dežurants
+profession	izmaksu tehniķis
+profession	izpārdošanas pārstāvis
+profession	izrādes direktors
+profession	izrādes režisors
+profession	izstrādājumu marķētājs
+profession	izstrādājumu projektētājs
+profession	izstādes dekorētājs
+profession	izziņu sniedzējs
+profession	izšūšanas operators
+profession	izšūšanas iekārtu operators
+profession	jumiķis
+profession	juriskonsults
+profession	jurista palīgs
+profession	jurists
+profession	jurists lingvists
+profession	juvelieris
+profession	jaunatnes lietu speciālists
+profession	jaunlopu kopējs
+profession	jaunākais eksperts
+profession	jaunākais inspektors
+profession	jaunākais inspektors – kinologs
+profession	jaunākais inspektors – sapieris
+profession	jaunākais izmeklētājs
+profession	jaunākais kontrolieris
+profession	jaunākais kārtībnieks
+profession	jaunākais referents
+profession	jaunākais muitas eksperts
+profession	jaunākais muitas uzraugs
+profession	jaunākais pašvaldībās
+profession	jogas meistars
+profession	jogas speciālists
+profession	jogas terapeits
+profession	jumtu skārdnieks
+profession	juridiskā dienesta direktors
+profession	juridiskā dienesta vadītājs
+profession	juridiskās struktūrvienības direktora vietnieks
+profession	juridiskās struktūrvienības direktors
+profession	juridiskās struktūrvienības vadītāja vietnieks
+profession	juridiskās struktūrvienības vadītājs
+profession	juveliermākslinieks
+profession	juvelierizstrādājumu gravieris
+profession	juvelierizstrādājumu dizaina speciālists
+profession	jēlādas apstrādes operators
+profession	jūras biologs
+profession	jūras kapteinis
+profession	jūras mehānismu mehāniķis
+profession	jūras negadījumu izmeklētājs
+profession	jūras negadījumu vecākais izmeklētājs
+profession	jūras radioiekārtas operators
+profession	jūras ģeodēzijas inženieris
+profession	jūras, tāljūras zvejnieks
+profession	jūrnieku kompetences atbilstības pārraugs
+profession	jūrnieku kompetences atbilstības vērtētājs
+profession	jūrnieku kvalifikācijas vērtētājs
+profession	jūrnieku praktiskās apmācības pasniedzējs
+profession	jūrnieku praktiskās apmācības instruktors
+profession	jūrnieku profesionālās apmācības pedagogs
+profession	jūrnieku profesionālās apmācības instruktors
+profession	kalējs
+profession	kapelāns
+profession	kapracis
+profession	kaprālis
+profession	kapteinis
+profession	kapteinis uz iekšējo ūdeņu kuģiem, mazākiem par 3000 bt
+profession	kapteinis uz iekšējo ūdeņu kuģiem, mazākiem par 500 bt
+profession	kapteinis uz kuģiem ar 3000 bt un lielākiem
+profession	kapteinis uz kuģiem, mazākiem par 200 bt
+profession	kapteinis uz kuģiem, mazākiem par 3000 bt
+profession	kapteinis uz kuģiem, mazākiem par 500 bt
+profession	kapteinis uz zvejas kuģiem, īsākiem par 45 m, ierobežotā zvejas rajonā
+profession	kapteinis uz zvejas kuģiem, īsākiem par 45 m, neierobežotā zvejas rajonā
+profession	kapteiņleitnants
+profession	kardināls
+profession	kardiologs
+profession	kareivis
+profession	karikatūrists
+profession	kartogrāfs
+profession	kasieris
+profession	kasieris operators
+profession	keramiķis
+profession	kinezoterapeits
+profession	kinologs
+profession	klauns
+profession	klimatologs
+profession	kniedētājs
+profession	knipelētājs
+profession	kokkopis
+profession	kolorists
+profession	kolportieris
+profession	komandiera palīgs
+profession	komandkapteinis
+profession	komandleitnants
+profession	kombustiologs
+profession	komentētājs
+profession	komercdirektors
+profession	komivojažieris
+profession	komiķis
+profession	komplektētājs
+profession	komponists
+profession	koncertmeistars
+profession	konditora palīgs
+profession	konditors
+profession	konferansjē
+profession	konstruktors
+profession	konsuls
+profession	konsultants
+profession	konsultants iepirkumu speciālists
+profession	kontradmirālis
+profession	kontrolieris
+profession	kopētājs
+profession	korektors
+profession	korespondents
+profession	kormeistars
+profession	kosmetologs
+profession	kosmētiķis
+profession	kriminologs
+profession	kristalogrāfs
+profession	kritiķis
+profession	krupjē
+profession	krāsotājs
+profession	krāvējs
+profession	kurjers
+profession	kurpnieka palīgs
+profession	kurpnieks
+profession	kučieris
+profession	kabeļu līniju elektromontieris
+profession	kabeļu ražošanas operators
+profession	kabeļu trašu uzraugs
+profession	kadastra inženieris
+profession	kafejnīcas direktora vietnieks
+profession	kafejnīcas direktors
+profession	kafejnīcas pārvaldnieks
+profession	kafejnīcas vadītāja vietnieks
+profession	kafejnīcas vadītājs
+profession	kalkulatoru operators
+profession	kamīnu licējs
+profession	kancelejas direktora vietnieks
+profession	kancelejas direktors
+profession	kancelejas pārvaldnieka vietnieks
+profession	kancelejas pārvaldnieks
+profession	kancelejas vadītāja vietnieks
+profession	kancelejas vadītājs
+profession	kancelejas pārzinis
+profession	kapitāldaļu turētāja pārstāvis
+profession	kapsētas pārzinis
+profession	kapsētas pārziņa palīgs
+profession	kapu akmens plākšņu izgatavotājs
+profession	kara medicīnas ārsts
+profession	karitatīvais sociālais darbinieks
+profession	karjera strādnieks
+profession	karjera uzraugs
+profession	karjera ražošanas līnijas operators
+profession	karjeras konsultants
+profession	karstā metāla novācējs
+profession	karstās apstrādes krāsns operators
+profession	karsēšanas iekārtas operators
+profession	kartogrāfijas inženieris
+profession	kartogrāfijas rasētājs
+profession	kartona izstrādājumu komplektētājs
+profession	kartona izstrādājumu ražošanas operators
+profession	kartupeļu audzēšanas lauksaimnieks
+profession	kartupeļu audzēšanas laukstrādnieks
+profession	kases vadītājs
+profession	kases kontu operators
+profession	katastrofu medicīnas ārsts
+profession	katedras vadītājs
+profession	katlu mašīnists
+profession	katlu uzraudzības inspektors
+profession	katoļu priesteris
+profession	kausu oderētājs
+profession	kausēšanas operators
+profession	kaļķakmens smalcinātāja operators
+profession	kažokādu drēbnieks
+profession	kažokādu izstrādātājs
+profession	kažokādu krāsotājs
+profession	kažokādu mājdzīvnieku audzēšanas lauksaimnieks
+profession	keramikas glazētājs
+profession	keramikas tehnologs
+profession	keramikas dizaina speciālists
+profession	keramikas izstrādājumu dizaina speciālists
+profession	keramikas, stikla izstrādājumu restaurators
+profession	kinomehāniķis
+profession	kinooperatora asistents
+profession	kinooperators
+profession	kinoprojicētājs
+profession	kinofilmas direktors
+profession	kinofilmas režisors
+profession	kinofilmu mākslinieks
+profession	kinofilmu skaņu redaktors
+profession	kioska pārdevējs
+profession	klasiskās matemātikas matemātiķis
+profession	klavieru būvētājs
+profession	klavieru restaurētājs
+profession	klientu konsultants
+profession	klientu vadītājs
+profession	klientu apkalpošanas operators
+profession	klientu apkalpošanas pārzinis
+profession	klientu apkalpošanas speciālists
+profession	klientu apkalpošanas vadītājs
+profession	klientu apkalpošanas struktūrvienības vadītāja vietnieks
+profession	klientu apkalpošanas struktūrvienības vadītājs
+profession	klientu privātbaņķieris
+profession	klientu pārdošanas konsultants
+profession	klientu un pacientu reģistrators
+profession	kluba saimnieks
+profession	klīniskais farmaceits
+profession	klīniskais fiziologs
+profession	klīniskais psihologs
+profession	klīnisko pētījumu speciālists
+profession	klīnisko pētījumu vadītājs
+profession	kniedēšanas operators
+profession	kodināšanas operators
+profession	kodolfiziķis
+profession	kodolenerģētikas mehānikas inženieris
+profession	kokgriezējs
+profession	koktēlnieks
+profession	koka inkrustators
+profession	koka slīpētājs
+profession	koka urbējs
+profession	koka virpotājs
+profession	koka zāģētājs
+profession	koka apavu kurpnieks
+profession	koka būvju restaurators
+profession	koka dabisko formu izstrādājumu izgatavotājs
+profession	koka izstrādājumu komplektētājs
+profession	koka izstrādājumu krāsotājs lakotājs
+profession	koka izstrādājumu pulētājs
+profession	koka izstrādājumu dizaina speciālists
+profession	koka izstrādājumu ražošanas tehniķis
+profession	koka kuģu būvētājs
+profession	koka modeļu izgatavotājs
+profession	koka māksliniecisko izstrādājumu izgatavotājs
+profession	koka mēbeļu komplektētājs
+profession	koka pūšamo instrumentu tehniķis
+profession	koka rotaļlietu izgatavotājs
+profession	koka ēku celtnieks
+profession	kokapstrādes inženieris
+profession	kokapstrādes operators
+profession	kokapstrādes tehnologs
+profession	kokapstrādes darbgaldu iestatītājs
+profession	kokapstrādes iekārtu mehāniķis
+profession	kokapstrādes pusautomātisko iekārtu operators
+profession	kokaudzētavas saimnieks
+profession	kokaudzēšanas tehniķis
+profession	kokmateriālu marķētājs
+profession	koksnes impregnētājs
+profession	koksnes apdares iekārtas operators
+profession	koksnes apstrādes virpas operators
+profession	koksnes drupināšanas iekārtas operators
+profession	koksnes kodināšanas iekārtas operators
+profession	koksnes liekšanas iekārtas operators
+profession	koksnes materiālu dizaina speciālists
+profession	koksnes slīpēšanas līnijas operators
+profession	koksnes zāģēšanas mašīnu operators
+profession	koksnes šķirotājs
+profession	koksnes žāvēšanas iekārtas operators
+profession	koku aizzīmētājs
+profession	koku atzarotājs
+profession	koku krāvējs
+profession	koku pludinātājs
+profession	koku vedējs
+profession	kokvedēja automobiļa vadītājs
+profession	kokzāģētavas operators
+profession	koledžas direktora palīgs
+profession	koledžas direktora vietnieks
+profession	koledžas direktors
+profession	koledžas kadets
+profession	koledžas katedras vadītājs
+profession	kolēģijas loceklis
+profession	kombaina vadītājs
+profession	komercdarbības konsultants
+profession	komercdarbības speciālists
+profession	komercdarījumu darbinieks
+profession	komercpakalpojumu darbinieks
+profession	komisijas loceklis
+profession	komisijas priekšsēdētāja vietnieks
+profession	komisijas priekšsēdētājs
+profession	komisijas sekretārs
+profession	komisijas vadītājs
+profession	komitejas sekretārs
+profession	komitejas izpildsekretārs
+profession	komplektēšanas kontrolieris
+profession	kompozīto ražojumu montieris
+profession	kompresora operators
+profession	komunikāciju programmētājs
+profession	komunikāciju izņemot skaitļotāju analītiķis
+profession	komunālinženieris
+profession	konfekšu ražotājs
+profession	konferenču un pasākumu organizators
+profession	konstrukciju tīrītājs
+profession	konstrukciju būvinženieris
+profession	konstrukciju būvtehniķis
+profession	konsultāciju struktūrvienības direktora vietnieks
+profession	konsultāciju struktūrvienības direktors
+profession	konsultāciju struktūrvienības vadītāja vietnieks
+profession	konsultāciju struktūrvienības vadītājs
+profession	kontaktmetinātājs
+profession	kontakttīklu elektromontieris
+profession	konteineru pildīšanas iekārtas operators
+profession	kontrolkasieris
+profession	kontroles aparātu un mēriekārtu mehāniķis
+profession	kontroles mēraparātu un automātikas elektroatslēdznieks
+profession	kontu administrators
+profession	kontu operators
+profession	kopienas sociālais darbinieks
+profession	kopēšanas mašīnu operators
+profession	kopēšanas tehnikas mehāniķis
+profession	kora diriģents
+profession	kora mākslinieks
+profession	korespondentattiecību administrators
+profession	korespondentattiecību struktūrvienības vadītāja vietnieks
+profession	korespondentattiecību struktūrvienības vadītājs
+profession	kosmosa komunikāciju inženieris
+profession	kosmētisko līdzekļu ķīmiķis
+profession	kostīmu meistars
+profession	kraušanas darbu vadītājs
+profession	kraušanas darbu stividors
+profession	kravas inspektors
+profession	kravas noformētājs
+profession	kravas pieņēmējs nosūtītājs
+profession	kravas automobiļa vadītājs
+profession	kravas pārkraušanas darbu organizators ostā
+profession	kravas vilcienu konduktors
+profession	kreditēšanas struktūrvienības vadītājs direktors
+profession	kredītiestāžu uzraudzības analītiķis
+profession	kredītiestāžu uzraudzības eksperts
+profession	kredītportfeļa administrators
+profession	kredītprojektu vadītājs
+profession	kredītu analītiķis
+profession	kredītu inspektors
+profession	kredītu piedziņas speciālists
+profession	kredītu reģistra eksperts
+profession	kriminosociologs
+profession	krimināllietu tehniķis
+profession	kristalogrāfijas ķīmiķis
+profession	krājuma glabātājs
+profession	krāsošanas operators
+profession	krāsošanas ķīmiķis
+profession	krāsu tehnologs
+profession	krāsvielu ķīmiķis
+profession	krāšņu podnieks
+profession	krūmu kultūru audzēšanas lauksaimnieks
+profession	krūmu kultūru audzēšanas laukstrādnieks
+profession	kultūras metodiķis
+profession	kultūras vadītājs
+profession	kultūras pasākumu organizators
+profession	kultūras pasākumu vadītājs
+profession	kultūras pasākumu tehniskais režisors
+profession	kultūras tūrisma gids
+profession	kultūras tūrisma organizators
+profession	kungu frizieris
+profession	kungu apģērbu drēbnieks
+profession	kurināmā sagādes un sadales dispečers
+profession	kustību režisors
+profession	kutera kapteinis
+profession	kutera elektromehāniķis
+profession	kuģa atslēdznieks
+profession	kuģa bocmanis
+profession	kuģa elektriķis
+profession	kuģa kapteinis
+profession	kuģa matrozis
+profession	kuģa motorists
+profession	kuģa pavārs
+profession	kuģa radists
+profession	kuģa signalizētājs
+profession	kuģa stjuarts
+profession	kuģa stūresvīrs
+profession	kuģa stūrmanis
+profession	kuģa tehniķis
+profession	kuģa vadītājs uz kuģiem līdz 500 bt piekrastes kuģošanā
+profession	kuģa armatūras remontatslēdznieks
+profession	kuģa celtņa operators
+profession	kuģa elektromehāniķis
+profession	kuģa galvenais elektromehāniķis
+profession	kuģa klāja virsnieks
+profession	kuģa radiooperators
+profession	kuģa saldēšanas iekārtu mehāniķis
+profession	kuģa sūkņu mašīnists
+profession	kuģa vecākais stjuarts
+profession	kuģa ārsts
+profession	kuģošanas drošības inspektors
+profession	kuģu aģents
+profession	kuģu instruktors
+profession	kuģu pārvaldnieks
+profession	kuģu takelētājs
+profession	kuģu tauvotājs
+profession	kuģu būves inženieris
+profession	kuģu būves mehāniķis
+profession	kuģu cauruļu atslēdznieks
+profession	kuģu dizaina inženieris
+profession	kuģu elektroautomātikas inženieris
+profession	kuģu katlu un krāšņu mūrnieks
+profession	kuģu mehānikas inženieris
+profession	kuģu motoru mehāniķis
+profession	kuģu remontatslēdznieks
+profession	kuģu satiksmes operators
+profession	kuģu tehnikas rasētājs
+profession	kuģu vadīšanas inženieris
+profession	kuģubūves atslēdznieks
+profession	kvalitātes inženieris
+profession	kvalitātes konsultants
+profession	kvalitātes vadītājs
+profession	kvalitātes tehniķis
+profession	kvalitātes un risku vadības struktūrvienības direktora vietnieks
+profession	kvalitātes un risku vadības struktūrvienības direktors
+profession	kvalitātes un risku vadības struktūrvienības vadītāja vietnieks
+profession	kvalitātes un risku vadības struktūrvienības vadītājs
+profession	kvalitātes vadības sistēmu konsultants
+profession	kvalitātes vadības sistēmu speciālists
+profession	kvantitatīvās analīzes tehniķis
+profession	kārtībnieks
+profession	kārtībnieks glābējs
+profession	kāršanas iekārtas operators
+profession	kāzu plānotājs
+profession	kūdras ieguves mašīnas mašīnists
+profession	kūdras ieguves palīgstrādnieks
+profession	laborants
+profession	lakotājs
+profession	leitnants
+profession	leksikogrāfs
+profession	lektors
+profession	lekālists
+profession	lidotājs
+profession	lietvedis
+profession	likvidators
+profession	lingvists
+profession	liriķis
+profession	locis
+profession	lodētājs
+profession	logopēds
+profession	lopkopis
+profession	lopkopējs
+profession	labiekārtošanas strādnieks
+profession	laboratorijas speciālists
+profession	laboratorijas vadītājs
+profession	laboratorijas dzīvnieku audzētājs
+profession	laboratorijas ārsts
+profession	laika un kustības pētījumu inženieris
+profession	laikrakstu pārdevējs
+profession	laivu izgatavotājs
+profession	laminēšanas operators
+profession	latviešu nedzirdīgo zīmju valodas tulks
+profession	lauksaimnieks
+profession	laukstrādnieks
+profession	lauksaimniecības bakteriologs
+profession	lauksaimniecības ekonomists
+profession	lauksaimniecības konsultants
+profession	lauksaimniecības organizators
+profession	lauksaimniecības padomnieks
+profession	lauksaimniecības statistiķis
+profession	lauksaimniecības enerģētikas inženieris
+profession	lauksaimniecības fermas strādnieks
+profession	lauksaimniecības mašīnu mehāniķis
+profession	lauksaimniecības mašīnu operators
+profession	lauksaimniecības mehānikas inženieris
+profession	lauksaimniecības palīgstrādnieks
+profession	lauksaimniecības tehnikas mehāniķis
+profession	lauksaimniecības tehnikas remontatslēdznieks
+profession	lauksaimniecības uzņēmuma vadītājs
+profession	lauku strādnieks
+profession	lauku attīstības speciālists
+profession	lauku elektromontieris
+profession	lauku tūrisma speciālists
+profession	lauku īpašuma apsaimniekotājs
+profession	ledus atjaunošanas mašīnas vadītājs
+profession	ledus ražošanas iekārtas operators
+profession	lekālu izklājējs
+profession	lentzāģa operators
+profession	leļļu meistars
+profession	leļļu teātra aktieris
+profession	licencēšanas eksperts
+profession	licencēšanas speciālists
+profession	licenču inspektors
+profession	lidlauka rajona lidojumu informācijas afis operators
+profession	lidlauka rajona lidojumu informācijas dienesta operators
+profession	lidojumu inženieris
+profession	lidojumu vadītājs
+profession	lidojumu nodrošināšanas inženieris
+profession	lidostas krāvējs
+profession	lidostas aviodrošības dienesta darbinieks
+profession	lidostas pasažieru apkalpošanas aģents
+profession	lidostu būvinženieris
+profession	liellopu lopkopis
+profession	liellopu audzēšanas lauksaimnieks
+profession	lietišķās matemātikas matemātiķis
+profession	lietišķās mākslas izstrādājumu modelētājs
+profession	lietišķās statistikas statistiķis
+profession	lietojumprogrammu izstrādātājs
+profession	lietuves metalurgs
+profession	lietvedības inspektors
+profession	lietvedības inspektors kasieris
+profession	lietvedības pārzinis
+profession	lietvedības sekretārs
+profession	lietvedības galvenais inspektors
+profession	lietvedības struktūrvienības direktora vietnieks
+profession	lietvedības struktūrvienības direktors
+profession	lietvedības struktūrvienības vadītāja vietnieks
+profession	lietvedības struktūrvienības vadītājs
+profession	liešanas iekārtas operators
+profession	lifta platformas operators
+profession	liftu elektromehāniķis
+profession	linu audzēšanas lauksaimnieks
+profession	linu audzēšanas laukstrādnieks
+profession	literārais redaktors
+profession	litogrāfijas rasētājs
+profession	locīšanas iekārtas operators
+profession	lodēšanas iekārtu operators
+profession	logu izgatavošanas operators
+profession	logu vitrīnu stiklu mazgātājs
+profession	lokmetinātājs metināšanā ar automātiskām iekārtām
+profession	lokmetinātājs metināšanā ar mehanizēto iekārtu aktīvās gāzes mag
+profession	lokmetinātājs metināšanā ar mehanizēto iekārtu aktīvās gāzes vidē
+profession	lokmetinātājs metināšanā ar mehanizēto iekārtu inertās gāzes mig
+profession	lokmetinātājs metināšanā ar mehanizēto iekārtu inertās gāzes vidē
+profession	lokmetinātājs metināšanā ar volframa elektrodu inertās gāzes tig
+profession	lokmetinātājs metināšanā ar volframa elektrodu inertās gāzes vidē
+profession	lokomotīves dzinēju inženieris
+profession	lokomotīvju norīkotājs
+profession	lokomotīvju saimniecības tehniķis
+profession	lokomotīvju vagonu depo priekšnieka vietnieks
+profession	lokomotīvju vagonu depo priekšnieks
+profession	lopkopības pārraugs
+profession	lopu kāvējs
+profession	loģistikas darbinieks
+profession	loģistikas direktors
+profession	loģistikas speciālists
+profession	loģistikas struktūrvienības vadītāja vietnieks
+profession	loģistikas struktūrvienības vadītājs
+profession	loģistikas vecākais speciālists
+profession	lāzermetinātājs
+profession	lāzergravēšanas operators
+profession	līmes sagatavošanas un formēšanas līnijas operators
+profession	līmēšanas iekārtas operators
+profession	līnijstrādnieks
+profession	līnijas dzelzceļa stacijas dežurants
+profession	līnijas dzelzceļa stacijas priekšnieks
+profession	līzinga speciālists
+profession	līzinga struktūrvienības direktors
+profession	līzinga struktūrvienības vadītājs
+profession	maiznieks
+profession	majors
+profession	malējs
+profession	manikīrs
+profession	mantzinis
+profession	masieris
+profession	matemātiķis
+profession	matrozis
+profession	matrozis motorists
+profession	mazgātājs
+profession	mašīnrakstītājs
+profession	mednieks
+profession	mehatroniķis
+profession	mehāniķis
+profession	mehāniķis uz kuģiem ar galveno dzinēja jaudu, mazāku par 750 kw
+profession	mehāniķis uz zvejas kuģiem ar galveno dzinēju jaudu, mazāku par 750 kw
+profession	meistara palīgs
+profession	meistars
+profession	metalurgs
+profession	meteorologs
+profession	metodiķis
+profession	metrologs
+profession	metāllējējs
+profession	mezglotājs
+profession	mežcirtējs
+profession	mežsargs
+profession	mežstrādnieks
+profession	mežzinis
+profession	miesassargs
+profession	miesnieks
+profession	mikologs
+profession	mineralogs
+profession	ministra padomnieks
+profession	ministra palīgs
+profession	ministra preses sekretārs
+profession	ministrs
+profession	misionārs
+profession	modelētājs
+profession	modists
+profession	montētājs
+profession	morfologs
+profession	mucinieks
+profession	multiplikators
+profession	muzejpedagogs
+profession	muzikologs
+profession	maizes cepšanas iekārtu operators
+profession	maizes un miltu konditorijas izstrādājumu speciālists
+profession	maiznīcas produkcijas ražošanas iekārtu operators
+profession	makroekonomikas analītiķis
+profession	maksājumu karšu administrators
+profession	maksājumu karšu speciālists
+profession	maksājumu karšu izgatavošanas speciālists
+profession	maksājumu karšu projektu vadītājs
+profession	maksājumu sistēmu eksperts
+profession	maksātnespējas procesa administrators
+profession	malkas sagādātājs
+profession	malkas skaldītājs
+profession	manuālais terapeits
+profession	marķēšanas iekārtas operators
+profession	maršruta pārraugs
+profession	maršrutu tīkla plānotājs
+profession	materiālu plānotājs
+profession	materiālu dizaina speciālists
+profession	materiālu normēšanas tehnologs
+profession	materiālu uzskaites grāmatvedis
+profession	matraču šuvējs
+profession	mazgāšanas operators
+profession	mazgāšanas līdzekļu ražošanas operators
+profession	mazgāšanas līdzekļu ķīmiķis
+profession	mazietilpīga kravas automobiļa vadītājs
+profession	mazumtirdzniecības aģents
+profession	mazumtirdzniecības komercdarbinieks
+profession	mazumtirdzniecības sagādnieks
+profession	mazumtirdzniecības preču iepircējs
+profession	mazumtirdzniecības veikala pārdevējs
+profession	mazumtirdzniecības veikala vadītāja vietnieks
+profession	mazumtirdzniecības veikala vadītājs
+profession	mašīnizšuvējs
+profession	mašīnbūves speciālists
+profession	mašīnbūves tehniķis
+profession	mašīnu un aparātu būves inženieris
+profession	mašīnu un aparātu būves tehnologs
+profession	medicīnas bakteriologs
+profession	medicīnas fiziķis
+profession	medicīnas konsultants
+profession	medicīnas laborants
+profession	medicīnas māsa
+profession	medicīnas patologs
+profession	medicīnas statistiķis
+profession	medicīnas fizikālo tehnoloģiju inženieris
+profession	medicīnas iekārtu inženieris
+profession	medicīnas vēsturnieks
+profession	medicīniskais pārstāvis
+profession	medicīniskās uzskaites un veselības aprūpes korektors
+profession	medicīniskās uzskaites un veselības aprūpes informācijas kodētājs
+profession	medību dzinējs
+profession	mehanizētās apstrādes projektēšanas inženieris
+profession	mehanizētās slaukšanas operators
+profession	mehatronikas inženieris
+profession	mehatronisku sistēmu tehniķis
+profession	mehānikas fiziķis
+profession	mehānikas inženieris
+profession	mehānikas konstruktors
+profession	mehānikas rasētājs
+profession	mehānikas tehnologs
+profession	mehānikas darbu kalkulētājs
+profession	mehāniskā transportlīdzekļa vadītājs
+profession	mehānismu mehāniķis
+profession	meliorācijas inženieris
+profession	meliorācijas būvtehniķis
+profession	metadatu redaktors
+profession	metadatu veidotājs
+profession	metalurģijas inženieris
+profession	metalurģijas tehniķis
+profession	metalurģijas ķīmiķis
+profession	metalurģiskās iekārtas celtņa operators
+profession	meteoroloģijas radiometrists
+profession	meteoroloģijas tehniķis
+profession	metināšanas tehnologs
+profession	metodikas eksperts
+profession	metodiskās struktūrvienības vadītājs
+profession	metožu tehniķis
+profession	metroloģijas inženieris
+profession	metroloģijas tehniķis
+profession	metālapstrādātājs
+profession	metālmākslinieks
+profession	metāla griezējs
+profession	metāla kausētājs
+profession	metāla lējējs
+profession	metāla presētājs
+profession	metāla rūdītājs
+profession	metāla apstrādes iekārtas operators
+profession	metāla gravēšanas operators
+profession	metāla griešanas operators
+profession	metāla izstrādājumu montētājs
+profession	metāla izstrādājumu restaurators
+profession	metāla izstrādājumu dizaina speciālists
+profession	metāla konstrukciju atslēdznieks
+profession	metāla krāsošanas operators
+profession	metāla liekšanas iekārtas operators
+profession	metāla mēbeļu montieris
+profession	metāla pulverizēšanas operators
+profession	metāla pūšamo instrumentu tehniķis
+profession	metāla smilšstrūklas iekārtas operators
+profession	metāla stiepšanas iekārtas operators
+profession	metāla zāģēšanas operators
+profession	metāla štancētājs
+profession	metāla žāvēšanas iekārtas operators
+profession	metālapstrādes darbgaldu operators
+profession	metālapstrādes iekārtu mehāniķis
+profession	metālapstrādes iekārtu remontatslēdznieks
+profession	metālapstrādes tehnoloģisko līniju operators
+profession	metāllējumu apcirtējs
+profession	metāllējumu izsitējs
+profession	metāllējumu veidotājs
+profession	metālmateriālu metinātājs
+profession	metālmateriālu dizaina speciālists
+profession	metālraudzes tehniķis
+profession	meža stādītājs
+profession	meža tehniķis
+profession	meža tehnologs
+profession	meža ugunsdzēsējs
+profession	meža mašīnu mehāniķis
+profession	meža mašīnu operators
+profession	meža ugunsdzēsības stacijas vadītājs
+profession	meža ugunsnovērošanas torņa dežurants
+profession	meža un pļavas veltes vācējs
+profession	mežizstrādes meistars
+profession	mežkopības tehniķis
+profession	mežsaimniecības inženieris
+profession	mežsaimniecības konsultants
+profession	mežsaimniecības laborants
+profession	mežsaimniecības padomnieks
+profession	mežsaimniecības strādnieks
+profession	mežsaimniecības tehniķis
+profession	mežsaimniecības tehnologs
+profession	mežģīņu darinātājs
+profession	mijieskaita norēķinu operators
+profession	mikoloģijas botāniķis
+profession	mikrobiologa palīgs
+profession	mikrobiologs
+profession	mikrofotogrāfs
+profession	mikropaleontologs
+profession	mikroautobusa vadītājs
+profession	mikrobioloģijas ārsts
+profession	mikroelektronikas iekārtu montieris
+profession	mikrofona operators
+profession	mikropigmentācijas speciālists
+profession	militārais paramediķis
+profession	minibāru pārzinis
+profession	ministra biroja vadītājs
+profession	ministru prezidenta biedra padomnieks
+profession	ministru prezidenta biedra palīgs
+profession	ministru prezidenta biedra preses sekretārs
+profession	ministru prezidenta biedra sekretariāta vadītājs
+profession	ministru prezidenta biedrs
+profession	ministru prezidenta padomnieks
+profession	ministru prezidenta palīgs
+profession	ministru prezidenta sekretārs
+profession	ministru prezidenta biroja vadītājs
+profession	ministru prezidenta preses sekretāra palīgs
+profession	ministru prezidenta preses sekretārs
+profession	ministru prezidents
+profession	ministru kabineta pārstāvis starptautiskajās cilvēktiesību institūcijās
+profession	ministru kabineta preses sekretārs
+profession	mizošanas iekārtas operators
+profession	modes dizainers
+profession	modeļu izgatavotājs
+profession	modeļu apavu izgatavotājs
+profession	molekulārfiziķis
+profession	molekulārās bioloģijas biologs
+profession	montāžas darbu atslēdznieks
+profession	montāžu uzraugs
+profession	monumentāli dekoratīvās tēlniecības objektu restaurators
+profession	monumentālo gleznu restaurators
+profession	monētu tirdzniecības aģents
+profession	morzes alfabēta operators
+profession	motocikla vadītājs
+profession	motociklu mehāniķis
+profession	motoru inženieris
+profession	motoru mehāniķis
+profession	motorzāģa vadītājs
+profession	mozaīkas klājējs
+profession	muitas brokeris
+profession	muitas eksperts
+profession	muitas uzraugs
+profession	muitas iestādes struktūrvienības vadītājs
+profession	muitas maiņas vadītājs
+profession	muitošanas speciālists
+profession	multimediju dizaina speciālists
+profession	mutes, sejas un žokļu ķirurgs
+profession	muzeja izstāžu un ekspozīciju zāļu uzraugs
+profession	muzikālo priekšnesumu aģents
+profession	mācītājs
+profession	mājkalpotājs
+profession	mājsaimniece
+profession	mākslinieks
+profession	mākslinieks inscenētājs
+profession	māsas palīgs
+profession	mācību centra inspektors
+profession	mācību centra pasniedzējs
+profession	mācību centra priekšnieka vietnieks
+profession	mācību centra priekšnieks priekšnieks
+profession	mācību centra vadītāja vietnieks
+profession	mācību centra vadītājs
+profession	mācību centra daļas priekšnieks
+profession	mācību centra vecākais pasniedzējs
+profession	mācību kursu vadītājs
+profession	mācību projekta vadītājs
+profession	mājas pārvaldnieks
+profession	mājas lapas administrators
+profession	mājdzīvnieku audzēšanas lauksaimnieks
+profession	mājputnu audzēšanas lauksaimnieks
+profession	mājputnu audzēšanas laukstrādnieks
+profession	mākslas eksperts
+profession	mākslas fotogrāfs
+profession	mākslas keramiķis
+profession	mākslas komercdarbinieks
+profession	mākslas modelis
+profession	mākslas terapeits
+profession	mākslas vēsturnieks
+profession	mākslas pasākumu organizators
+profession	mākslas terapijas speciālists
+profession	mākslinieciskais vadītājs
+profession	mākslīgo būvju meistars
+profession	mākslīgo būvju strādnieks
+profession	mākslīgo būvju būvstrādnieks
+profession	mākslīgo būvju palīgstrādnieks
+profession	mākslīgās apsēklošanas tehniķis
+profession	māla presētājs
+profession	māla ražošanas operators
+profession	mērnieks
+profession	mēbeļu dizainers
+profession	mēbeļu galdnieks
+profession	mēbeļu tapsētājs
+profession	mēbeļu dizaina speciālists
+profession	mēbeļu izgatavošanas operators
+profession	mēbeļu, kokgriezumu restaurators
+profession	mēriekārtu tehniķis
+profession	mērinstrumentu elektronikas inženieris
+profession	mērniecības būvtehniķis
+profession	mīcītājs
+profession	mīklas gatavotājs
+profession	mīksto rotaļlietu izgatavotājs
+profession	mūks
+profession	mūrnieks
+profession	mūziķis
+profession	mūķene
+profession	mūzikas skolotājs
+profession	mūzikas terapeits
+profession	mūzikas instrumentu izgatavotājs
+profession	mūzikas instrumentu labotājs
+profession	mūzikas instrumentu skaņotājs
+profession	namdaris
+profession	narkologs
+profession	nefrologs
+profession	neirologs
+profession	neiropāts
+profession	neiroķirurgs
+profession	nematologs
+profession	neonatologs
+profession	novērtētājs
+profession	naftas inženieris
+profession	naftas tehniķis
+profession	naftas avāriju tehnologs
+profession	naftas produktu lējējs
+profession	naftas produktu pieņēmējs
+profession	naftas produktu pārsūknēšanas operators
+profession	naftas un dabasgāzes ķīmijas inženieris
+profession	naftas un gāzes atradņu urbšanas operators
+profession	naftas un gāzes urbumu cementētājs
+profession	naftas un gāzes urbumu urbējs
+profession	naftas ķīmiķis
+profession	nagu kopšanas speciālists
+profession	namu apsaimniekotājs
+profession	namu pārvaldnieks
+profession	namu pārzinis
+profession	narkoloģijas māsa
+profession	naudas apstrādātājs
+profession	naudas mainītājs
+profession	naudas sadalītājs
+profession	naudas apgrozības analītiķis
+profession	naudas automātu kontrolkasieris
+profession	naudas izmaksas kasieris
+profession	naudas plūsmas analītiķis
+profession	naudas pārvedumu struktūrvienības vadītājs
+profession	neatliekamās medicīnas ārsts
+profession	neatliekamās palīdzības māsa
+profession	neatliekamās palīdzības sanitārs
+profession	neatliekamās palīdzības ārsta palīgs
+profession	neatliekamās palīdzības ārsts
+profession	nedatorizēto sistēmu tehniķis
+profession	neiropatologs
+profession	neiroloģijas fiziologs
+profession	neiroloģijas māsa
+profession	neiroķirurģijas māsa
+profession	nekustamā īpašuma aģents
+profession	nekustamā īpašuma ekonomists
+profession	nekustamā īpašuma pārdevējs
+profession	nekustamā īpašuma pārvaldnieks
+profession	nekustamā īpašuma speciālists
+profession	nekustamā īpašuma vērtētāja asistents
+profession	nekustamā īpašuma vērtētājs
+profession	nekustamā īpašuma darījumu starpnieks
+profession	nekustamā īpašuma tiesiskās reģistrācijas speciālists
+profession	neorganisko vielu ķīmiķis
+profession	nepārtrauktas darbības iekārtas operators
+profession	neredzīgo terapeits
+profession	nodarbinātības analītiķis
+profession	nodarbinātības aģents
+profession	nodarbinātības organizators
+profession	nodokļu administrators
+profession	nodokļu ekonomists
+profession	nodokļu inspektors
+profession	nodokļu konsultants
+profession	noformēšanas mākslinieks
+profession	noliktavas darbinieks
+profession	noliktavas pārzinis
+profession	noliktavas strādnieks
+profession	noliktavu ekspeditors
+profession	nomas punkta darbinieks
+profession	nometnes direktora vietnieks
+profession	nometnes direktors
+profession	nometnes priekšnieks
+profession	nometnes pārvaldnieks
+profession	nometnes vadītāja vietnieks
+profession	nometnes vadītājs
+profession	nomnieku koordinators
+profession	norēķinu administrators
+profession	norēķinu karšu pārzinis
+profession	norēķinu karšu izpārdošanas pārzinis
+profession	notekūdeņu rūpnieciskās pārstrādes operators
+profession	novada pašvaldības domes deputāts
+profession	novada pašvaldības domes priekšsēdētāja vietnieks
+profession	novada pašvaldības domes priekšsēdētājs
+profession	nozares padomnieks
+profession	nozares politikas un politikas plānošanas struktūrvienības direktora vietnieks
+profession	nozares politikas un politikas plānošanas struktūrvienības direktors
+profession	nozares politikas un politikas plānošanas struktūrvienības vadītāja vietnieks
+profession	nozares politikas un politikas plānošanas struktūrvienības vadītājs
+profession	oaw
+profession	oftalmologs
+profession	ogļdeģis
+profession	okeanogrāfs
+profession	okeanologs
+profession	okultists
+profession	onkologs
+profession	onkologs ķīmijterapeits
+profession	optiķis
+profession	optometrists
+profession	ornitologs
+profession	ortodonts
+profession	ortofonists
+profession	ortooptiķis
+profession	ortoēpists
+profession	osteorefleksoterapeits
+profession	otolaringologs
+profession	obligāciju starpnieks
+profession	ofseta iespiedēja palīgs
+profession	ofseta iespiedējs
+profession	oftalmoloģijas māsa
+profession	okeanogrāfijas tehniķis
+profession	oksidēšanas operators
+profession	olu ražošanas lauksaimnieks
+profession	olu šķirošanas, iesaiņošanas, marķēšanas un iepakošanas iekārtu operators
+profession	onkoloģijas ginekologs
+profession	onkoloģijas māsa
+profession	onkoloģijas ķirurgs
+profession	onkoloģiskās aprūpes māsa
+profession	operas vokālists
+profession	operas trupas vadītājs
+profession	operatīvais dežurants
+profession	operatīvā dežuranta palīgs
+profession	operatīvā dežuranta vietnieks
+profession	operāciju māsa
+profession	operāciju sistēmu inženieris
+profession	operāciju sistēmu tehniķis
+profession	optikas fiziķis
+profession	optikas ierīču meistars
+profession	organisko vielu ķīmiķis
+profession	organizācijas psihologs
+profession	ortopēdijas tehniķis
+profession	ortopēdijas instrumentu meistars
+profession	ortopēdisko apavu izgatavotājs
+profession	orķestra diriģents
+profession	orķestra koncertmeistars
+profession	orķestra vadītājs
+profession	ostas kapteinis
+profession	ostas uzraugs
+profession	ostas mehānismu mehāniķis
+profession	ostas mehānismu mehānikas inženieris
+profession	otrais mehāniķis uz kuģiem ar galveno dzinēju jaudu 3000 kw un lielāku
+profession	otrais mehāniķis uz kuģiem ar galveno dzinēju jaudu, mazāku par 3000 kw
+profession	otrais mehāniķis uz zvejas kuģiem ar galveno dzinēju jaudu 3000 kw un lielāku
+profession	otrais mehāniķis uz zvejas kuģiem ar galveno dzinēju jaudu, mazāku par 3000 kw
+profession	otrais sekretārs
+profession	otrreizējo izejvielu šķirotājs
+profession	padomnieks
+profession	paleontologs
+profession	paradontologs
+profession	parazitologa palīgs
+profession	parazitologs
+profession	parfimērs
+profession	pasniedzējs
+profession	pastnieks
+profession	paszinis
+profession	patentvedis
+profession	patologs
+profession	patruļnieks
+profession	pavadonis
+profession	pavāra palīgs
+profession	pavārs
+profession	pedagoga palīgs
+profession	pedagogs
+profession	pedagogs karjeras konsultants
+profession	pedaudiologs
+profession	pediatrs
+profession	pedikīrs
+profession	penologs
+profession	piegriezējs
+profession	pilots
+profession	pinējs
+profession	pirtnieks
+profession	plakātists
+profession	plostnieks
+profession	plānotājs
+profession	pneimonologs
+profession	podnieks
+profession	podologs
+profession	politologs
+profession	pomologs
+profession	prezidenta vietnieks
+profession	prezidents
+profession	prečzinis
+profession	priekšnieka palīgs
+profession	priekšnieka vietnieks
+profession	priekšnieka dežurējošais palīgs
+profession	priekšsēdētāja biedra palīgs
+profession	priekšsēdētāja vietnieks
+profession	priekšsēdētājs
+profession	priekš­nieks
+profession	priesteris
+profession	producents
+profession	profesors
+profession	programmētājs
+profession	prokurora palīgs
+profession	prokurors
+profession	prokūrists
+profession	prorektors
+profession	prāvests
+profession	psihiatrs
+profession	psihologa asistents
+profession	psihologs
+profession	psihologs konsultants
+profession	psihoterapeits
+profession	pulkvedis jūras kapteinis
+profession	pulkvežleitnants
+profession	pulētājs
+profession	putnkopis
+profession	pvc un alumīnija logu un durvju izgatavošanas operators
+profession	pabalstu inspektors
+profession	pacēlāja mašīnists
+profession	padomes loceklis
+profession	padomes priekšsēdētājs
+profession	padomes sekretārs
+profession	padomes vadītājs
+profession	pagaidu pilnvarotais lietvedis
+profession	pagarinātās dienas grupas skolotājs
+profession	pakalpojumu struktūrvienības direktors
+profession	pakalpojumu struktūrvienības vadītājs
+profession	paklāju audējs
+profession	palīgstrādnieks
+profession	palīgšuvējs
+profession	pamatdarbības struktūrvienības direktora vietnieks
+profession	pamatdarbības struktūrvienības direktora noliktavās
+profession	pamatdarbības struktūrvienības direktors
+profession	pamatdarbības struktūrvienības komandiera vietnieks
+profession	pamatdarbības struktūrvienības komandieris
+profession	pamatdarbības struktūrvienības priekšnieka vietnieks
+profession	pamatdarbības struktūrvienības priekšnieks
+profession	pamatdarbības struktūrvienības pārvaldnieka vietnieks
+profession	pamatdarbības struktūrvienības pārvaldnieks
+profession	pamatdarbības struktūrvienības vadītāja vietnieks
+profession	pamatdarbības struktūrvienības vadītāja noliktavās
+profession	pamatdarbības struktūrvienības vadītāja viesnīcās
+profession	pamatdarbības struktūrvienības vadītājs
+profession	pamatdarbības struktūrvienības noliktavās
+profession	pamatdarbības struktūrvienības vadītāja vietnieks
+profession	pamatdarbības struktūrvienības vadītājs
+profession	pamatdarbības struktūrvienības viesnīcās
+profession	pamatu veltņa vadītājs
+profession	pansijas direktora vietnieks
+profession	pansijas direktors
+profession	pansijas pārvaldnieks
+profession	pansijas vadītāja vietnieks
+profession	pansijas vadītājs
+profession	papīra tehnologs
+profession	papīra izstrādājumu ražošanas operators
+profession	papīra masas pārstrādāšanas operators
+profession	papīra masas rafinēšanas operators
+profession	papīra masas ražošanas iekārtas operators
+profession	papīra masas sijāšanas operators
+profession	papīra masas vārīšanas operators
+profession	papīra un kartona piegriešanas operators
+profession	papīra žāvēšanas iekārtas operators
+profession	paraugu noņēmējs
+profession	parka dārznieks
+profession	parketa izgatavotājs
+profession	parketa klājējs
+profession	parlamentārais sekretārs
+profession	parāda piedzinējs
+profession	parādzīmju pārdevējs
+profession	parūku meistars
+profession	pasažieru vilciena konduktors
+profession	pasažieru vilciena kontrolieris
+profession	pasažieru vilciena elektromehāniķis
+profession	pasažieru vilciena kontrolieris
+profession	pasažieru vilciena revidents
+profession	pasta darbinieks
+profession	pasta kurjers
+profession	pasta nosūtītājs
+profession	pasta operators
+profession	pasta speciālists
+profession	pasta darba organizācijas instruktors
+profession	pasta ekspluatācijas metodiķis
+profession	pasta ekspluatācijas struktūrvienības vadītājs
+profession	pasta nodaļas priekšnieka vietnieks
+profession	pasta nodaļas priekšnieks
+profession	pasta tehniskās struktūrvienības vadītājs
+profession	pasta vērtszīmju un filatēlijas struktūrvienības vadītāja vietnieks
+profession	pasta vērtszīmju un filatēlijas struktūrvienības vadītājs
+profession	pasta šķirotājs
+profession	pastmarku pārdevējs
+profession	pastmarku bāzes vadītāja vietnieks
+profession	pastmarku bāzes vadītājs
+profession	pastorālais konsultants
+profession	pasūtījumu pieņemšanas operators
+profession	patentu aģents
+profession	patentu un izgudrojumu inženieris
+profession	patoloģijas tehniķis
+profession	pazemes darbu būvtehniķis
+profession	pazemes darbu mehānismu un iekārtu mehāniķis
+profession	pazemes kabeļu licējs
+profession	pašgājēja iekrāvēja vadītājs
+profession	pašgājēja transporta līdzekļu vadītājs
+profession	pašgājējmehānismu mehānikas inženieris
+profession	pašizmaksas rēķinātājs
+profession	paškrāvēja automobiļa vadītājs
+profession	pašvaldības izpilddirektora vietnieks
+profession	pašvaldības izpilddirektors
+profession	pašvaldības sekretārs
+profession	pašvaldības administrācijas izpildsekretārs
+profession	pašvaldības finanšu stabilizācijas procesa uzraugs
+profession	pašvaldības iestādes priekšnieka vietnieks
+profession	pašvaldības iestādes priekšnieks
+profession	pašvaldības iestādes vadītāja vietnieks
+profession	pašvaldības iestādes vadītājs
+profession	pašvaldības pamatdarbības struktūrvienības direktora vietnieks
+profession	pašvaldības pamatdarbības struktūrvienības priekšnieka vietnieks
+profession	pašvaldības pamatdarbības struktūrvienības vadītāja vietnieks
+profession	pašvaldības policijas inspektors
+profession	pašvaldības policijas kārtībnieks
+profession	pašvaldības policijas civilās aizsardzības speciālists
+profession	pašvaldības policijas civilās aizsardzības vecākais speciālists
+profession	pašvaldības policijas jaunākais inspektors
+profession	pašvaldības policijas jaunākais kārtībnieks
+profession	pašvaldības policijas pamatdarbības struktūrvienības priekšnieka vietnieks
+profession	pašvaldības policijas pamatdarbības struktūrvienības priekšnieks
+profession	pašvaldības policijas pamatdarbības struktūrvienības vadītāja vietnieks
+profession	pašvaldības policijas pamatdarbības struktūrvienības vadītājs
+profession	pašvaldības policijas vecākais inspektors
+profession	pašvaldības policijas vecākais kārtībnieks
+profession	peldošo līdzekļu dienesta galvenais elektromehāniķis
+profession	peldošā celtņa meistars
+profession	penitenciārā un probācijas darba speciālists
+profession	penosociologs
+profession	pensiju inspektors
+profession	pensiju un pabalstu inspektors
+profession	perifērijas iekārtu operators
+profession	peritoneālās dialīzes māsa
+profession	personāla direktors
+profession	personāla inspektors
+profession	personāla speciālists
+profession	personāla vadītājs
+profession	personāla apmācības speciālists
+profession	personāla atlases speciālists
+profession	personāla lietu pārzinis
+profession	personāla mācību koordinētājs
+profession	personāla mācību vadītājs
+profession	personāla sagatavošanas inženieris
+profession	personāla struktūrvienības direktors
+profession	personāla struktūrvienības vadītājs
+profession	personāla uzskaites darbinieks
+profession	personālvadības struktūrvienības direktors
+profession	personālvadības struktūrvienības vadītājs
+profession	pestīšanas armijas darbinieks
+profession	piegriešanas izklātņu veidotājs
+profession	pieminekļu aizsardzības inspektors
+profession	piena produktu pārstrādātājs
+profession	piena produktu ražošanas meistars
+profession	piena produktu ražošanas iekārtu operators
+profession	piena un piena produktu tehnologa palīgs
+profession	piensaimniecības bakteriologs
+profession	pilnvarotais lietvedis
+profession	pirmais sekretārs
+profession	pirmsskolas iestāžu un skolu māsa
+profession	pirmsskolas izglītības metodiķis
+profession	pirmsskolas izglītības skolotājs
+profession	pirmsskolas izglītības mūzikas skolotājs
+profession	pirmsskolas izglītības sporta skolotājs
+profession	pirts meistara palīgs
+profession	pirts meistars
+profession	plakātu līmētājs
+profession	plakātu dizaina speciālists
+profession	planiera pilots
+profession	planiera instruktors
+profession	plastikāta pudeļu izpūšanas operators
+profession	plastikāta un alumīnija logu un durvju izgatavošanas operators
+profession	plastiskais ķirurgs
+profession	plastmasas inženieris
+profession	plastmasas metinātājs
+profession	plastmasas tehnologs
+profession	plastmasas izstrādājumu komplektētājs
+profession	plastmasas karstās presēšanas operators
+profession	plostu sējējs
+profession	plānošanas inženieris
+profession	plānošanas tehniķis
+profession	plēvju līmējamās iekārtas iespiedmašīnas operators
+profession	podiatrijas māsa
+profession	policijas inspektors
+profession	poligrāfijas ražošanas tehniķis
+profession	poligrāfijas struktūrvienības vadītāja vietnieks
+profession	poligrāfijas struktūrvienības vadītājs
+profession	poligrāfisko iekārtu mehāniķis
+profession	polihroma koka, zeltījumu restaurators
+profession	polimēru tehnologs
+profession	politikas filozofs
+profession	politikas vēsturnieks
+profession	politoģeogrāfs
+profession	pomoloģijas tehniķis
+profession	porcelāna apgleznotājs
+profession	posma inženieris
+profession	praktiskais psihologs
+profession	prasību inspektors
+profession	prasību konsultants
+profession	preses operators
+profession	preses sekretārs
+profession	presēšanas iekārtas operators
+profession	preču demonstrētājs
+profession	preču iepircējs
+profession	preču iznēsātājs
+profession	preču izvietotājs
+profession	preču kasieris
+profession	preču piegādātājs
+profession	preču ielas pārdevējs
+profession	priekšvērpšanas iekārtas operators
+profession	prodekāns
+profession	procesu kvalitātes vadības inženieris
+profession	produkcijas kontrolieris
+profession	produkcijas noņēmējs
+profession	produkcijas pieņēmējs
+profession	produkcijas drošuma inspektors
+profession	produkcijas kvalitātes inspektors
+profession	produkcijas no mašīnas
+profession	produkta dizaina speciālists
+profession	produktu dizainers
+profession	produktu speciālists
+profession	profesiju psihologs
+profession	profesiju izvēles konsultants
+profession	profesionālais veselības aprūpes kapelāns
+profession	profesionāls sportists
+profession	profesionālās augstākās izglītības kursa vadītājs
+profession	profesionālās augstākās izglītības programmas vadītājs
+profession	profesionālās ievirzes izglītības skolotājs
+profession	profesionālās izglītības skolotājs
+profession	profesionālās vidusskolas vadītājs
+profession	programmu direktors
+profession	programmu vadītājs
+profession	programmvadības kokapstrādes darbgaldu operators
+profession	programmēšanas inženieris
+profession	programmēšanas tehniķis
+profession	projekta koordinators
+profession	projekta vadītāja asistents
+profession	projekta vadītājs
+profession	projektu asistents
+profession	projektēšanas inženieris
+profession	protokola speciālists
+profession	protēžortopēds
+profession	protēžu meistars
+profession	protēžu pielāgotājs
+profession	proves noteicējs
+profession	psihiatrijas māsa
+profession	psihofiziologs
+profession	pudeļu uzpildes operators
+profession	pulka komandiera vietnieks
+profession	pulka komandieris
+profession	pulksteņmeistars
+profession	pusvadītāju aparātu būves iestatītājs
+profession	pusvadītāju aparātu būves operators
+profession	pusvadītāju elektronikas inženieris
+profession	pusvadītāju elektronikas tehniķis
+profession	puķkopības tehniķis
+profession	puķu audzētājs
+profession	pārdevēja palīgs
+profession	pārdevējs konsultants
+profession	pārstāvis starptautiskajā organizācijā
+profession	pārvaldnieka vietnieks
+profession	pārvaldnieks
+profession	pārzinis
+profession	pārceltuves konduktors
+profession	pārdošanas speciālists
+profession	pārdošanas vadītājs
+profession	pārkodēšanas operators
+profession	pārraides iekārtas operators
+profession	pārsegu/ telšu izgatavotājs
+profession	pārskatu statistiķis
+profession	pārtikas kvalitātes speciālists
+profession	pārtikas preču starpnieks
+profession	pārtikas produktu kvalitātes inspektora palīgs
+profession	pārtikas produktu pārstrādes speciālists
+profession	pārtikas produktu ražošanas operators
+profession	pārtikas produktu ražošanas tehniķis
+profession	pārtikas rūpniecības bakteriologs
+profession	pārtikas un dzērienu tehnologa palīgs
+profession	pārtikas un dzērienu tehnologs
+profession	pārtikas ķīmiķis
+profession	pārvaldes direktora vietnieks
+profession	pārvaldes direktors
+profession	pārvaldes priekšnieka vietnieks
+profession	pārvaldes priekšnieks
+profession	pārvaldes sekretārs
+profession	pārvaldes vadītāja vietnieks
+profession	pārvaldes vadītājs
+profession	pāļdziņa vadītājs
+profession	pētnieks
+profession	pērlīšu izstrādājumu izgatavotājs
+profession	pētniecības struktūrvienības direktors
+profession	pētniecības struktūrvienības vadītājs
+profession	pūšaminstrumentu mūziķis
+profession	rabīns
+profession	radiogrāfers
+profession	radiologa asistents
+profession	radiologs
+profession	radiometeorologs
+profession	radiometrists
+profession	rakstnieks
+profession	rakstvedis
+profession	rasētājs
+profession	ratiņstūmējs
+profession	ratnieks
+profession	redaktors
+profession	referents
+profession	rehabilitologs
+profession	reimatologs
+profession	reitterapeita asistents
+profession	reitterapeits
+profession	rektors
+profession	rekvizitors
+profession	remontatslēdznieks
+profession	reportieris
+profession	restauratora asistents
+profession	restaurators
+profession	restaurētājs
+profession	revidents
+profession	rezidents
+profession	reģistrators
+profession	reģistrētājs
+profession	režisora asistents
+profession	rotkalis
+profession	radara elektronikas tehniķis
+profession	radara komunikāciju inženieris
+profession	radara telekomunikāciju tehniķis
+profession	radio diktors
+profession	radio mehāniķis
+profession	radio tehniķis
+profession	radio un televīzijas intervētājs
+profession	radio un televīzijas komentētājs
+profession	radio un televīzijas iekārtu mehāniķis
+profession	radioastronoms
+profession	radioelektroniķis
+profession	radioaktīvo atkritumu pārstrādes operators
+profession	radioaktīvo minerālu metalurgs
+profession	radioaktīvo vielu ķīmiķis
+profession	radioaparatūras montieris
+profession	radioelektronikas inženieris
+profession	radioiekārtas vecākais tehniķis
+profession	radiokontroles punkta operators
+profession	radiolokācijas inženieris
+profession	radiolokācijas operators
+profession	radiolokācijas tehniķis
+profession	radiolokācijas un radionavigācijas inženieris
+profession	radiolokācijas un radionavigācijas tehniķis
+profession	radiolokācijas un radionavigācijas iekārtu mehāniķis
+profession	radioloģijas fiziķis
+profession	radioloģijas ķīmiķis
+profession	radionavigācijas inženieris
+profession	radionavigācijas operators
+profession	radionavigācijas tehniķis
+profession	radiosakaru inženieris
+profession	radiouzveduma direktors
+profession	raudzes noteicējs
+profession	raudzēšanas tehnologs
+profession	ražošanas brigadieris
+profession	ražošanas direktors
+profession	ražošanas dispečers
+profession	ražošanas farmaceits
+profession	ražošanas inženieris
+profession	ražošanas kontrolieris
+profession	ražošanas plānotājs
+profession	ražošanas psihologs
+profession	ražošanas tehniķis
+profession	ražošanas vadītājs
+profession	ražošanas iekārtas operators
+profession	ražošanas maiņas vadītājs
+profession	ražošanas sagatavošanas inženieris
+profession	ražošanas vadības organizācijas inženieris
+profession	reaktora operators
+profession	reaktīvo dzinēju inženieris
+profession	reaktīvo dzinēju mehāniķis
+profession	realizācijas aģents
+profession	refrižeratorsekciju mehāniķis
+profession	reklamāciju struktūrvienības vadītāja vietnieks
+profession	reklamāciju struktūrvienības vadītājs
+profession	reklāmas aģents
+profession	reklāmas konsultants
+profession	reklāmas modelis
+profession	reklāmas speciālists
+profession	reklāmas vadītājs
+profession	reklāmas komercdarbības pakalpojumu speciālists
+profession	reklāmas komercpakalpojumu pārdevējs
+profession	reklāmas pakalpojumu komercdarbinieks
+profession	reklāmas struktūrvienības direktora vietnieks
+profession	reklāmas struktūrvienības direktors
+profession	reklāmas struktūrvienības vadītāja vietnieks
+profession	reklāmas struktūrvienības vadītājs
+profession	reklāmas un tirgvedības projektu plānotājs
+profession	rekreācijas speciālists
+profession	releju aizsardzības un automātikas inženieris
+profession	remontstrādnieks
+profession	remontdarbu dispečers
+profession	rentgenoloģijas un radioloģijas māsa
+profession	rentgenstaru iekārtas operators
+profession	reproiekārtas operators
+profession	republikas pilsētas pašvaldības domes deputāts
+profession	republikas pilsētas pašvaldības domes priekšsēdētāja vietnieks
+profession	republikas pilsētas pašvaldības domes priekšsēdētājs
+profession	restorāna direktora vietnieks
+profession	restorāna direktors
+profession	restorāna pārvaldnieks
+profession	restorāna vadītāja vietnieks
+profession	restorāna vadītājs
+profession	restorāna pakalpojumu komercdarbinieks
+profession	restorānu pakalpojumu speciālists
+profession	rezervuāra operators
+profession	rezervāta uzraugs
+profession	reģiona vadītājs
+profession	reģiona attīstības padomes loceklis
+profession	reģiona attīstības padomes priekšsēdētājs
+profession	reģiona iestādes vecākais
+profession	režīma uzraugs
+profession	riepu tehnologs
+profession	riepu apstrādes operators
+profession	riepu restaurācijas operators
+profession	riska analītiķis
+profession	risku vadības speciālists
+profession	ritošā sastāva atslēdznieks
+profession	ritošā sastāva ekipētājs
+profession	ritošā sastāva pieņēmējs
+profession	robota operators
+profession	robotu inženieris
+profession	robotu tehniķis
+profession	robotu uzraugs
+profession	rokas mma
+profession	rokas lokmetinātājs
+profession	rokas ķirurgs
+profession	rokdarbu modelētājs
+profession	rokrakstu, dokumentu, grāmatu restaurators
+profession	rotējošās krāsns operatora palīgs
+profession	rotējošās krāsns operators
+profession	runas terapeits
+profession	rēķinvedis
+profession	rīkotājdirektors
+profession	rūdas un metāla kausēšanas krāsns operators
+profession	rūpniecisko iekārtu montieris
+profession	rūpniecisko iekārtu un rīku inženieris
+profession	rūpniecisko iekārtu un rīku mehāniķis
+profession	rūpniecisko mašīnu un darbarīku mehānikas inženieris
+profession	rūpniecības bakteriologs
+profession	rūpniecības komercdarbinieks
+profession	rūpniecības sociologs
+profession	rūpniecības projektēšanas inženieris
+profession	rūpnīcas katlu kurinātājs
+profession	sagādnieks
+profession	sanitārs
+profession	santehniķis
+profession	scenogrāfs
+profession	scenārists
+profession	seglinieks
+profession	seismologs
+profession	sekretāra biedra palīgs
+profession	sekretāra palīgs
+profession	sekretārs
+profession	sekretārs – konsultants
+profession	seksologs, seksopatologs
+profession	semantiķis
+profession	senatora palīgs
+profession	senators
+profession	seržants
+profession	signalizētājs
+profession	sinoptiķis
+profession	sistemātiķis
+profession	skolotāja palīgs
+profession	skolotājs logopēds
+profession	skolotājs mentors
+profession	skursteņslauķis
+profession	skārdnieks
+profession	slaucējs
+profession	sludinātājs
+profession	slīpētājs
+profession	smirģelētājs
+profession	sociologs
+profession	sociālpatologs
+profession	solists
+profession	spa administrators
+profession	spa meistars
+profession	spa vadītājs
+profession	speciālists bērnu tiesību aizsardzības jautājumos
+profession	speciālists mājokļu jautājumos
+profession	speciālists zemes nomas jautājumos
+profession	spolētājs
+profession	spridzinātājs
+profession	starpnieks
+profession	statistiķa palīgs
+profession	statistiķis
+profession	stenogrāfs
+profession	stereotipists
+profession	stiegrotājs
+profession	stiklinieks
+profession	stilists
+profession	stratogrāfs
+profession	stropētājs
+profession	stūrmanis
+profession	sudrabkalis
+profession	suflieris
+profession	svērājs
+profession	sabiedrisko attiecību speciālists
+profession	sabiedrisko attiecību vadītājs
+profession	sabiedrisko attiecību struktūrvienības direktora vietnieks
+profession	sabiedrisko attiecību struktūrvienības direktors
+profession	sabiedrisko attiecību struktūrvienības vadītāja vietnieks
+profession	sabiedrisko attiecību struktūrvienības vadītājs
+profession	sabiedrisko tualešu apkopējs
+profession	sabiedriskā transporta organizators
+profession	sabiedriskās kārtības sargs
+profession	sabiedrības sekretārs
+profession	sabiedrības vēsturnieks
+profession	sabiedrības pārvaldes speciālists
+profession	sabiedrības veselības analītiķis
+profession	sabiedrības veselības metodiķis
+profession	sabiedrības veselības māsa
+profession	sabiedrības veselības organizators
+profession	sabiedrības veselības speciālists
+profession	sabiedrības veselības ārsts
+profession	sacīkšu braucējs
+profession	sadales struktūrvienības direktora vietnieks
+profession	sadales struktūrvienības direktors
+profession	sadales struktūrvienības vadītāja vietnieks
+profession	sadales struktūrvienības vadītājs
+profession	saeimas deputāta palīgs
+profession	saeimas deputāts
+profession	saeimas priekšsēdētāja biedra palīgs
+profession	saeimas priekšsēdētāja biedrs
+profession	saeimas priekšsēdētāja palīgs
+profession	saeimas priekšsēdētājs
+profession	saeimas sekretāra biedra palīgs
+profession	saeimas sekretāra biedrs
+profession	saeimas sekretāra palīgs
+profession	saeimas sekretārs
+profession	saeimas frakcijas priekšsēdētājs
+profession	saeimas komisijas priekšsēdētāja biedrs
+profession	saeimas komisijas priekšsēdētājs
+profession	saeimas komisijas sekretārs
+profession	sagādes aģents
+profession	sagādes struktūrvienības direktora vietnieks
+profession	sagādes struktūrvienības direktors
+profession	sagādes struktūrvienības vadītāja vietnieks
+profession	sagādes struktūrvienības vadītājs
+profession	saimniecības direktors
+profession	saimniecības izpilddirektors
+profession	saimniecības strādnieks
+profession	saimniecības vadītāja vietnieks
+profession	saimniecības vadītājs
+profession	saimniecības pārzinis
+profession	saimniecības struktūrvienības direktora vietnieks
+profession	saimniecības struktūrvienības direktors
+profession	saimniecības struktūrvienības priekšnieka vietnieks
+profession	saimniecības struktūrvienības priekšnieks
+profession	saimniecības struktūrvienības vadītāja vietnieks
+profession	saimniecības struktūrvienības vadītājs
+profession	saiņošanas operators
+profession	sakaru motociklists
+profession	sakaru virsnieks
+profession	sakaru elektromehāniķis
+profession	sakņkopības tehniķis
+profession	saldumu un šokolādes izstrādājumu ražošanas tehniķis
+profession	saldējamo iekārtu mehāniķis
+profession	saldēšanas iekārtas operators
+profession	saldēšanas iekārtu mehānikas inženieris
+profession	saldūdens biologs
+profession	saldūdens un piekrastes zivju apstrādātājs
+profession	sanitārais inspektors
+profession	sanitārautomobiļa vadītājs
+profession	sanitārijas inženieris
+profession	sanitārtehnikas būvinženieris
+profession	sanitārtehnisko iekārtu montētājs
+profession	sardzes mehāniķis
+profession	sardzes stūrmanis
+profession	sastatņu montētājs
+profession	satiksmes plānotājs
+profession	satiksmes organizācijas inženieris
+profession	satversmes tiesas priekšsēdētājs
+profession	sauszemes motoru un mašīnu mehānikas inženieris
+profession	sauszemes radioiekārtas operators
+profession	sauszemes transportlīdzekļu tehniskais eksperts
+profession	sauszemes transportlīdzekļu tehniskais vērtētājs
+profession	sausā doka priekšnieks
+profession	sausās būves celtnieks
+profession	sausās būves montieris
+profession	savvaļas kažokādu dzīvnieku kopējs
+profession	savvaļas kažokādu dzīvnieku audzēšanas lauksaimnieks
+profession	savvaļas putnu audzētājs
+profession	saziņas līdzekļu koordinētājs
+profession	segu šuvējs
+profession	sekretariāta vadītājs
+profession	senāta priekšsēdētāja palīgs
+profession	serdeņu izgatavotājs
+profession	seroloģijas tehniķis
+profession	sertificēts eksperts
+profession	sertifikācijas inženieris
+profession	sevišķi svarīgu lietu inspektors
+profession	sevišķi svarīgu uzdevumu inspektors
+profession	sezonas lauksaimniecības strādnieks
+profession	siatsu speciālists
+profession	siera izgatavotājs
+profession	sietspiedējs
+profession	signalizācijas pults operators
+profession	signalizācijas un sakaru distances priekšnieka vietnieks
+profession	signalizācijas un sakaru distances priekšnieks
+profession	signāliekārtu montētājs
+profession	signālsistēmas inženieris
+profession	signālsistēmu elektronikas tehniķis
+profession	signālsistēmu telekomunikāciju tehniķis
+profession	siltumfiziķis
+profession	siltuma, gāzes un ūdens tehnoloģijas inženieris
+profession	siltumapgādes, ventilācijas un saldēšanas tehniķis
+profession	siltumenerģijas pārvades un sadales inženieris
+profession	siltumenerģijas un siltumtehnikas inženieris
+profession	siltumenerģētikas inženieris
+profession	siltumenerģētikas speciālists
+profession	siltumenerģētikas tehniķis
+profession	siltumiekārtu remontatslēdznieks
+profession	siltumiekārtu apkalpošanas atslēdznieks
+profession	siltumiekārtu ekspluatācijas inženieris
+profession	siltumnīcas dārznieks
+profession	siltumnīcas strādnieks
+profession	siltumsistēmu ekspluatācijas inženieris
+profession	siltumtehnikas inženieris
+profession	siltumtehnisko iekārtu inženieris
+profession	siltumtīklu operators
+profession	sintētisko šķiedru apstrādes operators
+profession	sirds ķirurgs
+profession	sistēmanalītiķis
+profession	sistēmbibliotekārs
+profession	sistēmu izņemot skaitļotāju analītiķis
+profession	sistēmu izņemot skaitļotāju inženieris
+profession	sistēmu izņemot skaitļotāju dizaina inženieris
+profession	sistēmu vadības inženieris
+profession	sitaminstrumentu mūziķis
+profession	skaistumkopšanas speciālists
+profession	skaitļotāja operators
+profession	skaitļotāju datu bāzes analītiķis
+profession	skaitļotāju datu bāzes vadītājs
+profession	skaitļotāju elektronikas inženieris
+profession	skaitļotāju komunikāciju analītiķis
+profession	skaitļotāju lietošanas inženieris
+profession	skaitļotāju sistēmu analītiķis
+profession	skaitļotāju sistēmu inženieris
+profession	skaitļotāju sistēmu konstruktors
+profession	skaitļošanas sistēmu analītiķis
+profession	skaitļošanas sistēmu projektētājs
+profession	skatlogu dekorētājs
+profession	skatlogu noformētājs
+profession	skatuves meistars
+profession	skatuves montētājs
+profession	skatuves strādnieks
+profession	skaņas fiziķis
+profession	skaņu operators
+profession	skaņu režisors
+profession	skolas direktora vietnieks
+profession	skolas direktors
+profession	skolas priekšnieka vietnieks
+profession	skolas priekšnieks
+profession	skolas pārzinis
+profession	skolas katedras vadītājs
+profession	skolēnu pavadonis
+profession	skursteņu būvinženieris
+profession	skābekļa balonu pildītājs
+profession	skābekļa ražošanas iekārtas operators
+profession	skārda liecējs
+profession	skārda valcētājs
+profession	sliežu defektoskopists
+profession	sliežu ceļa mašīnu iestatītājs
+profession	sliežu ceļu brigadieris
+profession	sliežu ceļu montieris
+profession	sliežu ceļu mašīnu un mehānismu regulētājs
+profession	sliežu ceļu saimniecības tehniķis
+profession	sliežu defektoskopijas brigadieris
+profession	sliežu motortransporta mašīnista palīgs
+profession	sliežu motortransporta vadītājs
+profession	sliežu motortransporta vadītājs instruktors
+profession	sliežu motortransporta vadītāja palīgs
+profession	slimu bērnu auklis
+profession	sludinājumu ievietošanas komercdarbības pakalpojumu pārstāvis
+profession	slāpekļa ražošanas iekārtas operators
+profession	slēdzeņu atslēdznieks
+profession	slēpošanas un snovborda inventāra apkopes strādnieks
+profession	smaržu destilēšanas iekārtas operators
+profession	sniega ģeneratoru operators
+profession	sociopsihologs
+profession	sociālais audzinātājs
+profession	sociālais darbinieks
+profession	sociālais pedagogs
+profession	sociālais rehabilitētājs
+profession	sociālā dienesta vadītāja vietnieks
+profession	sociālā dienesta vadītājs
+profession	sociālās apdrošināšanas ārsts
+profession	sociālās aprūpes karitatīvais darbinieks, diakons
+profession	sociālās palīdzības organizators
+profession	solārija darbinieks
+profession	spalvu šķirotājs
+profession	specializētā automobiļa vadītājs
+profession	speciālais pedagogs
+profession	speciālo uzdevumu vēstnieks
+profession	speciālu ziņojumu sniegšanas lidotājiem sistēmu inženieris
+profession	speciālu ziņojumu sniegšanas lidotājiem sistēmu tehniķis
+profession	speciālās izglītības skolotājs
+profession	spiedieniekārtu operators
+profession	spiedliešanas operators
+profession	spiedliešanas iekārtas operators
+profession	spiedveidnes rasētājs
+profession	spolēšanas iekārtas operators
+profession	sporta aģents
+profession	sporta instruktors
+profession	sporta metodiķis
+profession	sporta organizators
+profession	sporta speciālists
+profession	sporta tiesnesis
+profession	sporta treneris
+profession	sporta pasākumu organizators
+profession	sporta spēļu vadītājs
+profession	sporta zirgu treneris
+profession	sporta zāles pārzinis
+profession	sporta ārsts
+profession	spoļu attinējs
+profession	spoļu licējs
+profession	spoļu tīrītājs
+profession	spēkstacijas turbīnas operators
+profession	spēļu iekārtu pārraugs
+profession	stacijas dežurants
+profession	standartizācijas inženieris
+profession	starptautisko ekonomisko attiecību speciālists
+profession	starptautisko pasta sūtījumu struktūrvienības vadītājs
+profession	starptautiskā norēķinu centra vadītājs
+profession	starpvalstu institūcijas vadītājs
+profession	starpvalstu institūcijas struktūrvienības vadītājs
+profession	statistikas matemātiķis
+profession	statistikas un finanšu uzskaitvedis
+profession	sterilizācijas tehniskais darbinieks
+profession	stiegrojuma ražošanas operators
+profession	stikla gravieris
+profession	stikla matētājs
+profession	stikla pūtējs
+profession	stikla slīpētājs
+profession	stikla tehnologs
+profession	stikla apstrādes mākslinieks
+profession	stikla apstrādes līnijas operators
+profession	stikla dizaina speciālists
+profession	stikla izstrādājumu dizaina speciālists
+profession	stikla un keramikas maisīšanas iekārtas ražošanas operators
+profession	stikla un keramikas malšanas iekārtas ražošanas operators
+profession	stikla ķīmiķis
+profession	stikla šķiedras ražošanas operators
+profession	stila mēbeļu modelētājs
+profession	stratēģiskās plānošanas un attīstības struktūrvienības direktors
+profession	stratēģiskās plānošanas un attīstības struktūrvienības vadītājs
+profession	stratēģiskās vadības procesa vadītājs
+profession	striptīza mākslinieks
+profession	struktūrvienības vadītāja palīgs
+profession	struktūrvienības vadītājs
+profession	studijas tehniskās iekārtas operators
+profession	stādaudzēšanas tehniķis
+profession	stājgleznu restaurators
+profession	stīginstrumentu mūziķis
+profession	stīgu izgatavotājs
+profession	stīgu instrumentu būvētājs
+profession	sulas spiedējs
+profession	summatoru operators
+profession	surdotulks
+profession	suņu audzētājs
+profession	suņu frizieris
+profession	suņu pavadonis
+profession	suņu audzētavas uzraugs
+profession	suņu un kaķu kopējs
+profession	suņu un kaķu barības ražošanas tehnologs
+profession	suņu un kaķu barības ražošanas iekārtu operators
+profession	svaru un mēru inspektors
+profession	sviesta meistars
+profession	svētku režisors
+profession	sākumizglītības skolotājs
+profession	sētnieks
+profession	sēklkopības agronoms
+profession	sēklkopības tehniķis
+profession	sēklu audzēšanas dārznieks
+profession	sēru ceremoniju mākslinieks
+profession	sēru ceremoniju vadītājs
+profession	sēņu audzētājs
+profession	sēžu protokolu vadītājs
+profession	sūknēšanas iekārtas apkalpotājs
+profession	sūknēšanas iekārtas operators
+profession	tabeļvedis
+profession	takelētājs
+profession	taksidermists
+profession	taksētājs
+profession	tamborētājs
+profession	tapsētājs
+profession	tehniķis
+profession	tehniķis – kriminālists
+profession	tehnologa palīgs
+profession	tehnologs
+profession	telefonists
+profession	telegrāfists
+profession	teologs
+profession	terminologs
+profession	termists
+profession	termodinamiķis
+profession	tetovētājs
+profession	tiesnesis
+profession	tiesneša palīgs
+profession	tiesībsargs
+profession	tinējs
+profession	tirgotājs
+profession	tirgzinis
+profession	toksikologs
+profession	tonētājs
+profession	transfuziologs
+profession	transplantologs
+profession	traumatologs, ortopēds
+profession	traļmeistars
+profession	trihologs
+profession	tulkotājs
+profession	tulks
+profession	tulks referents
+profession	tabakas strādnieks
+profession	taksometra vadītājs
+profession	tapešu līmētājs
+profession	taustiņinstrumentu mūziķis
+profession	tautas tērpu darinātājs
+profession	tehnikas ilustrētājs
+profession	tehnikas rasētājs
+profession	tehnikas statistiķis
+profession	tehniskais direktors
+profession	tehniskais inspektors
+profession	tehniskais ortopēds
+profession	tehniskais redaktors
+profession	tehniskais sekretārs
+profession	tehniskais speciālists
+profession	tehniskais strādnieks
+profession	tehnisko sistēmu apsardzes programmēšanas inženieris
+profession	tehniskās drošības inspektors
+profession	tehniskās informācijas tehniķis
+profession	tehniskās struktūrvienības vadītāja vietnieks
+profession	tehniskās struktūrvienības vadītājs
+profession	tehniskās uzraudzības inspektors
+profession	teksta maketētājs
+profession	teksta redaktora operators
+profession	tekstilmākslinieks
+profession	tekstila izstrādājumu ražošanas tehniķis
+profession	tekstiliju restaurators
+profession	tekstilizstrādājumu modelētājs
+profession	tekstilizstrādājumu dizaina speciālists
+profession	tekstilmateriālu apdares tehnologs
+profession	tekstilmateriālu dizaina speciālists
+profession	tekstilprodukcijas balināšanas operators
+profession	tekstilražošanas iekārtas mehāniķis
+profession	tekstilšķiedru apstrādes operators
+profession	teksturēšanas operators
+profession	telefaksa operators
+profession	telefona inženieris
+profession	telefona elektronikas tehniķis
+profession	telefona informācijas dienesta konsultants
+profession	telefona komunikāciju tehniķis
+profession	telefona komutatora operators
+profession	telefona sakaru mehāniķis
+profession	telefonbankas konsultants
+profession	telefonbankas operators
+profession	telefonu mehāniķis
+profession	telegrāfa inženieris
+profession	telegrāfa mehāniķis
+profession	telegrāfa operators
+profession	telegrāfa elektronikas tehniķis
+profession	telegrāfa komunikāciju tehniķis
+profession	telegrāfa sakaru mehāniķis
+profession	telekomunikāciju inženieris
+profession	telekomunikāciju konstruktors
+profession	telekomunikāciju speciālists
+profession	telekomunikāciju tehniķis
+profession	telekomunikāciju tehnologs
+profession	telekomunikāciju iekārtu montieris
+profession	teleksa operators
+profession	teletaipa operators
+profession	televizoru mehāniķis
+profession	televīzijas diktors
+profession	televīzijas inženieris
+profession	televīzijas operators
+profession	televīzijas režisors
+profession	televīzijas elektronikas tehniķis
+profession	televīzijas komunikāciju tehniķis
+profession	televīzijas un kino producents
+profession	televīzijas uzveduma direktors
+profession	telpiskās attīstības plānotājs
+profession	teorētiskās fizikas fiziķis
+profession	terapijas māsa
+profession	teritorijas plānotājs
+profession	termiskās apstrādes iekārtu operators
+profession	termogriezējs
+profession	termoķīmiskās apstrādes iekārtas operators
+profession	testa atslēgu administrators
+profession	testa atslēgu pārzinis
+profession	teātra aģents
+profession	teātra dekorētājs
+profession	teātra apavu modelētājs
+profession	teātra galvenais administrators
+profession	teātra kostīmu modelētājs
+profession	teātra kostīmu mākslinieks
+profession	teātra programmu pārdevējs
+profession	tiesas administrators
+profession	tiesas konsultants
+profession	tiesas priekšsēdētāja palīgs
+profession	tiesas priekšsēdētāja vietnieks
+profession	tiesas sekretārs
+profession	tiesas tulks
+profession	tiesas ziņnesis
+profession	tiesas priekšsēdētājs
+profession	tiesas sēžu sekretārs
+profession	tieslietu konsultants
+profession	tiesu eksperta palīgs
+profession	tiesu eksperts
+profession	tiesu kolēģijas priekšsēdētāja palīgs
+profession	tiesu kolēģijas priekšsēdētājs
+profession	tiesu medicīnas eksperts
+profession	tiesu palātas priekšsēdētājs
+profession	tiesu psihiatrijas eksperts
+profession	tiltu būvinženieris
+profession	tiltu būvuzraugs
+profession	tirdzniecības aģents
+profession	tirdzniecības brokeris
+profession	tirdzniecības direktors
+profession	tirdzniecības pārdevējs
+profession	tirdzniecības pārstāvis
+profession	tirdzniecības starpnieks
+profession	tirdzniecības vadītājs
+profession	tirdzniecības finansēšanas speciālists
+profession	tirdzniecības struktūrvienības direktors
+profession	tirdzniecības struktūrvienības vadītājs
+profession	tirdzniecības zāles darbinieks
+profession	tirgus pārdevējs
+profession	tirgus operāciju un maksājumu speciālists
+profession	tirgus pētījumu analītiķis
+profession	tirgvedības direktors
+profession	tirgvedības vadītāja asistents
+profession	tirgvedības vadītājs
+profession	tirgvedības struktūrvienības direktors
+profession	tirgvedības struktūrvienības vadītājs
+profession	tirgvedības un tirdzniecības speciālists
+profession	toksikofarmakologs
+profession	topogrāfijas rasētājs
+profession	torakālais ķirurgs
+profession	torņu būvinženieris
+profession	totalizatora bukmeikers
+profession	traktora vadītājs
+profession	traktortehnikas vadītājs
+profession	tramvaja konduktors
+profession	tramvaja vadītājs
+profession	transfuzioloģijas māsa
+profession	transporta dispečers
+profession	transporta galdnieks
+profession	transporta inspektors
+profession	transporta kontrolieris
+profession	transporta mehāniķis
+profession	transporta pārraugs
+profession	transporta starpnieks
+profession	transporta strādnieks
+profession	transporta biroja pārvaldnieks
+profession	transporta grafika analītiķis
+profession	transporta lokomotīvju tehniķis
+profession	transporta lokomotīvju dzinēju mehāniķis
+profession	transporta pārvadājumu komercdarbinieks
+profession	transporta struktūrvienības direktors
+profession	transporta struktūrvienības priekšnieks
+profession	transporta struktūrvienības vadītājs
+profession	transporta tīklu inženieris
+profession	transporta vagonu tehniķis
+profession	transportbūvju būvinženieris
+profession	transportiera apkalpotājs
+profession	transportlīdzekļu krāsotājs
+profession	transportlīdzekļu pieņēmējs
+profession	transportlīdzekļu reģistrētājs
+profession	transportlīdzekļu skārdnieks
+profession	transportlīdzekļu tapsētājs
+profession	transportlīdzekļu tīrītājs
+profession	transportlīdzekļu dzinēju regulētājs
+profession	transportlīdzekļu manevru pārraugs
+profession	transportlīdzekļu motoru mehāniķis
+profession	transportlīdzekļu tehniskās kontroles inspektors
+profession	transportsistēmu inženieris
+profession	trauku mazgātājs
+profession	traumatoloģijas un ortopēdijas māsa
+profession	treilēšanas un iekraušanas iekārtu mašīnists
+profession	trenažieru zāles instruktors
+profession	trešais sekretārs
+profession	trikotāžas izstrādājumu formētājs
+profession	trikotāžas izstrādājumu ražošanas tehniķis
+profession	triku meistars
+profession	trolejbusa vadītājs
+profession	trošu vijējs
+profession	trošu vagona konduktors
+profession	tualetes piederumu ražošanas operators
+profession	tuneļu būvinženieris
+profession	turbīnu iekārtu operators
+profession	tvaika lokomotīves vadītāja palīgs
+profession	tvaika lokomotīves vadītājs
+profession	tvaika lokomotīves vadītājs instruktors
+profession	tvaika mašīnas operators
+profession	tvaika spēkstacijas operators
+profession	tvaikošanas operators
+profession	tālmanis
+profession	tāmētājs
+profession	tāljūras locis
+profession	tālsakaru operators
+profession	tāmju inženieris
+profession	tēlnieks
+profession	tēsējs
+profession	tēlniecības objektu dizaina speciālists
+profession	tērpu demonstrētājs
+profession	tērpu stila speciālists
+profession	tīrītājs
+profession	tūrisma gids
+profession	tūrisma organizators
+profession	tūrisma informācijas konsultants
+profession	tūrisma mītnes istabenis
+profession	tūrisma pakalpojumu komercdarbinieks
+profession	tūrisma un atpūtas organizācijas vadītājs
+profession	tūristu gids
+profession	tūristu grupas vadītājs
+profession	ugunsdzēsējs
+profession	ugunsdzēsējs glābējs
+profession	urbējs
+profession	urologs
+profession	uzskaitvedis
+profession	ugunsdrošības inspektors
+profession	ugunsdrošības inženieris
+profession	ugunsdrošības tehniķis
+profession	ugunsdrošības un civilās aizsardzības inženieris
+profession	ugunsdrošības un civilās aizsardzības tehniķis
+profession	ugunsdzēsības un glābšanas dienesta ugunsdzēsējs glābējs
+profession	ugunsdzēsības un glābšanas dienesta ugunsdzēsējs autovadītājs
+profession	urbumu skābjotājs
+profession	uroloģijas māsa
+profession	uzkopšanas darba vadītājs
+profession	uzkopšanas darbu meistars
+profession	uzraudzības auditors
+profession	uzraudzības būvtehniķis
+profession	uzskaites operators
+profession	uzskaites rādījumu reģistrētājs
+profession	uzskaites struktūrvienības direktors
+profession	uzskaites struktūrvienības vadītājs
+profession	uztura speciālists
+profession	uzturzinātnes speciālists
+profession	uztīšanas iekārtas montieris
+profession	uzziņu operators
+profession	vadītāja
+profession	vadītāja padomnieks
+profession	vadītāja vietnieks
+profession	vadītāja noliktavās
+profession	vadītājs
+profession	varkalis
+profession	vecmāte
+profession	veikalvedis
+profession	velmētājs
+profession	viceadmirālis
+profession	vicekonsuls
+profession	viceprezidenta vietnieks
+profession	viceprezidents
+profession	viesmīlis
+profession	viesnīcnieks
+profession	vikārs
+profession	virpotājs
+profession	virskapelāns
+profession	virsleitnants
+profession	virsseržants
+profession	virsuzrauga vietnieks
+profession	virsuzraugs
+profession	virusologa palīgs
+profession	virusologs
+profession	vitrāžists
+profession	vizāžists
+profession	vokālists
+profession	vulkanizētājs
+profession	vadošais pētnieks
+profession	vadošais biroja sekretārs
+profession	vadu vilcējs
+profession	vagonu apskatītājs
+profession	vagonu pavadonis
+profession	vagonu kustības ātruma regulētājs
+profession	vagonu mazgāšanas mašīnas operators
+profession	vagonu parka dežurants
+profession	vagonu remonta inženieris
+profession	vagonu remontētājs
+profession	vairumtirdzniecības aģents
+profession	vairumtirdzniecības sagādnieks
+profession	vairumtirdzniecības preču iepircējs
+profession	vairumtirdzniecības veikala pārdevējs
+profession	valdes loceklis
+profession	valdes priekšsēdētāja palīgs
+profession	valdes priekšsēdētāja vietnieks
+profession	valdes priekšsēdētājs
+profession	valdes sekretārs
+profession	valdes vadītāja vietnieks
+profession	valdes vadītājs
+profession	valdības administrācijas sekretārs
+profession	valdības administrācijas izpildsekretārs
+profession	valsts inspektors
+profession	valsts kontroliera palīgs
+profession	valsts kontroliera preses sekretārs
+profession	valsts kontrolieris
+profession	valsts notārs
+profession	valsts prezidenta padomnieks
+profession	valsts prezidenta palīgs
+profession	valsts prezidents
+profession	valsts revidenta palīgs
+profession	valsts revidents
+profession	valsts sekretāra palīgs
+profession	valsts sekretāra vietnieka palīgs
+profession	valsts sekretāra vietnieks
+profession	valsts sekretārs
+profession	valsts bērnu tiesību aizsardzības inspektors
+profession	valsts darba inspektors
+profession	valsts kancelejas direktora palīgs
+profession	valsts protokola vadītāja vietnieks
+profession	valsts protokola vadītājs
+profession	valsts pārvaldes izpildsekretārs
+profession	valsts robežas pilnvarotais
+profession	valsts robežsardzes inspektors
+profession	valsts robežsardzes jaunākais virsnieks
+profession	valsts robežsardzes vecākais virsnieks
+profession	valsts tehniskās uzraudzības inspektors
+profession	valūtas kasieris
+profession	valūtas darījumu grāmatvedis
+profession	valūtas maiņas starpnieks
+profession	valūtas operāciju grāmatvedis
+profession	valūtu konvertācijas struktūrvienības vadītāja vietnieks
+profession	valūtu konvertācijas struktūrvienības vadītājs
+profession	vecākais bibliotekārs
+profession	vecākais bārmenis
+profession	vecākais eksperts
+profession	vecākais grāmatvedis
+profession	vecākais inspektors
+profession	vecākais inspektors - posteņa komandieris
+profession	vecākais instruktors
+profession	vecākais izmeklētājs
+profession	vecākais kontrolieris
+profession	vecākais konsultants
+profession	vecākais lidotājs
+profession	vecākais lietvedis
+profession	vecākais mehāniķis
+profession	vecākais meistars
+profession	vecākais mežzinis
+profession	vecākais parfimērs
+profession	vecākais pasniedzējs
+profession	vecākais pavārs
+profession	vecākais pārdevējs
+profession	vecākais referents
+profession	vecākais speciālists dārzeņkopis
+profession	vecākais speciālists dārzkopis
+profession	vecākais speciālists mežkopis
+profession	vecākais speciālists puķkopis
+profession	vecākais speciālists zivkopis
+profession	vecākais statistiķis
+profession	vecākais stūrmanis
+profession	vecākais traļmeistars
+profession	vecākais zemessargs
+profession	vecākais datortīkla administrators
+profession	vecākais iecirkņa inspektors
+profession	vecākais komercdarbības speciālists
+profession	vecākais muitas eksperts
+profession	vecākais muitas uzraugs
+profession	vecākais mākslas pasākumu organizators
+profession	vecākais mūzikas pasākumu organizators
+profession	vecākais nodokļu inspektors
+profession	vecākais pašvaldībās
+profession	vecākais personāla inspektors
+profession	vecākais reklāmas aģents
+profession	vecākais saimniecības pārzinis
+profession	vecākais sporta treneris
+profession	vecākais tiesu eksperts
+profession	vecākais tirgus pētījumu analītiķis
+profession	vecākais valsts revidents
+profession	vecākā vecmāte
+profession	vecākā medicīnas māsa
+profession	veidošanas operators
+profession	veidņu izgatavotājs
+profession	veikala kasieris
+profession	velmju kalibrētājs
+profession	velmēšanas stāva operators
+profession	velorikša
+profession	velosipēdu mehāniķis
+profession	ventilācijas iekārtas operators
+profession	ventilācijas, kondicionēšanas un saldēšanas iekārtu mehāniķis
+profession	veselības aprūpes statistiķis
+profession	veselības aprūpes vadītājs
+profession	veselības aprūpes vadības ārsts
+profession	veselības aprūpes ārsts
+profession	veselības veicināšanas konsultants
+profession	veselības veicināšanas koordinētājs
+profession	veterinārfeldšeris
+profession	veterinārmedicīnas bakteriologs
+profession	veterinārmedicīnas patologs
+profession	veterinārārsta asistents
+profession	veterinārārsts
+profession	veterinārārsts epidemiologs
+profession	veterinārārsts ķirurgs
+profession	veļas gludinātājs
+profession	veļas mazgātājs
+profession	veļas pārzinis
+profession	veļas mazgājamās mašīnas operators
+profession	veļas mazgātavas vadītājs
+profession	veļas un korsešu šūšanas operators
+profession	videoinženieris
+profession	videomākslinieks
+profession	videooperators
+profession	videonovērošanas operators
+profession	videonovērošanas iekārtu operators
+profession	vides dizainers
+profession	vides inženieris
+profession	vides mākslinieks
+profession	vides pārvaldnieks
+profession	vides tehniķis
+profession	vides tehnologs
+profession	vides aizsardzības inspektors
+profession	vides aizsardzības vecākais speciālists
+profession	vides iekārtu tehniķis
+profession	vides pārvaldības konsultants
+profession	vides pārvaldības speciālists
+profession	vides veselības analītiķis
+profession	vienkāršotās renovācijas un rekonstrukcijas objektu inženieris
+profession	viesmīlības pakalpojumu speciālists
+profession	viesnīcas administrators
+profession	viesnīcas direktora vietnieks
+profession	viesnīcas direktors
+profession	viesnīcas istabenis
+profession	viesnīcas pārvaldnieks
+profession	viesnīcas vadītāja vietnieks
+profession	viesnīcas vadītājs
+profession	viesnīcas klientu reģistrators
+profession	viesnīcas stāva pārzinis
+profession	viesnīcu pakalpojumu komercdarbinieks
+profession	viesnīcu pakalpojumu organizators
+profession	viesnīcu pakalpojumu speciālists
+profession	viesu uzņemšanas organizators
+profession	viesu uzņemšanas dienesta speciālists
+profession	vijoļu būvētājs
+profession	vilces līdzekļa vadītāja palīgs
+profession	vilces līdzekļa vadītājs
+profession	vilces līdzekļa vadītājs instruktors
+profession	vilciena pavadonis
+profession	vilciena priekšnieks
+profession	vilcienu konduktors
+profession	vilcienu pieņēmējs
+profession	vilcienu sargs
+profession	vilcienu sastādītāja palīgs
+profession	vilcienu sastādītājs
+profession	vilcējautomobiļa vadītājs
+profession	vingrošanas nodarbību instruktors
+profession	vinčas operators
+profession	vinčas vadītājs
+profession	virsmežzinis
+profession	virsmežziņa vietnieks
+profession	virsmāsa
+profession	virsprokurora vietnieks
+profession	virsprokurors
+profession	virsmas apdares iekārtas operators
+profession	virsmežniecības inženieris
+profession	virtuves darbinieks
+profession	virtuves vadītājs
+profession	vispārējās pamatizglītības skolotājs
+profession	vispārējās vidējās izglītības skolotājs
+profession	vivārija dzīvnieku kopējs
+profession	vizuālā tēla stilists
+profession	vizuālās reklāmas noformētājs
+profession	vizuālās reklāmas dizaina speciālists
+profession	vokālais pedagogs
+profession	vārītājs
+profession	vājstrāvu sistēmu montieris
+profession	vēstnieka palīgs
+profession	vēstnieks
+profession	vēsturnieks
+profession	vēderrunātājs
+profession	vēja elektrostacijas operators
+profession	vērpšanas tehnologs
+profession	vērtspapīru eksperts
+profession	vērtspapīru grāmatvedis
+profession	vērtspapīru inspektors
+profession	vērtspapīru tirgotājs
+profession	vērtspapīru darījumu struktūrvienības vadītāja vietnieks
+profession	vērtspapīru darījumu struktūrvienības vadītājs
+profession	vērtspapīru un akciju starpnieks
+profession	vēstniecības sekretārs
+profession	vīndaris
+profession	vītņu griešanas operators
+profession	zeltkalis
+profession	zeltītājs
+profession	zemessargs
+profession	zemnieks
+profession	zirgkopis
+profession	zirgkopējs
+profession	zobārsts
+profession	zoologs
+profession	zootehniķis
+profession	zemes būvju mehānikas būvinženieris
+profession	zemes ierīcības inženieris
+profession	zemes klātnes uzturēšanas brigadieris
+profession	zemes lietu speciālists
+profession	zemes pārvietošanas iekārtu operators
+profession	zemes rakšanas inženieris
+profession	zemes urbšanas mašīnu operators
+profession	zemessmēlēja vadītājs
+profession	zemkopības konsultants
+profession	zemkopības laborants
+profession	zemkopības padomnieks
+profession	zemnieku konsultants
+profession	zemūdens tīrīšanas doka priekšnieks
+profession	ziedojumu vācējs
+profession	zinātniskais konsultants
+profession	zinātniskais sekretārs
+profession	zinātniski tehniskās informācijas inženieris
+profession	zirgaudzētavas lauksaimnieks
+profession	zirgu treneris
+profession	zivju apstrādātājs
+profession	zivju kulinārs
+profession	zivju kūpinātājs
+profession	zivju retinātājs
+profession	zivju vērējs
+profession	zivju apstrādes operators
+profession	zivju apstrādes iekārtu operators
+profession	zivju apstrādes iekārtu strādnieks
+profession	zivju inkubatora strādnieks
+profession	zivju roku darbs
+profession	zivsaimniecības bakteriologs
+profession	zivsaimniecības saimnieks
+profession	zivsaimniecības strādnieks
+profession	zivsaimniecības zivkopis
+profession	zobu feldšeris
+profession	zobu higiēnists
+profession	zobu protēzists
+profession	zobu tehniķis
+profession	zobu protēžu meistars
+profession	zobārsta asistents
+profession	zobārstniecības māsa
+profession	zooloģijas tehniķis
+profession	zooloģiskā dārza strādnieks
+profession	zooloģiskā dārza uzraugs
+profession	zvejas rīku izgatavotājs
+profession	zvērināta advokāta palīgs
+profession	zvērināta notāra palīgs
+profession	zvērināta tiesu izpildītāja palīgs
+profession	zvērināts advokāts
+profession	zvērināts mērnieks
+profession	zvērināts notārs
+profession	zvērināts revidents
+profession	zvērināts tiesu izpildītājs
+profession	zāģētājs
+profession	zāles administrators
+profession	zārku izgatavotājs
+profession	zāģmateriālu ražošanas operators
+profession	zāģmateriālu ražošanas tehniķis
+profession	zāģmateriālu žāvētājs
+profession	zāģripu labotājs
+profession	zāģu sagatavotājs
+profession	zāģēšanas operators
+profession	zāļu reģistrācijas speciālists
+profession	zāļu reģistrācijas vadītājs
+profession	zīlnieks
+profession	zīmju valodas tulks
+profession	zīmējumu un rasējumu kopētājs
+profession	akmens plākšņu izgatavotājs
+profession	amatu psihologs
+profession	analītiķis
+profession	apdedzināšanas krāsns operators
+profession	apdrukāšanas iekārtas operators
+profession	aprūpes speciālists
+profession	apstrādes operators
+profession	apstrādes iekārtas operators
+profession	arborists
+profession	autoklāva operators
+profession	automobiļa vadītājs
+profession	bortmehāniķis operators
+profession	celtņa operators
+profession	centrbēdzes separatora operators
+profession	darba inspektors
+profession	darba koordinētājs
+profession	darba normēšanas tehniķis
+profession	datu bāzes analītiķis
+profession	datu bāzes vadītājs
+profession	destilēšanas iekārtas operators
+profession	ekstraktu pagatavošanas operators
+profession	elektronikas inženieris
+profession	elektronikas tehniķis
+profession	elektrostacijas operators
+profession	fermas strādnieks
+profession	filtrpreses operators
+profession	finanšu stabilizācijas procesa uzraugs
+profession	frakcijas priekšsēdētājs
+profession	galvanizētājs
+profession	galvenais administrators
+profession	iekārtu mehāniķis
+profession	iekārtu elektronikas tehniķis
+profession	iekārtu speciālists
+profession	ielas pārdevējs
+profession	iesaiņojuma ražošanas operators
+profession	iespiedmašīnas operators
+profession	inkubatora strādnieks
+profession	institūcijas vadītājs
+profession	institūcijas struktūrvienības vadītājs
+profession	inženieris
+profession	izpildsekretārs
+profession	izstrādājumu ražošanas operators
+profession	izņemot skaitļotāju analītiķis
+profession	izņemot skaitļotāju inženieris
+profession	izņemot skaitļotāju dizaina inženieris
+profession	karstās apstrādes operators
+profession	karstās presēšanas operators
+profession	katlu kurinātājs
+profession	kažokādu dzīvnieku kopējs
+profession	kažokādu dzīvnieku audzēšanas lauksaimnieks
+profession	klīniskais farmakologs
+profession	klīniskais fiziologs
+profession	klīniskais mikrobiologs
+profession	komercdarbības pakalpojumu pārstāvis
+profession	komercpakalpojumu pārdevējs
+profession	komisijas priekšsēdētāja biedrs
+profession	komisijas priekšsēdētājs
+profession	komisijas sekretārs
+profession	komunikāciju analītiķis
+profession	komunikāciju inženieris
+profession	komutatora operators
+profession	konsultants
+profession	kontrolierīču operators
+profession	kontrolmēraparātu tehniķis
+profession	korporatīvo klientu vadītājs
+profession	korporatīvo klientu privātbaņķieris
+profession	kraušanas iekārtu operators
+profession	kravas operators
+profession	krāsns operators
+profession	krāšņu kurinātājs
+profession	līnijas operators
+profession	malšanas iekārtas operators
+profession	mašīnu un mehānismu regulētājs
+profession	mehānikas inženieris
+profession	mehānikas būvinženieris
+profession	mehānismu mehāniķis
+profession	montāžas līnijas operators
+profession	mēbeļu komplektētājs
+profession	mēbeļu montieris
+profession	nodevu administrators
+profession	noliktavās
+profession	operators
+profession	ostās
+profession	pašvaldībās
+profession	pildīšanas iekārtas operators
+profession	platformas operators
+profession	preces pieņēmējs
+profession	protēžu meistars
+profession	proves noteicējs
+profession	pulverizēšanas iekārtas operators
+profession	putnu audzētājs
+profession	pārdošanas konsultants
+profession	pārstrādes operators
+profession	pārstrādāšanas operators
+profession	pārsūknēšanas operators
+profession	pārvades un sadales inženieris
+profession	radioiekārtas operators
+profession	radiotelefona operators
+profession	rafinēšanas operators
+profession	raudzes noteicējs
+profession	ražošanas operators
+profession	ražošanas iekārtas operators
+profession	reaktora operators
+profession	remonta inženieris
+profession	restaurācijas operators
+profession	sapieris
+profession	s.w.i.f.t. administrators
+profession	s.w.i.f.t. operators
+profession	separatora operators
+profession	sijāšanas operators
+profession	sistēmu analītiķis
+profession	sistēmu inženieris
+profession	sistēmu konstruktors
+profession	sistēmu tehniķis
+profession	skaņu redaktors
+profession	smilšstrūklas iekārtas operators
+profession	spēkstacijas operators
+profession	stādu audzētājs
+profession	sūkņa vadītājs
+profession	tehnikas rasētājs
+profession	tehniskās uzraudzības inspektors
+profession	turbīnas operators
+profession	tīklu inženieris
+profession	urbumu cementētājs
+profession	urbumu urbējs
+profession	urbšanas operators
+profession	vagonu depo priekšnieka vietnieks
+profession	vagonu depo priekšnieks
+profession	veidošanas operators
+profession	vispārējās prakses ārsts
+profession	vitrīnu stiklu mazgātājs
+profession	vulkanizācijas operators
+profession	vārīšanas operators
+profession	vērpšanas iekārtas operators
+profession	ādminis
+profession	ārsta palīgs
+profession	ārsts
+profession	ārsts gastrointestinālajā endoskopijā
+profession	ādas amatnieks
+profession	ādas tehnologs
+profession	ādas apdares mākslinieks
+profession	ādas apģērbu šuvējs
+profession	ādas izstrādājumu modelētājs
+profession	ādas izstrādājumu dizaina speciālists
+profession	ādas izstrādājumu ražošanas operators
+profession	ādas materiālu dizaina speciālists
+profession	ādas priekšmetu izgatavotājs
+profession	ādas, pergamenta izstrādājumu restaurators
+profession	ādu atgaļotājs
+profession	ādu krāsotājs
+profession	ādu miecētājs
+profession	ādu apstrādes ķīmiķis
+profession	ādu šķirotājs
+profession	ārkārtējais un pilnvarotais vēstnieks
+profession	ārstniecības iestādes sekretārs
+profession	ārstniecības iestādes klientu un pacientu reģistrators
+profession	ārstniecības pakalpojumu informēšanas operators
+profession	ārējo sakaru koordinētājs
+profession	ārējo sakaru organizators
+profession	ārējo sakaru struktūrvienības vadītāja vietnieks
+profession	ārējo sakaru struktūrvienības vadītājs
+profession	ārējā parāda analītiķis
+profession	ārējās tirdzniecības ekonomists
+profession	ātrgaitas šoseju un ielu būvinženieris
+profession	ātrummērīšanas lenšu nolasītājs
+profession	ātrās ēdināšanas strādnieks
+profession	ēvelētājs
+profession	ēdināšanas pakalpojumu organizators
+profession	ēdināšanas pakalpojumu speciālists
+profession	ēdināšanas uzņēmuma kasieris-pārdevējs
+profession	ēdnīcas direktora vietnieks
+profession	ēdnīcas direktors
+profession	ēdnīcas pārvaldnieks
+profession	ēdnīcas vadītāja vietnieks
+profession	ēdnīcas vadītājs
+profession	ēkas dežurants
+profession	ēkas uzraugs
+profession	ēkas un teritorijas uzraugs
+profession	ēku celtnieks
+profession	ēku siltinātājs
+profession	ēku būvinženieris
+profession	ēku ekspluatācijas un aprīkojuma nodrošinājuma inženieris
+profession	ēku iekšējo komunikāciju montāžas un apkalpošanas speciālists
+profession	ēku inženiertīklu tehniķis
+profession	ēku konstrukciju būvinženieris
+profession	ēku sistēmu inženieris
+profession	ēku un apsaimniekojamās teritorijas pārzinis
+profession	ērģeļu būvētājs
+profession	ģenealogs
+profession	ģenerāldirektora palīgs
+profession	ģenerāldirektora vietnieks
+profession	ģenerāldirektors
+profession	ģenerālinspektors
+profession	ģenerālkonsuls
+profession	ģenerālleitnants
+profession	ģenerālmajors
+profession	ģenerālprokurora padomnieks
+profession	ģenerālprokurors
+profession	ģenerālsekretārs
+profession	ģenētiķis
+profession	ģeodēzists
+profession	ģeogrāfs
+profession	ģeologs
+profession	ģeneratoru elektroinženieris
+profession	ģenētikas inženieris
+profession	ģenētikas tehniķis
+profession	ģeofiziķis
+profession	ģeomagnētiķis
+profession	ģeomorfologs
+profession	ģeotehniķis
+profession	ģeodēzijas inženieris
+profession	ģeofizikas tehniķis
+profession	ģeogrāfiskās informācijas sistēmas speciālists
+profession	ģeoinformātikas inženieris
+profession	ģeoloģijas rasētājs
+profession	ģeoloģijas tehniķis
+profession	ģimenes ārsts
+profession	ģērbējs
+profession	īpašu uzdevumu ministra sekretariāta vadītāja vietnieks
+profession	īpašu uzdevumu ministra sekretariāta vadītājs
+profession	īpašu uzdevumu ministrs
+profession	īpašu uzdevumu ministra sekretariāta vadītāja palīgs
+profession	īpašuma aģents
+profession	īpašuma pārdevējs
+profession	ķesteris
+profession	ķirurgs
+profession	ķemmēšanas iekārtas operators
+profession	ķieģeļu un dakstiņu apdedzināšanas krāsns operators
+profession	ķirurģijas māsa
+profession	ķirurģijas patologs
+profession	ķirurģiskās aprūpes māsa
+profession	ķīmiķis
+profession	ķīmiķis analītiķis
+profession	ķīmijas inženieris
+profession	ķīmijas kalkulētājs
+profession	ķīmijas laborants
+profession	ķīmijas tehniķis
+profession	ķīmijas tehnologa palīgs
+profession	ķīmijas tehnologs
+profession	ķīmijas destilēšanas iekārtas operators
+profession	ķīmijas un fizikas laborants
+profession	ķīmisko iekārtu mehāniķis
+profession	ķīmisko procesu inženieris
+profession	ķīmisko procesu tehniķis
+profession	ķīmisko procesu tehnologs
+profession	ķīmisko procesu autoklāva operators
+profession	ķīmisko procesu inženieris
+profession	ķīmisko reaģentu sagatavotājs
+profession	ķīmisko vielu centrbēdzes separatora operators
+profession	ķīmisko vielu ekstraktu pagatavošanas operators
+profession	ķīmisko vielu filtrpreses operators
+profession	ķīmisko vielu karstās apstrādes operators
+profession	ķīmisko vielu kraušanas iekārtu operators
+profession	ķīmisko vielu malšanas iekārtas operators
+profession	ķīmisko vielu pulverizēšanas iekārtas operators
+profession	ķīmisko vielu separatora operators
+profession	ķīmisko šķidrumu un krāsu sagatavotājs
+profession	ķīmisko šķīdumu sagatavošanas operators
+profession	ķīmiskās apstrādes operators
+profession	ķīmiskās tīrīšanas operators
+profession	ķīmiskās un bioķīmiskās rūpniecības iekārtu mehāniķis
+profession	ķīmijas inženieris
+profession	šefpavārs
+profession	šuvējs
+profession	šveicars
+profession	šokolādes ražošanas iekārtu operators
+profession	šprotu pakotājs
+profession	šprotu roku darbs
+profession	štancēšanas operators
+profession	štāba bocmanis
+profession	štāba virsseržants štāba bocmanis
+profession	šķeterētājs
+profession	šķiperis
+profession	šķirotājs
+profession	šķeldas smalcināšanas operators
+profession	šķidrumu iekārtas operators
+profession	šķiedras mākslas izstrādājumu izgatavotājs
+profession	šķiedru cirtējs
+profession	šķiedru kārsējs
+profession	šķiedru smalcinātājs
+profession	šķiedru tehnologs
+profession	šķiedru gatavošanas operators
+profession	šķiedru griezējs
+profession	šķirošanas operators
+profession	šķirošanas līnijas operators
+profession	šķērēšanas iekārtas operators
+profession	šūto izstrādājumu izgatavotājs
+profession	šūto izstrādājumu ražošanas tehniķis
+profession	šūšanas tehnologs
+profession	šūšanas iekārtu operators
+profession	šūšanas kvalitātes konsultants
+profession	šūšanas ražošanas konsultants
+profession	šķīdumu sagatavošanas operators
+profession	ūdenslīdējs
+profession	ūdens sagādātājs
+profession	ūdens aizsprosta operators
+profession	ūdens pārstrādes operators
+profession	ūdens un atkritumsaimniecības speciālists
+profession	ūdens ķīmiskās apstrādes operators
+profession	ūdensnecaurlaidīgu audumu ražošanas operators
+profession	žokejs
+profession	žonglieris
+profession	žurnālists
+profession	žalūziju izgatavotājs
+profession	žāvēšanas operators

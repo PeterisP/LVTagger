@@ -1,0 +1,1933 @@
+location	Viskonsīna
+location	Saldus rajons
+location	Saldus raj.
+location	ASV
+location	Amerikas Savienotās Valstis
+location	Bostona
+location	Ragaciems
+location	Rīgas apriņķa Slokas pagasta Ragaciems
+location	Maskava
+location	Ķemeri
+location	.
+location	, pārmaiņu vadītāju un partijas biedru , pārspēj gandrīz jebko no pat mūsu politikā iepriekš pieredzētā .
+location	ar ko Latvijas baņķieris bijis pazīstams
+location	Rīgas
+location	Rīga
+location	Rīgas
+location	Ventspils
+location	ventspils
+location	Ventspils
+location	Latvijas Basketbola savienības
+location	Latvijas
+location	Latvija
+location	Latvijas Basketbola savienības
+location	Latvijā
+location	LBS
+location	savienība
+location	lbs
+location	, vai cilvēks būtu , vai nebūtu spējīgs
+location	Ieva Bondare nesen uz gadu pametusi Latviju un devusies pie vīra , kurš nupat sācis studijas Amerikā .
+location	AS " Latvijas Krājbanka " ( " Krājbanka " ) padome nolēmusi bankas valdes priekšsēdētāja amatā iecelt līdzšinējo Valsts prezidenta kancelejas vadītāju Mārtiņu Bondaru .
+location	Kurzemes
+location	kurzeme
+location	Kurzemes
+location	Kurzemē
+location	Pirmās obligāciju sērijas papildu emisijas galīgie noteikumi " Latvenergo " valdē apstiprināti 19. martā un publicēti uzņēmuma mājaslapas investoru sadaļā .
+location	iekļaušanas regulētajā tirgū obligācijas tiks apvienotas un veidos vienu sēriju ar 2012. gada 19. decembrī emitētajām obligācijām 20_000_000 eiro apmērā un 2013. gada 30. janvārī emitētajām
+location	Vienlaikus viņš iepriekš minējis arī vairākas iespējamās teorētiskās alternatīvas , kā risināt elektroapgādes jautājumus , ja tiktu pieņemts lēmums neīstenot Visaginas AES projektu .
+location	« Esam gandarīti , ka varam turpināt veiksmīgi uzsākto « Latvenergo » vērtspapīru emisiju .
+location	tiks publicēti 2013. gada 24. aprīlī , savukārt " Latvenergo " koncerna 2013. gada starpperiodu pārskati - 31. maijā , 30. augustā un 29. novembrī .
+location	Latvenergo rīkoto Rīgas otrās termoelektrocentrāles otrās kārtas rekonstrukcijas iepirkuma konkursu
+location	, NASDAQ OMX Riga ir uzsākusi kotēšanas procedūru AS " Latvenergo " pirmās obligāciju sērijas papildus obligāciju iekļaušanai Baltijas Parāda vērtspapīru sarakstā :
+location	" Latvenergo " valdes loceklis Uldis Bariss esošos kompānijas panākumus salīdzina ar ceļa maizi , pildot gada nogalē apstiprinātās jaunās " Latvenergo " stratēģijas galvenos uzdevumus .
+location	, ka apsūdzību kavēšanās skaidrojama
+location	Taču tā ir atkarīga ne_tikai
+location	Paredzēts , ka lēmums
+location	Birža " NASDAQ OMX Riga " pagājušajā nedēļā sākusi " Latvenergo " obligāciju kotēšanas procedūru iekļaušanai Baltijas parāda vērtspapīru sarakstā .
+location	AS " Latvenergo " jaundibināta meitassabiedrība , šodien nolēma Ministru kabinets
+location	Aktīvi palielinot klātbūtni visā Baltijā ,
+location	, nosūtot lietu tiesai , bija paredzēts izsniegt apsūdzētajiem vēlāk līdz lietas izskatīšanas uzsākšanai tiesā , kā tas bija pieņemts agrākā praksē , lai nekavētu krimināllietas iztiesāšanu tiesā .
+location	2012. gada 7. decembrī Rīgas pilsētas Vidzemes priekšpilsētas tiesa atkārtoti pieņēma lēmumu atgriezt lietu amatā augstākam prokuroram trūkumu novēršanai tāpēc , ka :
+location	17. janvārī iesniegto kotēšanas pieteikumu , NASDAQ OMX Riga ir uzsākusi
+location	Korporatīvās ilgtspējas un atbildības institūta balvu " Ilgtspējas čempions " par visstraujāko izaugsmi gada laikā saņēma " Valmieras ūdens " .
+location	vietējās kopienas un apkārtējās vides
+location	papildu emisijas gala
+location	regulēšanas komisijas ( SPRK ) rīcība , apstiprinot apstrīdētos elektrības tarifus , bijusi nelikumīga , kā_arī " Latvenergo " tarifu aprēķināšanas metodika - negodīga , teica Poikāns .
+location	Rīga 
+location	Kurzeme 
+location	Latgale 
+location	Sēlija 
+location	Vidzeme 
+location	Zemgale 
+location	Aizkraukles rajons 
+location	Alūksnes rajons 
+location	Balvu rajons 
+location	Bauskas rajons 
+location	Cēsu rajons 
+location	Daugavpils rajons 
+location	Dobeles rajons 
+location	Gulbenes rajons 
+location	Jelgavas rajons 
+location	Jēkabpils rajons 
+location	Krāslavas rajons 
+location	Kuldīgas rajons 
+location	Liepājas rajons 
+location	Limbažu rajons 
+location	Ludzas rajons 
+location	Madonas rajons 
+location	Ogres rajons 
+location	Preiļu rajons 
+location	Rēzeknes rajons 
+location	Rīgas rajons 
+location	Talsu rajons 
+location	Tukuma rajons 
+location	Valkas rajons 
+location	Valmieras rajons 
+location	Ventspils rajons 
+location	Aglonas novads 
+location	Aizkraukles novads 
+location	Aizputes novads 
+location	Aknīstes novads 
+location	Alojas novads 
+location	Alsungas novads 
+location	Alūksnes novads 
+location	Amatas novads 
+location	Apes novads 
+location	Auces novads 
+location	Ādažu novads 
+location	Babītes novads 
+location	Baldones novads 
+location	Baltinavas novads 
+location	Balvu novads 
+location	Bauskas novads 
+location	Beverīnas novads 
+location	Brocēnu novads 
+location	Burtnieku novads 
+location	Carnikavas novads 
+location	Cesvaines novads 
+location	Cēsu novads 
+location	Ciblas novads 
+location	Dagdas novads 
+location	Daugavpils novads 
+location	Dobeles novads 
+location	Dundagas novads 
+location	Durbes novads 
+location	Engures novads 
+location	Ērgļu novads 
+location	Garkalnes novads 
+location	Grobiņas novads 
+location	Gulbenes novads 
+location	Iecavas novads 
+location	Ikšķiles novads 
+location	Ilūkstes novads 
+location	Inčukalna novads 
+location	Jaunjelgavas novads 
+location	Jaunpiebalgas novads 
+location	Jaunpils novads 
+location	Jelgavas novads 
+location	Jēkabpils novads 
+location	Kandavas novads 
+location	Kārsavas novads 
+location	Kocēnu novads 
+location	Kokneses novads 
+location	Krāslavas novads 
+location	Krimuldas novads 
+location	Krustpils novads 
+location	Kuldīgas novads 
+location	Ķeguma novads 
+location	Ķekavas novads 
+location	Lielvārdes novads 
+location	Limbažu novads 
+location	Līgatnes novads 
+location	Līvānu novads 
+location	Lubānas novads 
+location	Ludzas novads 
+location	Madonas novads 
+location	Mazsalacas novads 
+location	Mālpils novads 
+location	Mārupes novads 
+location	Mērsraga novads 
+location	Naukšēnu novads 
+location	Neretas novads 
+location	Nīcas novads 
+location	Ogres novads 
+location	Olaines novads 
+location	Ozolnieku novads 
+location	Pārgaujas novads 
+location	Pāvilostas novads 
+location	Pļaviņu novads 
+location	Preiļu novads 
+location	Priekules novads 
+location	Priekuļu novads 
+location	Raunas novads 
+location	Rēzeknes novads 
+location	Riebiņu novads 
+location	Rojas novads 
+location	Ropažu novads 
+location	Rucavas novads 
+location	Rugāju novads 
+location	Rundāles novads 
+location	Rūjienas novads 
+location	Sabiles novads 
+location	Salacgrīvas novads 
+location	Salas novads 
+location	Salaspils novads 
+location	Saldus novads 
+location	Saulkrastu novads 
+location	Sējas novads 
+location	Siguldas novads 
+location	Skrīveru novads 
+location	Skrundas novads 
+location	Smiltenes novads 
+location	Stopiņu novads 
+location	Strenču novads 
+location	Talsu novads 
+location	Tērvetes novads 
+location	Tukuma novads 
+location	Vaiņodes novads 
+location	Valkas novads 
+location	Varakļānu novads 
+location	Vārkavas novads 
+location	Vecpiebalgas novads 
+location	Vecumnieku novads 
+location	Ventspils novads 
+location	Viesītes novads 
+location	Viļakas novads 
+location	Viļānu novads 
+location	Zilupes novads 
+location	Abavas pagasts 
+location	Aglonas pagasts 
+location	Ainažu pagasts 
+location	Aiviekstes pagasts 
+location	Aizkalnes pagasts 
+location	Aizkraukles pagasts 
+location	Aizputes pagasts 
+location	Aknīstes pagasts 
+location	Allažu pagasts 
+location	Alojas pagasts 
+location	Alsviķu pagasts 
+location	Amatas pagasts 
+location	Ambeļu pagasts 
+location	Ances pagasts 
+location	Andrupenes pagasts 
+location	Andzeļu pagasts 
+location	Annas pagasts 
+location	Annenieku pagasts 
+location	Apes pagsts 
+location	Aronas pagasts 
+location	Asares pagasts 
+location	Asūnes pagasts 
+location	Atašienes pagasts 
+location	Audriņu pagasts 
+location	Augstkalnes pagasts 
+location	Aulejas pagasts 
+location	Auru pagasts 
+location	Ābeļu pagasts 
+location	Ārlavas pagsts 
+location	Babītes pagasts 
+location	Baldones pagasts 
+location	Balgales pagasts 
+location	Balvu pagasts 
+location	Barkavas pagasts 
+location	Bārbeles pagasts 
+location	Bārtas pagasts 
+location	Bebrenes pagasts 
+location	Bebru pagasts 
+location	Beļavas pagasts 
+location	Bēnes pagasts 
+location	Bērzaines pagasts 
+location	Bērzaunes pagasts 
+location	Bērzes pagasts 
+location	Bērzgales pagasts 
+location	Bērziņu pagasts 
+location	Bērzkalnes pagasts 
+location	Bērzpils pagasts 
+location	Bikstu pagasts 
+location	Biķernieku pagasts 
+location	Bilskas pagasts 
+location	Birzgales pagasts 
+location	Blīdenes pagasts 
+location	Blomes pagasts 
+location	Blontu pagasts 
+location	Brantu pagasts 
+location	Braslavas pagasts 
+location	Brenguļu pagasts 
+location	Briežuciema pagasts 
+location	Briģu pagasts 
+location	Brīvzemnieku pagasts 
+location	Brunavas pagasts 
+location	Bukaišu pagasts 
+location	Bunkas pagasts 
+location	Burtnieku pagasts 
+location	Cenu pagasts 
+location	Ceraukstes pagasts 
+location	Cesvaines pagsts 
+location	Cēres pagasts 
+location	Ciblas pagasts 
+location	Cieceres pagasts 
+location	Cirmas pagasts 
+location	Cīravas pagasts 
+location	Codes pagasts 
+location	Čornajas pagasts 
+location	Dagdas pagasts 
+location	Daudzeses pagasts 
+location	Daugmales pagasts 
+location	Daukstu pagasts 
+location	Dāviņu pagasts 
+location	Degoles pagasts 
+location	Dekšāres pagasts 
+location	Demenes pagasts 
+location	Dignājas pagasts 
+location	Dikļu pagasts 
+location	Dobeles pagasts 
+location	Drabešu pagasts 
+location	Dricānu pagasts 
+location	Drustu pagasts 
+location	Druvienas pagasts 
+location	Dubnas pagasts 
+location	Dunalkas pagasts 
+location	Dunavas pagasts 
+location	Dundagas pagasts 
+location	Dunikas pagasts 
+location	Durbes pagasts 
+location	Dvietes pagasts 
+location	Dzelzavas pagasts 
+location	Dzērbenes pagasts 
+location	Džūkstes pagasts 
+location	Eglaines pagasts 
+location	Elejas pagasts 
+location	Elkšņu pagasts 
+location	Embūtes pagasts 
+location	Engures pagasts 
+location	Ezeres pagasts 
+location	Ezernieku pagasts 
+location	Ēdoles pagasts 
+location	Ērgļu pagasts 
+location	Ērģemes pagasts 
+location	Ēveles pagasts 
+location	Feimaņu pagasts 
+location	Gaigalavas pagasts 
+location	Gaiķu pagasts 
+location	Gailīšu pagasts 
+location	Galēnu pagasts 
+location	Galgauskas pagasts 
+location	Gaujienas pagasts 
+location	Gaviezes pagasts 
+location	Gārsenes pagasts 
+location	Glūdas pagasts 
+location	Goliševas pagasts 
+location	Gramzdas pagasts 
+location	Grāveru pagasts 
+location	Griškānu pagasts 
+location	Grobiņas pagasts 
+location	Grundzāles pagasts 
+location	Gudenieku pagasts 
+location	Ģibuļu pagasts 
+location	Ilzenes pagasts 
+location	Ilzeskalna pagasts 
+location	Inčukalna pagasts 
+location	Indras pagasts 
+location	Indrānu pagasts 
+location	Inešu pagasts 
+location	Ipiķu pagasts 
+location	Irlavas pagasts 
+location	Iršu pagasts 
+location	Isnaudas pagasts 
+location	Istras pagasts 
+location	Izvaltas pagasts 
+location	Īles pagasts 
+location	Īslīces pagasts 
+location	Īvandes pagasts 
+location	Īves pagasts 
+location	Jaunalūksnes pagasts 
+location	Jaunannas pagasts 
+location	Jaunauces pagasts 
+location	Jaunbērzes pagasts 
+location	Jaungulbenes pagasts 
+location	Jaunjelgavas pagasts 
+location	Jaunlaicenes pagasts 
+location	Jaunlutriņu pagasts 
+location	Jaunpiebalgas pagasts 
+location	Jaunpils pagasts 
+location	Jaunsātu pagasts 
+location	Jaunsvirlaukas pagasts 
+location	Jersikas pagasts 
+location	Jeru pagasts 
+location	Jērcēnu pagasts 
+location	Jumpravas pagasts 
+location	Jumurdas pagasts 
+location	Jūrkalnes pagasts 
+location	Kabiles pagasts 
+location	Kaives pagasts 
+location	Kalētu pagasts 
+location	Kalkūnes pagasts 
+location	Kalna pagasts 
+location	Kalncempju pagasts 
+location	Kalnciema pagasts 
+location	Kalniešu pagasts 
+location	Kalsnavas pagasts 
+location	Kalupes pagasts 
+location	Kalvenes pagasts 
+location	Kandavas pagasts 
+location	Kantinieku pagasts 
+location	Kaplavas pagasts 
+location	Kastuļinas pagasts 
+location	Katvaru pagasts 
+location	Kauguru pagasts 
+location	Kaunatas pagasts 
+location	Kazdangas pagasts 
+location	Kārķu pagasts 
+location	Klintaines pagasts 
+location	Kocēnu pagasts 
+location	Kokneses pagasts 
+location	Kolkas pagasts 
+location	Kombuļu pagasts 
+location	Konstantinovas pagasts 
+location	Krapes pagasts 
+location	Krāslavas pagasts 
+location	Krimuldas pagasts 
+location	Krimūnu pagasts 
+location	Krišjāņu pagasts 
+location	Krustpils pagasts 
+location	Kubulu pagasts 
+location	Kupravas pagasts 
+location	Kurmāles pagasts 
+location	Kurmenes pagasts 
+location	Kursīšu pagasts 
+location	Kūku pagasts 
+location	Ķeipenes pagasts 
+location	Ķekavas pagasts 
+location	Ķepovas pagasts 
+location	Ķoņu pagasts 
+location	Ķūļciema pagasts 
+location	Laidu pagasts 
+location	Laidzes pagasts 
+location	Lapmežciema pagasts 
+location	Lauberes pagasts 
+location	Laucesas pagasts 
+location	Laucienes pagasts 
+location	Lauderu pagasts 
+location	Launkalnes pagasts 
+location	Lazdonas pagasts 
+location	Lazdukalna pagasts 
+location	Lazdulejas pagasts 
+location	Lažas pagasts 
+location	Leimaņu pagasts 
+location	Lejasciema pagasts 
+location	Lendžu pagasts 
+location	Lestenes pagasts 
+location	Lēdmanes pagasts 
+location	Lēdurgas pagasts 
+location	Lielauces pagasts 
+location	Lielplatones pagasts 
+location	Lielvārdes pagasts 
+location	Liepas pagasts 
+location	Liepnas pagasts 
+location	Liepupes pagasts 
+location	Liezēres pagasts 
+location	Limbažu pagasts 
+location	Litenes pagasts 
+location	Lizuma pagasts 
+location	Lībagu pagasts 
+location	Līdumnieku pagasts 
+location	Līgatnes pagasts 
+location	Līgo pagasts 
+location	Līksnas pagasts 
+location	Līvbērzes pagasts 
+location	Lodes pagasts 
+location	Lubes pagasts 
+location	Lutriņu pagasts 
+location	Lūznavas pagasts 
+location	Ļaudonas pagasts 
+location	Madlienas pagasts 
+location	Malienas pagasts 
+location	Malnavas pagasts 
+location	Maltas pagasts 
+location	Maļinovas pagasts 
+location	Matīšu pagasts 
+location	Matkules pagasts 
+location	Mazozolu pagasts 
+location	Mazsalacas pagasts 
+location	Mazzalves pagasts 
+location	Mākoņkalna pagasts 
+location	Mālupes pagasts 
+location	Mārcienas pagasts 
+location	Mārkalnes pagasts 
+location	Mārsnēnu pagasts 
+location	Medņevas pagasts 
+location	Medumu pagasts 
+location	Medzes pagasts 
+location	Meņģeles pagasts 
+location	Mežāres pagasts 
+location	Mežotnes pagasts 
+location	Mežvidu pagasts 
+location	Mērdzenes pagasts 
+location	Mētrienas pagasts 
+location	Mores pagasts 
+location	Murmastienes pagasts 
+location	Nagļu pagasts 
+location	Naudītes pagasts 
+location	Naujenes pagasts 
+location	Naukšēnu pagasts 
+location	Nautrēnu pagasts 
+location	Neretas pagasts 
+location	Nirzas pagasts 
+location	Nīcas pagasts 
+location	Nīcgales pagasts 
+location	Nīgrandes pagasts 
+location	Nīkrāces pagasts 
+location	Nītaures pagasts 
+location	Novadnieku pagasts 
+location	Ņukšu pagasts 
+location	Ogresgala pagasts 
+location	Olaines pagasts 
+location	Ošupes pagasts 
+location	Otaņķu pagasts 
+location	Ozolaines pagasts 
+location	Ozolmuižas pagasts 
+location	Ozolnieku pagasts 
+location	Padures pagasts 
+location	Palsmanes pagasts 
+location	Pampāļu pagasts 
+location	Pasienes pagasts 
+location	Pāles pagasts 
+location	Pededzes pagasts 
+location	Pelču pagasts 
+location	Pelēču pagasts 
+location	Penkules pagasts 
+location	Piedrujas pagasts 
+location	Pildas pagasts 
+location	Pilskalnes pagasts 
+location	Pilskalnes pagasts 
+location	Piltenes pagasts 
+location	Platones pagasts 
+location	Plāņu pagasts 
+location	Popes pagasts 
+location	Praulienas pagasts 
+location	Preiļu pagasts 
+location	Priekules pagasts 
+location	Priekuļu pagasts 
+location	Prodes pagasts 
+location	Pureņu pagasts 
+location	Pušas pagasts 
+location	Pušmucovas pagasts 
+location	Puzes pagasts 
+location	Pūres pagasts 
+location	Raiskuma pagasts 
+location	Ramatas pagasts 
+location	Rankas pagasts 
+location	Raņķu pagasts 
+location	Raunas pagasts 
+location	Rembates pagasts 
+location	Remtes pagasts 
+location	Rencēnu pagasts 
+location	Rendas pagasts 
+location	Riebiņu pagasts 
+location	Rikavas pagasts 
+location	Rites pagasts 
+location	Robežnieku pagasts 
+location	Rožkalnu pagasts 
+location	Rožupes pagasts 
+location	Rubas pagasts 
+location	Rubenes pagasts 
+location	Rucavas pagasts 
+location	Rudbāržu pagasts 
+location	Rudzātu pagasts 
+location	Rugāju pagasts 
+location	Rumbas pagasts 
+location	Rundāles pagasts 
+location	Rundēnu pagasts 
+location	Rušonas pagasts 
+location	Sakas pagasts 
+location	Sakstagala pagasts 
+location	Salacas pagasts 
+location	Salacgrīvas pagasts 
+location	Salas pagasts 
+location	Salas pagasts 
+location	Salaspils pagasts 
+location	Saldus pagasts 
+location	Salgales pagasts 
+location	Salienas pagasts 
+location	Salnavas pagasts 
+location	Sarkaņu pagasts 
+location	Saukas pagasts 
+location	Saulkrastu pagasts 
+location	Saunas pagasts 
+location	Sausnējas pagasts 
+location	Seces pagasts 
+location	Sesavas pagasts 
+location	Sēlpils pagasts 
+location	Sēļu pagasts 
+location	Sēmes pagasts 
+location	Sērenes pagasts 
+location	Siguldas pagasts 
+location	Silajāņu pagasts 
+location	Silmalas pagasts 
+location	Sīļukalna pagasts 
+location	Skaistas pagasts 
+location	Skaistkalnes pagasts 
+location	Skaņkalnes pagasts 
+location	Skrudalienas pagasts 
+location	Skrundas pagasts 
+location	Skujenes pagasts 
+location	Skultes pagasts 
+location	Slampes pagasts 
+location	Smārdes pagasts 
+location	Smiltenes pagasts 
+location	Snēpeles pagasts 
+location	Sokolku pagasts 
+location	Stabulnieku pagasts 
+location	Staburaga pagasts 
+location	Staiceles pagasts 
+location	Stalbes pagasts 
+location	Stāmerienas pagasts 
+location	Stelpes pagasts 
+location	Stoļerovas pagasts 
+location	Stradu pagasts 
+location	Straupes pagasts 
+location	Strazdes pagasts 
+location	Stružānu pagasts 
+location	Sunākstes pagasts 
+location	Suntažu pagasts 
+location	Susāju pagasts 
+location	Sutru pagasts 
+location	Svariņu pagasts 
+location	Sventes pagasts 
+location	Svētes pagasts 
+location	Svitenes pagasts 
+location	Šēderes pagasts 
+location	Šķaunes pagasts 
+location	Šķeltovas pagasts 
+location	Šķēdes pagasts 
+location	Šķilbēnu pagasts 
+location	Tabores pagasts 
+location	Tadaiķu pagasts 
+location	Taurenes pagasts 
+location	Taurupes pagasts 
+location	Tārgales pagasts 
+location	Tērvetes pagasts 
+location	Tilžas pagasts 
+location	Tirzas pagasts 
+location	Tīnūžu pagasts 
+location	Tomes pagasts 
+location	Trapenes pagasts 
+location	Trikātas pagasts 
+location	Tumes pagasts 
+location	Turku pagasts 
+location	Turlavas pagasts 
+location	Ugāles pagasts 
+location	Ukru pagasts 
+location	Umurgas pagasts 
+location	Upmalas pagasts 
+location	Usmas pagasts 
+location	Užavas pagasts 
+location	Ūdrīšu pagasts 
+location	Vaboles pagasts 
+location	Vadakstes pagasts 
+location	Vaidavas pagasts 
+location	Vaiņodes pagasts 
+location	Vaives pagasts 
+location	Valdgales pagasts 
+location	Valgundes pagasts 
+location	Valkas pagasts 
+location	Valles pagasts 
+location	Valmieras pagasts 
+location	Vandzenes pagasts 
+location	Varakļānu pagasts 
+location	Variešu pagasts 
+location	Variņu pagasts 
+location	Vānes pagasts 
+location	Vārkavas pagasts 
+location	Vārmes pagasts 
+location	Vārves pagasts 
+location	Vecates pagasts 
+location	Vecauces pagasts 
+location	Veclaicenes pagasts 
+location	Vecpiebalgas pagasts 
+location	Vecpils pagasts 
+location	Vecsalienas pagasts 
+location	Vecsaules pagasts 
+location	Vectilžas pagasts 
+location	Vecumnieku pagasts 
+location	Vecumu pagasts 
+location	Veselavas pagasts 
+location	Vestienas pagasts 
+location	Vērēmu pagasts 
+location	Vērgales pagasts 
+location	Vidrižu pagasts 
+location	Viesatu pagasts 
+location	Viesītes pagasts 
+location	Viesturu pagasts 
+location	Vietalvas pagasts 
+location	Vijciema pagasts 
+location	Vilces pagasts 
+location	Vilpulkas pagasts 
+location	Viļānu pagasts 
+location	Viļķenes pagasts 
+location	Virbu pagasts 
+location	Vircavas pagasts 
+location	Virešu pagasts 
+location	Virgas pagasts 
+location	Višķu pagasts 
+location	Vīksnas pagasts 
+location	Vīpes pagasts 
+location	Vītiņu pagasts 
+location	Zalves pagasts 
+location	Zaļenieku pagasts 
+location	Zaļesjes pagasts 
+location	Zantes pagasts 
+location	Zaņas pagasts 
+location	Zasas pagasts 
+location	Zaubes pagasts 
+location	Zebrenes pagasts 
+location	Zeltiņu pagasts 
+location	Zemītes pagasts 
+location	Zentenes pagasts 
+location	Ziemera pagasts 
+location	Zilākalna pagasts 
+location	Zirņu pagasts 
+location	Ziru pagasts 
+location	Zlēku pagasts 
+location	Zosēnu pagasts 
+location	Zvārdes pagasts 
+location	Zvārtavas pagasts 
+location	Zvirgzdenes pagasts 
+location	Žīguru pagasts 
+location	A-B dambis 
+location	Andrejsala 
+location	Anniņmuiža 
+location	Aplokciems 
+location	Atgāzene 
+location	Avotu iela 
+location	Āgenskalna priedes 
+location	Āgenskalns 
+location	Baloži 
+location	Beberbeķi 
+location	Beķermuiža 
+location	Berģi 
+location	Bieķensala 
+location	Bieriņi 
+location	Bišumuiža 
+location	Bolderāja 
+location	Brasa 
+location	Brekši 
+location	Bukulti 
+location	Centrs 
+location	Čiekurkalns 
+location	Daugavgrīva 
+location	Dārzciems 
+location	Dārziņi 
+location	Dreiliņi 
+location	Dzirciems 
+location	Eksportosta 
+location	Grīvas masīvs 
+location	Grīziņkalns 
+location	Iļģuciems 
+location	Imanta 
+location	Jaunciems 
+location	Jaunmīlgrāvis 
+location	Jugla 
+location	Juglas papīrfabrika 
+location	Juglas zvēraudzētava 
+location	Katlakalns 
+location	Kleisti 
+location	Klīversala 
+location	Krasta masīvs 
+location	Krēmeri 
+location	Krievu sala 
+location	Kundziņsala 
+location	Kurzemes rajons 
+location	Ķengarags 
+location	Ķīpsala 
+location	Latgales priekšpilsēta 
+location	Lāčupe 
+location	Lejas Podrags 
+location	Lucavsala 
+location	Mangaļsala 
+location	Maskavas forštate 
+location	Mazā Vējzaķa sala 
+location	Mārupe 
+location	Medema purvs 
+location	Mežaparks 
+location	Mežciems 
+location	Mūkusala 
+location	Ozolkalni 
+location	Pētersala 
+location	Pleskodāle 
+location	Pļavnieki 
+location	Podrags 
+location	Purvciems 
+location	Rātsupe 
+location	Rīnūži 
+location	Rītabuļļi 
+location	Rumbula 
+location	Sarkandaugava 
+location	Saules dārzs 
+location	Skanste 
+location	Spilve 
+location	Suži 
+location	Šampēteris 
+location	Šķirotava 
+location	Šmerlis 
+location	Teika 
+location	Torņakalns 
+location	Trīsciems 
+location	Vakarbuļļi 
+location	Vaķildi 
+location	Vecāķi 
+location	Vecdaugava 
+location	Vecmīlgrāvis 
+location	Vecrīga 
+location	Vējzaķsala 
+location	Vidzemes priekšpilsēta 
+location	Voleri 
+location	Zaķusala 
+location	Zasulauks 
+location	Zemgales priekšpilsēta 
+location	Ziemeļblāzma 
+location	Ziemeļu rajons 
+location	Ziepniekkalns 
+location	Zolitūde 
+location	Daugavpils 
+location	Jelgava 
+location	Jēkabpils 
+location	Jūrmala 
+location	Liepāja 
+location	Rēzekne 
+location	Valmiera 
+location	Ventspils 
+location	Ainaži 
+location	Aizkraukle 
+location	Aizpute 
+location	Aknīste 
+location	Aloja 
+location	Alūksne 
+location	Ape 
+location	Auce 
+location	Baldone 
+location	Baloži 
+location	Balvi 
+location	Bauska 
+location	Brocēni 
+location	Cesvaine 
+location	Cēsis 
+location	Dagda 
+location	Dobele 
+location	Durbe 
+location	Grobiņa 
+location	Gulbene 
+location	Ikšķile 
+location	Ilūkste 
+location	Jaunjelgava 
+location	Kandava 
+location	Kārsava 
+location	Krāslava 
+location	Kuldīga 
+location	Ķegums 
+location	Lielvārde 
+location	Limbaži 
+location	Līgatne 
+location	Līvāni 
+location	Lubāna 
+location	Ludza 
+location	Madona 
+location	Mazsalaca 
+location	Ogre 
+location	Olaine 
+location	Pāvilosta 
+location	Piltene 
+location	Pļaviņas 
+location	Preiļi 
+location	Priekule 
+location	Sabile 
+location	Salacgrīva 
+location	Salaspils 
+location	Saldus 
+location	Saulkrasti 
+location	Sigulda 
+location	Skrunda 
+location	Smiltene 
+location	Staicele 
+location	Stende 
+location	Strenči 
+location	Subate 
+location	Talsi 
+location	Tukums 
+location	Valdemārpils 
+location	Valka 
+location	Vangaži 
+location	Varakļāni 
+location	Viesīte 
+location	Viļaka 
+location	Viļāni 
+location	Zilupe 
+location	Acone  
+location	Aglona  
+location	Aizkraukle 
+location	Allaži 
+location	Alsunga 
+location	Audreņi 
+location	Augstkalne 
+location	Augšlīgatne 
+location	Avoti 
+location	Ādamlauks 
+location	Ādaži 
+location	Āne 
+location	Baltezers 
+location	Baļtinova 
+location	Barkava 
+location	Bārbele 
+location	Bebrine 
+location	Berģi 
+location	Bēne 
+location	Bērvircava 
+location	Bērzkalni 
+location	Biksēre 
+location	Birzgale 
+location	Birži 
+location	Blīdene 
+location	Brankas 
+location	Carnikava 
+location	Cīrava 
+location	Code 
+location	Daudzeva 
+location	Daugmale 
+location	Dāviņi 
+location	Dižstende 
+location	Dreiliņi 
+location	Dricāni 
+location	Druja
+location	Druva 
+location	Dubeņi 
+location	Dundaga 
+location	Dzērbene 
+location	Džūkste 
+location	Eglaine 
+location	Eleja 
+location	Engure 
+location	Ezere 
+location	Ezernieki 
+location	Ēdole 
+location	Ērgļi 
+location	Feimaņi 
+location	Garciems 
+location	Gardene 
+location	Garkalne 
+location	Gauja 
+location	Gauja 
+location	Gaujiena 
+location	Grundzāle 
+location	Iecava 
+location	Ieriķi 
+location	Inciems 
+location	Inčukalns 
+location	Indra 
+location	Irlava 
+location	Jaunbērze 
+location	Jauncode 
+location	Jaungulbene 
+location	Jaunkalsnava 
+location	Jaunlutriņi 
+location	Jaunmārupe 
+location	Jaunolaine  
+location	Jaunpagasts 
+location	Jaunpiebalga 
+location	Jaunpils 
+location	Jaunstrūžāni 
+location	Jāņmuiža 
+location	Jumprava 
+location	Kabile 
+location	Kadaga 
+location	Kaķenieki 
+location	Kalkūni 
+location	Kalnamuiža 
+location	Kalnciems 
+location	Kalni 
+location	Kapsēde 
+location	Katlakalns 
+location	Kaunata 
+location	Kazdanga 
+location	Kiemėnai 
+location	Kocēni  
+location	Koknese  
+location	Kolka  
+location	Kolups  
+location	Krauja 
+location	Krimūnas 
+location	Kriukai 
+location	Kroņauce  
+location	Kruopiai 
+location	Kuprava 
+location	Kurmaičiai 
+location	Kursīši 
+location	Kusa 
+location	Ķeipene 
+location	Ķekava 
+location	Laidze 
+location	Lapmežciems 
+location	Laubere 
+location	Lauciene 
+location	Lazdona  
+location	Lazdona 
+location	Lejasciems 
+location	Lēdmane 
+location	Lēdurga 
+location	Liepa 
+location	Liepna 
+location	Litene 
+location	Lizums 
+location	Līči 
+location	Līvbērze 
+location	Lociki  
+location	Lutriņi 
+location	Lūznava 
+location	Ļaudona  
+location	Madliena 
+location	Malnova 
+location	Malta 
+location	Matīši 
+location	Mālpils 
+location	Mārciena 
+location	Mārupe 
+location	Medeikiai 
+location	Medums 
+location	Mežāre 
+location	Mežciems 
+location	Mērsrags 
+location	Mētriena 
+location	Miltiņi 
+location	Milzkalne 
+location	Misa 
+location	Mosėdis 
+location	Mucenieki 
+location	Mundigciems 
+location	Mūrmuiža 
+location	Mūsa 
+location	Naukšēni 
+location	Nākotne 
+location	Neicgaļs (-lis) 
+location	Nereta 
+location	Nīca 
+location	Nīgrande 
+location	Nītaure 
+location	Novadnieki 
+location	Odukalns  
+location	Ogresgals  
+location	Ozolaine 
+location	Ozolnieki 
+location	Palsmane 
+location	Pampāļi 
+location	Pastende 
+location	Pavlovo-Bliny 
+location	Pelči 
+location	Peltes 
+location	Pilsrundāle 
+location	Platone 
+location	Pope  
+location	Prauliena 
+location	Priedaine 
+location	Priekuļi 
+location	Pūņas 
+location	Pūre 
+location	Ragaciems 
+location	Ragana 
+location	Ranka 
+location	Rauna 
+location	Rembate 
+location	Rencēni 
+location	Renda 
+location	Riebiņi 
+location	Rikova 
+location	Rītausmas 
+location	Roja 
+location	Ropaži  
+location	Rucava 
+location	Rudbārži 
+location	Rude 
+location	Rugoji  
+location	Sala 
+location	Saulaine 
+location	Sauleskalns 
+location	Saulkalne 
+location	Saurieši 
+location	Sece 
+location	Silakrogs 
+location	Silene 
+location	Sinole  
+location	Skaistgirys 
+location	Skaistkalne 
+location	Skrīveri 
+location	Skulte 
+location	Slabodka 
+location	Slampe 
+location	Smārde 
+location	Spuņciems 
+location	Staļģene 
+location	Stari 
+location	Stāķi 
+location	Straupe 
+location	Stūnīši 
+location	Suntaži 
+location	Suviekas 
+location	Svente 
+location	Svētciems 
+location	Svēte 
+location	Šķēde 
+location	Šķieneri 
+location	Taurene 
+location	Tārgale 
+location	Tilža 
+location	Tirza 
+location	Tīnūži 
+location	Tīraine 
+location	Trapene 
+location	Tume 
+location	Ugāle 
+location	Ulbroka  
+location	Umurga 
+location	Upesciems 
+location	Upeslejas 
+location	Uzvara 
+location	Vacružina 
+location	Vacsloboda  
+location	Vaidava 
+location	Vaiņode  
+location	Valdlauči 
+location	Valle 
+location	Valmiermuiža 
+location	Vandzene 
+location	Variņi 
+location	Vālodzes 
+location	Vārme 
+location	Vecauce 
+location	Vecbebri 
+location	Vecpiebalga 
+location	Vecsaule 
+location	Vecstropi  
+location	Vecumnieki 
+location	Viesturi 
+location	Viļķene 
+location	Vircava 
+location	Višku tehnikums 
+location	Vītoliņi 
+location	Zaķumuiža 
+location	Zaļenieki 
+location	Zasa 
+location	Zaube 
+location	Ziedonis 
+location	Zilaiskalns 
+location	Zvejniekciems 
+location	Žīguri 
+location	Abavnieki 
+location	Adamova (Odumova ) 
+location	Aduliena 
+location	Aglonas stacija 
+location	Aiviekste 
+location	Aizpurve 
+location	Aizstrautnieki 
+location	Aizupes 
+location	Aizupītes 
+location	Akācijas 
+location	Alderi 
+location	Alejas 
+location	Aleksandrova 
+location	Allažmuiža 
+location	Almāle 
+location	Alsviķi 
+location	Alši 
+location	Aļņi 
+location	Amata 
+location	Ambeļi 
+location	Amele 
+location	Ance 
+location	Ancene 
+location	Andzeļi 
+location	Anna 
+location	Annenieki 
+location	Antūži 
+location	Anuži 
+location	Apaļi 
+location	Apgulde 
+location	Apriķi 
+location	Apšuciems 
+location	Asare 
+location	Astašova  
+location	Atašiene 
+location	Auciems 
+location	Audrupi 
+location	Augstkalne 
+location	Auguste 
+location	Auleja 
+location	Auri 
+location	Auzeņi 
+location	Ābari 
+location	Ābele 
+location	Ādžūni 
+location	Ālande 
+location	Ārdava 
+location	Āstere 
+location	Bajāri (Priežavoti) 
+location	Balgale 
+location	Baltaiskrogs 
+location	Baltezers 
+location	Baltmuiža 
+location	Balvu stacija 
+location	Barisova 
+location	Baški 
+location	Bārta 
+location	Beibeži 
+location	Beitiņi 
+location	Bekas 
+location	Bekši 
+location	Beļava 
+location	Benislova 
+location	Berkeneļi 
+location	Bernāti 
+location	Bērstele 
+location	Bērzaine 
+location	Bērzaune 
+location	Bērzciems 
+location	Bērze 
+location	Bērzi 
+location	Bērzkalne 
+location	Bērzkrogs 
+location	Bērzupe 
+location	Bierzpiļs (-lis) (latgaliski) 
+location	Bieržgaļs (-lis) 
+location	Bigauņciems 
+location	Biksti 
+location	Biķernieki 
+location	Bille 
+location	Bilska 
+location	Birži (agrāk) 
+location	Bīriņi 
+location	Blāzma 
+location	Blome 
+location	Blonti  
+location	Blukas 
+location	Bojas 
+location	Bormaņi  
+location	Borovka  
+location	Bozova 
+location	Bramberģe 
+location	Brenci 
+location	Brenguļi 
+location	Briežuciems 
+location	Brigi 
+location	Brodi  
+location	Brunavišķi 
+location	Brutuļi 
+location	Bruzilas 
+location	Budberga 
+location	Buiva 
+location	Bukaiši 
+location	Bukulti 
+location	Bukupe 
+location	Bunči 
+location	Bunka 
+location	Burtnieki 
+location	Būtnāri 
+location	Cekule 
+location	Celmraugciems 
+location	Ceļmalas 
+location	Cempi 
+location	Cena 
+location	Ceplis 
+location	Ceraukste 
+location	Ceriņi 
+location	Cēre 
+location	Cibla 
+location	Ciecere 
+location	Ciemupe 
+location	Cimdenieki 
+location	Ciskodi 
+location	Ciskods 
+location	Cīruļi 
+location	Cīruļi 
+location	Černoste 
+location	Červonka  
+location	Čornaja  
+location	Dalbe 
+location	Daudzese 
+location	Daugavmala 
+location	Dauguļi 
+location	Daukstes 
+location	Dārzciems 
+location	Degumnieki 
+location	Deksne 
+location	Dekšores  
+location	Dekteri 
+location	Demene 
+location	Dikļi 
+location	Dimzukalns 
+location	Dižliepas 
+location	Dokupe  
+location	Doļnaja  
+location	Dorupe  
+location	Drabeši 
+location	Drusti 
+location	Druviena 
+location	Dubna 
+location	Dubulti 
+location	Dubuļi 
+location	Dukuri 
+location	Dunalka 
+location	Dunava 
+location	Dunski 
+location	Dursupe 
+location	Dvīts 
+location	Dzeguzēni 
+location	Dzelda 
+location	Dzelmes 
+location	Dzelzava 
+location	Dzērvenieki 
+location	Dzidriņas 
+location	Dzintars 
+location	Dzirnieki 
+location	Egļucīms
+location	Eikaži 
+location	Elektriķi 
+location	Elkšņi 
+location	Emburga 
+location	Emburga 
+location	Endzele 
+location	Eriņi 
+location	Ezerkalns 
+location	Ērberģe 
+location	Ērgļi 
+location	Ērģeme 
+location	Ēvarži 
+location	Ēvele 
+location	Faļtopi  
+location	Felicianova 
+location	Gaigolova  
+location	Gaiķi 
+location	Gaiļmuiža 
+location	Gaisma 
+location	Galgauska 
+location	Gaļāni 
+location	Garkalne 
+location	Garoza 
+location	Garoza  
+location	Gaujasrēveļi 
+location	Gārsine 
+location	Gātciems 
+location	Glāžšķūnis 
+location	Goliševa
+location	Gorņica  
+location	Gramzda 
+location	Grāveri 
+location	Greiškāni 
+location	Grenctāle 
+location	Grenči 
+location	Grēnes 
+location	Grieze 
+location	Griķi 
+location	Grobiņa 
+location	Gudenieki 
+location	Guntas 
+location	Gūžas 
+location	Ģikši 
+location	Ģipka 
+location	Ilze 
+location	Iļžukolns  
+location	Indrāni 
+location	Ineši 
+location	Ipiķi 
+location	Irši 
+location	Istalsna 
+location	Izvolts  
+location	Īle 
+location	Īvande 
+location	Janeikas 
+location	Janopole  
+location	Jaunaglona
+location	Jaunanna 
+location	Jaunauce 
+location	Jaunciems 
+location	Jaundundaga 
+location	Jaunikšķile 
+location	Jaunklidzis 
+location	Jaunlaicene 
+location	Jaunlazdona  
+location	Jaunmuiža 
+location	Jaunpēternieki 
+location	Jaunsaule 
+location	Jaunsilavas 
+location	Jaunsvirlauka 
+location	Jaunviļāni 
+location	Jaunzemi 
+location	Jāņuciems 
+location	Jāņukalns 
+location	Jelgavkrasti 
+location	Jersika 
+location	Jēkabnieki 
+location	Jērcēni 
+location	Jorniņi 
+location	Josmuiža
+location	Jugla 
+location	Jumprava 
+location	Jumurda 
+location	Jupatovka 
+location	Jurģi 
+location	Jūdaži 
+location	Jūrkalne 
+location	Jūrmalciems 
+location	Kaibala 
+location	Kaigu ciems 
+location	Kaive 
+location	Kaive 
+location	Kaldabruņa 
+location	Kalēti 
+location	Kalnabeites 
+location	Kalncempji 
+location	Kalnenieki 
+location	Kalngale 
+location	Kalniena 
+location	Kalnieši 
+location	Kalnišķi 
+location	Kaltene 
+location	Kalvene 
+location	Kaļķis 
+location	Kandavas stacija 
+location	Kaplava 
+location	Kareļi 
+location	Kasters
+location	Kauguri 
+location	Kaugurmuiža 
+location	Kaulači 
+location	Kākciems 
+location	Kārķi 
+location	Kārļi 
+location	Kārniņi 
+location	Kiudalova 
+location	Klapkalnciems 
+location	Klūnas 
+location	Kokari  
+location	Kolberģis  
+location	Konstantinova  
+location	Korģene  
+location	Korneti  
+location	Košķele  
+location	Krapa 
+location	Krape 
+location	Kraukļi 
+location	Krāslavas stacija 
+location	Krievgaļi 
+location	Krišani 
+location	Kriškalni 
+location	Krīvi 
+location	Krote 
+location	Kruki 
+location	Krupi 
+location	Krustiņi 
+location	Krustkalni 
+location	Kukšas 
+location	Kumbuļi 
+location	Kumbuļs 
+location	Kurmene 
+location	Kurna 
+location	Kušaiņi 
+location	Kušņeri 
+location	Kūdra 
+location	Kūdra 
+location	Kūdums 
+location	Kūkas 
+location	Ķāķišķe 
+location	Ķeiši 
+location	Ķempji 
+location	Ķesterciems 
+location	Ķevele 
+location	Ķikuri 
+location	Ķimale 
+location	Ķipari 
+location	Ķirpēni 
+location	Ķūļciems 
+location	Laidi 
+location	Lambārte 
+location	Lamiņi 
+location	Lancenieki 
+location	Langstiņi 
+location	Lapenieki 
+location	Laši 
+location	Lašupe 
+location	Laucesa 
+location	Lauderi 
+location	Launkalne 
+location	Laurciems 
+location	Lautere 
+location	Lāčplēši 
+location	Lāde 
+location	Lādezers 
+location	Lādzere 
+location	Leiči 
+location	Leiksna 
+location	Leimaņi 
+location	Lejasstrazdi 
+location	Lemešova 
+location	Lendži 
+location	Lestene 
+location	Letes 
+location	Leveste 
+location	Lēdas 
+location	Lēnas 
+location	Lieģi 
+location	Lielauce 
+location	Lielbērze 
+location	Lielie Anspoki  
+location	Lielkangari 
+location	Liellauki 
+location	Lielplatone 
+location	Lielvircava 
+location	Liepas 
+location	Liepas 
+location	Liepkalne 
+location	Liepupe 
+location	Liepziedi 
+location	Liezēre 
+location	Lipiniški 
+location	Lipuški 
+location	Liuža 
+location	Lizdēni 
+location	Lībagi 
+location	Lībieškalns 
+location	Lībieškalns 
+location	Līči 
+location	Līčupe 
+location	Līdumnieki
+location	Līdumnieki 
+location	Līgo  
+location	Līkupēni 
+location	Līvi 
+location	Līzespasts 
+location	Lobe  
+location	Lobērģi  
+location	Lode  
+location	Lode 
+location	Loja  
+location	Lomi-Bortnīki   
+location	Lone  
+location	Lubezere 
+location	Lucmuiža 
+location	Lugaži 
+location	Lupandi 
+location	Malta 
+location	Maltas Trūpi 
+location	Maļinova 
+location	Mandegas
+location	Mariampole  
+location	Marientāle 
+location	Martiši 
+location	Matisene 
+location	Matkule 
+location	Mazbērstele 
+location	Mazgramzda 
+location	Mazirbe 
+location	Mazlauki 
+location	Mazplatone 
+location	Mācītājmuiža 
+location	Mālupe 
+location	Māriņkalns 
+location	Mārkalne 
+location	Mārsnēni 
+location	Māteri 
+location	Medņi 
+location	Meijermuiža 
+location	Meirāni 
+location	Mellsils 
+location	Mellupi 
+location	Melnbārži 
+location	Mencendarbe 
+location	Meņģele 
+location	Mežavidi 
+location	Mežavidu muiža 
+location	Mežciems 
+location	Mežezeri 
+location	Mežgale 
+location	Mežotne  
+location	Mežvalde 
+location	Mežvidi 
+location	Mežvidi 
+location	Mēmele 
+location	Mērdzine 
+location	Mēri 
+location	Mirnijs 
+location	More  
+location	Muitas 
+location	Muižnieki (tagad) 
+location	Murjāņi 
+location	Murmastiene 
+location	Mustkalni 
+location	Mūrmuiža 
+location	Mūsa 
+location	Nagļi 
+location	Namiķi 
+location	Naudaskalns 
+location	Naudīte 
+location	Naujine 
+location	Nauļāni 
+location	Neikšāni 
+location	Nesteri 
+location	Neveja 
+location	Nierza 
+location	Nīzere 
+location	Nogale 
+location	Novadnieki 
+location	Nurmiži 
+location	Ņukši 
+location	Odziena 
+location	Oglaine 
+location	Ondrupine  
+location	Osiuns  
+location	Ošāni  
+location	Ošenieki 
+location	Oškalni 
+location	Ošupe  
+location	Otaņķi 
+location	Otrie Peski 
+location	Ozolaine 
+location	Ozoli 
+location	Ozoli 
+location	Ozolkalns
+location	Ozolmuiža 
+location	Ozolnieki 
+location	Ozupine  
+location	Pabaži 
+location	Padure 
+location	Padure 
+location	Pamūša 
+location	Paplaka 
+location	Pasīne 
+location	Pastališķi 
+location	Pašuliene 
+location	Paugurciems 
+location	Pāce 
+location	Pāce 
+location	Pāle 
+location	Pārolaine 
+location	Pededze 
+location	Pelēcis 
+location	Penkule 
+location	Pērkone 
+location	Pēterlauki 
+location	Pēternieki 
+location	Piebalgas 
+location	Piedruja 
+location	Pienava 
+location	Pilda 
+location	Piliskolns 
+location	Piliškas 
+location	Pilsblīdene 
+location	Pilskalne 
+location	Pilskalne 
+location	Pilskalns 
+location	Piļcine 
+location	Pitrags 
+location	Pīneņi 
+location	Pīrāgi 
+location	Plakanciems 
+location	Plācis 
+location	Plāņi 
+location	Plātere 
+location	Plieņciems 
+location	Ploce  
+location	Ploski  
+location	Pļavas 
+location	Podzēni  
+location	Poķi 
+location	Polkorona  
+location	Poļakas  
+location	Porečje  
+location	Prezma 
+location	Priedāji 
+location	Priedes 
+location	Priedkalne 
+location	Priedula 
+location	Priežmale 
+location	Prinkas 
+location	Prīkuļi 
+location	Puikule 
+location	Punduri 
+location	Puntuži 
+location	Purmsāti 
+location	Pustinka 
+location	Puša 
+location	Pušmucova 
+location	Putni 
+location	Putnuciems 
+location	Pūdinova 
+location	Račova 
+location	Radopole  
+location	Raiskums 
+location	Ramata 
+location	Randene 
+location	Raņķi 
+location	Rasnupļi 
+location	Ratinīki 
+location	Ratnieki 
+location	Rauda 
+location	Rāmava 
+location	Rekova 
+location	Remte 
+location	Rēveļi 
+location	Rimeicāni 
+location	Rimstavas 
+location	Rīdzene 
+location	Rīva 
+location	Robežnieki 
+location	Robežnieki 
+location	Roceži 
+location	Rogoviki  
+location	Rogovka  
+location	Rokaiži  
+location	Rokasbirze  
+location	Rosica  
+location	Rosme  
+location	Rozes 
+location	Rozēni 
+location	Rozula  
+location	Rožupe  
+location	Ruba 
+location	Rubene 
+location	Rubeņi 
+location	Rude 
+location	Rudzāti 
+location	Rundāni 
+location	Ruskulova 
+location	Rūmene 
+location	Rūpnieki 
+location	Sadņiki 
+location	Saka 
+location	Sakstagols  
+location	Salanāja 
+location	Saļņova 
+location	Saraiķi 
+location	Sarkaņi 
+location	Sarkaņi 
+location	Satiķi 
+location	Sauka 
+location	Saulaine 
+location	Saule 
+location	Saurieši 
+location	Sausnēja 
+location	Sāti 
+location	Seiļukolns  
+location	Semanova 
+location	Sermīte 
+location	Sesava 
+location	Sesile 
+location	Sēja 
+location	Sēlija 
+location	Sēlpils 
+location	Sēļi 
+location	Sēļi 
+location	Sēme 
+location	Sērene 
+location	Sērmūkši 
+location	Sidgunda 
+location	Sidrabiņi 
+location	Sieksāte 
+location	Siguļi 
+location	Sikšņi 
+location	Silajāņi
+location	Silmala 
+location	Silva 
+location	Skaista 
+location	Skaņkalne 
+location	Skrudaliena 
+location	Skujene 
+location	Skujetnīki 
+location	Skuki 
+location	Skuķīši 
+location	Skulte 
+location	Slate 
+location	Smelteri 
+location	Snēpele 
+location	Sniķere 
+location	Sondori  
+location	Spāre 
+location	Sproģi 
+location	Sprūžova 
+location	Spuņģēni 
+location	Stabuļnīki 
+location	Staburags 
+location	Stalbe 
+location	Stalīdzāni 
+location	Stāmeriena 
+location	Stelpe 
+location	Stepi 
+location	Stikli 
+location	Stirniene 
+location	Stoļerova  
+location	Stradi 
+location	Straupciems 
+location	Strautiņi 
+location	Strazde 
+location	Strēlnieki 
+location	Striķi 
+location	Stropi  
+location	Strupļi 
+location	Strūžāni 
+location	Stukmaņi 
+location	Stūri 
+location	Stūrīši 
+location	Sudarbe 
+location	Sudrabkalns 
+location	Sunākste 
+location	Sunīši 
+location	Sunīši 
+location	Sutri 
+location	Suži 
+location	Svarinci 
+location	Svelberģis 
+location	Svitene 
+location	Šēdere 
+location	Škeņeva 
+location	Šķaune 
+location	Šķeltova 
+location	Šķibe 
+location	Šķilbani 
+location	Šlapaki 
+location	Špoģi
+location	Štakeldanga 
+location	Štikoni 
+location	Šuškova 
+location	Tabore  
+location	Tadaiķi 
+location	Tartaks 
+location	Taurkalne 
+location	Taurupe 
+location	Tāši 
+location	Tetele 
+location	Tērvete 
+location	Tikaiņi 
+location	Tiņģere 
+location	Tīreļi 
+location	Tožas  
+location	Trikāta 
+location	Troškas  
+location	Tumšupe 
+location	Turaida 
+location	Turkalne 
+location	Turki 
+location	Turlava 
+location	Tutini 
+location	Tūja 
+location	Tūjasmuiža 
+location	Ukri 
+location	Uļjanova 
+location	Ungurpils 
+location	Upenieki 
+location	Upesgrīva 
+location	Upespils 
+location	Upinīki 
+location	Upīškalns 
+location	Upīte 
+location	Upmalas 
+location	Urga 
+location	Usma 
+location	Užava 
+location	Ūziņi 
+location	Ūzuleņi 
+location	Ūzulmuiža 
+location	Vabale 
+location	Vacpiļs 
+location	Vacumi 
+location	Vadakste 
+location	Vaicuļeva 
+location	Vainova 
+location	Valāta 
+location	Valdeķi 
+location	Valdgale 
+location	Valgalciems 
+location	Valgale 
+location	Valgunde 
+location	Valtaiķi 
+location	Vanagi 
+location	Vandāni 
+location	Vandzenes skola 
+location	Vanga 
+location	Varieši 
+location	Varnaviči 
+location	Vaski 
+location	Vāne 
+location	Vārkava 
+location	Vārkava 
+location	Vārpa 
+location	Vārpas 
+location	Vārve 
+location	Vecaduliena 
+location	Vecate 
+location	Vecdome  
+location	Vecgaiķi 
+location	Vecpils 
+location	Vecsaikava 
+location	Vecsalaca 
+location	Vecstāmeriena 
+location	Vecstelpe 
+location	Vecsvirlauka 
+location	Vectilža 
+location	Vecvārkava 
+location	Velēna 
+location	Venta 
+location	Ventava 
+location	Vestiena 
+location	Vēde 
+location	Vērgale 
+location	Vidaga 
+location	Vidriži 
+location	Vidsala 
+location	Vidzeme 
+location	Vienība 
+location	Viertiukšne 
+location	Viesatas 
+location	Viesturi 
+location	Vietalva 
+location	Vijciems 
+location	Viksna 
+location	Vilce 
+location	Vilgāle 
+location	Vilzēni 
+location	Vimbukrogs 
+location	Vireši 
+location	Virga 
+location	Virši 
+location	Viški 
+location	Vitkuški 
+location	Vitrupe 
+location	Vībiņi 
+location	Vīdale 
+location	Vīganti 
+location	Vīpe 
+location	Vītiņi 
+location	Vonogi  
+location	Zaiceva 
+location	Zalve 
+location	Zaļesje 
+location	Zante 
+location	Zādzene 
+location	Zālīte 
+location	Zebrene 
+location	Zelmeņi 
+location	Zeltiņi 
+location	Zemgale 
+location	Zemgale 
+location	Zemīte 
+location	Zemkopības institūts 
+location	Zentene 
+location	Ziedkalne 
+location	Ziedoņi 
+location	Ziemeļblāzma 
+location	Ziemeļi 
+location	Ziemeri 
+location	Ziemupe 
+location	Ziras 
+location	Zirņi 
+location	Zīlāni 
+location	Zlēkas 
+location	Zorģi  
+location	Zosna  
+location	Zūras 
+location	Zvaigzne 
+location	Zviergzdine 
+location	Zvirgzdi 
