@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Properties;
 
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
+import edu.stanford.nlp.ie.ListNERSequenceClassifier;
 import edu.stanford.nlp.ie.NERClassifierCombiner;
 import edu.stanford.nlp.ie.crf.CRFClassifier;
 import edu.stanford.nlp.ie.regexp.RegexNERSequenceClassifier;
@@ -38,9 +39,14 @@ public class NerPipe {
 		this.props = props;
 		initializeFromProperties();
 		
-		CRFClassifier<CoreLabel> crfNer = CRFClassifier.getClassifier(defaultCrfClassifier, props);
-		RegexNERSequenceClassifier regexNer = new RegexNERSequenceClassifier("NERdicts/regex.txt", true, true);
-		classifier = new NERClassifierCombiner(crfNer, regexNer);
+		List<AbstractSequenceClassifier<CoreLabel>> classifiers = new ArrayList<>();
+		
+		if (props.containsKey("whiteList")) classifiers.add(new ListNERSequenceClassifier(props.getProperty("whiteList"), true, true));
+		classifiers.add(CRFClassifier.getClassifier(defaultCrfClassifier, props));
+		if (props.containsKey("regexList")) classifiers.add(new RegexNERSequenceClassifier(props.getProperty("regexList"), true, true));
+
+		classifier = new NERClassifierCombiner(classifiers);
+		//classifier = new NERClassifierCombiner(whiteListNer, crfNer);
 		defaultReaderWriter = new LVCoNLLDocumentReaderAndWriter();
 		defaultReaderWriter.init(classifier.flags);
 	}
@@ -150,6 +156,7 @@ public class NerPipe {
 			System.out.println("\t-toFeatures : add ner key and value to morphoFeature string");
 			System.out.println("\nOther options:");
 			System.out.println("\t-saveExtraColumns : save extra columns after typical conll input (6 columns)");
+			System.out.println("\t-whiteList : files containing white list named entities (separated by comma)");
 			System.out.flush();
 			System.exit(0);
 		}

@@ -108,6 +108,16 @@ public class ClassifierCombiner<IN extends CoreMap & HasWord> extends AbstractSe
     baseClassifiers = new ArrayList<AbstractSequenceClassifier<IN>>(Arrays.asList(classifiers));
     flags.backgroundSymbol = baseClassifiers.get(0).flags.backgroundSymbol;
   }
+  
+  /** Combines a series of base classifiers
+  *
+  * @param classifiers The base classifiers
+  */
+ public ClassifierCombiner(List<AbstractSequenceClassifier<IN>> classifiers) {
+   super(new Properties());
+   baseClassifiers = classifiers;
+   flags.backgroundSymbol = baseClassifiers.get(0).flags.backgroundSymbol;
+ }
 
 
   private void loadClassifiers(List<String> paths) throws FileNotFoundException {
@@ -225,7 +235,7 @@ public class ClassifierCombiner<IN extends CoreMap & HasWord> extends AbstractSe
    *  labeled with this auxLabel does not conflict with any non-background
    *  labelling in the mainDocument.
    */
-  static <INN extends CoreMap & HasWord> void mergeTwoDocuments(List<INN> mainDocument, List<INN> auxDocument, Set<String> auxLabels, String background) {
+  static <INN extends CoreMap & HasWord> void mergeTwoDocuments(List<INN> mainDocument, List<INN> auxDocument, Set<String> auxLabels, String background) {	  
     boolean insideAuxTag = false;
     boolean auxTagValid = true;
     String prevAnswer = background;
@@ -241,7 +251,7 @@ public class ClassifierCombiner<IN extends CoreMap & HasWord> extends AbstractSe
 
       /* if the auxiliary classifier gave it one of the labels unique to
          auxClassifier, we might set the mainLabel to that. */
-      if (auxLabels.contains(auxAnswer)) {
+      if (auxLabels.contains(auxAnswer) && !auxAnswer.equals(background)) { //AZ not equal background symbol (it is background symbol not strong class)
         if ( ! prevAnswer.equals(auxAnswer) && ! prevAnswer.equals(background)) {
           if (auxTagValid){
             for (INN wi : constituents) {

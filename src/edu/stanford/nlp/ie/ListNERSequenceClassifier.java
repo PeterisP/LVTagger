@@ -1,4 +1,4 @@
-package edu.stanford.nlp.ie.regexp;
+package edu.stanford.nlp.ie;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -31,8 +31,8 @@ import edu.stanford.nlp.util.HashIndex;
  * A sequence classifier that labels tokens with types based on a simple manual mapping from
  * regular expressions to the types of the entities they are meant to describe.
  * The user provides a file formatted as follows:
- *    regex1    TYPE    overwritableType1,Type2...    priority
- *    regex2    TYPE    overwritableType1,Type2...    priority
+ *    TYPE	words    overwritableType1,Type2...    priority
+ *    TYPE	words    overwritableType1,Type2...    priority
  *    ...
  * where each argument is tab-separated, and the last two arguments are optional. Several regexes can be
  * associated with a single type. In the case where multiple regexes match a phrase, the priority ranking
@@ -50,7 +50,7 @@ import edu.stanford.nlp.util.HashIndex;
  * @author Mihai
  *
  */
-public class RegexNERSequenceClassifier extends AbstractSequenceClassifier<CoreLabel> {
+public class ListNERSequenceClassifier extends AbstractSequenceClassifier<CoreLabel> {
   private List<Entry> entries;
 
   /**
@@ -63,9 +63,9 @@ public class RegexNERSequenceClassifier extends AbstractSequenceClassifier<CoreL
 
   private boolean ignoreCase;
 
-  public RegexNERSequenceClassifier(String mapping, boolean ignoreCase, boolean overwriteMyLabels) {
-    this(mapping, ignoreCase, overwriteMyLabels, DEFAULT_VALID_POS);
-  }
+//  public ListNERSequenceClassifier(String mapping, boolean ignoreCase, boolean overwriteMyLabels) {
+//    this(mapping, ignoreCase, overwriteMyLabels);
+//  }
 
   /**
    * Make a new instance of this classifier. The ignoreCase option allows case-insensitive
@@ -74,13 +74,8 @@ public class RegexNERSequenceClassifier extends AbstractSequenceClassifier<CoreL
    * @param mapping
    * @param ignoreCase
    */
-  public RegexNERSequenceClassifier(String mapping, boolean ignoreCase, boolean overwriteMyLabels, String validPosRegex) {
+  public ListNERSequenceClassifier(String mapping, boolean ignoreCase, boolean overwriteMyLabels) {
     super(new Properties());
-    if (validPosRegex != null && !validPosRegex.equals("")) {
-      validPosPattern = Pattern.compile(validPosRegex);
-    } else {
-      validPosPattern = null;
-    }
     entries = new ArrayList<>();
     //entries = readEntries(mapping, ignoreCase);
     String[] mappings = mapping.split(",");
@@ -101,13 +96,13 @@ public class RegexNERSequenceClassifier extends AbstractSequenceClassifier<CoreL
   }
 
   private static class Entry implements Comparable<Entry> {
-    public List<Pattern> regex; // the regex, tokenized by splitting on white space
+    public List<String> words; // the regex, tokenized by splitting on white space
     public String type; // the associated type
     public Set<String> overwritableTypes;
     public double priority;
 
-    public Entry(List<Pattern> regex, String type, Set<String> overwritableTypes, double priority) {
-      this.regex = regex;
+    public Entry(List<String> words, String type, Set<String> overwritableTypes, double priority) {
+      this.words = words;
       this.type = type.intern();
       this.overwritableTypes = overwritableTypes;
       this.priority = priority;
@@ -120,17 +115,16 @@ public class RegexNERSequenceClassifier extends AbstractSequenceClassifier<CoreL
         return -1;
       if (this.priority < other.priority)
         return 1;
-      return other.regex.size() - this.regex.size();
+      return other.words.size() - this.words.size();
     }
   }
 
   // TODO: make this a property?
   // ms: but really this should be rewritten from scratch
   //     we should have a language to specify regexes over *tokens*, where each token could be a regular Java regex (over words, POSs, etc.)
-  private final Pattern validPosPattern;
   public static final String DEFAULT_VALID_POS = "^(NN|JJ)";
-
   private boolean containsValidPos(List<CoreLabel> tokens, int start, int end) {
+	Pattern validPosPattern = Pattern.compile(DEFAULT_VALID_POS);
     if (validPosPattern == null) {
       return true;
     }
@@ -154,13 +148,13 @@ public class RegexNERSequenceClassifier extends AbstractSequenceClassifier<CoreL
       while (true) {
         // only search the part of the document that we haven't yet considered
         // System.err.println("REGEX FIND MATCH FOR " + entry.regex.toString());
-        start = findStartIndex(entry, document, start, myLabels);
+        start = findStartIndex(entry, document, start, myLabels, ignoreCase);
         if (start == -1) break; // no match found
 
         // make sure we annotate only valid POS tags
         //if (containsValidPos(document, start, start + entry.regex.size())) {
           // annotate each matching token
-          for (int i = start; i < start + entry.regex.size(); i++) {
+          for (int i = start; i < start + entry.words.size(); i++) {
             CoreLabel token = document.get(i);
             token.set(AnswerAnnotation.class, entry.type);
           }
@@ -205,13 +199,13 @@ public class RegexNERSequenceClassifier extends AbstractSequenceClassifier<CoreL
         if (split.length < 2 || split.length > 4)
           throw new RuntimeException("Provided mapping file is in wrong format");
 
-        String[] regexes = split[1].trim().split("\\s+");
+        String[] words = split[1].trim().split("\\s+");
         String type = split[0].trim();
         Set<String> overwritableTypes = new HashSet<String>();
         overwritableTypes.add(flags.backgroundSymbol);
         overwritableTypes.add(null);
         double priority = 0;
-        List<Pattern> tokens = new ArrayList<Pattern>();
+        List<String> tokens = new ArrayList<String>();
 
         try {
           if (split.length >= 3)
@@ -219,9 +213,8 @@ public class RegexNERSequenceClassifier extends AbstractSequenceClassifier<CoreL
           if (split.length == 4)
             priority = Double.parseDouble(split[3].trim());
 
-          for (String str : regexes) {
-            if(ignoreCase) tokens.add(Pattern.compile(str, Pattern.CASE_INSENSITIVE));
-            else tokens.add(Pattern.compile(str));
+          for (String str : words) {
+            tokens.add(str);
           }
         } catch(NumberFormatException e) {
           System.err.println("ERROR: Invalid line " + lineCount + " in regexner file " + mapping + ": \"" + line + "\"!");
@@ -248,19 +241,20 @@ public class RegexNERSequenceClassifier extends AbstractSequenceClassifier<CoreL
    * @param document
    * @return on success, the index of the first token in the matching sequence, otherwise -1
    */
-  private static int findStartIndex(Entry entry, List<CoreLabel> document, int searchStart, Set<String> myLabels) {
-    List<Pattern> regex = entry.regex;
-    for (int start = searchStart; start <= document.size() - regex.size(); start++) {
+  private static int findStartIndex(Entry entry, List<CoreLabel> document, int searchStart, Set<String> myLabels, boolean ignoreCase) {
+    List<String> words = entry.words;
+    for (int start = searchStart; start <= document.size() - words.size(); start++) {
       boolean failed = false;
-      for (int i = 0; i < regex.size(); i++) {
-        Pattern pattern = regex.get(i);
+      for (int i = 0; i < words.size(); i++) {
+        String word = words.get(i);
         CoreLabel token = document.get(start + i);        
         String NERType = token.get(NamedEntityTagAnnotation.class);
         String currentType = token.get(AnswerAnnotation.class);
 
-        if (! pattern.matcher(token.lemma()).matches() ||
-            //currentType != null ||
-            ! (entry.overwritableTypes.contains(NERType) ||
+        boolean matches;
+        if (ignoreCase) { matches = token.lemma().equalsIgnoreCase(word); }
+        else { matches = token.lemma().equals(word); }
+        if (!matches || ! (entry.overwritableTypes.contains(NERType) ||
                myLabels.contains(NERType) 
                //|| NERType.equals("O")
                )) {

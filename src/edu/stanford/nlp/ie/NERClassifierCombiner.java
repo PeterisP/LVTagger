@@ -40,6 +40,10 @@ public class NERClassifierCombiner extends ClassifierCombiner<CoreLabel> {
 public NERClassifierCombiner(AbstractSequenceClassifier<CoreLabel>... classifiers) throws FileNotFoundException {
     super(classifiers);
   }
+  
+  public NERClassifierCombiner(List<AbstractSequenceClassifier<CoreLabel>> classifiers) throws FileNotFoundException {
+    super(classifiers);
+  }
 
   public boolean isApplyNumericClassifiers() {
     return applyNumericClassifiers;
