@@ -11,8 +11,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.Properties;
 
@@ -27,31 +29,8 @@ import edu.stanford.nlp.sequences.DocumentReaderAndWriter;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.HashIndex;
 
-/**
- * A sequence classifier that labels tokens with types based on a simple manual mapping from
- * regular expressions to the types of the entities they are meant to describe.
- * The user provides a file formatted as follows:
- *    TYPE	words    overwritableType1,Type2...    priority
- *    TYPE	words    overwritableType1,Type2...    priority
- *    ...
- * where each argument is tab-separated, and the last two arguments are optional. Several regexes can be
- * associated with a single type. In the case where multiple regexes match a phrase, the priority ranking
- * is used to choose between the possible types. This classifier is designed to be used as part of a full NER
- * system to label entities that don't fall into the usual NER categories. It only records the label
- * if the token has not already been NER-annotated, or it has been annotated but the NER-type has been
- * designated overwritable (the third argument).
- *
- * NOTE: Following Java regex conventions, some characters in the file need to be escaped. Only a single
- * backslash should be used though, as they are not String literals. Spaces should only be used to
- * separate regular expression tokens; within tokens \\s should be used instead. Genitives and commas
- * at the end of words should be tokenized in the input file.
- *
- * @author jtibs
- * @author Mihai
- *
- */
 public class ListNERSequenceClassifier extends AbstractSequenceClassifier<CoreLabel> {
-  private List<Entry> entries;
+  private Map<String, Entry> entries;
 
   /**
    * If true, it overwrites NE labels generated through this regex NER
@@ -76,48 +55,48 @@ public class ListNERSequenceClassifier extends AbstractSequenceClassifier<CoreLa
    */
   public ListNERSequenceClassifier(String mapping, boolean ignoreCase, boolean overwriteMyLabels) {
     super(new Properties());
-    entries = new ArrayList<>();
-    //entries = readEntries(mapping, ignoreCase);
-    String[] mappings = mapping.split(",");
-    for (String map : mappings) {
-    	entries.addAll(readEntries(map, ignoreCase));
-    }    
-    
+    entries = new HashMap<>();
     this.ignoreCase = ignoreCase;
     this.overwriteMyLabels = overwriteMyLabels;
+    String[] mappings = mapping.split(",");
     myLabels = new HashSet<String>();
-    if(this.overwriteMyLabels) {
-      for(Entry entry: entries) myLabels.add(entry.type);
+    for (String map : mappings) {
+    	readEntries(map, ignoreCase);
     }
-
+    System.err.println("Lists are initialized...");
     this.classIndex = new HashIndex<String>(myLabels);
-    //System.err.println("RegexNERSequenceClassifier using labels: " +
-    //                   myLabels);
+    //System.err.println("RegexNERSequenceClassifier using labels: " + myLabels);
   }
 
-  private static class Entry implements Comparable<Entry> {
-    public List<String> words; // the regex, tokenized by splitting on white space
-    public String type; // the associated type
-    public Set<String> overwritableTypes;
-    public double priority;
-
-    public Entry(List<String> words, String type, Set<String> overwritableTypes, double priority) {
-      this.words = words;
-      this.type = type.intern();
-      this.overwritableTypes = overwritableTypes;
-      this.priority = priority;
-    }
-
-    // if the given priorities are equal, an entry whose regex has more tokens is assigned
-    // a higher priority
-    public int compareTo(Entry other) {
-      if (this.priority > other.priority)
-        return -1;
-      if (this.priority < other.priority)
-        return 1;
-      return other.words.size() - this.words.size();
-    }
+  public static String token(CoreLabel w) {
+	String lemma = w.lemma();
+	String token = w.word();
+	Character cLemma = lemma.charAt(0);
+	Character cToken = token.charAt(0);
+	if (Character.isUpperCase(cToken) != Character.isUpperCase(cLemma)) {
+		lemma = token.substring(0,1) + lemma.substring(1);
+	}
+	return lemma;
+	  
   }
+
+  private static class Entry {
+	  	public String word;
+	    public Map<String, Entry> words;
+	    public String type; // the associated type
+	    public Set<String> overWritableTypes;
+	    public double priority;
+
+	    public Entry() {
+	    	words = new HashMap<>();
+	    }
+	    public Entry(String type, Set<String> overWritableTypes, double priority) {
+	      this.type = type.intern();
+	      this.overWritableTypes = overWritableTypes;
+	      this.priority = priority;
+	      this.words = new HashMap<>();
+	    }
+	  }
 
   // TODO: make this a property?
   // ms: but really this should be rewritten from scratch
@@ -140,30 +119,63 @@ public class ListNERSequenceClassifier extends AbstractSequenceClassifier<CoreLa
     return false;
   }
 
-  @Override
-  public List<CoreLabel> classify(List<CoreLabel> document) {
-    for (Entry entry : entries) {
-      int start = 0; // the index of the token from which we begin our search each iteration
-
-      while (true) {
-        // only search the part of the document that we haven't yet considered
-        // System.err.println("REGEX FIND MATCH FOR " + entry.regex.toString());
-        start = findStartIndex(entry, document, start, myLabels, ignoreCase);
-        if (start == -1) break; // no match found
-
-        // make sure we annotate only valid POS tags
-        //if (containsValidPos(document, start, start + entry.regex.size())) {
-          // annotate each matching token
-          for (int i = start; i < start + entry.words.size(); i++) {
-            CoreLabel token = document.get(i);
-            token.set(AnswerAnnotation.class, entry.type);
-          }
-        //}
-        start++;
-      }
-    }
-    return document;
-  }
+	private static class MatchedEntry implements Comparable<MatchedEntry>{
+		public Double priority;
+		public String type;
+		public Set<String> overwritableTypes;
+		public List<CoreLabel> tokens;
+		
+		public MatchedEntry(List<CoreLabel> tokens, String type, Set<String> overWritableTypes, Double priority) {
+			this.tokens = tokens;
+			this.type = type;
+			this.overwritableTypes = overWritableTypes;
+			this.priority = priority;
+		 }
+		@Override
+		public int compareTo(MatchedEntry other) {
+			if (this.priority > other.priority)return -1;
+			if (this.priority < other.priority) return 1;
+			return  this.tokens.size()- other.tokens.size();
+		}		  
+	}
+	
+	@Override
+	public List<CoreLabel> classify(List<CoreLabel> document) {
+		List<MatchedEntry> matchedEntries = new ArrayList<>();
+		int maxWord = 0; // max right word reached (in matched entry) from before or current position i
+		for (int i = 0; i < document.size(); i++) {
+			//if ((i)%100==0) System.err.println(i+ " words tagged");
+			Map<String, Entry> entryMap = entries;
+			List<CoreLabel> tokens = new ArrayList<>();
+			int j = i;
+			CoreLabel wj = document.get(j);
+			while (entryMap != null && entryMap.containsKey(token(wj))) {
+				tokens.add(wj);
+				Entry e = entryMap.get(token(wj));
+				if (e.type != null && e.type.length() > 0) {
+					//System.err.println("FOUND " + e.type);
+					matchedEntries.add(new MatchedEntry(tokens, e.type, e.overWritableTypes, e.priority));
+					tokens = new ArrayList<>(tokens);
+				}
+				entryMap = e.words;
+				if (j+1 >= document.size()) break;
+				wj = document.get(++j);
+			}
+			
+			maxWord = Math.max(maxWord, j);
+			if (i == maxWord && matchedEntries.size() > 0) {
+				Collections.sort(matchedEntries);
+				for (MatchedEntry me : matchedEntries) {
+					for (CoreLabel c : me.tokens) {
+						c.set(AnswerAnnotation.class, me.type);
+						//System.err.println(c.word() + "\t" + me.type);
+					}
+				}
+				matchedEntries.clear();
+			}
+		}
+		return document;
+	}
 
   public void train(Collection<List<CoreLabel>> docs,
                     DocumentReaderAndWriter<CoreLabel> readerAndWriter) {}
@@ -182,8 +194,8 @@ public class ListNERSequenceClassifier extends AbstractSequenceClassifier<CoreLa
    *  @param mapping The path to a file of mappings
    *  @return a sorted list of Entries
    */
-  private List<Entry> readEntries(String mapping, boolean ignoreCase) {
-    List<Entry> entries = new ArrayList<Entry>();
+  private Map<String, Entry> readEntries(String mapping, boolean ignoreCase) {
+    Map<String, Entry> entries = new HashMap<>();
 
     try {
       // ms, 2010-10-05: try to load the file from the CLASSPATH first
@@ -220,56 +232,35 @@ public class ListNERSequenceClassifier extends AbstractSequenceClassifier<CoreLa
           System.err.println("ERROR: Invalid line " + lineCount + " in regexner file " + mapping + ": \"" + line + "\"!");
           throw e;
         }
-
-        entries.add(new Entry(tokens, type, overwritableTypes, priority));
+        addEntry(words, type, priority, overwritableTypes);
       }
       rd.close();
       is.close();
     } catch (IOException e) {
       e.printStackTrace();
     }
-
-    Collections.sort(entries);
     return entries;
   }
-
-  /**
-   * Checks if the entry's regex sequence is contained in the tokenized document, starting the search
-   * from index searchStart. Also requires that each token's current NER-type be overwritable,
-   * and that each token has not yet been Answer-annotated.
-   * @param entry
-   * @param document
-   * @return on success, the index of the first token in the matching sequence, otherwise -1
-   */
-  private static int findStartIndex(Entry entry, List<CoreLabel> document, int searchStart, Set<String> myLabels, boolean ignoreCase) {
-    List<String> words = entry.words;
-    for (int start = searchStart; start <= document.size() - words.size(); start++) {
-      boolean failed = false;
-      for (int i = 0; i < words.size(); i++) {
-        String word = words.get(i);
-        CoreLabel token = document.get(start + i);        
-        String NERType = token.get(NamedEntityTagAnnotation.class);
-        String currentType = token.get(AnswerAnnotation.class);
-
-        boolean matches;
-        if (ignoreCase) { matches = token.lemma().equalsIgnoreCase(word); }
-        else { matches = token.lemma().equals(word); }
-        if (!matches || ! (entry.overwritableTypes.contains(NERType) ||
-               myLabels.contains(NERType) 
-               //|| NERType.equals("O")
-               )) {
-          failed = true;
-          break;
-        }
+  
+  
+  private void addEntry(String[] words, String type, Double priority, Set<String> overwritableTypes) {
+	  Map<String, Entry> entryMap = entries;
+	  Entry currentEntry = new Entry();
+      for(String word : words) {
+      	currentEntry = new Entry();
+      	if (entryMap.containsKey(word)) {
+      		currentEntry = entryMap.get(word);
+      		entryMap = currentEntry.words;
+      	} else {
+      		entryMap.put(word, currentEntry);
+      		entryMap = currentEntry.words;
+      	}
       }
-      if(! failed) {
-//        System.err.print("MATCHED REGEX:");
-//        for(int i = start; i < start + regex.size(); i ++) System.err.print(" " + document.get(i).word());
-//        System.err.println();
-        return start;
-      }
-    }
-    return -1;
+      currentEntry.overWritableTypes = overwritableTypes;
+      currentEntry.priority = priority;
+      currentEntry.type = type;
+      
+      myLabels.add(type);
   }
 
   @Override

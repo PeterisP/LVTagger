@@ -46,7 +46,6 @@ public class NerPipe {
 		if (props.containsKey("regexList")) classifiers.add(new RegexNERSequenceClassifier(props.getProperty("regexList"), true, true));
 
 		classifier = new NERClassifierCombiner(classifiers);
-		//classifier = new NERClassifierCombiner(whiteListNer, crfNer);
 		defaultReaderWriter = new LVCoNLLDocumentReaderAndWriter();
 		defaultReaderWriter.init(classifier.flags);
 	}
