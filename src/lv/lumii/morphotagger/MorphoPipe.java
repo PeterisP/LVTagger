@@ -296,10 +296,20 @@ public class MorphoPipe {
 	
 	private static void addLETAfeatures(Wordform wf) {
 		String lemma = wf.getValue(AttributeNames.i_Lemma);
-		lemma.replaceAll("\\d", "0"); // uzskatam ka nav atšķirības starp skaitļiem ja ciparu skaits vienāds
-		
-		if (wf.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_FirstUpper) && Dictionary.dict("surnames").contains(lemma))
+				
+		if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.i_Number)) {
+			String numbercode = lemma.replaceAll("\\d", "0"); // uzskatam ka nav atšķirības starp skaitļiem ja ciparu skaits vienāds
+			wf.addAttribute("LETA_lemma", numbercode);
+		} else if (wf.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_FirstUpper) && Dictionary.dict("surnames").contains(lemma))
 			wf.addAttribute("LETA_lemma", "_surname_");
+		else if (Dictionary.dict("vocations").contains(lemma))
+			wf.addAttribute("LETA_lemma", "_vocation_");
+		else if (Dictionary.dict("relations").contains(lemma))
+			wf.addAttribute("LETA_lemma", "_relationship_");
+		else if (Dictionary.dict("partijas").contains(lemma))
+			wf.addAttribute("LETA_lemma", "_party_"); // TODO - nočekot kā visā procesā sanāk ar case-sensitivity, te tas ir svarīgi
+		else if (Dictionary.dict("months").contains(lemma)) // TODO - te būtu jāčeko, lai personvārdi Marts un Jūlijs te neapēdas, ja ir ar lielo burtu ne teikuma sākumā 
+			wf.addAttribute("LETA_lemma", "_month_"); 
 		else if (Dictionary.dict("common_lemmas").contains(lemma)) 
 			wf.addAttribute("LETA_lemma", lemma);
 		else wf.addAttribute("LETA_lemma", "_rare_");		

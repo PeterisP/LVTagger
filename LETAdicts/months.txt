@@ -1,0 +1,12 @@
+janvāris
+februāris
+marts
+aprīlis
+maijs
+jūnijs
+jūlijs
+augusts
+septembris
+oktobris
+novembris
+decembris

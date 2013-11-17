@@ -253,7 +253,6 @@ location	Sutri
 location	Irāka
 location	Zaube
 location	Jamaika
-location	Ziedonis
 location	Svarinci
 location	Mozambika
 location	Zilaiskalns
@@ -644,7 +643,6 @@ location	Sentvinsenta un Grenadīnas
 location	Daukstes
 location	Ziedkalne
 location	Filipīnas
-location	Ziedonis
 location	Amerika Savienot Valsts
 location	ASV
 location	Degumnieki
