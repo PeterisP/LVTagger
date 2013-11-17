@@ -1,6 +1,5 @@
 package lv.lumii.expressions;
 import java.io.File;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -27,7 +26,6 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 public class Expression
 {
 	public LinkedList <ExpressionWord> expWords;
-	Category cat;
 	private static transient Analyzer analyzer = null;
 	private static transient CMMClassifier<CoreLabel> morphoClassifier = null;
 	private static transient Analyzer locītājs = null;
@@ -100,7 +98,7 @@ public class Expression
 		{
 			token = label.getString(TextAnnotation.class);
 			
-			if(token.equals("<s>")) //FIXME kāpēc tiek pievienoti <s>? Varbūt ir kāds labāks veids kā to apiet
+			if(token.equals("<s>")) //kāpēc tiek pievienoti <s>?  PP - tageris skatās uz vārda apkaimi; teikuma sākuma/beigu vārdi ir īpaši, to signalizē pieliekot sākumā/beigās <s>
 			{
 				continue;
 			}
@@ -112,6 +110,13 @@ public class Expression
 		  System.out.println(analysis);
 		  */
 		  maxwf = analysis.getMatchingWordform(label.getString(AnswerAnnotation.class), false);
+		  if (maxwf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Verb)) {
+			  // Mēs varam pieņemt ka entītijas ir 'nounphrase' un ja beigās ir verbs (nevis divdabis) tad tas ir tagera gļuks (piemērs 'DPS saraksta')
+			  for (Wordform wf : analysis.wordforms) {
+				  if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun))
+					  maxwf = wf; // TODO - varbūt var mazliet gudrāk, ja ir vairāki tad ņemt ticamāko
+			  }
+		  }
 		  
 		  ExpressionWord tmp = new ExpressionWord(analysis, maxwf);
 		  expWords.add(tmp);
@@ -120,11 +125,10 @@ public class Expression
 	}
 	
 	
-	public void addPattern(String c) //Method adds isStatic attribute to the Expression word, which indicates, whether to inflect the Word
+	public void addPattern(	Category cat) //Method adds isStatic attribute to the Expression word, which indicates, whether to inflect the Word
 	{
 		if (expWords.size() == 0) return;
 		boolean staticWhile=false;
-		cat=get(c);
 		
 		switch(cat)
 		{
@@ -149,6 +153,7 @@ public class Expression
 			
 			
 			case org : 
+			case loc : // daudzvārdu lokācijas ('Ludzas pilsēta') lokās praktiski identiski
 			case other: // Nesaprastas kategorijas lokam kā organizācijas
 			{
 				List<ExpressionWord> phraseWords;
@@ -187,8 +192,19 @@ public class Expression
 							break;
 						}
 						case AttributeNames.v_Adjective: {
-							w.isStatic = ! (phraseWords.lastIndexOf(w) == phraseWords.size()-2); 
-							  // ja īpašības vārds saskaņojas ar "galveno" vārdu, tad loka līdzi,ja ne, tad ir statisks.
+							int wordPos = phraseWords.lastIndexOf(w);
+							// ja īpašības vārds saskaņojas ar "galveno" vārdu, tad loka līdzi,ja ne, tad ir statisks.
+							if (wordPos == phraseWords.size()-2) {
+								w.isStatic = false; // ja viņš ir priekšpēdējais, tad, pieņemot ka pēdējais ir lietvārds, lokam 
+								break;
+							}
+							if (wordPos == phraseWords.size()-3) {
+								w.isStatic = !phraseWords.get(phraseWords.size()-2).correctWordform.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adjective);
+								// ja nu ir vēl viens cits īpašības vārds pa vidu (vidējā speciālā izglītība) tad arī der, savādāk gan ne
+								break;
+							}
+							// nu un ja kautkas cits, tad laikam ir statisks
+							w.isStatic = true; 
 							break;
 						}
 						case AttributeNames.v_Verb:
@@ -210,7 +226,27 @@ public class Expression
 	
 	public String normalize() throws Exception
 	{
+		// !! ja ir zināma kategorija, tad labāk šo nelietot bet padot kategoriju !!
 		return inflect("Nominatīvs",null);
+	}
+	
+	public static Category get(String s)
+	{
+		if (s==null)
+		{
+			return Category.other;
+		}
+		switch(s)
+		{
+		case "org": case "organization":
+			return Category.org;
+		case "hum": case "person":
+			return Category.hum;
+		case "loc": case "location":
+			return Category.loc;
+		default:
+			return Category.other; //FIXME - nav labi šitā, tad jau var vispār stringus neparsēt bet prasīt ieejā enum
+		}
 	}
 	
 	public Map<String,String> getInflections(String cat) {
@@ -229,8 +265,9 @@ public class Expression
 		return result;
 	}
 	
-	public String inflect(String inflect, String cat) throws Exception
+	public String inflect(String inflect, String c) throws Exception
 	{
+		Category cat = get(c);
 		addPattern(cat);
 		
 		String inflectedPhrase="";
@@ -256,7 +293,12 @@ public class Expression
 				filtrs.removeAttribute(AttributeNames.i_Source);
 				filtrs.removeAttribute(AttributeNames.i_SourceLemma);
 				filtrs.removeAttribute(AttributeNames.i_Word);
-				filtrs.removeAttribute(AttributeNames.i_Definiteness);
+				if (!forma.isMatchingStrong(AttributeNames.i_NumberSpecial, AttributeNames.v_PlurareTantum) 
+						&& cat == Category.org ) {
+					// ja nav daudzskaitlinieks, tad ņemsim ka vienskaitļa formu
+					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Singular);
+				}
+				//filtrs.removeAttribute(AttributeNames.i_Definiteness);
 				if (forma.isMatchingStrong(AttributeNames.i_Definiteness, AttributeNames.v_Indefinite))
 					filtrs.removeAttribute(AttributeNames.i_PartOfSpeech); // OOV gadījumā nevar nošķirt lietvārdus no nenoteiktajiem īpašības vārdiem
 				if (forma.getToken().endsWith("ā") && forma.isMatchingStrong(AttributeNames.i_Definiteness, AttributeNames.v_Definite))
@@ -272,10 +314,23 @@ public class Expression
 					filtrs.removeAttribute(AttributeNames.i_Gender);
 				}
 				if (forma.getToken().endsWith("ais") && forma.isMatchingStrong(AttributeNames.i_Declension, "2")) { 
-					// FIXME - vispār tas rāda par to ka minētājam ir agresīvi jāņem vērā 'atļautie' burti pirms galotnes; 2.deklinācijā -ais nemēdz būt..
+					// FIXME - vispār tas rāda par to ka minētājam būtu agresīvi jāņem vērā 'atļautie' burti pirms galotnes; 2.deklinācijā -ais nemēdz būt..
 					filtrs.removeAttribute(AttributeNames.i_PartOfSpeech); // OOV gadījumā (Turlais) tageris reizem iedod lietvārdu
 					filtrs.removeAttribute(AttributeNames.i_Declension);
 					filtrs.removeAttribute(AttributeNames.i_Lemma); // jo lemma ir turls nevis turlais
+				}
+				//FIXME - vai visiem vai pēdējam? Un profesija te domāta, nevis jebkas, varbūt tas ir īpaši jāatlasa
+				if (cat==Category.other || w.word.getToken().startsWith("apvienīb")) {
+					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Singular);
+				}
+				if (w.word.getToken().startsWith("vēlēšan") // izņēmums lai nemēģina vienskaitļa variantus par vēlēšanu likt
+					|| w.word.getToken().equalsIgnoreCase("Salas") || w.word.getToken().equalsIgnoreCase("Salās")) { 
+					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Plural);
+				}
+				if (forma.getToken().endsWith("o") && forma.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine)) {
+					//FIXME - Tageris frāzē "vidējo speciālo izglītību" pirmo vārdu notago kā vīriešu dzimti..
+					if (expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("izglītība"))
+						filtrs.addAttribute(AttributeNames.i_Gender, AttributeNames.v_Feminine);
 				}
 					
 				/*
@@ -285,6 +340,8 @@ public class Expression
 					inflWordforms=locītājs.generateInflections(forma.getValue(AttributeNames.i_Lemma),false,filtrs);
 				else 
 					inflWordforms=locītājs.generateInflections(forma.lexeme);
+				
+				filtrs.removeAttribute(AttributeNames.i_Lemma); // jo reizēm (dzimtes utml) te būscita lemma nekā notagotajā; piemēram vidēja/vidējs
 				
 				matching = false;
 				for(Wordform wf : inflWordforms) {					
@@ -375,23 +432,6 @@ public class Expression
 		}
 		if (inflectedPhrase.endsWith(" .")) inflectedPhrase = inflectedPhrase.substring(0, inflectedPhrase.length()-2) + ".";
 		return inflectedPhrase.trim();
-	}
-	
-	public static Category get(String s)
-	{
-		if (s==null)
-		{
-			return Category.other;
-		}
-		switch(s)
-		{
-		case "org": case "organization":
-			return Category.org;
-		case "hum": case "person":
-			return Category.hum;
-		default:
-			return Category.other; //FIXME - nav labi šitā, tad jau var vispār stringus neparsēt bet prasīt ieejā enum
-		}
 	}
 
 	public String getWordPartOfSpeech(String string) {

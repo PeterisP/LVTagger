@@ -297,9 +297,12 @@ public class MorphoPipe {
 	private static void addLETAfeatures(Wordform wf) {
 		String lemma = wf.getValue(AttributeNames.i_Lemma);
 		lemma.replaceAll("\\d", "0"); // uzskatam ka nav atšķirības starp skaitļiem ja ciparu skaits vienāds
-		if (Dictionary.dict("common_lemmas").contains(lemma)) 
+		
+		if (wf.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_FirstUpper) && Dictionary.dict("surnames").contains(lemma))
+			wf.addAttribute("LETA_lemma", "_surname_");
+		else if (Dictionary.dict("common_lemmas").contains(lemma)) 
 			wf.addAttribute("LETA_lemma", lemma);
-		else wf.addAttribute("LETA_lemma", "_rets_");		
+		else wf.addAttribute("LETA_lemma", "_rare_");		
 	}
 
 	// VISL CG format, as described in http://beta.visl.sdu.dk/cg3/chunked/streamformats.html#stream-vislcg

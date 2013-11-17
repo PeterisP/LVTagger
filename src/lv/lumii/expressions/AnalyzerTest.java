@@ -171,7 +171,7 @@ public class AnalyzerTest
 		assertEquals("veiksmīga atgriešanās", 
 				new Expression("veiksmīgu atgriešanos").normalize());
 		
-		assertEquals("akcijas kopējā vērtībā", 
+		assertEquals("akcijas kopējajā vērtībā", //TODO - te varbūt labāk bez noteiktās formas, bet citur gan ir svarīgi (augstākā izglītība vs augsta izglītība) 
 				new Expression("akcijas kopējā vērtība").inflect(AttributeNames.v_Locative, "sum"));
 		
 		assertEquals("ANO", 
@@ -190,8 +190,105 @@ public class AnalyzerTest
 		assertEquals("7. augusts", 
 				new Expression("7. augustā").inflect(AttributeNames.v_Nominative, "time"));
 	}
+
+	@Test
+	public void vietvārdi_īpašie() throws Exception {
+		assertEquals("Pļaviņas", 
+				new Expression("Pļaviņas").inflect(AttributeNames.v_Nominative, "location"));
+
+		assertEquals("Saldus vidusskola", 
+				new Expression("Saldus vidusskolu").inflect(AttributeNames.v_Nominative, "organization"));
+		// TODO - vai Saldus ir onomastikā vai core leksikonā ?  LV lielos vietvārdus vajag core
+	}
 	
-//Ģeogrāfisko vietu nosaukumu testi
+	@Test
+	public void CVbugi20131104() throws Exception {
+		assertEquals("deputāts", 
+				new Expression("deputāti").inflect(AttributeNames.v_Nominative, "profession"));
+		
+		assertEquals("Ludzas pilsēta", 
+				new Expression("Ludzas pilsētas").inflect(AttributeNames.v_Nominative, "location"));
+		
+		assertEquals("DPS saraksts", 
+				new Expression("DPS saraksta").inflect(AttributeNames.v_Nominative, "organization"));
+		//TODO - te tageris izdomā, ka 'saraksta' ir verbs - jāizdomā kā var padot tagerim ekstra informāciju, ka te ir nounphrase 
+	}
+
+	@Test
+	public void CVbugi20131105() throws Exception {
+		assertEquals("Rīgas domes vēlēšanas", 
+				new Expression("Rīgas domes vēlēšanās").inflect(AttributeNames.v_Nominative, "other"));
+		
+		assertEquals("augstākā izglītība", 
+				new Expression("augstākā izglītība").inflect(AttributeNames.v_Nominative, "other"));
+		
+		assertEquals("Tautsaimnieku politiskā apvienība", 
+				new Expression("Tautsaimnieku politiskās apvienības").inflect(AttributeNames.v_Nominative, "location"));
+		
+		assertEquals("Tautsaimnieku politiskās apvienības", 
+				new Expression("Tautsaimnieku politiskā apvienība").inflect(AttributeNames.v_Genitive, "location"));
+	}
 	
-//Apbalvojumu nosaukumu testi
+	@Test 
+	public void CV50() throws Exception {
+		assertEquals("Deniss Gorba", 
+				new Expression("Deniss Gorba").inflect(AttributeNames.v_Nominative, "person"));
+		
+		assertEquals("Edgars Zalāns", 
+				new Expression("Edgara Zalāna").inflect(AttributeNames.v_Nominative, "person"));
+		
+		assertEquals("locekļa amats", 
+				new Expression("locekļa amata").normalize());
+		
+		assertEquals("Ingunai Sudrabai", 
+				new Expression("Inguna Sudraba").inflect(AttributeNames.v_Dative, "person"));
+	}
+	
+	@Test 
+	public void vienskaitļi() throws Exception {
+		assertEquals("valdes priekšsēdētājs", 
+				new Expression("valdes priekšsēdētāju").normalize());
+	}
+	
+	@Test 
+	public void pārākā() throws Exception {
+		assertEquals("Jelgavas tehniskais licejs", 
+				new Expression("Jelgavas tehniskais licejs").normalize());
+		
+		assertEquals("augstākā izglītība", 
+				new Expression("augstāko izglītību").normalize());
+		
+		assertEquals("vidējā speciālā izglītība", 
+				new Expression("vidējo speciālo izglītību").normalize());
+	}
+	
+	@Test
+	public void personas_ar_amatiem() throws Exception {
+		assertEquals("Deniss Gorba", 
+				new Expression("Deniss Gorba").inflect(AttributeNames.v_Nominative, "person"));
+	}
+
+	@Test
+	public void vietas2() throws Exception {
+		assertEquals("Seišelu Salās", 
+				new Expression("Seišelu Salas").inflect(AttributeNames.v_Locative, "location"));
+		
+		assertEquals("Ķemeri", 
+				new Expression("Ķemeros").inflect(AttributeNames.v_Nominative, "location"));
+		
+		// jālabo:
+		// Gana -> Ganai
+		// Amerikas Savinotās Valstis, Apvienotie Arābu Emirāti
+		// Bosnija un Hercegovina
+		// Gvineja-Bisava
+		// Balvi		
+	}
+	
+	@Test
+	public void dubultuzvārdi() throws Exception {
+		assertEquals("Vairai Vīķei-Freibergai", 
+				new Expression("Vaira Vīķe-Freiberga").inflect(AttributeNames.v_Dative, "person"));
+	}
+	
+	
 }

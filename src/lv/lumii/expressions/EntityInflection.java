@@ -22,7 +22,7 @@ public class EntityInflection {
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception {
-		String input_filename = "entities_locīšanai.txt";
+		String input_filename = "entities_locīšanai.txt"; // Ieejā jābūt 1 ieraksts uz rindiņu, ar tab-delimited kolonnām id-name-category 
 		String output_filename = "entities_izlocītas.txt";
 		BufferedReader ieeja = new BufferedReader(new InputStreamReader(new FileInputStream(input_filename), "UTF-8"));
 		PrintWriter izeja = new PrintWriter(new OutputStreamWriter(new FileOutputStream(output_filename), "UTF-8"));
@@ -34,6 +34,8 @@ public class EntityInflection {
 			if (count % 1000 == 0) System.out.print('.');
 			if (count % 10000 == 0) System.out.println();
 			String[] fields = entity_row.split("\t");
+			if (fields.length < 3)
+				throw new Exception(String.format("Rindā '%s' nav 3 tab-delimited lauki, kā būtu jābūt",entity_row));
 			String entity_id = fields[0];
 			String entity_name = fields[1];
 			if (entity_name.trim().isEmpty()) continue; // TODO - šādi ir jāmet ārā no DB...
