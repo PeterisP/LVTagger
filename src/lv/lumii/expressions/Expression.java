@@ -132,8 +132,9 @@ public class Expression
 		
 		switch(cat)
 		{
-			case hum : // Cilvēku vārdiem lokam visus tokenus ko var 
+			case hum : // Cilvēku vārdiem lokam visus tokenus ko var, izņemot gadījumos kad klāt ir arī amats (valdes priekšsēdētājs Ivars Zariņš)
 				for (ExpressionWord w : expWords) {
+					w.isStatic = false;
 					if (w.word.isRecognized()==false) {
 						w.isStatic=true;
 						continue;
@@ -143,8 +144,20 @@ public class Expression
 						case AttributeNames.v_Punctuation: 
 						case AttributeNames.v_Numeral:
 						case AttributeNames.v_Abbreviation:
+						case AttributeNames.v_Preposition:
 						case AttributeNames.v_Pronoun: { // TODO - vietniekvārdus teorētiski var locīt, taču netriviāli jo tie ir hardcoded 
 							w.isStatic=true;
+							break;
+						}
+						case AttributeNames.v_Noun:
+						case AttributeNames.v_Adjective: {
+							int wordPos = expWords.lastIndexOf(w);
+							if (expWords.size()-wordPos > 2) { // ja ir 3+ vārdus no beigām...
+								if (!w.correctWordform.isMatchingStrong(AttributeNames.i_NounType, AttributeNames.v_ProperNoun) && // .. īpašvārdus locīsim 
+									w.correctWordform.isMatchingWeak(AttributeNames.i_Guess, AttributeNames.v_NoGuess) && 
+									!w.correctWordform.isMatchingStrong(AttributeNames.i_Source, "generateInflections")) // neuzminētos (kas laikam arī ir īpašvārdi) locīsim
+									w.isStatic = true; // pārējos gan ne
+							}
 							break;
 						}
 					}
@@ -211,6 +224,7 @@ public class Expression
 						case AttributeNames.v_Punctuation: 
 						case AttributeNames.v_Numeral:
 						case AttributeNames.v_Abbreviation:
+						case AttributeNames.v_Preposition:
 						case AttributeNames.v_Pronoun: { // TODO - vietniekvārdus teorētiski var locīt, taču netriviāli jo tie ir hardcoded 
 							w.isStatic=true;
 							break;

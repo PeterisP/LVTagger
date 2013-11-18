@@ -264,8 +264,8 @@ public class AnalyzerTest
 	
 	@Test
 	public void personas_ar_amatiem() throws Exception {
-		assertEquals("Deniss Gorba", 
-				new Expression("Deniss Gorba").inflect(AttributeNames.v_Nominative, "person"));
+		assertEquals("valdes priekšsēdētājs Ivars Zariņš", 
+				new Expression("valdes priekšsēdētājs Ivars Zariņš").inflect(AttributeNames.v_Nominative, "person"));
 	}
 
 	@Test
@@ -290,5 +290,12 @@ public class AnalyzerTest
 				new Expression("Vaira Vīķe-Freiberga").inflect(AttributeNames.v_Dative, "person"));
 	}
 	
-	
+	@Test
+	public void neizloka() throws Exception {
+		// nav assert, bet jāskatās vai nemet errorpaziņojumus konsolē
+		new Expression("pakalpojumi saistīti ar uzturēšanu").normalize();
+		new Expression("Sabiedriskās attiecības").normalize();
+		new Expression("reklāma , mārketings , telekomunikācijas").normalize();
+		
+	}
 }
