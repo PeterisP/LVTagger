@@ -44,8 +44,7 @@
   <property name="compile.source"      value="1.7" />
   <property name="compile.target"      value="1.7" />
 
-
-
+  <echo message="Using Java version ${ant.java.version} at ${java.home}."/>
 
 <!-- ==================== All Target ====================================== -->
 

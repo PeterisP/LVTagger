@@ -34,8 +34,11 @@ public class EntityInflection {
 			if (count % 1000 == 0) System.out.print('.');
 			if (count % 10000 == 0) System.out.println();
 			String[] fields = entity_row.split("\t");
-			if (fields.length < 3)
-				throw new Exception(String.format("Rindā '%s' nav 3 tab-delimited lauki, kā būtu jābūt",entity_row));
+			if (fields.length < 3) {
+				//throw new Exception(String.format("Rindā '%s' nav 3 tab-delimited lauki, kā būtu jābūt",entity_row));
+				System.err.println(String.format("Rindā '%s' nav 3 tab-delimited lauki, kā būtu jābūt",entity_row));
+				continue;
+			}
 			String entity_id = fields[0];
 			String entity_name = fields[1];
 			if (entity_name.trim().isEmpty()) continue; // TODO - šādi ir jāmet ārā no DB...

@@ -42,6 +42,7 @@ public class MorphoPipe {
 	private static boolean LETAfeatures = false;	
 	private static inputTypes inputType = inputTypes.SENTENCE;
 	private static outputTypes outputType = outputTypes.JSON;
+	private static int sentencelengthcap = Splitting.DEFAULT_SENTENCE_LENGTH_CAP;
 	
 	private static String morphoClassifierLocation = "models/lv-morpho-model.ser.gz"; //FIXME - make it configurable
 	
@@ -64,17 +65,29 @@ public class MorphoPipe {
 			if (args[i].equalsIgnoreCase("-features")) features = true; //output training features
 			if (args[i].equalsIgnoreCase("-leta")) LETAfeatures = true; //output specific features for LETA semantic frame analysis
 			if (args[i].equalsIgnoreCase("-vertinput")) inputType = inputTypes.VERT; //vertical input format as requested by Milos Jakubicek 2012.11.01
-			if (args[i].equalsIgnoreCase("-paragraphs")) inputType = inputTypes.PARAGRAPH;
+			if (args[i].equalsIgnoreCase("-paragraphs")) {
+				inputType = inputTypes.PARAGRAPH;
+				if (i+1 < args.length && !args[i+1].startsWith("-")) {
+					try {
+						sentencelengthcap = Integer.parseInt(args[i+1]);
+						System.err.printf("Sentence length capped to %d\n", sentencelengthcap);
+						i++;
+					} catch (Exception e) {
+						System.err.printf("Error when parsing command line param '%s %s'\n",args[i], args[i+1]);
+						System.err.println(e.getMessage());
+					}
+				}
+			}
 			if (args[i].equalsIgnoreCase("-conll-in")) inputType = inputTypes.CONLL; 
 			if (args[i].equalsIgnoreCase("-conll-x")) outputType = outputTypes.CONLL_X;
 			if (args[i].equalsIgnoreCase("-xml")) outputType = outputTypes.XML;
 			if (args[i].equalsIgnoreCase("-visl-cg")) outputType = outputTypes.VISL_CG;
-			
+						
 			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
 				System.out.println("LV morphological tagger");
 				System.out.println("\nInput formats");
 				System.out.println("\tDefault : plain text UTF-8, one sentence per line, terminated by a blank line.");
-				System.out.println("\t-paragraphs : plain text UTF-8, each line will be split in sentences. In output, paragraph borders are noted by an extra blank line.");
+				System.out.println("\t-paragraphs [lengthcap]: plain text UTF-8, each line will be split in sentences. In output, paragraph borders are noted by an extra blank line. If lengthcap parameter is provided, then sentence length will be limited to that, instead of the default of " + sentencelengthcap);
 				System.out.println("\t-vertinput : one line per token, sentences separated by <s></s>. Any XML-style tags are echoed as-is. \n\t\tNB! sentences are retokenized, the number of tokens may be different.");
 				System.out.println("\t-conll-in : CONLL shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
 				System.out.println("\nOutput formats");
@@ -139,7 +152,7 @@ public class MorphoPipe {
 			CMMClassifier<CoreLabel> cmm, PrintStream out, String text) {
 		
 		if (inputType == inputTypes.PARAGRAPH) { // split in multiple sentences
-			LinkedList<LinkedList<Word>> sentences = Splitting.tokenizeSentences(LVMorphologyReaderAndWriter.getAnalyzer(), text);
+			LinkedList<LinkedList<Word>> sentences = Splitting.tokenizeSentences(LVMorphologyReaderAndWriter.getAnalyzer(), text, sentencelengthcap);
 			for (LinkedList<Word> sentence : sentences) 
 				outputSentence(cmm, out, LVMorphologyReaderAndWriter.analyzeSentence2(sentence) );
 			out.println();
