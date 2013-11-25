@@ -21,6 +21,7 @@ import lv.semti.morphology.attributes.AttributeValues;
 import edu.stanford.nlp.ie.ner.CMMClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ConllSyntaxAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.ExtraColumnAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
@@ -43,6 +44,7 @@ public class MorphoPipe {
 	private static inputTypes inputType = inputTypes.SENTENCE;
 	private static outputTypes outputType = outputTypes.JSON;
 	private static int sentencelengthcap = Splitting.DEFAULT_SENTENCE_LENGTH_CAP;
+	private static boolean saveColumns = false;
 	
 	private static String morphoClassifierLocation = "models/lv-morpho-model.ser.gz"; //FIXME - make it configurable
 	
@@ -82,6 +84,7 @@ public class MorphoPipe {
 			if (args[i].equalsIgnoreCase("-conll-x")) outputType = outputTypes.CONLL_X;
 			if (args[i].equalsIgnoreCase("-xml")) outputType = outputTypes.XML;
 			if (args[i].equalsIgnoreCase("-visl-cg")) outputType = outputTypes.VISL_CG;
+			if (args[i].equalsIgnoreCase("-saveColumns")) saveColumns = true; //save extra columns from conll input
 						
 			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
 				System.out.println("LV morphological tagger");
@@ -102,6 +105,7 @@ public class MorphoPipe {
 				System.out.println("\t-stripped : lexical/nonessential parts of the tag are replaced with '-' to reduce sparsity.");
 				System.out.println("\t-features : in conll output, include the features that were used for training/tagging.");
 				System.out.println("\t-leta : in conll output, include extra features used for semantic frame analysis.");
+				System.out.println("\t-saveColumns : save extra columns from conll input.");
 				System.out.flush();
 				System.exit(0);
 			}
@@ -250,9 +254,11 @@ public class MorphoPipe {
 			if (mainwf != null) {
 				String lemma = mainwf.getValue(AttributeNames.i_Lemma);
 				lemma = lemma.replace(' ', '_');
+				String answer = word.getString(AnswerAnnotation.class);
+				if (answer.length() == 0) answer = "_"; // no empty tag
 				s.append(lemma);
 				s.append('\t');
-				s.append(word.getString(AnswerAnnotation.class));
+				s.append(answer);
 				s.append('\t');
 				s.append(mainwf.getTag());
 				s.append('\t');
@@ -295,12 +301,16 @@ public class MorphoPipe {
 				s.append(token); 
 				s.append("\t_\t_\t_\t");
 			}
-			String syntax = word.getString(ConllSyntaxAnnotation.class);
-			if (syntax != null) {
-				s.append(syntax);
-				s.append(eol);
+			if (saveColumns) {
+				s.append(word.getString(ExtraColumnAnnotation.class));
+			} else {
+				String syntax = word.getString(ConllSyntaxAnnotation.class);
+				if (syntax != null) {
+					s.append(syntax);
+				}
+				else s.append("_\t_\t_\t_");
 			}
-			else s.append("_\t_\t_\t_" + eol);
+			s.append(eol);
 			counter++;
 		}
 		
@@ -472,11 +482,18 @@ public class MorphoPipe {
 	    		String[] fields = s.split("\t");
 	    		String token = fields[1];
 	    		if (!token.equalsIgnoreCase("_")) token = token.replace('_', ' ');
-	    		String syntax = fields[6] + "\t" + fields[7] + "\t" + fields[8] + "\t" + fields[9];
+	    		String extraColumns = "";
+	    		if (saveColumns) {
+	    			for (int field_i = 6; field_i < fields.length; field_i++) extraColumns += fields[field_i] + "\t";
+	    			extraColumns.trim();
+	    		}	    		
+	    		String syntax = "";
+	    		if (fields.length >= 10) syntax = fields[6] + "\t" + fields[7] + "\t" + fields[8] + "\t" + fields[9];
 
 	    		CoreLabel word = new CoreLabel();
 				word.set(TextAnnotation.class, token);
 				word.set(ConllSyntaxAnnotation.class, syntax);
+				word.set(ExtraColumnAnnotation.class, extraColumns);
 	    		sentence.add(word);
 	    	} else {
 	    		stag = new CoreLabel();
