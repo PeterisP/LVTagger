@@ -32,7 +32,7 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 
 public class MorphoPipe {
 	private enum inputTypes {SENTENCE, PARAGRAPH, VERT, CONLL};
-	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X, XML, VISL_CG};
+	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X, XML, VISL_CG, lemmatizedText};
 
 	private static String eol = System.getProperty("line.separator");
 	private static String field_separator = "\t";
@@ -84,6 +84,7 @@ public class MorphoPipe {
 			if (args[i].equalsIgnoreCase("-conll-x")) outputType = outputTypes.CONLL_X;
 			if (args[i].equalsIgnoreCase("-xml")) outputType = outputTypes.XML;
 			if (args[i].equalsIgnoreCase("-visl-cg")) outputType = outputTypes.VISL_CG;
+			if (args[i].equalsIgnoreCase("-lemmatized-text")) outputType = outputTypes.lemmatizedText;
 			if (args[i].equalsIgnoreCase("-saveColumns")) saveColumns = true; //save extra columns from conll input
 						
 			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
@@ -101,6 +102,7 @@ public class MorphoPipe {
 				System.out.println("\t-conll-x : CONLL-X shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
 				System.out.println("\t-xml : one xml word per line");
 				System.out.println("\t-visl-cg : output format for VISL constraint grammar tool");
+				System.out.println("\t-lemmatized-text : output lemmatized text, each sentence in new row, tokens seperated by single space");
 				System.out.println("\nOther options:");
 				System.out.println("\t-stripped : lexical/nonessential parts of the tag are replaced with '-' to reduce sparsity.");
 				System.out.println("\t-features : in conll output, include the features that were used for training/tagging.");
@@ -189,6 +191,9 @@ public class MorphoPipe {
 			break;
 		case VISL_CG:
 			out.println( output_VISL(sentence));
+			break;
+		case lemmatizedText:
+			out.println( output_lemmatized(sentence, cmm));
 			break;
 		default: 
 			out.println( output_separated(sentence));	    
@@ -315,6 +320,32 @@ public class MorphoPipe {
 		}
 		
 		return s.toString();
+	}
+	
+	private static String output_lemmatized(List<CoreLabel> tokens, CMMClassifier<CoreLabel> cmm){
+		StringBuilder s = new StringBuilder();
+
+		boolean saveCase = true;
+		
+		for (CoreLabel word : tokens) {
+			String token = word.getString(TextAnnotation.class);
+			if (token.contains("<s>")) continue;
+			token = token.replace(' ', '_');
+			
+			Word analysis = word.get(LVMorphologyAnalysis.class);
+			Wordform mainwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false); 
+			if (mainwf != null) {
+				String lemma = mainwf.getValue(AttributeNames.i_Lemma);
+				if (saveCase && Character.isUpperCase(token.charAt(0))) lemma = lemma.substring(0,1).toUpperCase() + lemma.substring(1); 
+				lemma = lemma.replace(' ', '_');
+				s.append(lemma);
+				s.append(' ');
+				
+			} else {
+				System.err.println("Empty lemma");
+			}
+		}
+		return s.toString().trim();
 	}
 	
 	private static void addLETAfeatures(Wordform wf) {
