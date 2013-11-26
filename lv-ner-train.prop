@@ -8,7 +8,7 @@ serializeTo = lv-ner-model.ser.gz
 #structure of your training file; this tells the classifier
 #that the word is in column 0 and the correct answer is in
 #column 1
-map = word=1,tag=10,lemma=2,answer=7,morphologyFeatureString=5,idx=0,srl=11,PARENT=6
+map = word=1,lemma=2,answer=7,morphologyFeatureString=5,idx=0
 
 #these are the features we'd like to train with
 #some are discussed below, the rest can be
@@ -40,20 +40,16 @@ saveFeatureIndexToDisk = true
 #PP - test
 useTags=true
 useLemmas=true
-gazette = ./Gazetteer/LV_LOC_GAZETTEER.txt,./Gazetteer/LV_PERS_GAZETTEER.txt,./Gazetteer/PP_Onomastica_surnames.txt,./Gazetteer/PP_Onomastica_geonames.txt,./Gazetteer/PP_valstis.txt,./Gazetteer/PP_orgnames.txt,./Gazetteer/PP_org_elements.txt,./Gazetteer/AZ_profesijas.txt,./Gazetteer/AZ_profesijas_full_lem.txt,./Gazetteer/PP_orgnames_LETA.txt,./Gazetteer/AZ_roles.txt,./Gazetteer/AZ_ORG_common.txt,./Gazetteer/LV_ORG_INIT_GAZETTEER.txt,
-#./Gazetteer/DB_ORG.txt - a bit overwhelming
+gazette = ./Gazetteer/LV_LOC_GAZETTEER.txt,./Gazetteer/LV_PERS_GAZETTEER.txt,./Gazetteer/PP_Onomastica_surnames.txt,./Gazetteer/PP_Onomastica_geonames_lem.txt,./Gazetteer/PP_valstis_lem.txt,./Gazetteer/PP_orgnames.txt,./Gazetteer/PP_org_elements.txt,./Gazetteer/AZ_profesijas.txt,./Gazetteer/AZ_profesijas_full_lem.txt,./Gazetteer/AZ_roles.txt,./Gazetteer/AZ_ORG_common.txt,./Gazetteer/LV_ORG_INIT_GAZETTEER.txt,./Gazetteer/DB_organizations.txt,./Gazetteer/DB_locations.txt,./Gazetteer/DB_persons.txt,./Gazetteer/DB_professions.txt,./Gazetteer/AZ_valsts_parvaldes_struktura_lem.txt
 
 sloppyGazette=true
 cleanGazette=true
-
 useMorphologyFeatures=true
 
-useBeginSent=true
+printFeatures=train
 
-useOccurrencePatterns=true
 
-printClassifier=WeightHistogram
-printFeatures=printFeatures
-
+#useBeginSent=true
+#useOccurrencePatterns=true
 
 
