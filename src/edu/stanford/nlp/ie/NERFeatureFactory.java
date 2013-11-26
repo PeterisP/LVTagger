@@ -1322,7 +1322,7 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
     	  if (s != null) {
 	    	  String[] morphoFeatures =  s.split("\\|");
 	    	  for (String f : morphoFeatures) {
-	    		  if (f.startsWith("Locījums") /*|| f.startsWith("Skaitlis") || f.startsWith("Dzimte") || f.startsWith("Pamatforma") */) {
+	    		  if (f.startsWith("Locījums") || f.startsWith("Skaitlis") || f.startsWith("Vārdšķira") || f.startsWith("LETA_lemma") ) {
 	    			  featuresC.add("MORPHO-" + f);
 	    		  }
 	    	  }
@@ -1332,7 +1332,7 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
     	  if (s != null) {
 	    	  String[] morphoFeatures =  s.split("\\|");
 	    	  for (String f : morphoFeatures) {
-	    		  if (f.startsWith("Locījums") /*|| f.startsWith("Skaitlis") || f.startsWith("Dzimte") || f.startsWith("Pamatforma") */) {
+	    		  if (f.startsWith("Locījums") || f.startsWith("Skaitlis") || f.startsWith("Vārdšķira") || f.startsWith("LETA_lemma") ) {
 	    			  featuresC.add("MORPHO-P-" + f);
 	    		  }
 	    	  }
@@ -1342,12 +1342,54 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
     	  if (s != null) {
 	    	  String[] morphoFeatures =  s.split("\\|");
 	    	  for (String f : morphoFeatures) {
-	    		  if (f.startsWith("Locījums") /*|| f.startsWith("Skaitlis") || f.startsWith("Dzimte") || f.startsWith("Pamatforma") */) {
+	    		  if (f.startsWith("Locījums") || f.startsWith("Skaitlis") || f.startsWith("Vārdšķira") || f.startsWith("LETA_lemma") ) {
 	    			  featuresC.add("MORPHO-N-" + f);
 	    		  }
 	    	  }
     	  }
       }
+      
+      
+//    if (true) {
+//  	//TODO Doesnt really help, make more robust    
+//  	if (knowLC.contains(c.lemma().toLowerCase())) {
+//  		featuresC.add("DocKnownLC");  
+//  	} else if (c.index() > 1 && !isNameCase(c.word())) {
+//  		knowLC.add(c.lemma().toLowerCase());
+//  	}
+//  	if (knowUC.contains(c.lemma().toLowerCase())) {
+//  		featuresC.add("DocKnownUC");  
+//  	} else if (c.index() > 1 && isNameCase(c.word())) {
+//  		knowUC.add(c.lemma().toLowerCase());
+//  	}
+//  }
+
+//	Syntax experiments
+//	System.out.println("ROLE" + c.getString(RoleAnnotation.class));
+//  featuresC.add("CRole-" + c.getString(RoleAnnotation.class));
+//  //featuresC.add("NRole-" + n.getString(RoleAnnotation.class));
+//  //featuresC.add("PRole-" + p.getString(RoleAnnotation.class));
+//  
+//  if (c.getString(ParentAnnotation.class) !=null && !c.getString(ParentAnnotation.class).equalsIgnoreCase("")) {
+//  	int parent = Integer.parseInt(c.getString(ParentAnnotation.class));
+//  int idx = c.get(IndexAnnotation.class);
+//  if (parent > 0) {
+//  	CoreLabel par = cInfo.get(parent-idx);
+//  	if (par != null) {
+//	    	String par_tag = par.tag();
+//	    	if (par_tag != null) {
+//	    		featuresC.add("ParentTag-" + par_tag.substring(0, 1));
+//	    		featuresC.add("ParentLemma-" + par.lemma());
+//	    		featuresC.add("ParentWord-" + par.word());
+//	    		featuresC.add("ParentRole-" + par.getString(RoleAnnotation.class));
+//		    	//System.out.println("ParentTag-" + par_tag.substring(0, 1));
+//	    	}
+//  	}
+//  }
+//  }
+//	System.out.println("PARENT "+ c.getString(ParentAnnotation.class));
+      
+      
 
       if ((flags.wordShape > WordShapeClassifier.NOWORDSHAPE) || (flags.useShapeStrings)) {
         featuresC.add(cShape + "-TYPE");
@@ -1678,47 +1720,6 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
     		}
     	}
     }
-
-//    if (true) {
-//    	//TODO Doesnt really help, make more robust    
-//    	if (knowLC.contains(c.lemma().toLowerCase())) {
-//    		featuresC.add("DocKnownLC");  
-//    	} else if (c.index() > 1 && !isNameCase(c.word())) {
-//    		knowLC.add(c.lemma().toLowerCase());
-//    	}
-//    	if (knowUC.contains(c.lemma().toLowerCase())) {
-//    		featuresC.add("DocKnownUC");  
-//    	} else if (c.index() > 1 && isNameCase(c.word())) {
-//    		knowUC.add(c.lemma().toLowerCase());
-//    	}
-//    }
-
-//	Syntax experiments
-//	System.out.println("ROLE" + c.getString(RoleAnnotation.class));
-//    featuresC.add("CRole-" + c.getString(RoleAnnotation.class));
-//    //featuresC.add("NRole-" + n.getString(RoleAnnotation.class));
-//    //featuresC.add("PRole-" + p.getString(RoleAnnotation.class));
-//    
-//    if (c.getString(ParentAnnotation.class) !=null && !c.getString(ParentAnnotation.class).equalsIgnoreCase("")) {
-//    	int parent = Integer.parseInt(c.getString(ParentAnnotation.class));
-//    int idx = c.get(IndexAnnotation.class);
-//    if (parent > 0) {
-//    	CoreLabel par = cInfo.get(parent-idx);
-//    	if (par != null) {
-//	    	String par_tag = par.tag();
-//	    	if (par_tag != null) {
-//	    		featuresC.add("ParentTag-" + par_tag.substring(0, 1));
-//	    		featuresC.add("ParentLemma-" + par.lemma());
-//	    		featuresC.add("ParentWord-" + par.word());
-//	    		featuresC.add("ParentRole-" + par.getString(RoleAnnotation.class));
-//		    	//System.out.println("ParentTag-" + par_tag.substring(0, 1));
-//	    	}
-//    	}
-//    }
-//    }
-//	System.out.println("PARENT "+ c.getString(ParentAnnotation.class));
-    
-    
     return featuresC;
   }
   
