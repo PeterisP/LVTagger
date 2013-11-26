@@ -414,9 +414,6 @@ LOMA	šofere
 LOMA	mērs
 LOMA	investors
 LOMA	investore
-LOMA	
-LOMA	
-LOMA	
 LOMA	ministrs
 LOMA	prezidents
 LOMA	priekšsēdētājs
@@ -529,7 +526,6 @@ LOMA	dzīvesbiedre
 LOMA	audzēknis
 LOMA	organizatore
 LOMA	brokeris
-LOMA	
 LOMA	īpašniece
 LOMA	locekle
 LOMA	pulkvedis

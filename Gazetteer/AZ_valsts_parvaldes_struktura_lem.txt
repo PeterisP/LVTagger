@@ -1,0 +1,373 @@
+organization_s	Ministrs kabinets
+organization_s	Aizsardzība ministrija
+organization_s	Ārlietas ministrija
+organization_s	Ekonomika ministrija
+organization_s	Finansa ministrija
+organization_s	Iekšlietas ministrija
+organization_s	Izglītība un zinātne ministrija
+organization_s	Kultūra ministrija
+organization_s	Labklājība ministrija
+organization_s	Satiksme ministrija
+organization_s	Tieslietas ministrija
+organization_s	Vide aizsardzība un reģionāla attīstība ministrija
+organization_s	Zemkopība ministrija
+organization_s	ĀM
+organization_s	AM
+organization_s	EM
+organization_s	FM
+organization_s	IM
+organization_s	IZM
+organization_s	Km
+organization_s	LM
+organization_s	SM
+organization_s	TM
+organization_s	Varēt
+organization_s	ZM
+organization_s	Militārs dienests iesaukšana centrs
+organization_s	Nacionāls bruņot spēks
+organization_s	Vidzeme valsts miltāra dienests pārvalde
+organization_s	Vidzeme VMDP
+organization_s	Latgale valsts miltāra dienests pārvalde
+organization_s	Latgale VMDP
+organization_s	Kurzeme valsts miltāra dienests pārvalde
+organization_s	Kurzeme VMDP
+organization_s	Zemgale valsts miltāra dienests pārvalde
+organization_s	Zemgale VMDP
+organization_s	Rīga valsts miltāra dienests pārvalde
+organization_s	Rīga VMDP
+organization_s	Latvija Nacionāla aizsardzība akadēmija
+organization_s	Latvija Karš muzejs
+organization_s	Aizsardzība īpašums fonds
+organization_s	Aizsardzība ministrija autobāze
+organization_s	Aizsardzība ministrija autobāze
+organization_s	Diplomātisks serviss aģentūra
+organization_s	Centrāla statistika pārvalde
+organization_s	Konkurence padome
+organization_s	Energoapgāde regulēšana padome
+organization_s	Latvija nacionāls akreditācija birojs
+organization_s	Valsts metroloģiska inspekcija
+organization_s	Centrāla dzīvot māja privatizācija komisija
+organization_s	Patērētājs tiesības aizsardzība centrs
+organization_s	Valsts iekšēja tirgus aizsardzība birojs
+organization_s	Valsts energoinspekcija
+organization_s	Privatizācija aģentūra
+organization_s	VSIA " Reģions attīstība "
+organization_s	SIA " Latvija standarts "
+organization_s	Latvija Nacionāls metroloģija centrs
+organization_s	Latvenergs
+organization_s	Centrāla finansa un kontrakts vienība
+organization_s	Valsts ieņēmums dienests
+organization_s	Valsts prove uzraudzība inspekcija
+organization_s	FM Izloze un azartspēle uzraudzība inspekcija
+organization_s	Satiksme birojs
+organization_s	Valsts kase
+organization_s	Noguldījums garantija fonds pārvalde
+organization_s	Valsts nekustams īpašums aģentūra
+organization_s	Latvija Loto
+organization_s	Latvija Hipotēka un zeme banka
+organization_s	VSIA " Nams "
+organization_s	IM Sakars centrs
+organization_s	IM Informācija centrs
+organization_s	Sardze pulks
+organization_s	Patvērums meklētājs izmitināšana centrs " Mucenieki "
+organization_s	Saimniecība un apgāde pārvalde
+organization_s	Valsts policija
+organization_s	Drošība policija
+organization_s	Valsts robežsardze
+organization_s	Valsts ugunsdzēsība un glābšana dienests
+organization_s	Pilsonība un migrācija lietus pārvalde
+organization_s	Latvija Policija akadēmija
+organization_s	VU " Materiāla rezerve "
+organization_s	IM poliklīnika
+organization_s	VU " IM medicīna centrs "
+organization_s	IM medicīna centrs
+organization_s	Komplekss " Dzintars "
+organization_s	VSIA " Likums Vārds "
+organization_s	VU " Assets "
+organization_s	Policija centrāls sports klubs
+organization_s	IM sports komplekss
+organization_s	Jelgava pilsēta un rajons policija sports klubs
+organization_s	Liepāja policija sports klubs
+organization_s	Daugavpils policija sports klubs
+organization_s	Telekomunikācijas tehnika centrs
+organization_s	Izglītība saturs un eksaminācija centrs
+organization_s	Pedagogs izglītība atbalsts centrs
+organization_s	Profesionāla izglītība centrs
+organization_s	Sports pārvalde
+organization_s	Studija fonds
+organization_s	Izglītība valsts inspekcija
+organization_s	Valsts bērns tiesības aizsardzība centrs
+organization_s	Banka augstskola
+organization_s	Daugavpils pedagoģiska universitāte
+organization_s	Latvija Universitāte
+organization_s	Latvija Jūra akadēmija
+organization_s	Latvija Sports pedagoģija akadēmija
+organization_s	Liepāja Pedagoģija akadēmija
+organization_s	Rēzekne augstskola
+organization_s	Rīga Pedagoģija un izglītība vadība augstskola
+organization_s	Rīga Tehniska universitāte
+organization_s	Ventspils augstskola
+organization_s	Vidzeme augstskola
+organization_s	Aizkraukle arodvidusskola
+organization_s	Amatniecība meistars skola
+organization_s	Cēsis 4. arodvsk .
+organization_s	Daugavpils 1. arodvsk .
+organization_s	Daugavpils 38. arodvsk .
+organization_s	Daugavpils Mācība ražošana centrs
+organization_s	Specializēta kalns slēpošana skola
+organization_s	Nacionāla lietišķa sports veids sports skola
+organization_s	Murjāņi sports ģimnāzija
+organization_s	Mācība un pāraudzināšana iestāde " Strautiņi "
+organization_s	Mācība un pāraudzināšana iestāde " Pilcene "
+organization_s	Mācība un pāraudzināšana iestāde " Naukšēni "
+organization_s	Latvija Nacionāls sports skola
+organization_s	Kamaniņas sports skola
+organization_s	Jugla sanatorija internātskola
+organization_s	IZM Sports pārvalde specializēta vingrošana skola
+organization_s	Specializēts hokejs sports skola " Latvija bērzs "
+organization_s	Viļāni 41. arodvsk .
+organization_s	Ventspils 20. arodvsk .
+organization_s	Specializēts teniss sports skola
+organization_s	Latvija Akadēmiska bibliotēka
+organization_s	Akadēmiska programma aģentūra
+organization_s	A. Kirhenšteins Mikrobioloģija un virusoloģija institūts
+organization_s	Valsts BO " Daugava stadions "
+organization_s	VSIA " Jaunatne starptautiska programma aģentūra "
+organization_s	Latvija Nacionāls botānisks dārzs
+organization_s	VSIA " Latvija nacionāls valsts sports centrs " Mežaparks " "
+organization_s	Latvija nacionāls valsts sports centrs " Mežaparks "
+organization_s	Latvija organiska sintēze institūts
+organization_s	Valsts bezpeļņas zinātnisks uzņ. " LU Bioloģija institūts "
+organization_s	LU Bioloģija institūts
+organization_s	LU Biomedicīna pētījums un studija centrs
+organization_s	LU Cietviela fizika institūts
+organization_s	LU Elektronika un datorzinātņs institūts
+organization_s	LU Filozofija un socioloģija institūts
+organization_s	LU Bioloģija institūts
+organization_s	LU Biomedicīna pētījums un studija centrs
+organization_s	LU Cietviela fizika institūts
+organization_s	LU Elektronika un datorzinātņs institūts
+organization_s	LU Fizioloģija un socioloģija institūts
+organization_s	Profesionāla izglītība attīstība programma aģentūra
+organization_s	Mācība un treniņš centrs kamaniņas sports un bobsleja " Sigulda "
+organization_s	Lza un LU Matemātika institūts
+organization_s	Lza Fizikāla enerģētika institūts
+organization_s	Latvija valsts mežzinātne institūts " Silava "
+organization_s	Latvija valsts koksne ķīmija institūts
+organization_s	LU Polimērmehānika institūts
+organization_s	LU Mikrobioloģija un biotehnoloģija institūts
+organization_s	LU Matemātika un informātika institūts
+organization_s	LU Latvija vēsture institūts
+organization_s	LZA Literatūra , folklora un māksla institūts
+organization_s	LU Latvietis valoda institūts
+organization_s	LU Hidroekoloģija institūts
+organization_s	LU Fizika institūts
+organization_s	Latvija Nacionāla opera
+organization_s	Latvija Nacionāls kinematogrāfija centrs
+organization_s	Valsts Tauta māksla centrs
+organization_s	Valsts kultūrizglītība centrs
+organization_s	Valsts kultūra piemineklis aizsardzība inspekcija
+organization_s	Muzejs valsts pārvalde
+organization_s	Bibliotēka pārvalde
+organization_s	Valsts arhīvs ģenerāldirekcija
+organization_s	Latvija Nacionāla bibliotēka
+organization_s	Latvija Nacionāls teātris
+organization_s	Latvija Daile teātris
+organization_s	Rīga Krievs drāma teātris
+organization_s	Jauns Rīga teātris
+organization_s	Valsts leļļs teātris
+organization_s	Valmiera drāma teātris
+organization_s	Daugavpils teātris
+organization_s	Latvija vēsture muzejs
+organization_s	Rīga vēsture un kuģniecība muzejs
+organization_s	Rainis Literatūra un māksla vēsture muzejs
+organization_s	Rīga Kino muzejs
+organization_s	Latvija Etnogrāfisks brīvdabas muzejs
+organization_s	Rundāle pils muzejs
+organization_s	Turaida muzejrezervāts
+organization_s	VSIA " NĪ "
+organization_s	VU " Rīga Cirks "
+organization_s	Rīga Cirks
+organization_s	Valsts Māksla muzejs
+organization_s	Ārzemes māksla muzejs
+organization_s	Dekoratīvi lietišķa māksla muzejs
+organization_s	Latvija Kultūra muzejs " Dauderi "
+organization_s	VSIA " Kremerata Baltica "
+organization_s	Kremerata Baltica
+organization_s	Valsts Tiesa medicīna ekspertīze centrs
+organization_s	AIDS Profilakse centrs
+organization_s	Nacionāls vide veselība centrs
+organization_s	Valsts asinsdonors centrs
+organization_s	Medicīniska aprūpe un darbspēja ekspertīze kvalitāte kontrole inspekcija
+organization_s	Veselība un darbspēja ekspertīze ārsts valsts komisija
+organization_s	Valsts ģimene veselība centrs
+organization_s	Katastrofa medicīna centrs
+organization_s	Valsts sanitāra inspekcija
+organization_s	Valsts farmācija inspekcija
+organization_s	Valsts darbs inspekcija
+organization_s	Latvija Pārtika centrs
+organization_s	Sociāla palīdzība fonds
+organization_s	Daugavpils psihoneiroloģisks slimnieks rehabilitācija centrs
+organization_s	Rīga psihoneiroloģisks slimnieks rehabilitācija centrs
+organization_s	VSIA " Tehnisks palīglīdzeklis centrs "
+organization_s	Tehnisks palīglīdzeklis centrs
+organization_s	Medicīniski bioloģiska un ekoloģisks pētījums centrs
+organization_s	VU " Strenči "
+organization_s	Latvija onkoloģija centrs
+organization_s	Daugavpils onkoloģiska slimnīca
+organization_s	Liepāja onkoloģiska slimnīca
+organization_s	Narkoloģija centrs
+organization_s	Jelgava narkoloģiska slimnīca
+organization_s	Rindzele narkomāns rehabilitācija centrs
+organization_s	Daugavpils narkoloģiska slimnīca
+organization_s	Straupe narkoloģiska slimnīca
+organization_s	Liepāja narkoloģiska slimnīca
+organization_s	Rīga narkomānija slimnieks rehabilitācija centrs
+organization_s	Veselība veicināšana centrs
+organization_s	Latvija infektoloģija centrs
+organization_s	Valsts sociāla apdrošināšana aģentūra
+organization_s	Slimnīca " Linezers "
+organization_s	Psihiatrija centrs
+organization_s	Liepāja psihoneiroloģiska slimnīca
+organization_s	Jelgava psihoneiroloģiska slimnīca " Ģintermuiža "
+organization_s	Daugavpils psihoneiroloģiska slimnīca
+organization_s	Strenči psihoneiroloģiska slimnīca
+organization_s	Vecpiebalga psihoneiroloģiska slimnīca
+organization_s	Traumatoloģija un ortopēdija slimnīca
+organization_s	Valsts zobārstniecība centrs
+organization_s	Dzelzceļš slimnīca " Biķernieki "
+organization_s	Valsts obligāta veselība apdrošināšana aģentūra
+organization_s	Zāle cena aģentūra
+organization_s	Patoloģija centrs
+organization_s	Seksuāli transmisīva un āda slimība centrs
+organization_s	Bērns slimnīca " Gaiļezers "
+organization_s	Bērns psihoneiroloģiska slimnīca " Ainaži "
+organization_s	Aknīste psihoneiroloģiska slimnīca
+organization_s	Sociāla aprūpe centrs " Ezerkrastis "
+organization_s	P. Stradiņa klīniska universitāte slimnīca
+organization_s	Bērns klīniska universitāte slimnīca
+organization_s	Sports medicīna centrs
+organization_s	Nodarbinātība valsts dienests
+organization_s	Medicīna profesionāla izglītība centrs
+organization_s	Valsts rezerve centrāla medicīna iekārta bāze
+organization_s	Latvija Medicīna akadēmija
+organization_s	Medicīna zinātniska bibliotēka
+organization_s	P. Stradiņs Medicīna vēsture muzejs
+organization_s	Latvija eksperimentāla un klīniska medicīna institūts
+organization_s	Bērns bārenis aprūpe centrs
+organization_s	Tiesa ekspertīze zinātniska pētniecība laboratorija
+organization_s	Bēglis apelācija padome
+organization_s	Naturalizācija pārvalde
+organization_s	Patents valde
+organization_s	Totalitārs režīms noziegums izvērtēšana komisija
+organization_s	Uzņēmums reģistrs
+organization_s	Valsts zeme dienests
+organization_s	Ieslodzījums vieta pārvalde
+organization_s	Dati valsts inspekcija
+organization_s	Reliģiska lietus pārvalde
+organization_s	Valsts valoda centrs
+organization_s	Tiesa nams aģentūra
+organization_s	Kriminoloģisks pētījums centrs
+organization_s	Patents tehniska bibliotēka
+organization_s	Vide valsts inspekcija
+organization_s	Latvija Vide aģentūra
+organization_s	Valsts hidrometeoroloģija pārvalde
+organization_s	Latvija vide aizsardzība fonds
+organization_s	Daugavpils reģionāls vide pārvalde
+organization_s	Jelgava reģionāla vide pārvalde
+organization_s	Lielrīga reģionāla vide pārvalde
+organization_s	Liepāja reģionāla vide pārvalde
+organization_s	Madona reģionāla vide pārvalde
+organization_s	Rēzekne reģionāla vide pārvalde
+organization_s	Valmiera reģionāla vide pārvalde
+organization_s	Ventspils reģionāls vide pārvalde
+organization_s	Jūra vide pārvalde
+organization_s	Slītere nacionāls parks administrācija
+organization_s	Teiči daba rezervāts administrācija
+organization_s	Valsts būvinspekcija
+organization_s	Valsts ģeoloģija dienests
+organization_s	Ķemeri nacionāls parks administrācija
+organization_s	Ziemeļvidzeme biosfēra rezervāts administrācija
+organization_s	Ietekme uz vide novērtējums valsts birojs
+organization_s	K. Ulmaņs piemiņa muzejs " Pikša "
+organization_s	Lauksaimniecībs tehnika muzejs " Kalējs "
+organization_s	Rīga Motormuzejs
+organization_s	Ojārs Vācietis memoriālais muzejs
+organization_s	Andrejs Upīšs memoriālais muzejs
+organization_s	Sanitāra robežinspekcija
+organization_s	Valsts veterinārs dienests
+organization_s	Valsts zivsaimniecība pārvalde
+organization_s	Valsts mežs dienests
+organization_s	Ciltsdarbs valsts inspekcija
+organization_s	Valsts augs aizsardzība dienests
+organization_s	Augkopība produkcija kvalitāte valsts kontrole dienests
+organization_s	Lauks atbalsts dienests
+organization_s	Latvija Valsts augs aizsardzība centrs
+organization_s	VU " Meliorprojekts "
+organization_s	Lauksaimniecība tehnika sertifikācija un testēšana centrs
+organization_s	Agroķīmisks pētījums centrs
+organization_s	Valsts tehniska uzraudzība inspekcija
+organization_s	Valsts ciltsdarbs informācija dati apstrāde centrs
+organization_s	Lauks attīstība fonds
+organization_s	Lauksaimniecība tirgus intervence aģentūra
+organization_s	Latvija valsts mežs
+organization_s	Lauksaimnieks centrs
+organization_s	Valsts Dobele dārzkopība selekcija un izmēģinājums stacija
+organization_s	Latvija Valsts agrāra ekonomika institūts
+organization_s	Latvija Daba muzejs
+organization_s	VSIA " Reaktors "
+organization_s	VSIA " Teritorija attīstība plānošana centrs "
+organization_s	VSIA " Vide investīcija fonds "
+organization_s	VSIA " Vide projekts "
+organization_s	Valsts aizsargāt lībieša kultūrvēsturiska teritorija " Līvod rānda " direkcija
+organization_s	Gauja nacionāls parks administrācija
+organization_s	Latvija Tūrisms attīstība aģentūra
+organization_s	Valsts Malnava lauksaimniecība tehnikums
+organization_s	Valsts Kandava lauksaimniecība tehnikums
+organization_s	Valsts Priekuļi lauksaimniecība tehnikums
+organization_s	Valsts Saulaine lauksaimniecība tehnikums
+organization_s	Vecbebri tehnikums
+organization_s	Višķi tehnikums
+organization_s	Jēkabpils agrobiznesa koledža
+organization_s	Īpašs uzdevums ministrs sadarbība ar starptautiska finansa institūcija sekretariāts
+organization_s	Īpašs uzdevums ministrs valsts reforma lieta sekretariāts
+organization_s	Pašvaldība lietus pārvalde
+organization_s	Valsts administrācija skola
+organization_s	Valsts civildienests pārvalde
+organization_s	Latvija attīstība aģentūra
+organization_s	Valsts jaunatne iniciatīva centrs
+organization_s	Šķēps mešana metodisks centrs
+organization_s	Rīga arodizglītība iestāde Centralizēt grāmatvedība
+organization_s	Latvija Sports muzejs
+organization_s	Latvija Jaunatne sports centrs
+organization_s	Jaunatne basketbols metodisks centrs
+organization_s	IZM Centralizēt grāmatvedība
+organization_s	Ventspils starptautisks radioastronomija centrs
+organization_s	Valsts teniss centrs " Lielupe "
+organization_s	Rts Neorganiska ķīmija institūts
+organization_s	Latvija Neredzīga bibliotēka
+organization_s	Specializēts bērns sociāla aprūpe centrs
+organization_s	Specializēts valsts sociāla aprūpe un rehabilitācija centrs
+organization_s	Specializēts valsts sociāla aprūpe pansionāts
+organization_s	Arodapmācība un rehabilitācija centrs " Alsviķi "
+organization_s	Satiksme ministrija
+organization_s	Civila aviācija administrācija
+organization_s	Telekomunikācijas tarifs padome
+organization_s	Dzelzceļš administrācija
+organization_s	Dzelzceļš tehniska inspekcija
+organization_s	Valsts informācija tīkls aģentūra
+organization_s	Latvija valsts elektrosakars inspekcija
+organization_s	Latvija pasts
+organization_s	Latvija valsts radio un televīzija centrs
+organization_s	Latvija Jūra administrācija
+organization_s	Ceļš satiksme drošība direkcija
+organization_s	Latvija Autoceļš direkcija
+organization_s	Vas " Centrāla reģions ceļš "
+organization_s	Vas " Kurzeme ceļš "
+organization_s	Vas " Vidzeme ceļš "
+organization_s	Vas " Latgale ceļš "
+organization_s	Vas " Starptautiska lidosta " Rīga " "
+organization_s	Vas " Latvija gaiss satiksme "
+organization_s	Vide aizsardzība
+organization_s	Latvija meiorācija un zemkopība muzejs
+organization_s	Latvija Ugunsdzēsība muzejs

@@ -1,0 +1,368 @@
+﻿ORG_ELEMENT	Ik
+ORG_ELEMENT	SIA
+ORG_ELEMENT	Ltd
+ORG_ELEMENT	GmbH
+ORG_ELEMENT	GmbH
+ORG_ELEMENT	GmbH
+ORG_ELEMENT	IU
+ORG_ELEMENT	AS
+ORG_ELEMENT	A/s
+ORG_ELEMENT	ZS
+ORG_ELEMENT	ZvS
+ORG_ELEMENT	PS
+ORG_ELEMENT	KS
+ORG_ELEMENT	AB
+ORG_ELEMENT	BO Vas Kus
+ORG_ELEMENT	BO Vas
+ORG_ELEMENT	BO
+ORG_ELEMENT	VSIA
+ORG_ELEMENT	Inc .
+ORG_ELEMENT	Inc
+ORG_ELEMENT	pulks
+ORG_ELEMENT	kājnieks pulks
+ORG_ELEMENT	vidusskola
+ORG_ELEMENT	šautuve
+ORG_ELEMENT	kājniekupulks
+ORG_ELEMENT	vidusskola
+ORG_ELEMENT	kugubūvētava
+ORG_ELEMENT	tirgotava
+ORG_ELEMENT	kolēģija
+ORG_ELEMENT	partija
+ORG_ELEMENT	kustība
+ORG_ELEMENT	latv. b-bas
+ORG_ELEMENT	latv. b-ba
+ORG_ELEMENT	Amats b-bas
+ORG_ELEMENT	Amats b-ba
+ORG_ELEMENT	padome
+ORG_ELEMENT	partija
+ORG_ELEMENT	rāte
+ORG_ELEMENT	pils
+ORG_ELEMENT	filharmonija
+ORG_ELEMENT	valsts opera
+ORG_ELEMENT	Bezvēsts pazust bērns meklēšana biedrība
+ORG_ELEMENT	spēkstacija
+ORG_ELEMENT	Bērns tiesības aizsardzība inspekcija
+ORG_ELEMENT	biedrība
+ORG_ELEMENT	bibl . b-bas
+ORG_ELEMENT	Centrāla stacija
+ORG_ELEMENT	depozitārijs
+ORG_ELEMENT	televīzija
+ORG_ELEMENT	skolotājs seminārs
+ORG_ELEMENT	teātris
+ORG_ELEMENT	derēt Kirchen
+ORG_ELEMENT	baznīca
+ORG_ELEMENT	church
+ORG_ELEMENT	fonds
+ORG_ELEMENT	Fiļharmonija zāle
+ORG_ELEMENT	Filharmonija zāle
+ORG_ELEMENT	opera
+ORG_ELEMENT	teātris
+ORG_ELEMENT	ģimnāzija
+ORG_ELEMENT	gaļa un desa tirgotava
+ORG_ELEMENT	televīzija
+ORG_ELEMENT	grāmata un nots spiestuve
+ORG_ELEMENT	ostīt
+ORG_ELEMENT	frakcija
+ORG_ELEMENT	orķestris
+ORG_ELEMENT	prezidijs
+ORG_ELEMENT	akadēmisks vira koris
+ORG_ELEMENT	universitāte
+ORG_ELEMENT	pulks
+ORG_ELEMENT	kult . b-bas
+ORG_ELEMENT	atbrīvošana savienība
+ORG_ELEMENT	aizsargs nod
+ORG_ELEMENT	pilsēta komercskola
+ORG_ELEMENT	baznīca
+ORG_ELEMENT	kultūra nams
+ORG_ELEMENT	pag. aizsargs nodalīties
+ORG_ELEMENT	pag. aizsargs nodaļa
+ORG_ELEMENT	ģubernements
+ORG_ELEMENT	frakcija
+ORG_ELEMENT	valsts vidusskola
+ORG_ELEMENT	skola
+ORG_ELEMENT	karš resora
+ORG_ELEMENT	draudze skola
+ORG_ELEMENT	pagasts aizsargs nod
+ORG_ELEMENT	stīga kvartets
+ORG_ELEMENT	vadība
+ORG_ELEMENT	tauta armija dziesma un deja ansamblis
+ORG_ELEMENT	ostīt
+ORG_ELEMENT	universitāte
+ORG_ELEMENT	kultūra b-bas
+ORG_ELEMENT	latv. b-bas
+ORG_ELEMENT	izglīt . b-bas
+ORG_ELEMENT	luterāņs draudze
+ORG_ELEMENT	sūknis būvētava
+ORG_ELEMENT	konservātorija
+ORG_ELEMENT	katolis baznīca
+ORG_ELEMENT	Latv. jaun. sav. organizācija
+ORG_ELEMENT	Latv. kat. jaun. b-bas
+ORG_ELEMENT	Latv. kult. veic. b-bas nodalīties
+ORG_ELEMENT	Latv. nākt . savienība nod
+ORG_ELEMENT	Latv. nac. savienība nod.
+ORG_ELEMENT	Latv. b-bas
+ORG_ELEMENT	Latv. kult. veic. b-bas
+ORG_ELEMENT	Prezidijs juridiska nodaļa
+ORG_ELEMENT	dziesmusvētks biedrība
+ORG_ELEMENT	teātris
+ORG_ELEMENT	banka
+ORG_ELEMENT	savienība
+ORG_ELEMENT	komunistiska partija
+ORG_ELEMENT	konservatorija
+ORG_ELEMENT	fonds
+ORG_ELEMENT	nācionāla opera
+ORG_ELEMENT	nacionāla opera
+ORG_ELEMENT	starpnacionāla attiecības jautājums komisija
+ORG_ELEMENT	sociāldemokrātiska partija
+ORG_ELEMENT	sociālists partija
+ORG_ELEMENT	strādnieks arods organizācija
+ORG_ELEMENT	centrāla komitela orgāns
+ORG_ELEMENT	apriņķis karš tiesa
+ORG_ELEMENT	reģionāls vide pārvalde
+ORG_ELEMENT	skola
+ORG_ELEMENT	liela opera teātris
+ORG_ELEMENT	aizsargs
+ORG_ELEMENT	saviesīga b-bas
+ORG_ELEMENT	valsts Akadēmisks teātris
+ORG_ELEMENT	valsts Akadēmisks simfonisks orķestris
+ORG_ELEMENT	valsts Akadēmisks opera un balets teātris
+ORG_ELEMENT	valsts gimnatzija
+ORG_ELEMENT	apgāds
+ORG_ELEMENT	brīvprātīgs ugunsdzēsējs biedrība vīrs dubultkvartets
+ORG_ELEMENT	kinostudija
+ORG_ELEMENT	studija
+ORG_ELEMENT	bērns mūzika skola
+ORG_ELEMENT	skandinleks
+ORG_ELEMENT	rajs na tauta izglītība nodaļa
+ORG_ELEMENT	rajons Izpildkomiteja tauta izglītība nodaļa
+ORG_ELEMENT	rajons Tīt
+ORG_ELEMENT	ministrs kabinets
+ORG_ELEMENT	pagasts p-skola koris
+ORG_ELEMENT	drukatalos
+ORG_ELEMENT	oruļatatva
+ORG_ELEMENT	drukātava
+ORG_ELEMENT	nacionāla opera orķestris
+ORG_ELEMENT	operteātris
+ORG_ELEMENT	lauksaimn. b-bas
+ORG_ELEMENT	pagasts p-skola koris
+ORG_ELEMENT	operteātris
+ORG_ELEMENT	Nac. opera
+ORG_ELEMENT	pagasts kl. p-skola
+ORG_ELEMENT	apstrādāšana fabrika
+ORG_ELEMENT	padome armija
+ORG_ELEMENT	tauta partija
+ORG_ELEMENT	politbirojs
+ORG_ELEMENT	Politiska Izglītība nams
+ORG_ELEMENT	Mūzika un māksla skola
+ORG_ELEMENT	novadīt Kultūra centrs
+ORG_ELEMENT	Nācionāla opera
+ORG_ELEMENT	pulks
+ORG_ELEMENT	radiofons deja kapella
+ORG_ELEMENT	radiofons mazs orķestris
+ORG_ELEMENT	partizānt brigāde izlūkrot
+ORG_ELEMENT	republika basketbols federācija Jaunatne komisija
+ORG_ELEMENT	republika basketbols treneris padome
+ORG_ELEMENT	pilsēta slimnīca
+ORG_ELEMENT	pilsēta slimnieks nams
+ORG_ELEMENT	Karaliska opera
+ORG_ELEMENT	pils muzejs
+ORG_ELEMENT	vidusskola
+ORG_ELEMENT	centrāltirgus
+ORG_ELEMENT	dome
+ORG_ELEMENT	kinostudija
+ORG_ELEMENT	mūz. un dziedāt . b-bas
+ORG_ELEMENT	pils. teātris
+ORG_ELEMENT	pilsēta Izpildkomiteja tauta Izglītība nodaļa
+ORG_ELEMENT	pilsēta tauta Izglītība nodaļa
+ORG_ELEMENT	pionieris un skolēns pils Tauta teātris
+ORG_ELEMENT	koncentrācija nometne
+ORG_ELEMENT	peensaimneeciba skola
+ORG_ELEMENT	kopa
+ORG_ELEMENT	komponists sadarbība padome
+ORG_ELEMENT	tipogrāfija
+ORG_ELEMENT	vēsture muzejs
+ORG_ELEMENT	baznīca
+ORG_ELEMENT	draudze
+ORG_ELEMENT	evaņģēliski luteriska draudze
+ORG_ELEMENT	latv. jaunatne sav.
+ORG_ELEMENT	kult. veic. b-bas
+ORG_ELEMENT	valsts bērns tiesības aizsardzība inspekcija
+ORG_ELEMENT	Valsts policija
+ORG_ELEMENT	kājnieks pulks
+ORG_ELEMENT	amfiteātris
+ORG_ELEMENT	mūzika kamera
+ORG_ELEMENT	galms opera
+ORG_ELEMENT	vokāls kvartets
+ORG_ELEMENT	dzelzs prece tirgotava
+ORG_ELEMENT	krogs
+ORG_ELEMENT	Zemn. sav
+ORG_ELEMENT	Zemnieks savienība
+ORG_ELEMENT	komjaunatne teātris
+ORG_ELEMENT	sports bāze
+ORG_ELEMENT	Ģenerālprokuratūra
+ORG_ELEMENT	agrāra ekonomika institūts
+ORG_ELEMENT	Drošība policija
+ORG_ELEMENT	augstskola
+ORG_ELEMENT	filiāle
+ORG_ELEMENT	dzīvot māja privatizācija komisija
+ORG_ELEMENT	statistika pārvalde
+ORG_ELEMENT	vēlēšana komisija
+ORG_ELEMENT	pilsēta dome
+ORG_ELEMENT	rajons padome
+ORG_ELEMENT	ekonomika ministrija
+ORG_ELEMENT	konsultācija centrs
+ORG_ELEMENT	dienests
+ORG_ELEMENT	aģentūra
+ORG_ELEMENT	ministr padome informācija birojs
+ORG_ELEMENT	kompānija
+ORG_ELEMENT	uzņēmums
+ORG_ELEMENT	portāls
+ORG_ELEMENT	organizācija
+ORG_ELEMENT	sabiedrība
+ORG_ELEMENT	komercsabiedrība
+ORG_ELEMENT	kapitālsabiedrība
+ORG_ELEMENT	ministrija
+ORG_ELEMENT	apvienība
+ORG_ELEMENT	fonds
+ORG_ELEMENT	iestāde
+ORG_ELEMENT	firma
+ORG_ELEMENT	koncerns
+ORG_ELEMENT	aģentūra
+ORG_ELEMENT	teātris
+ORG_ELEMENT	birojs
+ORG_ELEMENT	institūts
+ORG_ELEMENT	SIA
+ORG_ELEMENT	A/s
+ORG_ELEMENT	Aģentūra
+ORG_ELEMENT	amfiteātris
+ORG_ELEMENT	ansamblis
+ORG_ELEMENT	apgāds
+ORG_ELEMENT	armija
+ORG_ELEMENT	AS
+ORG_ELEMENT	ASK
+ORG_ELEMENT	augstskola
+ORG_ELEMENT	banka
+ORG_ELEMENT	baznīca
+ORG_ELEMENT	baznīca
+ORG_ELEMENT	bāze
+ORG_ELEMENT	b-ba
+ORG_ELEMENT	biedrība
+ORG_ELEMENT	birojs
+ORG_ELEMENT	būvētava
+ORG_ELEMENT	centrāltirgus
+ORG_ELEMENT	centrs
+ORG_ELEMENT	CX
+ORG_ELEMENT	depozitārijs
+ORG_ELEMENT	dienests
+ORG_ELEMENT	dome
+ORG_ELEMENT	draudze
+ORG_ELEMENT	drukātava
+ORG_ELEMENT	fabrika
+ORG_ELEMENT	filharmonija
+ORG_ELEMENT	filiāle
+ORG_ELEMENT	fonds
+ORG_ELEMENT	frakcija
+ORG_ELEMENT	frakcija
+ORG_ELEMENT	GmbH
+ORG_ELEMENT	Ģenerālprokuratūra
+ORG_ELEMENT	ģimnāzija
+ORG_ELEMENT	Inc
+ORG_ELEMENT	Inc .
+ORG_ELEMENT	inspekcija
+ORG_ELEMENT	institūts
+ORG_ELEMENT	IU
+ORG_ELEMENT	kabinets
+ORG_ELEMENT	kamera
+ORG_ELEMENT	kapella
+ORG_ELEMENT	kinostudija
+ORG_ELEMENT	kolēģija
+ORG_ELEMENT	komercskola
+ORG_ELEMENT	komisija
+ORG_ELEMENT	konservatorija
+ORG_ELEMENT	konservātorija
+ORG_ELEMENT	kopa
+ORG_ELEMENT	koris
+ORG_ELEMENT	krogs
+ORG_ELEMENT	kuģubūvētava
+ORG_ELEMENT	kustība
+ORG_ELEMENT	Ltd
+ORG_ELEMENT	ministrija
+ORG_ELEMENT	muzejs
+ORG_ELEMENT	nams
+ORG_ELEMENT	nod
+ORG_ELEMENT	nod.
+ORG_ELEMENT	nodaļa
+ORG_ELEMENT	nometne
+ORG_ELEMENT	opera
+ORG_ELEMENT	operteātris
+ORG_ELEMENT	organizācija
+ORG_ELEMENT	orķestris
+ORG_ELEMENT	ostīt
+ORG_ELEMENT	Padome
+ORG_ELEMENT	partija
+ORG_ELEMENT	pārvalde
+ORG_ELEMENT	pils
+ORG_ELEMENT	policija
+ORG_ELEMENT	Politbirojs
+ORG_ELEMENT	Prezidijs
+ORG_ELEMENT	Prezidijs
+ORG_ELEMENT	p-skola
+ORG_ELEMENT	pulks
+ORG_ELEMENT	rāte
+ORG_ELEMENT	sabiedrība
+ORG_ELEMENT	saeima
+ORG_ELEMENT	sav
+ORG_ELEMENT	sav.
+ORG_ELEMENT	savienība
+ORG_ELEMENT	seminārs
+ORG_ELEMENT	skola
+ORG_ELEMENT	skola
+ORG_ELEMENT	spēkstacija
+ORG_ELEMENT	spiestuve
+ORG_ELEMENT	stacija
+ORG_ELEMENT	studija
+ORG_ELEMENT	šautuve
+ORG_ELEMENT	teātris
+ORG_ELEMENT	teātris
+ORG_ELEMENT	televīzija
+ORG_ELEMENT	tiesa
+ORG_ELEMENT	tipogrāfija
+ORG_ELEMENT	tirgotava
+ORG_ELEMENT	universitāte
+ORG_ELEMENT	vadība
+ORG_ELEMENT	vidusskola
+ORG_ELEMENT	ZS
+ORG_ELEMENT	valdība
+ORG_ELEMENT	institūcija
+ORG_ELEMENT	asociācija
+ORG_ELEMENT	mātesuzņēmums
+ORG_ELEMENT	ražotne
+ORG_ELEMENT	autoserviss
+ORG_ELEMENT	darbnīca
+ORG_ELEMENT	remontdarbnīca
+ORG_ELEMENT	serviss
+ORG_ELEMENT	filiāle
+ORG_ELEMENT	darbnīca
+ORG_ELEMENT	privātklīnika
+ORG_ELEMENT	birojs
+ORG_ELEMENT	rūpnīca
+ORG_ELEMENT	muzejs
+ORG_ELEMENT	autosalons
+ORG_ELEMENT	bārs
+ORG_ELEMENT	bistrs
+ORG_ELEMENT	ēdnīca
+ORG_ELEMENT	kafejnīca
+ORG_ELEMENT	picērija
+ORG_ELEMENT	restorāns
+ORG_ELEMENT	pamatskola
+ORG_ELEMENT	bērnudārzs
+ORG_ELEMENT	aptieka
+ORG_ELEMENT	audzētava
+ORG_ELEMENT	stādaudzētava
+ORG_ELEMENT	struktūrvienība
+ORG_ELEMENT	arodbiedrība
+ORG_ELEMENT	viesnīca
+ORG_ELEMENT	pirts
+ORG_ELEMENT	apsardze
+ORG_ELEMENT	autoosta
+ORG_ELEMENT	sanatorija

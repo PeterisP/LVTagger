@@ -1,740 +1,740 @@
-Afganistāna
-Albānija
-Alžīrija
-Andora
-Angola
-Angilja 
-Antarktika
-Antigva un Barbuda
-Apvienotā Karaliste
-Apvienotie Arābu Emirāti
-Argentīna
-Armēnija
-Aruba 
-ASV
-ASV Mazās Aizjūras Salas 
-ASV Samoa 
-ASV Virdžīnas 
-Austrālija
-Austrija
-Austrumtimora
-Azerbaidžāna
-Ālandu Salas 
-Bahamu Salas
-Bahreina
-Bangladeša
-Barbadosa
-Baltkrievija
-Beļģija
-Beliza
-Benina
-Bermudu Salas 
-Maķedonijas Republika
-Birma/Mjanma
-Bolīvija
-Bosnija un Hercegovina
-Botsvāna
-Brazīlija
-Britu Indijas Okeāna Teritorija 
-Britu Virdžīnas 
-Bruneja
-Bulgārija
-Burkinafaso
-Burundi
-Butāna
-Buvē Sala 
-Centrālāfrikas Republika
-Čada
-Čehijas Republika
-Čīle
-Dānija
-Dienvidāfrika
-Dienviddžordžija
-Dienvidsendviču Salas 
-Dienvidkoreja
-Dienvidsudāna
-Dominika
-Dominikāna
-Džērsija 
-Džibutija
-Ēģipte
-Ekvadora
-Ekvatoriālā Gvineja
-Eritreja
-Etiopija
-Fēru Salas 
-Fidži
-Filipīnas
-Folklenda (Malvinu) Salas 
-Francija
-Francijas Dienvidjūru un Antarktikas Zemes 
-Francijas Gviāna 
-Francijas Polinēzija 
-Gabona
-Gajāna
-Gambija
-Gana
-Gērnsija 
-Gibraltārs 
-Grenāda
-Grenlande 
-Grieķija
-Gruzija
-Guama 
-Gvadelupa 
-Gvatemala
-Gvineja
-Gvineja-Bisava
-Haiti
-Hērda Sala un Makdonalda Salas 
-Hondurasa
-Honkonga 
-Horvātija
-Igaunija
-Indija
-Indonēzija
-Irāka
-Irāna
-Īrija
-Islande
-Itālija
-Izraēla
-Jamaika
-Japāna
-Jaunkaledonija 
-Jaunzēlande
-Jemena
-Jordānija
-Kaboverde
-Kaimanu Salas 
-Kambodža
-Kamerūna
-Kanāda
-Katara
-Kazahstāna
-Kenija
-Kipra
-Kirasao 
-Kirgizstāna
-Kiribati
-Klipertona 
-Kokosu (Kīlinga) Salas 
-Kolumbija
-Komoru Salas
-Kongo 
-Kongo Demokrātiskā Republika 
-Kostarika
-Kotdivuāra
-Krievija
-Kuba
-CUC
-Kuka Salas 
-Kuveita
-Ķīna
-Laosa
-Latvija
-Lesoto
-Libāna
-Libērija
-Lībija
-Lietuva
-Lihtenšteina
-Luksemburga
-Madagaskara
-Majota 
-Makao 
-Malaizija
-Malāvija
-Maldīvija
-Mali
-Malta
-Maroka
-Māršala Salas
-Martinika 
-Maurīcija
-Mauritānija
-Meksika
-Melnkalne
-Menas Sala 
-Mikronēzija
-Moldova
-Monako
-Mongolija
-Montserrata 
-Mozambika
-Namībija
-Nauru
-Nepāla
-Nīderlande 
-Nigēra
-Nigērija
-Nikaragva
-Niue 
-Norfolkas Sala 
-Norvēģija
-Omāna
-Pakistāna
-Palau
-Panama
-Papua-Jaungvineja
-Paragvaja
-Peru
-Pitkērna 
-Polija
-Portugāle
-Puertoriko 
-Reinjona 
-Rietumsahāra 
-Ruanda
-Rumānija
-Salvadora
-Samoa
-Sanmarīno
-Santome un Prinsipi
-Saūda Arābija
-Seišelas
-Senbartelmī 
-Senegāla
-Senmartēna 
-Senpjēra un Mikelona 
-Sentkitsa un Nevisa
-Sentlūsija
-Sentvinsenta un Grenadīnas
-Serbija
-Singapūra
-Sintmartēna 
-Sīrija
-Sjerraleone
-Slovākija
-Slovēnija
-Somālija
-Somija
-Spānija
-Sudāna
-Surinama
-Sv. Helēnas Sala 
-Svālbara un Jana Majena Sala 
-Svazilenda
-Vatikāns
-Šrilanka
-Šveice
-Tadžikistāna
-Taivāna
-Taizeme
-Tanzānija
-Tērksas un Kaikosas Salas 
-Togo
-Tokelau 
-Tonga
-Trinidāda un Tobāgo
-Tunisija
-Turcija
-Turkmenistāna
-Tuvalu
-Uganda
-Ukraina
-Ungārija
-Urugvaja
-Uzbekistāna
-Vācija
-Vanuatu
-Venecuēla
-Vjetnama
-Volisa un Futunas Salas 
-Zālamana Salas
-Zambija
-Ziemsvētku Sala 
-Ziemeļkoreja
-Ziemeļu Marianas Salas 
-Zimbabve
-Zviedrija
-Afganistānas Islāma Republika
-Albānijas Republika
-Alžīrijas Tautas Demokrātiskā Republika
-Andoras Firstiste
-Angolas Republika
-Angilja
-Antarktika
-Antigva un Barbuda
-Lielbritānijas un Ziemeļīrijas Apvienotā Karaliste
-Apvienotie Arābu Emirāti
-Argentīnas Republika
-Armēnijas Republika
-Aruba
-Amerikas Savienotās Valstis
-ASV Mazās Aizjūras Salas
-ASV Samoa Teritorija
-ASV Virdžīnu Salas
-Austrālijas Savienība
-Austrijas Republika
-Austrumtimoras Demokrātiskā Republika
-Azerbaidžānas Republika
-Ālandu Salas
-Bahamu Salu Sadraudzība
-Bahreinas Karaliste
-Bangladešas
-Tautas Republika
-Barbadosa
-Baltkrievijas Republika
-Beļģijas Karaliste
-Beliza
-Beninas Republika
-Bermudu Salas
-bijusī Dienvidslāvijas Maķedonijas Republika
-Birma/Mjanma (MM1)
-Bolīvijas Daudznāciju Valsts
-Bosnija un Hercegovina
-Botsvānas Republika
-Brazīlijas Federatīvā Republika
-Britu Indijas Okeāna Teritorija
-Britu Virdžīnu Salas
-Brunejas Darusalamas Valsts
-Bulgārijas Republika
-Burkinafaso
-Burundi Republika
-Butānas Karaliste
-Buvē Sala
-Centrālāfrikas Republika
-Čadas Republika
-Čehijas Republika
-Čīles Republika
-Dānijas Karaliste
-Dienvidāfrikas Republika
-Dienviddžordžija un
-Dienvidsendviču Salas
-Korejas Republika
-Dienvidsudānas Republika
-Dominikas Sadraudzība
-Dominikānas Republika
-Džērsijas Teritoriālā Vienība
-Džibutijas Republika
-Ēģiptes Arābu Republika
-Ekvadoras Republika
-Ekvatoriālās Gvinejas Republika
-Eritrejas Valsts
-Etiopijas Federatīvā Demokrātiskā Republika
-Fēru Salas
-Fidži Republika
-Filipīnu Republika
-Folklenda (Malvinu) Salas
-Francijas Republika
-Francijas Dienvidjūru un Antarktikas Zemes
-Francijas Gviāna
-Francijas Polinēzija
-Gabonas Republika
-Gajānas Kooperatīvā Republika
-Gambijas Republika
-Ganas Republika
-Gērnsijas Teritoriālā Vienība
-Gibraltārs
-Grenāda
-Grenlande
-Grieķijas Republika
-Gruzija
-ASV Guamas Teritorija
-Gvadelupa
-Gvatemalas Republika
-Gvinejas Republika
-Gvinejas-Bisavas Republika
-Haiti Republika
-Hērda Salas un Makdonalda Salu Teritorija
-Hondurasas Republika
-Ķīnas Tautas Republikas Honkongas Īpašās Pārvaldes Apgabals (HK2)
-Horvātijas Republika
-Igaunijas Republika
-Indijas Republika
-Indonēzijas Republika
-Irākas Republika
-Irānas Islāma Republika
-Īrija
-Islandes Republika
-Itālijas Republika
-Izraēlas Valsts
-Jamaika
-Japāna
-Jaunkaledonija
-Jaunzēlande
-Jemenas Republika
-Jordānijas Hāšimītu Karaliste
-Kaboverdes Republika
-Kaimanu Salas
-Kambodžas Karaliste
-Kamerūnas Republika
-Kanāda
-Kataras Valsts
-Kazahstānas Republika
-Kenijas Republika
-Kipras Republika
-Kirasao
-Kirgizstānas Republika
-Kiribati Republika
-Klipertona Sala
-Kokosu (Kīlinga) Salu Teritorija
-Kolumbijas Republika
-Komoru Salu Savienība
-Kongo Republika
-Kongo Demokrātiskā Republika
-Kostarikas Republika
-Kotdivuāras Republika
-Krievijas Federācija
-Kubas Republika
-Kuka Salas
-Kuveitas Valsts
-Ķīnas Tautas Republika
-Laosas Tautas Demokrātiskā Republika
-Latvijas Republika
-Lesoto Karaliste
-Libānas Republika
-Libērijas Republika
-Lībija
-Lietuvas Republika
-Lihtenšteinas Firstiste
-Luksemburgas Lielhercogiste
-Madagaskaras Republika
-Majota
-Ķīnas Tautas Republikas Makao Īpašās Pārvaldes Apgabals
-Malaizija
-Malāvijas Republika
-Maldīvijas Republika
-Mali Republika
-Maltas Republika
-Marokas Karaliste
-Māršala Salu Republika
-Martinika
-Maurīcijas Republika
-Mauritānijas Islāma Republika
-Meksikas Savienotās Valstis
-Melnkalne
-Menas Sala
-Mikronēzijas Federatīvās Valstis
-Moldovas Republika
-Monako Firstiste
-Mongolija
-Montserrata
-Mozambikas Republika
-Namībijas Republika
-Nauru Republika
-Nepāla
-Nīderlandes Karaliste
-Nigēras Republika
-Nigērijas Federatīvā Republika
-Nikaragvas Republika
-Niue
-Norfolkas Salas Teritorija
-Norvēģijas Karaliste
-Omānas Sultanāts
-Pakistānas Islāma Republika
-Palau Republika
-Panamas Republika
-Papua-Jaungvinejas Neatkarīgā Valsts
-Paragvajas Republika
-Peru Republika
-Pitkērnas Salas
-Polijas Republika
-Portugāles Republika
-Puertoriko Sadraudzība 
-Reinjona
-Rietumsahāra
-Ruandas Republika
-Rumānija
-Salvadoras Republika
-Samoa Neatkarīgā Valsts
-Sanmarīno Republika
-Santomes un Prinsipi Demokrātiskā Republika
-Saūda Arābijas Karaliste
-Seišelu Republika
-Senbartelmī Kopiena
-Senegālas Republika
-Senmartēnas Kopiena
-Senpjēras un Mikelonas Teritoriālā Kopiena
-Sentkitsas un Nevisas Federācija
-Sentlūsija
-Sentvinsenta un Grenadīnas
-Serbijas Republika
-Singapūras Republika
-Sintmartēna
-Sīrijas Arābu Republika
-Sjerraleones Republika
-Slovākijas Republika
-Slovēnijas Republika
-Somālijas Republika
-Somijas Republika
-Spānijas Karaliste
-Sudānas Republika
-Surinamas Republika
-Svētās Helēnas, Debesbraukšanas un Tristana da Kuņas Salas
-Svālbara un Jana Majena Sala
-Svazilendas Karaliste
-Šrilankas Demokrātiskā Sociālistiskā Republika
-Šveices Konfederācija
-Tadžikistānas Republika
-Ķīnas Republika
-Taivāna
-Taizemes Karaliste
-Tanzānijas Savienotā Republika
-Tērksas un Kaikosas Salas
-Togo Republika
-Tokelau
-Tongas Karaliste
-Trinidādas un Tobāgo Republika
-Tunisijas Republika
-Turcijas Republika
-Turkmenistāna
-Tuvalu
-Ugandas Republika
-Ukraina
-Ungārija
-Urugvajas Austrumu Republika
-Uzbekistānas Republika
-Vācijas Federatīvā Republika
-Vanuatu Republika
-Venecuēlas Bolivāra Republika
-Vjetnamas Sociālistiskā Republika
-Volisa un Futunas Salas
-Zālamana Salas
-Zambijas Republika
-Ziemsvētku Salas Teritorija
-Korejas Tautas Demokrātiskā Republika
-Ziemeļu Marianas Salu Sadraudzība
-Zimbabves Republika
-Zviedrijas Karaliste
-Kabula
-Tirāna
-Alžīra
-Andora
-Luanda
-Valeja
-Sentdžonsa
-Londona
-Abū Dabī
-Buenosairesa
-Erevāna
-Oranjestade
-Vašingtona
-Pagopago
-Šarlote Amālija
-Kanbera
-Vīne
-Dili
-Baku
-Marienhamna
-Nasava
-Manama
-Daka
-Bridžtauna
-Minska
-Brisele
-Belmopana
-Portonovo
-Hamiltona
-Skopje
-Nepjido
-Sukre
-Sarajeva
-Gaborone
-Brazilja
-Roudtauna
-Bandarseribegavana
-Sofija
-Vagadugu
-Budžumbura
-Timpu
-Bangi
-Ndžamena
-Prāga
-Santjago
-Kopenhāgena
-Pretorija
-Kingedvardpointa
-Grītvīkena
-Seula
-Džūba
-Rozo
-Santodomingo
-Sentheljēra
-Džibuti
-Kaira
-Kito
-Malabu
-Asmera
-Adisabeba
-Torshavna
-Suva
-Manila
-Stenlija
-Parīze
-Kajenna
-Papeete
-Librevilla
-Džordžtauna
-Bandžula
-Akra
-Sentpīterporta
-Gibraltārs
-Sentdžordžesa
-Nuuka
-Atēnas
-Tbilisi
-Agaņa
-Bastēra
-Gvatemala
-Konakri
-Bisava
-Portoprensa
-Tegusigalpa
-Zagreba
-Tallina
-Deli
-Džakarta
-Bagdāde
-Teherāna
-Dublina
-Reikjavīka
-Roma
-Kingstona
-Tokija
-Numea
-Velingtona
-Sana
-Ammāna
-Praja
-Džordžtauna
-Pnompeņa
-Jaunde
-Otava
-Doha
-Astana
-Nairobi
-Nikosija
-Vilemstade
-Biškeka
-Tarava
-Vestailenda
-Bogota
-Moroni
-Brazavilla
-Kinšasa
-Sanhosē
-Jamusukro
-Maskava
-Havana
-Avarua
-Kuveita
-Pekina
-Vjentjana
-Rīga
-Maseru
-Beirūta
-Monrovija
-Tripole
-Viļņa
-Vaduca
-Luksemburga
-Antananarivu
-Mamudzu
-Makao
-Kualalumpura
-Lilongve
-Male
-Bamako
-Valeta
-Rabata
-Madžuro
-Fortdefransa
-Portluija
-Nuakšota
-Mehiko
-Podgorica
-Duglasa
-Palikira
-Kišiņeva
-Monako
-Ulanbatora
-Plimuta
-Maputu
-Vindhūka
-Jarena
-Katmandu
-Amsterdama
-Niameja
-Abudža
-Managva
-Alofi
-Kingstona
-Oslo
-Maskata
-Islamabada
-Melegeoka
-Panama
-Portmorsbija
-Asunsjona
-Lima
-Adamstauna
-Varšava
-Lisabona
-Sanhuana
-Sendenī
-Ajuna
-Kigali
-Bukareste
-Sansalvadora
-Apia
-Sanmarīno
-Santome
-Rijāda
-Viktorija
-Gustavija
-Dakāra
-Marigo
-Senpjēra
-Bastera
-Kastrisa
-Kingstauna
-Belgrada
-Singapūra
-Filipsbērga
-Damaska
-Frītauna
-Bratislava
-Ļubļana
-Mogadiša
-Helsinki
-Madride
-Hartuma
-Paramaribo
-Džeimstauna
-Longjīrbīene 
-Ūlunkinbīene
-Mbabane
-Vatikāns
-Kolombo
-Berne
-Dušanbe
-Taibeja
-Bangkoka
-Dodoma
-Kokbērntauna
-Lome
-Nukualofa
-Portofspeina
-Tunisa
-Ankara
-Ašgabata
-Funafuti
-Kampala
-Kijeva
-Budapešta
-Montevideo
-Taškenta
-Berlīne
-Portvila
-Karakasa
-Hanoja
-Matautu
-Honiara
-Lusaka
-Flaingfiškova
-Phenjana
-Saipana
-Harare
-Stokholma
+VALSTS	Afganistāna
+VALSTS	Albānija
+VALSTS	Alžīrija
+VALSTS	Andora
+VALSTS	Angola
+VALSTS	Angilja 
+VALSTS	Antarktika
+VALSTS	Antigva un Barbuda
+VALSTS	Apvienotā Karaliste
+VALSTS	Apvienotie Arābu Emirāti
+VALSTS	Argentīna
+VALSTS	Armēnija
+VALSTS	Aruba 
+VALSTS	ASV
+VALSTS	ASV Mazās Aizjūras Salas 
+VALSTS	ASV Samoa 
+VALSTS	ASV Virdžīnas 
+VALSTS	Austrālija
+VALSTS	Austrija
+VALSTS	Austrumtimora
+VALSTS	Azerbaidžāna
+VALSTS	Ālandu Salas 
+VALSTS	Bahamu Salas
+VALSTS	Bahreina
+VALSTS	Bangladeša
+VALSTS	Barbadosa
+VALSTS	Baltkrievija
+VALSTS	Beļģija
+VALSTS	Beliza
+VALSTS	Benina
+VALSTS	Bermudu Salas 
+VALSTS	Maķedonijas Republika
+VALSTS	Birma/Mjanma
+VALSTS	Bolīvija
+VALSTS	Bosnija un Hercegovina
+VALSTS	Botsvāna
+VALSTS	Brazīlija
+VALSTS	Britu Indijas Okeāna Teritorija 
+VALSTS	Britu Virdžīnas 
+VALSTS	Bruneja
+VALSTS	Bulgārija
+VALSTS	Burkinafaso
+VALSTS	Burundi
+VALSTS	Butāna
+VALSTS	Buvē Sala 
+VALSTS	Centrālāfrikas Republika
+VALSTS	Čada
+VALSTS	Čehijas Republika
+VALSTS	Čīle
+VALSTS	Dānija
+VALSTS	Dienvidāfrika
+VALSTS	Dienviddžordžija
+VALSTS	Dienvidsendviču Salas 
+VALSTS	Dienvidkoreja
+VALSTS	Dienvidsudāna
+VALSTS	Dominika
+VALSTS	Dominikāna
+VALSTS	Džērsija 
+VALSTS	Džibutija
+VALSTS	Ēģipte
+VALSTS	Ekvadora
+VALSTS	Ekvatoriālā Gvineja
+VALSTS	Eritreja
+VALSTS	Etiopija
+VALSTS	Fēru Salas 
+VALSTS	Fidži
+VALSTS	Filipīnas
+VALSTS	Folklenda (Malvinu) Salas 
+VALSTS	Francija
+VALSTS	Francijas Dienvidjūru un Antarktikas Zemes 
+VALSTS	Francijas Gviāna 
+VALSTS	Francijas Polinēzija 
+VALSTS	Gabona
+VALSTS	Gajāna
+VALSTS	Gambija
+VALSTS	Gana
+VALSTS	Gērnsija 
+VALSTS	Gibraltārs 
+VALSTS	Grenāda
+VALSTS	Grenlande 
+VALSTS	Grieķija
+VALSTS	Gruzija
+VALSTS	Guama 
+VALSTS	Gvadelupa 
+VALSTS	Gvatemala
+VALSTS	Gvineja
+VALSTS	Gvineja-Bisava
+VALSTS	Haiti
+VALSTS	Hērda Sala un Makdonalda Salas 
+VALSTS	Hondurasa
+VALSTS	Honkonga 
+VALSTS	Horvātija
+VALSTS	Igaunija
+VALSTS	Indija
+VALSTS	Indonēzija
+VALSTS	Irāka
+VALSTS	Irāna
+VALSTS	Īrija
+VALSTS	Islande
+VALSTS	Itālija
+VALSTS	Izraēla
+VALSTS	Jamaika
+VALSTS	Japāna
+VALSTS	Jaunkaledonija 
+VALSTS	Jaunzēlande
+VALSTS	Jemena
+VALSTS	Jordānija
+VALSTS	Kaboverde
+VALSTS	Kaimanu Salas 
+VALSTS	Kambodža
+VALSTS	Kamerūna
+VALSTS	Kanāda
+VALSTS	Katara
+VALSTS	Kazahstāna
+VALSTS	Kenija
+VALSTS	Kipra
+VALSTS	Kirasao 
+VALSTS	Kirgizstāna
+VALSTS	Kiribati
+VALSTS	Klipertona 
+VALSTS	Kokosu (Kīlinga) Salas 
+VALSTS	Kolumbija
+VALSTS	Komoru Salas
+VALSTS	Kongo 
+VALSTS	Kongo Demokrātiskā Republika 
+VALSTS	Kostarika
+VALSTS	Kotdivuāra
+VALSTS	Krievija
+VALSTS	Kuba
+VALSTS	CUC
+VALSTS	Kuka Salas 
+VALSTS	Kuveita
+VALSTS	Ķīna
+VALSTS	Laosa
+VALSTS	Latvija
+VALSTS	Lesoto
+VALSTS	Libāna
+VALSTS	Libērija
+VALSTS	Lībija
+VALSTS	Lietuva
+VALSTS	Lihtenšteina
+VALSTS	Luksemburga
+VALSTS	Madagaskara
+VALSTS	Majota 
+VALSTS	Makao 
+VALSTS	Malaizija
+VALSTS	Malāvija
+VALSTS	Maldīvija
+VALSTS	Mali
+VALSTS	Malta
+VALSTS	Maroka
+VALSTS	Māršala Salas
+VALSTS	Martinika 
+VALSTS	Maurīcija
+VALSTS	Mauritānija
+VALSTS	Meksika
+VALSTS	Melnkalne
+VALSTS	Menas Sala 
+VALSTS	Mikronēzija
+VALSTS	Moldova
+VALSTS	Monako
+VALSTS	Mongolija
+VALSTS	Montserrata 
+VALSTS	Mozambika
+VALSTS	Namībija
+VALSTS	Nauru
+VALSTS	Nepāla
+VALSTS	Nīderlande 
+VALSTS	Nigēra
+VALSTS	Nigērija
+VALSTS	Nikaragva
+VALSTS	Niue 
+VALSTS	Norfolkas Sala 
+VALSTS	Norvēģija
+VALSTS	Omāna
+VALSTS	Pakistāna
+VALSTS	Palau
+VALSTS	Panama
+VALSTS	Papua-Jaungvineja
+VALSTS	Paragvaja
+VALSTS	Peru
+VALSTS	Pitkērna 
+VALSTS	Polija
+VALSTS	Portugāle
+VALSTS	Puertoriko 
+VALSTS	Reinjona 
+VALSTS	Rietumsahāra 
+VALSTS	Ruanda
+VALSTS	Rumānija
+VALSTS	Salvadora
+VALSTS	Samoa
+VALSTS	Sanmarīno
+VALSTS	Santome un Prinsipi
+VALSTS	Saūda Arābija
+VALSTS	Seišelas
+VALSTS	Senbartelmī 
+VALSTS	Senegāla
+VALSTS	Senmartēna 
+VALSTS	Senpjēra un Mikelona 
+VALSTS	Sentkitsa un Nevisa
+VALSTS	Sentlūsija
+VALSTS	Sentvinsenta un Grenadīnas
+VALSTS	Serbija
+VALSTS	Singapūra
+VALSTS	Sintmartēna 
+VALSTS	Sīrija
+VALSTS	Sjerraleone
+VALSTS	Slovākija
+VALSTS	Slovēnija
+VALSTS	Somālija
+VALSTS	Somija
+VALSTS	Spānija
+VALSTS	Sudāna
+VALSTS	Surinama
+VALSTS	Sv. Helēnas Sala 
+VALSTS	Svālbara un Jana Majena Sala 
+VALSTS	Svazilenda
+VALSTS	Vatikāns
+VALSTS	Šrilanka
+VALSTS	Šveice
+VALSTS	Tadžikistāna
+VALSTS	Taivāna
+VALSTS	Taizeme
+VALSTS	Tanzānija
+VALSTS	Tērksas un Kaikosas Salas 
+VALSTS	Togo
+VALSTS	Tokelau 
+VALSTS	Tonga
+VALSTS	Trinidāda un Tobāgo
+VALSTS	Tunisija
+VALSTS	Turcija
+VALSTS	Turkmenistāna
+VALSTS	Tuvalu
+VALSTS	Uganda
+VALSTS	Ukraina
+VALSTS	Ungārija
+VALSTS	Urugvaja
+VALSTS	Uzbekistāna
+VALSTS	Vācija
+VALSTS	Vanuatu
+VALSTS	Venecuēla
+VALSTS	Vjetnama
+VALSTS	Volisa un Futunas Salas 
+VALSTS	Zālamana Salas
+VALSTS	Zambija
+VALSTS	Ziemsvētku Sala 
+VALSTS	Ziemeļkoreja
+VALSTS	Ziemeļu Marianas Salas 
+VALSTS	Zimbabve
+VALSTS	Zviedrija
+VALSTS	Afganistānas Islāma Republika
+VALSTS	Albānijas Republika
+VALSTS	Alžīrijas Tautas Demokrātiskā Republika
+VALSTS	Andoras Firstiste
+VALSTS	Angolas Republika
+VALSTS	Angilja
+VALSTS	Antarktika
+VALSTS	Antigva un Barbuda
+VALSTS	Lielbritānijas un Ziemeļīrijas Apvienotā Karaliste
+VALSTS	Apvienotie Arābu Emirāti
+VALSTS	Argentīnas Republika
+VALSTS	Armēnijas Republika
+VALSTS	Aruba
+VALSTS	Amerikas Savienotās Valstis
+VALSTS	ASV Mazās Aizjūras Salas
+VALSTS	ASV Samoa Teritorija
+VALSTS	ASV Virdžīnu Salas
+VALSTS	Austrālijas Savienība
+VALSTS	Austrijas Republika
+VALSTS	Austrumtimoras Demokrātiskā Republika
+VALSTS	Azerbaidžānas Republika
+VALSTS	Ālandu Salas
+VALSTS	Bahamu Salu Sadraudzība
+VALSTS	Bahreinas Karaliste
+VALSTS	Bangladešas
+VALSTS	Tautas Republika
+VALSTS	Barbadosa
+VALSTS	Baltkrievijas Republika
+VALSTS	Beļģijas Karaliste
+VALSTS	Beliza
+VALSTS	Beninas Republika
+VALSTS	Bermudu Salas
+VALSTS	bijusī Dienvidslāvijas Maķedonijas Republika
+VALSTS	Birma/Mjanma (MM1)
+VALSTS	Bolīvijas Daudznāciju Valsts
+VALSTS	Bosnija un Hercegovina
+VALSTS	Botsvānas Republika
+VALSTS	Brazīlijas Federatīvā Republika
+VALSTS	Britu Indijas Okeāna Teritorija
+VALSTS	Britu Virdžīnu Salas
+VALSTS	Brunejas Darusalamas Valsts
+VALSTS	Bulgārijas Republika
+VALSTS	Burkinafaso
+VALSTS	Burundi Republika
+VALSTS	Butānas Karaliste
+VALSTS	Buvē Sala
+VALSTS	Centrālāfrikas Republika
+VALSTS	Čadas Republika
+VALSTS	Čehijas Republika
+VALSTS	Čīles Republika
+VALSTS	Dānijas Karaliste
+VALSTS	Dienvidāfrikas Republika
+VALSTS	Dienviddžordžija un
+VALSTS	Dienvidsendviču Salas
+VALSTS	Korejas Republika
+VALSTS	Dienvidsudānas Republika
+VALSTS	Dominikas Sadraudzība
+VALSTS	Dominikānas Republika
+VALSTS	Džērsijas Teritoriālā Vienība
+VALSTS	Džibutijas Republika
+VALSTS	Ēģiptes Arābu Republika
+VALSTS	Ekvadoras Republika
+VALSTS	Ekvatoriālās Gvinejas Republika
+VALSTS	Eritrejas Valsts
+VALSTS	Etiopijas Federatīvā Demokrātiskā Republika
+VALSTS	Fēru Salas
+VALSTS	Fidži Republika
+VALSTS	Filipīnu Republika
+VALSTS	Folklenda (Malvinu) Salas
+VALSTS	Francijas Republika
+VALSTS	Francijas Dienvidjūru un Antarktikas Zemes
+VALSTS	Francijas Gviāna
+VALSTS	Francijas Polinēzija
+VALSTS	Gabonas Republika
+VALSTS	Gajānas Kooperatīvā Republika
+VALSTS	Gambijas Republika
+VALSTS	Ganas Republika
+VALSTS	Gērnsijas Teritoriālā Vienība
+VALSTS	Gibraltārs
+VALSTS	Grenāda
+VALSTS	Grenlande
+VALSTS	Grieķijas Republika
+VALSTS	Gruzija
+VALSTS	ASV Guamas Teritorija
+VALSTS	Gvadelupa
+VALSTS	Gvatemalas Republika
+VALSTS	Gvinejas Republika
+VALSTS	Gvinejas-Bisavas Republika
+VALSTS	Haiti Republika
+VALSTS	Hērda Salas un Makdonalda Salu Teritorija
+VALSTS	Hondurasas Republika
+VALSTS	Ķīnas Tautas Republikas Honkongas Īpašās Pārvaldes Apgabals (HK2)
+VALSTS	Horvātijas Republika
+VALSTS	Igaunijas Republika
+VALSTS	Indijas Republika
+VALSTS	Indonēzijas Republika
+VALSTS	Irākas Republika
+VALSTS	Irānas Islāma Republika
+VALSTS	Īrija
+VALSTS	Islandes Republika
+VALSTS	Itālijas Republika
+VALSTS	Izraēlas Valsts
+VALSTS	Jamaika
+VALSTS	Japāna
+VALSTS	Jaunkaledonija
+VALSTS	Jaunzēlande
+VALSTS	Jemenas Republika
+VALSTS	Jordānijas Hāšimītu Karaliste
+VALSTS	Kaboverdes Republika
+VALSTS	Kaimanu Salas
+VALSTS	Kambodžas Karaliste
+VALSTS	Kamerūnas Republika
+VALSTS	Kanāda
+VALSTS	Kataras Valsts
+VALSTS	Kazahstānas Republika
+VALSTS	Kenijas Republika
+VALSTS	Kipras Republika
+VALSTS	Kirasao
+VALSTS	Kirgizstānas Republika
+VALSTS	Kiribati Republika
+VALSTS	Klipertona Sala
+VALSTS	Kokosu (Kīlinga) Salu Teritorija
+VALSTS	Kolumbijas Republika
+VALSTS	Komoru Salu Savienība
+VALSTS	Kongo Republika
+VALSTS	Kongo Demokrātiskā Republika
+VALSTS	Kostarikas Republika
+VALSTS	Kotdivuāras Republika
+VALSTS	Krievijas Federācija
+VALSTS	Kubas Republika
+VALSTS	Kuka Salas
+VALSTS	Kuveitas Valsts
+VALSTS	Ķīnas Tautas Republika
+VALSTS	Laosas Tautas Demokrātiskā Republika
+VALSTS	Latvijas Republika
+VALSTS	Lesoto Karaliste
+VALSTS	Libānas Republika
+VALSTS	Libērijas Republika
+VALSTS	Lībija
+VALSTS	Lietuvas Republika
+VALSTS	Lihtenšteinas Firstiste
+VALSTS	Luksemburgas Lielhercogiste
+VALSTS	Madagaskaras Republika
+VALSTS	Majota
+VALSTS	Ķīnas Tautas Republikas Makao Īpašās Pārvaldes Apgabals
+VALSTS	Malaizija
+VALSTS	Malāvijas Republika
+VALSTS	Maldīvijas Republika
+VALSTS	Mali Republika
+VALSTS	Maltas Republika
+VALSTS	Marokas Karaliste
+VALSTS	Māršala Salu Republika
+VALSTS	Martinika
+VALSTS	Maurīcijas Republika
+VALSTS	Mauritānijas Islāma Republika
+VALSTS	Meksikas Savienotās Valstis
+VALSTS	Melnkalne
+VALSTS	Menas Sala
+VALSTS	Mikronēzijas Federatīvās Valstis
+VALSTS	Moldovas Republika
+VALSTS	Monako Firstiste
+VALSTS	Mongolija
+VALSTS	Montserrata
+VALSTS	Mozambikas Republika
+VALSTS	Namībijas Republika
+VALSTS	Nauru Republika
+VALSTS	Nepāla
+VALSTS	Nīderlandes Karaliste
+VALSTS	Nigēras Republika
+VALSTS	Nigērijas Federatīvā Republika
+VALSTS	Nikaragvas Republika
+VALSTS	Niue
+VALSTS	Norfolkas Salas Teritorija
+VALSTS	Norvēģijas Karaliste
+VALSTS	Omānas Sultanāts
+VALSTS	Pakistānas Islāma Republika
+VALSTS	Palau Republika
+VALSTS	Panamas Republika
+VALSTS	Papua-Jaungvinejas Neatkarīgā Valsts
+VALSTS	Paragvajas Republika
+VALSTS	Peru Republika
+VALSTS	Pitkērnas Salas
+VALSTS	Polijas Republika
+VALSTS	Portugāles Republika
+VALSTS	Puertoriko Sadraudzība 
+VALSTS	Reinjona
+VALSTS	Rietumsahāra
+VALSTS	Ruandas Republika
+VALSTS	Rumānija
+VALSTS	Salvadoras Republika
+VALSTS	Samoa Neatkarīgā Valsts
+VALSTS	Sanmarīno Republika
+VALSTS	Santomes un Prinsipi Demokrātiskā Republika
+VALSTS	Saūda Arābijas Karaliste
+VALSTS	Seišelu Republika
+VALSTS	Senbartelmī Kopiena
+VALSTS	Senegālas Republika
+VALSTS	Senmartēnas Kopiena
+VALSTS	Senpjēras un Mikelonas Teritoriālā Kopiena
+VALSTS	Sentkitsas un Nevisas Federācija
+VALSTS	Sentlūsija
+VALSTS	Sentvinsenta un Grenadīnas
+VALSTS	Serbijas Republika
+VALSTS	Singapūras Republika
+VALSTS	Sintmartēna
+VALSTS	Sīrijas Arābu Republika
+VALSTS	Sjerraleones Republika
+VALSTS	Slovākijas Republika
+VALSTS	Slovēnijas Republika
+VALSTS	Somālijas Republika
+VALSTS	Somijas Republika
+VALSTS	Spānijas Karaliste
+VALSTS	Sudānas Republika
+VALSTS	Surinamas Republika
+VALSTS	Svētās Helēnas, Debesbraukšanas un Tristana da Kuņas Salas
+VALSTS	Svālbara un Jana Majena Sala
+VALSTS	Svazilendas Karaliste
+VALSTS	Šrilankas Demokrātiskā Sociālistiskā Republika
+VALSTS	Šveices Konfederācija
+VALSTS	Tadžikistānas Republika
+VALSTS	Ķīnas Republika
+VALSTS	Taivāna
+VALSTS	Taizemes Karaliste
+VALSTS	Tanzānijas Savienotā Republika
+VALSTS	Tērksas un Kaikosas Salas
+VALSTS	Togo Republika
+VALSTS	Tokelau
+VALSTS	Tongas Karaliste
+VALSTS	Trinidādas un Tobāgo Republika
+VALSTS	Tunisijas Republika
+VALSTS	Turcijas Republika
+VALSTS	Turkmenistāna
+VALSTS	Tuvalu
+VALSTS	Ugandas Republika
+VALSTS	Ukraina
+VALSTS	Ungārija
+VALSTS	Urugvajas Austrumu Republika
+VALSTS	Uzbekistānas Republika
+VALSTS	Vācijas Federatīvā Republika
+VALSTS	Vanuatu Republika
+VALSTS	Venecuēlas Bolivāra Republika
+VALSTS	Vjetnamas Sociālistiskā Republika
+VALSTS	Volisa un Futunas Salas
+VALSTS	Zālamana Salas
+VALSTS	Zambijas Republika
+VALSTS	Ziemsvētku Salas Teritorija
+VALSTS	Korejas Tautas Demokrātiskā Republika
+VALSTS	Ziemeļu Marianas Salu Sadraudzība
+VALSTS	Zimbabves Republika
+VALSTS	Zviedrijas Karaliste
+VALSTS	Kabula
+VALSTS	Tirāna
+VALSTS	Alžīra
+VALSTS	Andora
+VALSTS	Luanda
+VALSTS	Valeja
+VALSTS	Sentdžonsa
+VALSTS	Londona
+VALSTS	Abū Dabī
+VALSTS	Buenosairesa
+VALSTS	Erevāna
+VALSTS	Oranjestade
+VALSTS	Vašingtona
+VALSTS	Pagopago
+VALSTS	Šarlote Amālija
+VALSTS	Kanbera
+VALSTS	Vīne
+VALSTS	Dili
+VALSTS	Baku
+VALSTS	Marienhamna
+VALSTS	Nasava
+VALSTS	Manama
+VALSTS	Daka
+VALSTS	Bridžtauna
+VALSTS	Minska
+VALSTS	Brisele
+VALSTS	Belmopana
+VALSTS	Portonovo
+VALSTS	Hamiltona
+VALSTS	Skopje
+VALSTS	Nepjido
+VALSTS	Sukre
+VALSTS	Sarajeva
+VALSTS	Gaborone
+VALSTS	Brazilja
+VALSTS	Roudtauna
+VALSTS	Bandarseribegavana
+VALSTS	Sofija
+VALSTS	Vagadugu
+VALSTS	Budžumbura
+VALSTS	Timpu
+VALSTS	Bangi
+VALSTS	Ndžamena
+VALSTS	Prāga
+VALSTS	Santjago
+VALSTS	Kopenhāgena
+VALSTS	Pretorija
+VALSTS	Kingedvardpointa
+VALSTS	Grītvīkena
+VALSTS	Seula
+VALSTS	Džūba
+VALSTS	Rozo
+VALSTS	Santodomingo
+VALSTS	Sentheljēra
+VALSTS	Džibuti
+VALSTS	Kaira
+VALSTS	Kito
+VALSTS	Malabu
+VALSTS	Asmera
+VALSTS	Adisabeba
+VALSTS	Torshavna
+VALSTS	Suva
+VALSTS	Manila
+VALSTS	Stenlija
+VALSTS	Parīze
+VALSTS	Kajenna
+VALSTS	Papeete
+VALSTS	Librevilla
+VALSTS	Džordžtauna
+VALSTS	Bandžula
+VALSTS	Akra
+VALSTS	Sentpīterporta
+VALSTS	Gibraltārs
+VALSTS	Sentdžordžesa
+VALSTS	Nuuka
+VALSTS	Atēnas
+VALSTS	Tbilisi
+VALSTS	Agaņa
+VALSTS	Bastēra
+VALSTS	Gvatemala
+VALSTS	Konakri
+VALSTS	Bisava
+VALSTS	Portoprensa
+VALSTS	Tegusigalpa
+VALSTS	Zagreba
+VALSTS	Tallina
+VALSTS	Deli
+VALSTS	Džakarta
+VALSTS	Bagdāde
+VALSTS	Teherāna
+VALSTS	Dublina
+VALSTS	Reikjavīka
+VALSTS	Roma
+VALSTS	Kingstona
+VALSTS	Tokija
+VALSTS	Numea
+VALSTS	Velingtona
+VALSTS	Sana
+VALSTS	Ammāna
+VALSTS	Praja
+VALSTS	Džordžtauna
+VALSTS	Pnompeņa
+VALSTS	Jaunde
+VALSTS	Otava
+VALSTS	Doha
+VALSTS	Astana
+VALSTS	Nairobi
+VALSTS	Nikosija
+VALSTS	Vilemstade
+VALSTS	Biškeka
+VALSTS	Tarava
+VALSTS	Vestailenda
+VALSTS	Bogota
+VALSTS	Moroni
+VALSTS	Brazavilla
+VALSTS	Kinšasa
+VALSTS	Sanhosē
+VALSTS	Jamusukro
+VALSTS	Maskava
+VALSTS	Havana
+VALSTS	Avarua
+VALSTS	Kuveita
+VALSTS	Pekina
+VALSTS	Vjentjana
+VALSTS	Rīga
+VALSTS	Maseru
+VALSTS	Beirūta
+VALSTS	Monrovija
+VALSTS	Tripole
+VALSTS	Viļņa
+VALSTS	Vaduca
+VALSTS	Luksemburga
+VALSTS	Antananarivu
+VALSTS	Mamudzu
+VALSTS	Makao
+VALSTS	Kualalumpura
+VALSTS	Lilongve
+VALSTS	Male
+VALSTS	Bamako
+VALSTS	Valeta
+VALSTS	Rabata
+VALSTS	Madžuro
+VALSTS	Fortdefransa
+VALSTS	Portluija
+VALSTS	Nuakšota
+VALSTS	Mehiko
+VALSTS	Podgorica
+VALSTS	Duglasa
+VALSTS	Palikira
+VALSTS	Kišiņeva
+VALSTS	Monako
+VALSTS	Ulanbatora
+VALSTS	Plimuta
+VALSTS	Maputu
+VALSTS	Vindhūka
+VALSTS	Jarena
+VALSTS	Katmandu
+VALSTS	Amsterdama
+VALSTS	Niameja
+VALSTS	Abudža
+VALSTS	Managva
+VALSTS	Alofi
+VALSTS	Kingstona
+VALSTS	Oslo
+VALSTS	Maskata
+VALSTS	Islamabada
+VALSTS	Melegeoka
+VALSTS	Panama
+VALSTS	Portmorsbija
+VALSTS	Asunsjona
+VALSTS	Lima
+VALSTS	Adamstauna
+VALSTS	Varšava
+VALSTS	Lisabona
+VALSTS	Sanhuana
+VALSTS	Sendenī
+VALSTS	Ajuna
+VALSTS	Kigali
+VALSTS	Bukareste
+VALSTS	Sansalvadora
+VALSTS	Apia
+VALSTS	Sanmarīno
+VALSTS	Santome
+VALSTS	Rijāda
+VALSTS	Viktorija
+VALSTS	Gustavija
+VALSTS	Dakāra
+VALSTS	Marigo
+VALSTS	Senpjēra
+VALSTS	Bastera
+VALSTS	Kastrisa
+VALSTS	Kingstauna
+VALSTS	Belgrada
+VALSTS	Singapūra
+VALSTS	Filipsbērga
+VALSTS	Damaska
+VALSTS	Frītauna
+VALSTS	Bratislava
+VALSTS	Ļubļana
+VALSTS	Mogadiša
+VALSTS	Helsinki
+VALSTS	Madride
+VALSTS	Hartuma
+VALSTS	Paramaribo
+VALSTS	Džeimstauna
+VALSTS	Longjīrbīene
+VALSTS	Ūlunkinbīene
+VALSTS	Mbabane
+VALSTS	Vatikāns
+VALSTS	Kolombo
+VALSTS	Berne
+VALSTS	Dušanbe
+VALSTS	Taibeja
+VALSTS	Bangkoka
+VALSTS	Dodoma
+VALSTS	Kokbērntauna
+VALSTS	Lome
+VALSTS	Nukualofa
+VALSTS	Portofspeina
+VALSTS	Tunisa
+VALSTS	Ankara
+VALSTS	Ašgabata
+VALSTS	Funafuti
+VALSTS	Kampala
+VALSTS	Kijeva
+VALSTS	Budapešta
+VALSTS	Montevideo
+VALSTS	Taškenta
+VALSTS	Berlīne
+VALSTS	Portvila
+VALSTS	Karakasa
+VALSTS	Hanoja
+VALSTS	Matautu
+VALSTS	Honiara
+VALSTS	Lusaka
+VALSTS	Flaingfiškova
+VALSTS	Phenjana
+VALSTS	Saipana
+VALSTS	Harare
+VALSTS	Stokholma
