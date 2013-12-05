@@ -1,0 +1,337 @@
+organization	" Centriska partija Latvija Zemnieks savienība "
+organization	Latvija zemnieks savienība
+organization	" Latvija Zemnieks savienība "
+organization	Latvija Zaļa partija
+organization	" Latvietis Zemnieks Savienība "
+organization	Latvietis Zemnieks Savienība
+organization	Partija " Mūsa zeme "
+organization	" Rīga Partija "
+organization	Latvija Atmoda
+organization	" Sociāls Taisnīgums partija "
+organization	" Latvija un Ventspils "
+organization	Politiska organizācija " Latvija un Ventspils "
+organization	" Apvienība Liepāja attīstība "
+organization	Apvienība " Liepāja attīstība "
+organization	Apvienība " Tēvzeme un Brīvība " / Lnnk
+organization	" Tēvzeme un Brīvība " / Lnnk
+organization	Kristīgi demokrātiska savienība
+organization	Latvija Atdzimšana partija
+organization	Rīcība partija
+organization	Latvija Sociālistiska partija
+organization	Latvija Sociāldemokrātiska strādnieks partija
+organization	" Latvija Sociāldemokrātiska strādnieks partija "
+organization	Latvija Nākotne Partija
+organization	Partija " Tēvzeme mantojums "
+organization	Zaļot un Zemnieks savienība
+organization	Vislatvija Sociāldemokrāts kustība " Par neatkarīga Latvija ! "
+organization	Partija " Viss Latvija ! "
+organization	" Tukums pilsēta un novads "
+organization	" Jūrmala-mūsa māja "
+organization	Politiska partija " Ogre novads "
+organization	Politiska organizācija ( partija ) " Ogre novads "
+organization	" Ogre novads "
+organization	Politiska partija " Reģions alianse "
+organization	Politska partija " RA "
+organization	Politiska partija " Reģions partija "
+organization	" Liepāja partija "
+organization	" Tauta kontrole "
+organization	" Mūsa Latvija "
+organization	" Uz priekša , Latvija ! "
+organization	Partija " Savienība Latgale sirds "
+organization	" Latgale sirds "
+organization	Politiska partija " Rēzekne Jaunsaimnieks "
+organization	" demokrāts . lv "
+organization	Politiska partija " Jauns demokrāts "
+organization	" Jauns demokrāts "
+organization	Jauns demokrāts
+organization	Politiska partija apvienība " Saskaņa Centrs "
+organization	Latvija kustība " Solidaritāte "
+organization	Vislatvija partija " 21. gadsimts "
+organization	Politiska partija " A8 partija "
+organization	" PCTVL - Par cilvēks tiesības vienota Latvija "
+organization	Politiska organizācija apvienība " Par cilvēks tiesības vienota Latvija "
+organization	Partija " LPP / LC "
+organization	Politiska partija " Alternative "
+organization	" Latgale tauta "
+organization	" Atbildība - sociāldemokrātiska politiska partija apvienība "
+organization	" Atbildība "
+organization	Atbildība
+organization	Politiska partija apvienība " Liberta . lv "
+organization	liberta . lv
+organization	" liberta . lv "
+organization	" Tu , Jūrmala "
+organization	Osipova partija
+organization	" Vienot Rēzekne "
+organization	apvienība Iedzīvotājs
+organization	Partija “ Jaunlatvija "
+organization	" Daugavpils atdzimšana "
+organization	Partija " Par Dzimt Valoda ! "
+organization	13. janvāris kustība
+organization	Sociāldemokrātiska partija " Saskaņa "
+organization	SDP Saskaņa
+organization	Daugavpils pilsēta partija
+organization	" Ražotāja Latvija "
+organization	Nacionāla Vienotība apvienība
+organization	Politiska partija apvienība " Partija Jauns laiks , partija Pilsoniska savienība un partija Sabiedrība Cita Politika apvienība "
+organization	" Par prezidentāls republika "
+organization	Partija apvienība " Par Laba Latvija "
+organization	Nacionāla apvienība " Viss Latvija ! " - " Tēvzeme un Brīvība / Lnnk "
+organization	" Ražot Latvija "
+organization	" Pēdēja partija "
+organization	Vidzeme partija
+organization	" Reforma partija "
+organization	Partija " Brīvība . Brīvs no bailes , naids un dusmas "
+organization	Partija " Vienotība "
+organization	Vienotība
+organization	Politiska organizācija " Attīstība partija "
+organization	" Mūsa partija "
+organization	Partija " Gods kalpot Rīga "
+organization	" Valmiera un Vidzeme "
+organization	" Kuldīga novads "
+organization	" Daugavpils novadīt partija "
+organization	Partija " Vienots Latvija "
+organization	Latgale partija
+organization	" Talsi novads attīstība "
+organization	Jēkabpils reģionāla partija
+organization	" Sabiedriska Komiteja "
+organization	" Sadarbība "
+organization	" Daugavpils – mana pilsēta "
+organization	" politiska partija Izaugsme "
+organization	Krimulda novads partija
+organization	" Alūksne un novads-mūst zeme "
+organization	" Latvietis partija "
+organization	" Sieviete partija "
+organization	Sieviete partija
+organization	Darbs partija
+organization	" Zemgale partija "
+organization	Politiska organizācija " Mēs Olaine "
+organization	Politiskā organizācija " Sports un veselība partija "
+organization	Republika Atbalstīšana Apvienība
+organization	Demokrāts partija
+organization	Latvija Apvienot Republikāņs partija
+organization	" Latvija Apvienot Republikāņs partija "
+organization	Republikāņs partija
+organization	Latvija Pirmā partija un partija " Latvija ceļš " vēlēšana apvienība
+organization	Bauska rajons Nacionāla apvienība
+organization	" Latvija Kalve "
+organization	Politiska organizācija " Latvija Kalve "
+organization	Politiska organizācija ( partija ) " Latvija kalve "
+organization	Politiska organizācija Latvija kalve "
+organization	" Māra zeme "
+organization	Māra Zeme
+organization	" Apvienot sociāldemokrātisks labklājība partija "
+organization	Politisks patriotiska apvienība " Dzimtene "
+organization	Latvija Nacionāli Demokrātiska partija
+organization	" Savienība " Latvija ceļš " "
+organization	Savienība " Latvija ceļš "
+organization	Latvija ceļš
+organization	" Latvija Nacionāla neatkarība kustība "
+organization	" Saskaņa Latvija , - atdzimšana tautsaimniecība "
+organization	" " Līdztiesība " "
+organization	Vēlēšana apvienība " Tēvzeme un brīvība "
+organization	" Latvija Kristīgs demokrāts savienība "
+organization	Latvija kristīgs demokrāts savienība
+organization	" Demokrātisks darbs partija ( LDDP ) "
+organization	" Latvija Tauta fronte "
+organization	" Republika platforma "
+organization	" Konservatīvs un zemnieks "
+organization	" Neatkarīgs savienība "
+organization	" Latvija Liberāla partija "
+organization	Latvija liberāla partija
+organization	" Krievs Nacionāls Demokrātisks saraksts ( Demokrātiska iniciatīva centrs - Baltija konstitucionāla partija ) "
+organization	" Saimnieciska rosība Līga "
+organization	Pilsonis kopa " Mūsa zeme "
+organization	" Vēlēšana apienībt " Latvija Laime " "
+organization	" Liberāla alianse "
+organization	" Latvija Vienība partija "
+organization	Latvija vienība partija
+organization	Maznodrošināts politiska apvienība
+organization	Latvietis neatkarība partija
+organization	Latvija Apkrāpt cilvēks aizsardzība partija " Taisnība "
+organization	Latvija apkrāpt cilvēks aizstāvība partija " Taisnība "
+organization	Latvija Apkrāpt cilvēks aizsardzība partija " Taisnība " koalīcija " Darbs un taisnīgums "
+organization	Tauta saskaņa partija
+organization	Latvija Krievs pilsonis partija
+organization	Demokrātiska partija Saimnieks
+organization	Demokrātiska Partija " Saimnieks "
+organization	" Pretkomunists apvienība "
+organization	Pretkomunists apvienība
+organization	Tauta kustība Latvija ( Zīgerista partija )
+organization	" Tauta kustība Latvija " ( Zīgerista partija )
+organization	" Tauta kustība Latvija "
+organization	Tauta kustība " Latvija " ( Zīgerista partija )
+organization	Partija " Tauta kustība Latvija " ( Zīgerista partija )
+organization	Apvienība " Tēvzeme un Brīvība "
+organization	Tautsaimnieks politiska apvienība " Tautsaimnieks "
+organization	Tautsaimnieks politiska apvienība
+organization	Latvija Nacionāli konservatīva partija
+organization	Latvija nacionāli konservatīva partija " Lnnk "
+organization	" Latvija nacionāli konservatīva partija - Lnnk "
+organization	Sociāldemokrātisks Labklājība partija
+organization	Progresīvs centrīska partija
+organization	" Jauns laiks "
+organization	Jauns laiks
+organization	" Latvija Pirmā Partija "
+organization	" Brīvība partija "
+organization	Brīvība partija
+organization	" Sociāldemokrāts savienība - SDS "
+organization	Sociāldemokrāts savienība ( SDS )
+organization	" Politiska apvienība " Centrs " "
+organization	Politiska apvienība " Centrs "
+organization	" Latgale Gaisma "
+organization	Politiska organizācija " Pensionārs un seniors partija "
+organization	Pensionārs un seniors partija
+organization	Politiska organizācija ( partija ) " Eiroskeptiķs "
+organization	Politiska partija " Eiroskeptiķs "
+organization	Nacionāls Spēks savienība
+organization	" Latvietis Latvija " nacionālpolitisks Latvietis Aizstāvība Organizācija
+organization	Partija " Tēvzeme savienība "
+organization	Partija " Daugava - Latvija "
+organization	" Zatlers Reforma partija "
+organization	Šlesers Reforma partija LPP / LC
+organization	Latvija sociāldemokrātiska partija
+organization	Krievs partija
+organization	Demokrāts partija
+organization	Bauska rajons demokrātiska apvienība
+organization	Latgale demokrātiska partija
+organization	Mēs savs novads
+organization	Vienots tauta partija " Sadraudzība "
+organization	Kristīgs tauta partija
+organization	Politiska organizācija " Kustība par sociāls taisnīgums un līdztiesība Latvija "
+organization	Politiska organizācija " Reforma savienība "
+organization	Labklājība partija
+organization	Tauta mantojums
+organization	Politisa organizācija " Tauta mantojums "
+organization	Jauns Kristīga partija
+organization	Vēlētājs apvienība " Renda nākotne "
+organization	Renda - Mūsa māja
+organization	Renda tautsaimnieks apvienība
+organization	Par Renda
+organization	Jauns centrs
+organization	" Latvija Jaunatne partija "
+organization	Latvija Jaunatne partija
+organization	" Sports partija "
+organization	Kalnciems
+organization	" Mūsa prāts - Mūsa pilsēta izaugsme "
+organization	Vēlēšana apvienība " Atbalsts viss "
+organization	Vēlēšana apvienība " Ar labs nodoms "
+organization	Vēlēšana apvienība " Mēs Viļāni "
+organization	" Pilsoniska savienība "
+organization	Par dzimtene !
+organization	Sabiedrība cita politika
+organization	Latvija konservatīva savienība
+organization	Nacionāls Progress partija
+organization	Latvija Nacionāla reforma partija
+organization	Tauta kopa " Brīvība "
+organization	Kristīgs demokrātiska Savienība ( Kds / KTP )
+organization	Helsinki-86
+organization	Nacionāla Savienība " Namejs "
+organization	Jauna partija
+organization	Tauta partija
+organization	Politiska organizācija ( partija ) apvienība " Latvija Sociāldemokrāts apvienība "
+organization	Politiska organizācija ( partija ) apvienība " Darbs partija ( DP ) , Kristīgi demokrātiska savienība ( KDS ) , Latvija Zaļa partija ( LZP ) apvienība "
+organization	" Rīga apriņķis novads apvienība "
+organization	" Latvija brīvība "
+organization	Līdztiesība
+organization	Brīva izvēle tauta Eiropa
+organization	AI
+organization	ASDLP
+organization	BBBND
+organization	Bite
+organization	BP
+organization	Brns
+organization	DA
+organization	DMP
+organization	DNP
+organization	DP
+organization	DPP
+organization	Dps
+organization	JC
+organization	JD
+organization	JKP
+organization	JL
+organization	JMM
+organization	JP
+organization	JRP
+organization	Kds
+organization	KN
+organization	KNP
+organization	KP
+organization	KTP
+organization	LARP
+organization	LB
+organization	LC
+organization	LDDP
+organization	LDP
+organization	LG
+organization	LJP
+organization	LK
+organization	Lkds
+organization	LKPP
+organization	Lks
+organization	LNDP
+organization	Lnnk
+organization	LNP
+organization	LNRP
+organization	LP
+organization	LPP
+organization	LPP / LC
+organization	Lsda
+organization	LSDP
+organization	LSDSP
+organization	LSP
+organization	LT
+organization	LTF
+organization	LVP
+organization	LZP
+organization	Lzs
+organization	ML
+organization	MP
+organization	Mpa
+organization	MSN
+organization	MZ
+organization	NPP
+organization	Nss
+organization	PCP
+organization	PCTVL
+organization	PDV
+organization	PLL
+organization	PP
+organization	PPR
+organization	PS
+organization	PSP
+organization	RA
+organization	Raa
+organization	Rana
+organization	RJ
+organization	RL
+organization	RP
+organization	RS
+organization	SC
+organization	SCP
+organization	Sdps
+organization	Sds
+organization	SLP
+organization	Sls
+organization	STP
+organization	SVP
+organization	ŠRP-LPP / LC
+organization	Taisnība
+organization	TB
+organization	TB / Lnnk
+organization	TK
+organization	TKL
+organization	Tns
+organization	TP
+organization	Tps
+organization	TS
+organization	TSP
+organization	V
+organization	VL
+organization	VL-TB / Lnnk
+organization	VP
+organization	VR
+organization	VV
+organization	ZP
+organization	ZRP
+organization	Zzs
