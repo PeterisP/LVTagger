@@ -133,13 +133,12 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	    	wi.set(FullTagAnnotation.class, bits[4]);
 	    	wi.setTag(bits[4].substring(0,1));
 	    	wi.set(MorphologyFeatureStringAnnotation.class, bits[5]);
-//	    	if (bits.length >= 7) {
-//	    		//syntax
-//	    		wi.set(ConllSyntaxAnnotation.class, bits[6]);
-//	    	}
 	    	if (bits.length >= 7) {
-	    		wi.set(NamedEntityTagGoldAnnotation.class, bits[6]);
-	    		
+	    		//syntax
+	    		wi.set(ConllSyntaxAnnotation.class, bits[6]);
+	    	}
+	    	if (bits.length >= 8) {
+	    		wi.set(NamedEntityTagGoldAnnotation.class, bits[7]);
 	    	}
 	    	if (saveExtraColumns && bits.length >=7) {
 	    		StringBuilder extraColumns = new StringBuilder();
@@ -147,10 +146,9 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	    			extraColumns.append(bits[i]).append("\t");
 	    		}
 	    		wi.set(ExtraColumnAnnotation.class, extraColumns.toString());
-	    	}
-	    	
+	    	}	    	
 	    } else {
-	    	throw new RuntimeIOException("Unexpected input (many fields): " + line);
+	    	throw new RuntimeIOException("Unexpected conll input (field count) " + line);
 	    }
 	    return wi;
 	  }
@@ -188,8 +186,9 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	        String morphoFeats = fl.getString(MorphologyFeatureStringAnnotation.class);
 	        if (outputType == outputTypes.CONLL) {
 	        	out.print(fl.index() + "\t" + word + '\t' + lemma + '\t' + tag + '\t' + 
-		        		fullTag + '\t' + morphoFeats + "\t_");
-	        	if (fl.get(ConllSyntaxAnnotation.class) != null) out.print('\t' + fl.getString(ConllSyntaxAnnotation.class));
+		        		fullTag + '\t' + morphoFeats);
+	        	if (fl.get(ConllSyntaxAnnotation.class) != null) out.print('\t' + fl.getString(ConllSyntaxAnnotation.class)); 
+	        	else out.print("\t_");
 	        	out.print('\t' + answer);
 	        	if (saveExtraColumns) out.print("\t" + fl.getString(ExtraColumnAnnotation.class));
 	        	out.println();

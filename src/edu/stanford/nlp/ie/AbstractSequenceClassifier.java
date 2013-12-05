@@ -941,7 +941,10 @@ public abstract class AbstractSequenceClassifier<IN extends CoreMap> implements 
     int blankLines = 0;
     while ((line = is.readLine()) != null) {
       if (line.trim().equals("")) {
-    	  if (++blankLines > 2) {
+    	  ++blankLines;
+    	  if (blankLines > 4) {
+    		  return false;
+    	  } else if (blankLines > 2) {
 			  ObjectBank<List<IN>> documents = makeObjectBankFromString(text, readerWriter);
 	    	  classifyAndWriteAnswers(documents, readerWriter);
     		  text = "";
