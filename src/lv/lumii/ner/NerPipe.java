@@ -160,15 +160,15 @@ public class NerPipe {
 			System.exit(0);
 		}
 		NerPipe ner = new NerPipe(props);
+		ner.classifyDocumentStdin();
 		
-//			ObjectBank<List<CoreLabel>> b = nerClassifier.makeObjectBankFromFile("tmp.in", conllReader);
-//			nerClassifier.printProbsDocuments(b);
-//			try {
-//				nerClassifier.printLabelInformation("tmp.in", conllReader);
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}
-			ner.classifyDocumentStdin();
+		//CRFClassifier<CoreLabel> classifier = CRFClassifier.getClassifier(NerPipe.defaultCrfClassifier, props);
+		///LVCoNLLDocumentReaderAndWriter lvconll = new LVCoNLLDocumentReaderAndWriter();
+		//lvconll.init(classifier.flags);
+//		ObjectBank<List<CoreLabel>> b = classifier.makeObjectBankFromFile("z_tomins.conll",lvconll);
+//		classifier.printProbsDocuments(b);
+//		classifier.printFirstOrderProbsDocuments(b);
+		//try {classifier.printLabelInformation("z_tomins.conll", lvconll);} catch (Exception e) {e.printStackTrace();}
 	}
 
 	
