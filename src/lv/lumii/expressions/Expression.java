@@ -416,7 +416,7 @@ public class Expression
 					String frāze = "";
 					for (ExpressionWord w2 : expWords)
 						frāze += w2.correctWordform.getToken() + " ";
-					System.err.printf("Expression nemācēja izlocīt vārdu %s uz %s frāzē '%s'\n",forma.getToken(), inflect, frāze.trim());
+					// TODO - interesanto frāžu logging - System.err.printf("Expression nemācēja izlocīt vārdu %s uz %s frāzē '%s'\n",forma.getToken(), inflect, frāze.trim());
 					inflectedPhrase += forma.getToken() + ' ';
 //					System.err.println("Filtrs:");
 //					filtrs.describe(new PrintWriter(System.err));
@@ -438,12 +438,13 @@ public class Expression
 				}
 			}
 		}
-		if (inflectedPhrase.trim().isEmpty()) {
-			System.err.print("Expression sanāca tukšs rezultāts no frāzes [");
-		    for (ExpressionWord w : expWords)
-		    	System.err.print(w.word.getToken()+" ");
-		    System.err.println("]");
-		}
+		// TODO - interesanto frāžu logging
+//		if (inflectedPhrase.trim().isEmpty()) {
+//			System.err.print("Expression sanāca tukšs rezultāts no frāzes [");
+//		    for (ExpressionWord w : expWords)
+//		    	System.err.print(w.word.getToken()+" ");
+//		    System.err.println("]");
+//		}
 		if (inflectedPhrase.endsWith(" .")) inflectedPhrase = inflectedPhrase.substring(0, inflectedPhrase.length()-2) + ".";
 		return inflectedPhrase.trim();
 	}
