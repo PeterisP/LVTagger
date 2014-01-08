@@ -12,6 +12,7 @@ import lv.semti.morphology.analyzer.Word;
 import lv.semti.morphology.analyzer.Wordform;
 import lv.semti.morphology.attributes.AttributeNames;
 import lv.semti.morphology.attributes.AttributeValues;
+import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ie.ner.CMMClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
@@ -27,7 +28,7 @@ public class Expression
 {
 	public LinkedList <ExpressionWord> expWords;
 	private static transient Analyzer analyzer = null;
-	private static transient CMMClassifier<CoreLabel> morphoClassifier = null;
+	private static transient AbstractSequenceClassifier<CoreLabel> morphoClassifier = null;
 	private static transient Analyzer locītājs = null;
 	
 	private static void initClassifier(String model) throws Exception {
@@ -35,20 +36,31 @@ public class Expression
 		locītājs = LVMorphologyReaderAndWriter.getAnalyzer(); // Assumption - that the morphology model actually loads the LVMorphologyReaderAndWriter data, so it should be filled.
 	}
 	
+	public static void setClassifier(AbstractSequenceClassifier<CoreLabel> preloadedClassifier) {
+		morphoClassifier = preloadedClassifier;
+		locītājs = LVMorphologyReaderAndWriter.getAnalyzer(); // Assumption - that the morphology model actually loads the LVMorphologyReaderAndWriter data, so it should be filled.
+	}
+	
 	private static void initClassifier() throws Exception {
 		initClassifier("../LVTagger/models/lv-morpho-model.ser.gz"); // FIXME - nepamatoti paļaujamies ka tur tāds modelis būs
 	}
 	
-	public Expression(String phrase) throws Exception
+	public Expression(String phrase) 
 	{
 		this(phrase,true);
 	}
 	
-	public Expression(String phrase, boolean useTagger) throws Exception
+	public Expression(String phrase, boolean useTagger) 
 	{
-		if (morphoClassifier == null) initClassifier(); 
 		if(useTagger)
 		{
+			if (morphoClassifier == null)
+				try {
+					initClassifier();
+				} catch (Exception e) {
+					e.printStackTrace();
+					throw new Error("Expression inflection: morphoClassifier not supplied and unable to load from default values");
+				} 
 			loadUsingTagger(phrase);
 		}
 		else
@@ -72,7 +84,7 @@ public class Expression
 		if (morphoClassifier == null) initClassifier();
 	}
 
-	public void loadUsingBestWordform(String phrase) throws Exception
+	public void loadUsingBestWordform(String phrase)
 	{
 		LinkedList <Word> words = Splitting.tokenize(locītājs, phrase);
 		expWords=new LinkedList<ExpressionWord>();
