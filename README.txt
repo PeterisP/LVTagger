@@ -31,7 +31,7 @@ For named entity tagging with a pre-trained model, run the included nertagger.sh
 
 SYSTEM REQUIREMENTS
 
-JRE 1.6+ should be installed and available on path. 
+JRE 1.7+ should be installed and available on path. 
 The analyzer is rather memory-hungry; ~2gb memory should be available.
 
 PERFORMANCE ESTIMATES
@@ -43,6 +43,14 @@ COMPILING FROM SOURCE
 
 Eclipse project files and Ant build scripts are included.
 The build scripts assume that the morphological word analysis module (https://github.com/PeterisP/morphology) will be located next to this project (../Morphology)
+The following commands should build a working system on MacOS/Linux, assuming that Java/ant is installed.
+
+git clone https://github.com/PeterisP/morphology.git
+git clone https://github.com/PeterisP/LVTagger.git
+cd morphology/
+ant
+cd ../LVTagger/
+ant
 
 DOWNLOADS
 
