@@ -1,5 +1,6 @@
 package lv.lumii.expressions;
 import java.io.File;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -29,7 +30,8 @@ public class Expression
 	public LinkedList <ExpressionWord> expWords;
 	private static transient Analyzer analyzer = null;
 	private static transient AbstractSequenceClassifier<CoreLabel> morphoClassifier = null;
-	private static transient Analyzer locītājs = null;
+	protected static transient Analyzer locītājs = null;
+	public Category category = Category.other; 
 	
 	private static void initClassifier(String model) throws Exception {
 		morphoClassifier = CMMClassifier.getClassifier(new File(model));		
@@ -45,45 +47,41 @@ public class Expression
 		initClassifier("../LVTagger/models/lv-morpho-model.ser.gz"); // FIXME - nepamatoti paļaujamies ka tur tāds modelis būs
 	}
 	
-	public Expression(String phrase) 
+	/*
+	 * Izveido frāzi no teksta, pirms tam to notagojot ar morfotageri
+	 * @param phrase - pati frāze
+	 * @param category - frāzes kategorija - person org loc
+	 * @param knownLemma - ja true, tad frāze ir 'pamatformā'; ja false - tad kautkādā formā kam jāmeklē pamatforma
+	 */
+	public Expression(String phrase, String phraseCategory, boolean knownLemma) 
 	{
-		this(phrase,true);
-	}
-	
-	public Expression(String phrase, boolean useTagger) 
-	{
-		if(useTagger)
-		{
-			if (morphoClassifier == null)
-				try {
-					initClassifier();
-				} catch (Exception e) {
-					e.printStackTrace();
-					throw new Error("Expression inflection: morphoClassifier not supplied and unable to load from default values");
-				} 
-			loadUsingTagger(phrase);
-		}
-		else
-		{
-			loadUsingBestWordform(phrase);
-		}
+		if (morphoClassifier == null)
+			try {
+				initClassifier();
+			} catch (Exception e) {
+				e.printStackTrace();
+				throw new Error("Expression inflection: morphoClassifier not supplied and unable to load from default values");
+			} 
+		setCategory(phraseCategory);
+
+		loadUsingTagger(phrase, knownLemma);
+		//loadUsingBestWordform(); alternatīva ja nav tageris
+		setPattern(); // Daļa, kas izdomā, kurus vārdus locīt līdzi galvenajam un kurus atstāt
 	}
 		
 	/** 
 	 * Izveido frāzi no jau notagotiem tokeniem - jābūt uzsetotai 'correct wordform' katrā objektā
 	 * @param tokens - saraksts ar vārdiem
 	 */
-	public Expression(List<Word> tokens) {
+	public Expression(List<Word> tokens, String phraseCategory) {
+		setCategory(phraseCategory);
 		expWords=new LinkedList<ExpressionWord>();
 		for (Word w: tokens) {
 			expWords.add(new ExpressionWord(w, w.getCorrectWordform()));
 		}
+		setPattern();
 	}
 	
-	public Expression() throws Exception {
-		if (morphoClassifier == null) initClassifier();
-	}
-
 	public void loadUsingBestWordform(String phrase)
 	{
 		LinkedList <Word> words = Splitting.tokenize(locītājs, phrase);
@@ -95,12 +93,26 @@ public class Expression
 		}
 	}
 	
-	public void loadUsingTagger(String phrase) 
+	public void loadUsingTagger(String phrase, boolean knownLemma) 
 	{
 		expWords=new LinkedList<ExpressionWord>();
 		
-		//FIXME šo vajadzētu ielādēt globāli, nevis uz katru objektu		
-		List<CoreLabel> sentence = LVMorphologyReaderAndWriter.analyzeSentence(phrase);
+	    List<Word> words = Splitting.tokenize(locītājs, phrase);
+	    for (Word word : words) { // filtrējam variantus, ņemot vērā to ko zinam par frāzi un kategoriju	    	
+	    	if (knownLemma && category == Category.hum) { // personvārdiem metam ārā nenominatīvus, ja ir kāds variants ar nominatīvu (piemēram 'Dombrovska' kā siev. nominatīvs vai vīr. ģenitīvs)
+	    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
+	    		for (Wordform wf : word.wordforms) {
+	    			if (!wf.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Nominative) // Nominatīvs vai nelokāms
+	    					&& !wf.isMatchingStrong(AttributeNames.i_Declension, AttributeNames.v_NA)) {
+	    				izmetamie.add(wf);
+	    			}	    				
+	    		}
+	    		if (izmetamie.size() < word.wordforms.size()) // ja ir kaut viens derīgs 
+	    			word.wordforms.removeAll(izmetamie);
+	    	}
+	    }
+	    
+		List<CoreLabel> sentence = LVMorphologyReaderAndWriter.analyzeSentence2(words);
 		sentence = morphoClassifier.classify(sentence);
 		
 		String token;
@@ -116,11 +128,7 @@ public class Expression
 			}
 			
 		  analysis = label.get(LVMorphologyAnalysis.class);
-		  /*
-		  System.out.print(token);
-		  System.out.print(" ");
-		  System.out.println(analysis);
-		  */
+		  
 		  maxwf = analysis.getMatchingWordform(label.getString(AnswerAnnotation.class), false);
 		  if (maxwf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Verb)) {
 			  // Mēs varam pieņemt ka entītijas ir 'nounphrase' un ja beigās ir verbs (nevis divdabis) tad tas ir tagera gļuks (piemērs 'DPS saraksta')
@@ -137,12 +145,12 @@ public class Expression
 	}
 	
 	
-	public void addPattern(	Category cat) //Method adds isStatic attribute to the Expression word, which indicates, whether to inflect the Word
+	public void setPattern() //Method adds isStatic attribute to the Expression word, which indicates, whether to inflect the Word
 	{
 		if (expWords.size() == 0) return;
 		boolean staticWhile=false;
 		
-		switch(cat)
+		switch(category)
 		{
 			case hum : // Cilvēku vārdiem lokam visus tokenus ko var, izņemot gadījumos kad klāt ir arī amats (valdes priekšsēdētājs Ivars Zariņš)
 				for (ExpressionWord w : expWords) {
@@ -252,37 +260,33 @@ public class Expression
 	
 	public String normalize() throws Exception
 	{
-		// !! ja ir zināma kategorija, tad labāk šo nelietot bet padot kategoriju !!
-		return inflect("Nominatīvs",null);
+		return inflect("Nominatīvs");
 	}
 	
-	public static Category get(String s)
+	private void setCategory(String s)
 	{
-		if (s==null)
-		{
-			return Category.other;
-		}
-		switch(s)
-		{
+		if (s==null) {
+			category = Category.other;
+		} else switch(s) {
 		case "org": case "organization":
-			return Category.org;
+			category = Category.org; break;
 		case "hum": case "person":
-			return Category.hum;
+			category = Category.hum; break;
 		case "loc": case "location":
-			return Category.loc;
+			category = Category.loc; break;
 		default:
-			return Category.other; //FIXME - nav labi šitā, tad jau var vispār stringus neparsēt bet prasīt ieejā enum
+			category = Category.other; //FIXME - nav labi šitā, tad jau var vispār stringus neparsēt bet prasīt ieejā enum
 		}
 	}
 	
-	public Map<String,String> getInflections(String cat) {
+	public Map<String,String> getInflections() {
 		Map <String,String> result = new HashMap<String, String>();
 		String inflection;
 		String[] cases = {"Nominatīvs", "Ģenitīvs", "Datīvs", "Akuzatīvs", "Lokatīvs"};
 		
 		for (String i_case : cases) {
 			try {
-				inflection = inflect(i_case, cat);
+				inflection = inflect(i_case);
 				if (inflection != null) result.put(i_case, inflection);
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -291,10 +295,10 @@ public class Expression
 		return result;
 	}
 	
-	public String inflect(String inflect, String c) throws Exception
+	public String inflect(String inflectCase) throws Exception
 	{
-		Category cat = get(c);
-		addPattern(cat);
+//		for (ExpressionWord w : expWords)
+//			System.err.printf("Vārds '%s' būs statisks - '%b'\n", w.word.getToken(), w.isStatic);
 		
 		String inflectedPhrase="";
 		
@@ -310,7 +314,7 @@ public class Expression
 				forma=w.correctWordform; 
 								
 				filtrs = new AttributeValues(forma);
-				filtrs.addAttribute(AttributeNames.i_Case,inflect);
+				filtrs.addAttribute(AttributeNames.i_Case,inflectCase);
 				filtrs.removeAttribute(AttributeNames.i_EndingID);
 				filtrs.removeAttribute(AttributeNames.i_LexemeID);
 				filtrs.removeAttribute(AttributeNames.i_Guess);
@@ -320,7 +324,7 @@ public class Expression
 				filtrs.removeAttribute(AttributeNames.i_SourceLemma);
 				filtrs.removeAttribute(AttributeNames.i_Word);
 				if (!forma.isMatchingStrong(AttributeNames.i_NumberSpecial, AttributeNames.v_PlurareTantum) 
-						&& cat == Category.org ) {
+						&& category == Category.org ) {
 					// ja nav daudzskaitlinieks, tad ņemsim ka vienskaitļa formu
 					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Singular);
 				}
@@ -346,7 +350,7 @@ public class Expression
 					filtrs.removeAttribute(AttributeNames.i_Lemma); // jo lemma ir turls nevis turlais
 				}
 				//FIXME - vai visiem vai pēdējam? Un profesija te domāta, nevis jebkas, varbūt tas ir īpaši jāatlasa
-				if (cat==Category.other || w.word.getToken().startsWith("apvienīb")) {
+				if (category==Category.other || w.word.getToken().startsWith("apvienīb")) {
 					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Singular);
 				}
 				if (w.word.getToken().startsWith("vēlēšan") // izņēmums lai nemēģina vienskaitļa variantus par vēlēšanu likt
@@ -365,7 +369,7 @@ public class Expression
 				if (forma.lexeme == null || !forma.isMatchingWeak(AttributeNames.i_Guess, AttributeNames.v_NoGuess)) // Deminutīviem kā Bērziņš cita lemma
 					inflWordforms=locītājs.generateInflections(forma.getValue(AttributeNames.i_Lemma),false,filtrs);
 				else 
-					inflWordforms=locītājs.generateInflections(forma.lexeme);
+					inflWordforms=locītājs.generateInflections(forma.lexeme, w.word.getToken());
 				
 				filtrs.removeAttribute(AttributeNames.i_Lemma); // jo reizēm (dzimtes utml) te būscita lemma nekā notagotajā; piemēram vidēja/vidējs
 				
@@ -465,6 +469,14 @@ public class Expression
 		Word vārds = locītājs.analyze(string); //FIXME - jāskatās, kas te bija Guntai un varbūt vajag AnalyzeLemma saukt
 		if (vārds.getBestWordform() == null) return AttributeNames.v_Noun;
 		return vārds.getBestWordform().getValue(AttributeNames.i_PartOfSpeech);
+	}
+
+	public void describe(PrintWriter pipe) {
+		//pipe.format("Word\tchosen tag\n");
+		for (ExpressionWord w : expWords) {
+			pipe.format("%s\t%s\n", w.word.getToken(), w.correctWordform.getTag());
+		}
+		pipe.flush();
 	}
 
 

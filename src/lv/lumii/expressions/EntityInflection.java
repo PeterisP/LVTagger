@@ -47,8 +47,8 @@ public class EntityInflection {
 				category = fields[2];
 			
 			JSONObject oInflections = new JSONObject();
-        	Expression e = new Expression(entity_name);
-        	Map<String,String> inflections= e.getInflections(category);
+        	Expression e = new Expression(entity_name, category, true); // Pieņemam ka te jau visi ir normalizēti
+        	Map<String,String> inflections= e.getInflections();
         	for (String i_case : inflections.keySet()) {
         		oInflections.put(i_case, inflections.get(i_case).replaceAll("'", "''"));
         	}

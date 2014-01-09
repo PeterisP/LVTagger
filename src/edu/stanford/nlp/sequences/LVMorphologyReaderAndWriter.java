@@ -38,7 +38,7 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
   private IteratorFromReaderFactory<List<CoreLabel>> factory;
 
 
-  private static void initAnalyzer(){
+  public static void initAnalyzer(){
 	  try {
 		  analyzer = new Analyzer("dist/Lexicon.xml", false);
 		  analyzer.enableVocative = true;
@@ -219,24 +219,9 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 
 	public static List<CoreLabel> analyzeSentence(String sentence) {
 	    if (analyzer == null ) initAnalyzer();
-
-	    List<CoreLabel> result = new ArrayList<CoreLabel>();
-		CoreLabel s = new CoreLabel();
-		s.set(TextAnnotation.class, "<s>");
-		result.add(s);
-		
-		List<Word> words = Splitting.tokenize(analyzer, sentence); 
-		for (Word w : words) {
-			CoreLabel word = new CoreLabel();
-			word.set(TextAnnotation.class, w.getToken());
-			applyLVmorphoanalysis(word, w, null); //answerAttributes varbūt jāpatjūnē
-			result.add(word);
-		}
-		
-		s = new CoreLabel();
-		s.set(TextAnnotation.class, "<s>");
-		result.add(s);
-		return result;
+	    List<Word> words = Splitting.tokenize(analyzer, sentence); 
+	    
+	    return analyzeSentence2(words);
 	}
 
 	public static List<CoreLabel> analyzeSentence2(List<Word> sentence) {
