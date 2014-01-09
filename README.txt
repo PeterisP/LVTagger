@@ -23,8 +23,11 @@ Run the included morphotagger.sh script for tokenization and morphological taggi
 Input one sentence or paragraph per line; end processing with an empty line.
 Output format is JSON by default, or tab-delimited columns of token-tag-lemma when run as './pipetool.sh -vert'.
 ./morphotagger.sh --help
-for information on other input/output options.
+for information on other input/output formats.
 All input and output should be in UTF-8.
+
+File interaction with standard UNIX stdin/stdout, i.e.
+./morphotagger.sh <inputfile.txt >outputfile.txt
 
 JSON example: [{"Vārds":"es","Marķējums":"pp10snn","Pamatforma":"es"}, {"Vārds":"roku","Marķējums":"vmnipt11san","Pamatforma":"rakt"}, {"Vārds":"roku","Marķējums":"ncfsa4","Pamatforma":"roka"}]
 'Vārds' - exact surface form of the token; 'Marķējums' - morphological tag; first letter is part of speech, and each remaining letter denotes a separate morphological feature; and 'Pamatforma' contains the identified lemma.
