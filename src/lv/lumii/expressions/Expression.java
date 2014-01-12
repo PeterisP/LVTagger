@@ -258,7 +258,7 @@ public class Expression
 		}
 	}
 	
-	public String normalize() throws Exception
+	public String normalize() 
 	{
 		return inflect("Nominatīvs");
 	}
@@ -295,7 +295,7 @@ public class Expression
 		return result;
 	}
 	
-	public String inflect(String inflectCase) throws Exception
+	public String inflect(String inflectCase) 
 	{
 //		for (ExpressionWord w : expWords)
 //			System.err.printf("Vārds '%s' būs statisks - '%b'\n", w.word.getToken(), w.isStatic);
