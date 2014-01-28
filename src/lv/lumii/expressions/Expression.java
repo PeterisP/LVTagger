@@ -28,19 +28,18 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 public class Expression
 {
 	public LinkedList <ExpressionWord> expWords;
-	private static transient Analyzer analyzer = null;
 	private static transient AbstractSequenceClassifier<CoreLabel> morphoClassifier = null;
-	protected static transient Analyzer locītājs = null;
+	protected static transient Analyzer analyzer = null;
 	public Category category = Category.other; 
 	
 	private static void initClassifier(String model) throws Exception {
 		morphoClassifier = CMMClassifier.getClassifier(new File(model));		
-		locītājs = LVMorphologyReaderAndWriter.getAnalyzer(); // Assumption - that the morphology model actually loads the LVMorphologyReaderAndWriter data, so it should be filled.
+		analyzer = LVMorphologyReaderAndWriter.getAnalyzer(); // Assumption - that the morphology model actually loads the LVMorphologyReaderAndWriter data, so it should be filled.
 	}
 	
 	public static void setClassifier(AbstractSequenceClassifier<CoreLabel> preloadedClassifier) {
 		morphoClassifier = preloadedClassifier;
-		locītājs = LVMorphologyReaderAndWriter.getAnalyzer(); // Assumption - that the morphology model actually loads the LVMorphologyReaderAndWriter data, so it should be filled.
+		analyzer = LVMorphologyReaderAndWriter.getAnalyzer(); // Assumption - that the morphology model actually loads the LVMorphologyReaderAndWriter data, so it should be filled.
 	}
 	
 	private static void initClassifier() throws Exception {
@@ -84,7 +83,7 @@ public class Expression
 	
 	public void loadUsingBestWordform(String phrase)
 	{
-		LinkedList <Word> words = Splitting.tokenize(locītājs, phrase);
+		LinkedList <Word> words = Splitting.tokenize(analyzer, phrase);
 		expWords=new LinkedList<ExpressionWord>();
 		for (Word w : words)
 		{
@@ -97,7 +96,7 @@ public class Expression
 	{
 		expWords=new LinkedList<ExpressionWord>();
 		
-	    List<Word> words = Splitting.tokenize(locītājs, phrase);
+	    List<Word> words = Splitting.tokenize(analyzer, phrase);
 	    for (Word word : words) { // filtrējam variantus, ņemot vērā to ko zinam par frāzi un kategoriju	    	
 	    	if (knownLemma && category == Category.hum) { // personvārdiem metam ārā nenominatīvus, ja ir kāds variants ar nominatīvu (piemēram 'Dombrovska' kā siev. nominatīvs vai vīr. ģenitīvs)
 	    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
@@ -367,9 +366,9 @@ public class Expression
 				inflectedPhrase+=locītājs.generateInflections(forma.getValue("Pamatforma"),false,filtrs).toString()+' ';
 				*/
 				if (forma.lexeme == null || !forma.isMatchingWeak(AttributeNames.i_Guess, AttributeNames.v_NoGuess)) // Deminutīviem kā Bērziņš cita lemma
-					inflWordforms=locītājs.generateInflections(forma.getValue(AttributeNames.i_Lemma),false,filtrs);
+					inflWordforms=analyzer.generateInflections(forma.getValue(AttributeNames.i_Lemma),false,filtrs);
 				else 
-					inflWordforms=locītājs.generateInflections(forma.lexeme, w.word.getToken());
+					inflWordforms=analyzer.generateInflections(forma.lexeme, w.word.getToken());
 				
 				filtrs.removeAttribute(AttributeNames.i_Lemma); // jo reizēm (dzimtes utml) te būscita lemma nekā notagotajā; piemēram vidēja/vidējs
 				
@@ -466,7 +465,7 @@ public class Expression
 	}
 
 	public String getWordPartOfSpeech(String string) {
-		Word vārds = locītājs.analyze(string); //FIXME - jāskatās, kas te bija Guntai un varbūt vajag AnalyzeLemma saukt
+		Word vārds = analyzer.analyze(string); //FIXME - jāskatās, kas te bija Guntai un varbūt vajag AnalyzeLemma saukt
 		if (vārds.getBestWordform() == null) return AttributeNames.v_Noun;
 		return vārds.getBestWordform().getValue(AttributeNames.i_PartOfSpeech);
 	}
