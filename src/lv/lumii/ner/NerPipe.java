@@ -33,8 +33,9 @@ public class NerPipe {
 	private static inputTypes inputType = inputTypes.SENTENCE;
 	private static outputTypes outputType = outputTypes.CONLL_X;
 	
-	private static String defaultCrfClassifier = "lv-ner-model.ser.gz";
+	private static String defaultCrfClassifier; // = "lv-ner-model.ser.gz" removed for testing, use loadClassifier in properties file
 	
+	@SuppressWarnings("unchecked")
 	NerPipe(Properties props) throws ClassCastException, ClassNotFoundException, IOException {
 		this.props = props;
 		initializeFromProperties();
@@ -42,7 +43,7 @@ public class NerPipe {
 		List<AbstractSequenceClassifier<CoreLabel>> classifiers = new ArrayList<>();
 		
 		if (props.containsKey("whiteList")) classifiers.add(new ListNERSequenceClassifier(props.getProperty("whiteList"), true, true));
-		classifiers.add(CRFClassifier.getClassifier(defaultCrfClassifier, props));
+		if (defaultCrfClassifier != null) classifiers.add(CRFClassifier.getClassifier(defaultCrfClassifier, props));
 		if (props.containsKey("regexList")) classifiers.add(new RegexNERSequenceClassifier(props.getProperty("regexList"), true, true));
 
 		classifier = new NERClassifierCombiner(classifiers);

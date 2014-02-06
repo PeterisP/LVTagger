@@ -950,7 +950,6 @@ organization	Latvija Nekustams īpašums pārvaldnieks asociācija
 organization	SIA " Baltic Trans Logistic "
 organization	Baltic Trans Logistic
 organization	" Baltic Trans Logistic "
-organization	AS
 organization	Tornis un autoceltnis firma UBAK
 organization	Latvija Neatkarīgs mežizstrādātājs asociācija
 organization	SIA " Baltic taxis "
