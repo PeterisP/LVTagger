@@ -71,6 +71,7 @@
 
   <target name="clean" description="Delete old classes">
     <delete dir="${build.home}/edu"/>
+  	<delete dir="${dist}"/>
   </target>
 
 
@@ -89,14 +90,14 @@
           <include name="*.jar"/>
           <exclude name="javanlp*"/>
         </fileset>
-      	<fileset dir="${basedir}/dist">
-      	          <include name="*.jar"/>
-      	          <exclude name="javanlp*"/>
-      	</fileset>
         <fileset dir="${morphology.dir}/dist">
                   <include name="*.jar"/>
                   <exclude name="javanlp*"/>
         </fileset>
+      	<fileset dir="${basedir}/dist">
+      	          <include name="*.jar"/>
+      	          <exclude name="javanlp*"/>
+      	</fileset>
       </path>
   </target>
 
@@ -115,7 +116,7 @@
 
 -->
 
-  <target name="compile" depends="prepare,classpath"
+  <target name="compile" depends="clean,prepare,classpath"
    description="Compile Java sources">
 
     <!-- Compile Java classes as necessary -->
