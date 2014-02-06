@@ -1532,4 +1532,10 @@ public class CoreAnnotations {
       return String.class;
     }
   }
+  
+  public static class AnswersAnnotation implements CoreAnnotation<List<String>> {
+    public Class<List<String>> getType() {
+      return ErasureUtils.<Class<List<String>>> uncheckedCast(List.class);
+    }
+  }
 }

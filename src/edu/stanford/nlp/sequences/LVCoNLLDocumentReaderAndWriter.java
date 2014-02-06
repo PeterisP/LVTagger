@@ -1,5 +1,8 @@
 package edu.stanford.nlp.sequences;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Reader;
 import java.io.Serializable;
@@ -9,16 +12,15 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 import edu.stanford.nlp.io.RuntimeIOException;
+import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.AnswersAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ConllSyntaxAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ExtraColumnAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.GoldAnswerAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.FullTagAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.MorphologyFeatureStringAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagGoldAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.FullTagAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.MorphologyFeatureStringAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.OriginalAnswerAnnotation;
 import edu.stanford.nlp.objectbank.DelimitRegExIterator;
 import edu.stanford.nlp.objectbank.IteratorFromReaderFactory;
 import edu.stanford.nlp.util.Function;
@@ -39,7 +41,7 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
    * SIMPLE : 		WORD | GOLD | ANSWER
    * INFEATURES : 	IDX | WORD | LEMMA | FULLTAG | POS | MORPHOFEATURES+ner=X
    */
-  public enum outputTypes {SIMPLE, CONLL, INFEATURES};
+  public enum outputTypes {SIMPLE, CONLL, INFEATURES, COMPARE};
   public enum inputTypes {CONLL};
   
   //TODO make theese more clean and configureable
@@ -124,6 +126,7 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	    if (bits.length <= 1) {
 	    	wi.setWord(BOUNDARY);
 	        wi.set(AnswerAnnotation.class, OTHER);
+	        wi.set(NamedEntityTagGoldAnnotation.class, OTHER);
 	        wi.setLemma("_");
 	    } else if (bits.length >= 6) {
 	    	//conll-x format produced by morphotagger
@@ -161,20 +164,13 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	    }
 	  }
 
-
-	  /** Write a CoNLL format output file.
-	   *
-	   *  @param doc The document: A List of CoreLabel
-	   *  @param out Where to send the answers to
-	   */
-	  @SuppressWarnings({"StringEquality"})
 	  public void printAnswers(List<CoreLabel> doc, PrintWriter out) {
 		for (CoreLabel fl : doc) {
 	      String word = fl.word();
 	      if (word == BOUNDARY) {
 	        out.println();
 	      } else {
-	        String goldAnswer = fl.get(OriginalAnswerAnnotation.class); //fl.get(GoldAnswerAnnotation.class);
+	        String goldAnswer = fl.get(NamedEntityTagGoldAnnotation.class); //fl.get(GoldAnswerAnnotation.class);
 	        String answer = fl.get(NamedEntityTagAnnotation.class);
 	        if (answer == null) {
 	        	answer = fl.get(AnswerAnnotation.class);
@@ -201,9 +197,45 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 		        		fullTag + '\t' + morphoFeats + "|ner=" + answer);
 	        	if (saveExtraColumns) out.print("\t" + fl.getString(ExtraColumnAnnotation.class));
 	        	out.println();
+	        } else if (outputType == outputTypes.COMPARE){
+	        	out.print(word + "\t" + goldAnswer);
+	        	for (String a : fl.get(AnswersAnnotation.class)) out.print("\t" + a);
+	        	if (saveExtraColumns) out.print("\t" + fl.getString(ExtraColumnAnnotation.class));
+	        	out.println();
 	        }
 	      }
 	    }
-	  }
-
+		out.flush();
+	  } 
+	  
+	public List<CoreLabel> readCONLL(String filename) throws IOException {
+		BufferedReader in = new BufferedReader(new FileReader(filename));		
+		List<CoreLabel> doc = readCONLL(in);
+		in.close();
+		return doc;
+	}
+	
+	/**
+	 * Read conll input. Stop after 3 blank lines or EOL reached.
+	 * @param is
+	 * @return
+	 * @throws IOException
+	 */
+	public List<CoreLabel> readCONLL(BufferedReader is) throws IOException {
+		List<CoreLabel> res = new ArrayList<>();
+		String line;
+		int blankLines = 0;
+		while ((line = is.readLine()) != null) {
+			if (line.trim().equals("")) {
+				++blankLines;
+				if (blankLines > 3) {
+					break;
+				}
+			} else {
+				blankLines = 0;
+			}
+			res.add(makeCoreLabel(line));
+		}
+		return res;
+	}
 }
