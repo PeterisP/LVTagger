@@ -380,8 +380,57 @@ Evaluation results:
 	Person :  1.02%
 	Case :  6.62%
 
+-----------------------------------
+46. 2014.25 feb pārtrenēts, ar atjauninātiem treniņdatiem un ar visu kas nu pa šo gadu ir mainījies morfoloģijā un arī datos
+	Evaluation results:
+		Correct tag:	94.1%	715
+		Correct lemma:	97.0%	371
+		Correct all:	86.6%	1629
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  2.04%
+	Number :  4.66%
+	Reziduāļa tips :  1.08%
+	Definiteness :  1.57%
+	Mood :  1.43%
+	Gender :  2.03%
+	Person :  2.00%
+	Case :  5.78%	
 
-TODO -dabūt novērtījumu katra varianta ticamībai vajag....
+47. Pielikts, lai tageris skatās arī uz rekciju prievārdiem
+	Evaluation results:
+		Correct tag:	92.8%	880
+		Correct lemma:	96.5%	422
+		Correct all:	85.3%	1792
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  2.04%
+	Number :  5.46%
+	Rekcija : 12.35%
+	Definiteness :  1.69%
+	Mood :  2.37%
+	Gender :  2.43%
+	Person :  2.37%
+	Case :  6.71%
+
+48. Pielikti arī vietniekvārdu un darbībasvārdu tipi
+
+	Evaluation results:
+		Correct tag:	91.8%	994
+		Correct lemma:	96.3%	449
+		Correct all:	84.3%	1917
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  1.95%
+	Case :  6.63%
+	Vietniekvārda tips :  1.83%
+	Number :  5.58%
+	Rekcija : 12.96%
+	Mood :  2.43%
+	Definiteness :  1.98%
+	Gender :  2.47%
+	Darbības vārda tips :  5.85%
+	Person :  2.46%
+	Lokāmība :  0.24%
+
+TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss
 DONE - notestēt, kā ir ar transitivitātes eneiblošanu - nav jēgas
 TODO - notestēt, kā ir ja tagerim kā signālu padod, no kuras grupas lemma/tags ir nācis
