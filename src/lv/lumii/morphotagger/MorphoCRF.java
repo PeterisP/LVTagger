@@ -41,7 +41,7 @@ public class MorphoCRF {
 			}
 		}
 		
-		String pretrainedModel = "MorphoCRF/lv-morpho-model.ser.gz";
+		String pretrainedModel = "models/lv-morpho-model.ser.gz";
 		String classifierOutput = "MorphoCRF/lv-morpho-model.ser.gz";
 		
 	    //Properties props = StringUtils.propFileToProperties("/Users/pet/Documents/java/PaikensNER/MorfoCRF/lv-PP.prop");
@@ -113,7 +113,7 @@ public class MorphoCRF {
 			  System.out.println("-----");
 		      for (CoreLabel word : out) {
 				  String token = word.word();
-				  if (token.contains("<s>")) continue;
+				  if (token.contains("<s>") || token.contains("</s>")) continue;
 
 				  String answer = word.get(AnswerAnnotation.class);
 				  Word analysis = word.get(LVMorphologyAnalysis.class);
@@ -137,6 +137,7 @@ public class MorphoCRF {
 				  				  
 				  if (match(gold_tags, found_tags)) {
 					  correct_tag++;
+					  if (gold_lemma == null) System.out.println("Nav lemmas? " + token);
 					  if (gold_lemma != null && gold_lemma.equalsIgnoreCase(lemma)) correct_all++;
 				  } else {
 					  System.out.println("vārds: " + token+ ", pareizais: " + gold_tag + ", automātiskais: " + answer);

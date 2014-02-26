@@ -381,11 +381,11 @@ Evaluation results:
 	Case :  6.62%
 
 -----------------------------------
-46. 2014.25 feb pārtrenēts, ar atjauninātiem treniņdatiem un ar visu kas nu pa šo gadu ir mainījies morfoloģijā un arī datos
+45a. Baseline - jaunie dati (dev.txt) uz vecā morfoloģijas CRF modeļa, bet ar jauno kodu/leksikonu. Nav salīdzināms ar pirmssvītras procentiem - citi dati.
 	Evaluation results:
-		Correct tag:	94.1%	715
-		Correct lemma:	97.0%	371
-		Correct all:	86.6%	1629
+		Correct tag:	93.8%	715
+		Correct lemma:	96.8%	371
+		Correct all:	92.3%	885
 	Per-feature error rate summary (for those words that actually have such a feature)
 	Part of speech :  2.04%
 	Number :  4.66%
@@ -394,13 +394,27 @@ Evaluation results:
 	Mood :  1.43%
 	Gender :  2.03%
 	Person :  2.00%
-	Case :  5.78%	
+	Case :  5.78%
+
+46. 2014.25 feb pārtrenēts, ar atjauninātiem treniņdatiem un ar visu kas nu pa šo gadu ir mainījies morfoloģijā un arī datos
+	Evaluation results:
+		Correct tag:	92.9%	816
+		Correct lemma:	96.3%	421
+		Correct all:	91.4%	984
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  2.01%
+	Number :  5.05%
+	Definiteness :  1.69%
+	Mood :  2.43%
+	Gender :  2.43%
+	Person :  2.41%
+	Case :  6.80%
 
 47. Pielikts, lai tageris skatās arī uz rekciju prievārdiem
 	Evaluation results:
-		Correct tag:	92.8%	880
-		Correct lemma:	96.5%	422
-		Correct all:	85.3%	1792
+		Correct tag:	92.3%	880
+		Correct lemma:	96.3%	422
+		Correct all:	90.8%	1048
 	Per-feature error rate summary (for those words that actually have such a feature)
 	Part of speech :  2.04%
 	Number :  5.46%
@@ -411,24 +425,41 @@ Evaluation results:
 	Person :  2.37%
 	Case :  6.71%
 
-48. Pielikti arī vietniekvārdu un darbībasvārdu tipi
-
+48. Pielikti arī vietniekvārdu tipi
 	Evaluation results:
-		Correct tag:	91.8%	994
-		Correct lemma:	96.3%	449
-		Correct all:	84.3%	1917
+		Correct tag:	92.2%	889
+		Correct lemma:	96.3%	418
+		Correct all:	90.8%	1057
 	Per-feature error rate summary (for those words that actually have such a feature)
-	Part of speech :  1.95%
-	Case :  6.63%
+	Part of speech :  1.98%
+	Case :  6.67%
 	Vietniekvārda tips :  1.83%
-	Number :  5.58%
-	Rekcija : 12.96%
+	Number :  5.48%
+	Rekcija : 12.76%
 	Mood :  2.43%
+	Definiteness :  1.59%
+	Gender :  2.41%
+	Person :  2.28%
+
+49. Pielikti arī verbu tipi
+	Evaluation results:
+		Correct tag:	91.3%	997
+		Correct lemma:	96.1%	447
+		Correct all:	89.7%	1176
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  1.94%
+	Case :  6.64%
+	Vietniekvārda tips :  1.83%
+	Number :  5.61%
+	Rekcija : 13.37%
+	Mood :  2.48%
 	Definiteness :  1.98%
-	Gender :  2.47%
-	Darbības vārda tips :  5.85%
+	Gender :  2.45%
+	Darbības vārda tips :  5.91%
 	Person :  2.46%
 	Lokāmība :  0.24%
+
+
 
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss
