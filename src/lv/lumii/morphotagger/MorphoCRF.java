@@ -81,9 +81,9 @@ public class MorphoCRF {
 	    AbstractSequenceClassifier<CoreLabel> crf = new CMMClassifier<CoreLabel>(props);
 	    DocumentReaderAndWriter reader = crf.makeReaderAndWriter();
 		if (train) {		    
-		    //ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/train.txt", reader);
+		    ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/train.txt", reader);
 		    //ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/train_dev.txt", reader);
-			ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/all.txt", reader);
+			//ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/all.txt", reader);
 		    crf.train(documents, reader); //atbilstoši props datiem
 		    
 		    crf.serializeClassifier(classifierOutput);
@@ -91,8 +91,8 @@ public class MorphoCRF {
 			crf = CMMClassifier.getClassifier(pretrainedModel);
 		}
 				 
-		//testData(crf, "MorphoCRF/dev.txt", reader);
-		testData(crf, "MorphoCRF/test.txt", reader);
+		testData(crf, "MorphoCRF/dev.txt", reader);
+		//testData(crf, "MorphoCRF/test.txt", reader);
 	}
 
 	private static void testData(AbstractSequenceClassifier<CoreLabel> crf, String filename, DocumentReaderAndWriter<CoreLabel> reader) {			
@@ -113,7 +113,7 @@ public class MorphoCRF {
 			  System.out.println("-----");
 		      for (CoreLabel word : out) {
 				  String token = word.word();
-				  if (token.contains("<s>")) continue;
+				  if (token.contains("<s>") || token.contains("</s>")) continue;
 
 				  String answer = word.get(AnswerAnnotation.class);
 				  Word analysis = word.get(LVMorphologyAnalysis.class);
@@ -132,14 +132,15 @@ public class MorphoCRF {
 				  if (gold_lemma == null || gold_lemma.equalsIgnoreCase(lemma)) 
 					  correct_lemma++;
 				  else {
-					  System.out.println(String.format("word: %s, tag:%s, gold_lemma: '%s', lemma: '%s'", token, answer, gold_lemma, lemma));
+					  //System.out.println(String.format("word: %s, tag:%s, gold_lemma: '%s', lemma: '%s'", token, answer, gold_lemma, lemma));
 				  }
 				  				  
 				  if (match(gold_tags, found_tags)) {
 					  correct_tag++;
+					  if (gold_lemma == null) System.out.println("Nav lemmas? " + token);
 					  if (gold_lemma != null && gold_lemma.equalsIgnoreCase(lemma)) correct_all++;
 				  } else {
-					  //System.out.println("vārds: " + token+ ", pareizais: " + gold_tag + ", automātiskais: " + answer);
+					  System.out.println("vārds: " + token+ ", pareizais: " + gold_tag + ", automātiskais: " + answer);
 					  //compareAVs(pareizie, atrastie).describe(new PrintWriter(System.out));
 				  }
 		      }	    
