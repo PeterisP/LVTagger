@@ -61,6 +61,7 @@ import edu.stanford.nlp.ling.CoreAnnotations.DistSimAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.DomainAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.EntityRuleAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.EntityTypeAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.FeaturesAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.FreqAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GazAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GeniaAnnotation;
@@ -72,6 +73,7 @@ import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysisBest;
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.MorphologyFeatureStringAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.NerFeatureStringAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ParaPositionAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ParentAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
@@ -1316,7 +1318,6 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
        * AZ
        */
       if (flags.useMorphologyFeatures) {
-    	  
     	  //TODO create annotation map, although this helps minimally
     	  String s = c.get(MorphologyFeatureStringAnnotation.class);
     	  if (s != null) {
@@ -1364,30 +1365,69 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
 //  	}
 //  }
 
-//	Syntax experiments
-//	System.out.println("ROLE" + c.getString(RoleAnnotation.class));
-//  featuresC.add("CRole-" + c.getString(RoleAnnotation.class));
-//  //featuresC.add("NRole-" + n.getString(RoleAnnotation.class));
-//  //featuresC.add("PRole-" + p.getString(RoleAnnotation.class));
-//  
-//  if (c.getString(ParentAnnotation.class) !=null && !c.getString(ParentAnnotation.class).equalsIgnoreCase("")) {
-//  	int parent = Integer.parseInt(c.getString(ParentAnnotation.class));
-//  int idx = c.get(IndexAnnotation.class);
-//  if (parent > 0) {
-//  	CoreLabel par = cInfo.get(parent-idx);
-//  	if (par != null) {
-//	    	String par_tag = par.tag();
-//	    	if (par_tag != null) {
-//	    		featuresC.add("ParentTag-" + par_tag.substring(0, 1));
-//	    		featuresC.add("ParentLemma-" + par.lemma());
-//	    		featuresC.add("ParentWord-" + par.word());
-//	    		featuresC.add("ParentRole-" + par.getString(RoleAnnotation.class));
-//		    	//System.out.println("ParentTag-" + par_tag.substring(0, 1));
-//	    	}
-//  	}
-//  }
-//  }
-//	System.out.println("PARENT "+ c.getString(ParentAnnotation.class));
+//  	Syntax experiments
+//    System.out.println("ROLE" + c.getString(RoleAnnotation.class));
+//    featuresC.add("CRole-" + c.getString(RoleAnnotation.class));
+//    featuresC.add("NRole-" + n.getString(RoleAnnotation.class));
+//    featuresC.add("PRole-" + p.getString(RoleAnnotation.class));
+
+    //System.out.println(c.getString(NerFeatureStringAnnotation.class));
+//    String[] features = c.getString(NerFeatureStringAnnotation.class).split("\\|");
+//    for (int cf = 0; cf < features.length; cf++) {
+//  	  String[] feat = features[cf].split("=");
+//  	  if (feat.length > 1) {
+//  		  if (feat[0].equals("dep")) {
+//  			  featuresC.add("CRole-" + feat[1]);
+//			  //System.out.println(feat[1]);
+//  		  }
+//  	  }
+//    }
+//    features = n.getString(NerFeatureStringAnnotation.class).split("\\|");
+//    for (int cf = 0; cf < features.length; cf++) {
+//  	  String[] feat = features[cf].split("=");
+//  	  if (feat.length > 1) {
+//  		  if (feat[0].equals("dep")) {
+//  			  featuresC.add("NRole-" + feat[1]);
+//  		  }
+//  	  }
+//    }
+//    features = p.getString(NerFeatureStringAnnotation.class).split("\\|");
+//    for (int cf = 0; cf < features.length; cf++) {
+//  	  String[] feat = features[cf].split("=");
+//  	  if (feat.length > 1) {
+//  		  if (feat[0].equals("dep")) {
+//  			  featuresC.add("PRole-" + feat[1]);
+//  		  }
+//  	  }
+//    }
+//    
+//    if (c.getString(ParentAnnotation.class) !=null && !c.getString(ParentAnnotation.class).equalsIgnoreCase("")) {
+//  	  int parent = Integer.parseInt(c.getString(ParentAnnotation.class));
+//  	  int idx = c.get(IndexAnnotation.class);
+//  	  if (parent > 0) {
+//  	  	CoreLabel par = cInfo.get(parent-idx);
+//  	  	if (par != null) {
+//  		    	String par_tag = par.tag();
+//  		    	if (par_tag != null) {
+//  		    		featuresC.add("ParentTag-" + par_tag.substring(0, 1));
+//  		    		featuresC.add("ParentLemma-" + par.lemma());
+//  		    		featuresC.add("ParentWord-" + par.word());
+//
+//  		    	    features = par.getString(NerFeatureStringAnnotation.class).split("\\|");
+//  		    	    for (int cf = 0; cf < features.length; cf++) {
+//  		    	  	  String[] feat = features[cf].split("=");
+//  		    	  	  if (feat.length > 1) {
+//  		    	  		  if (feat[0].equals("dep")) {
+//  		    	  			  featuresC.add("ParentRole-" + feat[1]);
+//  		    	  		  }
+//  		    	  	  }
+//  		    	    }
+//  		    		featuresC.add("ParentRole-" + par.getString(RoleAnnotation.class));
+//  			    	//System.out.println("ParentTag-" + par_tag.substring(0, 1));
+//  		    	}
+//  	  	}
+//  	  }
+//    }    
       
       
 
@@ -2296,7 +2336,8 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
     }
     // System.err.println("LOOKING");
     Set<String> l = new HashSet<String>();
-    if (cInfo.get(loc - reverse(1)).getString(PartOfSpeechAnnotation.class) != null && isNameCase(pWord) && cInfo.get(loc - reverse(1)).getString(PartOfSpeechAnnotation.class).equals("NNP")) {
+    //if (cInfo.get(loc - reverse(1)).getString(PartOfSpeechAnnotation.class) != null && isNameCase(pWord) && cInfo.get(loc - reverse(1)).getString(PartOfSpeechAnnotation.class).equals("NNP")) {
+    if (isNameCase(pWord)) {
       for (int jump = 3; jump < 150; jump++) {
         if (getWord(cInfo.get(loc + reverse(jump))).equals(word)) {
           if (getWord(cInfo.get(loc + reverse(jump - 1))).equals(pWord)) {
@@ -2318,11 +2359,13 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
     } else {
       for (int jump = 3; jump < 150; jump++) {
         if (getWord(cInfo.get(loc + reverse(jump))).equals(word)) {
-          if (isNameCase(getWord(cInfo.get(loc + reverse(jump - 1)))) && (cInfo.get(loc + reverse(jump - 1))).getString(PartOfSpeechAnnotation.class).equals("NNP")) {
-            l.add("X-NEXT-OCCURRENCE-YX");
+          //if (isNameCase(getWord(cInfo.get(loc + reverse(jump - 1)))) && (cInfo.get(loc + reverse(jump - 1))).getString(PartOfSpeechAnnotation.class).equals("NNP")) {
+    	  if (isNameCase(getWord(cInfo.get(loc + reverse(jump - 1))))) { 
+        	  l.add("X-NEXT-OCCURRENCE-YX");
             // System.err.println(getWord(cInfo.get(loc+reverse(jump-1))));
-          } else if (isNameCase(getWord(cInfo.get(loc + reverse(jump + 1)))) && (cInfo.get(loc + reverse(jump + 1))).getString(PartOfSpeechAnnotation.class).equals("NNP")) {
-            // System.err.println(getWord(cInfo.get(loc+reverse(jump+1))));
+          //} else if (isNameCase(getWord(cInfo.get(loc + reverse(jump + 1)))) && (cInfo.get(loc + reverse(jump + 1))).getString(PartOfSpeechAnnotation.class).equals("NNP")) {
+          } else if (isNameCase(getWord(cInfo.get(loc + reverse(jump + 1))))) {
+                // System.err.println(getWord(cInfo.get(loc+reverse(jump+1))));
             l.add("X-NEXT-OCCURRENCE-XY");
           } else {
             l.add("X-NEXT-OCCURRENCE-X");
@@ -2331,10 +2374,12 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
       }
       for (int jump = -3; jump > -150; jump--) {
         if (getWord(cInfo.get(loc + jump)) != null && getWord(cInfo.get(loc + jump)).equals(word)) {
-          if (isNameCase(getWord(cInfo.get(loc + reverse(jump + 1)))) && (cInfo.get(loc + reverse(jump + 1))).getString(PartOfSpeechAnnotation.class).equals("NNP")) {
-            l.add("X-PREV-OCCURRENCE-YX");
+          //if (isNameCase(getWord(cInfo.get(loc + reverse(jump + 1)))) && (cInfo.get(loc + reverse(jump + 1))).getString(PartOfSpeechAnnotation.class).equals("NNP")) {
+    	  if (isNameCase(getWord(cInfo.get(loc + reverse(jump + 1))))) {   
+        	  l.add("X-PREV-OCCURRENCE-YX");
             // System.err.println(getWord(cInfo.get(loc+reverse(jump+1))));
-          } else if (isNameCase(getWord(cInfo.get(loc + reverse(jump - 1)))) && cInfo.get(loc + reverse(jump - 1)).getString(PartOfSpeechAnnotation.class).equals("NNP")) {
+    	  //} else if (isNameCase(getWord(cInfo.get(loc + reverse(jump - 1)))) && cInfo.get(loc + reverse(jump - 1)).getString(PartOfSpeechAnnotation.class).equals("NNP")) {
+    	  } else if (isNameCase(getWord(cInfo.get(loc + reverse(jump - 1))))) {
             l.add("X-PREV-OCCURRENCE-XY");
             // System.err.println(getWord(cInfo.get(loc+reverse(jump-1))));
           } else {

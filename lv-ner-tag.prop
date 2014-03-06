@@ -1,6 +1,4 @@
-testFile = ./NerTrainingData/ner_test_leta_2.tab
+testFile = ./NerTrainingData/ner_test_leta_1.tab
 loadClassifier = lv-ner-model.ser.gz
 inputEncoding = utf-8
 outputEncoding = utf-8
-
-map = word=1,tag=10,lemma=2,answer=7,morphologyFeatureString=5,idx=0

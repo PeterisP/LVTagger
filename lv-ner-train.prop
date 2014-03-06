@@ -1,5 +1,4 @@
-semantic role feature
-trainFileList = ./ner_train.tab
+trainFileList = ner_train-jan.tab
 #location where you would like to save (serialize to) your
 #classifier; adding .gz at the end automatically gzips the file,
 #making it faster and smaller
@@ -8,7 +7,7 @@ serializeTo = lv-ner-model.ser.gz
 #structure of your training file; this tells the classifier
 #that the word is in column 0 and the correct answer is in
 #column 1
-map = word=1,lemma=2,answer=7,morphologyFeatureString=5,idx=0
+map = word=1,lemma=2,answer=7,morphologyFeatureString=5,idx=0,nerFeatureString=8
 
 #these are the features we'd like to train with
 #some are discussed below, the rest can be
@@ -44,12 +43,15 @@ gazette = ./Gazetteer/LV_LOC_GAZETTEER.txt,./Gazetteer/LV_PERS_GAZETTEER.txt,./G
 
 sloppyGazette=true
 cleanGazette=true
-useMorphologyFeatures=true
 
 printFeatures=train
 
+useMorphologyFeatures=true
 
-#useBeginSent=true
-#useOccurrencePatterns=true
+useBeginSent=true
+useOccurrencePatterns=true
 
-
+useDistSim = true
+casedDistSim = true
+#numberEquivalenceDistSim = true
+distSimLexicon = ./distsim/words.83M.200

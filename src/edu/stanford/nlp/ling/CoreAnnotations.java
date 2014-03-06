@@ -1538,4 +1538,10 @@ public class CoreAnnotations {
       return ErasureUtils.<Class<List<String>>> uncheckedCast(List.class);
     }
   }
+  
+  public static class NerFeatureStringAnnotation implements CoreAnnotation<String> {
+    public Class<String> getType() {
+      return String.class;
+    }
+  }
 }

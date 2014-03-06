@@ -33,6 +33,7 @@ import edu.stanford.nlp.ling.CoreAnnotations.MorphoNumAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.MorphoPersAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NormalizedNamedEntityTagAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.NerFeatureStringAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ParentAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PolarityAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ProjectedCategoryAnnotation;
@@ -106,7 +107,9 @@ public class AnnotationLookup {
     MORPHO_CASE_KEY(MorphoCaseAnnotation.class,"case"),
     WORDNET_SYN_KEY(WordnetSynAnnotation.class,"wordnetsyn"),
     MORPHO_FEATURE_KEY(MorphologyFeatureStringAnnotation.class,"morphologyFeatureString"), //AZ
+    NER_FEATURE_KEY(NerFeatureStringAnnotation.class,"nerFeatureString"),
     PROTO_SYN_KEY(ProtoAnnotation.class,"proto");
+    
 
     public final Class<? extends CoreAnnotation<?>> coreKey;
     public final String oldKey;

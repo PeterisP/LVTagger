@@ -166,7 +166,7 @@ includeantruntime="false"
 	  	<copy file="${morphology.dir}/dist/Statistics.xml" todir="${dist}"/>
 	  	<copy file="${morphology.dir}/dist/TagSet.xml" todir="${dist}"/>
 		
-		<zip destfile="LV_CRF.zip" basedir="." includes="dist/**,lib/**,NERdicts/**,LETAdicts/**,MorphoCRF/**,models/**,*.sh,*.bat,*.prop,README.txt,LICENSE.txt,lv-ner-model.ser.gz,Gazetteer/**,sample*.*" />
+		<zip destfile="LV_CRF.zip" basedir="." includes="dist/**,lib/**,NERdicts/**,LETAdicts/**,MorphoCRF/**,models/**,*.sh,*.bat,*.prop,README.txt,LICENSE.txt,lv-ner-model.ser.gz,Gazetteer/**,distsim/**,sample*.*" />
 	  </target>
 	
 	
