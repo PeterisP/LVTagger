@@ -14,16 +14,21 @@ import java.util.regex.Pattern;
 import edu.stanford.nlp.io.RuntimeIOException;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswersAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.ConllSyntaxAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.DistSimAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ExtraColumnAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.FullTagAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVFullTagAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVGazAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVGazFileAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LabelAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.MorphologyFeatureStringAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagGoldAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.ParentAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.objectbank.DelimitRegExIterator;
 import edu.stanford.nlp.objectbank.IteratorFromReaderFactory;
 import edu.stanford.nlp.util.Function;
+import edu.stanford.nlp.util.StringUtils;
 
 
 public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<CoreLabel> {
@@ -48,6 +53,7 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
   public static outputTypes outputType = outputTypes.CONLL;
   public static inputTypes inputType = inputTypes.CONLL;
   public static boolean saveExtraColumns = false;
+  public static int saveExtraColumnsFrom = 9; // including
   
   private static final String eol = System.getProperty("line.separator");
 
@@ -133,19 +139,23 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	    	wi.setIndex(Integer.parseInt(bits[0]));
 	    	wi.setWord(bits[1]);
 	    	wi.setLemma(bits[2]);
-	    	wi.set(FullTagAnnotation.class, bits[4]);
+	    	wi.set(LVFullTagAnnotation.class, bits[4]);
 	    	wi.setTag(bits[4].substring(0,1));
 	    	wi.set(MorphologyFeatureStringAnnotation.class, bits[5]);
+	    	//wi.set(ParentAnnotation);
 	    	if (bits.length >= 7) {
 	    		//syntax
-	    		wi.set(ConllSyntaxAnnotation.class, bits[6]);
+	    		wi.set(ParentAnnotation.class, bits[6]);
 	    	}
 	    	if (bits.length >= 8) {
-	    		wi.set(NamedEntityTagGoldAnnotation.class, bits[7]);
+	    		wi.set(LabelAnnotation.class, bits[7]);
 	    	}
-	    	if (saveExtraColumns && bits.length >=7) {
+	    	if (bits.length >= 9) {
+	    		wi.set(NamedEntityTagGoldAnnotation.class, bits[8]);
+	    	}
+	    	if (saveExtraColumns && bits.length >= saveExtraColumnsFrom) {
 	    		StringBuilder extraColumns = new StringBuilder();
-	    		for (int i=6; i < bits.length; i++) {
+	    		for (int i=saveExtraColumnsFrom; i < bits.length; i++) {
 	    			extraColumns.append(bits[i]).append("\t");
 	    		}
 	    		wi.set(ExtraColumnAnnotation.class, extraColumns.toString());
@@ -178,12 +188,18 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	        //System.out.println(fl);
 	        String tag = fl.tag();
 	        String lemma = fl.lemma();
-	        String fullTag = fl.getString(FullTagAnnotation.class);
+	        String fullTag = fl.getString(LVFullTagAnnotation.class);
 	        String morphoFeats = fl.getString(MorphologyFeatureStringAnnotation.class);
+	        if (fl.get(DistSimAnnotation.class) != null) morphoFeats += "|Distsim=" + fl.getString(DistSimAnnotation.class);
+	        if (fl.get(LVGazAnnotation.class) != null && fl.get(LVGazAnnotation.class).size() > 0) morphoFeats += "|Gaz=" + StringUtils.join(fl.get(LVGazAnnotation.class), ",");
+	        if (fl.get(LVGazFileAnnotation.class) != null && fl.get(LVGazFileAnnotation.class).size() > 0) morphoFeats += "|GazFile=" + StringUtils.join(fl.get(LVGazFileAnnotation.class), ",");
+	        
 	        if (outputType == outputTypes.CONLL) {
 	        	out.print(fl.index() + "\t" + word + '\t' + lemma + '\t' + tag + '\t' + 
 		        		fullTag + '\t' + morphoFeats);
-	        	if (fl.get(ConllSyntaxAnnotation.class) != null) out.print('\t' + fl.getString(ConllSyntaxAnnotation.class)); 
+	        	if (fl.get(ParentAnnotation.class) != null) out.print('\t' + fl.getString(ParentAnnotation.class)); 
+	        	else out.print("\t_");
+	        	if (fl.get(LabelAnnotation.class) != null) out.print('\t' + fl.getString(LabelAnnotation.class)); 
 	        	else out.print("\t_");
 	        	out.print('\t' + answer);
 	        	if (saveExtraColumns) out.print("\t" + fl.getString(ExtraColumnAnnotation.class));

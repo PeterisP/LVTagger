@@ -1,16 +1,16 @@
 package edu.stanford.nlp.ie;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import edu.stanford.nlp.ling.CoreAnnotations;
+import edu.stanford.nlp.math.ArrayMath;
+import edu.stanford.nlp.sequences.SequenceListener;
+import edu.stanford.nlp.sequences.SequenceModel;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.Index;
 import edu.stanford.nlp.util.StringUtils;
-import edu.stanford.nlp.math.ArrayMath;
-import edu.stanford.nlp.sequences.SequenceModel;
-import edu.stanford.nlp.sequences.SequenceListener;
-import edu.stanford.nlp.ling.CoreAnnotations;
-
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * This class keeps track of all labeled entities and updates the

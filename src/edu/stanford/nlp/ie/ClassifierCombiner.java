@@ -1,19 +1,29 @@
 package edu.stanford.nlp.ie;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Properties;
+import java.util.Set;
+
 import edu.stanford.nlp.ie.crf.CRFClassifier;
 import edu.stanford.nlp.ie.ner.CMMClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.DistSimAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVGazAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVGazFileAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.sequences.DocumentReaderAndWriter;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.ErasureUtils;
 import edu.stanford.nlp.util.StringUtils;
-
-import java.io.FileNotFoundException;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import java.util.*;
 
 /**
  * Merges the outputs of two or more AbstractSequenceClassifiers according to
@@ -216,6 +226,17 @@ public class ClassifierCombiner<IN extends CoreMap & HasWord> extends AbstractSe
 		for (int i = 1; i < baseDocuments.size(); i ++) {
 			//mergeTwoDocuments(mainDocument, baseDocuments.get(i), baseLabels.get(i), background);
 			mergeTwoDocumentsByLongestSequence(mainDocument, baseDocuments.get(i), baseLabels.get(i), background);
+			
+			// save extra annotation seen in aux documents
+			for (int id = 0; id < mainDocument.size(); id++) {
+				IN m = mainDocument.get(id);
+				IN n = baseDocuments.get(i).get(id);
+				if (n != null && m != null) {
+					if (n.get(DistSimAnnotation.class) != null) m.set(DistSimAnnotation.class, n.get(DistSimAnnotation.class));
+					if (n.get(LVGazAnnotation.class) != null) m.set(LVGazAnnotation.class, n.get(LVGazAnnotation.class));
+					if (n.get(LVGazFileAnnotation.class) != null) m.set(LVGazFileAnnotation.class, n.get(LVGazFileAnnotation.class));
+				}
+			}
 		}
 
 		if (DEBUG) {

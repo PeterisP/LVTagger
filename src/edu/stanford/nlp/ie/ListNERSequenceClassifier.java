@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -15,16 +14,13 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.Properties;
-
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import edu.stanford.nlp.ie.AbstractSequenceClassifier;
-import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
+import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.sequences.DocumentReaderAndWriter;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.HashIndex;

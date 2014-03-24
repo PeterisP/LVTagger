@@ -1,14 +1,18 @@
 package edu.stanford.nlp.ie;
 
-import edu.stanford.nlp.util.CoreMap;
-import edu.stanford.nlp.util.Index;
-import edu.stanford.nlp.util.StringUtils;
-import edu.stanford.nlp.util.Pair;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 import edu.stanford.nlp.ie.pascal.AcronymModel;
 import edu.stanford.nlp.ling.CoreAnnotations;
-
-
-import java.util.*;
+import edu.stanford.nlp.util.CoreMap;
+import edu.stanford.nlp.util.Index;
+import edu.stanford.nlp.util.Pair;
+import edu.stanford.nlp.util.StringUtils;
 
 /**
  * @author Jenny Finkel

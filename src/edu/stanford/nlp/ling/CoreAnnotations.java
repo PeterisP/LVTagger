@@ -3,6 +3,7 @@ package edu.stanford.nlp.ling;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.SortedSet;
 
 import edu.stanford.nlp.util.CoreMap;
@@ -1486,41 +1487,68 @@ public class CoreAnnotations {
     }
   }
   public static class LVMorphologyAnalysisBest implements CoreAnnotation<lv.semti.morphology.analyzer.Wordform> {
-	    public Class<lv.semti.morphology.analyzer.Wordform> getType() {
-	      return lv.semti.morphology.analyzer.Wordform.class;
-	    }
-	  }
-
-  /* placeholder to store conll-format syntax data if reading in training data */ 
-  public static class ConllSyntaxAnnotation implements CoreAnnotation<String> {
-	    public Class<String> getType() {
-	      return String.class;
-	    }
-	  }
-  
+    public Class<lv.semti.morphology.analyzer.Wordform> getType() {
+      return lv.semti.morphology.analyzer.Wordform.class;
+    }
+  }
   /**
+   * LV syntax and morphology features
    * @author Artūrs
    *
    */
+  public static class LVMorphoLetaLemmaAnnotation implements CoreAnnotation<String> {
+    public Class<String> getType() {
+      return String.class;
+    }
+  }
+  public static class LVMorphoCaseAnnotation implements CoreAnnotation<String> {
+    public Class<String> getType() {
+      return String.class;
+    }
+  }
+  public static class LVMorphoNumberAnnotation implements CoreAnnotation<String> {
+    public Class<String> getType() {
+      return String.class;
+    }
+  }
+  // from morphoFeatureString
+  public static class LVMorphoPOSAnnotation implements CoreAnnotation<String> {
+    public Class<String> getType() {
+      return String.class;
+    }
+  }
+  public static class LVFullTagAnnotation implements CoreAnnotation<String> {
+    public Class<String> getType() {
+      return String.class;
+    }
+  }
+  
   public static class LVMorphologyAnalysisFeatures implements CoreAnnotation<Map<String, String>> {
-	    public Class<Map<String,String>> getType() {
-	    	return ErasureUtils.uncheckedCast(Map.class);
-	    }
-	  }
-  public static class FullTagAnnotation implements CoreAnnotation<String> {
-	    public Class<String> getType() {
-	      return String.class;
-	    }
-	  }
+    public Class<Map<String,String>> getType() {
+    	return ErasureUtils.uncheckedCast(Map.class);
+    }
+  }
   public static class MorphologyFeatureStringAnnotation implements CoreAnnotation<String> {
-	    public Class<String> getType() {
-	      return String.class;
-	    }
-	  }
+    public Class<String> getType() {
+      return String.class;
+    }
+  }
   
   public static class NamedEntityTagGoldAnnotation implements CoreAnnotation<String> {
     public Class<String> getType() {
       return String.class;
+    }
+  }
+
+  public static class LVGazAnnotation implements CoreAnnotation<Set<String>> {
+    public Class<Set<String>> getType() {
+      return ErasureUtils.uncheckedCast(Set.class);
+    }
+  }
+  
+  public static class LVGazFileAnnotation implements CoreAnnotation<Set<String>> {
+    public Class<Set<String>> getType() {
+      return ErasureUtils.uncheckedCast(Set.class);
     }
   }
   

@@ -1,13 +1,13 @@
 package edu.stanford.nlp.ie;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.Index;
 import edu.stanford.nlp.util.StringUtils;
-
-import java.util.Set;
-import java.util.HashSet;
-import java.util.List;
-import java.util.ArrayList;
 
 /**
  * @author Jenny Finkel

@@ -1,19 +1,19 @@
 package edu.stanford.nlp.ie;
 
-import edu.stanford.nlp.ie.crf.CRFClassifier;
-import edu.stanford.nlp.util.StringUtils;
-import edu.stanford.nlp.io.EncodingPrintWriter;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Properties;
+
+import edu.stanford.nlp.ie.crf.CRFClassifier;
+import edu.stanford.nlp.io.EncodingPrintWriter;
+import edu.stanford.nlp.util.StringUtils;
 
 
 /*****************************************************************************

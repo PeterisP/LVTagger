@@ -29,6 +29,7 @@
 package edu.stanford.nlp.ie;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -61,7 +62,6 @@ import edu.stanford.nlp.ling.CoreAnnotations.DistSimAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.DomainAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.EntityRuleAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.EntityTypeAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.FeaturesAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.FreqAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GazAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GeniaAnnotation;
@@ -69,6 +69,12 @@ import edu.stanford.nlp.ling.CoreAnnotations.GovernorAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.IsDateRangeAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.IsURLAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVGazAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVGazFileAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVMorphoCaseAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVMorphoLetaLemmaAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVMorphoNumberAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVMorphoPOSAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysisBest;
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
@@ -81,7 +87,6 @@ import edu.stanford.nlp.ling.CoreAnnotations.PhraseWordsAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PhraseWordsTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PositionAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ProtoAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.RoleAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SectionAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ShapeAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.StackedNamedEntityTagAnnotation;
@@ -410,9 +415,6 @@ import edu.stanford.nlp.util.Timing;
 public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> {
 
   private static final long serialVersionUID = -2329726064739185544L;
-
-  private static Set<String> knowLC = new HashSet<String>();
-  private static Set<String> knowUC = new HashSet<String>();
   
   public NERFeatureFactory() {
     super();
@@ -727,6 +729,8 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
     String feature = "";
     int loc = 0;
     String[] words = StringUtils.EMPTY_STRING_ARRAY;
+    String source = ""; // AZ filename
+    String type = "";
     private static final long serialVersionUID = -5903728481621584810L;
   } // end class GazetteInfo
 
@@ -742,6 +746,9 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
    *  @throws IOException If IO errors
    */
   private void readGazette(BufferedReader in) throws IOException {
+	  readGazette(in, null);
+  }
+  private void readGazette(BufferedReader in, String filename) throws IOException {
     Pattern p = Pattern.compile("^(\\S+)\\s+(.+)$");
     for (String line; (line = in.readLine()) != null; ) {
       Matcher m = p.matcher(line);
@@ -770,6 +777,8 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
             info.loc = i;
             info.words = words;
             info.feature = intern(type + "-GAZC" + words.length);
+            info.source = filename;
+            info.type = type;
             infos.add(info);
           }
         }
@@ -819,6 +828,8 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
     if (flags.useDistSim && flags.useMoreTags) {
       featuresC.add(p.get(DistSimAnnotation.class) + '-' + cWord + "-PDISTSIM-CWORD");
     }
+    
+    annotateMorphoFeatures(cInfo);
 
 
     if (flags.useDistSim) {
@@ -1293,7 +1304,7 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
         	  infos = wordToGazetteInfos.get(c.getString(LemmaAnnotation.class).toLowerCase()); //TODO - case sensitivity nosaukumiem tomēr var noderēt... bet nevar īsti paļauties uz to, kādā case būs atgrieztā lemma
           
           if (infos != null) {
-//        	System.err.println("Meklējam gazetē vārdu" + getWord(cInfo.get(loc)));
+        	//System.err.println("Meklējam gazetē vārdu " + getWord(cInfo.get(loc)));
             for (GazetteInfo gInfo : infos) {
               boolean ok = true;
               for (int gLoc = 0; gLoc < gInfo.words.length; gLoc++) {
@@ -1308,6 +1319,18 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
               if (ok) {
             	  //System.err.println("Atradām gazetē vārdu" + getWord(cInfo.get(loc)) + " gazetes ieraksts " + Arrays.toString(gInfo.words));            	  
                   featuresC.add(gInfo.feature);
+                  featuresC.add(gInfo.source);
+                  for (int gLoc = 0; gLoc < gInfo.words.length; gLoc++) {
+                	  CoreLabel lab = cInfo.get(loc + gLoc - gInfo.loc);
+                	  Set<String> cats = lab.get(LVGazAnnotation.class);
+                      if (cats == null) cats = new HashSet<>();
+                      cats.add(gInfo.type);
+                      lab.set(LVGazAnnotation.class, cats);
+                      Set<String> files = lab.get(LVGazFileAnnotation.class);
+                      if (files == null) files = new HashSet<>();
+                      files.add(gInfo.source);
+                      lab.set(LVGazFileAnnotation.class, files);
+                  }
               }
             }
           }
@@ -1315,44 +1338,41 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
       }
       
       /**
-       * AZ
+       * @author Artūrs Znotiņš
        */
-      if (flags.useMorphologyFeatures) {
-    	  //TODO create annotation map, although this helps minimally
-    	  String s = c.get(MorphologyFeatureStringAnnotation.class);
-    	  if (s != null) {
-	    	  String[] morphoFeatures =  s.split("\\|");
-	    	  for (String f : morphoFeatures) {
-	    		  if (f.startsWith("Locījums") || f.startsWith("Skaitlis") || f.startsWith("Vārdšķira") || f.startsWith("LETA_lemma") ) {
-	    			  featuresC.add("MORPHO-" + f);
-	    		  }
-	    	  }
-    	  }
-    	  
-    	  s = p.get(MorphologyFeatureStringAnnotation.class);
-    	  if (s != null) {
-	    	  String[] morphoFeatures =  s.split("\\|");
-	    	  for (String f : morphoFeatures) {
-	    		  if (f.startsWith("Locījums") || f.startsWith("Skaitlis") || f.startsWith("Vārdšķira") || f.startsWith("LETA_lemma") ) {
-	    			  featuresC.add("MORPHO-P-" + f);
-	    		  }
-	    	  }
-    	  }
-    	  
-    	  s = n.get(MorphologyFeatureStringAnnotation.class);
-    	  if (s != null) {
-	    	  String[] morphoFeatures =  s.split("\\|");
-	    	  for (String f : morphoFeatures) {
-	    		  if (f.startsWith("Locījums") || f.startsWith("Skaitlis") || f.startsWith("Vārdšķira") || f.startsWith("LETA_lemma") ) {
-	    			  featuresC.add("MORPHO-N-" + f);
-	    		  }
-	    	  }
-    	  }
+      if (flags.useMorphoCase) {
+    	  featuresC.add("MORPHO-CASE-C-" + c.getString(LVMorphoCaseAnnotation.class));
+    	  featuresC.add("MORPHO-CASE-P-" + p.getString(LVMorphoCaseAnnotation.class));
+    	  featuresC.add("MORPHO-CASE-N-" + n.getString(LVMorphoCaseAnnotation.class));
+      }
+      if (flags.useMorphoNumber) {
+    	  featuresC.add("MORPHO-NUMBER-C-" + c.getString(LVMorphoNumberAnnotation.class));
+    	  featuresC.add("MORPHO-NUMBER-P-" + p.getString(LVMorphoNumberAnnotation.class));
+    	  featuresC.add("MORPHO-NUMBER-N-" + n.getString(LVMorphoNumberAnnotation.class));
+      }
+      if (flags.useMorphoPOS) {
+    	  featuresC.add("MORPHO-POS-C-" + c.getString(LVMorphoPOSAnnotation.class));
+    	  featuresC.add("MORPHO-POS-P-" + p.getString(LVMorphoPOSAnnotation.class));
+    	  featuresC.add("MORPHO-POS-N-" + n.getString(LVMorphoPOSAnnotation.class));
+      }
+      if (flags.useMorphoLetaLemma) {
+    	  featuresC.add("MORPHO-LETA-LEMMA-C-" + c.getString(LVMorphoLetaLemmaAnnotation.class));
+    	  featuresC.add("MORPHO-LETA-LEMMA-P-" + p.getString(LVMorphoLetaLemmaAnnotation.class));
+    	  featuresC.add("MORPHO-LETA-LEMMA-N-" + n.getString(LVMorphoLetaLemmaAnnotation.class));
       }
       
-      
-//    if (true) {
-//  	//TODO Doesnt really help, make more robust    
+//      if (flags.useMorphologyFeatures) {
+//    	  String s = c.get(MorphologyFeatureStringAnnotation.class);
+//    	  if (s != null) {
+//	    	  String[] morphoFeatures =  s.split("\\|");
+//	    	  for (String f : morphoFeatures) {
+//	    		  if (f.startsWith("Locījums") || f.startsWith("Skaitlis") || f.startsWith("Vārdšķira") || f.startsWith("LETA_lemma") ) {
+//	    			  featuresC.add("MORPHO-" + f);
+//    		  }
+//    	  }
+//      }
+
+//    if (true) {   
 //  	if (knowLC.contains(c.lemma().toLowerCase())) {
 //  		featuresC.add("DocKnownLC");  
 //  	} else if (c.index() > 1 && !isNameCase(c.word())) {
@@ -1366,70 +1386,85 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
 //  }
 
 //  	Syntax experiments
-//    System.out.println("ROLE" + c.getString(RoleAnnotation.class));
 //    featuresC.add("CRole-" + c.getString(RoleAnnotation.class));
 //    featuresC.add("NRole-" + n.getString(RoleAnnotation.class));
 //    featuresC.add("PRole-" + p.getString(RoleAnnotation.class));
-
+//    featuresC.add("N2Role-" + n2.getString(RoleAnnotation.class));
+//    featuresC.add("P2Role-" + p2.getString(RoleAnnotation.class));
+//    featuresC.add("P3Role-" + p3.getString(RoleAnnotation.class));
+    
+    
     //System.out.println(c.getString(NerFeatureStringAnnotation.class));
-//    String[] features = c.getString(NerFeatureStringAnnotation.class).split("\\|");
-//    for (int cf = 0; cf < features.length; cf++) {
-//  	  String[] feat = features[cf].split("=");
-//  	  if (feat.length > 1) {
-//  		  if (feat[0].equals("dep")) {
-//  			  featuresC.add("CRole-" + feat[1]);
-//			  //System.out.println(feat[1]);
-//  		  }
-//  	  }
+    // featuresC.add("CRole-" + extractNerFeature(c, "dep"));
+    // featuresC.add("NRole-" + extractNerFeature(n, "dep"));
+    // featuresC.add("N2Role-" + extractNerFeature(n2, "dep"));
+    // featuresC.add("PRole-" + extractNerFeature(p, "dep"));
+    // featuresC.add("P2Role-" + extractNerFeature(p2, "dep"));
+    // featuresC.add("P3Role-" + extractNerFeature(p3, "dep"));
+
+
+    // CoreLabel par = getParent(c, cInfo);
+    // if (par != null) {
+    	// if (par.tag() != null)  featuresC.add("ParentTag-" + par.tag().substring(0, 1));
+  		// featuresC.add("ParentLetaLemma-" + extractNerFeature(par, "LETA_lemma"));
+  		// featuresC.add("ParentLemma-" + par.lemma());
+  		// featuresC.add("ParentWord-" + par.word());
+  		// featuresC.add("ParentRole-" + extractNerFeature(par, "dep"));
+  		
+  		// CoreLabel par2 = getParent(par, cInfo);
+  		// if (par2 != null) {
+  			// if (par2.tag() != null)  featuresC.add("Parent2Tag-" + par2.tag().substring(0, 1));
+	  		// featuresC.add("Parent2LetaLemma-" + extractNerFeature(par2, "LETA_lemma"));
+	  		// featuresC.add("Parent2Lemma-" + par2.lemma());
+	  		// featuresC.add("Parent2Word-" + par2.word());
+	  		// featuresC.add("Parent2Role-" + extractNerFeature(par2, "dep")); 
+  		// }
+    // }
+    
+//    CoreLabel head = c;
+//    while (par != null && par.tag().length() > 4 && (par.tag().startsWith("n") || par.tag().startsWith("a")) && par.tag().charAt(4) == 'g') {
+//    	head = par;
+//    	par = getParent(par, cInfo);
 //    }
-//    features = n.getString(NerFeatureStringAnnotation.class).split("\\|");
-//    for (int cf = 0; cf < features.length; cf++) {
-//  	  String[] feat = features[cf].split("=");
-//  	  if (feat.length > 1) {
-//  		  if (feat[0].equals("dep")) {
-//  			  featuresC.add("NRole-" + feat[1]);
-//  		  }
-//  	  }
+//    if (head != null) {
+//    	if (head.tag() != null) featuresC.add("HeadTag-" + head.tag().substring(0, 1));
+//  		featuresC.add("HeadLetaLemma-" + extractNerFeature(head, "LETA_lemma"));
+//  		featuresC.add("HeadLemma-" + head.lemma());
+//  		featuresC.add("HeadWord-" + head.word());
+//  		featuresC.add("HeadRole-" + extractNerFeature(head, "dep"));
 //    }
-//    features = p.getString(NerFeatureStringAnnotation.class).split("\\|");
-//    for (int cf = 0; cf < features.length; cf++) {
-//  	  String[] feat = features[cf].split("=");
-//  	  if (feat.length > 1) {
-//  		  if (feat[0].equals("dep")) {
-//  			  featuresC.add("PRole-" + feat[1]);
-//  		  }
-//  	  }
+//	
+//	
+//	head = p;
+//	par = getParent(p, cInfo);
+//    while (par != null && par.tag().length() > 4 && (par.tag().startsWith("n") || par.tag().startsWith("a")) && par.tag().charAt(4) == 'g') {
+//    	head = par;
+//    	par = getParent(par, cInfo);
 //    }
-//    
-//    if (c.getString(ParentAnnotation.class) !=null && !c.getString(ParentAnnotation.class).equalsIgnoreCase("")) {
-//  	  int parent = Integer.parseInt(c.getString(ParentAnnotation.class));
-//  	  int idx = c.get(IndexAnnotation.class);
-//  	  if (parent > 0) {
-//  	  	CoreLabel par = cInfo.get(parent-idx);
-//  	  	if (par != null) {
-//  		    	String par_tag = par.tag();
-//  		    	if (par_tag != null) {
-//  		    		featuresC.add("ParentTag-" + par_tag.substring(0, 1));
-//  		    		featuresC.add("ParentLemma-" + par.lemma());
-//  		    		featuresC.add("ParentWord-" + par.word());
-//
-//  		    	    features = par.getString(NerFeatureStringAnnotation.class).split("\\|");
-//  		    	    for (int cf = 0; cf < features.length; cf++) {
-//  		    	  	  String[] feat = features[cf].split("=");
-//  		    	  	  if (feat.length > 1) {
-//  		    	  		  if (feat[0].equals("dep")) {
-//  		    	  			  featuresC.add("ParentRole-" + feat[1]);
-//  		    	  		  }
-//  		    	  	  }
-//  		    	    }
-//  		    		featuresC.add("ParentRole-" + par.getString(RoleAnnotation.class));
-//  			    	//System.out.println("ParentTag-" + par_tag.substring(0, 1));
-//  		    	}
-//  	  	}
-//  	  }
-//    }    
-      
-      
+//    if (head != null) {
+//    	if (head.tag() != null) featuresC.add("PHeadTag-" + head.tag().substring(0, 1));
+//  		featuresC.add("PHeadLetaLemma-" + extractNerFeature(head, "LETA_lemma"));
+//  		featuresC.add("PHeadLemma-" + head.lemma());
+//  		featuresC.add("PHeadWord-" + head.word());
+//  		featuresC.add("PHeadRole-" + extractNerFeature(head, "dep"));
+//    }
+//	
+//	
+//	head = n;
+//	par = getParent(n, cInfo);
+//    while (par != null && par.tag().length() > 4 && (par.tag().startsWith("n") || par.tag().startsWith("a")) && par.tag().charAt(4) == 'g') {
+//    	head = par;
+//    	par = getParent(par, cInfo);
+//    }
+//    if (head != null) {
+//    	if (head.tag() != null) featuresC.add("NHeadTag-" + head.tag().substring(0, 1));
+//  		featuresC.add("NHeadLetaLemma-" + extractNerFeature(head, "LETA_lemma"));
+//  		featuresC.add("NHeadLemma-" + head.lemma());
+//  		featuresC.add("NHeadWord-" + head.word());
+//  		featuresC.add("NHeadRole-" + extractNerFeature(head, "dep"));
+//    }
+	
+    
 
       if ((flags.wordShape > WordShapeClassifier.NOWORDSHAPE) || (flags.useShapeStrings)) {
         featuresC.add(cShape + "-TYPE");
@@ -2410,13 +2445,70 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
       if (flags.gazettes == null) { flags.gazettes = new ArrayList<String>(); }
       List<String> gazettes = flags.gazettes;
       for (String gazetteFile : gazettes) {
+    	File f = new File(gazetteFile);
         BufferedReader r = new BufferedReader(new FileReader(gazetteFile));
-        readGazette(r);
+        readGazette(r, f.getName());
         r.close();
       }
     } catch (IOException e) {
       throw new RuntimeException(e);
     }
+  }
+  
+  private void annotateMorphoFeatures(PaddedList<IN> info) {
+	  for (CoreLabel fl : info) {
+		  String featureString = fl.getString(MorphologyFeatureStringAnnotation.class);
+		  if (featureString != null) {
+	    	  String[] morphoFeatures =  featureString.split("\\|");
+	    	  for (String f : morphoFeatures) {
+	    		  if (f.startsWith("Locījums")) {
+	    			  fl.set(LVMorphoCaseAnnotation.class, f.substring("Locījums".length()));
+	    		  }
+	    		  if (f.startsWith("Skaitlis")) {
+	    			  fl.set(LVMorphoNumberAnnotation.class, f.substring("Skaitlis".length()));
+	    		  }
+	    		  if (f.startsWith("Vārdšķira")) {
+	    			  fl.set(LVMorphoPOSAnnotation.class, f.substring("Vārdšķira".length()));
+	    		  }
+	    		  if (f.startsWith("LETA_lemma")) {
+	    			  fl.set(LVMorphoLetaLemmaAnnotation.class, f.substring("LETA_lemma".length()));
+	    		  }
+	    	  }
+		  }
+	  }
+  }
+  
+  private String extractNerFeature(CoreLabel c, String name) {
+  	String[] features = c.getString(NerFeatureStringAnnotation.class).split("\\|");
+      for (int cf = 0; cf < features.length; cf++) {
+    	  String[] feat = features[cf].split("=");
+    	  if (feat.length > 1) {
+    		  if (feat[0].equals(name)) {
+    			  return feat[1];
+    		  }
+    	  }
+      }
+      return null;
+  }
+  
+  private CoreLabel getParent(CoreLabel c, PaddedList<IN> cInfo) {
+		if (c == null) return null;
+	    if (c.getString(ParentAnnotation.class) != null && !c.getString(ParentAnnotation.class).equalsIgnoreCase("")) {
+	    	  int parent = Integer.parseInt(c.getString(ParentAnnotation.class));
+	    	  int idx = c.get(IndexAnnotation.class);
+	    	  if (parent > 0) {
+	    	  	CoreLabel par = cInfo.get(parent-idx);
+	    	  	if (par != null) {
+	    		    	String par_tag = par.tag();
+	    		    	if (par_tag != null) {
+	    		    		return par;
+	    		    	}
+	    	  	} else {
+	    	  		return null;
+	    	  	}
+	    	  }
+	      }
+	    return null;
   }
 
 } // end class NERFeatureFactory

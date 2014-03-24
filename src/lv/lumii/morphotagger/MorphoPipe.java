@@ -10,19 +10,19 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map.Entry;
 
-import org.json.simple.JSONValue;
-
 import lv.semti.morphology.analyzer.Splitting;
 import lv.semti.morphology.analyzer.Word;
 import lv.semti.morphology.analyzer.Wordform;
 import lv.semti.morphology.attributes.AttributeNames;
 import lv.semti.morphology.attributes.AttributeValues;
 
+import org.json.simple.JSONValue;
+
 import edu.stanford.nlp.ie.ner.CMMClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.ConllSyntaxAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ExtraColumnAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
+import edu.stanford.nlp.ling.CoreAnnotations.ParentAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.Datum;
@@ -309,7 +309,7 @@ public class MorphoPipe {
 			if (saveColumns) {
 				s.append(word.getString(ExtraColumnAnnotation.class));
 			} else {
-				String syntax = word.getString(ConllSyntaxAnnotation.class);
+				String syntax = word.getString(ParentAnnotation.class);
 				if (syntax != null) {
 					s.append(syntax);
 				}
@@ -523,7 +523,7 @@ public class MorphoPipe {
 
 	    		CoreLabel word = new CoreLabel();
 				word.set(TextAnnotation.class, token);
-				word.set(ConllSyntaxAnnotation.class, syntax);
+				word.set(ParentAnnotation.class, syntax);
 				word.set(ExtraColumnAnnotation.class, extraColumns);
 	    		sentence.add(word);
 	    	} else {

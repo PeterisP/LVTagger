@@ -1,16 +1,19 @@
 package edu.stanford.nlp.sequences;
 
+import java.io.Serializable;
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.List;
+import java.util.Properties;
+import java.util.StringTokenizer;
+
+import lv.semti.morphology.attributes.AttributeNames;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.optimization.StochasticCalculateMethods;
 import edu.stanford.nlp.process.WordShapeClassifier;
 import edu.stanford.nlp.util.Function;
 import edu.stanford.nlp.util.ReflectionLoading;
-
-import java.io.Serializable;
-import java.lang.reflect.Field;
-import java.util.*;
-
-import lv.semti.morphology.attributes.AttributeNames;
 
 /**
  * Flags for sequence classifiers. Documentation for general flags and flags for
@@ -137,6 +140,10 @@ public class SeqClassifierFlags implements Serializable {
    * AZ
    */
   public boolean useMorphologyFeatures = false;
+  public boolean useMorphoCase = false;
+  public boolean useMorphoPOS = false;
+  public boolean useMorphoLetaLemma = false;
+  public boolean useMorphoNumber = false;
   
   public boolean useNGrams = false;
   public boolean conjoinShapeNGrams = false;
@@ -2028,6 +2035,14 @@ public class SeqClassifierFlags implements Serializable {
           useLVMorphoAnalyzerItemIDs = Boolean.parseBoolean(val);
       } else if (key.equalsIgnoreCase("useMorphologyFeatures")) {
     	  useMorphologyFeatures = Boolean.parseBoolean(val);
+      } else if (key.equalsIgnoreCase("useMorphoCase")) {
+    	  useMorphoCase = Boolean.parseBoolean(val);
+      } else if (key.equalsIgnoreCase("useMorphoPOS")) {
+    	  useMorphoPOS = Boolean.parseBoolean(val);
+      } else if (key.equalsIgnoreCase("useMorphoLetaLemma")) {
+    	  useMorphoLetaLemma = Boolean.parseBoolean(val);
+      } else if (key.equalsIgnoreCase("useMorphoNumber")) {
+    	  useMorphoNumber = Boolean.parseBoolean(val);
 
         // ADD VALUE ABOVE HERE
       } else if (key.length() > 0 && !key.equals("prop")) {

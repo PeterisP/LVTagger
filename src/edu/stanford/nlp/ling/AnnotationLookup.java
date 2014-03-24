@@ -7,23 +7,22 @@ import edu.stanford.nlp.ling.CoreAnnotations.AfterAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ArgumentAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.BeforeAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetBeginAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.CategoryAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.CategoryFunctionalTagAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetBeginAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetEndAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ChineseCharAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ChineseOrigSegAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ChineseSegAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ChunkAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.MorphologyFeatureStringAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.OriginalTextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.DocIDAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetEndAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.FeaturesAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GazetteerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GoldAnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.IDFAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.InterpretationAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LabelAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LeftTermAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.MarkingAnnotation;
@@ -31,10 +30,13 @@ import edu.stanford.nlp.ling.CoreAnnotations.MorphoCaseAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.MorphoGenAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.MorphoNumAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.MorphoPersAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.MorphologyFeatureStringAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.NormalizedNamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NerFeatureStringAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.NormalizedNamedEntityTagAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.OriginalTextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ParentAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PolarityAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ProjectedCategoryAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ProtoAnnotation;
@@ -45,7 +47,6 @@ import edu.stanford.nlp.ling.CoreAnnotations.SentenceIndexAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ShapeAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SpanAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.StemAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.VerbSenseAnnotation;
@@ -107,7 +108,8 @@ public class AnnotationLookup {
     MORPHO_CASE_KEY(MorphoCaseAnnotation.class,"case"),
     WORDNET_SYN_KEY(WordnetSynAnnotation.class,"wordnetsyn"),
     MORPHO_FEATURE_KEY(MorphologyFeatureStringAnnotation.class,"morphologyFeatureString"), //AZ
-    NER_FEATURE_KEY(NerFeatureStringAnnotation.class,"nerFeatureString"),
+    NER_FEATURE_KEY(NerFeatureStringAnnotation.class,"nerFeatureString"), //AZ
+    PARSER_LABEL_KEY(LabelAnnotation.class, "parserLabel"),
     PROTO_SYN_KEY(ProtoAnnotation.class,"proto");
     
 

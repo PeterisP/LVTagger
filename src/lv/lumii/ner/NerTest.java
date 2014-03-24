@@ -21,8 +21,7 @@ import org.junit.Test;
 
 import edu.stanford.nlp.ie.ner.CMMClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.FullTagAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.GoldAnswerAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.LVFullTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
 import edu.stanford.nlp.ling.CoreAnnotations.MorphologyFeatureStringAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
@@ -170,7 +169,7 @@ public class NerTest {
 					w.setIndex(counter++);
 					w.setWord(token);
 					w.setLemma(lemma);
-					w.set(FullTagAnnotation.class, fullTag);
+					w.set(LVFullTagAnnotation.class, fullTag);
 					w.setTag(pos);
 					w.set(MorphologyFeatureStringAnnotation.class, morphoString.toString());
 					doc.add(w);
@@ -180,7 +179,7 @@ public class NerTest {
 			w.setWord("<s>"); // seperator
 			w.setIndex(-1);
 			w.setLemma("_");
-			w.set(FullTagAnnotation.class, "_");
+			w.set(LVFullTagAnnotation.class, "_");
 			w.setTag("_");
 			w.set(MorphologyFeatureStringAnnotation.class, "_");
 			doc.add(w);

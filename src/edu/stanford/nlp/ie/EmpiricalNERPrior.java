@@ -1,9 +1,9 @@
 package edu.stanford.nlp.ie;
 
+import java.util.List;
+
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.Index;
-
-import java.util.List;
 
 
 /**

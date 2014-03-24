@@ -4,11 +4,11 @@ import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Properties;
 
-//import edu.stanford.nlp.ie.regexp.NumberSequenceClassifier;
-import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
+import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.util.CoreMap;
+//import edu.stanford.nlp.ie.regexp.NumberSequenceClassifier;
 
 /**
  * Subclass of ClassifierCombiner that behaves like a NER, by copying the AnswerAnnotation labels to NERAnnotation
