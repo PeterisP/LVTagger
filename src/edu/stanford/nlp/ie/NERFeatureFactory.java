@@ -1319,7 +1319,7 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
               if (ok) {
             	  //System.err.println("Atradām gazetē vārdu" + getWord(cInfo.get(loc)) + " gazetes ieraksts " + Arrays.toString(gInfo.words));            	  
                   featuresC.add(gInfo.feature);
-                  featuresC.add(gInfo.source);
+                  //featuresC.add(gInfo.source); // filename doesnot help
                   for (int gLoc = 0; gLoc < gInfo.words.length; gLoc++) {
                 	  CoreLabel lab = cInfo.get(loc + gLoc - gInfo.loc);
                 	  Set<String> cats = lab.get(LVGazAnnotation.class);
