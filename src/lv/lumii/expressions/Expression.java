@@ -2,6 +2,7 @@ package lv.lumii.expressions;
 import java.io.File;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -97,18 +98,160 @@ public class Expression
 		expWords=new LinkedList<ExpressionWord>();
 		
 	    List<Word> words = Splitting.tokenize(analyzer, phrase);
-	    for (Word word : words) { // filtrējam variantus, ņemot vērā to ko zinam par frāzi un kategoriju	    	
-	    	if (knownLemma && category == Category.hum) { // personvārdiem metam ārā nenominatīvus, ja ir kāds variants ar nominatīvu (piemēram 'Dombrovska' kā siev. nominatīvs vai vīr. ģenitīvs)
+	    for (Word word : words) { // filtrējam variantus, ņemot vērā to ko zinam par frāzi un kategoriju
+	    	Word extra_possibilities = analyzer.guessByEnding(word.getToken().toLowerCase(), word.getToken());
+	    	
+	    	// personvārdiem metam ārā nenominatīvus, ja ir kāds variants ar nominatīvu (piemēram 'Dombrovska' kā siev. nominatīvs vai vīr. ģenitīvs)
+	    	if (knownLemma && category == Category.hum) { 
 	    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
 	    		for (Wordform wf : word.wordforms) {
-	    			if (!wf.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Nominative) // Nominatīvs vai nelokāms
+	    			if (!wf.isMatchingWeak(AttributeNames.i_Number, AttributeNames.v_Singular) // vienskaitļa nominatīvs vai nelokāms
+	    					|| !wf.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Nominative) 
 	    					&& !wf.isMatchingStrong(AttributeNames.i_Declension, AttributeNames.v_NA)) {
 	    				izmetamie.add(wf);
 	    			}	    				
 	    		}
+	    		if (izmetamie.size() == word.wordforms.size()) { // ja nu nekas neder, tad minēsim 
+    				for (Wordform extra_wf : extra_possibilities.wordforms) 
+    	    			if (extra_wf.isMatchingWeak(AttributeNames.i_Case, AttributeNames.v_Nominative)
+    	    				&& extra_wf.isMatchingWeak(AttributeNames.i_Number, AttributeNames.v_Singular))
+    	    				word.addWordform(extra_wf);    	    	
+	    		}
 	    		if (izmetamie.size() < word.wordforms.size()) // ja ir kaut viens derīgs 
 	    			word.wordforms.removeAll(izmetamie);
 	    	}
+	    	
+	    	// personvārdiem rēķinamies, ka sieviešu dzimtes sugasvārdi var tikt lietoti kā vīriešu dzimtes īpašvārdi - Vētra, Līdaka utml.
+	    	if (knownLemma && category == Category.hum) { 		    	
+		    	boolean seenMaleCommonNoun = false;
+		    	boolean seenFemaleCommonNoun = false;
+		    	boolean seenMaleNoun = false;
+		    	boolean seenFemaleNoun = false;
+		    	
+		    	for (Wordform wf : word.wordforms) {
+	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
+	    				wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Feminine) &&
+	    				wf.isMatchingWeak(AttributeNames.i_NounType, AttributeNames.v_CommonNoun))
+	    					seenFemaleCommonNoun = true;
+	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
+	    				wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine) &&
+	    				wf.isMatchingWeak(AttributeNames.i_NounType, AttributeNames.v_CommonNoun))
+	    					seenMaleCommonNoun = true;
+	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
+		    			wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Feminine))
+		    				seenFemaleNoun = true;
+	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
+		    			wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine))
+		    				seenMaleNoun = true;
+	    		}
+		    	
+		    	if (seenFemaleCommonNoun && !seenMaleNoun) {
+		    		// šādos gadījumos pieliekam analizatoram arī opciju, ka tas -a -e vārds var būt arī vīriešu dzimtē			    	
+			    	for (Wordform new_wf : extra_possibilities.wordforms) {
+			    		if (new_wf.isMatchingStrong(AttributeNames.i_ParadigmID, "8") ||
+			    			new_wf.isMatchingStrong(AttributeNames.i_ParadigmID, "10")) {
+			    			word.addWordform(new_wf);
+			    		}
+			    	}
+			    	
+			    	// ... un ja eksistē kāds male-only vārds blakus, tad izvācam sievišķos variantus vispār
+			    	boolean seenMaleOnlyWordsInPhrase = false;
+			    	for (Word otherword : words) {
+			    		boolean seenFemaleOption = false;
+			    		for (Wordform other_wf : otherword.wordforms) {
+			    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Feminine))
+			    				seenFemaleOption = true;
+			    		}
+			    		if (!seenFemaleOption) seenMaleOnlyWordsInPhrase = true;
+			    	}
+			    	if (seenMaleOnlyWordsInPhrase) {
+			    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
+			    		for (Wordform wf : word.wordforms) {
+			    			if (wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Feminine)) 
+			    				izmetamie.add(wf);
+			    		}
+			    		word.wordforms.removeAll(izmetamie);	
+			    	}
+		    	}
+		    	
+		    	// symmetrical / opposite
+		    	if (seenMaleCommonNoun && !seenFemaleNoun) {
+		    		// šādos gadījumos pieliekam analizatoram arī opciju, ka tas -s vārds var būt arī sieviešu dzimtē
+			    	for (Wordform new_wf : extra_possibilities.wordforms) {
+			    		if (new_wf.isMatchingStrong(AttributeNames.i_ParadigmID, "11")) {
+			    			word.addWordform(new_wf);
+			    		}
+			    	}
+			    	
+			    	// ... un ja eksistē kāds female-only vārds blakus, tad izvācam vīrišķos variantus vispār
+			    	boolean seenFemaleOnlyWordsInPhrase = false;
+			    	for (Word otherword : words) {
+			    		boolean seenMaleOption = false;
+			    		for (Wordform other_wf : otherword.wordforms) {
+			    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Masculine))
+			    				seenMaleOption = true;
+			    		}
+			    		if (!seenMaleOption) seenFemaleOnlyWordsInPhrase = true;
+			    	}
+			    	if (seenFemaleOnlyWordsInPhrase) {
+			    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
+			    		for (Wordform wf : word.wordforms) {
+			    			if (wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine)) 
+			    				izmetamie.add(wf);
+			    		}
+			    		word.wordforms.removeAll(izmetamie);			    		
+			    	}
+		    	} // if (seenMaleCommonNoun && !seenFemaleNoun) {
+	    	} // if (knownLemma && category == Category.hum) 
+	    	
+	    	// Problēma, ka kādu īpašvārdu (piem. Znaroks) tageris nosauc par nenoteiktoīpašības vārdu - tas der tikai noteiktajiem!
+	    	if (category == Category.hum) {
+	    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
+	    		for (Wordform wf : word.wordforms) {
+	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adjective)
+	    				&& wf.isMatchingStrong(AttributeNames.i_Definiteness, AttributeNames.v_Indefinite)
+	    			    && wf.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_FirstUpper))
+	    			{ izmetamie.add(wf); }
+	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adverb)) // inflexive -i surnames (Maija Kubli)
+	    				izmetamie.add(wf);
+	    		}
+	    		word.wordforms.removeAll(izmetamie);
+	    		if (izmetamie.size() > 0 && word.wordforms.size() == 0) {
+	    			// If capitalized indefinite adjectives were the only options... let's guess us some nouns! 
+	    			extra_possibilities = analyzer.guessByEnding(word.getToken().toLowerCase(), word.getToken());
+
+	    			// check from other words - are both genders possible?
+	    			boolean seenMaleOption = false;
+	    			boolean seenFemaleOption = false;
+			    	for (Word otherword : words) {
+			    		if (otherword == word) continue;
+			    		for (Wordform other_wf : otherword.wordforms) {
+			    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Feminine))
+			    				seenFemaleOption = true;
+			    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Masculine))
+			    				seenMaleOption = true;
+			    		}
+			    	}	    			
+	    			
+			    	for (Wordform new_wf : extra_possibilities.wordforms) {
+			    		if ( (new_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Masculine) && seenMaleOption) ||  
+			    			(new_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Feminine) && seenFemaleOption) ) { 
+			    			word.addWordform(new_wf);
+			    		}
+			    	}
+	    		}
+	    	} // if (category == Category.hum) {
+	    	
+	    	// Blacklist of confusing but unlikely lemmas
+	    	List<String> blacklist = Arrays.asList("vēlēšanās");
+	    	LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
+    		for (Wordform wf : word.wordforms) {
+    			if (blacklist.contains(wf.getValue(AttributeNames.i_Lemma))) {
+    				izmetamie.add(wf);
+    			}	    				
+    		}
+    		if (izmetamie.size() < word.wordforms.size()) // ja ir kaut viens derīgs 
+    			word.wordforms.removeAll(izmetamie);
 	    }
 	    
 		List<CoreLabel> sentence = LVMorphologyReaderAndWriter.analyzeSentence2(words);
@@ -121,8 +264,7 @@ public class Expression
 		{
 			token = label.getString(TextAnnotation.class);
 			
-			if(token.equals("<s>")) //kāpēc tiek pievienoti <s>?  PP - tageris skatās uz vārda apkaimi; teikuma sākuma/beigu vārdi ir īpaši, to signalizē pieliekot sākumā/beigās <s>
-			{
+			if (token.equals("<s>")) { // Tageris skatās uz vārda apkaimi; teikuma sākuma/beigu vārdi ir īpaši, to signalizē pieliekot sākumā/beigās <s>
 				continue;
 			}
 			
@@ -173,6 +315,7 @@ public class Expression
 							int wordPos = expWords.lastIndexOf(w);
 							if (expWords.size()-wordPos > 2) { // ja ir 3+ vārdus no beigām...
 								if (!w.correctWordform.isMatchingStrong(AttributeNames.i_NounType, AttributeNames.v_ProperNoun) && // .. īpašvārdus locīsim 
+									!w.correctWordform.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_FirstUpper) && // .. ja sākas ar lielo burtu, gan arī īpašvārds?
 									w.correctWordform.isMatchingWeak(AttributeNames.i_Guess, AttributeNames.v_NoGuess) && 
 									!w.correctWordform.isMatchingStrong(AttributeNames.i_Source, "generateInflections")) // neuzminētos (kas laikam arī ir īpašvārdi) locīsim
 									w.isStatic = true; // pārējos gan ne
@@ -294,7 +437,11 @@ public class Expression
 		return result;
 	}
 	
-	public String inflect(String inflectCase) 
+	public String inflect(String inflectCase) {
+		return inflect(inflectCase, false);
+	}
+	
+	public String inflect(String inflectCase, boolean debug) 
 	{
 //		for (ExpressionWord w : expWords)
 //			System.err.printf("Vārds '%s' būs statisks - '%b'\n", w.word.getToken(), w.isStatic);
@@ -306,10 +453,8 @@ public class Expression
 		Wordform forma, inflected_form;
 		ArrayList<Wordform> inflWordforms;
 		boolean matching = true;
-		for(ExpressionWord w : expWords)
-		{			
-			if(w.isStatic==false)
-			{
+		for (ExpressionWord w : expWords) {			
+			if (w.isStatic==false) {
 				forma=w.correctWordform; 
 								
 				filtrs = new AttributeValues(forma);
@@ -322,6 +467,7 @@ public class Expression
 				filtrs.removeAttribute(AttributeNames.i_Source);
 				filtrs.removeAttribute(AttributeNames.i_SourceLemma);
 				filtrs.removeAttribute(AttributeNames.i_Word);
+				filtrs.removeAttribute(AttributeNames.i_NounType);
 				if (!forma.isMatchingStrong(AttributeNames.i_NumberSpecial, AttributeNames.v_PlurareTantum) 
 						&& category == Category.org ) {
 					// ja nav daudzskaitlinieks, tad ņemsim ka vienskaitļa formu
@@ -334,11 +480,6 @@ public class Expression
 					filtrs.removeAttribute(AttributeNames.i_PartOfSpeech); // OOV gadījumā minētājs piedāvās lietvārdu
 				if (forma.getToken().endsWith("us") && forma.isMatchingStrong(AttributeNames.i_Declension, "6")) {
 					//FIXME - tāds nedrīkstētu būt, tas jālabo analizatorā/minētājā/tagerī.. piemērs - 'Zlatkus Ēriks' iedod kā 6. dekl
-					filtrs.removeAttribute(AttributeNames.i_Declension);
-					filtrs.removeAttribute(AttributeNames.i_Gender);
-				}
-				if (forma.getToken().endsWith("a") && forma.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine)) {
-					//FIXME - Andrejs Vētra -> tur jāmāk korekti izlocīt, pagaidām sieviešu dzimtes sugasvārds nomāc visu statistiku
 					filtrs.removeAttribute(AttributeNames.i_Declension);
 					filtrs.removeAttribute(AttributeNames.i_Gender);
 				}
@@ -355,19 +496,30 @@ public class Expression
 				if (w.word.getToken().startsWith("vēlēšan") // izņēmums lai nemēģina vienskaitļa variantus par vēlēšanu likt
 					|| w.word.getToken().equalsIgnoreCase("Salas") || w.word.getToken().equalsIgnoreCase("Salās")) { 
 					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Plural);
-				}
+				}				
 				if (forma.getToken().endsWith("o") && forma.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine)) {
 					//FIXME - Tageris frāzē "vidējo speciālo izglītību" pirmo vārdu notago kā vīriešu dzimti..
 					if (expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("izglītība"))
 						filtrs.addAttribute(AttributeNames.i_Gender, AttributeNames.v_Feminine);
 				}
+				if (forma.getToken().contains("-") && forma.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Residual)) {
+					// double surnames, where the last part is inflexive
+					filtrs.removeAttribute(AttributeNames.i_PartOfSpeech);
+					filtrs.removeAttribute(AttributeNames.i_ResidualType);
+					filtrs.removeAttribute(AttributeNames.i_ParadigmID);
+					filtrs.removeAttribute(AttributeNames.i_Declension);
+				}
 					
 				/*
 				inflectedPhrase+=locītājs.generateInflections(forma.getValue("Pamatforma"),false,filtrs).toString()+' ';
-				*/
-				if (forma.lexeme == null || !forma.isMatchingWeak(AttributeNames.i_Guess, AttributeNames.v_NoGuess)) // Deminutīviem kā Bērziņš cita lemma
-					inflWordforms=analyzer.generateInflections(forma.getValue(AttributeNames.i_Lemma),false,filtrs);
-				else 
+				*/				
+				if (forma.lexeme == null || !forma.isMatchingWeak(AttributeNames.i_Guess, AttributeNames.v_NoGuess)) {// Deminutīviem kā Bērziņš cita lemma
+					AttributeValues lemma_filtrs = new AttributeValues(filtrs);
+					lemma_filtrs.removeAttribute(AttributeNames.i_Case);
+					lemma_filtrs.removeAttribute(AttributeNames.i_Number);
+					lemma_filtrs.removeAttribute(AttributeNames.i_Definiteness);
+					inflWordforms=analyzer.generateInflections(forma.getValue(AttributeNames.i_Lemma),false, lemma_filtrs);
+				} else 
 					inflWordforms=analyzer.generateInflections(forma.lexeme, w.word.getToken());
 				
 				filtrs.removeAttribute(AttributeNames.i_Lemma); // jo reizēm (dzimtes utml) te būscita lemma nekā notagotajā; piemēram vidēja/vidējs
@@ -403,7 +555,7 @@ public class Expression
 					// 'Zalcmanis Raivo' tā bija - FIXME, kautkādiem variantiem būtu jābūt :-/
 					inflectedPhrase += forma.getToken() +' ';						
 					matching = true;
-				}
+				}			
 				
 				if (!matching && forma.isMatchingStrong(AttributeNames.i_Declension, "5")) {
 					// "Jānis Uve" piemērs - šajā minēšanā tageris iedod vīriešu dzimti bet locītājs sieviešu
@@ -426,40 +578,53 @@ public class Expression
 					matching = true;
 				}
 				
+				if (debug && forma.getToken().equalsIgnoreCase("xxxxxxxxxxxxxxxxxxx")) {
+					System.err.printf("Debuginfo lokot vārdu %s uz %s\n",forma.getToken(), inflectCase);					
+					System.err.println("Filtrs:");
+					filtrs.describe(new PrintWriter(System.err));
+					System.err.println("Vārds:");
+					forma.describe(new PrintWriter(System.err));
+					System.err.println("Varianti:");
+					for (Wordform wf : inflWordforms) {
+						wf.describe(new PrintWriter(System.err));
+						System.err.println();
+					}
+				}
+				
+				
 				if (!matching) {									
 					//FIXME ko likt, ja nav ģenerēti locījumi lokāmajam vārdam (vv no locītāja, neatpazīti svešvārdi)
 					String frāze = "";
 					for (ExpressionWord w2 : expWords)
 						frāze += w2.correctWordform.getToken() + " ";
-					// TODO - interesanto frāžu logging - System.err.printf("Expression nemācēja izlocīt vārdu %s uz %s frāzē '%s'\n",forma.getToken(), inflect, frāze.trim());
 					inflectedPhrase += forma.getToken() + ' ';
-//					System.err.println("Filtrs:");
-//					filtrs.describe(new PrintWriter(System.err));
-//					System.err.println("Vārds:");
-//					forma.describe(new PrintWriter(System.err));
-//					System.err.println("Varianti:");
-//					for (Wordform wf : inflWordforms) {
-//						wf.describe(new PrintWriter(System.err));
-//						System.err.println();
-//					}
+					if (debug) {
+						System.err.printf("Expression nemācēja izlocīt vārdu %s uz %s frāzē '%s'\n",forma.getToken(), inflectCase, frāze.trim());					
+						System.err.println("Filtrs:");
+						filtrs.describe(new PrintWriter(System.err));
+						System.err.println("Vārds:");
+						forma.describe(new PrintWriter(System.err));
+						System.err.println("Varianti:");
+						for (Wordform wf : inflWordforms) {
+							wf.describe(new PrintWriter(System.err));
+							System.err.println();
+						}
+					}
 				}
-			}
-			else
-			{
-				inflectedPhrase+=w.word.getToken();
-				if(w.word.getToken()!="\"")
-				{
+			} else {
+			// If the word/token is considered static/inflexible in this expression
+				inflectedPhrase += w.word.getToken();
+				if (debug) inflectedPhrase += "(static)";
+				if (w.word.getToken()!="\"")
 					inflectedPhrase+=' ';
-				}
 			}
 		}
-		// TODO - interesanto frāžu logging
-//		if (inflectedPhrase.trim().isEmpty()) {
-//			System.err.print("Expression sanāca tukšs rezultāts no frāzes [");
-//		    for (ExpressionWord w : expWords)
-//		    	System.err.print(w.word.getToken()+" ");
-//		    System.err.println("]");
-//		}
+		if (debug && inflectedPhrase.trim().isEmpty()) {
+			System.err.print("Expression sanāca tukšs rezultāts no frāzes [");
+		    for (ExpressionWord w : expWords)
+		    	System.err.print(w.word.getToken()+" ");
+		    System.err.println("]");
+		}
 		if (inflectedPhrase.endsWith(" .")) inflectedPhrase = inflectedPhrase.substring(0, inflectedPhrase.length()-2) + ".";
 		return inflectedPhrase.trim();
 	}
