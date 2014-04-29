@@ -122,7 +122,10 @@ public class Expression
 	    	}
 	    	
 	    	// personvārdiem rēķinamies, ka sieviešu dzimtes sugasvārdi var tikt lietoti kā vīriešu dzimtes īpašvārdi - Vētra, Līdaka utml.
-	    	if (knownLemma && category == Category.hum) { 		    	
+	    	if (knownLemma && category == Category.hum) { 
+	    		if (word.getToken().equalsIgnoreCase("markus")) {
+	    			word.describe(System.out);
+	    		}
 		    	boolean seenMaleCommonNoun = false;
 		    	boolean seenFemaleCommonNoun = false;
 		    	boolean seenMaleNoun = false;
@@ -153,55 +156,51 @@ public class Expression
 			    			word.addWordform(new_wf);
 			    		}
 			    	}
-			    	
-			    	// ... un ja eksistē kāds male-only vārds blakus, tad izvācam sievišķos variantus vispār
-			    	boolean seenMaleOnlyWordsInPhrase = false;
-			    	for (Word otherword : words) {
-			    		boolean seenFemaleOption = false;
-			    		for (Wordform other_wf : otherword.wordforms) {
-			    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Feminine))
-			    				seenFemaleOption = true;
-			    		}
-			    		if (!seenFemaleOption) seenMaleOnlyWordsInPhrase = true;
-			    	}
-			    	if (seenMaleOnlyWordsInPhrase) {
-			    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
-			    		for (Wordform wf : word.wordforms) {
-			    			if (wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Feminine)) 
-			    				izmetamie.add(wf);
-			    		}
-			    		word.wordforms.removeAll(izmetamie);	
-			    	}
 		    	}
-		    	
+			    	
 		    	// symmetrical / opposite
 		    	if (seenMaleCommonNoun && !seenFemaleNoun) {
-		    		// šādos gadījumos pieliekam analizatoram arī opciju, ka tas -s vārds var būt arī sieviešu dzimtē
+		    		// šādos gadījumos pieliekam analizatoram arī opciju, ka tas -s vai -us vārds var būt arī sieviešu dzimtē
 			    	for (Wordform new_wf : extra_possibilities.wordforms) {
-			    		if (new_wf.isMatchingStrong(AttributeNames.i_ParadigmID, "11")) {
+			    		if (new_wf.isMatchingStrong(AttributeNames.i_ParadigmID, "11") || 
+			    			new_wf.isMatchingStrong(AttributeNames.i_ParadigmID, "31")	) {
 			    			word.addWordform(new_wf);
 			    		}
 			    	}
-			    	
-			    	// ... un ja eksistē kāds female-only vārds blakus, tad izvācam vīrišķos variantus vispār
-			    	boolean seenFemaleOnlyWordsInPhrase = false;
-			    	for (Word otherword : words) {
-			    		boolean seenMaleOption = false;
-			    		for (Wordform other_wf : otherword.wordforms) {
-			    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Masculine))
-			    				seenMaleOption = true;
-			    		}
-			    		if (!seenMaleOption) seenFemaleOnlyWordsInPhrase = true;
-			    	}
-			    	if (seenFemaleOnlyWordsInPhrase) {
-			    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
-			    		for (Wordform wf : word.wordforms) {
-			    			if (wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine)) 
-			    				izmetamie.add(wf);
-			    		}
-			    		word.wordforms.removeAll(izmetamie);			    		
-			    	}
-		    	} // if (seenMaleCommonNoun && !seenFemaleNoun) {
+		    	}
+		    	
+		    	// ... un ja eksistē kāds male-only vārds blakus, tad izvācam sievišķos variantus vispār, nu un simetriski
+		    	boolean seenMaleOnlyWordsInPhrase = false;
+		    	boolean seenFemaleOnlyWordsInPhrase = false;
+		    	for (Word otherword : words) {
+		    		boolean seenFemaleOption = false;
+		    		boolean seenMaleOption = false;
+		    		for (Wordform other_wf : otherword.wordforms) {
+		    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Feminine))
+		    				seenFemaleOption = true;
+		    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Masculine))
+		    				seenMaleOption = true;
+		    		}
+		    		if (!seenFemaleOption) seenMaleOnlyWordsInPhrase = true;
+		    		if (!seenMaleOption) seenFemaleOnlyWordsInPhrase = true;
+		    	}
+		    	if (seenMaleOnlyWordsInPhrase && !seenFemaleOnlyWordsInPhrase) {
+		    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
+		    		for (Wordform wf : word.wordforms) {
+		    			if (wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Feminine)) 
+		    				izmetamie.add(wf);
+		    		}
+		    		word.wordforms.removeAll(izmetamie);	
+		    	}
+		    	if (seenFemaleOnlyWordsInPhrase && !seenMaleOnlyWordsInPhrase) {
+		    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
+		    		for (Wordform wf : word.wordforms) {
+		    			if (wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine)) 
+		    				izmetamie.add(wf);
+		    		}
+		    		word.wordforms.removeAll(izmetamie);			    		
+		    	}
+		    	
 	    	} // if (knownLemma && category == Category.hum) 
 	    	
 	    	// Problēma, ka kādu īpašvārdu (piem. Znaroks) tageris nosauc par nenoteiktoīpašības vārdu - tas der tikai noteiktajiem!
@@ -331,6 +330,15 @@ public class Expression
 			case loc : // daudzvārdu lokācijas ('Ludzas pilsēta') lokās praktiski identiski
 			case other: // Nesaprastas kategorijas lokam kā organizācijas
 			{
+				// papriekšu specgadījums - AS Aldaris un līdzīgos neloka, pat tad ja nav pēdiņu
+				if (expWords.getFirst().correctWordform.getToken().equalsIgnoreCase("AS") ||
+					expWords.getFirst().correctWordform.getToken().equalsIgnoreCase("A/S") ||
+					expWords.getFirst().correctWordform.getToken().equalsIgnoreCase("SIA")) {
+					for (ExpressionWord w : expWords)
+						w.isStatic = true;
+					return;
+				}
+				
 				List<ExpressionWord> phraseWords;
 				if (expWords.getLast().correctWordform.getToken().equalsIgnoreCase("\"")) {
 					// piemēram 'sabiedrība "trīs ali" ' - to kas pēdiņās, to nelokam bet 'galva' ir pirms pēdiņām

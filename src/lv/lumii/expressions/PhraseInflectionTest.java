@@ -159,6 +159,16 @@ public class PhraseInflectionTest
 	}
 	
 	@Test
+	public void orgNames2() throws Exception
+	{
+		assertEquals("AS Aldaris", 
+				new Expression("AS Aldaris", "org", true).inflect(AttributeNames.v_Locative));
+		
+		assertEquals("SIA Latrostrans", 
+				new Expression("SIA Latrostrans", "org", true).inflect(AttributeNames.v_Locative));
+	}	
+	
+	@Test
 	public void awards() throws Exception
 	{
 		assertEquals("Triju zvaigžņu ordenis", 
@@ -345,7 +355,7 @@ public class PhraseInflectionTest
 	
 	@Test
 	public void WTFnames() throws Exception {
-		assertEquals("Dacei Markus", // ? 
+		assertEquals("Dacei Markui", // ? 
 				new Expression("Dace Markus", "person", true).inflect(AttributeNames.v_Dative, true));
 		assertEquals("Maijai Kubli", // ?
 				new Expression("Maija Kubli", "person", true).inflect(AttributeNames.v_Dative, true));		
