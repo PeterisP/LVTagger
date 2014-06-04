@@ -123,9 +123,9 @@ public class Expression
 	    	
 	    	// personvārdiem rēķinamies, ka sieviešu dzimtes sugasvārdi var tikt lietoti kā vīriešu dzimtes īpašvārdi - Vētra, Līdaka utml.
 	    	if (knownLemma && category == Category.hum) { 
-	    		if (word.getToken().equalsIgnoreCase("markus")) {
-	    			word.describe(System.out);
-	    		}
+//	    		if (word.getToken().equalsIgnoreCase("markus")) {
+//	    			word.describe(System.out);
+//	    		}
 		    	boolean seenMaleCommonNoun = false;
 		    	boolean seenFemaleCommonNoun = false;
 		    	boolean seenMaleNoun = false;
