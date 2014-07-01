@@ -31,7 +31,7 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 // Copied/pasted/mangled from transliteration webservices java project
 
 public class MorphoPipe {
-	private enum inputTypes {SENTENCE, PARAGRAPH, VERT, CONLL};
+	private enum inputTypes {SENTENCE, PARAGRAPH, VERT, CONLL, JSON};
 	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X, XML, VISL_CG, lemmatizedText};
 
 	private static String eol = System.getProperty("line.separator");
@@ -81,11 +81,13 @@ public class MorphoPipe {
 				}
 			}
 			if (args[i].equalsIgnoreCase("-conll-in")) inputType = inputTypes.CONLL; 
+			if (args[i].equalsIgnoreCase("-json-in")) inputType = inputTypes.JSON; 
 			if (args[i].equalsIgnoreCase("-conll-x")) outputType = outputTypes.CONLL_X;
 			if (args[i].equalsIgnoreCase("-xml")) outputType = outputTypes.XML;
 			if (args[i].equalsIgnoreCase("-visl-cg")) outputType = outputTypes.VISL_CG;
 			if (args[i].equalsIgnoreCase("-lemmatized-text")) outputType = outputTypes.lemmatizedText;
 			if (args[i].equalsIgnoreCase("-saveColumns")) saveColumns = true; //save extra columns from conll input
+			if (args[i].equalsIgnoreCase("-unix-line-endings")) eol="\n"; 
 						
 			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
 				System.out.println("LV morphological tagger");
@@ -94,6 +96,7 @@ public class MorphoPipe {
 				System.out.println("\t-paragraphs [lengthcap]: plain text UTF-8, each line will be split in sentences. In output, paragraph borders are noted by an extra blank line. If lengthcap parameter is provided, then sentence length will be limited to that, instead of the default of " + sentencelengthcap);
 				System.out.println("\t-vertinput : one line per token, sentences separated by <s></s>. Any XML-style tags are echoed as-is. \n\t\tNB! sentences are retokenized, the number of tokens may be different.");
 				System.out.println("\t-conll-in : CONLL shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
+				System.out.println("\t-json-in : one line per sentence, each line contains a single json array of strings-tokens.");
 				System.out.println("\nOutput formats");
 				System.out.println("\tDefault : JSON. Each sentence is returned as a list of dicts, each dict contains elements 'Word', 'Tag' and 'Lemma'.");
 				System.out.println("\t-tab : one response line for each query line; tab-separated lists of word, tag and lemma.");
@@ -108,6 +111,7 @@ public class MorphoPipe {
 				System.out.println("\t-features : in conll output, include the features that were used for training/tagging.");
 				System.out.println("\t-leta : in conll output, include extra features used for semantic frame analysis.");
 				System.out.println("\t-saveColumns : save extra columns from conll input.");
+				System.out.println("\t-unix-line-endings : use \\n line endings for output even on windows systems");
 				System.out.flush();
 				System.exit(0);
 			}
