@@ -427,4 +427,10 @@ public class PhraseInflectionTest
 				new Expression("Jānis Oga", "person", true).inflect(AttributeNames.v_Dative, true));
 
 	}
+
+	@Test
+	public void x20140703() throws Exception {
+		assertEquals("Andris Bērziņš", 
+				new Expression("Andra Bērziņa", "person", false).normalize());
+	}
 }

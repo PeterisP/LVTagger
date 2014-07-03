@@ -98,6 +98,7 @@ public class Expression
 		expWords=new LinkedList<ExpressionWord>();
 		
 	    List<Word> words = Splitting.tokenize(analyzer, phrase);
+	    boolean bothGendersPossible = true;
 	    for (Word word : words) { // filtrējam variantus, ņemot vērā to ko zinam par frāzi un kategoriju
 	    	Word extra_possibilities = analyzer.guessByEnding(word.getToken().toLowerCase(), word.getToken());
 	    	
@@ -121,32 +122,35 @@ public class Expression
 	    			word.wordforms.removeAll(izmetamie);
 	    	}
 	    	
+	    	boolean seenMaleCommonNoun = false;
+	    	boolean seenFemaleCommonNoun = false;
+	    	boolean seenMaleNoun = false;
+	    	boolean seenFemaleNoun = false;
+	    	
+	    	for (Wordform wf : word.wordforms) {
+    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
+    				wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Feminine) &&
+    				wf.isMatchingWeak(AttributeNames.i_NounType, AttributeNames.v_CommonNoun))
+    					seenFemaleCommonNoun = true;
+    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
+    				wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine) &&
+    				wf.isMatchingWeak(AttributeNames.i_NounType, AttributeNames.v_CommonNoun))
+    					seenMaleCommonNoun = true;
+    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
+	    			wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Feminine))
+	    				seenFemaleNoun = true;
+    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
+	    			wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine))
+	    				seenMaleNoun = true;
+    		}
+	    	if (!seenMaleNoun || !seenFemaleNoun)
+	    		bothGendersPossible = false;
+	    	
 	    	// personvārdiem rēķinamies, ka sieviešu dzimtes sugasvārdi var tikt lietoti kā vīriešu dzimtes īpašvārdi - Vētra, Līdaka utml.
-	    	if (knownLemma && category == Category.hum) { 
+	    	if (/*knownLemma && */category == Category.hum) { 
 //	    		if (word.getToken().equalsIgnoreCase("markus")) {
 //	    			word.describe(System.out);
 //	    		}
-		    	boolean seenMaleCommonNoun = false;
-		    	boolean seenFemaleCommonNoun = false;
-		    	boolean seenMaleNoun = false;
-		    	boolean seenFemaleNoun = false;
-		    	
-		    	for (Wordform wf : word.wordforms) {
-	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
-	    				wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Feminine) &&
-	    				wf.isMatchingWeak(AttributeNames.i_NounType, AttributeNames.v_CommonNoun))
-	    					seenFemaleCommonNoun = true;
-	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
-	    				wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine) &&
-	    				wf.isMatchingWeak(AttributeNames.i_NounType, AttributeNames.v_CommonNoun))
-	    					seenMaleCommonNoun = true;
-	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
-		    			wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Feminine))
-		    				seenFemaleNoun = true;
-	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
-		    			wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine))
-		    				seenMaleNoun = true;
-	    		}
 		    	
 		    	if (seenFemaleCommonNoun && !seenMaleNoun) {
 		    		// šādos gadījumos pieliekam analizatoram arī opciju, ka tas -a -e vārds var būt arī vīriešu dzimtē			    	
@@ -253,8 +257,24 @@ public class Expression
     			word.wordforms.removeAll(izmetamie);
 	    }
 	    
+	    /*
+	    if (category == Category.hum && bothGendersPossible) {
+	    	// FIXME - "Andra Bērziņa" gadījums, lai neizdomā ka viens no vārdiem tomēr ir sieviešu dzimtē.
+	    	// kamēr tageris šādus ne vienmēr atrisina, ir šis workaround - pieņemam, ka ja nu var būt viskautkas, tad tas ir vīriešu dzimtē; jo reālajos datos male:female proporcija ir 80:20-95:05.
+	    	for (Word word: words) {
+		    	LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
+	    		for (Wordform wf : word.wordforms) {
+	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
+	    	    			wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Feminine))
+	    				izmetamie.add(wf);
+	    		}
+	    		if (izmetamie.size() < word.wordforms.size()) // ja ir kaut viens derīgs 
+	    			word.wordforms.removeAll(izmetamie);
+	    	}
+	    } */
+	    
 		List<CoreLabel> sentence = LVMorphologyReaderAndWriter.analyzeSentence2(words);
-		sentence = morphoClassifier.classify(sentence);
+		sentence = morphoClassifier.classify(sentence); //TODO - tageris ir uztrenēts uz pilniem teikumiem, nevis šādām frāzēm. Ja izveidotu īpaši pielāgotu tagera modeli, tad tas varētu būt daudz precīzāks.
 		
 		String token;
 		Word analysis;
@@ -274,7 +294,7 @@ public class Expression
 			  // Mēs varam pieņemt ka entītijas ir 'nounphrase' un ja beigās ir verbs (nevis divdabis) tad tas ir tagera gļuks (piemērs 'DPS saraksta')
 			  for (Wordform wf : analysis.wordforms) {
 				  if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun))
-					  maxwf = wf; // TODO - varbūt var mazliet gudrāk, ja ir vairāki tad ņemt ticamāko
+					  maxwf = wf; // TODO - varbūt var mazliet gudrāk, ja ir vairāki kas atbilst tagera datiem tad ņemt ticamāko
 			  }
 		  }
 		  
