@@ -829,7 +829,9 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
       featuresC.add(p.get(DistSimAnnotation.class) + '-' + cWord + "-PDISTSIM-CWORD");
     }
     
-    annotateMorphoFeatures(cInfo);
+    if (flags.useMorphologyFeatures) {
+    	annotateMorphoFeatures(c);
+    }
 
 
     if (flags.useDistSim) {
@@ -2455,26 +2457,24 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
     }
   }
   
-  private void annotateMorphoFeatures(PaddedList<IN> info) {
-	  for (CoreLabel fl : info) {
-		  String featureString = fl.getString(MorphologyFeatureStringAnnotation.class);
-		  if (featureString != null) {
-	    	  String[] morphoFeatures =  featureString.split("\\|");
-	    	  for (String f : morphoFeatures) {
-	    		  if (f.startsWith("Locījums")) {
-	    			  fl.set(LVMorphoCaseAnnotation.class, f.substring("Locījums".length()));
-	    		  }
-	    		  if (f.startsWith("Skaitlis")) {
-	    			  fl.set(LVMorphoNumberAnnotation.class, f.substring("Skaitlis".length()));
-	    		  }
-	    		  if (f.startsWith("Vārdšķira")) {
-	    			  fl.set(LVMorphoPOSAnnotation.class, f.substring("Vārdšķira".length()));
-	    		  }
-	    		  if (f.startsWith("LETA_lemma")) {
-	    			  fl.set(LVMorphoLetaLemmaAnnotation.class, f.substring("LETA_lemma".length()));
-	    		  }
-	    	  }
-		  }
+  private void annotateMorphoFeatures(CoreLabel fl) {
+	  String featureString = fl.getString(MorphologyFeatureStringAnnotation.class);
+	  if (featureString != null) {
+    	  String[] morphoFeatures =  featureString.split("\\|");
+    	  for (String f : morphoFeatures) {
+    		  if (f.startsWith("Locījums")) {
+    			  fl.set(LVMorphoCaseAnnotation.class, f.substring("Locījums".length()));
+    		  }
+    		  if (f.startsWith("Skaitlis")) {
+    			  fl.set(LVMorphoNumberAnnotation.class, f.substring("Skaitlis".length()));
+    		  }
+    		  if (f.startsWith("Vārdšķira")) {
+    			  fl.set(LVMorphoPOSAnnotation.class, f.substring("Vārdšķira".length()));
+    		  }
+    		  if (f.startsWith("LETA_lemma")) {
+    			  fl.set(LVMorphoLetaLemmaAnnotation.class, f.substring("LETA_lemma".length()));
+    		  }
+    	  }
 	  }
   }
   
