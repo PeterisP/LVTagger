@@ -34,10 +34,21 @@ public class MorphoCRF {
 	 * @throws ClassCastException 
 	 */
 	public static void main(String[] args) throws IOException, ClassCastException, ClassNotFoundException {
+		String trainfile = "MorphoCRF/train_dev.txt";
+		String testfile = "MorphoCRF/test.txt";
+		
 		boolean train = false;
 		for (int i=0; i<args.length; i++) {
 			if (args[i].equalsIgnoreCase("-train")) {  
 				train = true;
+			}
+			if (args[i].equalsIgnoreCase("-dev")) {  
+				trainfile = "MorphoCRF/train.txt";
+				testfile = "MorphoCRF/dev.txt";
+			}
+			if (args[i].equalsIgnoreCase("-production")) {  
+				trainfile = "MorphoCRF/all.txt";
+				testfile = "MorphoCRF/test.txt";
 			}
 		}
 		
@@ -78,12 +89,11 @@ public class MorphoCRF {
 		props.setProperty("readerAndWriter", "edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter");
 		props.setProperty("map", "word=0,answer=1,lemma=2");
 		
+		
 	    AbstractSequenceClassifier<CoreLabel> crf = new CMMClassifier<CoreLabel>(props);
 	    DocumentReaderAndWriter reader = crf.makeReaderAndWriter();
 		if (train) {		    
-		    ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/train.txt", reader);
-		    //ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/train_dev.txt", reader);
-			//ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile("MorphoCRF/all.txt", reader);
+		    ObjectBank<List<CoreLabel>> documents = crf.makeObjectBankFromFile(trainfile, reader);
 		    crf.train(documents, reader); //atbilstoši props datiem
 		    
 		    crf.serializeClassifier(classifierOutput);
@@ -91,8 +101,7 @@ public class MorphoCRF {
 			crf = CMMClassifier.getClassifier(pretrainedModel);
 		}
 				 
-		testData(crf, "MorphoCRF/dev.txt", reader);
-		//testData(crf, "MorphoCRF/test.txt", reader);
+		testData(crf, testfile, reader);
 	}
 
 	private static void testData(AbstractSequenceClassifier<CoreLabel> crf, String filename, DocumentReaderAndWriter<CoreLabel> reader) {			
