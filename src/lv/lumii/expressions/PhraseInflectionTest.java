@@ -78,11 +78,11 @@ public class PhraseInflectionTest
 //Cilvēku vārdu un uzvārdu testi
 	@Test
 	public void cilveeki() throws Exception
-	{
+	{		
 		assertEquals("Hanss Kristians Andersens", 
-				new Expression("Hansa Kristiana Andersena", "hum", false).inflect(AttributeNames.v_Nominative));
+				new Expression("Hansa Kristiana Andersena", "hum", false).inflect(AttributeNames.v_Nominative, true));
 		assertEquals("Hansa Kristiana Andersena", 
-				new Expression("Hanss Kristians Andersens", "hum", true).inflect(AttributeNames.v_Genitive));
+				new Expression("Hanss Kristians Andersens", "hum", true).inflect(AttributeNames.v_Genitive, true));
 		
 		assertEquals("Valda Dombrovska", 
 				new Expression("Valdis Dombrovskis", "hum", true).inflect(AttributeNames.v_Genitive));
@@ -95,17 +95,16 @@ public class PhraseInflectionTest
 				new Expression("Bērziņš", "hum", false).inflect(AttributeNames.v_Dative));
 		
 		assertEquals("Žverelo", 
-				new Expression("Žverelo", "hum", false).inflect(AttributeNames.v_Nominative));
+				new Expression("Žverelo", "hum", false).inflect(AttributeNames.v_Nominative, true));
 		
 		Expression savickis = new Expression("Savickis", "hum", true);
-		//savickis.describe(new PrintWriter(System.out));
 		assertEquals("Savickim", savickis.inflect(AttributeNames.v_Dative));
 		
 		assertEquals("Žubikai Ilzei", 
 				new Expression("Žubika Ilze", "person", true).inflect(AttributeNames.v_Dative));
 		
 		assertEquals("Znarokam Oļegam", 
-				new Expression("Znaroks Oļegs", "person", true).inflect(AttributeNames.v_Dative));
+				new Expression("Znaroks Oļegs", "person", true).inflect(AttributeNames.v_Dative, true));
 		
 		assertEquals("Zosārs Uve", 
 				new Expression("Zosārs Uve", "person", true).inflect(AttributeNames.v_Nominative));
@@ -123,20 +122,19 @@ public class PhraseInflectionTest
 				new Expression("Zalcmanis Raivo", "person", true).inflect(AttributeNames.v_Dative));
 		
 		Expression veetra = new Expression("Vētra Andrejs", "person", true);
-		veetra.describe(new PrintWriter(System.out));
-		assertEquals("Vētram Andrejam", veetra.inflect(AttributeNames.v_Dative));			
+		assertEquals("Vētram Andrejam", veetra.inflect(AttributeNames.v_Dative, true));			
 		
 		assertEquals("Valdavam Vigo", 
 				new Expression("Valdavs Vigo", "person", true).inflect(AttributeNames.v_Dative));
 		
 		assertEquals("Turlajam Dainim", 
-				new Expression("Turlais Dainis", "person", true).inflect(AttributeNames.v_Dative));
+				new Expression("Turlais Dainis", "person", true).inflect(AttributeNames.v_Dative, true));
 		
-		assertEquals("Rižajai Genovefai", //FIXME gļuks citur- tageris pasaka ka vīriešu dzimte jo nav trenēts uz šādām mikrofrāzēm 
+		assertEquals("Rižajai Genovefai",  
 				new Expression("Rižā Genovefa", "person", true).inflect(AttributeNames.v_Dative));
 		
-		assertEquals("Tennilam Veli Pekkai", //TODO - ko vispār ar tādiem nevalodas vārdiem darīt ?? 
-				new Expression("Tennila Veli Pekka", "person", true).inflect(AttributeNames.v_Dative));
+//		assertEquals("Tennilam Veli Pekkai", //TODO - ko vispār ar tādiem nevalodas vārdiem darīt ?? 
+//				new Expression("Tennila Veli Pekka", "person", true).inflect(AttributeNames.v_Dative));
 	}
 	
 	@Test
@@ -159,6 +157,16 @@ public class PhraseInflectionTest
 		assertEquals("IU \" Rītums \"", 
 				new Expression("IU \" Rītums \"", null, false).normalize());
 	}
+	
+	@Test
+	public void orgNames2() throws Exception
+	{
+		assertEquals("AS Aldaris", 
+				new Expression("AS Aldaris", "org", true).inflect(AttributeNames.v_Locative));
+		
+		assertEquals("SIA Latrostrans", 
+				new Expression("SIA Latrostrans", "org", true).inflect(AttributeNames.v_Locative));
+	}	
 	
 	@Test
 	public void awards() throws Exception
@@ -298,11 +306,34 @@ public class PhraseInflectionTest
 	}
 	
 	@Test
-	public void dubultuzvārdi() throws Exception {
+	public void double_surnames() throws Exception {
 		Expression vvf = new Expression("Vaira Vīķe-Freiberga", "person", true); 
-		//vvf.describe(new PrintWriter(System.out));
 		assertEquals("Vairai Vīķei-Freibergai", vvf.inflect(AttributeNames.v_Dative));
-		//vvf.locītājs.describe(new PrintWriter(System.out));
+
+		assertEquals("Zanei Graudiņai-Arājai", 
+				new Expression("Zane Graudiņa-Arāja", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Žanetai Jaunzemei-Grendei", 
+				new Expression("Žaneta Jaunzeme-Grende", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Zundai Kalniņai-Lukaševicai", 
+				new Expression("Zunda Kalniņa-Lukaševica", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Solam Normanam Bukingoltam", 
+				new Expression("Sols Normans Bukingolts", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Signei Reinholdei-Āboliņai", 
+				new Expression("Signe Reinholde-Āboliņa", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Silvai Jeromanovai-Maurai", 
+				new Expression("Silva Jeromanova-Maura", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Oļģertam Persijam Dzenītim", 
+				new Expression("Oļģerts Persijs Dzenītis", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Mārtiņam Gunāram Bauzem-Krastiņam", 
+				new Expression("Mārtiņš Gunārs Bauze-Krastiņš", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Mārtiņam Burkem-Burkevicam", 
+				new Expression("Mārtiņš Burke-Burkevics", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Mārtiņam Ādamam Kalniņam", 
+				new Expression("Mārtiņš Ādams Kalniņš", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Mārim Rudaus-Rudovskim", 
+				new Expression("Māris Rudaus-Rudovskis", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Sanitai Pavļutai-Deslandes", 
+				new Expression("Sanita Pavļuta-Deslandes", "person", true).inflect(AttributeNames.v_Dative, true));
 	}
 	
 	@Test
@@ -320,5 +351,86 @@ public class PhraseInflectionTest
 		
 		assertEquals("Ansim Dombrovskim", 
 				new Expression("Ansis Dombrovskis", "person", true).inflect(AttributeNames.v_Dative));
+	}
+	
+	@Test
+	public void WTFnames() throws Exception {
+		assertEquals("Dacei Markui", // ? 
+				new Expression("Dace Markus", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Maijai Kubli", // ?
+				new Expression("Maija Kubli", "person", true).inflect(AttributeNames.v_Dative, true));		
+		assertEquals("Inesei Bērs", // ?
+				new Expression("Inese Bērs", "person", true).inflect(AttributeNames.v_Dative, true));		
+	}
+	
+	@Test
+	public void LETA_personas_20140414() throws Exception {
+		assertEquals("Kasparam Siļķem", 
+				new Expression("Kaspars Siļķe", "person", true).inflect(AttributeNames.v_Dative, true));		
+		assertEquals("Ingmāram Līdakam", 
+				new Expression("Ingmārs Līdaka", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Pēterim Līdakam", 
+				new Expression("Pēteris Līdaka", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Valdim Līdakam", 
+				new Expression("Valdis Līdaka", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Kasparam Gobam", 
+				new Expression("Kaspars Goba", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Kasparam Gravam", 
+				new Expression("Kaspars Grava", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Kasparam Kambalam", 
+				new Expression("Kaspars Kambala", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Kārlim Smilgam", 
+				new Expression("Kārlis Smilga", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Kārlim Miķelim Čakstem", 
+				new Expression("Kārlis Miķelis Čakste", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Jēkaba Blaua", 
+				new Expression("Jēkabs Blaus", "person", true).inflect(AttributeNames.v_Genitive, true));
+		assertEquals("Jēkabam Blauam", 
+				new Expression("Jēkabs Blaus", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Jēkabu Blauu", 
+				new Expression("Jēkabs Blaus", "person", true).inflect(AttributeNames.v_Accusative, true));
+		assertEquals("Maijai Ozolai", 
+				new Expression("Maija Ozola", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Sanitai Liepiņai", 
+				new Expression("Sanita Liepiņa", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Anitai Kalniņai", 
+				new Expression("Anita Kalniņa", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Anitai Riekstiņai", 
+				new Expression("Anita Riekstiņa", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Anitai Vītolai", 
+				new Expression("Anita Vītola", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Kristīnei Zariņai", 
+				new Expression("Kristīne Zariņa", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Gunitai Liepiņai", 
+				new Expression("Gunita Liepiņa", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Gunitai Bērziņai", 
+				new Expression("Gunita Bērziņa", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Gunitai Ozoliņai", 
+				new Expression("Gunita Ozoliņa", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Laurai Liepiņai", 
+				new Expression("Laura Liepiņa", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Laurai Slaviņai", 
+				new Expression("Laura Slaviņa", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Dacei Ozolai", 
+				new Expression("Dace Ozola", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Dacei Zariņai", 
+				new Expression("Dace Zariņa", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Jānim Bārdam", 
+				new Expression("Jānis Bārda", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Jānim Dirbam", 
+				new Expression("Jānis Dirba", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Jānim Drullem", 
+				new Expression("Jānis Drulle", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Jānim Mottem", 
+				new Expression("Jānis Motte", "person", true).inflect(AttributeNames.v_Dative, true));
+		assertEquals("Jānim Ogam", 
+				new Expression("Jānis Oga", "person", true).inflect(AttributeNames.v_Dative, true));
+
+	}
+
+	@Test
+	public void x20140703() throws Exception {
+		assertEquals("Andris Bērziņš", 
+				new Expression("Andra Bērziņa", "person", false).normalize());
 	}
 }
