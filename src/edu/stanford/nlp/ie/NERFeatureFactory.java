@@ -1821,8 +1821,9 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
 		  if (wf.getTag().length() < 1) {
 			  System.err.println("Hmm tukšs tags ??");
 			  wf.describe(new PrintWriter(System.err));			  
+		  } else {
+			  if (flags.useLVMorphoAnalyzerPOS) features.add(wf.getTag().substring(0, 1) +"-LV-POS"+postfix);
 		  }
-		  if (flags.useLVMorphoAnalyzerPOS) features.add(wf.getTag().substring(0, 1) +"-LV-POS"+postfix);
 		  if (flags.useLVMorphoAnalyzerTag) features.add(filterTag(wf.getTag()) +"-LV-TAG"+postfix);
 	  }
 	  Wordform best = c.get(LVMorphologyAnalysisBest.class);
