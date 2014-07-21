@@ -140,7 +140,9 @@ public class LVCoNLLDocumentReaderAndWriter implements DocumentReaderAndWriter<C
 	    	wi.setWord(bits[1]);
 	    	wi.setLemma(bits[2]);
 	    	wi.set(LVFullTagAnnotation.class, bits[4]);
-	    	wi.setTag(bits[4].substring(0,1));
+	    	String tag = "";
+	    	if (!bits[4].isEmpty()) tag = bits[4].substring(0,1); 
+	    	wi.setTag(tag);
 	    	wi.set(MorphologyFeatureStringAnnotation.class, bits[5]);
 	    	//wi.set(ParentAnnotation);
 	    	if (bits.length >= 7) {
