@@ -33,7 +33,7 @@ public class Expression
 	protected static transient Analyzer analyzer = null;
 	public Category category = Category.other; 
 	
-	private static void initClassifier(String model) throws Exception {
+	public static void initClassifier(String model) throws Exception {
 		morphoClassifier = CMMClassifier.getClassifier(new File(model));		
 		analyzer = LVMorphologyReaderAndWriter.getAnalyzer(); // Assumption - that the morphology model actually loads the LVMorphologyReaderAndWriter data, so it should be filled.
 	}
@@ -43,7 +43,7 @@ public class Expression
 		analyzer = LVMorphologyReaderAndWriter.getAnalyzer(); // Assumption - that the morphology model actually loads the LVMorphologyReaderAndWriter data, so it should be filled.
 	}
 	
-	private static void initClassifier() throws Exception {
+	public static void initClassifier() throws Exception {
 		initClassifier("../LVTagger/models/lv-morpho-model.ser.gz"); // FIXME - nepamatoti paļaujamies ka tur tāds modelis būs
 	}
 	
@@ -657,7 +657,7 @@ public class Expression
 		return inflectedPhrase.trim();
 	}
 
-	public String getWordPartOfSpeech(String string) {
+	public static String getWordPartOfSpeech(String string) {
 		Word vārds = analyzer.analyze(string); //FIXME - jāskatās, kas te bija Guntai un varbūt vajag AnalyzeLemma saukt
 		if (vārds.getBestWordform() == null) return AttributeNames.v_Noun;
 		return vārds.getBestWordform().getValue(AttributeNames.i_PartOfSpeech);
