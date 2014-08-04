@@ -276,26 +276,12 @@ public class MorphoPipe {
 				if (mini_tag) mainwf.removeNonlexicalAttributes();
 				if (LETAfeatures) {
 					addLETAfeatures(mainwf);
-					// Notestēt ko no morfotagošanas fīčām (word shape??) varbūt pielikt
-					mainwf.removeAttribute(AttributeNames.i_LexemeID);
-					mainwf.removeAttribute(AttributeNames.i_EndingID);
-					mainwf.removeAttribute(AttributeNames.i_ParadigmID);
 					// mainwf.removeAttribute(AttributeNames.i_SourceLemma); FIXME - atvasinātiem vārdiem šis var būt svarīgs, atpriedekļotas lemmas..
-					mainwf.removeAttribute(AttributeNames.i_Source);
-					mainwf.removeAttribute(AttributeNames.i_Word);
-					mainwf.removeAttribute(AttributeNames.i_Mija);
-					mainwf.removeAttribute(AttributeNames.i_Guess);
-					mainwf.removeAttribute(AttributeNames.i_Generate);
-					mainwf.removeAttribute(AttributeNames.i_Konjugaacija);
-					mainwf.removeAttribute(AttributeNames.i_Declension);
+					mainwf.removeTechnicalAttributes();
 				}
 				
-				for (Entry<String, String> entry : mainwf.entrySet()) { // visi attributevalue paariishi
-					 s.append(entry.getKey().replace(' ', '_'));
-					 s.append('=');
-					 s.append(entry.getValue().replace(' ', '_'));
-					 s.append('|');
-				}
+				s.append(mainwf.pipeDelimitedEntries()); // Pievienojam vārda fīčas
+				
 				if (features) { // visas fīčas, ko lietoja trenējot
 					Datum<String, String> d = cmm.makeDatum(tokens, counter, cmm.featureFactory);
 					for (String feature : d.asFeatures()) {
@@ -390,18 +376,9 @@ public class MorphoPipe {
 			for (Wordform wf : analysis.wordforms) { // output the "cohort" in VISL-CG terms
 				String lemma = wf.getValue(AttributeNames.i_Lemma);
 				//Ad-hoc ... removing 'bookkeeping' attributes that seem useless for CG
-				wf.removeAttribute(AttributeNames.i_LexemeID);
-				wf.removeAttribute(AttributeNames.i_EndingID);
-				wf.removeAttribute(AttributeNames.i_ParadigmID);
+				wf.removeTechnicalAttributes();
 				wf.removeAttribute(AttributeNames.i_Lemma);
 				wf.removeAttribute(AttributeNames.i_SourceLemma);
-				wf.removeAttribute(AttributeNames.i_Source);
-				wf.removeAttribute(AttributeNames.i_Word);
-				wf.removeAttribute(AttributeNames.i_Mija);
-				wf.removeAttribute(AttributeNames.i_Guess);
-				wf.removeAttribute(AttributeNames.i_Generate);
-				wf.removeAttribute(AttributeNames.i_Konjugaacija);
-				wf.removeAttribute(AttributeNames.i_Declension);
 				
 				lemma.replaceAll("\"", "\\\"");
 				s.append(String.format("\t\"%s\" ", lemma)); // <"They"> from the example
