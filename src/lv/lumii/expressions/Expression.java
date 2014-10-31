@@ -38,12 +38,23 @@ import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
-public class Expression
-{
+public class Expression {
 	public LinkedList <ExpressionWord> expWords;
 	private static transient AbstractSequenceClassifier<CoreLabel> morphoClassifier = null;
 	protected static transient Analyzer analyzer = null;
+	public enum Category {
+		org,
+		hum,
+		loc,
+		other
+	}
 	public Category category = Category.other; 
+	public enum Gender {
+		masculine,
+		feminine,
+		unknown
+	}
+	public Gender gender = Gender.unknown;
 	
 	public static void initClassifier(String model) throws Exception {
 		morphoClassifier = CMMClassifier.getClassifier(new File(model));		
@@ -65,8 +76,10 @@ public class Expression
 	 * @param category - frāzes kategorija - person org loc
 	 * @param knownLemma - ja true, tad frāze ir 'pamatformā'; ja false - tad kautkādā formā kam jāmeklē pamatforma
 	 */
-	public Expression(String phrase, String phraseCategory, boolean knownLemma) 
-	{
+	public Expression(String phrase, String phraseCategory, boolean knownLemma) {
+		this(phrase, phraseCategory, knownLemma, false);
+	}
+	public Expression(String phrase, String phraseCategory, boolean knownLemma, boolean debug) {
 		if (morphoClassifier == null)
 			try {
 				initClassifier();
@@ -76,7 +89,7 @@ public class Expression
 			} 
 		setCategory(phraseCategory);
 
-		loadUsingTagger(phrase, knownLemma);
+		loadUsingTagger(phrase, knownLemma, debug);
 		//loadUsingBestWordform(); alternatīva ja nav tageris
 		setPattern(); // Daļa, kas izdomā, kurus vārdus locīt līdzi galvenajam un kurus atstāt
 	}
@@ -105,81 +118,76 @@ public class Expression
 		}
 	}
 	
-	public void loadUsingTagger(String phrase, boolean knownLemma) 
+	public void loadUsingTagger(String phrase, boolean knownLemma, boolean debug) 
 	{
-		boolean debug = true;
 		expWords=new LinkedList<ExpressionWord>();
 		
 	    List<Word> words = Splitting.tokenize(analyzer, phrase);
 	    for (Word word : words) { // filtrējam variantus, ņemot vērā to ko zinam par frāzi un kategoriju
-			addExtraPossibilities(word, knownLemma);
-	    	
-	    	// ... un ja eksistē kāds male-only vārds blakus, tad izvācam sievišķos variantus vispār, nu un simetriski
-		    if (category == Category.hum) {
-		    	boolean seenMaleOnlyWordsInPhrase = false;
-		    	boolean seenFemaleOnlyWordsInPhrase = false;
-		    	for (Word otherword : words) {
-		    		boolean seenFemaleOption = false;
-		    		boolean seenMaleOption = false;
-		    		for (Wordform other_wf : otherword.wordforms) {
-		    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Feminine))
-		    				seenFemaleOption = true;
-		    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Masculine))
-		    				seenMaleOption = true;
-		    		}
-		    		if (!seenFemaleOption) seenMaleOnlyWordsInPhrase = true;
-		    		if (!seenMaleOption) seenFemaleOnlyWordsInPhrase = true;
-		    	}
-		    	if (seenMaleOnlyWordsInPhrase && !seenFemaleOnlyWordsInPhrase) {
-		    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
-		    		for (Wordform wf : word.wordforms) {
-		    			if (wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Feminine)) 
-		    				izmetamie.add(wf);
-		    		}
-		    		word.wordforms.removeAll(izmetamie);	
-		    	}
-		    	if (seenFemaleOnlyWordsInPhrase && !seenMaleOnlyWordsInPhrase) {
-		    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
-		    		for (Wordform wf : word.wordforms) {
-		    			if (wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine)) 
-		    				izmetamie.add(wf);
-		    		}
-		    		word.wordforms.removeAll(izmetamie);			    		
-		    	}		    	
+		    if (debug) {
+		    	System.out.printf("%s normal analysis:\n", word.getToken());
+		    	//word.describe(System.out);
+		    	for (Wordform wf : word.wordforms)  
+		    		System.out.printf("\t%s\n", wf.getTag());		    	
+		    }
+
+	    	addExtraPossibilities(word, knownLemma, debug); // Pietjūnēta minēšana, ņemot vārdā named entity īpatnības 	    	
+
+			if (debug) {
+		    	System.out.printf("%s generated alternatives:\n", word.getToken());
+		    	for (Wordform wf : word.wordforms)  
+		    		System.out.printf("\t%s\n", wf.getTag());		    	
+		    }
+	    }	
+	    
+		if (category == Category.hum)
+			gender = guessPersonGender(words);
+		
+		if (debug)
+			System.out.printf("Detected gender : %s\n", gender.toString());
+		  
+		for (Word word : words) {
+		    // ja frāzei kopumā ir skaidra dzimte, tad izmetam 'nepareizās' dzimtes alternatīvas
+		    if (category == Category.hum && gender != Gender.unknown) {		    		    	
+	    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
+	    		for (Wordform wf : word.wordforms) {
+	    			Gender tempgender = gender; // default option - same as the whole name
+	    			if (gender == Gender.feminine && wf.getToken().endsWith("kalns")) // Exception for compound masculine words used as female surnames e.g. 'Zaļaiskalns'
+	    				tempgender = Gender.masculine;
+	    			
+	    			if ( (tempgender == Gender.masculine && wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Feminine)) ||
+	    				 (tempgender == Gender.feminine && wf.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine)) )
+	    				izmetamie.add(wf);
+	    		}
+	    		word.wordforms.removeAll(izmetamie);	// TODO - te nečeko, vai nav izmesti visi visi varianti - teorētiski guessPersonGender šādus gadījumus nepieļaus
 	    	} 
 	    	
-	    	// Problēma, ka kādu īpašvārdu (piem. Znaroks) tageris nosauc par nenoteiktoīpašības vārdu - tas der tikai noteiktajiem!
+	    	
 	    	if (category == Category.hum) {
 	    		LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
 	    		for (Wordform wf : word.wordforms) {
 	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adjective)
 	    				&& wf.isMatchingStrong(AttributeNames.i_Definiteness, AttributeNames.v_Indefinite)
 	    			    && wf.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_FirstUpper))
-	    			{ izmetamie.add(wf); }
-	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adverb)) // inflexive -i surnames (Maija Kubli)
-	    				izmetamie.add(wf);
+	    			    izmetamie.add(wf); // Problēma, ka kādu īpašvārdu (piem. Znaroks) tageris nosauc par nenoteikto īpašības vārdu - tas der tikai noteiktajiem!
+	    			
+	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adverb)) 
+	    				izmetamie.add(wf); // inflexive -i surnames (Maija Kubli)
+	    			
+	    			// Pieņemam, ka noteikto īpašības vārdu uzvārdi (Platais, Lielais utml) var būt tikai no in-vocabulary vārdiem vai arī ja ir explicitly pateikts ka tā ir pamatforma, pārējiem jāņem kā lietvārda forma	    		
+	    			if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adjective)
+		    				&& wf.isMatchingStrong(AttributeNames.i_Definiteness, AttributeNames.v_Definite)
+		    			    && wf.isMatchingStrong(AttributeNames.i_Guess, AttributeNames.v_Ending)
+		    			    && !knownLemma)
+	    				izmetamie.add(wf); 
 	    		}
 	    		word.wordforms.removeAll(izmetamie);
-	    		if (izmetamie.size() > 0 && word.wordforms.size() == 0) {
-	    			// If capitalized indefinite adjectives were the only options... let's guess us some nouns! 
+	    		if (izmetamie.size() > 0 && word.wordforms.size() == 0) { 
+	    			// Ja šis process noveda peie tā, ka izmetām visus visus variantus... tad jāieslēdz minēšana un jāuzmin tieši lietvārdi ! 
 	    			Word extra_possibilities = analyzer.guessByEnding(word.getToken().toLowerCase(), word.getToken());
-
-	    			// check from other words - are both genders possible?
-	    			boolean seenMaleOption = false;
-	    			boolean seenFemaleOption = false;
-			    	for (Word otherword : words) {
-			    		if (otherword == word) continue;
-			    		for (Wordform other_wf : otherword.wordforms) {
-			    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Feminine))
-			    				seenFemaleOption = true;
-			    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Masculine))
-			    				seenMaleOption = true;
-			    		}
-			    	}	    			
-	    			
 			    	for (Wordform new_wf : extra_possibilities.wordforms) {
-			    		if ( (new_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Masculine) && seenMaleOption) ||  
-			    			(new_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Feminine) && seenFemaleOption) ) { 
+			    		if ( (new_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Masculine) && gender != Gender.feminine) ||  
+			    			(new_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Feminine) && gender != Gender.masculine) ) { 
 			    			word.addWordform(new_wf);
 			    		}
 			    	}
@@ -213,40 +221,80 @@ public class Expression
 	    			word.wordforms.removeAll(izmetamie);
 	    	}
 	    } */
-	    
+
+		if (debug)
+			for (Word word : words) {
+				System.out.printf("%s alternatives given to tagger:\n", word.getToken());
+    			for (Wordform wf : word.wordforms)  
+    				System.out.printf("\t%s\n", wf.getTag());
+			}
+
 		List<CoreLabel> sentence = LVMorphologyReaderAndWriter.analyzeSentence2(words);
 		sentence = morphoClassifier.classify(sentence); //TODO - tageris ir uztrenēts uz pilniem teikumiem, nevis šādām frāzēm. Ja izveidotu īpaši pielāgotu tagera modeli, tad tas varētu būt daudz precīzāks.
 		
 		String token;
 		Word analysis;
 		Wordform maxwf;
-		for(CoreLabel label : sentence)
-		{
+		for(CoreLabel label : sentence) {
 			token = label.getString(TextAnnotation.class);
 			
 			if (token.equals("<s>")) { // Tageris skatās uz vārda apkaimi; teikuma sākuma/beigu vārdi ir īpaši, to signalizē pieliekot sākumā/beigās <s>
 				continue;
 			}
 			
-		  analysis = label.get(LVMorphologyAnalysis.class);
+			analysis = label.get(LVMorphologyAnalysis.class);
 		  
-		  maxwf = analysis.getMatchingWordform(label.getString(AnswerAnnotation.class), false);
-		  if (maxwf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Verb)) {
+			maxwf = analysis.getMatchingWordform(label.getString(AnswerAnnotation.class), false);
+			if (maxwf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Verb)) {
 			  // Mēs varam pieņemt ka entītijas ir 'nounphrase' un ja beigās ir verbs (nevis divdabis) tad tas ir tagera gļuks (piemērs 'DPS saraksta')
 			  for (Wordform wf : analysis.wordforms) {
 				  if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun))
 					  maxwf = wf; // TODO - varbūt var mazliet gudrāk, ja ir vairāki kas atbilst tagera datiem tad ņemt ticamāko
 			  }
-		  }
-		  
-		  ExpressionWord tmp = new ExpressionWord(analysis, maxwf);
-		  expWords.add(tmp);
+			}
+
+			if (debug) 				
+				System.out.printf("%s chosen : %s\n", maxwf.getToken(), maxwf.getTag());
+
+		  	ExpressionWord tmp = new ExpressionWord(analysis, maxwf);
+		  	expWords.add(tmp);
 		}
 		
 	}
 
-	private void addExtraPossibilities(Word word, boolean knownLemma) {
+	private Gender guessPersonGender(List<Word> words) {
+    	boolean seenMaleOnlyWordsInPhrase = false;
+    	boolean seenFemaleOnlyWordsInPhrase = false;
+    	for (Word word : words) {
+    		boolean seenFemaleOption = false;
+    		boolean seenMaleOption = false;
+    		for (Wordform other_wf : word.wordforms) {
+    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Feminine))
+    				seenFemaleOption = true;
+    			if (other_wf.isMatchingWeak(AttributeNames.i_Gender, AttributeNames.v_Masculine))
+    				seenMaleOption = true;
+    		}
+    		if (!seenFemaleOption) seenMaleOnlyWordsInPhrase = true;
+    		if (!seenMaleOption) seenFemaleOnlyWordsInPhrase = true;
+    	}
+    	if (seenMaleOnlyWordsInPhrase && !seenFemaleOnlyWordsInPhrase) {
+    		return Gender.masculine;
+    	}
+    	if (seenFemaleOnlyWordsInPhrase && !seenMaleOnlyWordsInPhrase) {
+    		return Gender.feminine;
+    	}
+    	return Gender.unknown;
+	}
+
+	private void addExtraPossibilities(Word word, boolean knownLemma, boolean debug) {
 		Word extra_possibilities = analyzer.guessByEnding(word.getToken().toLowerCase(), word.getToken());
+		
+	    if (debug) {
+	    	System.out.printf("%s extra possibilities before filtering:\n", word.getToken());
+	    	//word.describe(System.out);
+	    	for (Wordform wf : extra_possibilities.wordforms)  
+	    		System.out.printf("\t%s\n", wf.getTag());		    	
+	    }
 		
 		// personvārdiem metam ārā nenominatīvus, ja ir kāds variants ar nominatīvu (piemēram 'Dombrovska' kā siev. nominatīvs vai vīr. ģenitīvs)
 		if (knownLemma && category == Category.hum) { 
@@ -492,8 +540,11 @@ public class Expression
 		Wordform forma, inflected_form;
 		ArrayList<Wordform> inflWordforms;
 		boolean matching = true;
-		for (ExpressionWord w : expWords) {			
+		for (ExpressionWord w : expWords) {
 			if (w.isStatic==false) {
+				if (debug)
+					System.out.printf("Inflecting word %s\n", w.word.getToken());					
+				
 				forma=w.correctWordform; 
 								
 				filtrs = new AttributeValues(forma);
@@ -653,7 +704,7 @@ public class Expression
 			} else {
 			// If the word/token is considered static/inflexible in this expression
 				inflectedPhrase += w.word.getToken();
-				if (debug) inflectedPhrase += "(static)";
+				if (debug) System.out.printf("Taking static word %s\n", w.correctWordform.getToken());					
 				if (w.word.getToken()!="\"")
 					inflectedPhrase+=' ';
 			}
