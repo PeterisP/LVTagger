@@ -464,5 +464,20 @@ public class PhraseInflectionTest
 		
 		assertEquals("Gunaram Šķēlem", 
 				new Expression("Gunars Šķēle", "person", true).inflect(AttributeNames.v_Dative, true));
+		
+		assertEquals("Arno Sonkam", 
+				new Expression("Arno Sonks", "person", true).inflect(AttributeNames.v_Dative, true));
+		
+		assertEquals("Sarmai Vaskai", 
+				new Expression("Sarma Vaska", "person", true).inflect(AttributeNames.v_Dative, true));
+		
+		assertEquals("Ojārs Bite", 
+				new Expression("Ojāram Bitem", "person", true).inflect(AttributeNames.v_Dative, true));
+		
+		assertEquals("Ainai Āriņai", 
+				new Expression("Aina Āriņa", "person", true).inflect(AttributeNames.v_Dative, true));
+		
+		assertEquals("Aleksandram Niedrem", 
+				new Expression("Aleksandrs Niedre", "person", true).inflect(AttributeNames.v_Dative, true));
 	}
 }
