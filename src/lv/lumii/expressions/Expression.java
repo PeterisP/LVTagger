@@ -67,7 +67,12 @@ public class Expression {
 	}
 	
 	public static void initClassifier() throws Exception {
-		initClassifier("../LVTagger/models/lv-morpho-model.ser.gz"); // FIXME - nepamatoti paļaujamies ka tur tāds modelis būs
+		// FIXME - nepamatoti paļaujamies ka tur tāds modelis būs
+		try {
+			initClassifier("../LVTagger/models/lv-morpho-model.ser.gz");
+		} catch (java.io.FileNotFoundException e) {
+			initClassifier("../../LVTagger/models/lv-morpho-model.ser.gz");
+		}
 	}
 	
 	/*
