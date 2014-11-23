@@ -14,3 +14,5 @@ LV_CRF.zip
 ner_train_comparison.txt
 lib/junit*.jar
 lib/morphology.jar
+models/.version
+git_hooks/*.sample
