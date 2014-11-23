@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-REPODIR=`git rev-parse --show-toplevel`
-
-cd "$REPODIR/models"
+REPDIR=`git rev-parse --show-toplevel`
 
 VERSION="0.1-test"
+
+cd "$REPDIR/models"
 
 if [ ! -f "lv-morpho-model.ser.gz" ] || [ ! -f ".version" ] || [ `cat .version` != "$VERSION" ]; then
 	echo "Downloading models..."
