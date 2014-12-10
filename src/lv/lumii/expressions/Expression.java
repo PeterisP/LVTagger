@@ -252,6 +252,7 @@ public class Expression {
 			maxwf = analysis.getMatchingWordform(label.getString(AnswerAnnotation.class), false);
 			if (maxwf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Verb)) {
 			  // Mēs varam pieņemt ka entītijas ir 'nounphrase' un ja beigās ir verbs (nevis divdabis) tad tas ir tagera gļuks (piemērs 'DPS saraksta')
+			  //                                                      ^^ FIXME - a kāpēc tad te čeko *visiem* vārdiem nevis tikai pēdējam?
 			  for (Wordform wf : analysis.wordforms) {
 				  if (wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun))
 					  maxwf = wf; // TODO - varbūt var mazliet gudrāk, ja ir vairāki kas atbilst tagera datiem tad ņemt ticamāko
@@ -547,8 +548,10 @@ public class Expression {
 		boolean matching = true;
 		for (ExpressionWord w : expWords) {
 			if (w.isStatic==false) {
-				if (debug)
-					System.out.printf("Inflecting word %s\n", w.word.getToken());					
+				if (debug) {
+					System.out.printf("Inflecting word %s\n", w.word.getToken());
+					w.correctWordform.describe();
+				}
 				
 				forma=w.correctWordform; 
 								

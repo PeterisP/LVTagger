@@ -21,6 +21,7 @@ import static org.junit.Assert.*;
 
 import java.io.PrintWriter;
 
+import lv.lumii.expressions.Expression.Gender;
 import lv.semti.morphology.analyzer.Analyzer;
 import lv.semti.morphology.attributes.AttributeNames;
 
@@ -77,8 +78,8 @@ public class PhraseInflectionTest
 	@Test
 	public void test5() throws Exception
 	{
-		Expression e = new Expression("Latvija tēla veidošanas institūtā", null, false);
-		assertEquals("Latvija tēla veidošanas institūts", e.normalize());
+		Expression e = new Expression("Latvija tēla veidošanas institūtā", null, false, true);
+		assertEquals("Latvija tēla veidošanas institūts", e.inflect("Nominatīvs", true));
 	}
 	
 	@Test
@@ -377,7 +378,7 @@ public class PhraseInflectionTest
 	@Test
 	public void WTFnames() throws Exception {
 		assertEquals("Dacei Markui", // ? 
-				new Expression("Dace Markus", "person", true).inflect(AttributeNames.v_Dative, true));
+				new Expression("Dace Markus", "person", true).inflect(AttributeNames.v_Dative));
 		assertEquals("Maijai Kubli", // ?
 				new Expression("Maija Kubli", "person", true).inflect(AttributeNames.v_Dative, true));		
 		assertEquals("Inesei Bērs", // ?
@@ -483,5 +484,24 @@ public class PhraseInflectionTest
 		
 		assertEquals("Aleksandram Niedrem", 
 				new Expression("Aleksandrs Niedre", "person", true).inflect(AttributeNames.v_Dative));
+	}
+	
+	
+	@Test 
+	public void galvenais() throws Exception {
+		assertEquals("galveno redaktoru", 
+				new Expression("galvenais redaktors", "profession", false).inflect(AttributeNames.v_Accusative));
+	}
+	
+	@Test
+	public void LETA_personas_20141204() throws Exception {
+		assertEquals("Regīna Laudere", 
+				new Expression("Regīna Laudere", "person", false).normalize());
+	}
+	
+	@Test
+	public void dzimtes() throws Exception {
+		assertEquals(Gender.feminine, 
+				new Expression("Aija Krištopane", "person", true, false).gender);
 	}
 }
