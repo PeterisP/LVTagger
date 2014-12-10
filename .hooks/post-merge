@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+REPDIR=`git rev-parse --show-toplevel`
+
+RELEASE="model-bin-0.1-test"
+
+cd "$REPDIR/models"
+
+FILE="lv-morpho-model.ser.gz"
+
+if [ ! -f "$FILE" ] || [ ! -f ".release-$FILE" ] || [ `cat .release-$FILE` != "$RELEASE" ]; then
+	echo "Downloading models..."
+	curl -L -O https://github.com/PeterisP/LVTagger/releases/download/$RELEASE/$FILE
+	echo $RELEASE > .release-$FILE
+else
+	echo "Models up-to-date"
+fi
+
+# Other RELEASE / cd .. / FILE combinations here...
+
