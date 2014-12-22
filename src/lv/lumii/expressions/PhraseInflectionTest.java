@@ -503,5 +503,9 @@ public class PhraseInflectionTest
 	public void dzimtes() throws Exception {
 		assertEquals(Gender.feminine, 
 				new Expression("Aija Krištopane", "person", true, false).gender);
+		
+		assertEquals(Gender.feminine, 
+				new Expression("Ieva Bondare", "person", true, true).gender);
+
 	}
 }

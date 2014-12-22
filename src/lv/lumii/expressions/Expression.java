@@ -266,6 +266,20 @@ public class Expression {
 		  	expWords.add(tmp);
 		}
 		
+		if (category == Category.hum && gender == Gender.unknown) {
+			boolean allMale = true;
+	    	boolean allFemale = true;
+	    	for (ExpressionWord w : expWords) {
+	    		if (w.correctWordform.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine))
+	    			allFemale = false;
+	    		if (w.correctWordform.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Feminine))
+	    			allMale = false;
+	    	}
+	    	if (allMale) gender = Gender.masculine;
+	    	if (allFemale) gender = Gender.feminine;
+			if (debug)
+				System.out.printf("Final gender : %s\n", gender.toString());
+		}
 	}
 
 	private Gender guessPersonGender(List<Word> words) {
@@ -345,7 +359,7 @@ public class Expression {
 		}
 		
 		// personvārdiem rēķinamies, ka sieviešu dzimtes sugasvārdi var tikt lietoti kā vīriešu dzimtes īpašvārdi - Vētra, Līdaka utml.
-		if (category == Category.hum) { 
+		if (category == Category.hum && !word.getToken().equalsIgnoreCase("Ieva")) {			
 			if (seenFemaleCommonNoun && !seenMaleNoun) {
 				// šādos gadījumos pieliekam analizatoram arī opciju, ka tas -a -e vārds var būt arī vīriešu dzimtē			    	
 		    	for (Wordform new_wf : extra_possibilities.wordforms) {
