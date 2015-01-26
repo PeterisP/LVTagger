@@ -508,4 +508,20 @@ public class PhraseInflectionTest
 				new Expression("Ieva Bondare", "person", true, true).gender);
 
 	}
+		
+	@Test 
+	public void LETA_personas_20150126() throws Exception {
+		assertEquals("Raivim Zeltītam", 
+				new Expression("Raivis Zeltīts", "person", true, false).inflect(AttributeNames.v_Dative));
+		
+		assertEquals("Laumai ( Dzintara Pomera sievai )", 
+				new Expression("Lauma (Dzintara Pomera sieva)", "person", true, false).inflect(AttributeNames.v_Dative));
+		
+		assertEquals("Jaundubultiem", 
+				new Expression("Jaundubulti", "location", true).inflect(AttributeNames.v_Dative));
+		
+		assertEquals("Amerikas Savienotajām Valstīm", 
+				new Expression("Amerikas Savienotās Valstis", "location", true).inflect(AttributeNames.v_Dative));
+	}
+	
 }

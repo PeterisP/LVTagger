@@ -392,14 +392,22 @@ public class Expression {
 		switch(category)
 		{
 			case hum : // Cilvēku vārdiem lokam visus tokenus ko var, izņemot gadījumos kad klāt ir arī amats (valdes priekšsēdētājs Ivars Zariņš)
+				int parenthesis_depth = 0; // skaitam to, vai šis vārds ir iekavās vai nav 
 				for (ExpressionWord w : expWords) {
+					if (w.correctWordform.getToken().equalsIgnoreCase("(")) parenthesis_depth++;
+					if (w.correctWordform.getToken().equalsIgnoreCase(")")) parenthesis_depth--;
+					
 					w.isStatic = false;
 					if (w.word.isRecognized()==false) {
 						w.isStatic=true;
 						continue;
 					}
 					switch(w.correctWordform.getValue(AttributeNames.i_PartOfSpeech)) {
-						case AttributeNames.v_Verb:
+						case AttributeNames.v_Verb: {
+							w.isStatic = !w.correctWordform.isMatchingStrong(AttributeNames.i_Izteiksme, AttributeNames.v_Participle);
+							// Divdabjus mēģinam locīt
+							break;
+						}
 						case AttributeNames.v_Punctuation: 
 						case AttributeNames.v_Numeral:
 						case AttributeNames.v_Abbreviation:
@@ -411,6 +419,12 @@ public class Expression {
 						case AttributeNames.v_Noun:
 						case AttributeNames.v_Adjective: {
 							int wordPos = expWords.lastIndexOf(w);
+							if (parenthesis_depth==1 && expWords.getLast().correctWordform.getToken().equalsIgnoreCase(")")
+									&& expWords.size()-wordPos > 2) { // Specapstrāde formai  "Jānis (Andra Bērziņa dēls)"
+								w.isStatic = true;
+								break;
+							}
+							
 							if (expWords.size()-wordPos > 2) { // ja ir 3+ vārdus no beigām...
 								if (!w.correctWordform.isMatchingStrong(AttributeNames.i_NounType, AttributeNames.v_ProperNoun) && // .. īpašvārdus locīsim 
 									!w.correctWordform.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_FirstUpper) && // .. ja sākas ar lielo burtu, gan arī īpašvārds?
@@ -436,6 +450,17 @@ public class Expression {
 					for (ExpressionWord w : expWords)
 						w.isStatic = true;
 					return;
+				}
+				
+				// specgadījums savienotajām valstīm
+				if (expWords.getLast().correctWordform.getToken().equalsIgnoreCase("valstis")) {
+					if (expWords.size() > 1 && expWords.get(expWords.size()-2).correctWordform.getToken().equalsIgnoreCase("savienotās")) {
+						for (ExpressionWord w : expWords)
+							w.isStatic = true;
+						expWords.get(expWords.size()-2).isStatic = false;
+						expWords.get(expWords.size()-1).isStatic = false;
+						return;
+					}
 				}
 				
 				List<ExpressionWord> phraseWords;
@@ -637,7 +662,11 @@ public class Expression {
 				filtrs.removeAttribute(AttributeNames.i_Lemma); // jo reizēm (dzimtes utml) te būscita lemma nekā notagotajā; piemēram vidēja/vidējs
 				
 				matching = false;
-				for(Wordform wf : inflWordforms) {					
+				for (Wordform wf : inflWordforms) {
+					if (forma.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Verb) && 
+						wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adverb))
+						continue; // Lai divdabjiem neuzskata -oši apstākļvārdu par derīgu variantu
+						
 					if (wf.isMatchingWeak(filtrs)) {
 						String token = wf.getToken();
 						if (forma.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_FirstUpper))
@@ -690,20 +719,21 @@ public class Expression {
 					matching = true;
 				}
 				
-				if (debug && forma.getToken().equalsIgnoreCase("xxxxxxxxxxxxxxxxxxx")) {
+				if (debug && forma.getToken().endsWith("institūtā")) {
 					System.err.printf("Debuginfo lokot vārdu %s uz %s\n",forma.getToken(), inflectCase);					
 					System.err.println("Filtrs:");
 					filtrs.describe(new PrintWriter(System.err));
 					System.err.println("Vārds:");
 					forma.describe(new PrintWriter(System.err));
-					System.err.println("Varianti:");
+					System.err.println("Derīgie varianti:");
 					for (Wordform wf : inflWordforms) {
-						wf.describe(new PrintWriter(System.err));
-						System.err.println();
+						if (wf.isMatchingWeak(filtrs)) {
+							wf.describe(new PrintWriter(System.err));
+							System.err.println();
+						}
 					}
 				}
-				
-				
+								
 				if (!matching) {									
 					//FIXME ko likt, ja nav ģenerēti locījumi lokāmajam vārdam (vv no locītāja, neatpazīti svešvārdi)
 					String frāze = "";
