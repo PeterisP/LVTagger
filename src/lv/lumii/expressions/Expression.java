@@ -96,7 +96,12 @@ public class Expression {
 
 		loadUsingTagger(phrase, knownLemma, debug);
 		//loadUsingBestWordform(); alternatīva ja nav tageris
-		setPattern(); // Daļa, kas izdomā, kurus vārdus locīt līdzi galvenajam un kurus atstāt
+		setPattern(knownLemma); // Daļa, kas izdomā, kurus vārdus locīt līdzi galvenajam un kurus atstāt
+		if (debug) {
+			for (ExpressionWord w : expWords) {
+				System.out.printf("%s static : %b\n", w.word.getToken(), w.isStatic);
+			}
+		}
 	}
 		
 	/** 
@@ -109,7 +114,7 @@ public class Expression {
 		for (Word w: tokens) {
 			expWords.add(new ExpressionWord(w, w.getCorrectWordform()));
 		}
-		setPattern();
+		setPattern(false);
 	}
 	
 	public void loadUsingBestWordform(String phrase)
@@ -126,6 +131,11 @@ public class Expression {
 	public void loadUsingTagger(String phrase, boolean knownLemma, boolean debug) 
 	{
 		expWords=new LinkedList<ExpressionWord>();
+		
+		// risinājums frāzēm formā "biedrs-dibinātājs"
+		// FIXME - varbūt šo vispārīgajā locītājā jāienes?
+		if (phrase.matches("\\p{IsLatin}+-\\p{IsLatin}+") &&
+			this.category != Category.hum) phrase = phrase.replace("-", " - ");
 		
 	    List<Word> words = Splitting.tokenize(analyzer, phrase);
 	    for (Word word : words) { // filtrējam variantus, ņemot vērā to ko zinam par frāzi un kategoriju
@@ -383,11 +393,13 @@ public class Expression {
 		}
 	}
 	
-	
-	public void setPattern() //Method adds isStatic attribute to the Expression word, which indicates, whether to inflect the Word
+	/**
+	 * Method fills the isStatic attribute for each Expression word, which indicates whether the Word should be inflected together with the rest of the phrase or kept unchanged
+	 * @param knownLemma - ja true, tad frāze ir 'pamatformā'; ja false - tad kautkādā formā kam jāmeklē pamatforma 
+	 */
+	public void setPattern(boolean knownLemma) //
 	{
 		if (expWords.size() == 0) return;
-		boolean staticWhile=false;
 		
 		switch(category)
 		{
@@ -463,7 +475,7 @@ public class Expression {
 					}
 				}
 				
-				List<ExpressionWord> phraseWords;
+				List<ExpressionWord> phraseWords; // izveidojam listi, kur tad ir tieši lokāmā frāzes daļa (noun phrase tipiski) 
 				if (expWords.getLast().correctWordform.getToken().equalsIgnoreCase("\"")) {
 					// piemēram 'sabiedrība "trīs ali" ' - to kas pēdiņās, to nelokam bet 'galva' ir pirms pēdiņām
 					boolean otrapēdiņa = false;
@@ -476,6 +488,19 @@ public class Expression {
 						if (expWords.get(j).correctWordform.getToken().equalsIgnoreCase("\""))
 							otrapēdiņa = true;
 					}
+				} else if (knownLemma && expWords.getLast().correctWordform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Locative)) {
+					// frāzes, kuru beigās ir paskaidrojošā daļa - "kaut kas yyy jautājumos", "kaut kas Dānijā" utml
+					boolean atradāmgalvu = false;
+					phraseWords = new LinkedList<ExpressionWord>();
+					for (int j = expWords.size()-1; j>=0; j--) {
+						if (expWords.get(j).correctWordform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Nominative))
+							atradāmgalvu = true;
+						
+						if (!atradāmgalvu) 
+							expWords.get(j).isStatic = true;
+						else
+							phraseWords.add(0, expWords.get(j)); // insertojam sākumā
+					}
 				} else phraseWords = (List<ExpressionWord>) expWords.clone();
 				
 				boolean esampēdiņās = false; // Arī ja pa vidu ir pēdiņas, tad to kas pa vidu to nelokam
@@ -484,34 +509,41 @@ public class Expression {
 					if (w.word.isRecognized()==false || esampēdiņās) {
 						w.isStatic=true;
 						continue;
-					}
-					
+					}					
 					if (w.correctWordform.getToken().equalsIgnoreCase("\""))
-						esampēdiņās = true;							
+						esampēdiņās = true;					
+					int wordPos = phraseWords.lastIndexOf(w);
 					
 					switch (w.correctWordform.getValue(AttributeNames.i_PartOfSpeech)) {
-						case AttributeNames.v_Noun: {
-							if (phraseWords.lastIndexOf(w)!=phraseWords.size()-1) {
-								w.isStatic=true;
+						case AttributeNames.v_Noun:
+						case AttributeNames.v_Adjective: {							
+							if (wordPos == phraseWords.size()-1) {
+								w.isStatic = false; // NP beigās parasti ir 'galva', kuru loka 
 								break;
-							}
-							w.isStatic=false;
-							break;
-						}
-						case AttributeNames.v_Adjective: {
-							int wordPos = phraseWords.lastIndexOf(w);
-							// ja īpašības vārds saskaņojas ar "galveno" vārdu, tad loka līdzi,ja ne, tad ir statisks.
-							if (wordPos == phraseWords.size()-2) {
-								w.isStatic = false; // ja viņš ir priekšpēdējais, tad, pieņemot ka pēdējais ir lietvārds, lokam 
+							}		
+							if (w.word.getToken().startsWith("augstāk")) {
+								w.isStatic = false; // augstākā ir jāloka arī tad ja tageris nesaprot 
 								break;
-							}
-							if (wordPos == phraseWords.size()-3) {
+							}	
+							if (w.correctWordform.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adjective) && wordPos < phraseWords.size()-2) {
 								w.isStatic = !phraseWords.get(phraseWords.size()-2).correctWordform.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adjective);
 								// ja nu ir vēl viens cits īpašības vārds pa vidu (vidējā speciālā izglītība) tad arī der, savādāk gan ne
 								break;
 							}
-							// nu un ja kautkas cits, tad laikam ir statisks
-							w.isStatic = true; 
+							if (w.correctWordform.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) && 
+								w.correctWordform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Genitive)) {
+								w.isStatic = true;
+								// lietvārda ģenitīva frāzes tipiskais lietojums ir paskaidrot un nelocīties līdzi (Ludzas pilsētas -> Ludzas pilsēta)
+								break;
+							}
+							if (w.correctWordform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Nominative)) {
+								w.isStatic = false;
+								// Nominatīvs vienmēr paskaidro - pat ja 'saskaņošanās' kritērijs feilo jo tageris nesaprata
+								break;
+							}
+							
+							w.isStatic = !w.correctWordform.isMatchingStrong(AttributeNames.i_Case, phraseWords.get(phraseWords.size()-1).correctWordform.getValue(AttributeNames.i_Case));
+							// vai vārds iedotajā frāzē saskaņojas ar "galveno" vārdu - ja jā, tad loka līdzi,ja ne, tad ir statisks.								
 							break;
 						}
 						case AttributeNames.v_Verb:
@@ -610,6 +642,20 @@ public class Expression {
 					// ja nav daudzskaitlinieks, tad ņemsim ka vienskaitļa formu
 					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Singular);
 				}
+				//FIXME - vai visiem vai pēdējam? Un profesija te domāta, nevis jebkas, varbūt tas ir īpaši jāatlasa
+				if (category==Category.other || w.word.getToken().startsWith("apvienīb")) {
+					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Singular);
+				}
+				if (expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("spēle")) {
+					// ne vienmēr daudzskaitlinieks, bet notikumu/organizāciju kontekstā (piem. "Olimpiskās spēles") gan
+					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Plural);
+				}
+				if (expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("valsts") && 
+					expWords.getLast().correctWordform.isMatchingStrong(AttributeNames.i_Number, AttributeNames.v_Plural)) {
+					// ne vienmēr daudzskaitlinieks, bet notikumu/organizāciju kontekstā (piem. "Olimpiskās spēles") gan
+					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Plural);
+				}
+				
 				//filtrs.removeAttribute(AttributeNames.i_Definiteness);
 				if (forma.isMatchingStrong(AttributeNames.i_Definiteness, AttributeNames.v_Indefinite))
 					filtrs.removeAttribute(AttributeNames.i_PartOfSpeech); // OOV gadījumā nevar nošķirt lietvārdus no nenoteiktajiem īpašības vārdiem
@@ -625,10 +671,6 @@ public class Expression {
 					filtrs.removeAttribute(AttributeNames.i_PartOfSpeech); // OOV gadījumā (Turlais) tageris reizem iedod lietvārdu
 					filtrs.removeAttribute(AttributeNames.i_Declension);
 					filtrs.removeAttribute(AttributeNames.i_Lemma); // jo lemma ir turls nevis turlais
-				}
-				//FIXME - vai visiem vai pēdējam? Un profesija te domāta, nevis jebkas, varbūt tas ir īpaši jāatlasa
-				if (category==Category.other || w.word.getToken().startsWith("apvienīb")) {
-					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Singular);
 				}
 				if (w.word.getToken().startsWith("vēlēšan") // izņēmums lai nemēģina vienskaitļa variantus par vēlēšanu likt
 					|| w.word.getToken().equalsIgnoreCase("Salas") || w.word.getToken().equalsIgnoreCase("Salās")) { 
@@ -719,7 +761,7 @@ public class Expression {
 					matching = true;
 				}
 				
-				if (debug && forma.getToken().endsWith("institūtā")) {
+				if (debug && matching) {
 					System.err.printf("Debuginfo lokot vārdu %s uz %s\n",forma.getToken(), inflectCase);					
 					System.err.println("Filtrs:");
 					filtrs.describe(new PrintWriter(System.err));
@@ -768,6 +810,7 @@ public class Expression {
 		    System.err.println("]");
 		}
 		if (inflectedPhrase.endsWith(" .")) inflectedPhrase = inflectedPhrase.substring(0, inflectedPhrase.length()-2) + ".";
+		inflectedPhrase = inflectedPhrase.replace(" - ", "-"); // postprocessing gadījumam "biedrs-kandidāts" utml
 		return inflectedPhrase.trim();
 	}
 

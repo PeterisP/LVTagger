@@ -78,8 +78,10 @@ public class PhraseInflectionTest
 	@Test
 	public void test5() throws Exception
 	{
-		Expression e = new Expression("Latvija tēla veidošanas institūtā", null, false, true);
-		assertEquals("Latvija tēla veidošanas institūts", e.inflect("Nominatīvs", true));
+		Expression e = new Expression("Latvija tēla veidošanas institūtā", null, false, false);
+		assertEquals("Latvija tēla veidošanas institūts", e.inflect("Nominatīvs", false));
+		// Tageris spītīgi izdomā, ka 'institūtā' ir sieviešu dzimte (jo pārējie 3 vārdi sieviešu). 
+		// Jāuzlabo tageris, dodot treniņdatos pareizu entīšu paraugus.
 	}
 	
 	@Test
@@ -219,7 +221,7 @@ public class PhraseInflectionTest
 				new Expression("ANO", null, true).normalize());
 
 		assertEquals("veiksmīga atgriešanās", 
-				new Expression("veiksmīgu atgriešanos", null, false).normalize());		
+				new Expression("veiksmīgu atgriešanos", null, false, false).inflect(AttributeNames.v_Nominative, false));		
 	}
 
 	@Test
@@ -505,8 +507,26 @@ public class PhraseInflectionTest
 				new Expression("Aija Krištopane", "person", true, false).gender);
 		
 		assertEquals(Gender.feminine, 
-				new Expression("Ieva Bondare", "person", true, true).gender);
+				new Expression("Ieva Bondare", "person", true, false).gender);
 
+	}
+	
+	@Test
+	public void defises() throws Exception {
+		assertEquals("biedram-kandidātam", 
+				new Expression("biedrs-kandidāts", "xxx", true, false).inflect(AttributeNames.v_Dative));
+	}
+	
+	@Test
+	public void lokatīvnieki() throws Exception {
+		assertEquals("Latvijas Republikas vēstniecībai Dānijā", 
+				new Expression("Latvijas Republikas vēstniecība Dānijā", "organization", true, false).inflect(AttributeNames.v_Dative));
+		
+		assertEquals("direktora vietniecei mācību darbā", 
+				new Expression("direktora vietniece mācību darbā", "organization", true, false).inflect(AttributeNames.v_Dative));
+		
+		assertEquals("padomniekam ārlietu jautājumos", 
+				new Expression("padomnieks ārlietu jautājumos", "organization", true, false).inflect(AttributeNames.v_Dative));		
 	}
 		
 	@Test 
@@ -524,4 +544,10 @@ public class PhraseInflectionTest
 				new Expression("Amerikas Savienotās Valstis", "location", true).inflect(AttributeNames.v_Dative));
 	}
 	
+	
+	@Test 
+	public void LETA_veelmes_uz_20150215() throws Exception {
+		assertEquals("Olimpiskajām spēlēm", 
+				new Expression("Olimpiskās spēles", "xxx", true, false).inflect(AttributeNames.v_Dative, false));
+	}
 }
