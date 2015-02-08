@@ -528,6 +528,16 @@ public class PhraseInflectionTest
 		assertEquals("padomniekam ārlietu jautājumos", 
 				new Expression("padomnieks ārlietu jautājumos", "organization", true, false).inflect(AttributeNames.v_Dative));		
 	}
+	
+	@Test
+	public void pēdiņas() throws Exception {
+		assertEquals("\" Mis Foto \" titulam", 
+				new Expression("\"Mis Foto\" tituls", null, true, true).inflect(AttributeNames.v_Dative));
+		
+		assertEquals("raidījuma \" Nedēļa \" vadītājai", 
+				new Expression("raidījuma \"Nedēļa\" vadītāja", null, true, false).inflect(AttributeNames.v_Dative));
+	}
+	
 		
 	@Test 
 	public void LETA_personas_20150126() throws Exception {

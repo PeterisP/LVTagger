@@ -506,12 +506,12 @@ public class Expression {
 				boolean esampēdiņās = false; // Arī ja pa vidu ir pēdiņas, tad to kas pa vidu to nelokam
 				for (ExpressionWord w : phraseWords)
 				{
+					if (w.correctWordform.getToken().equalsIgnoreCase("\""))
+						esampēdiņās = !esampēdiņās;					
 					if (w.word.isRecognized()==false || esampēdiņās) {
 						w.isStatic=true;
 						continue;
 					}					
-					if (w.correctWordform.getToken().equalsIgnoreCase("\""))
-						esampēdiņās = true;					
 					int wordPos = phraseWords.lastIndexOf(w);
 					
 					switch (w.correctWordform.getValue(AttributeNames.i_PartOfSpeech)) {
