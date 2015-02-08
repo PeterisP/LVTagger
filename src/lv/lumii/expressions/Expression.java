@@ -515,8 +515,16 @@ public class Expression {
 					int wordPos = phraseWords.lastIndexOf(w);
 					
 					switch (w.correctWordform.getValue(AttributeNames.i_PartOfSpeech)) {
+						case AttributeNames.v_Verb:
+							if (!w.correctWordform.isMatchingStrong(AttributeNames.i_Izteiksme, AttributeNames.v_Participle)) {
+								w.isStatic=true;
+								break;
+							}
+							// otherwise (for participles) fall through to the noun/adjective treatment
+						
 						case AttributeNames.v_Noun:
-						case AttributeNames.v_Adjective: {							
+						case AttributeNames.v_Adjective: 
+						case AttributeNames.v_Numeral: {							
 							if (wordPos == phraseWords.size()-1) {
 								w.isStatic = false; // NP beigās parasti ir 'galva', kuru loka 
 								break;
@@ -525,11 +533,11 @@ public class Expression {
 								w.isStatic = false; // augstākā ir jāloka arī tad ja tageris nesaprot 
 								break;
 							}	
-							if (w.correctWordform.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adjective) && wordPos < phraseWords.size()-2) {
-								w.isStatic = !phraseWords.get(phraseWords.size()-2).correctWordform.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adjective);
-								// ja nu ir vēl viens cits īpašības vārds pa vidu (vidējā speciālā izglītība) tad arī der, savādāk gan ne
-								break;
-							}
+//							if (w.correctWordform.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adjective) && wordPos < phraseWords.size()-2) {
+//								w.isStatic = !phraseWords.get(phraseWords.size()-2).correctWordform.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adjective);
+//								// ja nu ir vēl viens cits īpašības vārds pa vidu (vidējā speciālā izglītība) tad arī der, savādāk gan ne
+//								break;
+//							}
 							if (w.correctWordform.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) && 
 								w.correctWordform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Genitive)) {
 								w.isStatic = true;
@@ -545,10 +553,8 @@ public class Expression {
 							w.isStatic = !w.correctWordform.isMatchingStrong(AttributeNames.i_Case, phraseWords.get(phraseWords.size()-1).correctWordform.getValue(AttributeNames.i_Case));
 							// vai vārds iedotajā frāzē saskaņojas ar "galveno" vārdu - ja jā, tad loka līdzi,ja ne, tad ir statisks.								
 							break;
-						}
-						case AttributeNames.v_Verb:
-						case AttributeNames.v_Punctuation: 
-						case AttributeNames.v_Numeral:
+						}						
+						case AttributeNames.v_Punctuation: 						
 						case AttributeNames.v_Abbreviation:
 						case AttributeNames.v_Preposition:
 						case AttributeNames.v_Pronoun: { // TODO - vietniekvārdus teorētiski var locīt, taču netriviāli jo tie ir hardcoded 
@@ -650,7 +656,8 @@ public class Expression {
 					// ne vienmēr daudzskaitlinieks, bet notikumu/organizāciju kontekstā (piem. "Olimpiskās spēles") gan
 					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Plural);
 				}
-				if (expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("valsts") && 
+				if ((expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("valsts") ||
+					 expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("spēks")  ) &&
 					expWords.getLast().correctWordform.isMatchingStrong(AttributeNames.i_Number, AttributeNames.v_Plural)) {
 					// ne vienmēr daudzskaitlinieks, bet notikumu/organizāciju kontekstā (piem. "Olimpiskās spēles") gan
 					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Plural);
