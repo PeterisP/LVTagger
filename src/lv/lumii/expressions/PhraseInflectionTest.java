@@ -224,16 +224,19 @@ public class PhraseInflectionTest
 		
 		assertEquals("ANO", 
 				new Expression("ANO", null, true).normalize());
+
+		assertEquals("sabiedriskajām attiecībām", 
+				new Expression("sabiedriskās attiecības", null, true, false).inflect(AttributeNames.v_Dative, false));
+		
+		assertEquals("starpkultūru sakariem", 
+				new Expression("starpkultūru sakari", null, true, false).inflect(AttributeNames.v_Dative, false));
 	}
 	
 	@Test
 	public void nemācētie() throws Exception
 	{		
-		assertEquals("sabiedriskajām attiecībām", 
-				new Expression("sabiedriskās attiecības", null, true, false).inflect(AttributeNames.v_Dative, false));
-
 		assertEquals("veiksmīga atgriešanās", 
-				new Expression("veiksmīgu atgriešanos", null, false, false).inflect(AttributeNames.v_Nominative, false));		
+				new Expression("veiksmīgu atgriešanos", null, false, false).inflect(AttributeNames.v_Nominative, false));
 	}
 
 	@Test

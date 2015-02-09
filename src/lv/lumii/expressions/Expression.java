@@ -652,7 +652,9 @@ public class Expression {
 				if (category==Category.other || w.word.getToken().startsWith("apvienīb")) {
 					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Singular);
 				}
-				if (expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("spēle")) {
+				if (expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("spēle") ||
+					expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("sakars") ||	
+					expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("attiecības")) {
 					// ne vienmēr daudzskaitlinieks, bet notikumu/organizāciju kontekstā (piem. "Olimpiskās spēles") gan
 					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Plural);
 				}
@@ -705,8 +707,12 @@ public class Expression {
 					lemma_filtrs.removeAttribute(AttributeNames.i_Number);
 					lemma_filtrs.removeAttribute(AttributeNames.i_Definiteness);
 					inflWordforms=analyzer.generateInflections(forma.getValue(AttributeNames.i_Lemma),false, lemma_filtrs);
-				} else 
-					inflWordforms=analyzer.generateInflections(forma.lexeme, w.word.getToken());
+				} else {
+					inflWordforms=analyzer.generateInflections(forma.lexeme, w.word.getToken()); 
+					//FIXME - kāpēc tur ir tokens nevis lemma? Šis varbūt rada 'atgriešanos' normalizācijas problēmu
+					// varbūt vajag inflWordforms=analyzer.generateInflections(forma.lexeme, w.correctWordform.getValue(AttributeNames.i_Lemma));
+				}
+					
 				
 				filtrs.removeAttribute(AttributeNames.i_Lemma); // jo reizēm (dzimtes utml) te būscita lemma nekā notagotajā; piemēram vidēja/vidējs
 				
