@@ -553,6 +553,12 @@ public class PhraseInflectionTest
 				new Expression("raidījuma \"Nedēļa\" vadītāja", null, true, false).inflect(AttributeNames.v_Dative));
 	}
 	
+	@Test
+	public void šanās() throws Exception {
+		assertEquals("šķīrušās", 
+				new Expression("šķīrusies", null, true, false).inflect(AttributeNames.v_Genitive, true));
+	}
+	
 	@Test 
 	public void Ilzes_todo() throws Exception {
 		assertEquals("Apvienotajam štābam", 
