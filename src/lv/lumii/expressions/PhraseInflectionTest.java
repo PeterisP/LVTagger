@@ -599,7 +599,14 @@ public class PhraseInflectionTest
 		
 		assertEquals("Amerikas Savienotajām Valstīm", 
 				new Expression("Amerikas Savienotās Valstis", "location", true).inflect(AttributeNames.v_Dative));
+	}
+	
+	@Test 
+	public void atkal_ģenitīvi() throws Exception {
+		assertEquals("Saldus novadā", 
+				new Expression("Saldus novads", "location", true, true).inflect(AttributeNames.v_Locative));
 	}	
+
 	
 	@Test 
 	public void LETA_veelmes_uz_20150215() throws Exception {

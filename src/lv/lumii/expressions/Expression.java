@@ -544,9 +544,17 @@ public class Expression {
 								// lietvārda ģenitīva frāzes tipiskais lietojums ir paskaidrot un nelocīties līdzi (Ludzas pilsētas -> Ludzas pilsēta)
 								break;
 							}
+							if (w.correctWordform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Nominative) &&
+									phraseWords.get(phraseWords.size()-1).correctWordform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Nominative) &&
+									(w.correctWordform.isMatchingStrong(AttributeNames.i_Declension, "3") ||
+									w.correctWordform.isMatchingStrong(AttributeNames.i_Declension, "6")) ) {
+								// specgadījums tiem, kur reāli ir ģenitīva paskaidrotāji bet tageris izdomā kā nominatīvu - Saldus novads -> Saldus novadā
+								w.isStatic = true; 
+								break;
+							}
+
 							if (w.correctWordform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Nominative)) {
-								w.isStatic = false;
-								// Nominatīvs vienmēr paskaidro - pat ja 'saskaņošanās' kritērijs feilo jo tageris nesaprata
+								w.isStatic = false; // Nominatīvs vienmēr paskaidro - pat ja 'saskaņošanās' kritērijs feilo jo tageris nesaprata
 								break;
 							}
 							
