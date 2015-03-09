@@ -19,9 +19,14 @@ package lv.lumii.ner;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+
+import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ie.ListNERSequenceClassifier;
@@ -48,7 +53,7 @@ public class NerPipe {
 	private static String defaultCrfClassifier; // = "lv-ner-model.ser.gz" removed for testing, use loadClassifier in properties file
 	
 	@SuppressWarnings("unchecked")
-	NerPipe(Properties props) throws ClassCastException, ClassNotFoundException, IOException {
+	public NerPipe(Properties props) throws ClassCastException, ClassNotFoundException, IOException {
 		this.props = props;
 		initializeFromProperties();
 		
@@ -67,11 +72,11 @@ public class NerPipe {
 		this.classifier = classifier;
 	}
 	
-	NerPipe (Properties props, AbstractSequenceClassifier<CoreLabel> classifier) throws FileNotFoundException {
+	public NerPipe (Properties props, AbstractSequenceClassifier<CoreLabel> classifier) throws FileNotFoundException {
 		this(props, new NERClassifierCombiner(classifier));
 	}
 	
-	NerPipe(Properties props, NERClassifierCombiner nerClassifier) {
+	public NerPipe(Properties props, NERClassifierCombiner nerClassifier) {
 		this.props = props;
 		classifier = nerClassifier;
 		defaultReaderWriter = new LVCoNLLDocumentReaderAndWriter();
@@ -96,8 +101,12 @@ public class NerPipe {
 	
 	}
 	
-	void setReaderWriter(DocumentReaderAndWriter<CoreLabel> readerWriter) {
+	public void setReaderWriter(DocumentReaderAndWriter<CoreLabel> readerWriter) {
 		this.defaultReaderWriter = readerWriter;
+	}
+	
+	public DocumentReaderAndWriter<CoreLabel> getReaderWriter() {
+		return this.defaultReaderWriter;
 	}
 	
 	public void classifyDocumentStdin(DocumentReaderAndWriter<CoreLabel> readerWriter)
@@ -110,14 +119,14 @@ public class NerPipe {
 		classifyDocumentStdin(defaultReaderWriter);
 	}
 	
-	List<CoreLabel> classify(List<CoreLabel> document) {
+	public List<CoreLabel> classify(List<CoreLabel> document) {
 		classifier.classify(document);
 		return document;
 	}
 	
-	ObjectBank<List<CoreLabel>> classify(ObjectBank<List<CoreLabel>> documents) {
+	public ObjectBank<List<CoreLabel>> classify(ObjectBank<List<CoreLabel>> documents) {
 		for (List<CoreLabel> doc : documents) {
-			System.out.println(doc);
+			//System.out.println(doc);
 		    classifier.classify(doc);
 		}
 		return documents;
@@ -133,7 +142,28 @@ public class NerPipe {
 		return res;
 	}
 	
-	void writeAnswers(List<CoreLabel> doc, DocumentReaderAndWriter<CoreLabel> writer) {
+	
+	public String getAnswerString(List<CoreLabel> doc) {
+		return getAnswerString(doc, defaultReaderWriter);
+	}
+	
+	public String getAnswerString(List<CoreLabel> doc, DocumentReaderAndWriter<CoreLabel> rw) {
+		ByteOutputStream bos = new ByteOutputStream();
+		PrintWriter printer = new PrintWriter(bos);
+		rw.printAnswers(doc, printer);
+		return bos.toString();
+	}
+	
+	public void writeAnswers(List<CoreLabel> doc) {
+		try {
+			classifier.writeAnswers(doc,
+			        IOUtils.encodedOutputStreamPrintWriter(System.out, "utf-8", true), defaultReaderWriter);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void writeAnswers(List<CoreLabel> doc, DocumentReaderAndWriter<CoreLabel> writer) {
 		try {
 			classifier.writeAnswers(doc,
 			        IOUtils.encodedOutputStreamPrintWriter(System.out, "utf-8", true), writer);
@@ -142,7 +172,7 @@ public class NerPipe {
 		}
 	}
 	
-	void writeAnswers(ObjectBank<List<CoreLabel>> documents, DocumentReaderAndWriter<CoreLabel> writer) {
+	public void writeAnswers(ObjectBank<List<CoreLabel>> documents, DocumentReaderAndWriter<CoreLabel> writer) {
 		try {
 			for(List<CoreLabel> doc : documents) {
 				classifier.writeAnswers(doc,
