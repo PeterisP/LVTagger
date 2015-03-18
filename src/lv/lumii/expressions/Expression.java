@@ -75,6 +75,10 @@ public class Expression {
 		}
 	}
 	
+	public static Analyzer getAnalyzer() {
+		return analyzer;
+	}
+	
 	/*
 	 * Izveido frāzi no teksta, pirms tam to notagojot ar morfotageri
 	 * @param phrase - pati frāze
