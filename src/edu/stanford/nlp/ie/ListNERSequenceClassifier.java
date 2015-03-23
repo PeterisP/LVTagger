@@ -36,7 +36,9 @@ public class ListNERSequenceClassifier extends AbstractSequenceClassifier<CoreLa
 
 	private Set<String> myLabels;
 
-	private boolean ignoreCase;
+	private boolean ignoreCase = false;
+	
+	private boolean useLemmas = false;
 	
 	private static String quotes = "\"'`´(){}<>«»[]‘’‛“”„‟′″‴‹›";
 
@@ -47,11 +49,12 @@ public class ListNERSequenceClassifier extends AbstractSequenceClassifier<CoreLa
 	 * @param mapping
 	 * @param ignoreCase
 	 */
-	public ListNERSequenceClassifier(String mapping, boolean ignoreCase, boolean overwriteMyLabels) {
+	public ListNERSequenceClassifier(String mapping, boolean ignoreCase, boolean useLemmas, boolean overwriteMyLabels) {
 		super(new Properties());
 		entries = new HashMap<>();
 		this.ignoreCase = ignoreCase;
 		this.overwriteMyLabels = overwriteMyLabels;
+		this.useLemmas = useLemmas;
 		String[] mappings = mapping.split(",");
 		myLabels = new HashSet<String>();
 		for (String map : mappings) {
@@ -62,16 +65,19 @@ public class ListNERSequenceClassifier extends AbstractSequenceClassifier<CoreLa
 		//System.err.println("RegexNERSequenceClassifier using labels: " + myLabels);
 	}
 
-	public static String token(CoreLabel w) {
-	String lemma = w.lemma();
-	String token = w.word();
-	Character cLemma = lemma.charAt(0);
-	Character cToken = token.charAt(0);
-	if (Character.isUpperCase(cToken) != Character.isUpperCase(cLemma)) {
-		lemma = token.substring(0,1) + lemma.substring(1);
-	}
-	return lemma;
-		
+	public String token(CoreLabel w) {
+		String lemma = w.lemma();
+		String token = w.word();
+//		if (useLemmas && !ignoreCase && lemma != null && token != null && lemma.length() > 0 && token.length() > 0) {
+//			// aizvieto lemmas pirmo burtu ar vārda pirmo burtu
+//			if (Character.isUpperCase(token.charAt(0)) != Character.isUpperCase(lemma.charAt(0))) {
+//				lemma = token.substring(0,1) + lemma.substring(1);
+//			}
+//		}
+		if (useLemmas)
+			return ignoreCase ? lemma.toLowerCase() : lemma;
+		else
+			return ignoreCase ? token.toLowerCase() : token;
 	}
 
 	private static class Entry {
@@ -226,7 +232,9 @@ public class ListNERSequenceClassifier extends AbstractSequenceClassifier<CoreLa
 				if (split.length < 2 || split.length > 4)
 					throw new RuntimeException("Provided mapping file is in wrong format");
 				if (split[1].trim().equalsIgnoreCase("AS")) System.err.println("ERRRR " + mapping + "|" + line + " at " + lineCount);
-				String[] words = split[1].trim().split("\\s+");
+				String stringLine = split[1].trim();
+				if (ignoreCase) stringLine = stringLine.toLowerCase();
+				String[] words = stringLine.split("\\s+");
 				String type = split[0].trim();
 				Set<String> overwritableTypes = new HashSet<String>();
 				overwritableTypes.add(flags.backgroundSymbol);

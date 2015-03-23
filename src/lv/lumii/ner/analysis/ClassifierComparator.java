@@ -313,7 +313,7 @@ public class ClassifierComparator {
 					System.err.println("\t"+ part);
 					if (items[0].equalsIgnoreCase("whiteList")) {
 						System.err.println("\twhiteList" + items[1]);
-						nccl.add(new ListNERSequenceClassifier(items[1], true, true));
+						nccl.add(new ListNERSequenceClassifier(items[1], true, true, true));
 					}
 					if (items[0].equalsIgnoreCase("loadClassifier")) {
 						System.err.println("\tloadClassifier" + items[1]);
@@ -333,7 +333,7 @@ public class ClassifierComparator {
 			String whiteLists[] = whiteListString.split(";");
 			for (String whiteList : whiteLists) {
 				whiteList = whiteList.trim();
-				cc.addClassifier(new ListNERSequenceClassifier(whiteList, true, true));
+				cc.addClassifier(new ListNERSequenceClassifier(whiteList, true, true, true));
 			}
 		}
 		

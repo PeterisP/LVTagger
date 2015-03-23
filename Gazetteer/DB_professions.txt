@@ -1,14 +1,13 @@
-profession	 basketbolists 
-profession	 valde priekšsēdētājs 
-profession	 vadītājs 
-profession	 padome loceklis 
-profession	 finansists 
-profession	 skolotājs 
-profession	 bibliotekārs 
-profession	 deputāts 
-profession	 dzejnieks 
-profession	 publicists 
-profession	 politiķis 
-profession	 valde loceklis 
-profession	 sabiedriska attiecības pārstāve 
-profession	 mazgāšanās un ķermenis kopšana līdzeklis ražošana un tirdzniecība 
+profession	basketbolists
+profession	valde priekšsēdētājs
+profession	vadītājs
+profession	padome loceklis
+profession	finansists
+profession	skolotājs
+profession	bibliotekārs
+profession	deputāts
+profession	dzejnieks
+profession	publicists
+profession	politiķis
+profession	valde loceklis
+profession	sabiedriska attiecības pārstāve

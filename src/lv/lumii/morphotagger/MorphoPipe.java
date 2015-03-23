@@ -57,9 +57,9 @@ public class MorphoPipe {
 	
 	private static boolean mini_tag = false;		
 	private static boolean features = false;	
-	private static boolean LETAfeatures = false;	
-	private static inputTypes inputType = inputTypes.SENTENCE;
-	private static outputTypes outputType = outputTypes.JSON;
+	private static boolean LETAfeatures = true;	
+	private static inputTypes inputType = inputTypes.PARAGRAPH;
+	private static outputTypes outputType = outputTypes.CONLL_X;
 	private static int sentencelengthcap = Splitting.DEFAULT_SENTENCE_LENGTH_CAP;
 	private static boolean saveColumns = false;
 	
@@ -175,7 +175,7 @@ public class MorphoPipe {
 	 * @param out - a stream to output the data
 	 * @param sentence - actual tokens to be output
 	 */
-	private static void processSentences(
+	public static void processSentences(
 			CMMClassifier<CoreLabel> cmm, PrintStream out, String text) {
 		
 		if (inputType == inputTypes.PARAGRAPH) { // split in multiple sentences
@@ -192,7 +192,7 @@ public class MorphoPipe {
 	 * @param out - a stream to output the data
 	 * @param sentence - actual tokens to be output
 	 */
-	private static void outputSentence(CMMClassifier<CoreLabel> cmm,
+	public static void outputSentence(CMMClassifier<CoreLabel> cmm,
 			PrintStream out, List<CoreLabel> sentence) {
 		sentence = cmm.classify(sentence); // runs the actual morphotagging system
 		switch (outputType) {
@@ -546,4 +546,5 @@ public class MorphoPipe {
 	    		
 		return result;
 	}
+
 }	
