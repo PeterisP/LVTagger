@@ -68,15 +68,17 @@ public class ListNERSequenceClassifier extends AbstractSequenceClassifier<CoreLa
 	public String token(CoreLabel w) {
 		String lemma = w.lemma();
 		String token = w.word();
-//		if (useLemmas && !ignoreCase && lemma != null && token != null && lemma.length() > 0 && token.length() > 0) {
-//			// aizvieto lemmas pirmo burtu ar vārda pirmo burtu
-//			if (Character.isUpperCase(token.charAt(0)) != Character.isUpperCase(lemma.charAt(0))) {
-//				lemma = token.substring(0,1) + lemma.substring(1);
-//			}
-//		}
-		if (useLemmas)
-			return ignoreCase ? lemma.toLowerCase() : lemma;
-		else
+		if (useLemmas) {
+			if (ignoreCase) {
+				return lemma.toLowerCase();
+			} else {
+				if (Character.isUpperCase(token.charAt(0)) != Character.isUpperCase(lemma.charAt(0))) {
+					// TODO measure impact of this (sentence starting words can be wrongly made as upper case word)
+					lemma = token.substring(0, 1) + lemma.substring(1);
+				}
+				return lemma;
+			}
+		} else
 			return ignoreCase ? token.toLowerCase() : token;
 	}
 

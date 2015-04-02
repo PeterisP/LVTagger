@@ -115,6 +115,46 @@ public class NerTest {
 		test(doc, 1, "organization");
 	}
 	
+	@Test
+	public void test_katra() {
+		String s = "katra";
+		List<CoreLabel> doc = classifyString(s);
+		print(doc);
+		test(doc, 0, "O");
+	}
+	
+	@Test
+	public void test_mūsu() {
+		String s = "mūsu";
+		List<CoreLabel> doc = classifyString(s);
+		print(doc);
+		test(doc, 0, "O");
+	}
+	
+	@Test
+	public void test_sacija() {
+		String s = "sacīja";
+		List<CoreLabel> doc = classifyString(s);
+		print(doc);
+		test(doc, 0, "O");
+	}
+	
+	@Test
+	public void test_sacija2() {
+		String s = "viņš sacīja";
+		List<CoreLabel> doc = classifyString(s);
+		print(doc);
+		test(doc, 1, "O");
+	}
+	
+	@Test
+	public void test_var_klut() {
+		String s = "var kļūt";
+		List<CoreLabel> doc = classifyString(s);
+		print(doc);
+		test(doc, 0, "O");
+	}
+	
 	
 	
 	public static void print(List<CoreLabel> doc) {
