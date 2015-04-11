@@ -19,8 +19,6 @@ package lv.lumii.expressions;
 
 import static org.junit.Assert.*;
 
-import java.io.PrintWriter;
-
 import lv.lumii.expressions.Expression.Gender;
 import lv.semti.morphology.analyzer.Analyzer;
 import lv.semti.morphology.attributes.AttributeNames;
@@ -34,14 +32,18 @@ public class PhraseInflectionTest
 {
 //Organizāciju nosaukumu testi
 	@BeforeClass
-	public static void setUpBeforeClass() {
-		LVMorphologyReaderAndWriter.initAnalyzer();
-		LVMorphologyReaderAndWriter.getAnalyzer().guessInflexibleNouns = true;
-		LVMorphologyReaderAndWriter.getAnalyzer().guessVerbs = false;
-		
-		//TODO - šie settingi ir kopēti no webservisa, un var izskaidrot atšķirības starp uzvedību tur un testos. Tur būtu jābūt vienādi!
-		//LVMorphologyReaderAndWriter.getAnalyzer().guessAdjectives = false;
-		LVMorphologyReaderAndWriter.getAnalyzer().guessParticiples = false;		
+	public static void setUpBeforeClass() throws Exception {
+		Analyzer analyzer = new Analyzer("dist/Lexicon.xml", false);
+		// WTF - ja ieliek arī onomastiku, tad viss salūzt pilnībā....
+		analyzer.enableVocative = true;
+		analyzer.enableGuessing = true; 
+		analyzer.enablePrefixes = true;
+		analyzer.enableAllGuesses = true; 
+		analyzer.guessParticiples = false;		
+		analyzer.guessInflexibleNouns = true;
+		analyzer.guessVerbs = false;
+		  
+		LVMorphologyReaderAndWriter.setPreloadedAnalyzer(analyzer);		
 	}
 	
 	@Test
@@ -556,7 +558,7 @@ public class PhraseInflectionTest
 	@Test
 	public void šanās() throws Exception {
 		assertEquals("šķīrušās", 
-				new Expression("šķīrusies", null, true, false).inflect(AttributeNames.v_Genitive, true));
+				new Expression("šķīrusies", null, true, false).inflect(AttributeNames.v_Genitive, false));
 	}
 	
 	@Test 
@@ -604,13 +606,44 @@ public class PhraseInflectionTest
 	@Test 
 	public void atkal_ģenitīvi() throws Exception {
 		assertEquals("Saldus novadā", 
-				new Expression("Saldus novads", "location", true, true).inflect(AttributeNames.v_Locative));
+				new Expression("Saldus novads", "location", true, false).inflect(AttributeNames.v_Locative));
+		
+		assertEquals("Saldus novadā", 
+				new Expression("Saldus novads", "organization", true, false).inflect(AttributeNames.v_Locative));
+		
+		assertEquals("Smiltenes novada domē", 
+				new Expression("Smiltenes novada dome", "organization", true, false).inflect(AttributeNames.v_Locative));
+		
+		assertEquals("Ventspils novada domē", 
+				new Expression("Ventspils novada dome", "organization", true, false).inflect(AttributeNames.v_Locative));
+		
+		assertEquals("Tērvetes novada domē", 
+				new Expression("Tērvetes novada dome", "organization", true, false).inflect(AttributeNames.v_Locative));
 	}	
 
+	@Test
+	public void testNormalizeAndraAmbaina() {
+		assertEquals("Andris Ambainis", new Expression("Andra Ambaiņa", "person", false, true).normalize());
+	}
 	
 	@Test 
 	public void LETA_veelmes_uz_20150215() throws Exception {
 		assertEquals("Olimpiskajām spēlēm", 
 				new Expression("Olimpiskās spēles", "xxx", true, false).inflect(AttributeNames.v_Dative, false));
+	}	
+	
+	@Test 
+	public void LETA_veelmes_uz_20150411() throws Exception {
+		assertEquals("Ainai Vītolai", 
+				new Expression("Aina Vītola", "person", true, false).inflect(AttributeNames.v_Dative, false));
+		
+		assertEquals("Inkai Pētersonei", 
+				new Expression("Inka Pētersone", "person", true, false).inflect(AttributeNames.v_Dative, false));
+		
+		assertEquals("Saldus profesionālajai vidusskolai", 
+				new Expression("Saldus profesionālā vidusskola", "organization", true, false).inflect(AttributeNames.v_Dative, false));
+		
+		assertEquals("Jāzepa Vītola Latvijas Mūzikas akadēmijai", 
+				new Expression("Jāzepa Vītola Latvijas Mūzikas akadēmija", "organization", true, false).inflect(AttributeNames.v_Dative, false));
 	}
 }

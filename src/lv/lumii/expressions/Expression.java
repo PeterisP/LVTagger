@@ -549,10 +549,24 @@ public class Expression {
 								break;
 							}
 							if (w.correctWordform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Nominative) &&
+									w.correctWordform.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
 									phraseWords.get(phraseWords.size()-1).correctWordform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Nominative) &&
-									(w.correctWordform.isMatchingStrong(AttributeNames.i_Declension, "3") ||
-									w.correctWordform.isMatchingStrong(AttributeNames.i_Declension, "6")) ) {
+									(w.correctWordform.isMatchingWeak(AttributeNames.i_Declension, "3") ||
+									w.correctWordform.isMatchingWeak(AttributeNames.i_Declension, "6")) ) {
 								// specgadījums tiem, kur reāli ir ģenitīva paskaidrotāji bet tageris izdomā kā nominatīvu - Saldus novads -> Saldus novadā
+								// cēlonis - homoforma sg.nom - sg.gen 
+								w.isStatic = true; 
+								break;
+							}
+							if (w.correctWordform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Nominative) &&
+									w.correctWordform.isMatchingWeak(AttributeNames.i_Number, AttributeNames.v_Plural) &&
+									w.correctWordform.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun) &&
+									phraseWords.get(phraseWords.size()-1).correctWordform.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Nominative) &&
+									phraseWords.get(phraseWords.size()-1).correctWordform.isMatchingStrong(AttributeNames.i_Number, AttributeNames.v_Singular) &&
+									(w.correctWordform.isMatchingWeak(AttributeNames.i_Declension, "4") ||
+									w.correctWordform.isMatchingWeak(AttributeNames.i_Declension, "5")) ) {
+								// specgadījums tiem, kur reāli ir ģenitīva paskaidrotāji bet tageris izdomā kā nominatīvu - Smiltenes novada dome -> Smiltenē novada domē
+								// cēlonis - homoforma pl.nom - sg.gen 
 								w.isStatic = true; 
 								break;
 							}
