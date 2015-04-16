@@ -281,7 +281,7 @@ public class MorphoPipe {
 				String lemma = mainwf.getValue(AttributeNames.i_Lemma);
 				lemma = lemma.replace(' ', '_');
 				String answer = word.getString(AnswerAnnotation.class);
-				if (answer.length() == 0) answer = "_"; // no empty tag
+				if (answer.trim().isEmpty()) answer = "_"; // no empty tag
 				s.append(lemma);
 				s.append('\t');
 				s.append(answer);
