@@ -56,9 +56,11 @@ public class NerPipe {
 		
 		List<AbstractSequenceClassifier<CoreLabel>> classifiers = new ArrayList<>();
 		
-		if (props.containsKey("whiteList")) classifiers.add(new ListNERSequenceClassifier(props.getProperty("whiteList"), false, true, true));
-		if (props.containsKey("whiteListPrecise"))
-			classifiers.add(new ListNERSequenceClassifier(props.getProperty("whiteListPrecise"), true, false, true));
+		if (props.containsKey("whiteListCasedLemmas")) classifiers.add(new ListNERSequenceClassifier(props.getProperty("whiteListUncasedLemmas"), false, true, true));
+		if (props.containsKey("whiteListUncasedWords"))
+			classifiers.add(new ListNERSequenceClassifier(props.getProperty("whiteListUncasedWords"), true, false, true));
+		if (props.containsKey("whiteListCasedWords"))
+			classifiers.add(new ListNERSequenceClassifier(props.getProperty("whiteListCasedWords"), false, false, true));
 		if (defaultCrfClassifier != null) classifiers.add(CRFClassifier.getClassifier(defaultCrfClassifier, props));
 		if (props.containsKey("regexList")) classifiers.add(new RegexNERSequenceClassifier(props.getProperty("regexList"), true, true));
 

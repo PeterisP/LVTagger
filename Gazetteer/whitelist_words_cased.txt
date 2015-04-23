@@ -1,0 +1,4 @@
+person	Vaira Vīķe-Freiberga
+person	Vairu Vīķi-Freibergu
+person	Vairas Vīķes-Freibergas
+person	Vairai Vīķei-Freibergai
