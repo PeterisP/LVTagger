@@ -62,6 +62,8 @@ public class MorphoPipe {
 	private static outputTypes outputType = outputTypes.CONLL_X;
 	private static int sentencelengthcap = Splitting.DEFAULT_SENTENCE_LENGTH_CAP;
 	private static boolean saveColumns = false;
+	private static boolean keepTags = false;
+	private static boolean saveCase = false; // for lemmatized text output format
 	
 	private static String morphoClassifierLocation = "models/lv-morpho-model.ser.gz"; //FIXME - make it configurable
 	
@@ -104,7 +106,8 @@ public class MorphoPipe {
 			if (args[i].equalsIgnoreCase("-visl-cg")) outputType = outputTypes.VISL_CG;
 			if (args[i].equalsIgnoreCase("-lemmatized-text")) outputType = outputTypes.lemmatizedText;
 			if (args[i].equalsIgnoreCase("-saveColumns")) saveColumns = true; //save extra columns from conll input
-			if (args[i].equalsIgnoreCase("-unix-line-endings")) eol="\n"; 
+			if (args[i].equalsIgnoreCase("-unix-line-endings")) eol="\n";
+			if (args[i].equalsIgnoreCase("-keep-tags")) keepTags = true;
 						
 			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
 				System.out.println("LV morphological tagger");
@@ -129,6 +132,7 @@ public class MorphoPipe {
 				System.out.println("\t-leta : in conll output, include extra features used for semantic frame analysis.");
 				System.out.println("\t-saveColumns : save extra columns from conll input.");
 				System.out.println("\t-unix-line-endings : use \\n line endings for output even on windows systems");
+				System.out.println("\t-keep-tags : preserve lines that start with '<' to enable xml-style metadata");
 				System.out.flush();
 				System.exit(0);
 			}
@@ -149,9 +153,14 @@ public class MorphoPipe {
 		    String s;
 		    String sentence = "";
 		    while ((s = in.readLine()) != null && s.length() != 0) {
+		    	if (s.startsWith("<") && s.length()>1 && keepTags) {
+		    		if (outputType != outputTypes.lemmatizedText) out.println(s);
+		    		continue;
+		    	}
 		    	boolean finished = true; // is sentence finished and ready to analyze
-		    	if (inputType != inputTypes.VERT) sentence = s;
-		    	else {
+		    	if (inputType != inputTypes.VERT) {		    		
+		    		sentence = s;
+		    	} else {
 		    		if (s.startsWith("<") && s.length()>1) out.println(s);
 		    		else sentence = sentence + " " + s;
 		    		finished = s.startsWith("</s>");
@@ -331,8 +340,6 @@ public class MorphoPipe {
 	
 	private static String output_lemmatized(List<CoreLabel> tokens, CMMClassifier<CoreLabel> cmm){
 		StringBuilder s = new StringBuilder();
-
-		boolean saveCase = true;
 		
 		for (CoreLabel word : tokens) {
 			String token = word.getString(TextAnnotation.class);
@@ -341,7 +348,7 @@ public class MorphoPipe {
 			
 			Word analysis = word.get(LVMorphologyAnalysis.class);
 			Wordform mainwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false); 
-			if (mainwf != null) {
+			if (mainwf != null && !token.isEmpty()) {
 				String lemma = mainwf.getValue(AttributeNames.i_Lemma);
 				if (saveCase && Character.isUpperCase(token.charAt(0))) lemma = lemma.substring(0,1).toUpperCase() + lemma.substring(1); 
 				lemma = lemma.replace(' ', '_');

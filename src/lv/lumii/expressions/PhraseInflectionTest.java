@@ -623,6 +623,8 @@ public class PhraseInflectionTest
 
 	@Test
 	public void testNormalizeAndraAmbaina() {
+		assertEquals("Andris Vilks", new Expression("Andra Vilka", "person", false, true).normalize());
+		assertEquals("Anda Čakša", new Expression("Anda Čakša", "person", false, true).normalize());
 		assertEquals("Andris Ambainis", new Expression("Andra Ambaiņa", "person", false, true).normalize());
 	}
 	
@@ -646,4 +648,11 @@ public class PhraseInflectionTest
 		assertEquals("Jāzepa Vītola Latvijas Mūzikas akadēmijai", 
 				new Expression("Jāzepa Vītola Latvijas Mūzikas akadēmija", "organization", true, false).inflect(AttributeNames.v_Dative, false));
 	}
+	
+	@Test 
+	public void LETA_gļuks() throws Exception {
+		assertEquals("Aivars Aizkalnieša", 
+				new Expression("Aivara Aizkalnietis", "person", true, false).inflect(AttributeNames.v_Genitive, false));		
+	}
+
 }
