@@ -64,6 +64,7 @@ public class MorphoPipe {
 	private static boolean saveColumns = false;
 	private static boolean keepTags = false;
 	private static boolean saveCase = false; // for lemmatized text output format
+	private static boolean outputSeparators = false; // <s> for sentences, <p> for paragraphs
 	
 	private static String morphoClassifierLocation = "models/lv-morpho-model.ser.gz"; //FIXME - make it configurable
 	
@@ -108,6 +109,7 @@ public class MorphoPipe {
 			if (args[i].equalsIgnoreCase("-saveColumns")) saveColumns = true; //save extra columns from conll input
 			if (args[i].equalsIgnoreCase("-unix-line-endings")) eol="\n";
 			if (args[i].equalsIgnoreCase("-keep-tags")) keepTags = true;
+			if (args[i].equalsIgnoreCase("-output-separators")) outputSeparators = true;
 						
 			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
 				System.out.println("LV morphological tagger");
@@ -125,7 +127,7 @@ public class MorphoPipe {
 				System.out.println("\t-conll-x : CONLL-X shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
 				System.out.println("\t-xml : one xml word per line");
 				System.out.println("\t-visl-cg : output format for VISL constraint grammar tool");
-				System.out.println("\t-lemmatized-text : output lemmatized text, each sentence in new row, tokens seperated by single space");
+				System.out.println("\t-lemmatized-text : output lowercase lemmatized text, each sentence in new row, tokens seperated by single space");
 				System.out.println("\nOther options:");
 				System.out.println("\t-stripped : lexical/nonessential parts of the tag are replaced with '-' to reduce sparsity.");
 				System.out.println("\t-features : in conll output, include the features that were used for training/tagging.");
@@ -133,6 +135,7 @@ public class MorphoPipe {
 				System.out.println("\t-saveColumns : save extra columns from conll input.");
 				System.out.println("\t-unix-line-endings : use \\n line endings for output even on windows systems");
 				System.out.println("\t-keep-tags : preserve lines that start with '<' to enable xml-style metadata");
+				System.out.println("\t-output-separators : put <s></s> sentence markup and <p></p> paragraph markup");
 				System.out.flush();
 				System.exit(0);
 			}
@@ -188,10 +191,14 @@ public class MorphoPipe {
 			CMMClassifier<CoreLabel> cmm, PrintStream out, String text) {
 		
 		if (inputType == inputTypes.PARAGRAPH) { // split in multiple sentences
+			if (outputSeparators) out.println("<p>");
 			LinkedList<LinkedList<Word>> sentences = Splitting.tokenizeSentences(LVMorphologyReaderAndWriter.getAnalyzer(), text, sentencelengthcap);
 			for (LinkedList<Word> sentence : sentences) 
 				outputSentence(cmm, out, LVMorphologyReaderAndWriter.analyzeSentence2(sentence) );
-			out.println();
+			if (outputSeparators) 
+				out.println("</p>");
+			else 
+				out.println();
 		} else outputSentence(cmm, out, LVMorphologyReaderAndWriter.analyzeSentence(text) ); // just a single sentence for other types
 	}
 
@@ -203,6 +210,8 @@ public class MorphoPipe {
 	 */
 	public static void outputSentence(CMMClassifier<CoreLabel> cmm,
 			PrintStream out, List<CoreLabel> sentence) {
+		if (outputSeparators) out.println("<s>");
+		
 		sentence = cmm.classify(sentence); // runs the actual morphotagging system
 		switch (outputType) {
 		case JSON:
@@ -228,6 +237,7 @@ public class MorphoPipe {
 		default: 
 			out.println( output_separated(sentence));	    
 		}
+		if (outputSeparators) out.println("</s>");
 		out.flush();
 	}	
 	
@@ -350,7 +360,8 @@ public class MorphoPipe {
 			Wordform mainwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false); 
 			if (mainwf != null && !token.isEmpty()) {
 				String lemma = mainwf.getValue(AttributeNames.i_Lemma);
-				if (saveCase && Character.isUpperCase(token.charAt(0))) lemma = lemma.substring(0,1).toUpperCase() + lemma.substring(1); 
+				if (saveCase && Character.isUpperCase(token.charAt(0))) lemma = lemma.substring(0,1).toUpperCase() + lemma.substring(1);
+				if (!saveCase) lemma=lemma.toLowerCase();
 				lemma = lemma.replace(' ', '_');
 				s.append(lemma);
 				s.append(' ');
