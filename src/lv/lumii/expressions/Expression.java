@@ -639,198 +639,20 @@ public class Expression {
 	
 	public String inflect(String inflectCase, boolean debug) 
 	{
-//		for (ExpressionWord w : expWords)
-//			System.err.printf("Vārds '%s' būs statisks - '%b'\n", w.word.getToken(), w.isStatic);
-		
 		String inflectedPhrase="";
 		
-		AttributeValues filtrs;
-		HashMap<String,String> attribute_map;
-		Wordform forma, inflected_form;
-		ArrayList<Wordform> inflWordforms;
-		boolean matching = true;
 		for (ExpressionWord w : expWords) {
 			if (w.isStatic==false) {
+				Wordform forma=w.correctWordform; 
+				Wordform phraseLastWord = expWords.getLast().correctWordform;
+
 				if (debug) {
 					System.out.printf("Inflecting word %s\n", w.word.getToken());
 					w.correctWordform.describe();
 				}
 				
-				forma=w.correctWordform; 
-								
-				filtrs = new AttributeValues(forma);
-				filtrs.addAttribute(AttributeNames.i_Case,inflectCase);
-				filtrs.removeAttribute(AttributeNames.i_EndingID);
-				filtrs.removeAttribute(AttributeNames.i_LexemeID);
-				filtrs.removeAttribute(AttributeNames.i_Guess);
-				filtrs.removeAttribute(AttributeNames.i_Mija);
-				filtrs.removeAttribute(AttributeNames.i_CapitalLetters);
-				filtrs.removeAttribute(AttributeNames.i_Source);
-				filtrs.removeAttribute(AttributeNames.i_SourceLemma);
-				filtrs.removeAttribute(AttributeNames.i_Word);
-				filtrs.removeAttribute(AttributeNames.i_NounType);
-				if (!forma.isMatchingStrong(AttributeNames.i_NumberSpecial, AttributeNames.v_PlurareTantum) 
-						&& category == Category.org ) {
-					// ja nav daudzskaitlinieks, tad ņemsim ka vienskaitļa formu
-					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Singular);
-				}
-				//FIXME - vai visiem vai pēdējam? Un profesija te domāta, nevis jebkas, varbūt tas ir īpaši jāatlasa
-				if (category==Category.other || w.word.getToken().startsWith("apvienīb")) {
-					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Singular);
-				}
-				if (expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("spēle") ||
-					expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("sakars") ||	
-					expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("attiecības")) {
-					// ne vienmēr daudzskaitlinieks, bet notikumu/organizāciju kontekstā (piem. "Olimpiskās spēles") gan
-					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Plural);
-				}
-				if ((expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("valsts") ||
-					 expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("spēks")  ) &&
-					expWords.getLast().correctWordform.isMatchingStrong(AttributeNames.i_Number, AttributeNames.v_Plural)) {
-					// ne vienmēr daudzskaitlinieks, bet notikumu/organizāciju kontekstā (piem. "Olimpiskās spēles") gan
-					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Plural);
-				}
-				
-				if (forma.getToken().endsWith("ā") && forma.isMatchingStrong(AttributeNames.i_Definiteness, AttributeNames.v_Definite))
-					filtrs.removeAttribute(AttributeNames.i_PartOfSpeech); // OOV gadījumā minētājs piedāvās lietvārdu
-				if (forma.getToken().endsWith("us") && forma.isMatchingStrong(AttributeNames.i_Declension, "6")) {
-					//FIXME - tāds nedrīkstētu būt, tas jālabo analizatorā/minētājā/tagerī.. piemērs - 'Zlatkus Ēriks' iedod kā 6. dekl
-					filtrs.removeAttribute(AttributeNames.i_Declension);
-					filtrs.removeAttribute(AttributeNames.i_Gender);
-				}
-				if (forma.getToken().endsWith("ais") && forma.isMatchingStrong(AttributeNames.i_Declension, "2")) { 
-					// FIXME - vispār tas rāda par to ka minētājam būtu agresīvi jāņem vērā 'atļautie' burti pirms galotnes; 2.deklinācijā -ais nemēdz būt..
-					filtrs.removeAttribute(AttributeNames.i_PartOfSpeech); // OOV gadījumā (Turlais) tageris reizem iedod lietvārdu
-					filtrs.removeAttribute(AttributeNames.i_Declension);
-					filtrs.removeAttribute(AttributeNames.i_Lemma); // jo lemma ir turls nevis turlais
-				}
-				if (w.word.getToken().startsWith("vēlēšan") // izņēmums lai nemēģina vienskaitļa variantus par vēlēšanu likt
-					|| w.word.getToken().equalsIgnoreCase("Salas") || w.word.getToken().equalsIgnoreCase("Salās")) { 
-					filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Plural);
-				}				
-				if (forma.getToken().endsWith("o") && forma.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine)) {
-					//FIXME - Tageris frāzē "vidējo speciālo izglītību" pirmo vārdu notago kā vīriešu dzimti..
-					if (expWords.getLast().correctWordform.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("izglītība"))
-						filtrs.addAttribute(AttributeNames.i_Gender, AttributeNames.v_Feminine);
-				}
-				if (forma.getToken().contains("-") && forma.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Residual)) {
-					// double surnames, where the last part is inflexive
-					filtrs.removeAttribute(AttributeNames.i_PartOfSpeech);
-					filtrs.removeAttribute(AttributeNames.i_ResidualType);
-					filtrs.removeAttribute(AttributeNames.i_ParadigmID);
-					filtrs.removeAttribute(AttributeNames.i_Declension);
-				}
-					
-				/*
-				inflectedPhrase+=locītājs.generateInflections(forma.getValue("Pamatforma"),false,filtrs).toString()+' ';
-				*/				
-				if (forma.lexeme == null || !forma.isMatchingWeak(AttributeNames.i_Guess, AttributeNames.v_NoGuess)) {// Deminutīviem kā Bērziņš cita lemma
-					AttributeValues lemma_filtrs = new AttributeValues(filtrs);
-					lemma_filtrs.removeAttribute(AttributeNames.i_Case);
-					lemma_filtrs.removeAttribute(AttributeNames.i_Number);
-					lemma_filtrs.removeAttribute(AttributeNames.i_Definiteness);
-					inflWordforms=analyzer.generateInflections(forma.getValue(AttributeNames.i_Lemma),false, lemma_filtrs);
-				} else {
-					inflWordforms=analyzer.generateInflections(forma.lexeme, w.word.getToken()); 
-					//FIXME - kāpēc tur ir tokens nevis lemma? Šis varbūt rada 'atgriešanos' normalizācijas problēmu
-					// varbūt vajag inflWordforms=analyzer.generateInflections(forma.lexeme, w.correctWordform.getValue(AttributeNames.i_Lemma));
-				}
-					
-				
-				filtrs.removeAttribute(AttributeNames.i_Lemma); // jo reizēm (dzimtes utml) te būscita lemma nekā notagotajā; piemēram vidēja/vidējs
-				
-				matching = false;
-				for (Wordform wf : inflWordforms) {
-					if (forma.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Verb) && 
-						wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adverb))
-						continue; // Lai divdabjiem neuzskata -oši apstākļvārdu par derīgu variantu
-						
-					if (wf.isMatchingWeak(filtrs)) {
-						String token = wf.getToken();
-						if (forma.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_FirstUpper))
-							token = token.substring(0, 1).toUpperCase() + token.substring(1);
-						if (forma.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_AllUpper))
-							token = token.toUpperCase();
-
-						inflectedPhrase += token+' ';						
-						matching = true;
-						break; //TODO - teorētiski  
-					}
-				}
-				
-				if (!matching && forma.getToken().endsWith("o") && forma.isMatchingStrong(AttributeNames.i_Definiteness, AttributeNames.v_Definite)) {
-					// Reizēm nelokāmos personvārdus ar -o ('Žverelo') tageris izdomā nosaukt par noteiktajiem īpašības vārdiem, kas arī ir variants..
-					inflectedPhrase += forma.getToken() +' ';						
-					matching = true;
-				}
-				
-				if (!matching && forma.getToken().endsWith("i") && forma.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun)) {
-					// Reizēm nelokāmos personvārdus ar -i ('Tennila Veli Pekka') tageris izdomā nosaukt par apstākļa vārdiem
-					inflectedPhrase += forma.getToken() +' ';						
-					matching = true;
-				}
-				
-				if (!matching && inflWordforms.size() == 0) {
-					// 'Zalcmanis Raivo' tā bija - FIXME, kautkādiem variantiem būtu jābūt :-/
-					inflectedPhrase += forma.getToken() +' ';						
-					matching = true;
-				}			
-				
-				if (!matching && forma.isMatchingStrong(AttributeNames.i_Declension, "5")) {
-					// "Jānis Uve" piemērs - šajā minēšanā tageris iedod vīriešu dzimti bet locītājs sieviešu
-					// FIXME - jālabo, bet ne tagad
-					inflectedPhrase += forma.getToken() +' ';						
-					matching = true;
-				}
-				
-				if (!matching && forma.isMatchingStrong(AttributeNames.i_Declension, "6")) {
-					// "Zaļaiskalns Sandra" piemērs - šajā minēšanā tageris iedod sieviešu dzimti bet locītājs vīriešu
-					// FIXME - jālabo, bet ne tagad
-					inflectedPhrase += forma.getToken() +' ';						
-					matching = true;
-				}
-				
-				if (!matching && forma.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_AllUpper)) {
-					// "RPVIA" piemērs - minētājs saka ka varētu būt arī lietvārds bet tas īsti neder
-					// FIXME - jālabo, bet ne tagad
-					inflectedPhrase += forma.getToken() +' ';						
-					matching = true;
-				}
-				
-				if (debug && matching) {
-					System.err.printf("Debuginfo lokot vārdu %s uz %s\n",forma.getToken(), inflectCase);					
-					System.err.println("Filtrs:");
-					filtrs.describe(new PrintWriter(System.err));
-					System.err.println("Vārds:");
-					forma.describe(new PrintWriter(System.err));
-					System.err.println("Derīgie varianti:");
-					for (Wordform wf : inflWordforms) {
-						if (wf.isMatchingWeak(filtrs)) {
-							wf.describe(new PrintWriter(System.err));
-							System.err.println();
-						}
-					}
-				}
-								
-				if (!matching) {									
-					//FIXME ko likt, ja nav ģenerēti locījumi lokāmajam vārdam (vv no locītāja, neatpazīti svešvārdi)
-					String frāze = "";
-					for (ExpressionWord w2 : expWords)
-						frāze += w2.correctWordform.getToken() + " ";
-					inflectedPhrase += forma.getToken() + ' ';
-					if (debug) {
-						System.err.printf("Expression nemācēja izlocīt vārdu %s uz %s frāzē '%s'\n",forma.getToken(), inflectCase, frāze.trim());					
-						System.err.println("Filtrs:");
-						filtrs.describe(new PrintWriter(System.err));
-						System.err.println("Vārds:");
-						forma.describe(new PrintWriter(System.err));
-						System.err.println("Varianti:");
-						for (Wordform wf : inflWordforms) {
-							wf.describe(new PrintWriter(System.err));
-							System.err.println();
-						}
-					}
-				}
+				inflectedPhrase += inflectWord(forma, inflectCase,
+						phraseLastWord, this.category, debug);
 			} else {
 			// If the word/token is considered static/inflexible in this expression
 				inflectedPhrase += w.word.getToken();
@@ -848,6 +670,170 @@ public class Expression {
 		if (inflectedPhrase.endsWith(" .")) inflectedPhrase = inflectedPhrase.substring(0, inflectedPhrase.length()-2) + ".";
 		inflectedPhrase = inflectedPhrase.replace(" - ", "-"); // postprocessing gadījumam "biedrs-kandidāts" utml
 		return inflectedPhrase.trim();
+	}
+
+	/**
+	 * Inflects a single wordform to the desired phrase case, given various attributes
+	 * @param forma  the wordform to be inflected
+	 * @param inflectCase LV name of the desired target case
+	 * @param phraseLastWord  the correct wordform of the last word of this phrase, for various agreement issues
+	 * @param debug
+	 * @return
+	 */
+	public static String inflectWord(Wordform forma, String inflectCase,
+			Wordform phraseLastWord, Category category, boolean debug) {
+		AttributeValues filtrs;
+		ArrayList<Wordform> inflWordforms;
+
+		filtrs = new AttributeValues(forma);
+		filtrs.addAttribute(AttributeNames.i_Case,inflectCase);
+		filtrs.removeAttribute(AttributeNames.i_EndingID);
+		filtrs.removeAttribute(AttributeNames.i_LexemeID);
+		filtrs.removeAttribute(AttributeNames.i_Guess);
+		filtrs.removeAttribute(AttributeNames.i_Mija);
+		filtrs.removeAttribute(AttributeNames.i_CapitalLetters);
+		filtrs.removeAttribute(AttributeNames.i_Source);
+		filtrs.removeAttribute(AttributeNames.i_SourceLemma);
+		filtrs.removeAttribute(AttributeNames.i_Word);
+		filtrs.removeAttribute(AttributeNames.i_NounType);
+		if (!forma.isMatchingStrong(AttributeNames.i_NumberSpecial, AttributeNames.v_PlurareTantum) 
+				&& category == Category.org ) {
+			// ja nav daudzskaitlinieks, tad ņemsim ka vienskaitļa formu
+			filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Singular);
+		}
+		//FIXME - vai visiem vai pēdējam? Un profesija te domāta, nevis jebkas, varbūt tas ir īpaši jāatlasa
+		if (category==Category.other || forma.getToken().startsWith("apvienīb")) {
+			filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Singular);
+		}
+		if (phraseLastWord.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("spēle") ||
+			phraseLastWord.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("sakars") ||	
+			phraseLastWord.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("attiecības")) {
+			// ne vienmēr daudzskaitlinieks, bet notikumu/organizāciju kontekstā (piem. "Olimpiskās spēles") gan
+			filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Plural);
+		}
+		if ((phraseLastWord.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("valsts") ||
+			phraseLastWord.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("spēks")  ) &&
+			phraseLastWord.isMatchingStrong(AttributeNames.i_Number, AttributeNames.v_Plural)) {
+			// ne vienmēr daudzskaitlinieks, bet notikumu/organizāciju kontekstā (piem. "Olimpiskās spēles") gan
+			filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Plural);
+		}
+		
+		if (forma.getToken().endsWith("ā") && forma.isMatchingStrong(AttributeNames.i_Definiteness, AttributeNames.v_Definite))
+			filtrs.removeAttribute(AttributeNames.i_PartOfSpeech); // OOV gadījumā minētājs piedāvās lietvārdu
+		if (forma.getToken().endsWith("us") && forma.isMatchingStrong(AttributeNames.i_Declension, "6")) {
+			//FIXME - tāds nedrīkstētu būt, tas jālabo analizatorā/minētājā/tagerī.. piemērs - 'Zlatkus Ēriks' iedod kā 6. dekl
+			filtrs.removeAttribute(AttributeNames.i_Declension);
+			filtrs.removeAttribute(AttributeNames.i_Gender);
+		}
+		if (forma.getToken().endsWith("ais") && forma.isMatchingStrong(AttributeNames.i_Declension, "2")) { 
+			// FIXME - vispār tas rāda par to ka minētājam būtu agresīvi jāņem vērā 'atļautie' burti pirms galotnes; 2.deklinācijā -ais nemēdz būt..
+			filtrs.removeAttribute(AttributeNames.i_PartOfSpeech); // OOV gadījumā (Turlais) tageris reizem iedod lietvārdu
+			filtrs.removeAttribute(AttributeNames.i_Declension);
+			filtrs.removeAttribute(AttributeNames.i_Lemma); // jo lemma ir turls nevis turlais
+		}
+		if (forma.getToken().startsWith("vēlēšan") // izņēmums lai nemēģina vienskaitļa variantus par vēlēšanu likt
+			|| forma.getToken().equalsIgnoreCase("Salas") || forma.getToken().equalsIgnoreCase("Salās")) { 
+			filtrs.addAttribute(AttributeNames.i_Number, AttributeNames.v_Plural);
+		}				
+		if (forma.getToken().endsWith("o") && forma.isMatchingStrong(AttributeNames.i_Gender, AttributeNames.v_Masculine)) {
+			//FIXME - Tageris frāzē "vidējo speciālo izglītību" pirmo vārdu notago kā vīriešu dzimti..
+			if (phraseLastWord.getValue(AttributeNames.i_Lemma).equalsIgnoreCase("izglītība"))
+				filtrs.addAttribute(AttributeNames.i_Gender, AttributeNames.v_Feminine);
+		}
+		if (forma.getToken().contains("-") && forma.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Residual)) {
+			// double surnames, where the last part is inflexive
+			filtrs.removeAttribute(AttributeNames.i_PartOfSpeech);
+			filtrs.removeAttribute(AttributeNames.i_ResidualType);
+			filtrs.removeAttribute(AttributeNames.i_ParadigmID);
+			filtrs.removeAttribute(AttributeNames.i_Declension);
+		}
+			
+		if (forma.lexeme == null || !forma.isMatchingWeak(AttributeNames.i_Guess, AttributeNames.v_NoGuess)) {// Deminutīviem kā Bērziņš cita lemma
+			AttributeValues lemma_filtrs = new AttributeValues(filtrs);
+			lemma_filtrs.removeAttribute(AttributeNames.i_Case);
+			lemma_filtrs.removeAttribute(AttributeNames.i_Number);
+			lemma_filtrs.removeAttribute(AttributeNames.i_Definiteness);
+			inflWordforms=analyzer.generateInflections(forma.getValue(AttributeNames.i_Lemma),false, lemma_filtrs);
+		} else {
+			inflWordforms=analyzer.generateInflections(forma.lexeme, forma.getToken()); 
+			//FIXME - kāpēc tur ir tokens nevis lemma? Šis varbūt rada 'atgriešanos' normalizācijas problēmu
+			// varbūt vajag inflWordforms=analyzer.generateInflections(forma.lexeme, w.correctWordform.getValue(AttributeNames.i_Lemma));
+		}
+							
+		filtrs.removeAttribute(AttributeNames.i_Lemma); // jo reizēm (dzimtes utml) te būscita lemma nekā notagotajā; piemēram vidēja/vidējs
+		
+		for (Wordform wf : inflWordforms) {
+			if (forma.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Verb) && 
+				wf.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Adverb))
+				continue; // Lai divdabjiem neuzskata -oši apstākļvārdu par derīgu variantu
+				
+			if (wf.isMatchingWeak(filtrs)) {
+				String token = wf.getToken();
+				if (forma.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_FirstUpper))
+					token = token.substring(0, 1).toUpperCase() + token.substring(1);
+				if (forma.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_AllUpper))
+					token = token.toUpperCase();
+
+				return token+' ';						
+			}
+		}
+		
+		// workaround gadījumi, kad tomēr nelokam
+		if (forma.getToken().endsWith("o") && forma.isMatchingStrong(AttributeNames.i_Definiteness, AttributeNames.v_Definite)
+			// Reizēm nelokāmos personvārdus ar -o ('Žverelo') tageris izdomā nosaukt par noteiktajiem īpašības vārdiem, kas arī ir variants..
+				
+		|| forma.getToken().endsWith("i") && forma.isMatchingStrong(AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun)
+			// Reizēm nelokāmos personvārdus ar -i ('Tennila Veli Pekka') tageris izdomā nosaukt par apstākļa vārdiem
+		
+		|| inflWordforms.size() == 0
+			// 'Zalcmanis Raivo' tā bija - FIXME, kautkādiem variantiem būtu jābūt :-/
+		
+		|| forma.isMatchingStrong(AttributeNames.i_Declension, "5")
+			// "Jānis Uve" piemērs - šajā minēšanā tageris iedod vīriešu dzimti bet locītājs sieviešu
+			// FIXME - jālabo, bet ne tagad
+		
+		|| forma.isMatchingStrong(AttributeNames.i_Declension, "6")
+			// "Zaļaiskalns Sandra" piemērs - šajā minēšanā tageris iedod sieviešu dzimti bet locītājs vīriešu
+			// FIXME - jālabo, bet ne tagad
+		
+		|| forma.isMatchingStrong(AttributeNames.i_CapitalLetters, AttributeNames.v_AllUpper)
+			// "RPVIA" piemērs - minētājs saka ka varētu būt arī lietvārds bet tas īsti neder
+			// FIXME - jālabo, bet ne tagad
+		) {			
+			return forma.getToken() +' ';						
+		}
+		
+// pēc pārmaiņām nav aktuāls
+//		if (debug && matching) {
+//			System.err.printf("Debuginfo lokot vārdu %s uz %s\n",forma.getToken(), inflectCase);					
+//			System.err.println("Filtrs:");
+//			filtrs.describe(new PrintWriter(System.err));
+//			System.err.println("Vārds:");
+//			forma.describe(new PrintWriter(System.err));
+//			System.err.println("Derīgie varianti:");
+//			for (Wordform wf : inflWordforms) {
+//				if (wf.isMatchingWeak(filtrs)) {
+//					wf.describe(new PrintWriter(System.err));
+//					System.err.println();
+//				}
+//			}
+//		}
+						
+		//FIXME ko likt, ja nav ģenerēti locījumi lokāmajam vārdam (vv no locītāja, neatpazīti svešvārdi)
+		if (debug) {
+			System.err.printf("Expression nemācēja izlocīt vārdu %s uz %s\n",forma.getToken(), inflectCase);					
+			System.err.println("Filtrs:");
+			filtrs.describe(new PrintWriter(System.err));
+			System.err.println("Vārds:");
+			forma.describe(new PrintWriter(System.err));
+			System.err.println("Varianti:");
+			for (Wordform wf : inflWordforms) {
+				wf.describe(new PrintWriter(System.err));
+				System.err.println();
+			}
+		}
+
+		return forma.getToken() + ' ';
 	}
 
 	public static String getWordPartOfSpeech(String string) {
