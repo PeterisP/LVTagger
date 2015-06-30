@@ -40,7 +40,7 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 public class Expression {
 	public LinkedList <ExpressionWord> expWords;
-	private static transient AbstractSequenceClassifier<CoreLabel> morphoClassifier = null;
+	public static transient AbstractSequenceClassifier<CoreLabel> morphoClassifier = null;
 	protected static transient Analyzer analyzer = null;
 	public enum Category {
 		org,
@@ -211,7 +211,18 @@ public class Expression {
 			    		}
 			    	}
 	    		}
-	    	} // if (category == Category.hum) {
+	    	} else { // ja nav category == Category.hum
+	    		if (category == Category.other && knownLemma && word == words.get(words.size()-1)) {
+	    			// nestandarta frāzēm - pieņemot, ka tā būs lietvārda frāze - apcērpam alternatīvas pēdējam vārdam, lai to nenotago piem kā dsk ģenitīvu
+	    			LinkedList<Wordform> izmetamie = new LinkedList<Wordform>();
+	    			for (Wordform wf : word.wordforms) {
+		    			if (wf.isMatchingStrong(AttributeNames.i_Case, AttributeNames.v_Genitive))
+		    			    izmetamie.add(wf); // Problēma, ka kādu īpašvārdu (piem. Znaroks) tageris nosauc par nenoteikto īpašības vārdu - tas der tikai noteiktajiem!
+	    			}
+	    			if (izmetamie.size() < word.wordforms.size()) // ja ir kaut viens derīgs 
+	        			word.wordforms.removeAll(izmetamie);
+	    		}
+	    	}
 	    	
 	    	// Blacklist of confusing but unlikely lemmas
 	    	List<String> blacklist = Arrays.asList("vēlēšanās");
