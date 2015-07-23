@@ -459,6 +459,62 @@ Evaluation results:
 	Person :  2.46%
 	Lokāmība :  0.24%
 
+50. Lauras labojumi anotētajam korpusam
+	Evaluation results:
+		Correct tag:	92.3%	885
+		Correct lemma:	96.4%	414
+		Correct all:	90.8%	1051
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  1.91%
+	Case :  6.51%
+	Vietniekvārda tips :  1.60%
+	Number :  4.52%
+	Rekcija : 12.96%
+	Reziduāļa tips :  0.50%
+	Mood :  2.37%
+	Definiteness :  1.88%
+	Gender :  2.43%
+	Darbības vārda tips :  5.74%
+	Person :  1.03%
+	Lokāmība :  0.24%
+
+51. Papildu ierobežojumi minēšanai
+	Evaluation results:
+		Correct tag:	92.2%	898
+		Correct lemma:	96.4%	415
+		Correct all:	90.7%	1062
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  1.99%
+	Case :  6.48%
+	Vietniekvārda tips :  1.60%
+	Number :  4.53%
+	Rekcija : 13.17%
+	Reziduāļa tips :  0.51%
+	Mood :  2.37%
+	Definiteness :  1.98%
+	Gender :  2.49%
+	Darbības vārda tips :  5.79%
+	Person :  1.07%
+	Lokāmība :  0.24%
+
+------------------ 2014.07.10
+52. Pārlaisti eksperimenti ar palielinātu leksikonu un atslēgtu verbu tipu skatīšanos
+	Evaluation results:
+		Correct tag:	93.3%	537
+		Correct lemma:	96.9%	251
+		Correct all:	92.0%	636
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Part of speech :  2.24%
+	Punctuation group :  0.07%
+	Case :  5.93%
+	Vietniekvārda tips :  2.43%
+	Number :  4.08%
+	Rekcija : 15.82%
+	Mood :  1.73%
+	Definiteness :  0.91%
+	Gender :  2.14%
+	Person :  0.73%
+	Lokāmība :  0.37%
 
 
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....

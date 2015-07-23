@@ -2125,7 +2125,7 @@ Teicu	vmnipt11san	teikt	m-d62-JaanisEinfelds-Melis-p19s2w1
 Gribu	vonipt31san	gribēt	m-d62-JaanisEinfelds-Melis-p19s2w4
 gulēt	vmnn0t3000n	gulēt	m-d62-JaanisEinfelds-Melis-p19s2w5
 uz	spsgy	uz	m-d62-JaanisEinfelds-Melis-p19s2w6
-viņas	pd0fsgn	viņa	m-d62-JaanisEinfelds-Melis-p19s2w7
+viņas	pp3fsgn	viņa	m-d62-JaanisEinfelds-Melis-p19s2w7
 muguras	ncfsg4	mugura	m-d62-JaanisEinfelds-Melis-p19s2w8
 !	zs	!	m-d62-JaanisEinfelds-Melis-p19s2w9
 "	zq	"	m-d62-JaanisEinfelds-Melis-p19s2w10
@@ -3407,7 +3407,7 @@ skaidrs	afmsnnp	skaidrs	m-Latv_Veestn_p135-p7s20w8
 .	zs	.	m-Latv_Veestn_p135-p7s20w9
 </s>
 <s>
-Iztirzājamā	vmnpdfslppy	iztirzāt	m-Latv_Veestn_p135-p13s37w1
+Iztirzājamā	vmnpdfslppn	iztirzāt	m-Latv_Veestn_p135-p13s37w1
 lietā	ncfsl4	lieta	m-Latv_Veestn_p135-p13s37w2
 tiesa	ncfsn4	tiesa	m-Latv_Veestn_p135-p13s37w3
 analizē	vmnipt230an	analizēt	m-Latv_Veestn_p135-p13s37w4
@@ -6578,7 +6578,7 @@ iestāšanos	ncfsar	iestāšanās	m-p1094-p1s1w7
 </s>
 <s>
 Tā	r0m	tā	m-p1094-p9s20w1
-viņa	pd0fsnn	viņa	m-p1094-p9s20w2
+viņa	pp3fsnn	viņa	m-p1094-p9s20w2
 arī	qs	arī	m-p1094-p9s20w3
 devās	vmyist130an	doties	m-p1094-p9s20w4
 kalnos	ncmpl1	kalns	m-p1094-p9s20w5
@@ -7695,7 +7695,7 @@ stāvoklī	ncmsl2	stāvoklis	m-SofijasPasaule1996_11-18_EedenesDaarzs-p50s5w11
 ka	css	ka	m-SofijasPasaule1996_11-18_EedenesDaarzs-p50s5w13
 kādu	pi0fsan	kāda	m-SofijasPasaule1996_11-18_EedenesDaarzs-p50s5w14
 dienu	ncfsa4	diena	m-SofijasPasaule1996_11-18_EedenesDaarzs-p50s5w15
-viņas	pd0fsgn	viņa	m-SofijasPasaule1996_11-18_EedenesDaarzs-p50s5w16
+viņas	pp3fsgn	viņa	m-SofijasPasaule1996_11-18_EedenesDaarzs-p50s5w16
 vairs	r0t	vairs	m-SofijasPasaule1996_11-18_EedenesDaarzs-p50s5w17
 nemaz	r0q	nemaz	m-SofijasPasaule1996_11-18_EedenesDaarzs-p50s5w18
 nebūs	vgnifii30ay	nebūt	m-SofijasPasaule1996_11-18_EedenesDaarzs-p50s5w19

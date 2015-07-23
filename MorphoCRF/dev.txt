@@ -1846,7 +1846,7 @@ uzsverot	vmnpu000000	uzsvērt	m-c34-p93s123w16
 ,	zc	,	m-c34-p93s123w17
 ka	css	ka	m-c34-p93s123w18
 bez	spsgn	bez	m-c34-p93s123w19
-viņa	pd0msgn	viņš	m-c34-p93s123w20
+viņa	pp3msgn	viņš	m-c34-p93s123w20
 nespēj	vonipt130ay	nespēt	m-c34-p93s123w21
 dzīvot	vmnn0t2000n	dzīvot	m-c34-p93s123w22
 ,	zc	,	m-c34-p93s123w23
@@ -1962,11 +1962,11 @@ lielu	affsanp	liela	m-c34-p165s175w29
 vainas	ncfsg4	vaina	m-c34-p165s175w30
 izjūtu	ncfsa4	izjūta	m-c34-p165s175w31
 ,	zc	,	m-c34-p165s175w32
-dusmas	ncfpa4	dusmas	m-c34-p165s175w33
+dusmas	ncfda4	dusmas	m-c34-p165s175w33
 ,	zc	,	m-c34-p165s175w34
 kaunu	ncmsa1	kauns	m-c34-p165s175w35
 ,	zc	,	m-c34-p165s175w36
-sāpes	ncfpa5	sāpes	m-c34-p165s175w37
+sāpes	ncfda5	sāpes	m-c34-p165s175w37
 ,	zc	,	m-c34-p165s175w38
 bailes	ncfpa5	bailes	m-c34-p165s175w39
 ,	zc	,	m-c34-p165s175w40
@@ -2038,7 +2038,7 @@ OK	y	OK	m-c34-p178s207w34
 Grēkāzī	ncmsl2	grēkāzis	m-c34-p180s210w1
 ir	vmnipii30an	būt	m-c34-p180s210w2
 daudz	r0q	daudz	m-c34-p180s210w3
-dusmu	ncfpg4	dusmas	m-c34-p180s210w4
+dusmu	ncfdg4	dusmas	m-c34-p180s210w4
 un	ccs	un	m-c34-p180s210w5
 ,	zc	,	m-c34-p180s210w6
 tā kā	csc	tā kā	m-c34-p180s210w7
@@ -2053,7 +2053,7 @@ tas	pd0msnn	tas	m-c34-p180s210w16
 tikai	qs	tikai	m-c34-p180s210w17
 vairo	vmnipt230an	vairot	m-c34-p180s210w18
 viņa	pp3msgn	viņš	m-c34-p180s210w19
-dusmas	ncfpa4	dusmas	m-c34-p180s210w20
+dusmas	ncfda4	dusmas	m-c34-p180s210w20
 .	zs	.	m-c34-p180s210w21
 </s>
 <s>
@@ -2475,7 +2475,7 @@ sev	px000dn	sevis	m-d62-JaanisEinfelds-Melis-p33s8w5
 Es	pp10snn	es	m-d62-JaanisEinfelds-Melis-p34s6w1
 nesekoju	vmnisi21say	nesekot	m-d62-JaanisEinfelds-Melis-p34s6w2
 ,	zc	,	m-d62-JaanisEinfelds-Melis-p34s6w3
-viņa	pd0fsnn	viņa	m-d62-JaanisEinfelds-Melis-p34s6w4
+viņa	pp3fsnn	viņa	m-d62-JaanisEinfelds-Melis-p34s6w4
 prom	r0p	prom	m-d62-JaanisEinfelds-Melis-p34s6w5
 .	zs	.	m-d62-JaanisEinfelds-Melis-p34s6w6
 </s>
@@ -2678,7 +2678,7 @@ ratiņi	ncmpn1	ratiņš	m-d76-p21s124w2
 <s>
 Un	ccs	un	m-d76-p27s158w1
 no	sppdy	no	m-d76-p27s158w2
-dusmām	ncfpd4	dusmas	m-d76-p27s158w3
+dusmām	ncfdd4	dusmas	m-d76-p27s158w3
 tu	pp20snn	tu	m-d76-p27s158w4
 aizmirstu	vmnc0t100an	aizmirst	m-d76-p27s158w5
 ,	zc	,	m-d76-p27s158w6
@@ -4696,9 +4696,8 @@ aizsardzības	ncfsg4	aizsardzība	m-Latv_Veestn_p137-p14s38w3
 stūrakmens	ncmsn2	stūrakmens	m-Latv_Veestn_p137-p14s38w4
 ir	vcnipii30an	būt	m-Latv_Veestn_p137-p14s38w5
 CPL	y	CPL	m-Latv_Veestn_p137-p14s38w6
-406	xn	406	m-Latv_Veestn_p137-p14s38w7
-.	zs	.	m-Latv_Veestn_p137-p14s38w8
-7pants	xx	N/A	m-Latv_Veestn_p137-p14s38w9
+406.7	xn	406.7	m-Latv_Veestn_p137-p14s38w7
+pants	ncmsn1	pants	m-Latv_Veestn_p137-p14s38w9
 ,	zc	,	m-Latv_Veestn_p137-p14s38w10
 kura	pr0msgn	kura	m-Latv_Veestn_p137-p14s38w11
 1.	xo	1.	m-Latv_Veestn_p137-p14s38w12
@@ -5005,7 +5004,7 @@ jo	css	jo	m-Latv_Veestn_p139-p42s79w12
 jāatzīst	vmnd0t100an	atzīt	m-Latv_Veestn_p139-p42s79w13
 ,	zc	,	m-Latv_Veestn_p139-p42s79w14
 ka	css	ka	m-Latv_Veestn_p139-p42s79w15
-Cilvēktiesību	ncfsg4	Cilvēktiesība	m-Latv_Veestn_p139-p42s79w16
+Cilvēktiesību	ncfdg4	cilvēktiesības	m-Latv_Veestn_p139-p42s79w16
 birojs	ncmsn1	birojs	m-Latv_Veestn_p139-p42s79w17
 līdz	spsdy	līdz	m-Latv_Veestn_p139-p42s79w18
 šim	pd0msdn	šis	m-Latv_Veestn_p139-p42s79w19
@@ -5040,7 +5039,7 @@ gada	ncmsg1	gads	m-Latv_Veestn_p140-p3s3w5
 25.	xo	25.	m-Latv_Veestn_p140-p3s3w6
 janvārī	ncmsl2	janvāris	m-Latv_Veestn_p140-p3s3w8
 LU	y	LU	m-Latv_Veestn_p140-p3s3w9
-Juridiskās	arfsgnp	Juridisks	m-Latv_Veestn_p140-p3s3w10
+Juridiskās	arfsgyp	Juridiska	m-Latv_Veestn_p140-p3s3w10
 fakultātes	ncfsg5	fakultāte	m-Latv_Veestn_p140-p3s3w11
 rīkotajā	vmnpdfslpsy	rīkot	m-Latv_Veestn_p140-p3s3w12
 starptautiskajā	affslyp	starptautiska	m-Latv_Veestn_p140-p3s3w13
@@ -9019,7 +9018,7 @@ trešās	mosfsgv	trešā	m-LETA_intervija_02_20130211-p42s2w18
 pakāpes	ncfsg5	pakāpe	m-LETA_intervija_02_20130211-p42s2w19
 (	zb	(	m-LETA_intervija_02_20130211-p42s2w20
 Tier	xf	Tier	m-LETA_intervija_02_20130211-p42s2w21
-III	xn	III	m-LETA_intervija_02_20130211-p42s2w22
+III	xo	III	m-LETA_intervija_02_20130211-p42s2w22
 )	zb	)	m-LETA_intervija_02_20130211-p42s2w23
 datu	ncmdg1	dati	m-LETA_intervija_02_20130211-p42s2w24
 centru	ncmsa1	centrs	m-LETA_intervija_02_20130211-p42s2w25
