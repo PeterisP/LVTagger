@@ -17,3 +17,4 @@ lib/morphology.jar
 models/.release-*
 /bin/
 /target/
+.idea/

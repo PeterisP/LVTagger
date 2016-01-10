@@ -57,7 +57,7 @@ public class Expression {
 	public Gender gender = Gender.unknown;
 	
 	public static void initClassifier(String model) throws Exception {
-		morphoClassifier = CMMClassifier.getClassifier(new File(model));		
+		morphoClassifier = CMMClassifier.getClassifier(model);
 		analyzer = LVMorphologyReaderAndWriter.getAnalyzer(); // Assumption - that the morphology model actually loads the LVMorphologyReaderAndWriter data, so it should be filled.
 	}
 	
@@ -69,9 +69,13 @@ public class Expression {
 	public static void initClassifier() throws Exception {
 		// FIXME - nepamatoti paļaujamies ka tur tāds modelis būs
 		try {
-			initClassifier("../LVTagger/models/lv-morpho-model.ser.gz");
-		} catch (java.io.FileNotFoundException e) {
-			initClassifier("../../LVTagger/models/lv-morpho-model.ser.gz");
+			initClassifier("models/lv-morpho-model.ser.gz");
+		} catch (java.io.IOException e) {
+			try {
+				initClassifier("../LVTagger/models/lv-morpho-model.ser.gz");
+			} catch (java.io.FileNotFoundException e2) {
+				initClassifier("../../LVTagger/models/lv-morpho-model.ser.gz");
+			}
 		}
 	}
 	
