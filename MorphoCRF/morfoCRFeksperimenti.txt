@@ -516,6 +516,36 @@ Evaluation results:
 	Person :  0.73%
 	Lokāmība :  0.37%
 
+---------------------  2016.01.11
+53. Atkārtots viss ar tekošo kodu pēc rebuild un bez maintenances
+	Evaluation results:
+	        Correct tag:    92.1%   629
+	        Correct lemma:  94.6%   433
+	        Correct all:    90.1%   790
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Number :  3.79%
+	Person :  9.81%
+	Part of speech :  3.14%
+	Case :  5.64%
+	Gender :  2.74%
+	Mood :  1.26%
+	Definiteness :  0.75%
+
+54. Pieliekot "svaigāku" modeli no dropbox (tas gan varētu būt "produkcijas" modelis trenēts uz visiem datiem ieskaitot testset)
+	Evaluation results:
+	        Correct tag:    97.3%   216
+	        Correct lemma:  97.0%   241
+	        Correct all:    94.9%   410
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Number :  1.50%
+	Person :  0.12%
+	Part of speech :  1.06%
+	Vietniekvarda tips :  1.24%
+	Case :  1.88%
+	Gender :  1.02%
+	Mood :  0.31%
+	Rekcija : 12.58%
+
 
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss
