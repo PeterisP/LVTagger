@@ -623,9 +623,9 @@ public class PhraseInflectionTest
 
 	@Test
 	public void testNormalizeAndraAmbaina() {
-		assertEquals("Andris Vilks", new Expression("Andra Vilka", "person", false, true).normalize());
-		assertEquals("Anda Čakša", new Expression("Anda Čakša", "person", false, true).normalize());
-		assertEquals("Andris Ambainis", new Expression("Andra Ambaiņa", "person", false, true).normalize());
+		assertEquals("Andris Vilks", new Expression("Andra Vilka", "person", false, false).normalize());
+		assertEquals("Anda Čakša", new Expression("Anda Čakša", "person", false, false).normalize());
+		assertEquals("Andris Ambainis", new Expression("Andra Ambaiņa", "person", false, false).normalize());
 	}
 	
 	@Test 
@@ -653,6 +653,11 @@ public class PhraseInflectionTest
 	public void LETA_gļuks() throws Exception {
 		assertEquals("Aivars Aizkalnieša", 
 				new Expression("Aivara Aizkalnietis", "person", true, false).inflect(AttributeNames.v_Genitive, false));		
+	}
+
+	@Test
+	public void too_chatty() throws Exception {
+		new Expression("Bergers", "person", true, true).inflect(null, true); // to check if it spams console with too much info
 	}
 
 }
