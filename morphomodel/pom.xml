@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>lv.ailab.morphology</groupId>
+	<artifactId>lv-morpho-model</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0.0</version>
+	<name>Pretrained model for LVTagger Stanford NLP-based POS tagger for Latvian</name>
+	<url>https://github.com/PeterisP/LVTagger</url>
+
+	<!-- thanks to https://rolfje.wordpress.com/2013/07/18/non-java-binary-dependencies-in-maven/ -->
+	<build>
+	  <plugins>
+	    <plugin>
+	    <groupId>org.codehaus.mojo</groupId>
+	    <artifactId>build-helper-maven-plugin</artifactId>
+	    <version>1.8</version>
+	    <executions>
+	      <execution>
+	      <id>attach-artifacts</id>
+	      <phase>package</phase>
+	      <goals>
+	      <goal>attach-artifact</goal>
+	      </goals>
+	      <configuration>
+	      <artifacts>
+	        <artifact>
+	        <file>lv-morpho-model.ser.gz</file>
+	        <type>ser.gz</type>
+	        </artifact>
+	      </artifacts>
+	      </configuration>
+	      </execution>
+	    </executions>
+	    </plugin>
+	  </plugins>
+	 </build>
+
+</project>

@@ -18,3 +18,4 @@ models/.release-*
 /bin/
 /target/
 .idea/
+morphomodel/*.ser.gz
