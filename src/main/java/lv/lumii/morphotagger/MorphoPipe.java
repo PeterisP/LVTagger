@@ -65,6 +65,7 @@ public class MorphoPipe {
 	private static boolean keepTags = false;
 	private static boolean saveCase = false; // for lemmatized text output format
 	private static boolean outputSeparators = false; // <s> for sentences, <p> for paragraphs
+	private static boolean stopOnEmpty = true; // quit on empty line
 	
 	private static String morphoClassifierLocation = "models/lv-morpho-model.ser.gz"; //FIXME - make it configurable
 	
@@ -110,6 +111,7 @@ public class MorphoPipe {
 			if (args[i].equalsIgnoreCase("-unix-line-endings")) eol="\n";
 			if (args[i].equalsIgnoreCase("-keep-tags")) keepTags = true;
 			if (args[i].equalsIgnoreCase("-output-separators")) outputSeparators = true;
+            if (args[i].equalsIgnoreCase("-allow-empty-lines")) stopOnEmpty = false;
 						
 			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
 				System.out.println("LV morphological tagger");
@@ -136,6 +138,7 @@ public class MorphoPipe {
 				System.out.println("\t-unix-line-endings : use \\n line endings for output even on windows systems");
 				System.out.println("\t-keep-tags : preserve lines that start with '<' to enable xml-style metadata");
 				System.out.println("\t-output-separators : put <s></s> sentence markup and <p></p> paragraph markup");
+                System.out.println("\t-allow-empty-lines : do not quit on blank lines input (as per default)");
 				System.out.flush();
 				System.exit(0);
 			}
@@ -155,11 +158,12 @@ public class MorphoPipe {
 		default:
 		    String s;
 		    String sentence = "";
-		    while ((s = in.readLine()) != null && s.length() != 0) {
+		    while ((s = in.readLine()) != null && (s.length() != 0 || !stopOnEmpty)) {
 		    	if (s.startsWith("<") && s.length()>1 && keepTags) {
 		    		if (outputType != outputTypes.lemmatizedText) out.println(s);
 		    		continue;
 		    	}
+                if (s.length() == 0) continue;
 		    	boolean finished = true; // is sentence finished and ready to analyze
 		    	if (inputType != inputTypes.VERT) {		    		
 		    		sentence = s;
