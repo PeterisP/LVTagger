@@ -17,10 +17,7 @@
  *******************************************************************************/
 package lv.lumii.morphotagger;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
@@ -31,22 +28,27 @@ import java.util.Set;
 public class Dictionary {
 	private static HashMap<String,Set<String>> dictionaries = new HashMap<String,Set<String>>();
 	
-	public static Set<String> dict(String filename) {
-		Set<String> result = dictionaries.get(filename);
+	public static Set<String> dict(String dict_name) {
+		Set<String> result = dictionaries.get(dict_name);
 		if (result == null) {
 			result = new HashSet<String>();
 			try {
-				BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream("LETAdicts/"+filename+".txt"), "UTF8"));
+                String filename = "LETAdicts/" + dict_name + ".txt";
+				InputStream stream = Dictionary.class.getClassLoader().getResourceAsStream(filename);
+				if (stream == null) {
+                    stream = new FileInputStream(filename);
+				}
+				BufferedReader in = new BufferedReader(new InputStreamReader(stream, "UTF8"));
 				
 				String line;
 				while ((line = in.readLine()) != null) {
 			        result.add(line);
 			    }
 				in.close();
-				dictionaries.put(filename, result);
 			} catch (IOException e) {
 				System.err.println(e.getMessage());
 			}
+            dictionaries.put(dict_name, result);
 		}
 		return result;
 	}
