@@ -19,3 +19,4 @@ models/.release-*
 /target/
 .idea/
 morphomodel/*.ser.gz
+morphomodel/target

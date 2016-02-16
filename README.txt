@@ -19,6 +19,7 @@ For information, bug reports, and any problems, contact:
 
 USAGE
 
+Build using maven or download from oss.sonatype.org (https://oss.sonatype.org/service/local/artifact/maven/redirect?r=releases&g=lv.ailab.morphology&a=tagger&v=1.0.0&e=jar&c=jar-with-dependencies)
 Run the included morphotagger.sh script for tokenization and morphological tagging of plaintext data. 
 Input one sentence or paragraph per line; end processing with an empty line.
 Output format is JSON by default, or tab-delimited columns of token-tag-lemma when run as './pipetool.sh -vert'.
@@ -37,7 +38,7 @@ For named entity tagging with a pre-trained model, run the included nertagger.sh
 SYSTEM REQUIREMENTS
 
 JRE 1.7+ should be installed and available on path. 
-The analyzer is rather memory-hungry; ~2gb memory should be available.
+~2gb memory should be available.
 
 PERFORMANCE ESTIMATES
 
@@ -46,20 +47,11 @@ For morphological tagging in current test data we are seeing accuracy of 92.8% f
 
 COMPILING FROM SOURCE
 
-Eclipse project files and Ant build scripts are included.
-The build scripts assume that the morphological word analysis module (https://github.com/PeterisP/morphology) will be located next to this project (../Morphology)
-The following commands should build a working system on MacOS/Linux, assuming that Java/ant is installed.
-
-git clone https://github.com/PeterisP/morphology.git
-git clone https://github.com/PeterisP/LVTagger.git
-cd morphology/
-ant
-cd ../LVTagger/
-ant
+Use maven to compile and download dependencies (morphological word analysis module from https://github.com/PeterisP/morphology and the pretrained postagging model).
 
 DOWNLOADS
 
-The binary downloads and pretrained models are excluded from github due to their size. They can be built from source or obtained by e-mailing at the contacts listed above.
+https://oss.sonatype.org/service/local/artifact/maven/redirect?r=releases&g=lv.ailab.morphology&a=tagger&v=1.0.0&e=jar&c=jar-with-dependencies
 
 REFERENCES
 
