@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd $(dirname $0)
-java -Xmx4G -cp dist/CRF.jar:dist/morphology.jar:dist/transliterator.jar:lib/json-simple-1.1.1.jar lv.lumii.morphotagger.MorphoCRF $*
+java -Xmx4G -cp target/tagger-1.0.1-SNAPSHOT-jar-with-dependencies.jar lv.lumii.morphotagger.MorphoCRF $*
