@@ -173,9 +173,9 @@ public class MorphoCRF {
 			}			
 		    
 		    izeja.printf("\nEvaluation results:\n");
-			izeja.printf("\tCorrect tag:\t%4.1f%%\t%d\n", correct_tag*100.0/total, total-correct_tag);
-			izeja.printf("\tCorrect lemma:\t%4.1f%%\t%d\n", correct_lemma*100.0/total, total-correct_lemma);
-			izeja.printf("\tCorrect all:\t%4.1f%%\t%d\n", correct_all*100.0/total, total-correct_all);
+			izeja.printf("\tCorrect tag:\t%4.1f%%\t%d mismatches\n", correct_tag*100.0/total, total-correct_tag);
+			izeja.printf("\tCorrect lemma:\t%4.1f%%\t%d mismatches\n", correct_lemma*100.0/total, total-correct_lemma);
+			izeja.printf("\tCorrect all:\t%4.1f%%\t%d mismatches\n", correct_all*100.0/total, total-correct_all);
 			summarizeErrors(errors, izeja);
 		    izeja.flush();
 		} catch (IOException e) {

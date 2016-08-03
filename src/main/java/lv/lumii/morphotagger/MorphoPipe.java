@@ -49,7 +49,7 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 
 public class MorphoPipe {
 	private enum inputTypes {SENTENCE, PARAGRAPH, VERT, CONLL, JSON};
-	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X, XML, VISL_CG, lemmatizedText};
+	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X, XML, VISL_CG, lemmatizedText, lowercasedText, analyzerOptions};
 
 	private static String eol = System.getProperty("line.separator");
 	private static String field_separator = "\t";
@@ -107,6 +107,11 @@ public class MorphoPipe {
 			if (args[i].equalsIgnoreCase("-xml")) outputType = outputTypes.XML;
 			if (args[i].equalsIgnoreCase("-visl-cg")) outputType = outputTypes.VISL_CG;
 			if (args[i].equalsIgnoreCase("-lemmatized-text")) outputType = outputTypes.lemmatizedText;
+            if (args[i].equalsIgnoreCase("-lowercased-text")) outputType = outputTypes.lowercasedText;
+            if (args[i].equalsIgnoreCase("-analyzer")) {
+                outputType = outputTypes.analyzerOptions;
+                token_separator = "\t";
+            }
 			if (args[i].equalsIgnoreCase("-saveColumns")) saveColumns = true; //save extra columns from conll input
 			if (args[i].equalsIgnoreCase("-unix-line-endings")) eol="\n";
 			if (args[i].equalsIgnoreCase("-keep-tags")) keepTags = true;
@@ -130,6 +135,8 @@ public class MorphoPipe {
 				System.out.println("\t-xml : one xml word per line");
 				System.out.println("\t-visl-cg : output format for VISL constraint grammar tool");
 				System.out.println("\t-lemmatized-text : output lowercase lemmatized text, each sentence in new row, tokens seperated by single space");
+				System.out.println("\t-lowercased-text : output lowercased text, each sentence in new row, tokens seperated by single space");
+                System.out.println("\t-analyzer : one response line for each token; word followed by a tab-separated list of undisambiguated morphological tag options");
 				System.out.println("\nOther options:");
 				System.out.println("\t-stripped : lexical/nonessential parts of the tag are replaced with '-' to reduce sparsity.");
 				System.out.println("\t-features : in conll output, include the features that were used for training/tagging.");
@@ -160,7 +167,7 @@ public class MorphoPipe {
 		    String sentence = "";
 		    while ((s = in.readLine()) != null && (s.length() != 0 || !stopOnEmpty)) {
 		    	if (s.startsWith("<") && s.length()>1 && keepTags) {
-		    		if (outputType != outputTypes.lemmatizedText) out.println(s);
+		    		if (outputType != outputTypes.lemmatizedText && outputType != outputTypes.lowercasedText) out.println(s);
 		    		continue;
 		    	}
                 if (s.length() == 0) continue;
@@ -189,7 +196,7 @@ public class MorphoPipe {
 	 * Splits the text in sentences if needed, and forwards to outputSentance
 	 * @param cmm - the tagger, needed to retrieve tagger features if they are requested
 	 * @param out - a stream to output the data
-	 * @param sentence - actual tokens to be output
+	 * @param text - actual tokens to be output
 	 */
 	public static void processSentences(
 			CMMClassifier<CoreLabel> cmm, PrintStream out, String text) {
@@ -215,8 +222,11 @@ public class MorphoPipe {
 	public static void outputSentence(CMMClassifier<CoreLabel> cmm,
 			PrintStream out, List<CoreLabel> sentence) {
 		if (outputSeparators) out.println("<s>");
-		
-		sentence = cmm.classify(sentence); // runs the actual morphotagging system
+
+        if (outputType != outputTypes.lowercasedText && outputType != outputTypes.analyzerOptions) { //FIXME - a separate flag would be better
+            sentence = cmm.classify(sentence); // runs the actual morphotagging system
+        }
+
 		switch (outputType) {
 		case JSON:
 			out.println( output_JSON(sentence));
@@ -236,9 +246,15 @@ public class MorphoPipe {
 			out.println( output_VISL(sentence));
 			break;
 		case lemmatizedText:
-			out.println( output_lemmatized(sentence, cmm));
+			out.println( output_lemmatized(sentence));
 			break;
-		default: 
+        case lowercasedText:
+            out.println( output_lowercased(sentence));
+            break;
+        case analyzerOptions:
+            out.println( output_analyzer(sentence));
+            break;
+		default:
 			out.println( output_separated(sentence));	    
 		}
 		if (outputSeparators) out.println("</s>");
@@ -261,9 +277,7 @@ public class MorphoPipe {
 		}
 		
 		String s = formatJSON(tokenJSON).toString();
-		tokens = null;
-		tokenJSON = null;
-		
+
 		return s;
 	}
 	
@@ -352,7 +366,7 @@ public class MorphoPipe {
 		return s.toString();
 	}
 	
-	private static String output_lemmatized(List<CoreLabel> tokens, CMMClassifier<CoreLabel> cmm){
+	private static String output_lemmatized(List<CoreLabel> tokens){
 		StringBuilder s = new StringBuilder();
 		
 		for (CoreLabel word : tokens) {
@@ -376,7 +390,37 @@ public class MorphoPipe {
 		}
 		return s.toString().trim();
 	}
-	
+
+    private static String output_lowercased(List<CoreLabel> tokens){
+        StringBuilder s = new StringBuilder();
+
+        for (CoreLabel word : tokens) {
+            String token = word.getString(TextAnnotation.class);
+            if (token.contains("<s>")) continue;
+            token = token.replace(' ', '_').toLowerCase();
+            s.append(token);
+            s.append(' ');
+        }
+        return s.toString().trim();
+    }
+
+    private static String output_analyzer(List<CoreLabel> tokens){
+        StringBuilder s = new StringBuilder();
+
+        for (CoreLabel word : tokens) {
+            String token = word.getString(TextAnnotation.class);
+            if (token.contains("<s>")) continue;
+            token = token.replace(' ', '_');
+            s.append(token);
+            Word analysis = word.get(LVMorphologyAnalysis.class);
+            for (Wordform wf : analysis.wordforms) {
+                s.append(token_separator);
+                s.append(wf.getTag());
+            }
+        }
+        return s.toString().trim();
+    }
+
 	private static void addLETAfeatures(Wordform wf) {
 		String lemma = wf.getValue(AttributeNames.i_Lemma);
 				
