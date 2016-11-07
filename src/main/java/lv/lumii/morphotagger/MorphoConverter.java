@@ -5,10 +5,12 @@ import lv.semti.morphology.analyzer.MarkupConverter;
 import lv.semti.morphology.analyzer.Word;
 import lv.semti.morphology.analyzer.Wordform;
 import lv.semti.morphology.attributes.AttributeValues;
+import org.apache.commons.io.FilenameUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import java.io.*;
+import java.util.Map;
 
 /**
  * Created by pet on 2016-05-30.
@@ -21,8 +23,11 @@ public class MorphoConverter {
         analyzer = new Analyzer(false);
 
 //        convert_tf_json("MorphoCRF/test.txt",  "/Users/pet/Documents/DNN/pp_tf/data/test.json");
-        convert_tf_json("MorphoCRF/dev.txt",  "/Users/pet/Documents/DNN/pp_tf/data/dev.sent.json", true);
-        convert_tf_json("MorphoCRF/train.txt", "/Users/pet/Documents/DNN/pp_tf/data/train.sent.json", true);
+//        convert_tf_json("MorphoCRF/dev.txt",  "/Users/pet/Documents/DNN/pp_tf/data/dev.json");
+//        convert_tf_json("MorphoCRF/train.txt", "/Users/pet/Documents/DNN/pp_tf/data/train.json");
+
+        convert_tf_json("MorphoCRF/2014 gada dati/test.txt",  "/Users/pet/Documents/DNN/pp_tf/data/test2014.json");
+        convert_tf_json("MorphoCRF/2014 gada dati/train_dev.txt",  "/Users/pet/Documents/DNN/pp_tf/data/traindev2014.json");
 
 //        convert_pdonald("MorphoCRF/2014 gada dati/test.txt", "MorphoCRF/2014 gada dati/test2014.analyzed.txt");
 //        convert_pdonald("MorphoCRF/2014 gada dati/train.txt", "MorphoCRF/2014 gada dati/train2014.analyzed.txt");
@@ -31,26 +36,27 @@ public class MorphoConverter {
 //        convert_pdonald("MorphoCRF/train.txt", "MorphoCRF/2014 gada dati/train2016.analyzed.txt");
     }
 
-    public static void convert_tf_json(String filename_in, String filename_out, boolean sentence_split) throws IOException {
+    public static void convert_tf_json(String filename_in, String filename_out) throws IOException {
         BufferedReader in = new BufferedReader(new FileReader(filename_in));
         String input;
-        JSONArray document = new JSONArray();
+        JSONObject document = new JSONObject();
+        document.put("id", FilenameUtils.getBaseName(filename_in));
+        JSONArray sentences = new JSONArray();
+        document.put("sentences", sentences);
+
         JSONArray sentence = null;
-        int sentences = 0;
+        int sentence_count = 0;
         while ((input = in.readLine()) != null) {
             if (input.startsWith("<") || input.isEmpty()) {
-                if (sentence_split) {
-                    if (input.equalsIgnoreCase("<s>")) {
-                        assert (sentence == null);
-                        sentence = new JSONArray();
-                    } else if (input.equalsIgnoreCase("</s>")) {
-                        assert (sentence != null);
-                        assert (!sentence.isEmpty());
-                        document.add(sentence);
-                        sentences++;
-                        sentence = null;
-                    } else
-                        assert (input.isEmpty()); // Pārbaudam, vai nav kādi sveši tagi ieklīduši, par kuriem jādomā ko darīt
+                if (input.equalsIgnoreCase("<s>")) {
+                    assert (sentence == null);
+                    sentence = new JSONArray();
+                } else if (input.equalsIgnoreCase("</s>")) {
+                    assert (sentence != null);
+                    assert (!sentence.isEmpty());
+                    sentences.add(sentence);
+                    sentence_count++;
+                    sentence = null;
                 }
             } else {
                 String[] fields = input.split("\t");
@@ -65,6 +71,11 @@ public class MorphoConverter {
 
                 AttributeValues answerAV = MarkupConverter.fromKamolsMarkup(gold_tag);
                 answerAV.removeNonlexicalAttributes();
+                JSONObject attributes = new JSONObject();
+                for (Map.Entry entry : answerAV.entrySet()) {
+                    attributes.put(entry.getKey(), entry.getValue());
+                }
+                token.put("gold_attributes", attributes);
                 String gold_tag_simple = MarkupConverter.toKamolsMarkup(answerAV);
                 token.put("gold_tag_simple", gold_tag_simple);
 
@@ -76,16 +87,13 @@ public class MorphoConverter {
                     options.add(tag);
                 }
                 token.put("options", options);
-                if (sentence_split)
-                    sentence.add(token);
-                else
-                    document.add(token);
+                sentence.add(token);
             }
         }
         in.close();
         try (FileWriter out = new FileWriter(filename_out)) {
-            document.writeJSONString(out);
-            System.out.printf("Converted %d sentences to %s", sentences, filename_out);
+            sentences.writeJSONString(out); // NB! lai būtu mainītā struktūra, jāizvada dokuments!
+            System.out.printf("Converted %d sentences to %s", sentence_count, filename_out);
         }
     }
 
