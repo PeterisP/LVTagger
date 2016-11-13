@@ -22,6 +22,7 @@ import static org.junit.Assert.assertEquals;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
@@ -58,7 +59,8 @@ public class NerTest {
 	@BeforeClass
     public static void oneTimeSetUp() throws IOException, ClassCastException, ClassNotFoundException {
 		Properties props = new Properties();
-		props.load(new FileInputStream(nerPropertiesFile));
+		InputStream stream = NerTest.class.getClassLoader().getResourceAsStream(nerPropertiesFile);
+		props.load(stream);
 		ner = new NerPipe(props);
 		morphoClassifier = CMMClassifier.getClassifier(morphoClassifierModel);
     }
