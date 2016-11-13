@@ -5,7 +5,7 @@
 	<groupId>lv.ailab.morphology</groupId>
 	<artifactId>tagger</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.2</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<name>Stanford NLP-based POS and NER tagger for Latvian</name>
 	<description>Stanford NLP-based POS and NER tagger for Latvian</description>
 	<url>https://github.com/PeterisP/LVTagger</url>
@@ -52,6 +52,12 @@
 		<dependency>
 			<groupId>lv.ailab.morphology</groupId>
 			<artifactId>lv-morpho-model</artifactId>
+			<version>1.0.0</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>lv.ailab.morphology</groupId>
+			<artifactId>lv-ner-model</artifactId>
 			<version>1.0.0</version>
 			<type>pom</type>
 		</dependency>
@@ -146,6 +152,13 @@
 								<artifactItem>
 									<groupId>lv.ailab.morphology</groupId>
 									<artifactId>lv-morpho-model</artifactId>
+									<type>ser.gz</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>target/classes/models</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>lv.ailab.morphology</groupId>
+									<artifactId>lv-ner-model</artifactId>
 									<type>ser.gz</type>
 									<overWrite>true</overWrite>
 									<outputDirectory>target/classes/models</outputDirectory>

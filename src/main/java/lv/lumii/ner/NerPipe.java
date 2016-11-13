@@ -56,7 +56,7 @@ public class NerPipe {
 		
 		List<AbstractSequenceClassifier<CoreLabel>> classifiers = new ArrayList<>();
 		
-		if (props.containsKey("whiteListCasedLemmas")) classifiers.add(new ListNERSequenceClassifier(props.getProperty("whiteListUncasedLemmas"), false, true, true));
+		if (props.containsKey("whiteListCasedLemmas")) classifiers.add(new ListNERSequenceClassifier(props.getProperty("whiteListCasedLemmas"), false, true, true));
 		if (props.containsKey("whiteListUncasedWords"))
 			classifiers.add(new ListNERSequenceClassifier(props.getProperty("whiteListUncasedWords"), true, false, true));
 		if (props.containsKey("whiteListCasedWords"))

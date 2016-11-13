@@ -52,7 +52,7 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 public class NerTest {
 	private static final String nerPropertiesFile = "lv-ner-tagger.prop";
 	private static NerPipe ner;
-	private static final String morphoClassifierModel = "../LVTagger/models/lv-morpho-model.ser.gz";
+	private static final String morphoClassifierModel = "models/lv-morpho-model.ser.gz";
 	private static transient CMMClassifier<CoreLabel> morphoClassifier = null;	
 	
 	@BeforeClass
@@ -60,7 +60,7 @@ public class NerTest {
 		Properties props = new Properties();
 		props.load(new FileInputStream(nerPropertiesFile));
 		ner = new NerPipe(props);
-		morphoClassifier = CMMClassifier.getClassifier(new File(morphoClassifierModel));
+		morphoClassifier = CMMClassifier.getClassifier(morphoClassifierModel);
     }
 
 	@Test
