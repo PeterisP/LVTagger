@@ -60,7 +60,8 @@ public class MorphoPipe {
 	private static boolean LETAfeatures = true;	
 	private static inputTypes inputType = inputTypes.PARAGRAPH;
 	private static outputTypes outputType = outputTypes.CONLL_X;
-	private static int sentencelengthcap = Splitting.DEFAULT_SENTENCE_LENGTH_CAP;
+	//private static int sentencelengthcap = Splitting.DEFAULT_SENTENCE_LENGTH_CAP;
+	private static int sentencelengthcap = 100; 
 	private static boolean saveColumns = false;
 	private static boolean keepTags = false;
 	private static boolean saveCase = false; // for lemmatized text output format

@@ -18,6 +18,9 @@
 package lv.lumii.morphotagger;
 import static org.junit.Assert.*;
 
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import lv.semti.morphology.analyzer.Word;
@@ -68,6 +71,23 @@ public class TaggerTest {
 		assertEquals(lemma, maxwf.getValue(AttributeNames.i_Lemma));
 	}
 
+	private void describe(List<CoreLabel> sentence, int word) {
+        String token = sentence.get(word).getString(TextAnnotation.class);
+        assertFalse(token.contains("<s>"));
+        Word analysis = sentence.get(word).get(LVMorphologyAnalysis.class);
+        Wordform maxwf = analysis.getMatchingWordform(sentence.get(word).getString(AnswerAnnotation.class), true);
+        PrintWriter izeja;
+        try {
+            izeja = new PrintWriter(new OutputStreamWriter(System.out, "UTF-8"));
+            maxwf.describe(izeja);
+            izeja.flush();
+        } catch (UnsupportedEncodingException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+    }
+
 
 	@Test
 	public void sanity() {
@@ -94,9 +114,8 @@ public class TaggerTest {
 		assertValue(word, 1, AttributeNames.i_Declension, "1");
 		
 		word = tag("GPS");
-		assertPOS(word, 1, AttributeNames.v_Noun);
-		assertValue(word, 1, AttributeNames.i_Declension, "1");
-		
+		assertPOS(word, 1, AttributeNames.v_Abbreviation);
+
 		word = tag("Čārlzs");
 		assertPOS(word, 1, AttributeNames.v_Noun);
 		assertValue(word, 1, AttributeNames.i_Declension, "1");
@@ -105,9 +124,7 @@ public class TaggerTest {
 	@Test
 	public void gunta19dec_2() {
 		// Guntas sūdzības pa skype 2012.12.19 - uz 2013.02.15 nestrādāja
-		List<CoreLabel> word = tag("ambiciozs vīrietis");
-		assertPOS(word, 1, AttributeNames.v_Adjective);
-
+		List<CoreLabel> word;
 		word = tag("padzīs");
 		assertPOS(word, 1, AttributeNames.v_Verb);
 
@@ -129,8 +146,11 @@ public class TaggerTest {
 		
 		word = tag("nodotu");
 		assertPOS(word, 1, AttributeNames.v_Verb);
-		assertValue(word, 1, AttributeNames.i_Konjugaacija, "1");				
-	}
+		assertValue(word, 1, AttributeNames.i_Konjugaacija, AttributeNames.v_Nekaartns);
+
+        word = tag("ambiciozs vīrietis");
+        assertPOS(word, 1, AttributeNames.v_Adjective);
+    }
 	
 	@Test
 	public void gunta19dec_3() {
@@ -161,4 +181,15 @@ public class TaggerTest {
 		assertValue(word, 4, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
 		assertValue(word, 6, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
 	}
+
+//	Mistiskā kārtā visādi vārdi tagojas kā īpašvārdi
+	@Test
+    public void īpašvārdi_2017mar() {
+	    String vide = "Tūrisma attīstības integrēšana vietējā un nacionālā stratēģiskās plānošanas darbā, ietekmes uz vidi izvērtēšana";
+        List<CoreLabel> tagged = tag(vide);
+        describe(tagged, 13);
+        assertLemma(tagged, 13, "vide");
+        assertValue(tagged, 13, AttributeNames.i_NounType, null /*AttributeNames.v_CommonNoun*/);
+
+    }
 }

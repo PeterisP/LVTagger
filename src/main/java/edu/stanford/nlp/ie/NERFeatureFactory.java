@@ -46,7 +46,6 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import lv.semti.morphology.analyzer.MarkupConverter;
 import lv.semti.morphology.analyzer.Wordform;
 import lv.semti.morphology.attributes.AttributeNames;
 import lv.semti.morphology.attributes.AttributeValues;
@@ -107,6 +106,7 @@ import edu.stanford.nlp.trees.TreeCoreAnnotations;
 import edu.stanford.nlp.util.PaddedList;
 import edu.stanford.nlp.util.StringUtils;
 import edu.stanford.nlp.util.Timing;
+import lv.semti.morphology.attributes.TagSet;
 
 /**
  * Features for Named Entity Recognition.  The code here creates the features
@@ -1804,9 +1804,9 @@ public class NERFeatureFactory<IN extends CoreLabel> extends FeatureFactory<IN> 
    * LV morphology helper functions
    */
   private String filterTag(String tag) {
-	  AttributeValues answerAV = MarkupConverter.fromKamolsMarkup(tag);
+	  AttributeValues answerAV = TagSet.getTagSet().fromTag(tag);
 	  answerAV.removeNonlexicalAttributes();
-	  return MarkupConverter.toKamolsMarkup(answerAV);	   	  
+	  return TagSet.getTagSet().toTag(answerAV);
   }
   
   private Collection<String> addMorphoTag(CoreLabel c, String postfix) {

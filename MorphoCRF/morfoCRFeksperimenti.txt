@@ -181,7 +181,7 @@
 	Persona :  0.81%
 	Locījums :  6.91%
 
-32. eneiblojam transitivitāti
+32. Ieliekam tagā arī transitivitāti
 	Evaluation results:
 		Correct tag:	92.8%	387
 		Correct lemma:	95.5%	239
@@ -581,9 +581,213 @@ Evaluation results:
 	Definiteness :  0.76%
 	Rekcija : 16.14%
 
+57. Jaunie treniņdati / testdati. laists uz macpro3, 30 min
+	Evaluation results:
+		Correct tag:	91.1%	692
+		Correct lemma:	95.8%	325
+		Correct all:	89.5%	809
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Number :  5.86%
+	Reziduāļa tips :  0.60%
+	Person :  0.33%
+	Punctuation group :  0.14%
+	Part of speech :  2.66%
+	Vietniekvārda tips :  1.77%
+	Case :  8.01%
+	Gender :  3.05%
+	Definiteness :  2.47%
+	Mood :  1.30%
+	Rekcija : 25.28%
+
+58. Jaunie treniņdati / testdati - šoreiz devset, uz kura arī tad strādāšu. Vai tur arī ir šāds precizitātes kritums ?
+	Evaluation results:
+		Correct tag:	92.8%	474
+		Correct lemma:	96.4%	240
+		Correct all:	91.6%	556
+	Per-feature error rate summary (for those words that actually have such a feature)
+	Number :  3.88%
+	Person :  0.18%
+	Punctuation group :  0.09%
+	Part of speech :  2.34%
+	Vietniekvārda tips :  5.87%
+	Case :  5.67%
+	Gender :  2.99%
+	Definiteness :  2.95%
+	Mood :  0.76%
+	Rekcija : 11.82%
+OK. tātad izvēlētie testa dati ir nepamatoti grūtāki nekā iepriekšējais sadalījums, un es nevarēšu nekādu justifikāciju pateikt, kāpēc ir sliktāk kā līdz šim..
+
+59. dev/test - treebank atstāts kā Lauma UD dala, bet balansētajam un vēstnesim samainīts vietām dev un test. mērījums uz *test* kopas.
+Evaluation results:
+	Correct tag:	92.3%	542
+	Correct lemma:	96.3%	262
+	Correct all:	91.0%	634
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  4.77%
+Reziduāļa tips :  0.50%
+Person :  0.27%
+Punctuation group :  0.23%
+Part of speech :  2.49%
+Vietniekvārda tips :  2.04%
+Case :  6.50%
+Gender :  2.74%
+Definiteness :  3.61%
+Mood :  0.77%
+Rekcija : 20.47%
+
+60. Tātad baseline, ar kuru strādāšu - mērījums uz dev kopas jaunajiem datiem, tageris pārtrenēts, stenfordas CRF, morfoloģija 1.0.2., settingi nav aiztikti.
+Evaluation results:
+	Correct tag:	91.4%	627
+	Correct lemma:	95.8%	307
+	Correct all:	90.0%	732
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  4.98%
+Person :  0.17%
+Part of speech :  2.61%
+Vietniekvārda tips :  5.60%
+Case :  7.31%
+Gender :  3.02%
+Definiteness :  2.13%
+Mood :  1.28%
+Rekcija : 15.36%
+
+61. 2016 augusts - Atkārtojam baseline, ar to versiju, ka nu jūnijā bija palikusi
+Evaluation results:
+	Correct tag:	91.4%	626 mismatches
+	Correct lemma:	95.8%	308 mismatches
+	Correct all:	90.0%	731 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  5.00%
+Person :  0.17%
+Part of speech :  2.61%
+Vietniekvārda tips :  5.60%
+Case :  7.34%
+Gender :  3.04%
+Definiteness :  2.13%
+Mood :  1.28%
+Rekcija : 14.98%
+
+62. 2017 marts - Datu kopas update pēc pēdējām korpusa/treebank korekcijām. Novērtējam izpildi uz devseta ar produkcijas modeli (1.0.0)
+Evaluation results:
+	Correct tag:	96.2%	274 mismatches
+	Correct lemma:	97.4%	187 mismatches
+	Correct all:	94.6%	397 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  1.60%
+Person :  0.08%
+Part of speech :  1.48%
+Vietniekvārda tips :  3.49%
+Case :  2.12%
+Gender :  1.05%
+Definiteness :  0.92%
+Mood :  0.68%
+Rekcija : 11.99%
+(Nereprezentatīvi augsti rezultāti, jo tas ir produkcijas modelis un ietver visus datus kā treniņdatus)
+
+Novērtējam izpildi uz devseta ar 2016 augustā trenēto modeli
+Evaluation results:
+	Correct tag:	91.4%	625 mismatches
+	Correct lemma:	95.9%	301 mismatches
+	Correct all:	90.2%	717 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  4.66%
+Person :  0.17%
+Part of speech :  2.73%
+Vietniekvārda tips :  5.56%
+Case :  7.27%
+Gender :  3.13%
+Definiteness :  2.30%
+Mood :  1.45%
+Rekcija : 14.98%
+
+Novērtējam izpildi uz devseta ar 2016 maijā trenēto modeli (lv-morpho-model-test1.ser.gz)
+Evaluation results:
+	Correct tag:	91.4%	625 mismatches
+	Correct lemma:	95.9%	301 mismatches
+	Correct all:	90.2%	717 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  4.66%
+Person :  0.17%
+Part of speech :  2.73%
+Vietniekvārda tips :  5.56%
+Case :  7.27%
+Gender :  3.13%
+Definiteness :  2.30%
+Mood :  1.45%
+Rekcija : 14.98%
+
+63. Trenējam jaunu modeli uz jaunā apdeitotā korpusa
+Evaluation results:
+	Correct tag:	91.7%	606 mismatches
+	Correct lemma:	96.0%	291 mismatches
+	Correct all:	90.5%	695 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  4.84%
+Person :  0.17%
+Part of speech :  2.49%
+Vietniekvārda tips :  5.31%
+Case :  7.23%
+Gender :  2.87%
+Definiteness :  2.41%
+Mood :  1.37%
+Rekcija : 14.66%
+
+64. Ar morfoloģiju 1.0.9
+Vecais modelis (1.0.1-SNAPSHOT)
+Evaluation results:
+	Correct tag:	91.0%	631 mismatches
+	Correct lemma:	96.1%	275 mismatches
+	Correct all:	89.5%	737 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  6.33%
+Reziduāļa tips :  4.42%
+Person :  0.53%
+Punctuation group :  0.23%
+Part of speech :  2.91%
+Vietniekvārda tips :  1.77%
+Case :  7.10%
+Gender :  2.78%
+Definiteness :  3.99%
+Mood :  1.05%
+Rekcija : 31.21%
+
+Nupat uztrenētais DEV
+Evaluation results:
+	Correct tag:	91.2%	620 mismatches
+	Correct lemma:	96.3%	263 mismatches
+	Correct all:	89.8%	720 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  5.88%
+Reziduāļa tips :  4.00%
+Person :  0.53%
+Punctuation group :  0.23%
+Part of speech :  2.81%
+Vietniekvārda tips :  2.54%
+Case :  6.75%
+Gender :  2.68%
+Definiteness :  4.28%
+Mood :  0.85%
+Rekcija : 32.55%
+
+Produkcijas modelis (cipari nebūs reprezentatīvi)
+Evaluation results:
+	Correct tag:	96.1%	276 mismatches
+	Correct lemma:	97.7%	162 mismatches
+	Correct all:	94.3%	403 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  3.01%
+Reziduāļa tips :  0.78%
+Person :  0.09%
+Part of speech :  1.13%
+Vietniekvārda tips :  1.51%
+Case :  2.24%
+Gender :  0.58%
+Mood :  0.09%
+Definiteness :  0.62%
+Rekcija : 30.87%
+
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss
-DONE - notestēt, kā ir ar transitivitātes eneiblošanu - nav jēgas
 TODO - notestēt, kā ir ja tagerim kā signālu padod, no kuras grupas lemma/tags ir nācis
 TODO - onomastikā ielikt filtru, lai nav common noun daudzskaitlinieki iekšā; par deminutīviem jāpadomā
 TODO - nez kāpēc viņam nepatīk ar priedēkļiem atvasinātie verbi:

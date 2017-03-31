@@ -36,11 +36,11 @@ import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.objectbank.ObjectBank;
 import edu.stanford.nlp.sequences.DocumentReaderAndWriter;
 
-import lv.semti.morphology.analyzer.MarkupConverter;
 import lv.semti.morphology.analyzer.Word;
 import lv.semti.morphology.analyzer.Wordform;
 import lv.semti.morphology.attributes.AttributeNames;
 import lv.semti.morphology.attributes.AttributeValues;
+import lv.semti.morphology.attributes.TagSet;
 
 public class MorphoCRF {
 
@@ -68,6 +68,11 @@ public class MorphoCRF {
 				testfile = "MorphoCRF/test.txt";
 			}
 		}
+
+		if (train) {
+            System.err.printf("Training on '%s'\n", trainfile);
+        }
+        System.err.printf("Testing on '%s'\n", testfile);
 		
 		String pretrainedModel = "models/lv-morpho-model.ser.gz";
 		String classifierOutput = "MorphoCRF/lv-morpho-model.ser.gz";
@@ -149,8 +154,8 @@ public class MorphoCRF {
 				  String gold_tag = word.get(GoldAnswerAnnotation.class);
 				  String gold_lemma = word.get(LemmaAnnotation.class); // The lemma that's written in the test data
 				  
-				  AttributeValues gold_tags = MarkupConverter.fromKamolsMarkup(gold_tag);
-				  AttributeValues found_tags = MarkupConverter.fromKamolsMarkup(answer);
+				  AttributeValues gold_tags = TagSet.getTagSet().fromTag(gold_tag);
+				  AttributeValues found_tags = TagSet.getTagSet().fromTag(answer);
 				  errors.add(compareAVs(gold_tags, found_tags));
 				
 				  total++;

@@ -1,10 +1,10 @@
 package lv.lumii.morphotagger;
 
 import lv.semti.morphology.analyzer.Analyzer;
-import lv.semti.morphology.analyzer.MarkupConverter;
 import lv.semti.morphology.analyzer.Word;
 import lv.semti.morphology.analyzer.Wordform;
 import lv.semti.morphology.attributes.AttributeValues;
+import lv.semti.morphology.attributes.TagSet;
 import org.apache.commons.io.FilenameUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -69,14 +69,14 @@ public class MorphoConverter {
                 token.put("gold_tag", gold_tag);
                 token.put("gold_lemma", gold_lemma);
 
-                AttributeValues answerAV = MarkupConverter.fromKamolsMarkup(gold_tag);
+                AttributeValues answerAV = TagSet.getTagSet().fromTag(gold_tag);
                 answerAV.removeNonlexicalAttributes();
                 JSONObject attributes = new JSONObject();
                 for (Map.Entry entry : answerAV.entrySet()) {
                     attributes.put(entry.getKey(), entry.getValue());
                 }
                 token.put("gold_attributes", attributes);
-                String gold_tag_simple = MarkupConverter.toKamolsMarkup(answerAV);
+                String gold_tag_simple = TagSet.getTagSet().toTag(answerAV);
                 token.put("gold_tag_simple", gold_tag_simple);
 
                 JSONArray options = new JSONArray();

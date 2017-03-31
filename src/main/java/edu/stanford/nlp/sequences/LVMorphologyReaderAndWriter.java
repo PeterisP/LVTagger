@@ -39,7 +39,11 @@ import edu.stanford.nlp.util.StringUtils;
 
 import lv.semti.morphology.analyzer.*;
 import lv.semti.morphology.attributes.AttributeValues;
+import lv.semti.morphology.attributes.TagSet;
 import lv.semti.morphology.corpus.Statistics;
+
+import javax.swing.text.html.HTML;
+
 /**
  * DocumentReader for column format, running LV morphology afterwards
  *
@@ -178,19 +182,19 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
 	    if (!token.contains("<s>")) {
 	        String answer = wi.get(AnswerAnnotation.class);
 	        if (answerAttributes == null) {
-		        AttributeValues answerAV = MarkupConverter.fromKamolsMarkup(answer);
+		        AttributeValues answerAV = TagSet.getTagSet().fromTag(answer);
 		        answerAV.removeNonlexicalAttributes();
-				answer = MarkupConverter.toKamolsMarkup(answerAV);	        	
+				answer = TagSet.getTagSet().toTag(answerAV);
 	        } else if (answerAttributes.size() == 1) {
-		        AttributeValues answerAV = MarkupConverter.fromKamolsMarkup(answer);
+		        AttributeValues answerAV = TagSet.getTagSet().fromTag(answer);
 		        answerAV.filterAttributes(answerAttributes);
 		        if (answerAV.size()>0)
 		        	answer = answerAV.get(0).getValue();
 		        else answer = "O";
 	        } else {
-		        AttributeValues answerAV = MarkupConverter.fromKamolsMarkup(answer);
+		        AttributeValues answerAV = TagSet.getTagSet().fromTag(answer);
 		        answerAV.filterAttributes(answerAttributes);
-				answer = MarkupConverter.toKamolsMarkup(answerAV);	        	
+				answer = TagSet.getTagSet().toTag(answerAV);
 	        }
 	        wi.set(AnswerAnnotation.class, answer);
 	        	        
