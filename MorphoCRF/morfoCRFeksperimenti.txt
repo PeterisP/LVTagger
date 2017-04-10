@@ -786,6 +786,45 @@ Mood :  0.09%
 Definiteness :  0.62%
 Rekcija : 30.87%
 
+65. Pēc tokenizācijas izmaiņām, morfolibrary 1.1.0
+Evaluation results:
+	Correct tag:	91.7%	608 mismatches
+	Correct lemma:	95.9%	297 mismatches
+	Correct all:	90.4%	699 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  4.65%
+Reziduāļa tips :  2.00%
+Person :  0.17%
+Part of speech :  2.47%
+Vietniekvārda tips :  5.04%
+Case :  7.24%
+Gender :  3.07%
+Definiteness :  2.42%
+Mood :  1.37%
+Rekcija : 14.66%
+
+Evaluation results:
+	Correct tag:	97.6%	172 mismatches
+	Correct lemma:	97.9%	151 mismatches
+	Correct all:	95.7%	304 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  1.59%
+Reziduāļa tips :  0.76%
+Person :  0.09%
+Part of speech :  0.65%
+Vietniekvārda tips :  1.50%
+Case :  1.52%
+Gender :  0.34%
+Mood :  0.09%
+Definiteness :  0.31%
+Rekcija : 16.78%
+
+real	37m39.699s
+user	39m3.006s
+sys	0m54.913s
+
+
+
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss
 TODO - notestēt, kā ir ja tagerim kā signālu padod, no kuras grupas lemma/tags ir nācis

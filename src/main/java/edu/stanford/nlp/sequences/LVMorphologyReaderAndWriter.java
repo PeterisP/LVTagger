@@ -133,6 +133,7 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
         ++lineCount;
         //if (lineCount > 0 && lineCount % 1000 == 0) { System.err.print("["+lineCount+"]"); }
         if (line.trim().length() == 0) continue;
+        if (line.contains("<g />")) continue;
         if (!line.contains("<s>") && !line.contains("</s>")) wordCount++;
         String[] info = whitePattern.split(line);
         // todo: We could speed things up here by having one time only having converted map into an array of CoreLabel keys (Class<? extends CoreAnnotation<?>>) and then instantiating them. Need new constructor.
