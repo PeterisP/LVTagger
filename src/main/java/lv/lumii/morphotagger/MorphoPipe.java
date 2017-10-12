@@ -57,7 +57,7 @@ public class MorphoPipe {
 	
 	private static boolean mini_tag = false;		
 	private static boolean features = false;	
-	private static boolean LETAfeatures = true;	
+	private static boolean LETAfeatures = false;
 	private static inputTypes inputType = inputTypes.PARAGRAPH;
 	private static outputTypes outputType = outputTypes.CONLL_X;
 	//private static int sentencelengthcap = Splitting.DEFAULT_SENTENCE_LENGTH_CAP;
