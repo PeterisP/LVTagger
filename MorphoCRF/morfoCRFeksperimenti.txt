@@ -823,7 +823,57 @@ real	37m39.699s
 user	39m3.006s
 sys	0m54.913s
 
+66. 2017.10.14, baseline ar esošo modeli pirms morfoloģijas apdeita (trenēts arī uz testadatiem acīmredzot)
+Evaluation results:
+	Correct tag:	97.4%	184 mismatches
+	Correct lemma:	97.9%	147 mismatches
+	Correct all:	95.7%	304 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  1.60%
+Reziduāļa tips :  1.50%
+Person :  0.09%
+Part of speech :  0.61%
+Vietniekvārda tips :  1.50%
+Case :  1.55%
+Gender :  0.71%
+Mood :  0.09%
+Definiteness :  0.31%
+Rekcija : 16.78%
 
+67. ar 1.2 morfoloģiju
+Evaluation results:
+	Correct tag:	92.1%	576 mismatches
+	Correct lemma:	93.1%	504 mismatches
+	Correct all:	87.8%	896 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  4.61%
+Reziduāļa tips :  3.00%
+Person :  0.17%
+Saīsinājuma tips : 13.51%
+Part of speech :  2.36%
+Vietniekvārda tips :  5.05%
+Case :  6.67%
+Gender :  2.84%
+Definiteness :  2.00%
+Mood :  1.20%
+Rekcija : 13.96%
+
+Produkcijas modelis (nereprezentatīvi cipari)
+Evaluation results:
+	Correct tag:	97.4%	184 mismatches
+	Correct lemma:	95.5%	315 mismatches
+	Correct all:	93.3%	474 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  1.84%
+Reziduāļa tips :  0.75%
+Person :  0.09%
+Part of speech :  0.67%
+Vietniekvārda tips :  1.51%
+Case :  1.63%
+Gender :  0.43%
+Mood :  0.09%
+Definiteness :  0.31%
+Rekcija : 17.79%
 
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss

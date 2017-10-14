@@ -44,7 +44,7 @@ public class TaggerTest {
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		cmm = CMMClassifier.getClassifier("models/lv-morpho-model.ser.gz");
+		cmm = CMMClassifier.getClassifier("morphomodel/lv-morpho-model.ser.gz");
 	}
 	
 	private static List<CoreLabel> tag (String sentence) {
