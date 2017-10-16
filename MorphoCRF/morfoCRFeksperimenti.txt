@@ -875,6 +875,25 @@ Mood :  0.09%
 Definiteness :  0.31%
 Rekcija : 17.79%
 
+68. ar 1.2.1 morfoloģiju, pielikts arī apstākļvārda tips
+Evaluation results:
+	Correct tag:	97.3%	190 mismatches
+	Correct lemma:	95.6%	312 mismatches
+	Correct all:	93.2%	482 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  1.79%
+Reziduāļa tips :  0.75%
+Person :  0.09%
+Apstākļa vārda tips :  7.07%
+Part of speech :  0.53%
+Vietniekvārda tips :  1.51%
+Case :  1.57%
+Gender :  0.37%
+Mood :  0.09%
+Definiteness :  0.31%
+Rekcija : 17.79%
+
+
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss
 TODO - notestēt, kā ir ja tagerim kā signālu padod, no kuras grupas lemma/tags ir nācis

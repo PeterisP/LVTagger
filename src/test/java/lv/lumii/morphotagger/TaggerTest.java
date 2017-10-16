@@ -36,6 +36,9 @@ import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LVMorphologyAnalysis;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
+import org.w3c.dom.Attr;
+
+import javax.management.Attribute;
 
 
 public class TaggerTest {
@@ -44,7 +47,7 @@ public class TaggerTest {
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		cmm = CMMClassifier.getClassifier("morphomodel/lv-morpho-model.ser.gz");
+		cmm = CMMClassifier.getClassifier("models/lv-morpho-model.ser.gz");
 	}
 	
 	private static List<CoreLabel> tag (String sentence) {
@@ -62,8 +65,16 @@ public class TaggerTest {
 		Wordform maxwf = analysis.getMatchingWordform(sentence.get(word).getString(AnswerAnnotation.class), true);
 		assertEquals(value, maxwf.getValue(key));
 	}
-	
-	private void assertLemma(List<CoreLabel> sentence, int word, String lemma) {	
+
+    private void assertTag(List<CoreLabel> sentence, int word, String tag) {
+        String token = sentence.get(word).getString(TextAnnotation.class);
+        assertFalse(token.contains("<s>"));
+        Word analysis = sentence.get(word).get(LVMorphologyAnalysis.class);
+        Wordform maxwf = analysis.getMatchingWordform(sentence.get(word).getString(AnswerAnnotation.class), true);
+        assertEquals(tag, maxwf.getTag());
+    }
+
+	private void assertLemma(List<CoreLabel> sentence, int word, String lemma) {
 		String token = sentence.get(word).getString(TextAnnotation.class);
 		assertFalse(token.contains("<s>"));
 		Word analysis = sentence.get(word).get(LVMorphologyAnalysis.class);
@@ -97,7 +108,7 @@ public class TaggerTest {
 	
 	@Test
 	public void roka() {
-		List<CoreLabel> sentence = tag("es roku roku");
+		List<CoreLabel> sentence = tag("Es roku roku.");
 		assertPOS(sentence, 2, AttributeNames.v_Verb);
 		assertPOS(sentence, 3, AttributeNames.v_Noun);
 	}
@@ -173,13 +184,13 @@ public class TaggerTest {
 	
 	@Test
 	public void noliegumi() {
-		List<CoreLabel> word = tag("Es šodien neiešu nepastaigāties un nedomāt.");
-		assertLemma(word, 3, "neiet");
-		assertLemma(word, 4, "nepastaigāties");
-		assertLemma(word, 6, "nedomāt");
-		assertValue(word, 3, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
-		assertValue(word, 4, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
-		assertValue(word, 6, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
+		List<CoreLabel> sentence = tag("Es šodien neiešu nepastaigāties un nedomāt.");
+		assertLemma(sentence, 3, "neiet");
+		assertLemma(sentence, 4, "nepastaigāties");
+		assertLemma(sentence, 6, "nedomāt");
+		assertValue(sentence, 3, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
+		assertValue(sentence, 4, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
+		assertValue(sentence, 6, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
 	}
 
 //	Mistiskā kārtā visādi vārdi tagojas kā īpašvārdi
@@ -190,6 +201,34 @@ public class TaggerTest {
         describe(tagged, 13);
         assertLemma(tagged, 13, "vide");
         assertValue(tagged, 13, AttributeNames.i_NounType, null /*AttributeNames.v_CommonNoun*/);
-
     }
+
+    @Test
+    public void issue10() {
+        List<CoreLabel> word = tag("trešdaļa");
+        assertValue(word, 1, AttributeNames.i_PartOfSpeech, AttributeNames.v_Noun);
+
+        word = tag("trīs");
+        assertValue(word, 1, AttributeNames.i_PartOfSpeech, AttributeNames.v_Numeral);
+
+        word = tag("3");
+        assertValue(word, 1, AttributeNames.i_PartOfSpeech, AttributeNames.v_Residual);
+        assertValue(word, 1, AttributeNames.i_ResidualType, AttributeNames.v_Number);
+    }
+
+    @Test
+    public void tagset_update_2017okt() {
+        List<CoreLabel> word = tag("braukdams");
+        assertTag(word, 1, "vmnppmsn0000");
+
+        word = tag("saasinātāks");
+        assertTag(word, 1, "vmnpdmsnpsnc");
+
+        word = tag("nenieka");
+        assertTag(word, 1, "r0q");
+
+        word = tag("svarīgi");
+        assertTag(word, 1, "rpm");
+    }
+
 }
