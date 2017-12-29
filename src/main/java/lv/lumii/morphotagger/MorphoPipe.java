@@ -66,6 +66,7 @@ public class MorphoPipe {
 	private static boolean keepTags = false;
 	private static boolean saveCase = false; // for lemmatized text output format
 	private static boolean outputSeparators = false; // <s> for sentences, <p> for paragraphs
+    private static boolean whitespaceMarker = false;
 	private static boolean stopOnEmpty = true; // quit on empty line
 	
 	private static String morphoClassifierLocation = "models/lv-morpho-model.ser.gz"; //FIXME - make it configurable
@@ -117,6 +118,7 @@ public class MorphoPipe {
 			if (args[i].equalsIgnoreCase("-unix-line-endings")) eol="\n";
 			if (args[i].equalsIgnoreCase("-keep-tags")) keepTags = true;
 			if (args[i].equalsIgnoreCase("-output-separators")) outputSeparators = true;
+            if (args[i].equalsIgnoreCase("-whitespace-marker")) whitespaceMarker = true;
             if (args[i].equalsIgnoreCase("-allow-empty-lines")) stopOnEmpty = false;
 						
 			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
@@ -146,6 +148,7 @@ public class MorphoPipe {
 				System.out.println("\t-unix-line-endings : use \\n line endings for output even on windows systems");
 				System.out.println("\t-keep-tags : preserve lines that start with '<' to enable xml-style metadata");
 				System.out.println("\t-output-separators : put <s></s> sentence markup and <p></p> paragraph markup");
+				System.out.println("\t-whitespace-marker : put <g /> tags where the tokens did not have whitespace between them");
                 System.out.println("\t-allow-empty-lines : do not quit on blank lines input (as per default)");
 				System.out.flush();
 				System.exit(0);
@@ -519,12 +522,19 @@ public class MorphoPipe {
 		for (CoreLabel word : tokens) {
 			String token = word.getString(TextAnnotation.class);
 			if (token.contains("<s>")) continue;
-			if (s.length()>0) s.append(token_separator);
-			if (outputType == outputTypes.MOSES) token = token.replace(' ', '_');
+            Word analysis = word.get(LVMorphologyAnalysis.class);
+            Wordform mainwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false);
+
+            if (s.length()>0) s.append(token_separator);
+            if (whitespaceMarker && mainwf.isMatchingStrong(AttributeNames.i_WhitespaceBefore, "")) {
+                s.append("<g />");
+                s.append(token_separator);
+            }
+
+            if (outputType == outputTypes.MOSES) token = token.replace(' ', '_');
 			s.append(token);
 			s.append(field_separator);
-			Word analysis = word.get(LVMorphologyAnalysis.class);
-			Wordform mainwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false); 
+
 			if (mainwf != null) {
 				if (mini_tag) mainwf.removeNonlexicalAttributes();
 				s.append(mainwf.getTag());

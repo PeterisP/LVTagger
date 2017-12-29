@@ -22,12 +22,13 @@ public class MorphoConverter {
         // Extend train/test files with all the morphological analysis options
         analyzer = new Analyzer(false);
 
-//        convert_tf_json("MorphoCRF/test.txt",  "/Users/pet/Documents/DNN/pp_tf/data/test.json");
-//        convert_tf_json("MorphoCRF/dev.txt",  "/Users/pet/Documents/DNN/pp_tf/data/dev.json");
-//        convert_tf_json("MorphoCRF/train.txt", "/Users/pet/Documents/DNN/pp_tf/data/train.json");
+        convert_tf_json("MorphoCRF/test.txt",  "/Users/pet/Documents/DNN/zilonis/data/test.json", 0);
+        convert_tf_json("MorphoCRF/dev.txt",  "/Users/pet/Documents/DNN/zilonis/data/dev.json", 0);
+        convert_tf_json("MorphoCRF/train.txt", "/Users/pet/Documents/DNN/zilonis/data/train.json", 0);
+        convert_tf_json("MorphoCRF/train.txt", "/Users/pet/Documents/DNN/zilonis/data/train_small.json", 100);
 
-        convert_tf_json("MorphoCRF/2014 gada dati/test.txt",  "/Users/pet/Documents/DNN/pp_tf/data/test2014.json");
-        convert_tf_json("MorphoCRF/2014 gada dati/train_dev.txt",  "/Users/pet/Documents/DNN/pp_tf/data/traindev2014.json");
+//        convert_tf_json("MorphoCRF/2014 gada dati/test.txt",  "/Users/pet/Documents/DNN/pp_tf/data/test2014.json");
+//        convert_tf_json("MorphoCRF/2014 gada dati/train_dev.txt",  "/Users/pet/Documents/DNN/pp_tf/data/traindev2014.json");
 
 //        convert_pdonald("MorphoCRF/2014 gada dati/test.txt", "MorphoCRF/2014 gada dati/test2014.analyzed.txt");
 //        convert_pdonald("MorphoCRF/2014 gada dati/train.txt", "MorphoCRF/2014 gada dati/train2014.analyzed.txt");
@@ -36,7 +37,7 @@ public class MorphoConverter {
 //        convert_pdonald("MorphoCRF/train.txt", "MorphoCRF/2014 gada dati/train2016.analyzed.txt");
     }
 
-    public static void convert_tf_json(String filename_in, String filename_out) throws IOException {
+    public static void convert_tf_json(String filename_in, String filename_out, int limit) throws IOException {
         BufferedReader in = new BufferedReader(new FileReader(filename_in));
         String input;
         JSONObject document = new JSONObject();
@@ -57,6 +58,8 @@ public class MorphoConverter {
                     sentences.add(sentence);
                     sentence_count++;
                     sentence = null;
+                    if (sentence_count == limit)
+                        break;
                 }
             } else {
                 String[] fields = input.split("\t");
@@ -93,7 +96,7 @@ public class MorphoConverter {
         in.close();
         try (FileWriter out = new FileWriter(filename_out)) {
             sentences.writeJSONString(out); // NB! lai būtu mainītā struktūra, jāizvada dokuments!
-            System.out.printf("Converted %d sentences to %s", sentence_count, filename_out);
+            System.out.printf("Converted %d sentences to %s\n", sentence_count, filename_out);
         }
     }
 
