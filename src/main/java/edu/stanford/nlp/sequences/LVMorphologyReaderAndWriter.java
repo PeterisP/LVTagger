@@ -84,7 +84,10 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
    * Getter for the currently used analyzer
    * @return
    */
-  public static Analyzer getAnalyzer() { return analyzer;}
+  public static Analyzer getAnalyzer() {
+      if (analyzer == null ) initAnalyzer();
+      return analyzer;
+  }
   
   public void init(SeqClassifierFlags flags) {
     this.map = StringUtils.mapStringToArray(flags.map);

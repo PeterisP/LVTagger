@@ -875,7 +875,7 @@ Mood :  0.09%
 Definiteness :  0.31%
 Rekcija : 17.79%
 
-68. ar 1.2.1 morfoloģiju, pielikts arī apstākļvārda tips
+68. ar 1.2.1 morfoloģiju, pielikts arī apstākļvārda tips (nereprezentatīvi cipari)
 Evaluation results:
 	Correct tag:	97.3%	190 mismatches
 	Correct lemma:	95.6%	312 mismatches
@@ -893,6 +893,47 @@ Mood :  0.09%
 Definiteness :  0.31%
 Rekcija : 17.79%
 
+69. ar 1.3.0 morfoloģiju un jaunajiem testa/treniņdatiem bez pārtrenēšanas (ah, tas bija produkcijas modelis, tāpēc tik labi, daudzi testa dati ir redzēti treniņā)
+Evaluation results:
+	Correct tag:	96.2%	667 mismatches
+	Correct lemma:	95.8%	752 mismatches
+	Correct all:	92.5%	1339 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  2.53%
+Reziduāļa tips :  2.45%
+Person :  0.75%
+Lokāmība :  0.30%
+Apstākļa vārda tips :  4.99%
+Part of speech :  1.13%
+Vietniekvārda tips :  1.04%
+Case :  3.04%
+Gender :  0.95%
+Definiteness :  0.72%
+Mood :  0.37%
+Rekcija :  9.67%
+
+70. ar 1.3.0 morfoloģiju pārtrenēts - cipari sliktāki jo tas ir dev modelis
+Evaluation results:
+	Correct tag:	92.4%	1320 mismatches
+	Correct lemma:	94.7%	927 mismatches
+	Correct all:	89.4%	1860 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  4.23%
+Reziduāļa tips :  1.19%
+Person :  0.93%
+Saīsinājuma tips : 13.16%
+Apstākļa vārda tips :  8.50%
+Part of speech :  2.34%
+Vietniekvārda tips :  2.13%
+Case :  6.27%
+Gender :  2.60%
+Mood :  1.88%
+Definiteness :  2.76%
+Rekcija :  9.16%
+
+real	57m11.378s
+user	58m47.755s
+sys	2m52.265s
 
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss

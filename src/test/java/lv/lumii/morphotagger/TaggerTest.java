@@ -219,16 +219,33 @@ public class TaggerTest {
     @Test
     public void tagset_update_2017okt() {
         List<CoreLabel> word = tag("braukdams");
-        assertTag(word, 1, "vmnppmsn0000");
+        assertTag(word, 1, "vmnppmsn0000n");
 
         word = tag("saasinātāks");
-        assertTag(word, 1, "vmnpdmsnpsnc");
+        assertTag(word, 1, "vmnpdmsnpsncn");
 
         word = tag("nenieka");
         assertTag(word, 1, "r0q");
 
         word = tag("svarīgi");
         assertTag(word, 1, "rpm");
+    }
+
+
+	@Test
+	public void nebūt() {
+        List<CoreLabel> sentence = tag("Man nav alus.");
+        assertLemma(sentence, 2, "nebūt");
+    }
+
+//    Verbu tipu problēmas
+    @Test
+    public void verbtypes() {
+        List<CoreLabel> sentence = tag("Darbs tiek darīts.");
+        assertValue(sentence, 2, AttributeNames.i_VerbType, AttributeNames.v_TiktTapt);
+
+        sentence = tag("Darbs ir izdarīts.");
+        assertValue(sentence, 2, AttributeNames.i_VerbType, AttributeNames.v_Buut);
     }
 
 }

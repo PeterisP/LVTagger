@@ -1,5 +1,6 @@
 package lv.lumii.morphotagger;
 
+import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 import lv.semti.morphology.analyzer.Analyzer;
 import lv.semti.morphology.analyzer.Word;
 import lv.semti.morphology.analyzer.Wordform;
@@ -16,12 +17,8 @@ import java.util.Map;
  * Created by pet on 2016-05-30.
  */
 public class MorphoConverter {
-    private static Analyzer analyzer;
-
     public static void main(String[] args) throws Exception{
         // Extend train/test files with all the morphological analysis options
-        analyzer = new Analyzer(false);
-
         convert_tf_json("MorphoCRF/test.txt",  "/Users/pet/Documents/DNN/zilonis/data/test.json", 0);
         convert_tf_json("MorphoCRF/dev.txt",  "/Users/pet/Documents/DNN/zilonis/data/dev.json", 0);
         convert_tf_json("MorphoCRF/train.txt", "/Users/pet/Documents/DNN/zilonis/data/train.json", 0);
@@ -38,6 +35,8 @@ public class MorphoConverter {
     }
 
     public static void convert_tf_json(String filename_in, String filename_out, int limit) throws IOException {
+        Analyzer analyzer = LVMorphologyReaderAndWriter.getAnalyzer();
+
         BufferedReader in = new BufferedReader(new FileReader(filename_in));
         String input;
         JSONObject document = new JSONObject();
@@ -67,29 +66,8 @@ public class MorphoConverter {
                 String gold_tag = fields[1];
                 String gold_lemma = fields[2];
 
-                JSONObject token = new JSONObject();
-                token.put("wordform", wordform);
-                token.put("gold_tag", gold_tag);
-                token.put("gold_lemma", gold_lemma);
-
-                AttributeValues answerAV = TagSet.getTagSet().fromTag(gold_tag);
-                answerAV.removeNonlexicalAttributes();
-                JSONObject attributes = new JSONObject();
-                for (Map.Entry entry : answerAV.entrySet()) {
-                    attributes.put(entry.getKey(), entry.getValue());
-                }
-                token.put("gold_attributes", attributes);
-                String gold_tag_simple = TagSet.getTagSet().toTag(answerAV);
-                token.put("gold_tag_simple", gold_tag_simple);
-
-                JSONArray options = new JSONArray();
                 Word w = analyzer.analyze(wordform);
-                for (Wordform wf : w.wordforms) {
-                    wf.removeNonlexicalAttributes();
-                    String tag = wf.getTag();
-                    options.add(tag);
-                }
-                token.put("options", options);
+                JSONObject token = formatToken(w, gold_tag, gold_lemma);
                 sentence.add(token);
             }
         }
@@ -100,8 +78,38 @@ public class MorphoConverter {
         }
     }
 
+    public static JSONObject formatToken(Word w, String gold_tag, String gold_lemma) {
+
+        JSONObject token = new JSONObject();
+        token.put("wordform", w.getToken());
+        if (gold_tag != null)
+            token.put("gold_tag", gold_tag);
+        if (gold_lemma != null)
+        token.put("gold_lemma", gold_lemma);
+
+        AttributeValues answerAV = TagSet.getTagSet().fromTag(gold_tag);
+        answerAV.removeNonlexicalAttributes();
+        JSONObject attributes = new JSONObject();
+        for (Map.Entry entry : answerAV.entrySet()) {
+            attributes.put(entry.getKey(), entry.getValue());
+        }
+        token.put("gold_attributes", attributes);
+        String gold_tag_simple = TagSet.getTagSet().toTag(answerAV);
+        token.put("gold_tag_simple", gold_tag_simple);
+
+        JSONArray options = new JSONArray();
+        for (Wordform wf : w.wordforms) {
+            wf.removeNonlexicalAttributes();
+            String tag = wf.getTag();
+            options.add(tag);
+        }
+        token.put("options", options);
+        return token;
+    }
 
     public static void convert_pdonald(String filename_in, String filename_out) throws IOException {
+        Analyzer analyzer = LVMorphologyReaderAndWriter.getAnalyzer();
+
         BufferedReader in = new BufferedReader(new FileReader(filename_in));
         PrintWriter out = new PrintWriter(filename_out, "UTF-8");
         String s;
