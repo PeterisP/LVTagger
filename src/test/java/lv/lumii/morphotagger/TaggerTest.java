@@ -248,4 +248,12 @@ public class TaggerTest {
         assertValue(sentence, 2, AttributeNames.i_VerbType, AttributeNames.v_Buut);
     }
 
+    @Test
+    public void laura_20180614() {
+        List<CoreLabel> sentence = tag("Lange (Lange) un Regini (Regini) norādījuši, ka elastību lielā mērā var saistīt ar darba tirgus regulējošo aspektu samazināšanu, kā arī valsts vai pārvaldības mazāku „iejaukšanos” noteiktu sistēmu noteikšanā.");
+        assertTag(sentence, 12, "cs");
+        assertTag(sentence, 26, "q");
+        assertTag(sentence, 10, "vmnpdmpnasnpn");
+        assertValue(sentence, 16, AttributeNames.i_VerbType, AttributeNames.v_Modaals);
+    }
 }

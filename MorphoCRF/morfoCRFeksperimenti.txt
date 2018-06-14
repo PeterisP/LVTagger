@@ -935,6 +935,32 @@ real	57m11.378s
 user	58m47.755s
 sys	2m52.265s
 
+71. ar 2.0.0 tēzaura morfoloģiju bez pārtrenēšanas (vecais produkcijas modelis, bet šādas tādas tagset izmaiņas)
+Evaluation results:
+	Correct tag:	84.3%	2943 mismatches
+	Correct lemma:	94.5%	1036 mismatches
+	Correct all:	83.1%	3186 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Number :  5.92%
+Reziduāļa tips :  2.59%
+Person :  4.01%
+Darbības vārda tips : 21.24%
+Saīsinājuma tips :  2.94%
+Punctuation group :  0.03%
+Lokāmība :  0.46%
+Lietvārda tips : 10.10%
+Apstākļa vārda tips : 25.94%
+Part of speech :  4.07%
+Vietniekvārda tips :  1.26%
+Case :  5.73%
+Gender :  3.33%
+Mood :  4.32%
+Definiteness :  1.12%
+Rekcija : 13.61%
+
+72. ar 2.0.0 tēzaura morfoloģiju pārtrenēts
+NB! ir 627 leibeļi, kas ir padaudz, dēļ tā, ka ir verbu tipi ieslēgti
+
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss
 TODO - notestēt, kā ir ja tagerim kā signālu padod, no kuras grupas lemma/tags ir nācis

@@ -74,8 +74,8 @@ public class MorphoCRF {
         }
         System.err.printf("Testing on '%s'\n", testfile);
 		
-		String pretrainedModel = "morphomodel/lv-morpho-model.ser.gz";
-		String classifierOutput = "MorphoCRF/lv-morpho-model.ser.gz";
+		String pretrainedModel = "models/lv-morpho-model.ser.gz";
+		String classifierOutput = "morphomodel/lv-morpho-model.ser.gz";
 		
 	    //Properties props = StringUtils.propFileToProperties("/Users/pet/Documents/java/PaikensNER/MorfoCRF/lv-PP.prop");
 		Properties props = new Properties();
