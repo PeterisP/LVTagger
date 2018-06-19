@@ -254,6 +254,24 @@ public class TaggerTest {
         assertTag(sentence, 12, "cs");
         assertTag(sentence, 26, "q");
         assertTag(sentence, 10, "vmnpdmpnasnpn");
+//        Word analysis = sentence.get(16).get(LVMorphologyAnalysis.class);
+//        analysis.describe(System.out);
+//        Wordform maxwf = analysis.getMatchingWordform(sentence.get(16).getString(AnswerAnnotation.class), true);
+//        maxwf.describe(System.out);
         assertValue(sentence, 16, AttributeNames.i_VerbType, AttributeNames.v_Modaals);
+    }
+
+    @Test
+    public void laura_20180619() {
+        List<CoreLabel> sentence = tag("Kas ir ergonoms risinājums?");
+        String token = sentence.get(3).getString(TextAnnotation.class);
+        assertFalse(token.contains("<s>"));
+        Word analysis = sentence.get(3).get(LVMorphologyAnalysis.class);
+//        analysis.describe(System.out);
+        boolean found = false;
+        for (Wordform wf : analysis.wordforms) {
+            if (wf.getTag().equalsIgnoreCase("ncmsn1")) found = true;
+        }
+        assertTrue(found);
     }
 }
