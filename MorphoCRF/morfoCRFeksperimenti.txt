@@ -960,6 +960,59 @@ Rekcija : 13.61%
 
 72. ar 2.0.0 tēzaura morfoloģiju pārtrenēts
 NB! ir 627 leibeļi, kas ir padaudz, dēļ tā, ka ir verbu tipi ieslēgti
+Evaluation results:
+	Correct tag:	91.2%	1636 mismatches
+	Correct lemma:	96.5%	646 mismatches
+	Correct all:	90.2%	1829 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Laiks :  2.33%
+Number :  4.30%
+Reziduāļa tips :  1.48%
+Person :  0.77%
+Darbības vārda tips :  4.99%
+Saīsinājuma tips : 12.61%
+Lietvārda tips :  1.05%
+Apstākļa vārda tips :  9.06%
+Part of speech :  2.37%
+Vietniekvārda tips :  1.96%
+Case :  6.58%
+Gender :  2.88%
+Mood :  1.50%
+Definiteness :  3.00%
+Rekcija :  8.95%
+
+real	111m26.565s  (uz laptopa)
+user	111m18.182s
+sys	3m50.884s
+
+73. ar 2.0.0 tēzaura morfoloģiju pārtrenēts produkcijas variants
+Evaluation results:
+	Correct tag:	96.9%	580 mismatches
+	Correct lemma:	97.5%	468 mismatches
+	Correct all:	94.8%	983 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Laiks :  0.32%
+Number :  1.46%
+Reziduāļa tips :  1.38%
+Person :  0.71%
+Darbības vārda tips :  1.75%
+Punctuation group :  0.03%
+Lietvārda tips :  0.08%
+Apstākļa vārda tips :  3.41%
+Part of speech :  0.94%
+Vietniekvārda tips :  1.06%
+Case :  1.52%
+Gender :  0.48%
+Mood :  0.29%
+Definiteness :  0.20%
+Rekcija :  9.75%
+
+real	131m23.579s (uz laptopa)
+user	131m14.126s
+sys	2m19.183s
+
+73. ar 2.0.1 tēzaura morfoloģiju pārtrenēts produkcijas variants
+
 
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss
