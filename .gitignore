@@ -20,4 +20,7 @@ models/.release-*
 .idea/
 morphomodel/*.ser.gz
 morphomodel/target
+nermodel/target
+MorphoCRF/2014 gada dati/
 tagger.iml
+LVTagger.iml

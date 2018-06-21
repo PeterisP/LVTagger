@@ -62,17 +62,21 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
   public static void initAnalyzer(){
 	  try {
 		  analyzer = new Analyzer(false);
-		  analyzer.enableVocative = true;
-		  analyzer.enableGuessing = true; 
-		  analyzer.enablePrefixes = true;
-		  analyzer.enableAllGuesses = true; //TODO - check the effect on morphotagging accuracy
+		  setAnalyzerDefaults();
 	  } catch (Exception e) {
 		  // TODO Auto-generated catch block
 		  e.printStackTrace();
 	  }
   }
-  
-  /**
+
+	public static void setAnalyzerDefaults() {
+		analyzer.enableVocative = true;
+		analyzer.enableGuessing = true;
+		analyzer.enablePrefixes = true;
+		analyzer.enableAllGuesses = true; //TODO - check the effect on morphotagging accuracy
+	}
+
+	/**
    * Instead of loading lexicon.xml in this class (as would happen automatically), provide a pre-loaded analyzer object to put in that singleton. 
    * @param preloaded
    */

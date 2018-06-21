@@ -1012,6 +1012,30 @@ user	131m14.126s
 sys	2m19.183s
 
 73. ar 2.0.1 tēzaura morfoloģiju pārtrenēts produkcijas variants
+Evaluation results:
+	Correct tag:	96.9%	595 mismatches
+	Correct lemma:	97.6%	454 mismatches
+	Correct all:	94.8%	985 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Laiks :  0.32%
+Number :  1.39%
+Reziduāļa tips :  1.35%
+Person :  1.16%
+Darbības vārda tips :  1.86%
+Punctuation group :  0.03%
+Lietvārda tips :  0.07%
+Apstākļa vārda tips :  3.48%
+Part of speech :  0.94%
+Vietniekvārda tips :  1.05%
+Case :  1.44%
+Gender :  0.48%
+Mood :  0.28%
+Definiteness :  0.19%
+Rekcija :  9.43%
+
+real	129m18.839s
+user	132m9.290s
+sys	2m57.166s
 
 
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....

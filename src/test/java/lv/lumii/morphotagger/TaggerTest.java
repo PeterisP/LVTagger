@@ -274,4 +274,20 @@ public class TaggerTest {
         }
         assertTrue(found);
     }
+
+    @Test
+    public void mistika() {
+	    // atšķīrās rezultāti, laižot it kā to pašu versiju caur morphotagger.sh un webservices
+        List<CoreLabel> sentence = tag("Vārds Ford ir slikts.");
+        assertTag(sentence, 2, "xf");
+
+        sentence = tag("Vārds fuck ir slikts.");
+        assertTag(sentence, 2, "xf");
+
+        sentence = tag("Vārds DJ ir slikts.");
+        assertTag(sentence, 2, "y");
+
+        sentence = tag("Vārds Fords ir slikts.");
+        assertTag(sentence, 2, "ncmsn1");
+    }
 }
