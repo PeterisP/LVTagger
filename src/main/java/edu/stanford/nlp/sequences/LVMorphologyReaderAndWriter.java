@@ -90,6 +90,8 @@ public class LVMorphologyReaderAndWriter implements DocumentReaderAndWriter<Core
    */
   public static Analyzer getAnalyzer() {
       if (analyzer == null ) initAnalyzer();
+      if (!analyzer.enableGuessing)
+          System.err.println("Morphologic analyzer has disabled out-of-vocabulary guessing - this will reduce tagging accuracy");
       return analyzer;
   }
   
