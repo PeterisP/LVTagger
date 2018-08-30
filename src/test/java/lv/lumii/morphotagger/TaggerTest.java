@@ -290,4 +290,11 @@ public class TaggerTest {
         sentence = tag("Vārds Fords ir slikts.");
         assertTag(sentence, 2, "ncmsn1");
     }
+
+    @Test
+    public void nespēja() {
+        List<CoreLabel> sentence = tag("Viņš neko nespēja saprast.");
+        // parādījās neadekvāta lemma, neatbilstoša tam, ko analizators var uzminēt
+        assertLemma(sentence, 3, "nespēt");
+    }
 }
