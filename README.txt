@@ -51,7 +51,7 @@ Use maven to compile and download dependencies (morphological word analysis modu
 
 DOWNLOADS
 
-https://oss.sonatype.org/service/local/artifact/maven/redirect?r=releases&g=lv.ailab.morphology&a=tagger&v=1.0.0&e=jar&c=jar-with-dependencies
+https://search.maven.org/artifact/lv.ailab.morphology/tagger/
 
 REFERENCES
 
