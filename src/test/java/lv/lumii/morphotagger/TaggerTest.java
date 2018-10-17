@@ -297,4 +297,18 @@ public class TaggerTest {
         // parādījās neadekvāta lemma, neatbilstoša tam, ko analizators var uzminēt
         assertLemma(sentence, 3, "nespēt");
     }
+
+    @Test
+    public void esmāt() {
+        List<CoreLabel> sentence = tag("Es esmu neizpratnē.");
+        // parādījās neadekvāta lemma, neatbilstoša tam, ko analizators var uzminēt
+        assertLemma(sentence, 2, "būt");
+    }
+
+    @Test
+    public void Saeima() {
+        List<CoreLabel> sentence = tag("Saeimas deputāti esot jauki.");
+        // parādījās neadekvāta lemma, neatbilstoša tam, ko analizators var uzminēt
+        assertLemma(sentence, 1, "Saeima");
+    }
 }
