@@ -1037,6 +1037,86 @@ real	129m18.839s
 user	132m9.290s
 sys	2m57.166s
 
+74. pirmsizmaiņu mērījums - jaunais korpuss, 2.0.5 morfoloģija
+Evaluation results:
+	Correct tag:	92.1%	1804 mismatches
+	Correct lemma:	95.0%	1147 mismatches
+	Correct all:	89.4%	2432 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Laiks :  1.95%
+Number :  3.81%
+Reziduāļa tips :  2.16%
+Person :  0.85%
+Darbības vārda tips :  4.47%
+Saīsinājuma tips :  9.29%
+Lokāmība :  0.22%
+Lietvārda tips :  0.84%
+Apstākļa vārda tips :  9.19%
+Part of speech :  2.01%
+Vietniekvārda tips :  1.91%
+Case :  5.82%
+Gender :  2.46%
+Mood :  1.36%
+Definiteness :  2.22%
+Rekcija :  8.16%
+
+real	147m55.534s
+user	129m38.648s
+sys	17m27.328s
+
+75. mērījums uz dev seta ar 2.1.0 morfoloģiju
+Evaluation results:
+	Correct tag:	92.2%	1796 mismatches
+	Correct lemma:	97.2%	643 mismatches
+	Correct all:	91.2%	2028 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Laiks :  1.93%
+Number :  3.78%
+Reziduāļa tips :  2.16%
+Person :  0.85%
+Darbības vārda tips :  4.54%
+Saīsinājuma tips :  9.29%
+Lokāmība :  0.22%
+Lietvārda tips :  0.89%
+Apstākļa vārda tips :  9.34%
+Part of speech :  1.97%
+Vietniekvārda tips :  1.86%
+Case :  5.74%
+Gender :  2.44%
+Mood :  1.33%
+Definiteness :  2.27%
+Rekcija :  8.05%
+
+real	155m51.412s
+user	132m0.871s
+sys	18m19.732s
+
+76. produkcijas modelis ar 2.1.0 morfoloģiju
+Evaluation results:
+	Correct tag:	97.1%	650 mismatches
+	Correct lemma:	97.7%	521 mismatches
+	Correct all:	95.1%	1092 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Laiks :  0.34%
+Number :  1.40%
+Reziduāļa tips :  1.17%
+Person :  0.30%
+Darbības vārda tips :  1.58%
+Saīsinājuma tips :  0.67%
+Lietvārda tips :  0.09%
+Apstākļa vārda tips :  3.85%
+Part of speech :  0.86%
+Vietniekvārda tips :  0.96%
+Case :  1.45%
+Gender :  0.56%
+Mood :  0.29%
+Definiteness :  0.26%
+Rekcija :  8.91%
+
+real	158m40.780s
+user	157m20.544s
+sys	3m29.824s
+
 
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss
