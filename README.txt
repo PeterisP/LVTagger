@@ -19,7 +19,7 @@ For information, bug reports, and any problems, contact:
 
 USAGE
 
-Build using maven or download from oss.sonatype.org (https://oss.sonatype.org/service/local/artifact/maven/redirect?r=releases&g=lv.ailab.morphology&a=tagger&v=1.0.0&e=jar&c=jar-with-dependencies)
+Build using maven or download from oss.sonatype.org (https://search.maven.org/remotecontent?filepath=lv/ailab/morphology/tagger/2.1.0/tagger-2.1.0-jar-with-dependencies.jar)
 Run the included morphotagger.sh script for tokenization and morphological tagging of plaintext data. 
 Input one sentence or paragraph per line; end processing with an empty line.
 Output format is JSON by default, or tab-delimited columns of token-tag-lemma when run as './pipetool.sh -vert'.
