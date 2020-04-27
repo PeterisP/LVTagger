@@ -89,7 +89,10 @@ public class MorphoPipe {
 			if (args[i].equalsIgnoreCase("-stripped")) mini_tag = true; //remove nonlexical attributes
 			if (args[i].equalsIgnoreCase("-features")) features = true; //output training features
 			if (args[i].equalsIgnoreCase("-leta")) LETAfeatures = true; //output specific features for LETA semantic frame analysis
-			if (args[i].equalsIgnoreCase("-vertinput")) inputType = inputTypes.VERT; //vertical input format as requested by Milos Jakubicek 2012.11.01
+			if (args[i].equalsIgnoreCase("-vertinput")) {
+				inputType = inputTypes.VERT; //vertical input format as requested by Milos Jakubicek 2012.11.01
+				//sentencelengthcap = 50; // FIXME - workaround for faster processing of web corpora
+			}
 			if (args[i].equalsIgnoreCase("-paragraphs")) {
 				inputType = inputTypes.PARAGRAPH;
 				if (i+1 < args.length && !args[i+1].startsWith("-")) {
@@ -154,7 +157,10 @@ public class MorphoPipe {
 				System.exit(0);
 			}
 		}
-						
+
+		System.err.printf("Input type : %s\nOutput type : %s\n", inputType.toString(), outputType.toString());
+		if (inputType == inputTypes.VERT && keepTags) System.err.println("WARNING - keepTags and VERT input may interact badly");
+
 		CMMClassifier<CoreLabel> morphoClassifier = CMMClassifier.getClassifier(morphoClassifierLocation);
 			
 		PrintStream out = new PrintStream(System.out, true, "UTF8");
@@ -176,17 +182,22 @@ public class MorphoPipe {
 		    	}
                 if (s.length() == 0) continue;
 		    	boolean finished = true; // is sentence finished and ready to analyze
-		    	if (inputType != inputTypes.VERT) {		    		
-		    		sentence = s;
+		    	if (inputType == inputTypes.VERT) {
+					if (s.startsWith("</s>")) {
+						processSentences(morphoClassifier, out, sentence.trim());
+						sentence = "";
+						out.println(s);
+					} else if (s.startsWith("<") && s.length()>1) out.println(s);
+		    		else {
+						if (s.indexOf('\t') > -1) { // If the vert file contains multiple tab-delimited columns, we read the first one
+							s = s.substring(0, s.indexOf('\t'));
+						}
+						sentence = sentence + " " + s;
+					}
 		    	} else {
-		    		if (s.startsWith("<") && s.length()>1) out.println(s);
-		    		else sentence = sentence + " " + s;
-		    		finished = s.startsWith("</s>");
-		    	}	    	
-		    	if (finished) {
-		    		processSentences(morphoClassifier, out, sentence.trim());
-			    	sentence = "";
-		    	}
+		    		// All other input types except VERT
+					processSentences(morphoClassifier, out, s.trim());
+				}
 		    }
 	    	if (inputType != inputTypes.VERT && sentence.length()>0) { //FIXME, not DRY
 	    		processSentences(morphoClassifier, out, sentence.trim());
@@ -205,7 +216,7 @@ public class MorphoPipe {
 	public static void processSentences(
 			CMMClassifier<CoreLabel> cmm, PrintStream out, String text) {
 		
-		if (inputType == inputTypes.PARAGRAPH) { // split in multiple sentences
+		if (inputType == inputTypes.PARAGRAPH || inputType == inputTypes.VERT) { // split in multiple sentences
 			if (outputSeparators) out.println("<p>");
 			LinkedList<LinkedList<Word>> sentences = Splitting.tokenizeSentences(LVMorphologyReaderAndWriter.getAnalyzer(), text, sentencelengthcap);
 			for (LinkedList<Word> sentence : sentences) 
