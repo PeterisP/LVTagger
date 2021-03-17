@@ -1117,6 +1117,84 @@ real	158m40.780s
 user	157m20.544s
 sys	3m29.824s
 
+77. mērījums uz dev seta ar 2.2.1-SNAPSHOT ; 2021-03-05
+NB! nekas nestrādā (OOM) jo numLabels: 972 - dēļ tā, ka es divdabju lietas samazināju nonlexical
+palaboju atpakaļ, numLabels:668 - kas vienalga šķiet ārprātīgi daudz. divdabji x verbu tipi šķiet pie vainas.
+Evaluation results:
+	Correct tag:	92.7%	2283 mismatches
+	Correct lemma:	97.6%	757 mismatches
+	Correct all:	91.7%	2591 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Laiks :  2.17%
+Number :  3.58%
+Reziduāļa tips :  2.32%
+Person :  0.66%
+Darbības vārda tips :  3.72%
+Saīsinājuma tips :  9.94%
+Lokāmība :  0.21%
+Lietvārda tips :  0.64%
+Apstākļa vārda tips :  8.85%
+Part of speech :  1.77%
+Vietniekvārda tips :  1.56%
+Case :  5.78%
+Gender :  2.35%
+Mood :  1.24%
+Definiteness :  1.24%
+Rekcija :  7.34%
+
+real	74m30.274s
+user	73m44.641s
+sys	1m27.264s
+
+78. "produkcijas" pagaidu modelis, trenēts uz visa, kas ietver testa datus
+Evaluation results:
+	Correct tag:	97.1%	926 mismatches
+	Correct lemma:	97.9%	664 mismatches
+	Correct all:	95.2%	1498 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Laiks :  0.34%
+Number :  1.33%
+Reziduāļa tips :  1.63%
+Person :  0.22%
+Darbības vārda tips :  1.86%
+Saīsinājuma tips :  0.49%
+Punctuation group :  0.02%
+Lietvārda tips :  0.03%
+Apstākļa vārda tips :  4.06%
+Part of speech :  0.91%
+Vietniekvārda tips :  0.76%
+Case :  1.52%
+Gender :  0.46%
+Mood :  0.24%
+Definiteness :  0.22%
+Rekcija :  7.97%
+
+real	99m11.816s
+user	98m37.250s
+sys	1m26.822s
+
+79. produkcijas modelis 2.2.1 relīzei
+Evaluation results:
+	Correct tag:	97.1%	916 mismatches
+	Correct lemma:	98.1%	608 mismatches
+	Correct all:	95.5%	1438 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Laiks :  0.32%
+Number :  1.32%
+Reziduāļa tips :  1.63%
+Person :  0.20%
+Darbības vārda tips :  1.87%
+Saīsinājuma tips :  0.49%
+Lietvārda tips :  0.03%
+Apstākļa vārda tips :  3.89%
+Part of speech :  0.89%
+Vietniekvārda tips :  0.72%
+Case :  1.50%
+Gender :  0.45%
+Mood :  0.22%
+Definiteness :  0.18%
+Rekcija :  8.05%
+
 
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss

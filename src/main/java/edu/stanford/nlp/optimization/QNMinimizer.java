@@ -1018,9 +1018,9 @@ public class QNMinimizer implements Minimizer<DiffFunction>, HasEvaluators {
         break;
       } catch (OutOfMemoryError oome) {
         sayln();
-        qn.s.remove(0);
-        qn.y.remove(0);
-        qn.rho.remove(0);
+        if (qn.s.size()>0) qn.s.remove(0);
+        if (qn.y.size()>0) qn.y.remove(0);
+        if (qn.rho.size()>0) qn.rho.remove(0);
         qn.mem = qn.s.size();
         System.err.println("Caught OutOfMemoryError, changing m = "+qn.mem);
       }

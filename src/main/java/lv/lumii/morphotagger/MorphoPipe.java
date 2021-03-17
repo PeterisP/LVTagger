@@ -91,7 +91,6 @@ public class MorphoPipe {
 			if (args[i].equalsIgnoreCase("-leta")) LETAfeatures = true; //output specific features for LETA semantic frame analysis
 			if (args[i].equalsIgnoreCase("-vertinput")) {
 				inputType = inputTypes.VERT; //vertical input format as requested by Milos Jakubicek 2012.11.01
-				sentencelengthcap = 50; // FIXME - workaround for faster processing of web corpora
 			}
 			if (args[i].equalsIgnoreCase("-paragraphs")) {
 				inputType = inputTypes.PARAGRAPH;
