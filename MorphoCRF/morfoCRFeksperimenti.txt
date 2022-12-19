@@ -1195,6 +1195,33 @@ Mood :  0.22%
 Definiteness :  0.18%
 Rekcija :  8.05%
 
+80. Produkcijas modelis 2.2.7 relīzei 
+palaidu ap 21:50, beidzās 00:10 - 2h 20 min uz MBP2019
+660 leibeļi
+Evaluation results:
+	Correct tag:	97.2%	1062 mismatches
+	Correct lemma:	99.0%	375 mismatches
+	Correct all:	96.4%	1336 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Laiks :  0.47%
+Number :  1.32%
+Person :  0.22%
+Darbības vārda tips :  2.05%
+Saīsinājuma tips :  0.88%
+Lietvārda tips :  0.04%
+Apstākļa vārda tips :  4.50%
+Part of speech :  0.84%
+Vietniekvārda tips :  0.64%
+Case :  1.53%
+Gender :  0.46%
+Mood :  0.33%
+Definiteness :  0.09%
+Rekcija :  7.44%
+
+real	139m7.822s
+user	131m47.769s
+sys	4m52.196s
+
 
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss
