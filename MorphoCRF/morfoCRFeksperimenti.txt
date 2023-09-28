@@ -1222,13 +1222,90 @@ real	139m7.822s
 user	131m47.769s
 sys	4m52.196s
 
+81. Tests ar 2.7 produkcijas modeli uz 3.0 morfoloģiju un datiem
+Evaluation results:
+	Correct tag:	97.2%	1016 mismatches
+	Correct lemma:	99.0%	366 mismatches
+	Correct all:	96.4%	1283 mismatches
+
+82. Produkcijas modelis 2.3.0 relīzei
+(kā citiem produkcijas modeļiem, nav godīgs mērījums jo trenēts arī uz testa datiem)
+Evaluation results:
+	Correct tag:	97.4%	921 mismatches
+	Correct lemma:	99.0%	356 mismatches
+	Correct all:	96.7%	1188 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Laiks :  0.44%
+Number :  1.22%
+Person :  0.20%
+Darbības vārda tips :  1.67%
+Saīsinājuma tips :  1.07%
+Punctuation group :  0.01%
+Lietvārda tips :  0.05%
+Apstākļa vārda tips :  3.95%
+Part of speech :  0.76%
+Vietniekvārda tips :  0.59%
+Case :  1.35%
+Gender :  0.43%
+Mood :  0.32%
+Definiteness :  0.03%
+Rekcija :  7.62%
+
+83. Novērtējums 2.3.0 veiktspējai - dev
+Training on 'MorphoCRF/train.txt'
+Testing on 'MorphoCRF/dev.txt'
+Evaluation results:
+	Correct tag:	93.3%	2284 mismatches
+	Correct lemma:	98.3%	567 mismatches
+	Correct all:	92.8%	2458 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Laiks :  1.49%
+Number :  3.34%
+Reziduāļa tips :  0.39%
+Person :  0.61%
+Darbības vārda tips :  3.78%
+Saīsinājuma tips : 12.17%
+Punctuation group :  0.02%
+Lietvārda tips :  0.65%
+Apstākļa vārda tips :  8.40%
+Part of speech :  1.54%
+Vietniekvārda tips :  1.56%
+Case :  5.45%
+Gender :  2.24%
+Mood :  1.13%
+Definiteness :  0.79%
+Rekcija :  6.21%
+
+real	186m36.399s
+user	122m47.457s
+sys	38m29.371s
+	
+84. 2.5.0 relīze (kā citiem produkcijas modeļiem, nav godīgs mērījums jo trenēts arī uz testa datiem)
+Evaluation results:
+	Correct tag:	97.5%	914 mismatches
+	Correct lemma:	99.0%	372 mismatches
+	Correct all:	96.7%	1189 mismatches
+Per-feature error rate summary (for those words that actually have such a feature)
+Laiks :  0.47%
+Number :  1.25%
+Person :  0.21%
+Darbības vārda tips :  1.86%
+Saīsinājuma tips :  1.07%
+Lietvārda tips :  0.02%
+Part of speech :  0.87%
+Vietniekvārda tips :  0.59%
+Case :  1.43%
+Gender :  0.47%
+Mood :  0.33%
+Definiteness :  0.03%
+Rekcija :  7.82%
+
+real	213m14.782s
+user	146m14.068s
+sys	43m59.955s
+
 
 TODO - dabūt novērtījumu katra varianta ticamībai vajag....
 TODO - notestēt vai teikuma beigu tagi </s> neatstāj efektu vai ir pluss vai mīnuss
 TODO - notestēt, kā ir ja tagerim kā signālu padod, no kuras grupas lemma/tags ir nācis
 TODO - onomastikā ielikt filtru, lai nav common noun daudzskaitlinieki iekšā; par deminutīviem jāpadomā
-TODO - nez kāpēc viņam nepatīk ar priedēkļiem atvasinātie verbi:
-	word: sakoda, tag:v__i___30__, gold_lemma: 'sakost', lemma: 'sakodīt'
-	word: apkaltušas, tag:v__pdfpn__n, gold_lemma: 'apkalst', lemma: 'apkaltt'
-
-	kautkas nav word: mežiem, tag:n_mpd_, gold_lemma: 'mežs', lemma: 'medis'

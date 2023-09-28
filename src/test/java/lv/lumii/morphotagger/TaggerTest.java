@@ -47,7 +47,7 @@ public class TaggerTest {
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		cmm = CMMClassifier.getClassifier("models/lv-morpho-model.ser.gz");
+		cmm = CMMClassifier.getClassifier("morphomodel/lv-morpho-model.ser.gz");
 	}
 	
 	private static List<CoreLabel> tag (String sentence) {
@@ -179,15 +179,15 @@ public class TaggerTest {
 	@Test
 	public void lemmas() {
 		List<CoreLabel> word = tag("neizpaušana");
-		assertLemma(word, 1, "neizpaušana");  // bija gļuks ar 'neizpausšana'
+		assertLemma(word, 1, "izpaušana");  // bija gļuks ar 'neizpausšana'
 	}
 	
 	@Test
 	public void noliegumi() {
 		List<CoreLabel> sentence = tag("Es šodien neiešu nepastaigāties un nedomāt.");
-		assertLemma(sentence, 3, "neiet");
-		assertLemma(sentence, 4, "nepastaigāties");
-		assertLemma(sentence, 6, "nedomāt");
+		assertLemma(sentence, 3, "iet");
+		assertLemma(sentence, 4, "pastaigāties");
+		assertLemma(sentence, 6, "domāt");
 		assertValue(sentence, 3, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
 		assertValue(sentence, 4, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
 		assertValue(sentence, 6, AttributeNames.i_Noliegums, AttributeNames.v_Yes);
@@ -235,7 +235,7 @@ public class TaggerTest {
 	@Test
 	public void nebūt() {
         List<CoreLabel> sentence = tag("Man nav alus.");
-        assertLemma(sentence, 2, "nebūt");
+        assertLemma(sentence, 2, "būt");
     }
 
 //    Verbu tipu problēmas
@@ -295,7 +295,7 @@ public class TaggerTest {
     public void nespēja() {
         List<CoreLabel> sentence = tag("Viņš neko nespēja saprast.");
         // parādījās neadekvāta lemma, neatbilstoša tam, ko analizators var uzminēt
-        assertLemma(sentence, 3, "nespēt");
+        assertLemma(sentence, 3, "spēt");
     }
 
     @Test
