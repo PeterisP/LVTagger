@@ -207,6 +207,58 @@ public class MorphoPipe {
 	}
 
 	/**
+	 * Runs the main function equivalent if called from MultithreadingMorphoPipe
+	 * @param params - command line parameters stored in ProcessingParams class
+	 **/
+	public static void main(ProcessingParams params) throws Exception {
+		CMMClassifier<CoreLabel> morphoClassifier = CMMClassifier.getClassifier(morphoClassifierLocation);
+
+		PrintStream out = new PrintStream(System.out, true, "UTF8");
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in, "UTF8"));
+
+		switch(params.inputType) {
+			case CONLL:
+				for (List<CoreLabel> sentence : readCONLL(in)) {
+					outputSentence(morphoClassifier, out, sentence);
+				}
+				break;
+			default:
+				String s;
+				String sentence = "";
+				while ((s = in.readLine()) != null && (s.length() != 0 || !params.stopOnEmpty)) {
+					if (s.startsWith("<") && s.length()>1 && params.keepTags) {
+						if (!params.outputType.equals(ProcessingParams.outputTypes.lemmatizedText) && params.outputType != ProcessingParams.outputTypes.lowercasedText) out.println(s);
+						continue;
+					}
+					if (s.length() == 0) continue;
+					boolean finished = true; // is sentence finished and ready to analyze
+					if (params.inputType == ProcessingParams.inputTypes.VERT) {
+						if (s.startsWith("</s>")) {
+							processSentences(morphoClassifier, out, sentence.trim());
+							sentence = "";
+							out.println(s);
+						} else if (s.startsWith("<") && s.length()>1) out.println(s);
+						else {
+							if (s.indexOf('\t') > -1) { // If the vert file contains multiple tab-delimited columns, we read the first one
+								s = s.substring(0, s.indexOf('\t'));
+							}
+							sentence = sentence + " " + s;
+						}
+					} else {
+						// All other input types except VERT
+						processSentences(morphoClassifier, out, s.trim());
+					}
+				}
+				if (params.inputType != ProcessingParams.inputTypes.VERT && sentence.length()>0) { //FIXME, not DRY
+					processSentences(morphoClassifier, out, sentence.trim());
+				}
+		}
+		in.close();
+		out.close();
+
+	}
+
+	/**
 	 * Splits the text in sentences if needed, and forwards to outputSentance
 	 * @param cmm - the tagger, needed to retrieve tagger features if they are requested
 	 * @param out - a stream to output the data
