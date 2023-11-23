@@ -127,7 +127,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>lv.lumii.morphotagger.MorphoPipe</mainClass>
+							<mainClass>lv.lumii.morphotagger.MultithreadingMorphoPipe</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
