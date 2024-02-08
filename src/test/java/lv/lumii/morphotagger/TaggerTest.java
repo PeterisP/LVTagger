@@ -47,7 +47,7 @@ public class TaggerTest {
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		cmm = CMMClassifier.getClassifier("morphomodel/lv-morpho-model.ser.gz");
+		cmm = CMMClassifier.getClassifier("models/lv-morpho-model.ser.gz");
 	}
 	
 	private static List<CoreLabel> tag (String sentence) {
@@ -310,5 +310,20 @@ public class TaggerTest {
         List<CoreLabel> sentence = tag("Saeimas deputāti esot jauki.");
         // parādījās neadekvāta lemma, neatbilstoša tam, ko analizators var uzminēt
         assertLemma(sentence, 1, "Saeima");
+    }
+
+    @Test
+    public void abc() {
+        List<CoreLabel> sentence = tag("un a/b/c");
+        // parādījās neadekvāta lemma, neatbilstoša tam, ko analizators var uzminēt
+        assertValue(sentence, 5, AttributeNames.i_WhitespaceBefore, "");
+    }
+
+
+    @Test
+    public void no_start_glue() {
+        List<CoreLabel> sentence = tag("Ir <.");
+        // parādījās neadekvāta lemma, neatbilstoša tam, ko analizators var uzminēt
+        assertLemma(sentence, 2, "<");
     }
 }

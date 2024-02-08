@@ -40,126 +40,10 @@ public class MultithreadingMorphoPipe {
     private static String morphoClassifierLocation = "models/lv-morpho-model.ser.gz"; //FIXME - make it configurable
 
     public static void main(String[] args) throws Exception {
-
-        ProcessingParams params = new ProcessingParams();
-
-        for (int i=0; i<args.length; i++) {
-            if (args[i].equalsIgnoreCase("-tab")) {  // one response line per each query line, tab-separated
-                params.outputType = ProcessingParams.outputTypes.TAB;
-                params.token_separator = "\t";
-            }
-            else if (args[i].equalsIgnoreCase("-vert")) { // one response line per token, tab-separated
-                params.outputType = ProcessingParams.outputTypes.VERT;
-            }
-            else if (args[i].equalsIgnoreCase("-moses")) { // one response line per token, pipe-separated
-                params.field_separator = "|";
-                params.token_separator = " ";
-                params.outputType = ProcessingParams.outputTypes.MOSES;
-            }
-            else if (args[i].equalsIgnoreCase("-stripped")) params.mini_tag = true; //remove nonlexical attributes
-            else if (args[i].equalsIgnoreCase("-features")) params.features = true; //output training features
-            else if (args[i].equalsIgnoreCase("-leta")) params.LETAfeatures = true; //output specific features for LETA semantic frame analysis
-
-            // TODO: Šeit sākās input tipu modifikācijas
-
-            else if (args[i].equalsIgnoreCase("-vertinput")) {
-                params.inputType = ProcessingParams.inputTypes.VERT; //vertical input format as requested by Milos Jakubicek 2012.11.01
-            }
-            else if (args[i].equalsIgnoreCase("-paragraphs")) {
-                params.inputType = ProcessingParams.inputTypes.PARAGRAPH;
-                if (i+1 < args.length && !args[i+1].startsWith("-")) {
-                    try {
-                        params.sentencelengthcap = Integer.parseInt(args[i+1]);
-                        System.err.printf("Sentence length capped to %d\n", params.sentencelengthcap);
-                        i++;
-                    } catch (Exception e) {
-                        System.err.printf("Error when parsing command line param '%s %s'\n",args[i], args[i+1]);
-                        System.err.println(e.getMessage());
-                    }
-                }
-            }
-            else if (args[i].equalsIgnoreCase("-conll-in")) params.inputType = ProcessingParams.inputTypes.CONLL;
-            else if (args[i].equalsIgnoreCase("-json-in")) params.inputType = ProcessingParams.inputTypes.JSON;
-//            else if (args[i].equalsIgnoreCase("-paragraphs")) {
-//                params.inputType = ProcessingParams.inputTypes.PARAGRAPH;
-//                if (i+1 < args.length && !args[i+1].startsWith("-")) {
-//                    try {
-//                        params.sentencelengthcap = Integer.parseInt(args[i+1]);
-//                        System.err.printf("Sentence length capped to %d\n", params.sentencelengthcap);
-//                        i++;
-//                    } catch (Exception e) {
-//                        System.err.printf("Error when parsing command line param '%s %s'\n",args[i], args[i+1]);
-//                        System.err.println(e.getMessage());
-//                    }
-//                }
-//            }
-            else if (args[i].equalsIgnoreCase("-conll-x")) params.outputType = ProcessingParams.outputTypes.CONLL_X;
-            else if (args[i].equalsIgnoreCase("-xml")) params.outputType = ProcessingParams.outputTypes.XML;
-            else if (args[i].equalsIgnoreCase("-visl-cg")) params.outputType = ProcessingParams.outputTypes.VISL_CG;
-            else if (args[i].equalsIgnoreCase("-lemmatized-text")) params.outputType = ProcessingParams.outputTypes.lemmatizedText;
-            else if (args[i].equalsIgnoreCase("-lowercased-text")) params.outputType = ProcessingParams.outputTypes.lowercasedText;
-            else if (args[i].equalsIgnoreCase("-analyzer")) {
-                params.outputType = ProcessingParams.outputTypes.analyzerOptions;
-                params.token_separator = "\t";
-            }
-            else if (args[i].equalsIgnoreCase("-saveColumns")) params.saveColumns = true; //save extra columns from conll input
-            else if (args[i].equalsIgnoreCase("-unix-line-endings")) params.eol="\n";
-            else if (args[i].equalsIgnoreCase("-keep-tags")) params.keepTags = true;
-            else if (args[i].equalsIgnoreCase("-output-separators")) params.outputSeparators = true;
-            else if (args[i].equalsIgnoreCase("-whitespace-marker")) params.whitespaceMarker = true;
-            else if (args[i].equalsIgnoreCase("-allow-empty-lines")) params.stopOnEmpty = false;
-
-            else if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
-                System.out.println("LV morphological tagger");
-                System.out.println("\nInput formats");
-                System.out.println("\tDefault : plain text UTF-8, one sentence per line, terminated by a blank line.");
-                System.out.println("\t-paragraphs [lengthcap]: plain text UTF-8, each line will be split in sentences. In output, paragraph borders are noted by an extra blank line. If lengthcap parameter is provided, then sentence length will be limited to that, instead of the default of " + params.sentencelengthcap);
-                System.out.println("\t-vertinput : one line per token, sentences separated by <s></s>. Any XML-style tags are echoed as-is. \n\t\tNB! sentences are retokenized, the number of tokens may be different.");
-                System.out.println("\t-conll-in : CONLL shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
-                System.out.println("\t-json-in : one line per sentence, each line contains a single json array of strings-tokens.");
-                System.out.println("\nOutput formats");
-                System.out.println("\tDefault : JSON. Each sentence is returned as a list of dicts, each dict contains elements 'Word', 'Tag' and 'Lemma'.");
-                System.out.println("\t-tab : one response line for each query line; tab-separated lists of word, tag and lemma.");
-                System.out.println("\t-vert : one response line for each token; tab-separated lists of word, tag and lemma.");
-                System.out.println("\t-moses : one response line for each token; pipe-separated lists of word, tag and lemma.");
-                System.out.println("\t-conll-x : CONLL-X shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
-                System.out.println("\t-xml : one xml word per line");
-                System.out.println("\t-visl-cg : output format for VISL constraint grammar tool");
-                System.out.println("\t-lemmatized-text : output lowercase lemmatized text, each sentence in new row, tokens seperated by single space");
-                System.out.println("\t-lowercased-text : output lowercased text, each sentence in new row, tokens seperated by single space");
-                System.out.println("\t-analyzer : one response line for each token; word followed by a tab-separated list of undisambiguated morphological tag options");
-                System.out.println("\nOther options:");
-                System.out.println("\t-stripped : lexical/nonessential parts of the tag are replaced with '-' to reduce sparsity.");
-                System.out.println("\t-features : in conll output, include the features that were used for training/tagging.");
-                System.out.println("\t-leta : in conll output, include extra features used for semantic frame analysis.");
-                System.out.println("\t-saveColumns : save extra columns from conll input.");
-                System.out.println("\t-unix-line-endings : use \\n line endings for output even on windows systems");
-                System.out.println("\t-keep-tags : preserve lines that start with '<' to enable xml-style metadata");
-                System.out.println("\t-output-separators : put <s></s> sentence markup and <p></p> paragraph markup");
-                System.out.println("\t-whitespace-marker : put <g /> tags where the tokens did not have whitespace between them");
-                System.out.println("\t-allow-empty-lines : do not quit on blank lines input (as per default)");
-                System.out.flush();
-                System.exit(0);
-            }
-            // Questionable processor parameter passing implementation:
-            else if (args[i].split("=")[0].equalsIgnoreCase("-processors")) {
-                try{
-                    params.processors = Integer.parseInt(args[i].split("=")[1]);
-                }
-                catch (Exception e) {
-                    System.err.printf("Please provide processor count in the form: -processors=4");
-                }
-            }
-            // End of questionable code
-            else {
-                System.err.println("Unrecognized parameter: " + args[i]);
-            }
-        }
-
-        System.err.printf("Input type : %s\nOutput type : %s\n", params.inputType.toString(), params.outputType.toString());
+        ProcessingParams params = new ProcessingParams(args);
 
         // TODO: Ja šeit ir faili, kurus spējam apstrādāt paralēli tad to darām, ja nē tad pielietojam veco procesu.
-        if (params.inputType.equals(ProcessingParams.inputTypes.SENTENCE) || params.inputType.equals(ProcessingParams.inputTypes.PARAGRAPH) || params.inputType.equals(ProcessingParams.inputTypes.VERT)) {
+        if (params.inputType.equals(ProcessingParams.inputTypes.SENTENCE) || params.inputType.equals(ProcessingParams.inputTypes.PARAGRAPH)) {
             params.cmm = CMMClassifier.getClassifier(morphoClassifierLocation);
 
             PrintStream out = new PrintStream(System.out, true, "UTF8");
@@ -188,7 +72,7 @@ public class MultithreadingMorphoPipe {
         }
         else {
             MorphoPipe morphoPipe = new MorphoPipe();
-            morphoPipe.main(params);
+            morphoPipe.mainPipe(params);
         }
     }
 }
@@ -219,6 +103,124 @@ class ProcessingParams {
 
     // Nezinu vai šis ir pareizi, bet nu redzēs
     public int processors = Runtime.getRuntime().availableProcessors();
+
+    public ProcessingParams(String[] args) {
+        for (int i=0; i<args.length; i++) {
+            if (args[i].equalsIgnoreCase("-tab")) {  // one response line per each query line, tab-separated
+                this.outputType = ProcessingParams.outputTypes.TAB;
+                this.token_separator = "\t";
+            }
+            else if (args[i].equalsIgnoreCase("-vert")) { // one response line per token, tab-separated
+                this.outputType = ProcessingParams.outputTypes.VERT;
+            }
+            else if (args[i].equalsIgnoreCase("-moses")) { // one response line per token, pipe-separated
+                this.field_separator = "|";
+                this.token_separator = " ";
+                this.outputType = ProcessingParams.outputTypes.MOSES;
+            }
+            else if (args[i].equalsIgnoreCase("-stripped")) this.mini_tag = true; //remove nonlexical attributes
+            else if (args[i].equalsIgnoreCase("-features")) this.features = true; //output training features
+            else if (args[i].equalsIgnoreCase("-leta")) this.LETAfeatures = true; //output specific features for LETA semantic frame analysis
+
+                // TODO: Šeit sākās input tipu modifikācijas
+
+            else if (args[i].equalsIgnoreCase("-vertinput")) {
+                this.inputType = ProcessingParams.inputTypes.VERT; //vertical input format as requested by Milos Jakubicek 2012.11.01
+            }
+            else if (args[i].equalsIgnoreCase("-paragraphs")) {
+                this.inputType = ProcessingParams.inputTypes.PARAGRAPH;
+                if (i+1 < args.length && !args[i+1].startsWith("-")) {
+                    try {
+                        this.sentencelengthcap = Integer.parseInt(args[i+1]);
+                        System.err.printf("Sentence length capped to %d\n", this.sentencelengthcap);
+                        i++;
+                    } catch (Exception e) {
+                        System.err.printf("Error when parsing command line param '%s %s'\n",args[i], args[i+1]);
+                        System.err.println(e.getMessage());
+                    }
+                }
+            }
+            else if (args[i].equalsIgnoreCase("-conll-in")) this.inputType = ProcessingParams.inputTypes.CONLL;
+            else if (args[i].equalsIgnoreCase("-json-in")) this.inputType = ProcessingParams.inputTypes.JSON;
+//            else if (args[i].equalsIgnoreCase("-paragraphs")) {
+//                params.inputType = ProcessingParams.inputTypes.PARAGRAPH;
+//                if (i+1 < args.length && !args[i+1].startsWith("-")) {
+//                    try {
+//                        params.sentencelengthcap = Integer.parseInt(args[i+1]);
+//                        System.err.printf("Sentence length capped to %d\n", params.sentencelengthcap);
+//                        i++;
+//                    } catch (Exception e) {
+//                        System.err.printf("Error when parsing command line param '%s %s'\n",args[i], args[i+1]);
+//                        System.err.println(e.getMessage());
+//                    }
+//                }
+//            }
+            else if (args[i].equalsIgnoreCase("-conll-x")) this.outputType = ProcessingParams.outputTypes.CONLL_X;
+            else if (args[i].equalsIgnoreCase("-xml")) this.outputType = ProcessingParams.outputTypes.XML;
+            else if (args[i].equalsIgnoreCase("-visl-cg")) this.outputType = ProcessingParams.outputTypes.VISL_CG;
+            else if (args[i].equalsIgnoreCase("-lemmatized-text")) this.outputType = ProcessingParams.outputTypes.lemmatizedText;
+            else if (args[i].equalsIgnoreCase("-lowercased-text")) this.outputType = ProcessingParams.outputTypes.lowercasedText;
+            else if (args[i].equalsIgnoreCase("-analyzer")) {
+                this.outputType = ProcessingParams.outputTypes.analyzerOptions;
+                this.token_separator = "\t";
+            }
+            else if (args[i].equalsIgnoreCase("-saveColumns")) this.saveColumns = true; //save extra columns from conll input
+            else if (args[i].equalsIgnoreCase("-unix-line-endings")) this.eol="\n";
+            else if (args[i].equalsIgnoreCase("-keep-tags")) this.keepTags = true;
+            else if (args[i].equalsIgnoreCase("-output-separators")) this.outputSeparators = true;
+            else if (args[i].equalsIgnoreCase("-whitespace-marker")) this.whitespaceMarker = true;
+            else if (args[i].equalsIgnoreCase("-allow-empty-lines")) this.stopOnEmpty = false;
+
+            else if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
+                System.out.println("LV morphological tagger");
+                System.out.println("\nInput formats");
+                System.out.println("\tDefault : platext UTF-8, one sentence per line, terminated by a blank line.");
+                System.out.println("\t-paragraphs [lengthcap]: plain text UTF-8, each line will be split in sentences. In output, paragraph borders are noted by an extra blank line. If lengthcap parameter is provided, then sentence length will be limited to that, instead of the default of " + this.sentencelengthcap);
+                System.out.println("\t-vertinput : one line per token, sentences separated by <s></s>. Any XML-style tags are echoed as-is. \n\t\tNB! sentences are retokenized, the number of tokens may be different.");
+                System.out.println("\t-conll-in : CONLL shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
+                System.out.println("\t-json-in : one line per sentence, each line contains a single json array of strings-tokens.");
+                System.out.println("\nOutput formats");
+                System.out.println("\tDefault : JSON. Each sentence is returned as a list of dicts, each dict contains elements 'Word', 'Tag' and 'Lemma'.");
+                System.out.println("\t-tab : one response line for each query line; tab-separated lists of word, tag and lemma.");
+                System.out.println("\t-vert : one response line for each token; tab-separated lists of word, tag and lemma.");
+                System.out.println("\t-moses : one response line for each token; pipe-separated lists of word, tag and lemma.");
+                System.out.println("\t-conll-x : CONLL-X shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
+                System.out.println("\t-xml : one xml word per line");
+                System.out.println("\t-visl-cg : output format for VISL constraint grammar tool");
+                System.out.println("\t-lemmatized-text : output lowercase lemmatized text, each sentence in new row, tokens seperated by single space");
+                System.out.println("\t-lowercased-text : output lowercased text, each sentence in new row, tokens seperated by single space");
+                System.out.println("\t-analyzer : one response line for each token; word followed by a tab-separated list of undisambiguated morphological tag options");
+                System.out.println("\nOther options:");
+                System.out.println("\t-stripped : lexical/nonessential parts of the tag are replaced with '-' to reduce sparsity.");
+                System.out.println("\t-features : in conll output, include the features that were used for training/tagging.");
+                System.out.println("\t-leta : in conll output, include extra features used for semantic frame analysis.");
+                System.out.println("\t-saveColumns : save extra columns from conll or vert input.");
+                System.out.println("\t-unix-line-endings : use \\n line endings for output even on windows systems");
+                System.out.println("\t-keep-tags : preserve lines that start with '<' to enable xml-style metadata");
+                System.out.println("\t-output-separators : put <s></s> sentence markup and <p></p> paragraph markup");
+                System.out.println("\t-whitespace-marker : put <g /> tags where the tokens did not have whitespace between them");
+                System.out.println("\t-allow-empty-lines : do not quit on blank lines input (as per default)");
+                System.out.flush();
+                System.exit(0);
+            }
+            // Questionable processor parameter passing implementation:
+            else if (args[i].split("=")[0].equalsIgnoreCase("-processors")) {
+                try{
+                    this.processors = Integer.parseInt(args[i].split("=")[1]);
+                }
+                catch (Exception e) {
+                    System.err.printf("Please provide processor count in the form: -processors=4");
+                }
+            }
+            // End of questionable code
+            else {
+                System.err.println("Unrecognized parameter: " + args[i]);
+            }
+        }
+
+        System.err.printf("Input type : %s\nOutput type : %s\n", this.inputType.toString(), this.outputType.toString());
+        if (inputType == inputTypes.VERT && keepTags) System.err.println("WARNING - keepTags and VERT input may interact badly");
+    }
 }
 
 class Line implements Comparable<Line> {
@@ -568,8 +570,17 @@ class WorkerThread extends Thread {
 
             if (s.length()>0) s.append(params.token_separator);
             if (params.whitespaceMarker && mainwf.isMatchingStrong(AttributeNames.i_WhitespaceBefore, "")) {
-                s.append("<g />");
-                s.append(params.token_separator);
+                if (!mainwf.isMatchingStrong(AttributeNames.i_Offset, "0")) {
+                    s.append("<g />");
+                    s.append(params.token_separator);
+                }
+            } else if (mainwf.isMatchingStrong(AttributeNames.i_WhitespaceBefore, null)) {
+                if (params.whitespaceMarker && analysis.hasAttribute(AttributeNames.i_WhitespaceBefore, "")) {
+                    if (!mainwf.isMatchingStrong(AttributeNames.i_Offset, "0")) {
+                        s.append("<g />");
+                        s.append(params.token_separator);
+                    }
+                }
             }
 
             if (params.outputType == ProcessingParams.outputTypes.MOSES) token = token.replace(' ', '_');
@@ -640,7 +651,6 @@ class PlainTextWorkerThread extends WorkerThread {
     }
 
 
-
     /**
      * Splits the text in sentences if needed, and forwards to outputSentance
      * @param text - actual tokens to be output
@@ -670,6 +680,7 @@ class PlainTextWorkerThread extends WorkerThread {
     }
 }
 
+
 class Reader {
     BufferedReader in;
     long line = 0;
@@ -686,6 +697,7 @@ class Reader {
             return new Line(line++, s);
     }
 }
+
 
 class Writer {
     long head = 0;
