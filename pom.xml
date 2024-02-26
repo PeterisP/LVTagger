@@ -47,7 +47,7 @@
 		<dependency>
 			<groupId>lv.ailab.morphology</groupId>
 			<artifactId>morphology</artifactId>
-			<version>2.5.0</version>
+			<version>2.5.0-1(test)</version>
 		</dependency>
 		<dependency>
 			<groupId>lv.ailab.morphology</groupId>
@@ -113,7 +113,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>lv.lumii.morphotagger.MorphoPipe</mainClass>
+							<mainClass>lv.lumii.morphotagger.MultithreadingMorphoPipe</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -127,7 +127,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>lv.lumii.morphotagger.MorphoPipe</mainClass>
+							<mainClass>lv.lumii.morphotagger.MultithreadingMorphoPipe</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
