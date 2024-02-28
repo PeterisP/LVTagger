@@ -680,18 +680,15 @@ class PlainTextWorkerThread extends WorkerThread {
         StringBuilder result = new StringBuilder();
 
         if (params.inputType == ProcessingParams.inputTypes.PARAGRAPH) { // split in multiple sentences
-            if (params.outputSeparators)
-                result.append("<p>\n");
+            if (params.outputSeparators) result.append("<p>\n");
 
             LinkedList<LinkedList<Word>> sentences = Splitting.tokenizeSentences(LVMorphologyReaderAndWriter.getAnalyzer(), text, params.sentencelengthcap);
             for (LinkedList<Word> sentence : sentences) {
                 result.append(outputSentence(LVMorphologyReaderAndWriter.analyzeSentence2(sentence)));
             }
 
-            if (params.outputSeparators)
-                result.append("</p>\n");
-            else if (params.inputType == ProcessingParams.inputTypes.PARAGRAPH)
-                result.append("\n");
+            if (params.outputSeparators) result.append("</p>");
+
         } else {
             result.append(outputSentence(LVMorphologyReaderAndWriter.analyzeSentence(text)));
         }
