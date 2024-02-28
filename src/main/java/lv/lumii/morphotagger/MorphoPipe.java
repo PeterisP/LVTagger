@@ -508,13 +508,11 @@ public class MorphoPipe {
 		
 		for (CoreLabel word : tokens) {
 			String token = word.getString(TextAnnotation.class);
-
-//			if (token.contains("<s>")) continue;
 			if (token.startsWith("<") && !token.startsWith("<\t") && token.endsWith(">")) {
 				if (s.length() != 0) s.append(params.token_separator);
 				s.append(token);
 				continue;
-			};
+			}
             Word analysis = word.get(LVMorphologyAnalysis.class);
             Wordform mainwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false);
 

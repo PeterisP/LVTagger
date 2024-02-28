@@ -43,7 +43,8 @@ public class MultithreadingMorphoPipe {
         ProcessingParams params = new ProcessingParams(args);
 
         // TODO: Ja šeit ir faili, kurus spējam apstrādāt paralēli tad to darām, ja nē tad pielietojam veco procesu.
-        if (params.inputType.equals(ProcessingParams.inputTypes.SENTENCE) || params.inputType.equals(ProcessingParams.inputTypes.PARAGRAPH)) {
+        if (params.inputType.equals(ProcessingParams.inputTypes.SENTENCE) || params.inputType.equals(ProcessingParams.inputTypes.PARAGRAPH)
+                || params.inputType.equals(ProcessingParams.inputTypes.VERT)) {
             params.cmm = CMMClassifier.getClassifier(morphoClassifierLocation);
 
             PrintStream out = new PrintStream(System.out, true, "UTF8");
@@ -59,7 +60,14 @@ public class MultithreadingMorphoPipe {
             ArrayList<Thread> threads = new ArrayList<>();
             // TODO: Te izmainīts processors -> params.processors, ja tas ir slikti noņem
             for(int i=0; i < params.processors; i++) {
-                Thread t = new PlainTextWorkerThread(reader, writer, params);
+                Thread t;
+                // TODO: Te sadalās dažādos Thread tipos, varbūt drīzāk sadalīšanu pa input tipiem veikt iekš thread klases.
+                if (params.inputType.equals(ProcessingParams.inputTypes.VERT)) {
+                    t = new VERTWorkerThread(reader, writer, params);
+                } else {
+                    t = new PlainTextWorkerThread(reader, writer, params);
+                }
+
                 t.start();
                 threads.add(t);
             }
@@ -564,7 +572,12 @@ class WorkerThread extends Thread {
 
         for (CoreLabel word : tokens) {
             String token = word.getString(TextAnnotation.class);
-            if (token.contains("<s>")) continue;
+            if (token.contains("<s>") && !(params.inputType == ProcessingParams.inputTypes.VERT)) continue;
+            if (token.startsWith("<") && !token.startsWith("<\t") && token.endsWith(">")) {
+                if (s.length() != 0) s.append(params.token_separator);
+                s.append(token);
+                continue;
+            }
             Word analysis = word.get(LVMorphologyAnalysis.class);
             Wordform mainwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false);
 
@@ -594,6 +607,14 @@ class WorkerThread extends Thread {
                 String lemma = mainwf.getValue(AttributeNames.i_Lemma);
                 if (params.outputType == ProcessingParams.outputTypes.MOSES) lemma = lemma.replace(' ', '_');
                 s.append(lemma);
+
+                if (params.outputType == ProcessingParams.outputTypes.VERT && params.saveColumns) {
+                    String extraColumns = word.getString(ExtraColumnAnnotation.class);
+                    if (extraColumns != "") {
+                        s.append(params.field_separator);
+                        s.append(extraColumns);
+                    };
+                }
             } else s.append(params.field_separator);
         }
 
@@ -681,6 +702,71 @@ class PlainTextWorkerThread extends WorkerThread {
 }
 
 
+class VERTWorkerThread extends WorkerThread {
+    // FIXME: Es ja godīgi pats nesaprotu līdz galam, ko daru.
+    public VERTWorkerThread(Reader reader, Writer writer, ProcessingParams params) {
+        super(reader, writer, params);
+    }
+
+    public void run() {
+        try {
+            processVERT();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void processVERT() throws IOException {
+        Line line;
+        String text;
+        List<CoreLabel> sentence = new LinkedList<CoreLabel>();
+        StringBuilder result = new StringBuilder();
+
+        while (true) {
+            try {
+                if ((line = reader.readVERT()) == null) break;
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            text = line.line;
+            for (String s : text.split("\n")) {
+                if (s.startsWith("</s>")) {
+                    CoreLabel stop = new CoreLabel();
+                    stop.set(TextAnnotation.class, "</s>");
+                    sentence.add(stop);
+                    result.append(outputSentence(LVMorphologyReaderAndWriter.analyzeLabels(sentence)));
+                    line.line = result.toString().trim();
+                    writer.write(line);
+
+                    sentence = new LinkedList<CoreLabel>();
+                    result = new StringBuilder();
+                }
+                else if (s.startsWith("<") && !s.startsWith("<\t") && s.length() > 1) {
+                    CoreLabel tag = new CoreLabel();
+                    tag.set(TextAnnotation.class, s.trim());
+                    sentence.add(tag);
+                } else {
+                    String[] fields = s.split("\t", 4);
+                    String token = fields[0];
+                    String extraColumns = "";
+                    if (fields.length == 4 && params.saveColumns) extraColumns = fields[3];
+
+                    CoreLabel word = new CoreLabel();
+                    word.set(TextAnnotation.class, token);
+                    word.set(ExtraColumnAnnotation.class, extraColumns);
+                    sentence.add(word);
+                }
+            }
+            if (!sentence.isEmpty()) {
+                result.append(outputSentence(LVMorphologyReaderAndWriter.analyzeLabels(sentence)));
+                line.line = result.toString().trim();
+                writer.write(line);
+            }
+        }
+    }
+}
+
+
 class Reader {
     BufferedReader in;
     long line = 0;
@@ -695,6 +781,24 @@ class Reader {
             return null;
         else
             return new Line(line++, s);
+    }
+
+    public synchronized Line readVERT() throws IOException {
+        String s;
+        String sentence = "";
+        while (true) {
+            s = in.readLine();
+            if (s == null) {
+                if (!sentence.isEmpty()) return new Line(line++, sentence);
+                else return null;
+            }
+            else {
+                sentence += s+"\n";
+                if (s.startsWith("</s>")) {
+                    return new Line(line++, sentence);
+                }
+            }
+        }
     }
 }
 
