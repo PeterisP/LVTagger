@@ -45,78 +45,9 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 // Copied/pasted/mangled from transliteration webservices java project
 
 public class MorphoPipe {
-//	private enum inputTypes {SENTENCE, PARAGRAPH, VERT, CONLL, JSON};
-//	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X, XML, VISL_CG, lemmatizedText, lowercasedText, analyzerOptions};
-//
-//	private static String eol = System.getProperty("line.separator");
-//	private static String field_separator = "\t";
-//	private static String token_separator = eol;
-//
-//	private static boolean mini_tag = false;
-//	private static boolean features = false;
-//	private static boolean LETAfeatures = false;
-//	private static inputTypes inputType = inputTypes.PARAGRAPH;
-//	private static outputTypes outputType = outputTypes.CONLL_X;
-//	//private static int sentencelengthcap = Splitting.DEFAULT_SENTENCE_LENGTH_CAP;
-//	private static int sentencelengthcap = 250;
-//	private static boolean saveColumns = false;
-//	private static boolean keepTags = false;
-//	private static boolean saveCase = false; // for lemmatized text output format
-//	private static boolean outputSeparators = false; // <s> for sentences, <p> for paragraphs
-//    private static boolean whitespaceMarker = false;
-//	private static boolean stopOnEmpty = true; // quit on empty line
-//
 	private static String morphoClassifierLocation = "models/lv-morpho-model.ser.gz"; //FIXME - make it configurable
 	private static ProcessingParams params = null;
 
-//	public static void main(String[] args) throws Exception {
-//		params = new ProcessingParams(args);
-//
-//		CMMClassifier<CoreLabel> morphoClassifier = CMMClassifier.getClassifier(morphoClassifierLocation);
-//
-//		PrintStream out = new PrintStream(System.out, true, "UTF8");
-//		BufferedReader in = new BufferedReader(new InputStreamReader(System.in, "UTF8"));
-//
-//		switch(inputType) {
-//		case CONLL:
-//			for (List<CoreLabel> sentence : readCONLL(in)) {
-//		    	outputSentence(morphoClassifier, out, sentence);
-//			}
-//			break;
-//		default:
-//		    String s;
-//		    String sentence = "";
-//		    while ((s = in.readLine()) != null && (s.length() != 0 || !stopOnEmpty)) {
-//		    	if (s.startsWith("<") && s.length()>1 && keepTags) {
-//		    		if (outputType != outputTypes.lemmatizedText && outputType != outputTypes.lowercasedText) out.println(s);
-//		    		continue;
-//		    	}
-//                if (s.length() == 0) continue;
-//		    	boolean finished = true; // is sentence finished and ready to analyze
-//		    	if (inputType == inputTypes.VERT) {
-//					if (s.startsWith("</s>")) {
-//						processSentences(morphoClassifier, out, sentence.trim());
-//						sentence = "";
-//						out.println(s);
-//					} else if (s.startsWith("<") && s.length()>1) out.println(s);
-//		    		else {
-//						if (s.indexOf('\t') > -1) { // If the vert file contains multiple tab-delimited columns, we read the first one
-//							s = s.substring(0, s.indexOf('\t'));
-//						}
-//						sentence = sentence + " " + s;
-//					}
-//		    	} else {
-//		    		// All other input types except VERT
-//					processSentences(morphoClassifier, out, s.trim());
-//				}
-//		    }
-//	    	if (inputType != inputTypes.VERT && sentence.length()>0) { //FIXME, not DRY
-//	    		processSentences(morphoClassifier, out, sentence.trim());
-//	    	}
-//		}
-//		in.close();
-//		out.close();
-//	}
 
 	/**
 	 * Runs the main function equivalent if called from MultithreadingMorphoPipe
@@ -508,13 +439,11 @@ public class MorphoPipe {
 		
 		for (CoreLabel word : tokens) {
 			String token = word.getString(TextAnnotation.class);
-
-//			if (token.contains("<s>")) continue;
 			if (token.startsWith("<") && !token.startsWith("<\t") && token.endsWith(">")) {
 				if (s.length() != 0) s.append(params.token_separator);
 				s.append(token);
 				continue;
-			};
+			}
             Word analysis = word.get(LVMorphologyAnalysis.class);
             Wordform mainwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false);
 
