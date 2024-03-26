@@ -21,10 +21,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.PrintWriter;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.Map.Entry;
 
 import lv.semti.morphology.analyzer.Splitting;
@@ -48,159 +45,70 @@ import edu.stanford.nlp.sequences.LVMorphologyReaderAndWriter;
 // Copied/pasted/mangled from transliteration webservices java project
 
 public class MorphoPipe {
-	private enum inputTypes {SENTENCE, PARAGRAPH, VERT, CONLL, JSON};
-	private enum outputTypes {JSON, TAB, VERT, MOSES, CONLL_X, XML, VISL_CG, lemmatizedText, lowercasedText, analyzerOptions};
-
-	private static String eol = System.getProperty("line.separator");
-	private static String field_separator = "\t";
-	private static String token_separator = eol;
-	
-	private static boolean mini_tag = false;		
-	private static boolean features = false;	
-	private static boolean LETAfeatures = false;
-	private static inputTypes inputType = inputTypes.PARAGRAPH;
-	private static outputTypes outputType = outputTypes.CONLL_X;
-	//private static int sentencelengthcap = Splitting.DEFAULT_SENTENCE_LENGTH_CAP;
-	private static int sentencelengthcap = 250;
-	private static boolean saveColumns = false;
-	private static boolean keepTags = false;
-	private static boolean saveCase = false; // for lemmatized text output format
-	private static boolean outputSeparators = false; // <s> for sentences, <p> for paragraphs
-    private static boolean whitespaceMarker = false;
-	private static boolean stopOnEmpty = true; // quit on empty line
-	
 	private static String morphoClassifierLocation = "models/lv-morpho-model.ser.gz"; //FIXME - make it configurable
-	
-	public static void main(String[] args) throws Exception {
-		
-		for (int i=0; i<args.length; i++) {
-			if (args[i].equalsIgnoreCase("-tab")) {  // one response line per each query line, tab-separated
-				outputType = outputTypes.TAB;
-				token_separator = "\t";
-			}
-			if (args[i].equalsIgnoreCase("-vert")) { // one response line per token, tab-separated
-				outputType = outputTypes.VERT;
-			}
-			if (args[i].equalsIgnoreCase("-moses")) { // one response line per token, pipe-separated
-				field_separator = "|";
-				token_separator = " ";
-				outputType = outputTypes.MOSES;
-			}
-			if (args[i].equalsIgnoreCase("-stripped")) mini_tag = true; //remove nonlexical attributes
-			if (args[i].equalsIgnoreCase("-features")) features = true; //output training features
-			if (args[i].equalsIgnoreCase("-leta")) LETAfeatures = true; //output specific features for LETA semantic frame analysis
-			if (args[i].equalsIgnoreCase("-vertinput")) {
-				inputType = inputTypes.VERT; //vertical input format as requested by Milos Jakubicek 2012.11.01
-			}
-			if (args[i].equalsIgnoreCase("-paragraphs")) {
-				inputType = inputTypes.PARAGRAPH;
-				if (i+1 < args.length && !args[i+1].startsWith("-")) {
-					try {
-						sentencelengthcap = Integer.parseInt(args[i+1]);
-						System.err.printf("Sentence length capped to %d\n", sentencelengthcap);
-						i++;
-					} catch (Exception e) {
-						System.err.printf("Error when parsing command line param '%s %s'\n",args[i], args[i+1]);
-						System.err.println(e.getMessage());
-					}
-				}
-			}
-			if (args[i].equalsIgnoreCase("-conll-in")) inputType = inputTypes.CONLL; 
-			if (args[i].equalsIgnoreCase("-json-in")) inputType = inputTypes.JSON; 
-			if (args[i].equalsIgnoreCase("-conll-x")) outputType = outputTypes.CONLL_X;
-			if (args[i].equalsIgnoreCase("-xml")) outputType = outputTypes.XML;
-			if (args[i].equalsIgnoreCase("-visl-cg")) outputType = outputTypes.VISL_CG;
-			if (args[i].equalsIgnoreCase("-lemmatized-text")) outputType = outputTypes.lemmatizedText;
-            if (args[i].equalsIgnoreCase("-lowercased-text")) outputType = outputTypes.lowercasedText;
-            if (args[i].equalsIgnoreCase("-analyzer")) {
-                outputType = outputTypes.analyzerOptions;
-                token_separator = "\t";
-            }
-			if (args[i].equalsIgnoreCase("-saveColumns")) saveColumns = true; //save extra columns from conll input
-			if (args[i].equalsIgnoreCase("-unix-line-endings")) eol="\n";
-			if (args[i].equalsIgnoreCase("-keep-tags")) keepTags = true;
-			if (args[i].equalsIgnoreCase("-output-separators")) outputSeparators = true;
-            if (args[i].equalsIgnoreCase("-whitespace-marker")) whitespaceMarker = true;
-            if (args[i].equalsIgnoreCase("-allow-empty-lines")) stopOnEmpty = false;
-						
-			if (args[i].equalsIgnoreCase("-h") || args[i].equalsIgnoreCase("--help") || args[i].equalsIgnoreCase("-?")) {
-				System.out.println("LV morphological tagger");
-				System.out.println("\nInput formats");
-				System.out.println("\tDefault : plain text UTF-8, one sentence per line, terminated by a blank line.");
-				System.out.println("\t-paragraphs [lengthcap]: plain text UTF-8, each line will be split in sentences. In output, paragraph borders are noted by an extra blank line. If lengthcap parameter is provided, then sentence length will be limited to that, instead of the default of " + sentencelengthcap);
-				System.out.println("\t-vertinput : one line per token, sentences separated by <s></s>. Any XML-style tags are echoed as-is. \n\t\tNB! sentences are retokenized, the number of tokens may be different.");
-				System.out.println("\t-conll-in : CONLL shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
-				System.out.println("\t-json-in : one line per sentence, each line contains a single json array of strings-tokens.");
-				System.out.println("\nOutput formats");
-				System.out.println("\tDefault : JSON. Each sentence is returned as a list of dicts, each dict contains elements 'Word', 'Tag' and 'Lemma'.");
-				System.out.println("\t-tab : one response line for each query line; tab-separated lists of word, tag and lemma.");
-				System.out.println("\t-vert : one response line for each token; tab-separated lists of word, tag and lemma.");
-				System.out.println("\t-moses : one response line for each token; pipe-separated lists of word, tag and lemma.");
-				System.out.println("\t-conll-x : CONLL-X shared task data format - one line per token, with tab-delimited columns, sentences separated by blank lines.");
-				System.out.println("\t-xml : one xml word per line");
-				System.out.println("\t-visl-cg : output format for VISL constraint grammar tool");
-				System.out.println("\t-lemmatized-text : output lowercase lemmatized text, each sentence in new row, tokens seperated by single space");
-				System.out.println("\t-lowercased-text : output lowercased text, each sentence in new row, tokens seperated by single space");
-                System.out.println("\t-analyzer : one response line for each token; word followed by a tab-separated list of undisambiguated morphological tag options");
-				System.out.println("\nOther options:");
-				System.out.println("\t-stripped : lexical/nonessential parts of the tag are replaced with '-' to reduce sparsity.");
-				System.out.println("\t-features : in conll output, include the features that were used for training/tagging.");
-				System.out.println("\t-leta : in conll output, include extra features used for semantic frame analysis.");
-				System.out.println("\t-saveColumns : save extra columns from conll input.");
-				System.out.println("\t-unix-line-endings : use \\n line endings for output even on windows systems");
-				System.out.println("\t-keep-tags : preserve lines that start with '<' to enable xml-style metadata");
-				System.out.println("\t-output-separators : put <s></s> sentence markup and <p></p> paragraph markup");
-				System.out.println("\t-whitespace-marker : put <g /> tags where the tokens did not have whitespace between them");
-                System.out.println("\t-allow-empty-lines : do not quit on blank lines input (as per default)");
-				System.out.flush();
-				System.exit(0);
-			}
-		}
+	private static ProcessingParams params = null;
 
-		System.err.printf("Input type : %s\nOutput type : %s\n", inputType.toString(), outputType.toString());
-		if (inputType == inputTypes.VERT && keepTags) System.err.println("WARNING - keepTags and VERT input may interact badly");
 
+	/**
+	 * Runs the main function equivalent if called from MultithreadingMorphoPipe
+	 * @param params - command line parameters stored in ProcessingParams class
+	 **/
+	public void mainPipe(ProcessingParams params) throws Exception {
+		this.params = params;
 		CMMClassifier<CoreLabel> morphoClassifier = CMMClassifier.getClassifier(morphoClassifierLocation);
-			
+
 		PrintStream out = new PrintStream(System.out, true, "UTF8");
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in, "UTF8"));
-		
-		switch(inputType) {
-		case CONLL:
-			for (List<CoreLabel> sentence : readCONLL(in)) {
-		    	outputSentence(morphoClassifier, out, sentence);
-			}
-			break;
-		default:
-		    String s;
-		    String sentence = "";
-		    while ((s = in.readLine()) != null && (s.length() != 0 || !stopOnEmpty)) {
-		    	if (s.startsWith("<") && s.length()>1 && keepTags) {
-		    		if (outputType != outputTypes.lemmatizedText && outputType != outputTypes.lowercasedText) out.println(s);
-		    		continue;
-		    	}
-                if (s.length() == 0) continue;
-		    	boolean finished = true; // is sentence finished and ready to analyze
-		    	if (inputType == inputTypes.VERT) {
-					if (s.startsWith("</s>")) {
-						processSentences(morphoClassifier, out, sentence.trim());
-						sentence = "";
-						out.println(s);
-					} else if (s.startsWith("<") && s.length()>1) out.println(s);
-		    		else {
-						if (s.indexOf('\t') > -1) { // If the vert file contains multiple tab-delimited columns, we read the first one
-							s = s.substring(0, s.indexOf('\t'));
-						}
-						sentence = sentence + " " + s;
-					}
-		    	} else {
-		    		// All other input types except VERT
-					processSentences(morphoClassifier, out, s.trim());
+
+		switch(params.inputType) {
+			case CONLL:
+				for (List<CoreLabel> sentence : readCONLL(in)) {
+					outputSentence(morphoClassifier, out, sentence);
 				}
-		    }
-	    	if (inputType != inputTypes.VERT && sentence.length()>0) { //FIXME, not DRY
-	    		processSentences(morphoClassifier, out, sentence.trim());
-	    	}	    			
+				break;
+			default:
+                if (params.inputType == ProcessingParams.inputTypes.VERT && params.saveColumns) {
+					for (List<CoreLabel> sentence : readExtraVERT(in)) {
+						outputSentence(morphoClassifier, out, sentence);
+					}
+					break;
+                } else {
+                    String s;
+                    String sentence = "";
+                    while ((s = in.readLine()) != null && (s.length() != 0 || !params.stopOnEmpty)) {
+                        if (s.startsWith("<") && s.length() > 1 && params.keepTags) {
+                            if (!params.outputType.equals(ProcessingParams.outputTypes.lemmatizedText) && params.outputType != ProcessingParams.outputTypes.lowercasedText)
+                                out.println(s);
+                            continue;
+                        }
+                        if (s.length() == 0) continue;
+                        boolean finished = true; // is sentence finished and ready to analyze
+                        if (params.inputType == ProcessingParams.inputTypes.VERT) {
+                            if (s.startsWith("</s>")) {
+                                processSentences(morphoClassifier, out, sentence.trim());
+                                sentence = "";
+                                out.println(s);
+                            } else if (s.startsWith("<g />")) {
+                                sentence = sentence.trim();
+                            } else if (s.startsWith("<\t")) {
+                                sentence = sentence + "< ";
+                            } else if (s.startsWith("<") && s.length() > 1) {
+                                out.println(s);
+                            } else {
+                                if (s.indexOf('\t') > -1) { // If the vert file contains multiple tab-delimited columns, we read the first one
+                                    s = s.substring(0, s.indexOf('\t'));
+                                }
+                                sentence = sentence + s + " ";
+                            }
+                        } else {
+                            // All other input types except VERT
+                            processSentences(morphoClassifier, out, s.trim());
+                        }
+                    }
+                    if (params.inputType != ProcessingParams.inputTypes.VERT && sentence.length() > 0) { //FIXME, not DRY
+                        processSentences(morphoClassifier, out, sentence.trim());
+                    }
+                }
 		}
 		in.close();
 		out.close();
@@ -215,14 +123,14 @@ public class MorphoPipe {
 	public static void processSentences(
 			CMMClassifier<CoreLabel> cmm, PrintStream out, String text) {
 		
-		if (inputType == inputTypes.PARAGRAPH || inputType == inputTypes.VERT) { // split in multiple sentences
-			if (outputSeparators) out.println("<p>");
-			LinkedList<LinkedList<Word>> sentences = Splitting.tokenizeSentences(LVMorphologyReaderAndWriter.getAnalyzer(), text, sentencelengthcap);
+		if (params.inputType == ProcessingParams.inputTypes.PARAGRAPH || params.inputType == ProcessingParams.inputTypes.VERT) { // split in multiple sentences
+			if (params.outputSeparators) out.println("<p>");
+			LinkedList<LinkedList<Word>> sentences = Splitting.tokenizeSentences(LVMorphologyReaderAndWriter.getAnalyzer(), text, params.sentencelengthcap);
 			for (LinkedList<Word> sentence : sentences) 
 				outputSentence(cmm, out, LVMorphologyReaderAndWriter.analyzeSentence2(sentence) );
-			if (outputSeparators) 
+			if (params.outputSeparators)
 				out.println("</p>");
-			else if (inputType == inputTypes.PARAGRAPH)
+			else if (params.inputType == ProcessingParams.inputTypes.PARAGRAPH)
 				out.println();
 		} else outputSentence(cmm, out, LVMorphologyReaderAndWriter.analyzeSentence(text) ); // just a single sentence for other types
 	}
@@ -235,13 +143,13 @@ public class MorphoPipe {
 	 */
 	public static void outputSentence(CMMClassifier<CoreLabel> cmm,
 			PrintStream out, List<CoreLabel> sentence) {
-		if (outputSeparators) out.println("<s>");
+		if (params.outputSeparators) out.println("<s>");
 
-        if (outputType != outputTypes.lowercasedText && outputType != outputTypes.analyzerOptions) { //FIXME - a separate flag would be better
+        if (params.outputType != ProcessingParams.outputTypes.lowercasedText && params.outputType != ProcessingParams.outputTypes.analyzerOptions) { //FIXME - a separate flag would be better
             sentence = cmm.classify(sentence); // runs the actual morphotagging system
         }
 
-		switch (outputType) {
+		switch (params.outputType) {
 		case JSON:
 			out.println( output_JSON(sentence));
 			break;
@@ -271,7 +179,7 @@ public class MorphoPipe {
 		default:
 			out.println( output_separated(sentence));	    
 		}
-		if (outputSeparators) out.println("</s>");
+		if (params.outputSeparators) out.println("</s>");
 		out.flush();
 	}	
 	
@@ -283,7 +191,7 @@ public class MorphoPipe {
 			if (token.contains("<s>")) continue;
 			Word analysis = word.get(LVMorphologyAnalysis.class);
 			Wordform maxwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false);
-			if (mini_tag) maxwf.removeNonlexicalAttributes();
+			if (params.mini_tag) maxwf.removeNonlexicalAttributes();
 			if (maxwf != null)
 				tokenJSON.add(String.format("{\"Word\":\"%s\",\"Tag\":\"%s\",\"Lemma\":\"%s\"}", JSONValue.escape(token), JSONValue.escape(maxwf.getTag()), JSONValue.escape(maxwf.getValue(AttributeNames.i_Lemma))));
 			else 
@@ -302,7 +210,7 @@ public class MorphoPipe {
 			if (token.contains("<s>")) continue;
 			Word analysis = word.get(LVMorphologyAnalysis.class);
 			Wordform maxwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false);
-			if (mini_tag) maxwf.removeNonlexicalAttributes();
+			if (params.mini_tag) maxwf.removeNonlexicalAttributes();
 			maxwf.addAttribute("Tag", maxwf.getTag());
 			maxwf.toXML(w);
 //			if (maxwf != null)
@@ -341,8 +249,8 @@ public class MorphoPipe {
 				s.append('\t');
 
 				// Feature atribūtu filtri
-				if (mini_tag) mainwf.removeNonlexicalAttributes();
-				if (LETAfeatures) {
+				if (params.mini_tag) mainwf.removeNonlexicalAttributes();
+				if (params.LETAfeatures) {
 					addLETAfeatures(mainwf);
 					// mainwf.removeAttribute(AttributeNames.i_SourceLemma); FIXME - atvasinātiem vārdiem šis var būt svarīgs, atpriedekļotas lemmas..
 					mainwf.removeTechnicalAttributes();
@@ -350,7 +258,7 @@ public class MorphoPipe {
 				
 				s.append(mainwf.pipeDelimitedEntries()); // Pievienojam vārda fīčas
 				
-				if (features) { // visas fīčas, ko lietoja trenējot
+				if (params.features) { // visas fīčas, ko lietoja trenējot
 					Datum<String, String> d = cmm.makeDatum(tokens, counter, cmm.featureFactory);
 					for (String feature : d.asFeatures()) {
 						s.append(feature.substring(0, feature.length()-2).replace(' ', '_')); // noņeam trailing |C kas tām fīčām tur ir
@@ -364,7 +272,7 @@ public class MorphoPipe {
 				s.append(token); 
 				s.append("\t_\t_\t_\t");
 			}
-			if (saveColumns) {
+			if (params.saveColumns) {
 				s.append(word.getString(ExtraColumnAnnotation.class));
 			} else {
 				String syntax = word.getString(ParentAnnotation.class);
@@ -373,7 +281,7 @@ public class MorphoPipe {
 				}
 				else s.append("_\t_\t_\t_");
 			}
-			s.append(eol);
+			s.append(params.eol);
 			counter++;
 		}
 		
@@ -392,8 +300,8 @@ public class MorphoPipe {
 			Wordform mainwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false); 
 			if (mainwf != null && !token.isEmpty()) {
 				String lemma = mainwf.getValue(AttributeNames.i_Lemma);
-				if (saveCase && Character.isUpperCase(token.charAt(0))) lemma = lemma.substring(0,1).toUpperCase() + lemma.substring(1);
-				if (!saveCase) lemma=lemma.toLowerCase();
+				if (params.saveCase && Character.isUpperCase(token.charAt(0))) lemma = lemma.substring(0,1).toUpperCase() + lemma.substring(1);
+				if (!params.saveCase) lemma=lemma.toLowerCase();
 				lemma = lemma.replace(' ', '_');
 				s.append(lemma);
 				s.append(' ');
@@ -428,7 +336,7 @@ public class MorphoPipe {
             s.append(token);
             Word analysis = word.get(LVMorphologyAnalysis.class);
             for (Wordform wf : analysis.wordforms) {
-                s.append(token_separator);
+                s.append(params.token_separator);
                 s.append(wf.getTag());
             }
         }
@@ -517,7 +425,7 @@ public class MorphoPipe {
 					 s.append(value.replace(' ', '_'));
 					 s.append(' ');
 				}
-				s.append(eol);
+				s.append(params.eol);
 			}
 		}
 		
@@ -531,28 +439,44 @@ public class MorphoPipe {
 		
 		for (CoreLabel word : tokens) {
 			String token = word.getString(TextAnnotation.class);
-			if (token.contains("<s>")) continue;
+			if (token.startsWith("<") && !token.startsWith("<\t") && token.endsWith(">")) {
+				if (s.length() != 0) s.append(params.token_separator);
+				s.append(token);
+				continue;
+			}
             Word analysis = word.get(LVMorphologyAnalysis.class);
             Wordform mainwf = analysis.getMatchingWordform(word.getString(AnswerAnnotation.class), false);
 
-            if (s.length()>0) s.append(token_separator);
-            if (whitespaceMarker && mainwf.isMatchingStrong(AttributeNames.i_WhitespaceBefore, "")) {
-                s.append("<g />");
-                s.append(token_separator);
+            if (s.length()>0) s.append(params.token_separator);
+            if (params.whitespaceMarker && mainwf.isMatchingStrong(AttributeNames.i_WhitespaceBefore, "")) {
+				if (!mainwf.isMatchingStrong(AttributeNames.i_Offset, "0")) {
+					s.append("<g />");
+					s.append(params.token_separator);
+				}
             }
 
-            if (outputType == outputTypes.MOSES) token = token.replace(' ', '_');
+            if (params.outputType == ProcessingParams.outputTypes.MOSES) token = token.replace(' ', '_');
 			s.append(token);
-			s.append(field_separator);
+			s.append(params.field_separator);
 
 			if (mainwf != null) {
-				if (mini_tag) mainwf.removeNonlexicalAttributes();
+				if (params.mini_tag) mainwf.removeNonlexicalAttributes();
 				s.append(mainwf.getTag());
-				s.append(field_separator);
+				s.append(params.field_separator);
 				String lemma = mainwf.getValue(AttributeNames.i_Lemma);
-				if (outputType == outputTypes.MOSES) lemma = lemma.replace(' ', '_');
+				if (params.outputType == ProcessingParams.outputTypes.MOSES) lemma = lemma.replace(' ', '_');
 				s.append(lemma);
-			} else s.append(field_separator); 
+
+				if (params.outputType == ProcessingParams.outputTypes.VERT && params.saveColumns) {
+					String extraColumns = word.getString(ExtraColumnAnnotation.class);
+					if (extraColumns != "") {
+						s.append(params.field_separator);
+						s.append(extraColumns);
+					};
+				}
+			} else s.append(params.field_separator);
+
+
 			/*
 			mainwf = word.get(LVMorphologyAnalysisBest.class);
 			if (mainwf != null) {
@@ -588,7 +512,7 @@ public class MorphoPipe {
 		String s;
 	    List<CoreLabel> sentence = new LinkedList<CoreLabel>();
 	    List<List<CoreLabel>> result = new LinkedList<List<CoreLabel>>();
-	    
+
 	    CoreLabel stag = new CoreLabel();
 		stag.set(TextAnnotation.class, "<s>");
 		sentence.add(stag);
@@ -599,7 +523,7 @@ public class MorphoPipe {
 	    		String token = fields[1];
 	    		if (!token.equalsIgnoreCase("_")) token = token.replace('_', ' ');
 	    		String extraColumns = "";
-	    		if (saveColumns) {
+	    		if (params.saveColumns) {
 	    			for (int field_i = 6; field_i < fields.length; field_i++) extraColumns += fields[field_i] + "\t";
 	    			extraColumns.trim();
 	    		}	    		
@@ -634,4 +558,45 @@ public class MorphoPipe {
 		return result;
 	}
 
+
+    public static List<List<CoreLabel>> readExtraVERT(BufferedReader in) throws IOException {
+        String s;
+        List<CoreLabel> sentence = new LinkedList<CoreLabel>();
+        List<List<CoreLabel>> result = new LinkedList<List<CoreLabel>>();
+
+        while ((s = in.readLine()) != null  && (s.length() != 0 || !params.stopOnEmpty)) {
+			if (s.startsWith("</s>")) {
+				CoreLabel stop = new CoreLabel();
+				stop.set(TextAnnotation.class, "</s>");
+				sentence.add(stop);
+				result.add(LVMorphologyReaderAndWriter.analyzeLabels(sentence));
+
+				sentence = new LinkedList<CoreLabel>();
+			}
+//			else if (s.startsWith("<g />") && params.whitespaceMarker) {
+//				// FIXME, tehniski šo nevajag, jo šo iekļauj arī nākošais else-if bet ja ļoti grib šeit var:
+//				// TODO: iespējams pielietot Attributes.i_WhitespaceBefore, lai šo saglabātu...
+//				CoreLabel glue = new CoreLabel();
+//				glue.set(TextAnnotation.class, "<g />");
+//				sentence.add(glue);
+//			}
+			else if (s.startsWith("<") && !s.startsWith("<\t") && s.length() > 1) {
+				CoreLabel tag = new CoreLabel();
+				tag.set(TextAnnotation.class, s.trim());
+				sentence.add(tag);
+			} else {
+				String[] fields = s.split("\t", 4);
+				String token = fields[0];
+				String extraColumns = "";
+				if (fields.length == 4) extraColumns = fields[3];
+
+				CoreLabel word = new CoreLabel();
+				word.set(TextAnnotation.class, token);
+				word.set(ExtraColumnAnnotation.class, extraColumns);
+				sentence.add(word);
+			}
+        }
+
+        return result;
+    }
 }	
