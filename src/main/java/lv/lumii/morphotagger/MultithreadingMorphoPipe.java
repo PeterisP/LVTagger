@@ -535,9 +535,9 @@ class WorkerThread extends Thread {
                             !key.equalsIgnoreCase(AttributeNames.i_Number) &&
                             !key.equalsIgnoreCase(AttributeNames.i_Gender) &&
                             !key.equalsIgnoreCase(AttributeNames.i_NounType) &&
-                            !key.equalsIgnoreCase(AttributeNames.i_Izteiksme) &&
+                            !key.equalsIgnoreCase(AttributeNames.i_Mood) &&
                             !key.equalsIgnoreCase(AttributeNames.i_VerbType) &&
-                            !key.equalsIgnoreCase(AttributeNames.i_Laiks) &&
+                            !key.equalsIgnoreCase(AttributeNames.i_Tense) &&
                             !key.equalsIgnoreCase(AttributeNames.i_Transitivity) &&
                             !key.equalsIgnoreCase(AttributeNames.i_Declension) &&
                             !key.equalsIgnoreCase(AttributeNames.i_Definiteness) &&
@@ -550,7 +550,7 @@ class WorkerThread extends Thread {
                             !key.equalsIgnoreCase(AttributeNames.i_VvTips)
                     ) || (value.equalsIgnoreCase(AttributeNames.v_NA) &&
                             !key.equalsIgnoreCase(AttributeNames.i_Anafora) &&
-                            !key.equalsIgnoreCase(AttributeNames.i_Laiks)
+                            !key.equalsIgnoreCase(AttributeNames.i_Tense)
                     )) {
                         s.append(key.replace(' ', '_'));
                         s.append('=');

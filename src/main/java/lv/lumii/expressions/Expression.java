@@ -435,7 +435,7 @@ public class Expression {
 					}
 					switch(w.correctWordform.getValue(AttributeNames.i_PartOfSpeech)) {
 						case AttributeNames.v_Verb: {
-							w.isStatic = !w.correctWordform.isMatchingStrong(AttributeNames.i_Izteiksme, AttributeNames.v_Participle);
+							w.isStatic = !w.correctWordform.isMatchingStrong(AttributeNames.i_Mood, AttributeNames.v_Participle);
 							// Divdabjus mēģinam locīt
 							break;
 						}
@@ -535,7 +535,7 @@ public class Expression {
 					
 					switch (w.correctWordform.getValue(AttributeNames.i_PartOfSpeech)) {
 						case AttributeNames.v_Verb:
-							if (!w.correctWordform.isMatchingStrong(AttributeNames.i_Izteiksme, AttributeNames.v_Participle)) {
+							if (!w.correctWordform.isMatchingStrong(AttributeNames.i_Mood, AttributeNames.v_Participle)) {
 								w.isStatic=true;
 								break;
 							}

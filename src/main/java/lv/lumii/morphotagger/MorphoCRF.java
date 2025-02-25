@@ -194,7 +194,7 @@ public class MorphoCRF {
 		translation.put(AttributeNames.i_PartOfSpeech, "Part of speech");
 		translation.put(AttributeNames.i_Number, "Number");
 		translation.put(AttributeNames.i_Definiteness, "Definiteness");
-		translation.put(AttributeNames.i_Izteiksme, "Mood");
+		translation.put(AttributeNames.i_Mood, "Mood");
 		translation.put(AttributeNames.i_PieturziimesTips, "Punctuation group");
 		translation.put(AttributeNames.i_Gender, "Gender");
 		translation.put(AttributeNames.i_Case, "Case");
